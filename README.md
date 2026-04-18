@@ -258,30 +258,54 @@ plantas saludables mientras fortalecen su conexión con el medio ambiente.
 <table>
   <thead>
     <tr>
-      <th>Perfil</th>
-      <th>Foto</th>
+      <th>Fotos del Integrantes</th>
+      <th>Nombres y Apellidos</th>
+      <th>Código de estudiante</th>
+      <th>Conocimientos técnicos y habilidades</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><strong>[COMPLETAR: Apellidos, Nombres]</strong><br>[COMPLETAR: descripción]</td>
-      <td><img src="assets/images/photos/[COMPLETAR].jpg" alt="[COMPLETAR]" width="200"></td>
+      <td><img src="assets/images/members/Diego.png" alt="Diego" width="200"></td>
+      <td><strong>Acuña Tomas, Diego Rolin</strong></td>      
+      <td>U202221436</td>
+      <td>Soy estudiante de Ingeniería de Software en la UPC, actualmente cursando el octavo ciclo. Durante mi formación académica he adquirido sólidos conocimientos en múltiples lenguajes de programación y frameworks, desarrollando competencias especializadas en frontend, backend y bases de datos. Me interesa especialmente contribuir a proyectos de código abierto, como Angular, Spring y otras herramientas modernas. Me considero una persona curiosa y proactiva, con una visión optimista del futuro tecnológico.</td>
     </tr>
     <tr>
-      <td><strong>[COMPLETAR: Apellidos, Nombres]</strong><br>[COMPLETAR: descripción]</td>
-      <td><img src="assets/images/photos/[COMPLETAR].jpg" alt="[COMPLETAR]" width="200"></td>
+      <td><img src="assets/images/members/[NOMBRE].png" alt="[NOMBRE]" width="200"></td>
+      <td><strong>[Apellido, Nombre]</strong></td>
+      <td>U[CÓDIGO ESTUDIANTE]</td>
+      <td>[Descripción breve de perfil profesional, habilidades y especialidades - similar al ejemplo de Diego]</td>
     </tr>
     <tr>
-      <td><strong>[COMPLETAR: Apellidos, Nombres]</strong><br>[COMPLETAR: descripción]</td>
-      <td><img src="assets/images/photos/[COMPLETAR].jpg" alt="[COMPLETAR]" width="200"></td>
+      <td><img src="assets/images/members/[NOMBRE].png" alt="[NOMBRE]" width="200"></td>
+      <td><strong>[Apellido, Nombre]</strong></td>
+      <td>U[CÓDIGO ESTUDIANTE]</td>
+      <td>[Descripción breve de perfil profesional, habilidades y especialidades - similar al ejemplo de Diego]</td>
     </tr>
     <tr>
-      <td><strong>[COMPLETAR: Apellidos, Nombres]</strong><br>[COMPLETAR: descripción]</td>
-      <td><img src="assets/images/photos/[COMPLETAR].jpg" alt="[COMPLETAR]" width="200"></td>
+      <td><img src="assets/images/members/[NOMBRE].png" alt="[NOMBRE]" width="200"></td>
+      <td><strong>[Apellido, Nombre]</strong></td>
+      <td>U[CÓDIGO ESTUDIANTE]</td>
+      <td>[Descripción breve de perfil profesional, habilidades y especialidades - similar al ejemplo de Diego]</td>
     </tr>
     <tr>
-      <td><strong>[COMPLETAR: Apellidos, Nombres]</strong><br>[COMPLETAR: descripción]</td>
-      <td><img src="assets/images/photos/[COMPLETAR].jpg" alt="[COMPLETAR]" width="200"></td>
+      <td><img src="assets/images/members/[NOMBRE].png" alt="[NOMBRE]" width="200"></td>
+      <td><strong>[Apellido, Nombre]</strong></td>
+      <td>U[CÓDIGO ESTUDIANTE]</td>
+      <td>[Descripción breve de perfil profesional, habilidades y especialidades - similar al ejemplo de Diego]</td>
+    </tr>
+    <tr>
+      <td><img src="assets/images/members/[NOMBRE].png" alt="[NOMBRE]" width="200"></td>
+      <td><strong>[Apellido, Nombre]</strong></td>
+      <td>U[CÓDIGO ESTUDIANTE]</td>
+      <td>[Descripción breve de perfil profesional, habilidades y especialidades - similar al ejemplo de Diego]</td>
+    </tr>
+    <tr>
+      <td><img src="assets/images/members/[NOMBRE].png" alt="[NOMBRE]" width="200"></td>
+      <td><strong>[Apellido, Nombre]</strong></td>
+      <td>U[CÓDIGO ESTUDIANTE]</td>
+      <td>[Descripción breve de perfil profesional, habilidades y especialidades - similar al ejemplo de Diego]</td>
     </tr>
   </tbody>
 </table>
@@ -289,6 +313,21 @@ plantas saludables mientras fortalecen su conexión con el medio ambiente.
 <hr class="page-break">
 
 ## 1.2. Solution Profile
+
+Esta sección describe el perfil de la solución propuesta, desarrollada
+incrementalmente según una metodología Lean UX Process. PlantSync
+combina una aplicación móvil y web con tecnologías IoT y un chatbot
+inteligente, ofreciendo herramientas innovadoras para el seguimiento
+y cuidado automatizado de plantas en el hogar.
+
+A través de PlantSync, los usuarios pueden registrar sus plantas y recibir
+cuidado automatizado. La plataforma integra sensores IoT que monitorean en
+tiempo real aspectos clave del entorno de las plantas, generando alertas
+automáticas que permiten automatizar el riego y mantenimiento. Complementariamente,
+un chatbot entrenado en botánica ofrece recomendaciones personalizadas, mientras
+que recordatorios automáticos por correo electrónico aseguran un seguimiento
+constante. De esta forma, PlantSync integra la precisión de datos IoT con
+asesoramiento experto, promoviendo un cuidado de plantas optimizado y sostenible.
 
 ### 1.2.1. Antecedentes y problemática
 
