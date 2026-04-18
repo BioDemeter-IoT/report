@@ -355,10 +355,10 @@ Esta desconexión genera una brecha de éxito. Mientras que las plantas operan b
 
 + **Diferencia entre estado óptimo y problema:** En el estado óptimo, la planta mantiene una homeostasis botánica donde los niveles de radiación fotosintética activa (PAR) son constantes y adecuados para su especie, lo que se traduce en un crecimiento vigoroso y beneficios psicológicos medibles para el usuario, como la reducción del cortisol. En el estado de problema, existe una "asimetría de información": el usuario percibe la planta como "sana" visualmente, mientras que internamente la planta ya sufre un déficit de lúmenes o estrés hídrico que el ojo humano no detecta a tiempo. Esta brecha entre la percepción humana y la necesidad biológica es lo que la tecnología IoT viene a cerrar mediante datos objetivos.
 
-+ **Patrón de aparición:** El problema no es aleatorio; sigue patrones cíclicos. Estos se dividen en:\n
-+ **Patrones circadianos:** Déficits de luz en horarios específicos del día debido a la rotación solar y sombras urbanas (edificios).
-+ **Patrones estacionales:** Variaciones en la intensidad lumínica según la época del año.
-+ **Patrones de actividad humana:** La falta de cuidado coincide con las jornadas laborales de 8 a 10 horas o periodos de viaje, momentos en los que el usuario se desconecta físicamente de la planta.
++ **Patrón de aparición:** El problema no es aleatorio; sigue patrones cíclicos. Estos se dividen en:
+ + **Patrones circadianos:** Déficits de luz en horarios específicos del día debido a la rotación solar y sombras urbanas (edificios).
+ + **Patrones estacionales:** Variaciones en la intensidad lumínica según la época del año.
+ + **Patrones de actividad humana:** La falta de cuidado coincide con las jornadas laborales de 8 a 10 horas o periodos de viaje, momentos en los que el usuario se desconecta físicamente de la planta.
 
 #### HOW MUCH (Cuánto)
 
