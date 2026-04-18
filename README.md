@@ -226,6 +226,33 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 ### 1.1.1. Descripción de la Startup
 
+Nuestra startup, BioDemeter, se establece con la misión de ofrecer soluciones tecnológicas 
+para el mantenimiento de plantas en hogares, aprovechando al máximo las tecnologías IoT para 
+promover un cambio positivo en el medio ambiente.
+
+Nuestro producto, PlantSync, es un servicio digital accesible desde aplicaciones web y móvil 
+que facilita a los usuarios el seguimiento y cuidado de sus plantas. Proporciona información 
+en tiempo real sobre las condiciones ambientales, recomendaciones personalizadas de riego y 
+fertilización, alertas automáticas, guías de cuidado e identificación de plantas mediante 
+fotografías. Nuestro compromiso es fomentar la responsabilidad ambiental mientras 
+contribuimos a la sostenibilidad.
+
+**Visión:** 
+
+En un período de cinco años, BioDemeter alcanzará la posición de vanguardia en el 
+mercado de soluciones tecnológicas para el cuidado de plantas en el hogar. PlantSync 
+se consolidará como la aplicación de referencia para entusiastas de la jardinería 
+hogareña en América Latina, quienes buscan mantener sus plantas saludables y 
+vibrantes. Nos destacaremos por la excelencia, la asequibilidad y la originalidad 
+de nuestras soluciones.
+
+**Misión:**
+
+Nuestra misión es facilitar el cuidado de plantas en el hogar mediante soluciones 
+tecnológicas accesibles e inteligentes. Nos comprometemos a proporcionar 
+herramientas personalizadas que permitan a nuestros usuarios mantener sus 
+plantas saludables mientras fortalecen su conexión con el medio ambiente.
+
 ### 1.1.2. Perfiles de integrantes del equipo
 
 <table>
