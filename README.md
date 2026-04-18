@@ -317,48 +317,48 @@ Esta desconexión genera una brecha de éxito. Mientras que las plantas operan b
 
 #### WHO (Quién)
 
-+Afectados directos: Entusiastas del cuidado de plantas, divididos en novatos (quienes sufren mayor frustración emocional por la muerte de sus ejemplares) y experimentados (quienes buscan precisión y optimización de su tiempo); quienes dependen de su intuición o de cronogramas manuales que a menudo fallan por falta de datos objetivos.
++ **Afectados directos:** Entusiastas del cuidado de plantas, divididos en novatos (quienes sufren mayor frustración emocional por la muerte de sus ejemplares) y experimentados (quienes buscan precisión y optimización de su tiempo); quienes dependen de su intuición o de cronogramas manuales que a menudo fallan por falta de datos objetivos.
 
-+Beneficiarios indirectos: El ecosistema doméstico y la salud mental del usuario, dado que las plantas actúan como mediadoras de bienestar y agentes de "salutogénesis"
++ **Beneficiarios indirectos:** El ecosistema doméstico y la salud mental del usuario, dado que las plantas actúan como mediadoras de bienestar y agentes de "salutogénesis"
 
 #### WHAT (Qué)
 
-+El problema: Una alta tasa de mortalidad y deterioro de plantas ornamentales en entornos urbanos debido a la incapacidad del ser humano para interpretar las señales bióticas (como el déficit lumínico) en tiempo real.
++ **El problema:** Una alta tasa de mortalidad y deterioro de plantas ornamentales en entornos urbanos debido a la incapacidad del ser humano para interpretar las señales bióticas (como el déficit lumínico) en tiempo real.
 
-+El objeto técnico: Un sistema IoT compuesto por un sensor de luminosidad real y un actuador de iluminación UV real, complementado con sensores y actuadores simulados para cubrir variables como humedad y temperatura.
++ **El objeto técnico:** Un sistema IoT compuesto por un sensor de luminosidad real y un actuador de iluminación UV real, complementado con sensores y actuadores simulados para cubrir variables como humedad y temperatura.
 
-+El servicio: Una plataforma multiplataforma que ofrece control táctico y alertas en una Mobile App, junto con análisis estratégico de datos en una Web App.
++ **El servicio:** Una plataforma multiplataforma que ofrece control táctico y alertas en una Mobile App, junto con análisis estratégico de datos en una Web App.
 
 #### WHERE (Dónde)
 
-+Espacio físico: Hogares urbanos, departamentos con iluminación natural inconsistente y oficinas donde el microclima no siempre es apto para la vida vegetal.
++ **Espacio físico:** Hogares urbanos, departamentos con iluminación natural inconsistente y oficinas donde el microclima no siempre es apto para la vida vegetal.
 
-+Entorno digital: La interacción ocurre en el "Edge" (dispositivo físico), en la nube (procesamiento de datos) y en las interfaces de usuario (móvil y web).
++ **Entorno digital:** La interacción ocurre en el "Edge" (dispositivo físico), en la nube (procesamiento de datos) y en las interfaces de usuario (móvil y web).
 
 #### WHEN (Cuándo)
 
-+Temporalidad del problema: El riesgo de daño irreversible es continuo, pero se intensifica durante las jornadas laborales extensas, viajes del usuario o cambios estacionales que alteran la radiación solar recibida por la planta.
++ **Temporalidad del problema:** El riesgo de daño irreversible es continuo, pero se intensifica durante las jornadas laborales extensas, viajes del usuario o cambios estacionales que alteran la radiación solar recibida por la planta.
 
-+Ciclo de vida: Desde la adquisición de la planta (fase crítica para el novato) hasta su mantenimiento a largo plazo (fase de optimización para el experto).
++ **Ciclo de vida:** Desde la adquisición de la planta (fase crítica para el novato) hasta su mantenimiento a largo plazo (fase de optimización para el experto).
 
-+Momento de la alerta: La notificación debe ser inmediata al detectar una anomalía lumínica o un fallo en la conectividad del sistema, permitiendo una "sinergia de cuidados".
++ **Momento de la alerta:** La notificación debe ser inmediata al detectar una anomalía lumínica o un fallo en la conectividad del sistema, permitiendo una "sinergia de cuidados".
 
 #### WHY (Por qué)
 
-+Justificación: Existe una "separación de sociedad y naturaleza" que ha dejado a los humanos sin la capacidad de entender las necesidades de las plantas.
++ **Justificación:** Existe una "separación de sociedad y naturaleza" que ha dejado a los humanos sin la capacidad de entender las necesidades de las plantas.
 
-+Causa raíz: La falta de herramientas accesibles que transformen datos crudos en acciones automáticas (como encender luz UV ante déficit solar) y en pedagogías vegetales para el usuario.
++ **Causa raíz:** La falta de herramientas accesibles que transformen datos crudos en acciones automáticas (como encender luz UV ante déficit solar) y en pedagogías vegetales para el usuario.
 
-+Motivación psicológica: El fracaso en el cuidado botánico genera una percepción de incapacidad personal, afectando el bienestar que el hobby debería proporcionar.
++ **Motivación psicológica:** El fracaso en el cuidado botánico genera una percepción de incapacidad personal, afectando el bienestar que el hobby debería proporcionar.
 
 #### HOW (Cómo)
 
-+Diferencia entre estado óptimo y problema: En el estado óptimo, la planta mantiene una homeostasis botánica donde los niveles de radiación fotosintética activa (PAR) son constantes y adecuados para su especie, lo que se traduce en un crecimiento vigoroso y beneficios psicológicos medibles para el usuario, como la reducción del cortisol. En el estado de problema, existe una "asimetría de información": el usuario percibe la planta como "sana" visualmente, mientras que internamente la planta ya sufre un déficit de lúmenes o estrés hídrico que el ojo humano no detecta a tiempo. Esta brecha entre la percepción humana y la necesidad biológica es lo que la tecnología IoT viene a cerrar mediante datos objetivos.
++ **Diferencia entre estado óptimo y problema:** En el estado óptimo, la planta mantiene una homeostasis botánica donde los niveles de radiación fotosintética activa (PAR) son constantes y adecuados para su especie, lo que se traduce en un crecimiento vigoroso y beneficios psicológicos medibles para el usuario, como la reducción del cortisol. En el estado de problema, existe una "asimetría de información": el usuario percibe la planta como "sana" visualmente, mientras que internamente la planta ya sufre un déficit de lúmenes o estrés hídrico que el ojo humano no detecta a tiempo. Esta brecha entre la percepción humana y la necesidad biológica es lo que la tecnología IoT viene a cerrar mediante datos objetivos.
 
-+Patrón de aparición: El problema no es aleatorio; sigue patrones cíclicos. Estos se dividen en:
-++Patrones circadianos: Déficits de luz en horarios específicos del día debido a la rotación solar y sombras urbanas (edificios).
-++Patrones estacionales: Variaciones en la intensidad lumínica según la época del año.
-++Patrones de actividad humana: La falta de cuidado coincide con las jornadas laborales de 8 a 10 horas o periodos de viaje, momentos en los que el usuario se desconecta físicamente de la planta.
++ **Patrón de aparición:** El problema no es aleatorio; sigue patrones cíclicos. Estos se dividen en:\n
++ **Patrones circadianos:** Déficits de luz en horarios específicos del día debido a la rotación solar y sombras urbanas (edificios).
++ **Patrones estacionales:** Variaciones en la intensidad lumínica según la época del año.
++ **Patrones de actividad humana:** La falta de cuidado coincide con las jornadas laborales de 8 a 10 horas o periodos de viaje, momentos en los que el usuario se desconecta físicamente de la planta.
 
 #### HOW MUCH (Cuánto)
 
