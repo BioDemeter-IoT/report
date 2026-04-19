@@ -291,6 +291,27 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
+
+#### Hypothesis Statement 01 
+
+Creemos que los expertos y principiantes cuidadores de plantas necesitan una plataforma con monitoreo automatizado mediante sensores IoT que les permita conocer el estado real de sus plantas (humedad del suelo y temperatura ambiental) sin depender de la observación visual o recordatorios manuales.
+Sabremos que hemos tenido éxito cuando la tasa de adopción activa (usuarios que registran al menos una planta, vinculan un nodo IoT y mantienen la telemetría funcionando por más de 14 días consecutivos) se encuentre alrededor del 70% del total de usuarios registrados en la plataforma.
+
+
+#### Hypothesis Statement 02 
+
+Creemos que las alertas proactivas basadas en datos reales de sensores (humedad del suelo, temperatura) ayudarán más a los usuarios a tener plantas saludables que los recordatorios fijos.
+Sabremos que esto es cierto cuando al menos el 70% de los usuarios con sensores instalados reporten una mejora en la salud de sus plantas en 2 semanas.
+
+#### Hypothesis Statement 03
+Creemos que la visualización en tiempo real e histórica de la telemetría (humedad, temperatura) será de ayuda para que los usuarios ajusten sus rutinas de cuidado.
+Sabremos que esto es cierto cuando al menos el 40% de los usuarios revisen el dashboard de telemetría al menos 3 veces por semana 
+
+
+#### Hypothesis Statement 04
+Creemos que la implementación de guías vinculadas a alertas IoT   será de ayuda para principiantes.
+Sabremos que esto es cierto cuando el segmento principiante consulte guías al menos una vez por semana y el 30% de esas consultas vengan directamente desde una alerta del sistema.
+
 #### 1.2.2.4. Lean UX Canvas
 
 <hr class="page-break">
