@@ -326,6 +326,37 @@ Sabremos que esto es cierto cuando el segmento principiante consulte guías al m
 
 ## 1.3. Segmentos objetivo
 
+Según Revista Economía (2020), los peruanos realizaron más de 51 mil búsquedas online relacionadas a áreas verdes de enero a octubre del 2020. De las cuales un 66% eran de mantenimiento y mejora de jardines en el hogar. El 64% de las personas que realizaron estas búsquedas tenian entre 34 y 50 años. Ello nos indica que hay segmentos con poder adquisitivo dispuestos a adoptar soluciones tecnológicas que les faciliten el cuidado de sus espacios verdes.
+
+### Principiantes cuidadores de plantas
+
+Personas interesadas en iniciarse en el cuidado de plantas que buscan evitar el fracaso inicial mediante tecnología sencilla.
+
+##### Características demográficas:
+
+  - Edad: De 18 a 45 años.
+
+  - Ubicación: Residentes de zonas urbanas (departamentos) con espacio limitado y poco conocimiento botánico.
+
+  - Nivel socioeconómico: Medio. Valoran soluciones que les ahorren tiempo y dinero al evitar que sus plantas mueran.
+
+  - Nivel educativo: Con conocimientos de tecnologia.
+
+### Expertos cuidadores de plantas
+
+Personas con amplia experiencia y colecciones botánicas que buscan optimizar el crecimiento de sus ejemplares mediante datos precisos.
+
+#### Características demográficas:
+
+- Edad: De 25 a 55 años.
+
+- Ubicación: Residentes de áreas urbanas y suburbanas con espacios dedicados (terrazas o jardines interiores).
+
+- Nivel socioeconómico: Medio a alto . Dispuestos a invertir en hardware (nodos IoT) para proteger plantas de alto valor o especies exóticas.
+
+- Nivel educativo: Perfil tecnológico avanzado. Se sienten cómodos analizando gráficas de telemetría y comparando datos históricos.
+
+
 <hr class="page-break">
 
 # Capítulo II: Requirements Elicitation & Analysis
@@ -871,6 +902,8 @@ Los integrantes del equipo y sus nombres de usuario en GitHub son los siguientes
 <hr class="page-break">
 
 # Bibliografía
+
+Revista Economía. (2020). Incremento del interés de los peruanos por el cuidado de las áreas verdes. https://www.revistaeconomia.com/incremento-del-interes-de-los-peruanos-por-el-cuidado-de-las-areas-verdes/
 
 <hr class="page-break">
 
