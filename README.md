@@ -392,7 +392,14 @@ Esta desconexión genera una brecha de éxito. Mientras que las plantas operan b
 ### 1.2.2. Lean UX Process
 
 #### 1.2.2.1. Lean UX Problem Statements
-
+Nuestra plataforma IoT de monitoreo y cuidado de plantas fue diseñada para lograr que los usuarios mantengan la salud de sus plantas de forma óptima y mejoren su bienestar emocional mediante datos precisos. Hemos observado que el servicio actual del mercado no está cumpliendo con la interpretación efectiva de las señales bióticas de las plantas, lo que está causando una tasa de mortalidad botánica del 35% y frustración en el usuario. ¿Cómo podríamos mejorar nuestra plataforma IoT para que nuestros clientes tengan más éxito basándonos en la reducción del 50% de la pérdida de plantas domésticas y el incremento del tiempo de vida de los ejemplares monitoreados?
+**Aspectos Específicos:**
++ **Domain:** Smart Gardening e IoT aplicado a la horticultura doméstica y la salud ambiental.
++ **Customer Segments:** Entusiastas novatos y cuidadores experimentados de plantas domésticas.
++ **Pain Points:** Incertidumbre sobre el estado real de la planta, falta de tiempo para monitoreo constante y limitación de movilidad para actuar sobre la planta.
++ **Gap:** Inexistencia de soluciones accesibles que unifiquen sensores reales con actuadores automáticos en una experiencia multiplataforma (Web/Móvil).
++ **Visión/Strategy:** Ecosistema integrado de hardware (Edge API) y software (RESTful API) que democratice el cuidado botánico de precisión.
++ **Initial Segment:** Entusiastas novatos con el hobby del cuidado de plantas.
 
 #### 1.2.2.2. Lean UX Assumptions
 
