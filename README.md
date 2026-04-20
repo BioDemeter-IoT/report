@@ -362,7 +362,32 @@ Esta desconexión genera una brecha de éxito. Mientras que las plantas operan b
 
 #### HOW MUCH (Cuánto)
 
-Considerando que el 80% de la vida en la tierra es vegetal , la oportunidad de impacto en la salud pública mediante la "prescripción social" del cuidado de plantas es masiva.
++ **Frecuencia y Gravedad de los Problemas:**
+  + **Mortalidad:** Aproximadamente el 35% de las plantas mueren en hogares por cuidados inadecuados.
+  + **Impacto diario:** Se detectan de 3 a 5 fluctuaciones críticas de luz al día que requieren intervención automática o manual.
++ **Implicación económica:**
+  + Tomando como referencia a esta tienda online [https://www.teslaelectronic.com.pe/tarjetas-arduino/](https://www.teslaelectronic.com.pe/tarjetas-arduino/), el desglose de costos de IoT es el siguiente, tomando como costo máximo **S/.237**: 
+  
+  | Componente | Costo unitario | Descripción |
+  |---|---|---|
+  |Arduino UNO R4 WiFi|S/.129|Placa arduino|
+  |Sensor de Humedad de Suelo Capacitivo v2.0|S/.15|Mide la humedad en la tierra que detecta el sensor|
+  |Módulo detector de radiación UVB con ML8511|S/.68|Mide la luz ultravioleta que llega al sensor|
+  |Módulo sensor de luz BH1750|S/.15|Mide la luz que llega al sensor|
+  |Sensor DHT11 Temperatura y Humedad KY-015|S/.10|Mide la temperatura y humedad del ambiente|
+  
+  +  Tomando como referencia a esta plataforma de reclutamiento [https://jobicy.com/salaries/pe/software-developer#salary-section](https://jobicy.com/salaries/pe/software-developer#salary-section), y tomando en cuenta el equipo de 7 desarrolladores junior, el desglose de desarrollo sería el siguiente, tomando como costo máximo :
+  
+  |Herramienta|Costo unitario mensual|Descripción|
+  |-|-|-|
+  |Capital humano | 8750$ | 15000$ (salario anual junior estimado) ÷ 12 meses * 7 integrantes
+  | AWS App Runner (Backend) | 15$| Despliegue del RESTful API (Spring Boot/ASP.NET Core).
+  | Vercel Pro (Frontend) | 20$ | Hosting de alta disponibilidad para la Web Application (Angular/Vue).|
+  | Figma Profesional | 20$ | Licencias para el diseño de Wireframes, Mock-ups y Prototipos.
+  | UXPressia Pro | 36$ | Elaboración de User Personas, Journey Maps e Impact Maps.
+  | Lucid Suite Individual| 18$ | Diagramas C4 Model, UML y Database Design. | 
+  | Jira Standard | 7.91$ | Gestión de Product Backlog y Sprints.|
+  
 
 ### 1.2.2. Lean UX Process
 
