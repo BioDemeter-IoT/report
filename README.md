@@ -314,6 +314,14 @@ Sabremos que esto es cierto cuando el segmento principiante consulte guías al m
 
 #### 1.2.2.4. Lean UX Canvas
 
+
+<p align="center">
+    <img src="images/leanux.png" alt="leanux" width="850px" height="450px"/>
+</p>
+
+[Enlace al tablero en Miro](https://miro.com/app/board/uXjVHfgR13k=/?share_link_id=679214059458)
+
+
 <hr class="page-break">
 
 ## 1.3. Segmentos objetivo
