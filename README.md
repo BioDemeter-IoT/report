@@ -503,14 +503,130 @@ Personas con amplia experiencia y colecciones botánicas que buscan optimizar el
 </table>
 
 ### 2.3.3. User Journey Mapping
+#### Journey principiante
+Este mapa muestra el recorrido de una persona con poca experiencia en jardinería que compra plantas para decorar su hogar y descubre que se deterioran sin entender por qué. A través de las etapas Aware, Join, Use, Develop y Leave se ilustran sus objetivos, acciones, problemas y emociones al buscar información en internet, probar consejos y, eventualmente, apoyarse en una solución digital que le ofrezca recordatorios y recomendaciones simples para mantener sus plantas sanas.
+<p align="center">
+  <img src="https://i.imgur.com/SePmnIE.png" alt="Customer journey map 1" width="800" />
+</p>
+
+#### Journey experto
+Este mapa representa el recorrido de un cuidador de plantas con varios años de experiencia y una colección amplia, que comienza a sentir límites al gestionar muchas especies con necesidades distintas. En las etapas Aware, Join, Use, Develop y Leave se detallan sus motivaciones, procesos, dificultades y emociones al investigar soluciones más avanzadas, registrar y analizar datos de sus plantas y evaluar si una herramienta digital le aporta suficiente valor para optimizar y profesionalizar su rutina de cuidado.
+<p align="center">
+  <img src="https://i.imgur.com/ZUyIz9G.png" alt="Customer journey map 2" width="800" />
+</p>
 
 ### 2.3.4. Empathy Mapping
+#### Segmento 1 — Principiante cuidador de plantas
 
+A continuación se presenta el mapa de empatía correspondiente al segmento de principiantes, representado por Alejandro Flores, joven de 20 años de Chorrillos, Lima, quien se inició en el cuidado de plantas en 2025 sin conocimientos previos ni herramientas de apoyo.
+<p align="center">
+  <img src="https://i.imgur.com/w0RteIM.png" alt="Empathy Mapping 1" width="800" />
+</p>
+
+#### Segmento 2 — Experto cuidador de plantas
+A continuación se presenta el mapa de empatía correspondiente al segmento de expertos, representado por Leonor Gonzales, cuidadora de 60 años de San Miguel, Lima, con más de 6 años de experiencia en jardinería doméstica y una amplia colección de plantas que gestiona sin ningún sistema de registro formal.
+<p align="center">
+  <img src="https://i.imgur.com/xSP5NY3.png" alt="Empathy Mapping 2" width="800" />
+</p>
 <hr class="page-break">
 
 ## 2.4. Big Picture EventStorming
+A continuación se presenta el Big Picture Event Storming correspondiente al segmento de principiantes, representado por Alejandro Flores, mostrando el flujo de eventos del dominio desde el momento en que detecta el deterioro de su planta hasta que establece una rutina de cuidado sostenida con el apoyo de BioPafi.
+<p align="center">
+  <img src="https://i.imgur.com/K7F6hVq.png" alt="EventStorming 1" width="800" />
+</p>
+<hr class="page-break">
+A continuación se presenta el Big Picture Event Storming correspondiente al segmento de expertos, representado por Leonor Gonzales, mostrando el flujo de eventos del dominio desde que identifica los límites de gestionar su colección por memoria hasta que sistematiza y optimiza sus rutinas de cuidado mediante análisis histórico en BioPafi.
+<p align="center">
+  <img src="https://i.imgur.com/4zo2vHs.png" alt="EventStorming 2" width="800" />
+</p>
+<hr class="page-break">
 
 ## 2.5. Ubiquitous Language
+<table>
+  <thead>
+    <tr>
+      <th>Término</th>
+      <th>Tipo</th>
+      <th>Definición en el dominio de BioPafi</th>
+      <th>Ejemplo de uso</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Planta Registrada / Plant Registry</strong></td>
+      <td>Dominio</td>
+      <td>Funcionalidad que permite a los usuarios registrar sus plantas ingresando datos como nombre, especie, fecha de adquisición y condiciones del entorno.</td>
+      <td>"El usuario tiene 4 plantas registradas: 2 interiores y 2 exteriores."</td>
+    </tr>
+    <tr>
+      <td><strong>Sensor IoT / Nodo IoT</strong></td>
+      <td>Sistema</td>
+      <td>Dispositivo físico instalado en la maceta que captura humedad del suelo, temperatura y humedad ambiental, enviando lecturas periódicas a BioPafi.</td>
+      <td>"El nodo IoT reportó humedad crítica al 18%."</td>
+    </tr>
+    <tr>
+      <td><strong>Lectura de Sensor</strong></td>
+      <td>Sistema</td>
+      <td>Conjunto de valores capturados por el sensor en un instante: humedad del suelo, temperatura, humedad ambiental y timestamp.</td>
+      <td><code>{humedad: 22%, temp: 26°C, ts: 21/04/2026 08:00}</code></td>
+    </tr>
+    <tr>
+      <td><strong>Alerta de Cuidado / Care Reminders</strong></td>
+      <td>Evento</td>
+      <td>Sistema de notificaciones que alerta a los usuarios sobre tareas pendientes de cuidado como riego, fertilización y cambios de sustrato.</td>
+      <td>"Tu Pothos necesita riego: humedad del suelo al 22%."</td>
+    </tr>
+    <tr>
+      <td><strong>Estado de Salud / Plant Health Monitoring</strong></td>
+      <td>Dominio</td>
+      <td>Seguimiento automático del estado de salud de las plantas basado en reportes del usuario, fotos y datos ambientales proporcionados. Representado visualmente como: Óptimo / En riesgo / Crítico.</td>
+      <td>"Estado de salud: Crítico — humedad bajo el umbral mínimo."</td>
+    </tr>
+    <tr>
+      <td><strong>Historial de Cuidados</strong></td>
+      <td>Dominio</td>
+      <td>Registro cronológico de todas las acciones realizadas sobre una planta y las lecturas históricas del sensor asociado.</td>
+      <td>"Esta planta fue regada 3 veces en los últimos 10 días."</td>
+    </tr>
+    <tr>
+      <td><strong>Recomendación Personalizada / Adaptive Care Recommendations</strong></td>
+      <td>Sistema</td>
+      <td>Sugerencias personalizadas de cuidado generadas dinámicamente según la especie de la planta, las condiciones reportadas y los cambios ambientales detectados.</td>
+      <td>"Con 28°C y humedad baja, mueve tu helecho a sombra parcial."</td>
+    </tr>
+    <tr>
+      <td><strong>Identificación de Planta / Plant Identification</strong></td>
+      <td>Sistema</td>
+      <td>Funcionalidad que permite reconocer especies de plantas mediante fotografías, usando algoritmos de análisis de imagen.</td>
+      <td>"El sistema identificó la planta como Ficus lyrata y mostró su guía de cuidado."</td>
+    </tr>
+    <tr>
+      <td><strong>Clima Local</strong></td>
+      <td>Sistema</td>
+      <td>Datos de temperatura y humedad ambiental obtenidos de una API externa para ajustar dinámicamente las recomendaciones de cuidado.</td>
+      <td>"BioPafi detectó 30°C en Lima y ajustó la frecuencia de riego."</td>
+    </tr>
+    <tr>
+      <td><strong>Usuario Principiante</strong></td>
+      <td>Actor</td>
+      <td>Segmento con poca experiencia. Necesita guías visuales paso a paso y recordatorios automáticos para evitar errores básicos.</td>
+      <td>Alejandro, 20 años, Chorrillos. Perdió su primera planta por exceso de riego.</td>
+    </tr>
+    <tr>
+      <td><strong>Usuario Experto</strong></td>
+      <td>Actor</td>
+      <td>Segmento con amplia experiencia. Busca sistematizar una colección extensa mediante datos históricos y análisis avanzado.</td>
+      <td>Leonor, 60 años, San Miguel. Gestiona más de 10 especies sin registro formal.</td>
+    </tr>
+    <tr>
+      <td><strong>Regla de Cuidado</strong></td>
+      <td>Política</td>
+      <td>Condición que dispara automáticamente una alerta cuando un valor del sensor supera o cae por debajo de un umbral definido para la especie.</td>
+      <td>"Si humedad &lt; 25% en Pothos → generar alerta de riego."</td>
+    </tr>
+  </tbody>
+</table>
 
 <hr class="page-break">
 
