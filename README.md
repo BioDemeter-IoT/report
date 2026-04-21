@@ -531,6 +531,16 @@ A continuación se presenta el mapa de empatía correspondiente al segmento de e
 <hr class="page-break">
 
 ## 2.4. Big Picture EventStorming
+A continuación se presenta el Big Picture Event Storming correspondiente al segmento de principiantes, representado por Alejandro Flores, mostrando el flujo de eventos del dominio desde el momento en que detecta el deterioro de su planta hasta que establece una rutina de cuidado sostenida con el apoyo de BioPafi.
+<p align="center">
+  <img src="https://i.imgur.com/K7F6hVq.png" alt="EventStorming 1" width="800" />
+</p>
+<hr class="page-break">
+A continuación se presenta el Big Picture Event Storming correspondiente al segmento de expertos, representado por Leonor Gonzales, mostrando el flujo de eventos del dominio desde que identifica los límites de gestionar su colección por memoria hasta que sistematiza y optimiza sus rutinas de cuidado mediante análisis histórico en BioPafi.
+<p align="center">
+  <img src="https://i.imgur.com/4zo2vHs.png" alt="EventStorming 2" width="800" />
+</p>
+<hr class="page-break">
 
 ## 2.5. Ubiquitous Language
 
