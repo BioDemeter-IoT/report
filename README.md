@@ -543,6 +543,161 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
 <hr class="page-break">
 
 ## 2.5. Ubiquitous Language
+<table>
+  <thead>
+    <tr>
+      <th>Término</th>
+      <th>Tipo</th>
+      <th>Definición en el dominio de BioPafi</th>
+      <th>Ejemplo de uso</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Planta Registrada</strong></td>
+      <td>Dominio</td>
+      <td>Planta añadida a la plataforma por un usuario con nombre, especie, ubicación (interior/exterior) y notas iniciales de cuidado.</td>
+      <td>"El usuario tiene 4 plantas registradas: 2 interiores y 2 exteriores."</td>
+    </tr>
+    <tr>
+      <td><strong>Sensor IoT / Nodo IoT</strong></td>
+      <td>Sistema</td>
+      <td>Dispositivo físico instalado en la maceta que captura humedad del suelo, temperatura y humedad ambiental, enviando lecturas periódicas a BioPafi.</td>
+      <td>"El nodo IoT reportó humedad crítica al 18%."</td>
+    </tr>
+    <tr>
+      <td><strong>Lectura de Sensor</strong></td>
+      <td>Sistema</td>
+      <td>Conjunto de valores capturados por el sensor en un instante: humedad del suelo, temperatura, humedad ambiental y timestamp.</td>
+      <td><code>{humedad: 22%, temp: 26°C, ts: 21/04/2026 08:00}</code></td>
+    </tr>
+    <tr>
+      <td><strong>Alerta de Cuidado</strong></td>
+      <td>Evento</td>
+      <td>Notificación generada automáticamente cuando las lecturas del sensor o las reglas de negocio indican que una planta requiere acción inmediata.</td>
+      <td>"Tu Pothos necesita riego: humedad del suelo al 22%."</td>
+    </tr>
+    <tr>
+      <td><strong>Estado de Salud</strong></td>
+      <td>Dominio</td>
+      <td>Evaluación del bienestar actual de una planta representada visualmente en la plataforma: Óptimo / En riesgo / Crítico.</td>
+      <td>"Estado de salud: Crítico — humedad bajo el umbral mínimo."</td>
+    </tr>
+    <tr>
+      <td><strong>Historial de Cuidados</strong></td>
+      <td>Dominio</td>
+      <td>Registro cronológico de todas las acciones realizadas sobre una planta y las lecturas históricas del sensor asociado.</td>
+      <td>"Esta planta fue regada 3 veces en los últimos 10 días."</td>
+    </tr>
+    <tr>
+      <td><strong>Recomendación Personalizada</strong></td>
+      <td>Sistema</td>
+      <td>Sugerencia generada combinando el tipo de planta, el historial de cuidados y el clima local para indicar la acción más adecuada.</td>
+      <td>"Con 28°C y humedad baja, mueve tu helecho a sombra parcial."</td>
+    </tr>
+    <tr>
+      <td><strong>Clima Local</strong></td>
+      <td>Sistema</td>
+      <td>Datos de temperatura y humedad ambiental obtenidos de una API externa para ajustar dinámicamente las recomendaciones de cuidado.</td>
+      <td>"BioPafi detectó 30°C en Lima y ajustó la frecuencia de riego."</td>
+    </tr>
+    <tr>
+      <td><strong>Usuario Principiante</strong></td>
+      <td>Actor</td>
+      <td>Segmento con poca experiencia. Necesita guías visuales paso a paso y recordatorios automáticos para evitar errores básicos.</td>
+      <td>Alejandro, 20 años, Chorrillos. Perdió su primera planta por exceso de riego.</td>
+    </tr>
+    <tr>
+      <td><strong>Usuario Experto</strong></td>
+      <td>Actor</td>
+      <td>Segmento con amplia experiencia. Busca sistematizar una colección extensa mediante datos históricos y análisis avanzado.</td>
+      <td>Leonor, 60 años, San Miguel. Gestiona más de 10 especies sin registro formal.</td>
+    </tr>
+    <tr>
+      <td><strong>Regla de Cuidado</strong></td>
+      <td>Política</td>
+      <td>Condición que dispara automáticamente una alerta cuando un valor del sensor supera o cae por debajo de un umbral definido para la especie.</td>
+      <td>"Si humedad &lt; 25% en Pothos → generar alerta de riego."</td>
+    </tr>
+  </tbody>
+</table><table>
+  <thead>
+    <tr>
+      <th>Término</th>
+      <th>Tipo</th>
+      <th>Definición en el dominio de BioPafi</th>
+      <th>Ejemplo de uso</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Planta Registrada</strong></td>
+      <td>Dominio</td>
+      <td>Planta añadida a la plataforma por un usuario con nombre, especie, ubicación (interior/exterior) y notas iniciales de cuidado.</td>
+      <td>"El usuario tiene 4 plantas registradas: 2 interiores y 2 exteriores."</td>
+    </tr>
+    <tr>
+      <td><strong>Sensor IoT / Nodo IoT</strong></td>
+      <td>Sistema</td>
+      <td>Dispositivo físico instalado en la maceta que captura humedad del suelo, temperatura y humedad ambiental, enviando lecturas periódicas a BioPafi.</td>
+      <td>"El nodo IoT reportó humedad crítica al 18%."</td>
+    </tr>
+    <tr>
+      <td><strong>Lectura de Sensor</strong></td>
+      <td>Sistema</td>
+      <td>Conjunto de valores capturados por el sensor en un instante: humedad del suelo, temperatura, humedad ambiental y timestamp.</td>
+      <td><code>{humedad: 22%, temp: 26°C, ts: 21/04/2026 08:00}</code></td>
+    </tr>
+    <tr>
+      <td><strong>Alerta de Cuidado</strong></td>
+      <td>Evento</td>
+      <td>Notificación generada automáticamente cuando las lecturas del sensor o las reglas de negocio indican que una planta requiere acción inmediata.</td>
+      <td>"Tu Pothos necesita riego: humedad del suelo al 22%."</td>
+    </tr>
+    <tr>
+      <td><strong>Estado de Salud</strong></td>
+      <td>Dominio</td>
+      <td>Evaluación del bienestar actual de una planta representada visualmente en la plataforma: Óptimo / En riesgo / Crítico.</td>
+      <td>"Estado de salud: Crítico — humedad bajo el umbral mínimo."</td>
+    </tr>
+    <tr>
+      <td><strong>Historial de Cuidados</strong></td>
+      <td>Dominio</td>
+      <td>Registro cronológico de todas las acciones realizadas sobre una planta y las lecturas históricas del sensor asociado.</td>
+      <td>"Esta planta fue regada 3 veces en los últimos 10 días."</td>
+    </tr>
+    <tr>
+      <td><strong>Recomendación Personalizada</strong></td>
+      <td>Sistema</td>
+      <td>Sugerencia generada combinando el tipo de planta, el historial de cuidados y el clima local para indicar la acción más adecuada.</td>
+      <td>"Con 28°C y humedad baja, mueve tu helecho a sombra parcial."</td>
+    </tr>
+    <tr>
+      <td><strong>Clima Local</strong></td>
+      <td>Sistema</td>
+      <td>Datos de temperatura y humedad ambiental obtenidos de una API externa para ajustar dinámicamente las recomendaciones de cuidado.</td>
+      <td>"BioPafi detectó 30°C en Lima y ajustó la frecuencia de riego."</td>
+    </tr>
+    <tr>
+      <td><strong>Usuario Principiante</strong></td>
+      <td>Actor</td>
+      <td>Segmento con poca experiencia. Necesita guías visuales paso a paso y recordatorios automáticos para evitar errores básicos.</td>
+      <td>Alejandro, 20 años, Chorrillos. Perdió su primera planta por exceso de riego.</td>
+    </tr>
+    <tr>
+      <td><strong>Usuario Experto</strong></td>
+      <td>Actor</td>
+      <td>Segmento con amplia experiencia. Busca sistematizar una colección extensa mediante datos históricos y análisis avanzado.</td>
+      <td>Leonor, 60 años, San Miguel. Gestiona más de 10 especies sin registro formal.</td>
+    </tr>
+    <tr>
+      <td><strong>Regla de Cuidado</strong></td>
+      <td>Política</td>
+      <td>Condición que dispara automáticamente una alerta cuando un valor del sensor supera o cae por debajo de un umbral definido para la especie.</td>
+      <td>"Si humedad &lt; 25% en Pothos → generar alerta de riego."</td>
+    </tr>
+  </tbody>
+</table>
 
 <hr class="page-break">
 
