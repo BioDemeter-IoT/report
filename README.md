@@ -504,6 +504,10 @@ Personas con amplia experiencia y colecciones botánicas que buscan optimizar el
 
 ### 2.3.3. User Journey Mapping
 
+<p align="center">
+  <img src="https://i.imgur.com/SePmnIE.png" alt="Customer journey map 1" width="800" />
+</p>
+
 ### 2.3.4. Empathy Mapping
 
 <hr class="page-break">
