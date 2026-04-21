@@ -512,11 +512,22 @@ Este mapa muestra el recorrido de una persona con poca experiencia en jardinerí
 #### Journey experto
 Este mapa representa el recorrido de un cuidador de plantas con varios años de experiencia y una colección amplia, que comienza a sentir límites al gestionar muchas especies con necesidades distintas. En las etapas Aware, Join, Use, Develop y Leave se detallan sus motivaciones, procesos, dificultades y emociones al investigar soluciones más avanzadas, registrar y analizar datos de sus plantas y evaluar si una herramienta digital le aporta suficiente valor para optimizar y profesionalizar su rutina de cuidado.
 <p align="center">
-  <img src="https://i.imgur.com/ZUyIz9G.png" alt="Customer journey map 1" width="800" />
+  <img src="https://i.imgur.com/ZUyIz9G.png" alt="Customer journey map 2" width="800" />
 </p>
 
 ### 2.3.4. Empathy Mapping
+#### Segmento 1 — Principiante cuidador de plantas
 
+A continuación se presenta el mapa de empatía correspondiente al segmento de principiantes, representado por Alejandro Flores, joven de 20 años de Chorrillos, Lima, quien se inició en el cuidado de plantas en 2025 sin conocimientos previos ni herramientas de apoyo.
+<p align="center">
+  <img src="https://i.imgur.com/w0RteIM.png" alt="Empathy Mapping 1" width="800" />
+</p>
+
+#### Segmento 2 — Experto cuidador de plantas
+A continuación se presenta el mapa de empatía correspondiente al segmento de expertos, representado por Leonor Gonzales, cuidadora de 60 años de San Miguel, Lima, con más de 6 años de experiencia en jardinería doméstica y una amplia colección de plantas que gestiona sin ningún sistema de registro formal.
+<p align="center">
+  <img src="https://i.imgur.com/xSP5NY3.png" alt="Empathy Mapping 2" width="800" />
+</p>
 <hr class="page-break">
 
 ## 2.4. Big Picture EventStorming
