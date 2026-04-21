@@ -385,9 +385,9 @@ En esta sección se identifican y describen los principales competidores del mer
   <tr>
     <td colspan="2" align="center"><b>Logo</b></td>
     <td align="center"><img src="assets/images/logos/[startup]-logo.png" alt="Startup logo" width="100"></td>
-    <td align="center"><img src="assets/images/logos/[competidor1].png" alt="[Competidor 1]" width="100"></td>
-    <td align="center"><img src="assets/images/logos/[competidor2].png" alt="[Competidor 2]" width="100"></td>
-    <td align="center"><img src="assets/images/logos/[competidor3].png" alt="[Competidor 3]" width="100"></td>
+    <td align="center"><img src="images/logos/XiaomiFlowerCare.jpg" alt="[Competidor 1]" width="100"></td>
+    <td align="center"><img src="images/logos/PlantaApp.png" alt="[Competidor 2]" width="100"></td>
+    <td align="center"><img src="images/logos/Vera.jpg" alt="[Competidor 3]" width="100"></td>
   </tr>
   <tr>
     <td rowspan="2"><b>Perfil</b></td>
