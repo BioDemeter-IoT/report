@@ -503,9 +503,16 @@ Personas con amplia experiencia y colecciones botánicas que buscan optimizar el
 </table>
 
 ### 2.3.3. User Journey Mapping
-
+#### Journey principiante
+Este mapa muestra el recorrido de una persona con poca experiencia en jardinería que compra plantas para decorar su hogar y descubre que se deterioran sin entender por qué. A través de las etapas Aware, Join, Use, Develop y Leave se ilustran sus objetivos, acciones, problemas y emociones al buscar información en internet, probar consejos y, eventualmente, apoyarse en una solución digital que le ofrezca recordatorios y recomendaciones simples para mantener sus plantas sanas.
 <p align="center">
   <img src="https://i.imgur.com/SePmnIE.png" alt="Customer journey map 1" width="800" />
+</p>
+
+#### Journey experto
+Este mapa representa el recorrido de un cuidador de plantas con varios años de experiencia y una colección amplia, que comienza a sentir límites al gestionar muchas especies con necesidades distintas. En las etapas Aware, Join, Use, Develop y Leave se detallan sus motivaciones, procesos, dificultades y emociones al investigar soluciones más avanzadas, registrar y analizar datos de sus plantas y evaluar si una herramienta digital le aporta suficiente valor para optimizar y profesionalizar su rutina de cuidado.
+<p align="center">
+  <img src="https://i.imgur.com/ZUyIz9G.png" alt="Customer journey map 1" width="800" />
 </p>
 
 ### 2.3.4. Empathy Mapping
