@@ -404,6 +404,23 @@ Nuestra plataforma IoT de monitoreo y cuidado de plantas fue diseñada para logr
 #### 1.2.2.2. Lean UX Assumptions
 
 ##### Business Assumptions
+1. **Creemos que nuestros clientes tienen la necesidad de:** Mantener sus plantas saludables sin requerir conocimientos botánicos avanzados o presencia física constante.
+
+2. **Estas necesidades pueden resolverse con:** Una plataforma IoT que utilice sensores de luz reales y actuadores UV para compensar deficiencias ambientales automáticamente.
+
+3. **Nuestro clientes iniciales son (o serán):** Entusiastas novatos que han tenido experiencias previas de fracaso en el cuidado de plantas.
+
+4. **El valor número uno que un cliente quiere obtener de nuestro servicio es:** La supervivencia y crecimiento constante de sus plantas. También pueden obtener estos beneficios adicionales: Mejora en el bienestar mental del usuario y automatización de tareas tediosas.
+
+5. **Obtendremos la mayoría de nuestros clientes a través de:** La Landing Page del proyecto y estrategias de marketing de contenidos sobre bienestar botánico.
+
+6. **Ganaremos dinero mediante:** La venta del kit de hardware IoT y posibles suscripciones premium para analítica avanzada de datos históricos.
+
+7. **Nuestra competencia principal en el mercado será:** Sensores de humedad básicos y temporizadores de riego no inteligentes. Les ganaremos debido a: La integración total entre el monitoreo de luz real y la acción inmediata del actuador UV.
+
+8. **El mayor riesgo de nuestro producto es:** Que los usuarios no confíen en la automatización para el cuidado de sus seres vivos. Resolveremos esto a través de: Notificaciones constantes de las acciones realizadas por el sistema.
+
+9. **Otras supocisiones:** Que los usuarios cuentan con conectividad WiFi estable en el lugar donde ubican sus plantas.
 
 ##### User Assumptions
 
