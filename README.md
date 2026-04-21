@@ -363,6 +363,8 @@ Personas con amplia experiencia y colecciones botánicas que buscan optimizar el
 
 ## 2.1. Competidores
 
+En esta sección se identifican y describen los principales competidores del mercado. Se han seleccionado tres competidores que representan tanto el liderazgo en software de cuidado de plantas como la integración de hardware (IoT). permitiendo identificar las brechas tecnológicas que nuestra startup busca cubrir para poder identificar opotunidades y ofrecer una propuesta de valor unico.
+
 ### 2.1.1. Análisis competitivo
 
 <table>
@@ -371,93 +373,212 @@ Personas con amplia experiencia y colecciones botánicas que buscan optimizar el
   </tr>
   <tr>
     <td colspan="2" align="center"><b>¿Por qué llevar a cabo este análisis?</b></td>
-    <td colspan="3">[COMPLETAR]</td>
+    <td colspan="3">El objetivo es identificar las limitaciones de las aplicaciones de monitoreo actuales y comparar nuestra capacidad de automatización frente a los dispositivos IoT existentes, asegurando que nuestra integración de software y hardware sea superior en experiencia de usuario.</td>
   </tr>
   <tr>
     <th colspan="2">Nombre</th>
-    <th>[Startup]</th>
-    <th>[Competidor 1]</th>
-    <th>[Competidor 2]</th>
+    <th>BioDemeter</th>
+    <th>Xiaomi Flower Care</th>
+    <th>Planta App</th>
+    <th>Vera: Plant Care Made Easy</th>
   </tr>
   <tr>
     <td colspan="2" align="center"><b>Logo</b></td>
     <td align="center"><img src="assets/images/logos/[startup]-logo.png" alt="Startup logo" width="100"></td>
-    <td align="center"><img src="assets/images/logos/[competidor1].png" alt="[Competidor 1]" width="100"></td>
-    <td align="center"><img src="assets/images/logos/[competidor2].png" alt="[Competidor 2]" width="100"></td>
+    <td align="center"><img src="images/logos/XiaomiFlowerCare.jpg" alt="[Competidor 1]" width="100"></td>
+    <td align="center"><img src="images/logos/PlantaApp.png" alt="[Competidor 2]" width="100"></td>
+    <td align="center"><img src="images/logos/Vera.jpg" alt="[Competidor 3]" width="100"></td>
   </tr>
   <tr>
     <td rowspan="2"><b>Perfil</b></td>
     <td><b>Overview</b></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Sistema integral que combina sensores IoT y actuadores con una app móvil y chatbot para el cuidado de las plantas.</td>
+    <td>Sensor físico que se inserta en la tierra para medir humedad, fertilidad, luz y temperatura, vinculado a una aplicación movil.</td>
+    <td>Aplicación móvil de suscripción que ofrece guías detalladas, identificación y planes de cuidado personalizados.</td>
+    <td>Herramienta de gestión de inventario de plantas con recordatorios de riego y seguimiento fotográfico.</td>
   </tr>
   <tr>
     <td><b>Ventaja competitiva ¿Qué valor ofrece a los clientes?</b></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Automatización activa, el sistema no solo avisa, sino que actúa mediante el ecosistema IoT y el uso de un asistencia inteligente para consultas sobre el cuidado.</td>
+    <td>Precisión de datos gracias a hardware especializado y bajo costo de adquisición del sensor.</td>
+    <td>Algoritmo de recomendación basado en la ubicación y condiciones climáticas locales del usuario.</td>
+    <td>Interfaz sumamente intuitiva y fuerte enfoque en la documentación fotográfica del progreso de la planta.</td>
   </tr>
   <tr>
     <td rowspan="2"><b>Perfil de Marketing</b></td>
     <td><b>Mercado objetivo</b></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Personas que cuidan plantas en su hogar y principiantes que requieren asistencia constante.</td>
+    <td>Usuarios avanzados en el cuidado de las plantas que requierne información más precisa y fans del ecosistema Xiaomi/Smart Home.</td>
+    <td>Usuarios de smartphones que buscan una solución rápida de software sin comprar hardware extra.</td>
+    <td>Cuidadores de plantas jovenes que priorizan la estética y el seguimiento visual.</td>
   </tr>
   <tr>
     <td><b>Estrategias de Marketing</b></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Marketing de contenidos sobre "Hogares Inteligentes" y colaboraciones con tiendas de plantas y tecnología.</td>
+    <td>Distribución masiva en marketplaces globales (Amazon, AliExpress) y SEO basado en "Smart Garden".</td>
+    <td>Publicidad en redes sociales (Instagram/TikTok) y modelo freemium agresivo.</td>
+    <td>Marketing de comunidad y boca a boca en foros de entusiastas de la jardinería.</td>
   </tr>
   <tr>
     <td rowspan="3"><b>Perfil de Producto</b></td>
     <td><b>Productos &amp; Servicios</b></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>App móvil, Sensor de temperatura y humedad, lámpara inteligente IoT y Chatbot de soporte</td>
+    <td>Sensor físico y aplicación movil para observar la información del sensor</td>
+    <td>App móvil con escáner de plantas y planes Premium.</td>
+    <td>App móvil gratuita para gestión de tareas y recordatorios.</td>
   </tr>
   <tr>
     <td><b>Precios y Costos</b></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Kit inicial (Hardware + App) con suscripción opcional para funciones avanzadas del Chatbot.</td>
+    <td>Pago único por el dispositivo físico ($15 - $25 USD aproximadamente).</td>
+    <td>Descarga gratuita; suscripción Premium (mensual/anual) para funciones completas.</td>
+    <td>Gratuito (Modelo basado en recolección de datos o futuras funciones premium).</td>
   </tr>
   <tr>
-    <td><b>Canales de distribución</b></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td><b>Canales de distribución (Web y/o Móvil)</b></td>
+    <td>Venta directa vía Web, tiendas de tecnología y App Store / Play Store</td>
+    <td>Distribuidores de electrónica, tiendas oficiales Xiaomi y plataformas de e-commerce.</td>
+    <td>App Store y Google Play Store.</td>
+    <td>App Store y Google Play Store.</td>
   </tr>
   <tr>
     <td rowspan="4"><b>Análisis SWOT</b></td>
     <td><b>Fortalezas</b></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td><b>Oportunidades</b></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>El uso de sensores y actuadores, ademas de un asistente inteligente</td>
+    <td>Hardware confiable, gran autonomía de batería, marca reconocida.</td>
+    <td>Marca líder, comunidad enorme, excelente interfaz de usuario.</td>
+    <td>Simplicidad de uso, enfoque en la experiencia emocional del usuario.</td>
   </tr>
   <tr>
     <td><b>Debilidades</b></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Dependencia de hardware, para la información de la planta.</td>
+    <td>App con errores de traducción, limitada a la lectura de datos</td>
+    <td>No tiene sensores físicos, impresición en la información.</td>
+    <td>Funcionalidades limitadas; no ofrece consejos basados en datos reales del suelo.</td>
+  </tr>
+  <tr>
+    <td><b>Oportunidades</b></td>
+    <td>Crecimiento del mercado de Smart Homes en Latinoamérica.</td>
+    <td>Expansión a sistemas de riego automático.</td>
+    <td>Integración con dispositivos inteligentes de terceros.</td>
+    <td>Alianzas para la venta de plantas desde la app.</td>
   </tr>
   <tr>
     <td><b>Amenazas</b></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Competidores con mayor capital podrían replicar la automatización IoT rápidamente.</td>
+    <td>Problemas de compatibilidad con nuevas versiones de sistemas operativos.</td>
+    <td>Saturación de apps de recordatorios en las tiendas virtuales.</td>
+    <td>Pérdida de usuarios frente a apps con funciones más robustas.</td>
   </tr>
 </table>
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
+
+**Afrontando las fortalezas de nuestros competidores**
+
+Fortalezas de la competencia:
+
+- Xiaomi: Bajo costo y precisión de hardware.
+
+- Planta App: Base de datos masiva y reconocimiento de marca.
+
+- Vera: Simplicidad y experiencia de usuario fluida.
+
+Nuestras fortalezas:
+
+- Nuestros componentes IoT son sensores y actuadores que nos permiten actuar ante un cambio.
+
+- El uso de un chatbot ofrece una capa de interacción humana/IA que las otras apps no poseen de forma tan integrada.
+
+Estrategias:
+
+- Posicionarnos como la mejor solución del cuidado de plantas mediante el uso de sensores y actuadores IoT, que se diferencian de otras marcas.
+
+- Fomentar la facilidad de instalación del hardware para competir con la simplicidad de otras aplicaciones.
+
+Tácticas:
+
+- Lanzar videos demostrativos que contrasten el uso de una aplicación que solo ayuda con recordadorios y otra que actua ante un cambio.
+
+- Ofrecer durante tiempo limitado el uso del chatbot de manera gratuita.
+
+**Afrontando las debilidades de nuestros competidores**
+
+Debilidades clave de la competencia:
+
+- Xiaomi: Falta de actuadores; solo informa pero el usuario debe estar presente para solucionar.
+
+- Planta/Vera: Carencia de datos reales del entorno, confiando solo en estimaciones manuales.
+
+Nuestras debilidades:
+
+- Barrera de precio por el costo del hardware IoT.
+
+Estrategias:
+
+- Resaltar la presición de nuestro hardware de nuestra app frente a las estimaciones de las apps de solo software.
+
+- Mitigar el costo del hardware mediante modelos de pago en cuotas o venta de kits separados, uno para la humedad, otro para temperatura, etc.
+
+Tácticas:
+
+- Realizar entrevistas para saber cual es el modelod pago ensencial para los consumidores para mitigar los costos del hardware.
+
+- Publicar comparativas de salud de plantas usando sensores reales contra recordatorios de tareas sin metricas reales.
+
+**Afrontando las oportunidades de nuestros competidores**
+
+Oportunidades clave por competidor:
+
+- Xiaomi Flower Care: Posibilidad de expandir su ecosistema hacia el riego automatizado aprovechando su infraestructura de Smart Home.
+
+- Planta App: Capacidad de integrar su algoritmo con asistentes o sensores de terceros para combatir su falta de hardware.
+
+- Vera: Plant Care Made Easy: Potencial para establecer alianzas exclusivas con grandes cadenas para la venta directa de plantas desde su interfaz.
+
+Nuestras oportunidades:
+
+- Liderar el nicho de automatización de tareas de cuidado de plantas en el hogar, algo que ninguno de los tres realiza actualmente.
+
+- Convertirnos en el asistente inteligente de referencia para usuarios que buscan una solución automatizada mediante el chatbot y los actuadores.
+
+Estrategias:
+
+- Mientras los competidores solo pueden ver u observar o recordar, nosotros usamos actuadores para el entorno de la planta.
+
+- Colaborar con viveros locales para posicionar el kit IoT como un producto de cuidado preventivo premium.
+
+Tácticas:
+
+- Lanzar campañas de marketing resaltando la funciones IoT como un factor de supervivencia único frente a las apps de solo recordatorios.
+
+- Participar en eventos sobre el cuidado y venta de plantas para realizar presentaciones en vivo para los diferentes dueños de plantas en el hogar.
+
+**Afrontando las amenazas de nuestros competidores**
+
+Amenazas clave por competidor:
+
+- Xiaomi Flower Care: Riesgo de pérdida de mercado si no actualizan la compatibilidad de su app con las nuevas versiones de sistemas operativos móviles (iOS/Android).
+
+- Planta App: Saturación de su modelo de negocio debido a la aparición constante de aplicaciones gratuitas con funciones de escaneo similares.
+
+- Vera: Plant Care Made Easy: Migración masiva de sus usuarios hacia plataformas con funciones más robustas y basadas en datos reales.
+
+Nuestras amenazas:
+
+- Ingreso de grandes tecnológicas con recursos masivos que puedan producir hardware similar a un precio mucho menor.
+
+- Dificultad inicial de escalar la producción de dispositivos físicos en comparación con la escalabilidad inmediata de una app.
+
+Estrategias:
+
+- Crear una comunidad fuerte alrededor del cuidado de plantas que compita con los productos genericos de los competidores o compañias grandes
+
+Tácticas:
+
+- Implementar un sistema de fidelización gamificado para asegurar que el usuario se mantenga en nuestra plataforma a pesar de la aparición de alternativas gratuitas.
+
+- Establecer contratos sólidos con proveedores de componentes IoT para asegurar el suministro y mantener precios competitivos frente a rivales internacionales.
 
 <hr class="page-break">
 
