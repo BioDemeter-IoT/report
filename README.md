@@ -719,6 +719,58 @@ Tácticas:
 
 ### 2.2.1. Diseño de entrevistas
 
+**Entrevista para personas con experiencia como hobbista (años cuidando plantas en casa):**
+
+**1.-** ¿Cuánto tiempo llevas cuidando plantas en tu hogar y qué motivó ese interés?
+
+**2.-** ¿Qué dificultades principales enfrentas al momento de cuidar tus plantas?
+
+**3.-** ¿Tienes alguna planta preferida o rutina que sigas con mayor frecuencia?
+
+**4.-** ¿Acostumbras llevar un registro de los cuidados (riego, fertilización, etc.)? ¿De qué manera lo haces?
+
+**5.-** ¿Has utilizado aplicaciones o blogs especializados para apoyarte en el cuidado de plantas?
+
+**6.-** ¿Qué tan útil te parecería una herramienta que analice el clima de tu zona y sugiera cuidados personalizados?
+
+**7.-** ¿Qué opinión tienes sobre una función que identifique plantas mediante fotografías?
+
+**8.-** ¿Qué te parece la idea de usar una app que permita registrar y monitorear el estado de tus plantas mediante formularios visuales y predicciones (por ejemplo, seleccionar “hojas verdes” o “tierra húmeda” para recibir recomendaciones)?
+
+**9.-** ¿Qué funcionalidades avanzadas te gustaría encontrar en una aplicación para mejorar tu experiencia cuidando plantas?
+
+**10.-** ¿Pagarías por una suscripción que ofrezca beneficios adicionales para el cuidado de tus plantas?
+
+**11.-** ¿Cómo te sentirías si pudieras automatizar algunos cuidados de tus plantas para mantener condiciones adecuadas sin tener que intervenir constantemente?
+
+**12.-** ¿Qué tan útil te parecería contar con un sistema que reaccione por sí solo ante cambios en el ambiente para proteger tus plantas?
+
+**Entrevista para personas con poca experiencia en el cuidado de plantas:**
+
+**1.-** ¿Has tenido alguna vez una planta en casa? De ser así, ¿cómo fue esa experiencia?
+
+**2.-** ¿Qué problemas o dificultades encuentras actualmente al cuidar plantas?
+
+**3.-** ¿Te resulta complicado determinar la cantidad de agua, luz u otros cuidados necesarios? ¿Por qué?
+
+**4.-** ¿Utilizas alguna aplicación, blog o comunidad en línea para orientarte? ¿Qué aspectos te agradan o desagradan de estas herramientas?
+
+**5.-** ¿Te interesaría usar una aplicación que te envíe recordatorios y consejos básicos según el tipo de planta? ¿Por qué?
+
+**6.-** ¿Te parecería útil una función que analice el clima local y brinde recomendaciones específicas? ¿Por qué?
+
+**7.-** ¿Qué opinas de una herramienta que identifique plantas a partir de una foto? ¿La usarías?
+
+**8.-** ¿Cómo percibirías una función que permita registrar el estado de la planta mediante opciones visuales y que, en base a ello, sugiera acciones?
+
+**9.-** ¿Qué características avanzadas te gustaría que tenga una app para ayudarte en el cuidado de plantas (por ejemplo: detección de enfermedades, guías de trasplante, alertas inteligentes, etc.)?
+
+**10.-** ¿Estarías dispuesto/a a pagar por funciones premium? ¿Qué debería ofrecer la aplicación para que consideres que vale la pena?
+
+**11.-** ¿Qué tan cómodo/a te sentirías utilizando herramientas que ajusten automáticamente el entorno de tus plantas para ayudarte a mantenerlas en buen estado?
+
+**12.-** ¿Te parecería útil que ciertos cuidados de tus plantas se realicen de forma automática para evitar errores o descuidos?
+
 ### 2.2.2. Registro de entrevistas
 
 ### 2.2.3. Análisis de entrevistas
