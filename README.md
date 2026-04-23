@@ -861,15 +861,17 @@ Para desarrollar estos artefactos se consideraron factores como edad, ocupación
 
 - #### User Persona: Personas con experiencia en el cuidado de plantas
   [![Mariana-Mendoza.png](https://i.postimg.cc/MGV05z7c/Mariana-Mendoza.png)](https://postimg.cc/Ty2WYMHG)
-  
+
 ### 2.3.2. User Task Matrix
 
-<table>
+En esta sección se construye la User Task Matrix considerando los dos segmentos definidos y vinculados a los User Persona. Se analizan perfiles como estudiantes universitarios que buscan adquirir experiencia y gerentes interesados en incorporar talento joven para sus proyectos.
+
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: center; width: 100%;">
   <thead>
     <tr>
-      <th rowspan="2">Tareas</th>
-      <th colspan="2">[Segmento 1]</th>
-      <th colspan="2">[Segmento 2]</th>
+      <th rowspan="2">Tarea</th>
+      <th colspan="2">Experto</th>
+      <th colspan="2">Persona sin experiencia</th>
     </tr>
     <tr>
       <th>Frecuencia</th>
@@ -880,14 +882,85 @@ Para desarrollar estos artefactos se consideraron factores como edad, ocupación
   </thead>
   <tbody>
     <tr>
-      <td>[COMPLETAR]</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>Adquirir nuevas plantas</td>
+      <td>Sometimes</td>
+      <td>Medium</td>
+      <td>Rarely</td>
+      <td>Low</td>
+    </tr>
+    <tr>
+      <td>Ajustar los cuidados de acuerdo al clima</td>
+      <td>Sometimes</td>
+      <td>Medium</td>
+      <td>Never</td>
+      <td>Low</td>
+    </tr>
+    <tr>
+      <td>Registrar todas las actividades de cuidado</td>
+      <td>Sometimes</td>
+      <td>High</td>
+      <td>Never</td>
+      <td>Low</td>
+    </tr>
+    <tr>
+      <td>Evaluar el estado de salud de sus plantas</td>
+      <td>Often</td>
+      <td>High</td>
+      <td>Rarely</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>Comprar los insumos para el cuidado</td>
+      <td>Sometimes</td>
+      <td>Medium</td>
+      <td>Rarely</td>
+      <td>Low</td>
+    </tr>
+    <tr>
+      <td>Consultar guías o videos sobre plantas</td>
+      <td>Rarely</td>
+      <td>Medium</td>
+      <td>Often</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>Decorar su habitación con plantas</td>
+      <td>Rarely</td>
+      <td>Low</td>
+      <td>Medium</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>Preguntar por consejos a sus conocidos</td>
+      <td>Rarely</td>
+      <td>Low</td>
+      <td>Sometimes</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>Buscar soluciones digitales de apoyo</td>
+      <td>Sometimes</td>
+      <td>Medium</td>
+      <td>Sometimes</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>Tomar fotos para seguimiento del crecimiento</td>
+      <td>Sometimes</td>
+      <td>Low</td>
+      <td>Sometimes</td>
+      <td>Medium</td>
     </tr>
   </tbody>
 </table>
+
+A partir de esta matriz se pueden extraer las siguientes conclusiones sobre las actividades de los User Persona:
+
+- Para el usuario con experiencia, las tareas más relevantes son evaluar la salud de sus plantas y llevar un registro de los cuidados. En contraste, el usuario principiante se enfoca más en aprender y en encontrar herramientas digitales de apoyo.
+
+- Ambos perfiles coinciden en su interés por documentar el crecimiento mediante fotografías y en la búsqueda de soluciones tecnológicas que faciliten el cuidado.
+
+- Las diferencias se evidencian en el nivel de experiencia: el usuario experto dedica más tiempo a monitorear y mantener un plan estructurado, mientras que el principiante prioriza el aprendizaje y valora más el aspecto estético de las plantas.
 
 ### 2.3.3. User Journey Mapping
 #### Journey principiante
