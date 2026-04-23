@@ -849,6 +849,8 @@ Tácticas:
 
 ## 2.3. Needfinding
 
+Después de realizar las entrevistas y detectar los problemas, necesidades y expectativas del público objetivo, se procede a construir los User Persona y otros elementos relacionados con la experiencia del usuario antes de interactuar con la solución propuesta.
+
 ### 2.3.1. User Personas
 
 ### 2.3.2. User Task Matrix
