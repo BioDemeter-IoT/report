@@ -853,6 +853,15 @@ Después de realizar las entrevistas y detectar los problemas, necesidades y exp
 
 ### 2.3.1. User Personas
 
+Para desarrollar estos artefactos se consideraron factores como edad, ocupación, ubicación, intereses y frustraciones de los entrevistados. Estos perfiles reflejan usuarios reales que desean incorporar plantas en su rutina diaria, pero requieren orientación clara y soluciones acordes a su estilo de vida. A continuación, se presentan los User Persona definidos.
+
+- #### User Persona: Interesados en comenzar a cuidar plantas
+
+  [![Jose-Avendano.png](https://i.postimg.cc/8CH2YmHX/Jose-Avendano.png)](https://postimg.cc/d7hNkdgG)
+
+- #### User Persona: Personas con experiencia en el cuidado de plantas
+  [![Mariana-Mendoza.png](https://i.postimg.cc/MGV05z7c/Mariana-Mendoza.png)](https://postimg.cc/Ty2WYMHG)
+  
 ### 2.3.2. User Task Matrix
 
 <table>
