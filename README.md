@@ -773,6 +773,76 @@ Tácticas:
 
 ### 2.2.2. Registro de entrevistas
 
+#### Expertos cuidadores de plantas:
+
+<table cellpadding="8" cellspacing="0">
+  <tbody>
+    <tr>
+      <td>Entrevista 1</td>
+      <td> <img src="https://i.ibb.co/mFMGLZbG/genaro.png" alt="interview 1" width="400"/> </td>
+    </tr>
+    <tr>
+      <td>Nombre Entrevistado</td>
+      <td>Genaro Ledesma</td>
+    </tr>
+    <tr>
+      <td>Edad</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>Distrito</td>
+      <td>Lima Cercado</td>
+    </tr>
+    <tr>
+      <td>Ocupacion</td>
+      <td>Estudiante</td>
+    </tr>
+    <tr>
+      <td>Duración Entrevista</td>
+      <td>04:54</td>
+    </tr>
+    <tr>
+      <td>Minuto de Inicio</td>
+      <td>00:00 - 04:54</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Principiantes cuidadores de plantas:
+
+<table cellpadding="8" cellspacing="0">
+  <tbody>
+    <tr>
+      <td>Entrevista 4</td>
+      <td> <img src="https://i.ibb.co/gbKg5Jq6/melany.png" alt="interview 4" width="400"/> </td>
+    </tr>
+    <tr>
+      <td>Nombre Entrevistado</td>
+      <td>Melany Paitan</td>
+    </tr>
+    <tr>
+      <td>Edad</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>Distrito</td>
+      <td>Lima Cercado</td>
+    </tr>
+    <tr>
+      <td>Ocupacion</td>
+      <td>Estudiante</td>
+    </tr>
+    <tr>
+      <td>Duración Entrevista</td>
+      <td>04:33</td>
+    </tr>
+    <tr>
+      <td>Minuto de Inicio</td>
+      <td>00:00 - 04:33</td>
+    </tr>
+  </tbody>
+</table>
+
 ### 2.2.3. Análisis de entrevistas
 
 <hr class="page-break">
