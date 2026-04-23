@@ -845,6 +845,14 @@ Tácticas:
 
 ### 2.2.3. Análisis de entrevistas
 
+**Análisis de entrevista para expertos cuidadores de plantas:**
+
+Este segmento, integrado por personas de entre 23 y 60 años con una vasta experiencia heredada o desarrollada recientemente, mantiene sus plantas mediante rutinas diarias sin el uso de aplicaciones, aunque reconoce dificultades para gestionar la personalización en colecciones amplias. Existe un interés unánime en adoptar soluciones digitales que ofrezcan registros y recordatorios, destacando de manera especial la utilidad de herramientas que permitan automatizar parámetros como la luz artificial o la humedad ambiental. Para estos aficionados, el hecho de que un sistema pueda reaccionar de forma autónoma ante cambios climáticos extremos representa un nivel de seguridad superior y una ayuda imprescindible para la protección de sus ejemplares más delicados. Por esta razón, muestran una disposición total a pagar por una suscripción que optimice sus tareas y garantice la salud de sus plantas mediante este tipo de asistencia tecnológica.
+
+**Análisis de entrevista para principiantes cuidadores de plantas:**
+
+Los cuidadores principiantes, con edades entre 18 y 20 años, se encuentran en una etapa de aprendizaje marcada por la iniciativa personal y la pérdida de plantas debido a errores comunes como el exceso de riego. Ante la carencia de conocimientos técnicos, este grupo busca guías simples y se muestra sumamente interesado en la incorporación de herramientas que ajusten automáticamente el entorno de sus plantas para evitar descuidos. Se sienten muy cómodos delegando funciones a sistemas que actúen por sí solos, ya que ven en la automatización una forma eficaz de asegurar que sus plantas reciban exactamente lo que necesitan sin tener que depender de su propia memoria o experiencia. Debido a su deseo de evitar fallos y sentirse acompañados en el proceso, están totalmente dispuestos a invertir en una plataforma que sea clara y que facilite el cuidado botánico a través de estas funciones automáticas.
+
 <hr class="page-break">
 
 ## 2.3. Needfinding
