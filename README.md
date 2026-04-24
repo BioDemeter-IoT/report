@@ -1311,7 +1311,7 @@ Este diagrama representa cómo el Bounded Context de Profiles gestiona los perfi
 El ProfilesCommandController es el punto de entrada principal para el flujo de creación y actualización de perfiles, mientras que el ProfilesQueryController maneja las consultas de lectura. Ambos controladores delegan respectivamente en ProfileCommandService y ProfileQueryService.
 La persistencia se realiza en una base de datos relacional MySQL a través de ProfileRepository.
 <p __align__="center">
-  <img src="images/BoundedContext/Profiles/Profiles.png">
+  <img src="images/BoundedContext/IAM/IAM.png">
 </p>
 <p __align__="center">
   Elaboración propia
