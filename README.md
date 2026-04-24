@@ -1123,7 +1123,7 @@ En esta sección, se explica los diagramas que presentan un mayor detalle sobre 
 ##### 4.2.1.6.2. Bounded Context Database Design Diagram
 
 <p align="center">
-  <img src="images/BoundedContext/IAM/IAM Database.png" alt = "database diagram" width="80%">
+  <img src="images/BoundedContext/Profiles/profilesdbdiagram.png" alt = "database diagram" width="80%">
 </p>
 
 <p align="center">
@@ -1344,6 +1344,340 @@ En esta sección, se explica los diagramas que presentan un mayor detalle sobre 
 
 <hr class="page-break">
 
+
+### 4.2.3. Bounded Context: PlantProfiles
+
+#### 4.2.3.1. Domain Layer
+
+En esta capa se define el núcleo de la gestión de plantas, encapsulando las reglas de negocio para la información botánica, cuidados y seguimiento histórico de cada planta asociada a un perfil de usuario.
+
+**Aggregate: `Plant`**
+
+El agregado Plant es la raíz que gestiona las plantas en el sistema, asegurando que los datos botánicos y de cuidado sean consistentes y válidos.
+
+| Atributos | Tipo de dato | Visibilidad | Descripción |
+|---|---|---|---|
+| id | Long | Private | Identificador único de la planta. |
+| name | PlantName | Private | Nombre de la planta (valor object). |
+| species | String | Private | Especie de la planta (ej. Monstera, Cactus). |
+| acquisitionDate | LocalDate | Private | Fecha de adquisición de la planta. |
+| humidity | HumidityLevel | Private | Nivel de humedad preferido para la planta. |
+| nextWateringDate | LocalDate | Private | Próxima fecha programada para riego. |
+| imageUrl | String | Private | URL o Base64 de la imagen de la planta. |
+| notificationsEnabled | Boolean | Private | Indica si las notificaciones están habilitadas. |
+| profileId | ProfileId | Private | ID del perfil propietario de la planta. |
+
+| Métodos | Tipo de retorno | Visibilidad | Descripción |
+|---|---|---|---|
+| getId() | Long | Public | Devuelve el ID de la planta. |
+| getName() | PlantName | Public | Devuelve el nombre de la planta. |
+| getSpecies() | String | Public | Devuelve la especie. |
+| getAcquisitionDate() | LocalDate | Public | Devuelve la fecha de adquisición. |
+| getHumidity() | HumidityLevel | Public | Devuelve el nivel de humedad preferido. |
+| getNextWateringDate() | LocalDate | Public | Devuelve la próxima fecha de riego. |
+| getImageUrl() | String | Public | Devuelve la URL de la imagen. |
+| getNotificationsEnabled() | Boolean | Public | Devuelve si las notificaciones están habilitadas. |
+| getProfileId() | ProfileId | Public | Devuelve el ID del perfil propietario. |
+| updateInformation(...) | Plant | Public | Actualiza toda la información de la planta. |
+| Plant(CreatePlantCommand) | Constructor | Public | Crea una nueva planta a partir de un comando. |
+
+**Aggregate: `PlantHistory`**
+
+El agregado PlantHistory representa un registro histórico de cuidado o datos de sensores de una planta.
+
+| Atributos | Tipo de dato | Visibilidad | Descripción |
+|---|---|---|---|
+| id | Long | Private | Identificador único del registro histórico. |
+| plantId | PlantId | Private | ID de la planta asociada. |
+| type | String | Private | Tipo de acción registrada (ej. WATERED, FERTILIZED). |
+| date | LocalDate | Private | Fecha de la acción o lectura. |
+| time | LocalTime | Private | Hora de la acción o lectura. |
+| humidity | Integer | Private | Nivel de humedad registrado (si aplica). |
+
+| Métodos | Tipo de retorno | Visibilidad | Descripción |
+|---|---|---|---|
+| getId() | Long | Public | Devuelve el ID del registro histórico. |
+| getPlantId() | PlantId | Public | Devuelve el ID de la planta asociada. |
+| getType() | String | Public | Devuelve el tipo de acción. |
+| getDate() | LocalDate | Public | Devuelve la fecha. |
+| getTime() | LocalTime | Public | Devuelve la hora. |
+| getHumidity() | Integer | Public | Devuelve el nivel de humedad registrado. |
+| PlantHistory(CreatePlantHistoryCommand) | Constructor | Public | Crea un nuevo registro histórico a partir de un comando. |
+
+**Value Objects**
+
+| Value Object | Descripción |
+|---|---|
+| PlantName | Registro que representa el nombre de una planta. Valida que no sea nulo o esté en blanco, y que no exceda 100 caracteres. |
+| PlantId | Registro que representa el identificador de una planta. Valida que no sea nulo o menor o igual a cero. |
+| ProfileId | Registro que representa el identificador de un perfil. Valida que no sea nulo o menor o igual a cero. |
+| HumidityLevel | Enumeración que define los niveles de humedad: `BAJA`, `MEDIA`, `ALTA`. |
+
+**Excepciones de Dominio**
+
+| Excepción | Descripción |
+|---|---|
+| PlantNotFoundException | Se lanza cuando no se encuentra una planta por su ID. |
+| PlantCreationException | Se lanza cuando ocurre un error durante la creación de una planta. |
+| PlantUpdateException | Se lanza cuando ocurre un error durante la actualización de una planta. |
+| PlantDeletionException | Se lanza cuando ocurre un error durante la eliminación de una planta. |
+| PlantHistoryNotFoundException | Se lanza cuando no se encuentra un historial de planta por su ID. |
+
+**Clase: `PlantQueryService`**
+
+| Título | PlantQueryService |
+|---|---|
+| Descripción | Interfaz de servicio de consultas para operaciones de lectura de plantas. |
+
+**Métodos**
+
+| Método | Descripción |
+|---|---|
+| handle(GetAllPlantsQuery) | Recupera la lista completa de plantas registradas en el sistema. |
+| handle(GetAllPlantsByProfileIdQuery) | Recupera las plantas asociadas a un ID de perfil específico. |
+| handle(GetPlantByIdQuery) | Obtiene una planta por su identificador único. |
+
+**Clase: `PlantCommandService`**
+
+| Título | PlantCommandService |
+|---|---|
+| Descripción | Interfaz de servicio de comandos para la gestión de plantas. |
+
+**Métodos**
+
+| Método | Descripción |
+|---|---|
+| handle(CreatePlantCommand) | Crea una nueva planta a partir del comando y retorna su ID. |
+| handle(UpdatePlantCommand) | Actualiza la información de una planta existente. |
+| handle(DeletePlantCommand) | Elimina una planta del sistema. |
+
+**Clase: `PlantHistoryQueryService`**
+
+| Título | PlantHistoryQueryService |
+|---|---|
+| Descripción | Interfaz de servicio de consultas para operaciones de lectura de historiales de planta. |
+
+**Métodos**
+
+| Método | Descripción |
+|---|---|
+| handle(GetPlantHistoryByPlantIdQuery) | Obtiene un registro histórico por ID de planta. |
+| handle(GetAllPlantHistoriesByPlantIdQuery) | Recupera todos los registros históricos asociados a un ID de planta. |
+
+**Clase: `PlantHistoryCommandService`**
+
+| Título | PlantHistoryCommandService |
+|---|---|
+| Descripción | Interfaz de servicio de comandos para la gestión de historiales de planta. |
+
+**Métodos**
+
+| Método | Descripción |
+|---|---|
+| handle(CreatePlantHistoryCommand) | Crea un nuevo registro histórico a partir del comando y retorna su ID. |
+
+#### 4.2.3.2. Interface Layer
+
+La capa de interfaz del contexto PlantProfiles expone controladores REST para la gestión de plantas y sus historiales. Utiliza assemblers especializados para transformar las solicitudes HTTP en comandos y consultas, asegurando que el dominio no se vea afectado por cambios en la API externa.
+
+**Controlador: `PlantCommandController`**
+
+Maneja las operaciones de escritura sobre plantas, permitiendo la creación, actualización y eliminación de las mismas.
+
+**Métodos**
+
+| Método | Ruta | Descripción |
+|---|---|---|
+| createPlant | POST /api/v1/plants | Crea una nueva planta y devuelve sus datos. |
+| updatePlant | PUT /api/v1/plants/{plantId} | Actualiza la información de una planta existente. |
+| deletePlant | DELETE /api/v1/plants/{plantId} | Elimina una planta del sistema. |
+
+**Controlador: `PlantQueryController`**
+
+Gestiona las operaciones de consulta y lectura de plantas en la plataforma.
+
+**Métodos**
+
+| Método | Ruta | Descripción |
+|---|---|---|
+| getAllPlants | GET /api/v1/plants | Lista todas las plantas del sistema. |
+| getAllPlantsByProfileId | GET /api/v1/plants/by-profile/{profileId} | Recupera las plantas asociadas a un perfil. |
+| getPlantById | GET /api/v1/plants/{plantId} | Recupera una planta por su ID. |
+
+**Controlador: `PlantHistoryCommandController`**
+
+Maneja las operaciones de escritura sobre historiales de planta.
+
+**Métodos**
+
+| Método | Ruta | Descripción |
+|---|---|---|
+| createPlantHistory | POST /api/v1/plantHistories | Crea un nuevo registro histórico de planta. |
+
+**Controlador: `PlantHistoryQueryController`**
+
+Gestiona las operaciones de consulta y lectura de historiales de planta.
+
+**Métodos**
+
+| Método | Ruta | Descripción |
+|---|---|---|
+| getPlantHistoryByPlantId | GET /api/v1/plantHistories/by-plant/plantId | Recupera un registro histórico por ID de planta. |
+| getAllPlantsByProfileId | GET /api/v1/plantHistories/plantId | Recupera todos los historiales asociados a una planta. |
+
+**Controlador adicional: `WeatherQueryController`**
+
+Controlador proxy para consultas meteorológicas externas.
+
+| Método | Ruta | Descripción |
+|---|---|---|
+| getWeatherByCity | GET /api/v1/weather/city | Obtiene datos climáticos de OpenWeather API por ciudad. |
+
+**Recursos (DTOs)**
+
+| Recurso | Descripción |
+|---|---|
+| CreatePlantResource | Contiene los datos para crear una planta: name, species, acquisitionDate, humidity, nextWateringDate, imageUrl, notificationsEnabled, profileId. |
+| UpdatePlantResource | Contiene los datos actualizables de una planta. |
+| PlantResource | Representa la respuesta de una planta: id, name, species, acquisitionDate, humidity, nextWateringDate, imageUrl, notificationsEnabled, profileId. |
+| CreatePlantHistoryResource | Contiene los datos para crear un historial: plantId, type, date, time, humidity. |
+| PlantHistoryResource | Representa la respuesta de un historial: id, plantId, type, date, time, humidity. |
+
+**Assemblers (Transformadores)**
+
+| Assembler | Descripción |
+|---|---|
+| CreatePlantCommandFromResourceAssembler | Convierte un CreatePlantResource en un CreatePlantCommand. |
+| UpdatePlantCommandFromResourceAssembler | Convierte un UpdatePlantResource en un UpdatePlantCommand. |
+| PlantResourceFromEntityAssembler | Convierte la entidad Plant en un PlantResource. |
+| CreatePlantHistoryCommandFromResourceAssembler | Convierte un CreatePlantHistoryResource en un CreatePlantHistoryCommand. |
+| PlantHistoryResourceFromEntityAssembler | Convierte la entidad PlantHistory en un PlantHistoryResource. |
+
+#### 4.2.3.3. Application Layer
+
+Los servicios internos implementan la lógica de orquestación para la gestión de plantas y sus historiales. Se encargan de validar la existencia de entidades, ejecutar comandos, coordinar la persistencia y manejar excepciones específicas del dominio.
+
+**Clase: `PlantCommandServiceImpl`**
+
+| Título | PlantCommandServiceImpl |
+|---|---|
+| Descripción | Implementación del servicio de comandos para gestionar la creación, actualización y eliminación de plantas. |
+
+**Dependencias**
+
+| Dependencia | Descripción |
+|---|---|
+| PlantRepository | Repositorio para la persistencia de plantas. |
+
+**Clase: `PlantQueryServiceImpl`**
+
+| Título | PlantQueryServiceImpl |
+|---|---|
+| Descripción | Implementación del servicio de consultas para operaciones de lectura de plantas. |
+
+**Dependencias**
+
+| Dependencia | Descripción |
+|---|---|
+| PlantRepository | Repositorio para el acceso a la base de datos de plantas. |
+
+**Clase: `PlantHistoryCommandServiceImpl`**
+
+| Título | PlantHistoryCommandServiceImpl |
+|---|---|
+| Descripción | Implementación del servicio de comandos para gestionar la creación de historiales de planta. |
+
+**Dependencias**
+
+| Dependencia | Descripción |
+|---|---|
+| PlantHistoryRepository | Repositorio para la persistencia de historiales de planta. |
+
+**Clase: `PlantHistoryQueryServiceImpl`**
+
+| Título | PlantHistoryQueryServiceImpl |
+|---|---|
+| Descripción | Implementación del servicio de consultas para operaciones de lectura de historiales de planta. |
+
+**Dependencias**
+
+| Dependencia | Descripción |
+|---|---|
+| PlantHistoryRepository | Repositorio para el acceso a la base de datos de historiales de planta. |
+
+#### 4.2.3.4. Infrastructure Layer
+
+Esta capa implementa los mecanismos de persistencia mediante JPA y Spring Data JPA.
+
+**Clase: `PlantRepository`**
+
+| Título | PlantRepository |
+|---|---|
+| Descripción | Interfaz de persistencia para operaciones CRUD y búsqueda de plantas por perfil. |
+
+**Métodos**
+
+| Método | Descripción |
+|---|---|
+| findById(Long) | Recupera una planta por su ID. |
+| findAll() | Recupera todas las plantas. |
+| findByProfileId(ProfileId) | Recupera las plantas asociadas a un ID de perfil. |
+| save(Plant) | Persiste o actualiza la información de la planta. |
+| deleteById(Long) | Elimina una planta por su ID. |
+| existsById(Long) | Verifica si una planta existe por su ID. |
+
+**Clase: `PlantHistoryRepository`**
+
+| Título | PlantHistoryRepository |
+|---|---|
+| Descripción | Interfaz de persistencia para operaciones CRUD y búsqueda de historiales por planta. |
+
+**Métodos**
+
+| Método | Descripción |
+|---|---|
+| findById(Long) | Recupera un historial por su ID. |
+| findByPlantId(PlantId) | Recupera todos los historiales asociados a un ID de planta. |
+| save(PlantHistory) | Persiste o actualiza el historial de planta. |
+| existsById(Long) | Verifica si un historial existe por su ID. |
+
+#### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams
+
+Este diagrama representa cómo el Bounded Context de PlantProfiles gestiona las plantas y sus historiales.
+El PlantCommandController es el punto de entrada principal para el flujo de creación, actualización y eliminación de plantas, mientras que el PlantQueryController maneja las consultas de lectura. Adicionalmente, el PlantHistoryCommandController y PlantHistoryQueryController gestionan los registros históricos de cuidado de las plantas. Todos los controladores delegan respectivamente en PlantCommandService, PlantQueryService, PlantHistoryCommandService y PlantHistoryQueryService.
+La persistencia se realiza en una base de datos relacional MySQL a través de PlantRepository y PlantHistoryRepository.
+<p __align__="center">
+  <img src="images/BoundedContext/IAM/IAM.png">
+</p>
+<p __align__="center">
+  Elaboración propia
+</p>
+
+#### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams
+
+En esta sección, se explica los diagramas que presentan un mayor detalle sobre la implementación de componentes en el bounded context de PlantProfiles.
+
+##### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams
+
+<br>
+<p __align__="center">
+  <img src="images/BoundedContext/PlantProfiles/plantprofilesuml.png" alt = "updated class diagram" width="100%">
+</p>
+<p __align__="center">
+    Bounded Context Class Diagram - Elaboración propia
+</p>
+
+##### 4.2.3.6.2. Bounded Context Database Design Diagram
+
+<p align="center">
+  <img src="images/BoundedContext/PlantProfiles/databasedbplantprofile.png" alt = "database diagram" width="80%">
+</p>
+
+<p align="center">
+  Elaboración propia
+</p>
+
+<hr class="page-break">
 
 # Capítulo V: Solution UI/UX Design
 
