@@ -934,23 +934,201 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
 
 ## 4.2. Tactical-Level Domain-Driven Design
 
-### 4.2.X. Bounded Context: \<Bounded Context Name\>
+### 4.2.X. Bounded Context: \<IAM\>
 
 #### 4.2.X.1. Domain Layer
 
+En esta capa se define el núcleo de la seguridad y gestión de identidades, encapsulando las reglas de negocio para la autenticación y autorización de usuarios.
+
+**Aggregate: `User`**
+
+El agregado User es la raíz que gestiona la identidad de los usuarios en el sistema, asegurando que las credenciales y los roles asignados sean consistentes y válidos.
+
+| Atributos      | Tipo de dato     | Visibilidad | Descripción                                     |
+|----------------|-----------------|------------|------------------------------------------------|
+| id     | Long            | Private    | Identificador único del usuario.            |
+| email      | String           | Private    | Correo electrónico único para la autenticación.    |
+| password       | String          | Private    | Contraseña del usuario almacenada de forma segura (hasheada).                      |
+| roles    | Set<Role>         | Private    | Conjunto de roles asignados para el control de acceso.          |
+
+
+| Métodos                         | Tipo de retorno | Visibilidad | Descripción                                      |
+|---------------------------------|----------------|------------|------------------------------------------------|
+| getId()                 | Long           | Public     | Devuelve el ID del usuario.                   |
+| getEmail()                 | String          | Public     | Devuelve el correo electrónico.    |
+| getPassword()                      | String         | Public     | Devuelve la contraseña hasheada.              |
+| addRole(Role)                | User       | Public     | Agrega un nuevo rol al usuario.        |
+| addRoles(List<Role>)                     | User  | Public     | Añade una lista de roles validando que no esté vacía.       |
+| updateInformation(String)                       | User           | Public     | Actualiza el correo electrónico del usuario. |
+
+**Value Objects**
+
+| Value Object   | Descripción                                                                 |
+|----------------|-----------------------------------------------------------------------------|
+| Roles  | Enumeración que define los tipos de roles permitidos: `ROLE_USER`, `ROLE_ADMIN`, etc.      |
+| Role | Entidad de dominio que representa un rol persistido con su respectivo nombre.|
+
+**Clase: `UserQueryService`**
+
+| Título       | UserQueryService |
+|--------------|----------------------|
+| Descripción  | Interfaz de servicio de consultas para operaciones de lectura de identidades y usuarios. |
+
+**Métodos**
+
+| Método                             | Descripción                                               |
+|-----------------------------------|-----------------------------------------------------------|
+| handle(GetUserByIdQuery)        | Obtiene la información detallada de un usuario por su identificador único.   |
+| handle(GetUserByEmailQuery) | Busca un usuario en el sistema utilizando su dirección de correo electrónico.     |
+| handle(GetAllUsersQuery) | Recupera la lista completa de usuarios registrados en el sistema. |
+
+**Clase: `UserCommandService`**
+
+| Título       | UserCommandService |
+|--------------|------------------------|
+| Descripción  | Interfaz de servicio de comandos para la gestión de registros y autenticación. |
+
+**Métodos**
+
+| Método                           | Descripción                                                        |
+|---------------------------------|--------------------------------------------------------------------|
+| handle(SignUpCommand)     | Registra un nuevo usuario, gestionando el hasheo de contraseña y asignación de roles iniciales.            |
+| handle(SignInCommand)     | Procesa el inicio de sesión y genera el token de acceso correspondiente. |
+| handle(UpdateUserCommand)    | Actualiza los datos de identidad de un usuario existente.                          |
+
 #### 4.2.X.2. Interface Layer
+
+La capa de interfaz del contexto IAM expone controladores REST para la seguridad y gestión de perfiles. Utiliza assemblers especializados para transformar las solicitudes HTTP en comandos y queries, asegurando que el dominio no se vea afectado por cambios en la API externa.
+
+**Controlador: `AuthenticationController`**
+
+Maneja los procesos críticos de entrada al sistema, permitiendo el registro de nuevos usuarios y la obtención de tokens de acceso Bearer.
+
+**Metodos**
+
+| Método           | Ruta                              | Descripción                                               |
+|-----------------|----------------------------------|-----------------------------------------------------------|
+| signUp   | POST /api/v1/authentication/sign-up        | Registra un usuario y devuelve sus datos básicos. |
+| signIn| POST /api/v1/authentication/sign-in | Autentica al usuario y devuelve el token JWT generado. |
+
+**Controlador: `UserController`**
+
+Gestiona la administración y consulta de los usuarios dentro de la plataforma.
+
+**Metodos**
+
+| Método           | Ruta                              | Descripción                                               |
+|-----------------|----------------------------------|-----------------------------------------------------------|
+| getUserById   | GET /api/v1/users/{id}        | Recupera un usuario por su ID. |
+| getAllUsers | GET /api/v1/users | Lista todos los usuarios del sistema. |
+| updateUser    | PUT /api/v1/users/{id}            | Actualiza la información de un usuario. |
+
+**Dependencias**
+
+| Dependencia                         | Descripción                                                                 |
+|------------------------------------|-----------------------------------------------------------------------------|
+| UserCommandService                 | Servicio para ejecutar comandos de registro y autenticación.               |
+| UserQueryService               | Servicio para recuperación de datos de usuarios. |
+| SignUpCommandFromResourceAssembler | Mapea el recurso de registro a un comando SignUp.           |
+| SignInCommandFromResourceAssembler | Mapea las credenciales a un comando SignIn.      |
+| UserResourceFromEntityAssembler | Convierte la entidad User en un recurso para la respuesta API.         |
 
 #### 4.2.X.3. Application Layer
 
+Los servicios internos implementan la lógica de orquestación de la seguridad. Se encargan de validar la existencia de usuarios, interactuar con servicios de hashing y gestionar la generación de tokens, coordinando el flujo de datos entre el dominio y la infraestructura.
+
+**Clase: `UserCommandServiceImpl`**
+
+| Título       | UserCommandServiceImpl |
+|--------------|--------------------------|
+| Descripción  | Implementación del servicio de comandos para gestionar la creación y actualización de usuarios. |
+
+**Dependencias**
+
+| Dependencia            | Descripción                                   |
+|-------------------------|-----------------------------------------------|
+| UserRepository       | Repositorio para la persistencia de usuarios.  |
+| RoleRepository     | Repositorio para buscar y asignar roles.  |
+| HashingService     | Servicio para el cifrado seguro de contraseñas.  |
+| TokenService    | Servicio para la generación de tokens JWT.  |
+
+**Clase: `UserQueryServiceImpl`**
+
+| Título       | ProjectCommandServiceImpl |
+|--------------|----------------------------|
+| Descripción  | Implementación del servicio de consultas para operaciones de lectura de usuarios. |
+
+**Dependencias**
+
+| Dependencia            | Descripción                                   |
+|-------------------------|-----------------------------------------------|
+| UserRepository       | Repositorio para el acceso a la base de datos de usuarios. |
+
 #### 4.2.X.4. Infrastructure Layer
+
+Esta capa implementa los mecanismos de persistencia mediante JPA y la integración con Spring Security para la protección de recursos.
+
+**Clase: `UserRepository`**
+
+| Título       | UserRepository |
+|-------------|------------------|
+| Descripción | Interfaz de persistencia para operaciones CRUD y búsqueda de usuarios por email o ID. |
+
+**Metodos**
+
+| Método             | Descripción                                           |
+|-------------------|-------------------------------------------------------|
+| findByUsername(String) | Recupera un usuario basándose en su email/username. |
+| existsByUsername(String)   | Verifica si un correo electrónico ya está registrado en el sistema.                        |
+| save(User)    | Persiste o actualiza la información del usuario en la base de datos.                        |
+
+**Clase: `BCryptHashingService`**
+
+| Título       | BCryptHashingService |
+|-------------|------------------|
+| Descripción | Implementación del servicio de hashing utilizando el algoritmo BCrypt para proteger las contraseñas. |
 
 #### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams
 
+Este diagrama representa cómo el Bounded Context de IAM gestiona la seguridad. 
+
+El `AuthenticationController` es el punto de entrada principal para el flujo de autenticación, delegando al `UserCommandService`, el cual utiliza servicios de infraestructura como `TokenService` y `HashingService`. 
+
+La persistencia se realiza en una base de datos relacional MySQL a través de `UserRepository`.
+
+<p align="center">
+  <img src="images/BoundedContext/IAM/IAM.png">
+</p>
+
+<p align="center">
+  Elaboración propia
+</p>
+
 #### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams
+
+En esta sección, se explica los diagramas que presentan un mayor detalle sobre la implementación de componentes en el bounded context de IAM.
 
 ##### 4.2.X.6.1. Bounded Context Domain Layer Class Diagrams
 
+<br>
+
+<p align="center">
+  <img src="images/BoundedContext/IAM/IAM_UML.png" alt = "updated class diagram" width="90%">
+</p>
+
+<p align="center">
+    Bounded Context Class Diagram - Elaboración propia
+</p>
+
 ##### 4.2.X.6.2. Bounded Context Database Design Diagram
+
+<p align="center">
+  <img src="images/BoundedContext/IAM/IAM Database.png" alt = "database diagram" width="80%">
+</p>
+
+<p align="center">
+  Elaboración propia
+</p>
 
 <hr class="page-break">
 
