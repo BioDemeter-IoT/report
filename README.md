@@ -934,9 +934,9 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
 
 ## 4.2. Tactical-Level Domain-Driven Design
 
-### 4.2.X. Bounded Context: \<IAM\>
+### 4.2.1. Bounded Context: \<IAM\>
 
-#### 4.2.X.1. Domain Layer
+#### 4.2.1.1. Domain Layer
 
 En esta capa se define el núcleo de la seguridad y gestión de identidades, encapsulando las reglas de negocio para la autenticación y autorización de usuarios.
 
@@ -996,7 +996,7 @@ El agregado User es la raíz que gestiona la identidad de los usuarios en el sis
 | handle(SignInCommand)     | Procesa el inicio de sesión y genera el token de acceso correspondiente. |
 | handle(UpdateUserCommand)    | Actualiza los datos de identidad de un usuario existente.                          |
 
-#### 4.2.X.2. Interface Layer
+#### 4.2.1.2. Interface Layer
 
 La capa de interfaz del contexto IAM expone controladores REST para la seguridad y gestión de perfiles. Utiliza assemblers especializados para transformar las solicitudes HTTP en comandos y queries, asegurando que el dominio no se vea afectado por cambios en la API externa.
 
@@ -1033,7 +1033,7 @@ Gestiona la administración y consulta de los usuarios dentro de la plataforma.
 | SignInCommandFromResourceAssembler | Mapea las credenciales a un comando SignIn.      |
 | UserResourceFromEntityAssembler | Convierte la entidad User en un recurso para la respuesta API.         |
 
-#### 4.2.X.3. Application Layer
+#### 4.2.1.3. Application Layer
 
 Los servicios internos implementan la lógica de orquestación de la seguridad. Se encargan de validar la existencia de usuarios, interactuar con servicios de hashing y gestionar la generación de tokens, coordinando el flujo de datos entre el dominio y la infraestructura.
 
@@ -1064,7 +1064,7 @@ Los servicios internos implementan la lógica de orquestación de la seguridad. 
 |-------------------------|-----------------------------------------------|
 | UserRepository       | Repositorio para el acceso a la base de datos de usuarios. |
 
-#### 4.2.X.4. Infrastructure Layer
+#### 4.2.1.4. Infrastructure Layer
 
 Esta capa implementa los mecanismos de persistencia mediante JPA y la integración con Spring Security para la protección de recursos.
 
@@ -1088,7 +1088,7 @@ Esta capa implementa los mecanismos de persistencia mediante JPA y la integraci�
 |-------------|------------------|
 | Descripción | Implementación del servicio de hashing utilizando el algoritmo BCrypt para proteger las contraseñas. |
 
-#### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams
+#### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
 
 Este diagrama representa cómo el Bounded Context de IAM gestiona la seguridad. 
 
@@ -1104,11 +1104,11 @@ La persistencia se realiza en una base de datos relacional MySQL a través de `U
   Elaboración propia
 </p>
 
-#### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams
+#### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams
 
 En esta sección, se explica los diagramas que presentan un mayor detalle sobre la implementación de componentes en el bounded context de IAM.
 
-##### 4.2.X.6.1. Bounded Context Domain Layer Class Diagrams
+##### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams
 
 <br>
 
@@ -1120,7 +1120,7 @@ En esta sección, se explica los diagramas que presentan un mayor detalle sobre 
     Bounded Context Class Diagram - Elaboración propia
 </p>
 
-##### 4.2.X.6.2. Bounded Context Database Design Diagram
+##### 4.2.1.6.2. Bounded Context Database Design Diagram
 
 <p align="center">
   <img src="images/BoundedContext/IAM/IAM Database.png" alt = "database diagram" width="80%">
