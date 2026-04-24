@@ -1305,6 +1305,46 @@ Esta capa implementa los mecanismos de persistencia mediante JPA y Spring Data J
 | findAll() | Recupera todos los perfiles. |
 
 
+#### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams
+
+Este diagrama representa cómo el Bounded Context de Profiles gestiona los perfiles de usuario.
+El ProfilesCommandController es el punto de entrada principal para el flujo de creación y actualización de perfiles, mientras que el ProfilesQueryController maneja las consultas de lectura. Ambos controladores delegan respectivamente en ProfileCommandService y ProfileQueryService.
+La persistencia se realiza en una base de datos relacional MySQL a través de ProfileRepository.
+<p __align__="center">
+  <img src="images/BoundedContext/Profiles/Profiles.png">
+</p>
+<p __align__="center">
+  Elaboración propia
+</p>
+
+#### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams
+
+En esta sección, se explica los diagramas que presentan un mayor detalle sobre la implementación de componentes en el bounded context de Profiles.
+
+##### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams
+
+<br>
+<p __align__="center">
+  <img src="images/BoundedContext/Profiles/classdiagramprofiles.png" alt = "updated class diagram" width="90%">
+</p>
+<p __align__="center">
+    Bounded Context Class Diagram - Elaboración propia
+</p>
+
+
+##### 4.2.2.6.2. Bounded Context Database Design Diagram
+
+<p align="center">
+  <img src="images/BoundedContext/Profiles/Database.png" alt = "database diagram" width="80%">
+</p>
+
+<p align="center">
+  Elaboración propia
+</p>
+
+<hr class="page-break">
+
+
 # Capítulo V: Solution UI/UX Design
 
 ## 5.1. Style Guidelines
