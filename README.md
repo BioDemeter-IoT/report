@@ -1132,6 +1132,219 @@ En esta sección, se explica los diagramas que presentan un mayor detalle sobre 
 
 <hr class="page-break">
 
+
+
+### 4.2.2. Bounded Context: Profiles
+
+#### 4.2.2.1. Domain Layer
+
+En esta capa se define el núcleo de la gestión de perfiles de usuario, encapsulando las reglas de negocio para la información personal, suscripción y estado de pago.
+
+**Aggregate: `Profile`**
+
+El agregado Profile es la raíz que gestiona los perfiles de usuario en el sistema, asegurando que los datos personales y la suscripción sean consistentes y válidos.
+
+| Atributos | Tipo de dato | Visibilidad | Descripción |
+|---|---|---|---|
+| id | Long | Private | Identificador único del perfil. |
+| personName | PersonName | Private | Nombre completo de la persona asociada al perfil. |
+| subscriptionPlan | SubscriptionPlan | Private | Plan de suscripción actual del usuario. |
+| userId | UserId | Private | ID del usuario asociado al perfil. |
+| paymentStatus | PaymentStatus | Private | Estado de pago de la suscripción. |
+
+| Métodos | Tipo de retorno | Visibilidad | Descripción |
+|---|---|---|---|
+| getId() | Long | Public | Devuelve el ID del perfil. |
+| getPersonName() | PersonName | Public | Devuelve el nombre completo. |
+| getSubscriptionPlan() | SubscriptionPlan | Public | Devuelve el plan de suscripción. |
+| getUserId() | UserId | Public | Devuelve el ID del usuario asociado. |
+| getPaymentStatus() | PaymentStatus | Public | Devuelve el estado de pago. |
+| updateInformation(PersonName, SubscriptionPlan) | Profile | Public | Actualiza el nombre y el plan de suscripción del perfil. |
+| Profile(CreateProfileCommand) | Constructor | Public | Crea un nuevo perfil a partir de un comando. |
+
+**Value Objects**
+
+| Value Object | Descripción |
+|---|---|
+| PersonName | Registro que representa el nombre de una persona. Valida que no sea nulo o esté en blanco. |
+| UserId | Registro que representa el identificador de un usuario. Valida que no sea nulo o menor o igual a cero. |
+| SubscriptionPlan | Enumeración que define los planes de suscripción permitidos: `BASIC`, `PREMIUM`, `PRO`. |
+| PaymentStatus | Enumeración que define los estados de pago: `PENDING`, `PAID`. |
+
+**Excepciones de Dominio**
+
+| Excepción | Descripción |
+|---|---|
+| ProfileNotFoundException | Se lanza cuando no se encuentra un perfil para actualizar. |
+| ProfileUpdateException | Se lanza cuando ocurre un error durante la actualización de un perfil. |
+
+**Clase: `ProfileQueryService`**
+
+| Título | ProfileQueryService |
+|---|---|
+| Descripción | Interfaz de servicio de consultas para operaciones de lectura de perfiles. |
+
+**Métodos**
+
+| Método | Descripción |
+|---|---|
+| handle(GetProfileByIdQuery) | Obtiene un perfil por su identificador único. |
+| handle(GetProfileByUserIdQuery) | Busca un perfil utilizando el ID del usuario. |
+| handle(GetAllProfilesQuery) | Recupera la lista completa de perfiles registrados en el sistema. |
+
+**Clase: `ProfileCommandService`**
+
+| Título | ProfileCommandService |
+|---|---|
+| Descripción | Interfaz de servicio de comandos para la gestión de perfiles. |
+
+**Métodos**
+
+| Método | Descripción |
+|---|---|
+| handle(CreateProfileCommand) | Crea un nuevo perfil a partir del comando. |
+| handle(UpdateProfileCommand) | Actualiza la información de un perfil existente. |
+
+#### 4.2.2.2. Interface Layer
+
+La capa de interfaz del contexto Profiles expone controladores REST para la gestión de perfiles. Utiliza assemblers especializados para transformar las solicitudes HTTP en comandos y queries, asegurando que el dominio no se vea afectado por cambios en la API externa.
+
+**Controlador: `ProfilesCommandController`**
+
+Maneja las operaciones de escritura sobre perfiles, permitiendo la creación y actualización de los mismos.
+
+**Métodos**
+
+| Método | Ruta | Descripción |
+|---|---|---|
+| createProfile | POST /api/v1/profiles | Crea un nuevo perfil y devuelve sus datos. |
+| updateProfile | PUT /api/v1/profiles/{id} | Actualiza la información de un perfil existente. |
+
+**Controlador: `ProfilesQueryController`**
+
+Gestiona la administración y consulta de los perfiles dentro de la plataforma.
+
+**Métodos**
+
+| Método | Ruta | Descripción |
+|---|---|---|
+| getProfileById | GET /api/v1/profiles/{profileId} | Recupera un perfil por su ID. |
+| getAllProfiles | GET /api/v1/profiles | Lista todos los perfiles del sistema. |
+| getProfileByUserId | GET /api/v1/profiles/by-user-id | Recupera un perfil por ID de usuario. |
+
+**Dependencias**
+
+| Dependencia | Descripción |
+|---|---|
+| ProfileCommandService | Servicio para ejecutar comandos de creación y actualización de perfiles. |
+| ProfileQueryService | Servicio para recuperación de datos de perfiles. |
+| CreateProfileCommandFromResourceAssembler | Mapea el recurso de creación a un comando CreateProfileCommand. |
+| UpdateProfileCommandFromResourceAssembler | Mapea el recurso de actualización a un comando UpdateProfileCommand. |
+| ProfileResourceFromEntityAssembler | Convierte la entidad Profile en un recurso para la respuesta API. |
+
+**Recursos**
+
+| Recurso | Descripción |
+|---|---|
+| CreateProfileResource | Contiene los campos personName, subscriptionPlan y userId para crear un perfil. |
+| UpdateProfileResource | Contiene los campos personName y subscriptionPlan para actualizar un perfil. |
+| ProfileResource | Contiene los campos id, personName, subscriptionPlan y userId para la respuesta API. |
+
+**ACL (Anticorruption Layer)**
+
+| Clase | Descripción |
+|---|---|
+| ProfilesContextFacade | Interfaz de fachada para que otros contextos interactúen con Profiles. |
+| ProfilesContextFacadeImpl | Implementación que permite crear un perfil desde otro contexto. |
+
+#### 4.2.2.3. Application Layer
+
+Los servicios internos implementan la lógica de orquestación de los perfiles. Se encargan de validar la existencia de perfiles, ejecutar comandos y gestionar la persistencia.
+
+**Clase: `ProfileCommandServiceImpl`**
+
+| Título | ProfileCommandServiceImpl |
+|---|---|
+| Descripción | Implementación del servicio de comandos para gestionar la creación y actualización de perfiles. |
+
+**Dependencias**
+
+| Dependencia | Descripción |
+|---|---|
+| ProfileRepository | Repositorio para la persistencia de perfiles. |
+
+**Clase: `ProfileQueryServiceImpl`**
+
+| Título | ProfileQueryServiceImpl |
+|---|---|
+| Descripción | Implementación del servicio de consultas para operaciones de lectura de perfiles. |
+
+**Dependencias**
+
+| Dependencia | Descripción |
+|---|---|
+| ProfileRepository | Repositorio para el acceso a la base de datos de perfiles. |
+
+#### 4.2.2.4. Infrastructure Layer
+
+Esta capa implementa los mecanismos de persistencia mediante JPA y Spring Data JPA.
+
+**Clase: `ProfileRepository`**
+
+| Título | ProfileRepository |
+|---|---|
+| Descripción | Interfaz de persistencia para operaciones CRUD y búsqueda de perfiles por usuario. |
+
+**Métodos**
+
+| Método | Descripción |
+|---|---|
+| findById(Long) | Recupera un perfil por su ID. |
+| findByUserId(UserId) | Recupera un perfil basándose en el ID del usuario asociado. |
+| save(Profile) | Persiste o actualiza la información del perfil en la base de datos. |
+| findAll() | Recupera todos los perfiles. |
+
+
+#### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams
+
+Este diagrama representa cómo el Bounded Context de Profiles gestiona los perfiles de usuario.
+El ProfilesCommandController es el punto de entrada principal para el flujo de creación y actualización de perfiles, mientras que el ProfilesQueryController maneja las consultas de lectura. Ambos controladores delegan respectivamente en ProfileCommandService y ProfileQueryService.
+La persistencia se realiza en una base de datos relacional MySQL a través de ProfileRepository.
+<p __align__="center">
+  <img src="images/BoundedContext/IAM/IAM.png">
+</p>
+<p __align__="center">
+  Elaboración propia
+</p>
+
+#### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams
+
+En esta sección, se explica los diagramas que presentan un mayor detalle sobre la implementación de componentes en el bounded context de Profiles.
+
+##### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams
+
+<br>
+<p __align__="center">
+  <img src="images/BoundedContext/Profiles/classdiagramprofiles.png" alt = "updated class diagram" width="90%">
+</p>
+<p __align__="center">
+    Bounded Context Class Diagram - Elaboración propia
+</p>
+
+
+##### 4.2.2.6.2. Bounded Context Database Design Diagram
+
+<p align="center">
+  <img src="images/BoundedContext/Profiles/Database.png" alt = "database diagram" width="80%">
+</p>
+
+<p align="center">
+  Elaboración propia
+</p>
+
+<hr class="page-break">
+
+
 # Capítulo V: Solution UI/UX Design
 
 ## 5.1. Style Guidelines
