@@ -912,6 +912,24 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
 
 ### 4.1.1. Design-Level EventStorming
 
+Como grupo llevamos a cabo una reunión de EventStorming con la finalidad de entender el ámbito del problema y proponer un enfoque inicial al modelado general de Innospace. Esta actividad tuvo una duración aproximada de 1-2 horas, durante las cuales identificamos los eventos clave, los participantes y las normas que determinan las interacciones entre los estudiantes y las empresas.
+
+A lo largo de la sesión, utilizamos una herramienta colaborativa para estructurar y visualizar los elementos, lo que nos permitió conversar, llegar a un acuerdo y definir los primeros contextos delimitados del sistema. El resultado es un mapa preliminar del ámbito que servirá como fundamento para el análisis y diseño más detallado en las etapas siguientes.
+
+__Paleta de colores aplicados a los post-its utilizados:__
+
++ 🟧 Naranja: Domain Event (Evento que ya ocurrió, siempre en pasado. Ej: Luz Registrada).
++ 🟦 Azul: Command (Acción o intención. Ej: Registrar Luz).
++ 🟨 Amarillo Claro (pequeño): Actor (El usuario).
++ 🟪 Rosado: External System (Sensores, Actuadores, APIs externas).
++ 🟩 Verde: Read Model (Lo que el usuario ve: Dashboards, Notificaciones).
++ 🟨 Amarillo Oscuro (grande): Aggregate / System (El componente de software que procesa la lógica).
++ 🟪 Lila: Policy (Regla de negocio: "Si pasa X, entonces haz Y"). 
+
+
+
+---
+
 #### 4.1.1.1. Candidate Context Discovery
 
 #### 4.1.1.2. Domain Message Flows Modeling
