@@ -994,6 +994,44 @@ __Cuarto paso:__
   Event Storming 4.2 - Elaboración propia
 </p>
 
+__Quinto paso:__
+<p align="center">
+  <img src="images/Miro/EventStorming-Paso5_1.jpeg">
+</p>
+<p align="center">
+  Event Storming 5.1 - Elaboración propia
+</p>
+<p align="center">
+  <img src="images/Miro/EventStorming-Paso5_2.jpeg">
+</p>
+<p align="center">
+  Event Storming 5.2 - Elaboración propia
+</p>
+<p align="center">
+  <img src="images/Miro/EventStorming-Paso5_3.jpeg">
+</p>
+<p align="center">
+  Event Storming 5.3 - Elaboración propia
+</p><p align="center">
+  <img src="images/Miro/EventStorming-Paso5_4.jpeg">
+</p>
+<p align="center">
+  Event Storming 5.4 - Elaboración propia
+</p><p align="center">
+  <img src="images/Miro/EventStorming-Paso5_5.jpeg">
+</p>
+<p align="center">
+  Event Storming 5.5 - Elaboración propia
+</p>
+
+__Sexto paso:__
+<p align="center">
+  <img src="images/Miro/EventStorming-Paso6.jpeg">
+</p>
+<p align="center">
+  Event Storming 6 - Elaboración propia
+</p>
+
 
 ---
 
