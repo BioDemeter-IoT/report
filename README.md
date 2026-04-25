@@ -926,7 +926,12 @@ __Paleta de colores aplicados a los post-its utilizados:__
 + 🟨 Amarillo Oscuro (grande): Aggregate / System (El componente de software que procesa la lógica).
 + 🟪 Lila: Policy (Regla de negocio: "Si pasa X, entonces haz Y"). 
 
+__Primer paso:__
+<p align="center">
+  <img src="images/Miro/EventStorming-Paso1.jpeg">
+</p>
 
+__Segundo paso:__
 
 ---
 
