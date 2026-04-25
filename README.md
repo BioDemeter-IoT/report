@@ -90,8 +90,16 @@
         - [Business Assumptions](#business-assumptions)
         - [User Assumptions](#user-assumptions)
       - [1.2.2.3. Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
+      - [Hypothesis Statement 01](#hypothesis-statement-01)
+      - [Hypothesis Statement 02](#hypothesis-statement-02)
+      - [Hypothesis Statement 03](#hypothesis-statement-03)
+      - [Hypothesis Statement 04](#hypothesis-statement-04)
       - [1.2.2.4. Lean UX Canvas](#1224-lean-ux-canvas)
   - [1.3. Segmentos objetivo](#13-segmentos-objetivo)
+    - [Principiantes cuidadores de plantas](#principiantes-cuidadores-de-plantas)
+        - [Características demográficas:](#características-demográficas)
+    - [Expertos cuidadores de plantas](#expertos-cuidadores-de-plantas)
+      - [Características demográficas:](#características-demográficas-1)
 - [Capítulo II: Requirements Elicitation \& Analysis](#capítulo-ii-requirements-elicitation--analysis)
   - [2.1. Competidores](#21-competidores)
     - [2.1.1. Análisis competitivo](#211-análisis-competitivo)
@@ -104,7 +112,11 @@
     - [2.3.1. User Personas](#231-user-personas)
     - [2.3.2. User Task Matrix](#232-user-task-matrix)
     - [2.3.3. User Journey Mapping](#233-user-journey-mapping)
+      - [Journey principiante](#journey-principiante)
+      - [Journey experto](#journey-experto)
     - [2.3.4. Empathy Mapping](#234-empathy-mapping)
+      - [Segmento 1 — Principiante cuidador de plantas](#segmento-1--principiante-cuidador-de-plantas)
+      - [Segmento 2 — Experto cuidador de plantas](#segmento-2--experto-cuidador-de-plantas)
   - [2.4. Big Picture EventStorming](#24-big-picture-eventstorming)
   - [2.5. Ubiquitous Language](#25-ubiquitous-language)
 - [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
@@ -124,15 +136,42 @@
       - [4.1.3.3. Software Architecture Container Level Diagrams](#4133-software-architecture-container-level-diagrams)
       - [4.1.3.4. Software Architecture Deployment Diagrams](#4134-software-architecture-deployment-diagrams)
   - [4.2. Tactical-Level Domain-Driven Design](#42-tactical-level-domain-driven-design)
-    - [4.2.X. Bounded Context: \<Bounded Context Name\>](#42x-bounded-context-bounded-context-name)
-      - [4.2.X.1. Domain Layer](#42x1-domain-layer)
-      - [4.2.X.2. Interface Layer](#42x2-interface-layer)
-      - [4.2.X.3. Application Layer](#42x3-application-layer)
-      - [4.2.X.4. Infrastructure Layer](#42x4-infrastructure-layer)
-      - [4.2.X.5. Bounded Context Software Architecture Component Level Diagrams](#42x5-bounded-context-software-architecture-component-level-diagrams)
-      - [4.2.X.6. Bounded Context Software Architecture Code Level Diagrams](#42x6-bounded-context-software-architecture-code-level-diagrams)
-        - [4.2.X.6.1. Bounded Context Domain Layer Class Diagrams](#42x61-bounded-context-domain-layer-class-diagrams)
-        - [4.2.X.6.2. Bounded Context Database Design Diagram](#42x62-bounded-context-database-design-diagram)
+    - [4.2.1. Bounded Context: \<IAM\>](#421-bounded-context-iam)
+      - [4.2.1.1. Domain Layer](#4211-domain-layer)
+      - [4.2.1.2. Interface Layer](#4212-interface-layer)
+      - [4.2.1.3. Application Layer](#4213-application-layer)
+      - [4.2.1.4. Infrastructure Layer](#4214-infrastructure-layer)
+      - [4.2.1.5. Bounded Context Software Architecture Component Level Diagrams](#4215-bounded-context-software-architecture-component-level-diagrams)
+      - [4.2.1.6. Bounded Context Software Architecture Code Level Diagrams](#4216-bounded-context-software-architecture-code-level-diagrams)
+        - [4.2.1.6.1. Bounded Context Domain Layer Class Diagrams](#42161-bounded-context-domain-layer-class-diagrams)
+        - [4.2.1.6.2. Bounded Context Database Design Diagram](#42162-bounded-context-database-design-diagram)
+    - [4.2.2. Bounded Context: Profiles](#422-bounded-context-profiles)
+      - [4.2.2.1. Domain Layer](#4221-domain-layer)
+      - [4.2.2.2. Interface Layer](#4222-interface-layer)
+      - [4.2.2.3. Application Layer](#4223-application-layer)
+      - [4.2.2.4. Infrastructure Layer](#4224-infrastructure-layer)
+      - [4.2.2.5. Bounded Context Software Architecture Component Level Diagrams](#4225-bounded-context-software-architecture-component-level-diagrams)
+      - [4.2.2.6. Bounded Context Software Architecture Code Level Diagrams](#4226-bounded-context-software-architecture-code-level-diagrams)
+        - [4.2.2.6.1. Bounded Context Domain Layer Class Diagrams](#42261-bounded-context-domain-layer-class-diagrams)
+        - [4.2.2.6.2. Bounded Context Database Design Diagram](#42262-bounded-context-database-design-diagram)
+    - [4.2.3. Bounded Context: PlantProfiles](#423-bounded-context-plantprofiles)
+      - [4.2.3.1. Domain Layer](#4231-domain-layer)
+      - [4.2.3.2. Interface Layer](#4232-interface-layer)
+      - [4.2.3.3. Application Layer](#4233-application-layer)
+      - [4.2.3.4. Infrastructure Layer](#4234-infrastructure-layer)
+      - [4.2.3.5. Bounded Context Software Architecture Component Level Diagrams](#4235-bounded-context-software-architecture-component-level-diagrams)
+      - [4.2.3.6. Bounded Context Software Architecture Code Level Diagrams](#4236-bounded-context-software-architecture-code-level-diagrams)
+        - [4.2.3.6.1. Bounded Context Domain Layer Class Diagrams](#42361-bounded-context-domain-layer-class-diagrams)
+        - [4.2.3.6.2. Bounded Context Database Design Diagram](#42362-bounded-context-database-design-diagram)
+    - [4.2.4. Bounded Context: IoT Management](#424-bounded-context-iot-management)
+      - [4.2.4.1. Domain Layer](#4241-domain-layer)
+      - [4.2.4.2. Interface Layer](#4242-interface-layer)
+      - [4.2.4.3. Application Layer](#4243-application-layer)
+      - [4.2.4.4. Infrastructure Layer](#4244-infrastructure-layer)
+      - [4.2.4.5. Bounded Context Software Architecture Component Level Diagrams](#4245-bounded-context-software-architecture-component-level-diagrams)
+      - [4.2.4.6. Bounded Context Software Architecture Code Level Diagrams](#4246-bounded-context-software-architecture-code-level-diagrams)
+        - [4.2.4.6.1. Bounded Context Domain Layer Class Diagrams](#42461-bounded-context-domain-layer-class-diagrams)
+        - [4.2.4.6.2. Bounded Context Database Design Diagram](#42462-bounded-context-database-design-diagram)
 - [Capítulo V: Solution UI/UX Design](#capítulo-v-solution-uiux-design)
   - [5.1. Style Guidelines](#51-style-guidelines)
     - [5.1.1. General Style Guidelines](#511-general-style-guidelines)
@@ -1678,6 +1717,340 @@ En esta sección, se explica los diagramas que presentan un mayor detalle sobre 
 </p>
 
 <hr class="page-break">
+
+### 4.2.4. Bounded Context: IoT Management
+
+#### 4.2.4.1. Domain Layer
+
+En esta capa se define la gestión de dispositivos IoT, lecturas de sensores y comandos de actuadores.
+
+**Aggregate: `IoTNode`**
+
+El agregado IoTNode representa un dispositivo Arduino registrado en el sistema, vinculado a una planta.
+
+| Atributos | Tipo de dato | Visibilidad | Descripción |
+|---|---|---|---|
+| id | Long | Private | Identificador único del nodo. |
+| nodeCode | String | Private | Código único del hardware (MAC). |
+| status | NodeStatus | Private | ONLINE, OFFLINE, ERROR. |
+| plantId | Long | Private | ID de la planta asociada. |
+| profileId | Long | Private | ID del propietario. |
+| createdAt | LocalDateTime | Private | Fecha de registro. |
+
+| Métodos | Tipo de retorno | Visibilidad | Descripción |
+|---|---|---|---|
+| getId() | Long | Public | Devuelve el ID. |
+| getNodeCode() | String | Public | Devuelve código. |
+| getStatus() | NodeStatus | Public | Devuelve estado. |
+| updateStatus(NodeStatus) | IoTNode | Public | Actualiza estado. |
+| IoTNode(CreateNodeCommand) | Constructor | Public | Crea nodo. |
+
+**Aggregate: `SensorReading`**
+
+Representa una lectura de sensores (DHT11: temperatura y humedad; capacitivo: humedad de suelo).
+
+| Atributos | Tipo de dato | Visibilidad | Descripción |
+|---|---|---|---|
+| id | Long | Private | Identificador único. |
+| nodeId | Long | Private | ID del nodo origen. |
+| soilHumidity | Float | Private | Humedad del suelo (%). |
+| airTemperature | Float | Private | Temperatura (°C). |
+| airHumidity | Float | Private | Humedad del aire (%). |
+| timestamp | LocalDateTime | Private | Momento de captura. |
+
+| Métodos | Tipo de retorno | Visibilidad | Descripción |
+|---|---|---|---|
+| getId() | Long | Public | Devuelve ID. |
+| getNodeId() | Long | Public | Devuelve nodo origen. |
+| getSoilHumidity() | Float | Public | Devuelve humedad suelo. |
+| getAirTemperature() | Float | Public | Devuelve temperatura. |
+| getTimestamp() | LocalDateTime | Public | Devuelve timestamp. |
+| SensorReading(CreateReadingCommand) | Constructor | Public | Crea lectura. |
+
+**Aggregate: `ActuatorCommand`**
+
+Representa un comando enviado a un actuador (luz UV o rociador de agua).
+
+| Atributos | Tipo de dato | Visibilidad | Descripción |
+|---|---|---|---|
+| id | Long | Private | Identificador único. |
+| nodeId | Long | Private | ID del nodo destino. |
+| actuatorType | ActuatorType | Private | UV_LIGHT o WATER_SPRAYER. |
+| action | ActuatorAction | Private | ACTIVATE o DEACTIVATE. |
+| status | CommandStatus | Private | PENDING, SENT, ACKNOWLEDGED. |
+| issuedAt | LocalDateTime | Private | Momento de emisión. |
+
+| Métodos | Tipo de retorno | Visibilidad | Descripción |
+|---|---|---|---|
+| getId() | Long | Public | Devuelve ID. |
+| getNodeId() | Long | Public | Devuelve nodo. |
+| getActuatorType() | ActuatorType | Public | Devuelve tipo. |
+| getStatus() | CommandStatus | Public | Devuelve estado. |
+| acknowledge() | ActuatorCommand | Public | Marca ejecutado. |
+| ActuatorCommand(IssueCommandCommand) | Constructor | Public | Crea comando. |
+
+**Value Objects**
+
+| Value Object | Descripción |
+|---|---|
+| NodeStatus | ONLINE, OFFLINE, ERROR |
+| ActuatorType | UV_LIGHT, WATER_SPRAYER |
+| ActuatorAction | ACTIVATE, DEACTIVATE |
+| CommandStatus | PENDING, SENT, ACKNOWLEDGED |
+
+**Excepciones de Dominio**
+
+| Excepción | Descripción |
+|---|---|
+| IoTNodeNotFoundException | Nodo no encontrado. |
+| IoTNodeAlreadyRegisteredException | NodeCode ya existe. |
+| ActuatorCommandFailedException | Comando no ejecutado. |
+
+**Clase: `IoTNodeQueryService`**
+
+| Título | IoTNodeQueryService |
+|---|---|
+| Descripción | Servicio de consultas para operaciones de lectura de nodos. |
+
+| Métodos | Descripción |
+|---|---|
+| handle(GetNodeByIdQuery) | Obtiene nodo por ID. |
+| handle(GetNodesByProfileIdQuery) | Lista nodos del perfil. |
+
+**Clase: `IoTNodeCommandService`**
+
+| Título | IoTNodeCommandService |
+|---|---|
+| Descripción | Servicio de comandos para gestión de nodos. |
+
+| Métodos | Descripción |
+|---|---|
+| handle(CreateNodeCommand) | Registra nodo. |
+| handle(UpdateNodeStatusCommand) | Actualiza estado. |
+
+**Clase: `SensorReadingQueryService`**
+
+| Título | SensorReadingQueryService |
+|---|---|
+| Descripción | Servicio de consultas para lecturas de sensores. |
+
+| Métodos | Descripción |
+|---|---|
+| handle(GetLatestReadingQuery) | Obtiene lectura más reciente. |
+| handle(GetReadingsByRangeQuery) | Obtiene lecturas en rango. |
+
+**Clase: `SensorReadingCommandService`**
+
+| Título | SensorReadingCommandService |
+|---|---|
+| Descripción | Servicio de comandos para ingesta de telemetría. Al recibir lectura, evalúa reglas y dispara actuadores. |
+
+| Métodos | Descripción |
+|---|---|
+| handle(CreateReadingCommand) | Ingesta lectura y evalúa reglas. |
+
+**Clase: `ActuatorCommandService`**
+
+| Título | ActuatorCommandService |
+|---|---|
+| Descripción | Servicio para gestión de comandos de actuadores. |
+
+| Métodos | Descripción |
+|---|---|
+| handle(IssueCommandCommand) | Emite comando al actuador. |
+| handle(AcknowledgeCommandCommand) | Registra acuse de recibo. |
+
+#### 4.2.4.2. Interface Layer
+
+**Controlador: `SensorReadingController`**
+
+Gestiona ingesta de lecturas de sensores.
+
+| Método | Ruta | Descripción |
+|---|---|---|
+| createReading | POST /api/v1/iot/readings | Ingesta lectura. |
+| getLatestReading | GET /api/v1/iot/readings/latest/{nodeId} | Lectura más reciente. |
+| getReadingsByRange | GET /api/v1/iot/readings/{nodeId}/range | Lecturas en rango de fechas. |
+
+**Controlador: `ActuatorCommandController`**
+
+Gestiona comandos de actuadores.
+
+| Método | Ruta | Descripción |
+|---|---|---|
+| issueCommand | POST /api/v1/iot/commands | Emite comando. |
+| acknowledgeCommand | PATCH /api/v1/iot/commands/{commandId} | Acuse de recibo. |
+
+**Controlador: `IoTNodeController`**
+
+Gestiona las operaciones de registro, consulta y actualización de los nodos IoT.
+
+| Método | Ruta | Descripción |
+| :--- | :--- | :--- |
+| createNode | POST /api/v1/iot/nodes | Registra un nuevo nodo IoT vinculándolo a una planta y perfil. |
+| getNodeById | GET /api/v1/iot/nodes/{nodeId} | Obtiene la información de un nodo por su ID. |
+| getNodesByProfileId | GET /api/v1/iot/nodes/profile/{profileId} | Lista todos los nodos asociados a un perfil específico. |
+| updateNodeStatus | PATCH /api/v1/iot/nodes/{nodeId}/status | Actualiza el estado operativo de un nodo (ONLINE, OFFLINE, ERROR). |
+
+**Recursos (DTOs)**
+
+| Recurso | Descripción |
+|---|---|
+| CreateNodeResource | nodeCode, plantId, profileId |
+| IoTNodeResource | id, nodeCode, status, plantId, profileId, createdAt |
+| CreateReadingResource | nodeId, soilHumidity, airTemperature, airHumidity |
+| SensorReadingResource | id, nodeId, soilHumidity, airTemperature, airHumidity, timestamp |
+| IssueCommandResource | nodeId, actuatorType, action |
+| ActuatorCommandResource | id, nodeId, actuatorType, action, status, issuedAt |
+
+**Dependencias**
+
+| Dependencia | Descripción |
+|---|---|
+| IoTNodeCommandService | Servicio de comandos de nodos. |
+| IoTNodeQueryService | Servicio de consultas de nodos. |
+| SensorReadingCommandService | Servicio de comandos de lecturas. |
+| SensorReadingQueryService | Servicio de consultas de lecturas. |
+| ActuatorCommandService | Servicio de comandos de actuadores. |
+| IoTNodeRepository | Repositorio de nodos. |
+| SensorReadingRepository | Repositorio de lecturas. |
+| ActuatorCommandRepository | Repositorio de comandos. |
+
+#### 4.2.4.3. Application Layer
+
+**Clase: `IoTNodeCommandServiceImpl`**
+
+| Título | IoTNodeCommandServiceImpl |
+|---|---|
+| Descripción | Implementación de servicio de comandos para gestión de nodos. |
+
+| Dependencias | Descripción |
+|---|---|
+| IoTNodeRepository | Repositorio de nodos. |
+
+**Clase: `IoTNodeQueryServiceImpl`**
+
+| Título | IoTNodeQueryServiceImpl |
+|---|---|
+| Descripción | Implementación de servicio de consultas para operaciones de lectura de nodos. |
+
+| Dependencias | Descripción |
+|---|---|
+| IoTNodeRepository | Repositorio de nodos. |
+
+**Clase: `SensorReadingCommandServiceImpl`**
+
+| Título | SensorReadingCommandServiceImpl |
+|---|---|
+| Descripción | Implementación de servicio de comandos para ingesta de telemetría. Evalúa reglas de cuidado automáticamente. |
+
+| Dependencias | Descripción |
+|---|---|
+| SensorReadingRepository | Repositorio de lecturas. |
+| ActuatorCommandService | Dispara comandos automáticos si hay anomalías. |
+
+**Clase: `SensorReadingQueryServiceImpl`**
+
+| Título | SensorReadingQueryServiceImpl |
+|---|---|
+| Descripción | Implementación de servicio de consultas para lecturas de sensores. |
+
+| Dependencias | Descripción |
+|---|---|
+| SensorReadingRepository | Repositorio de lecturas. |
+
+
+**Clase: `ActuatorCommandServiceImpl`**
+
+| Título | ActuatorCommandServiceImpl |
+|---|---|
+| Descripción | Implementación de servicio para gestión de comandos de actuadores. Persiste y publica en MQTT. |
+
+| Dependencias | Descripción |
+|---|---|
+| ActuatorCommandRepository | Repositorio de comandos. |
+| MqttPublisherService | Publicador MQTT para hardware. |
+
+#### 4.2.4.4. Infrastructure Layer
+
+**Clase: `IoTNodeRepository`**
+
+| Título | IoTNodeRepository |
+|---|---|
+| Descripción | Repositorio para operaciones CRUD de nodos IoT. |
+
+| Métodos | Descripción |
+|---|---|
+| findById(Long) | Por ID. |
+| findByProfileId(Long) | Por perfil. |
+| findByPlantId(Long) | Por planta. |
+| existsByNodeCode(String) | Verifica unicidad. |
+| save(IoTNode) | Persiste. |
+
+**Clase: `SensorReadingRepository`**
+
+| Título | SensorReadingRepository |
+|---|---|
+| Descripción | Repositorio para operaciones CRUD de lecturas. |
+
+| Métodos | Descripción |
+|---|---|
+| findTopByNodeIdOrderByTimestampDesc(Long) | Última lectura. |
+| findByNodeIdAndTimestampBetween(Long, LocalDateTime, LocalDateTime) | Rango de fechas. |
+| save(SensorReading) | Persiste. |
+
+**Clase: `ActuatorCommandRepository`**
+
+| Título | ActuatorCommandRepository |
+|---|---|
+| Descripción | Repositorio para operaciones CRUD de comandos. |
+
+| Métodos | Descripción |
+|---|---|
+| findById(Long) | Por ID. |
+| findByNodeId(Long) | Por nodo. |
+| save(ActuatorCommand) | Persiste. |
+
+**Clase: `MqttPublisherService`**
+
+| Título | MqttPublisherService |
+|---|---|
+| Descripción | Servicio de infraestructura para publicar comandos en MQTT hacia Arduino. |
+
+| Métodos | Descripción |
+|---|---|
+| publish(String topic, String payload) | Publica mensaje en MQTT. |
+
+#### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams
+
+Este diagrama C4 (nivel componente) muestra la estructura interna del Bounded Context IoT Management en el backend Spring Boot. El sistema gestiona la comunicación bidireccional con Arduino mediante REST y MQTT: los controladores (IoTNodeController, SensorReadingController, ActuatorCommandController) reciben solicitudes y las derivan a servicios de aplicación, que ejecutan la lógica de negocio, evalúan anomalías y disparan actuadores cuando corresponde. La información se persiste en MySQL a través de sus repositorios, y MqttPublisherService publica comandos en el broker MQTT para su ejecución en Arduino.
+
+<p __align__="center">
+  <img src="images/BoundedContext/IotManagement/C4Component.png">
+</p>
+
+
+
+#### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams
+
+Este diagrama UML muestra la capa de dominio de IoT Management con tres agregados principales (IoTNode, SensorReading y ActuatorCommand), modelados como entidades independientes del negocio, junto con los value objects/enumeraciones (NodeStatus, ActuatorType, ActuatorAction, CommandStatus) que aseguran consistencia de datos; además, presenta los servicios de comando y consulta que orquestan la lógica, destacando que SensorReadingCommandService activa ActuatorCommandService cuando detecta anomalías en la telemetría.
+
+<p __align__="center">
+  <img src="images/BoundedContext/IotManagement/classDiagram.png">
+</p>
+
+
+
+##### 4.2.4.6.2. Bounded Context Database Design Diagram
+
+El diseño de base de datos del bounded context IoT Management se compone de tres tablas principales: iot_nodes, que registra cada nodo Arduino con su nodeCode único, estado, referencias de planta/perfil y fecha de creación; sensor_readings, que almacena la telemetría (humedad de suelo, temperatura y humedad de aire, timestamp) vinculada al nodo por nodeId y optimizada para consultas temporales con índices por nodo y fecha; y actuator_commands, que guarda el historial de comandos enviados a actuadores (tipo, acción, estado y fecha) también relacionado por nodeId e indexado para localizar rápidamente comandos pendientes; en conjunto, las relaciones garantizan consistencia e integridad referencial al depender ambas tablas transaccionales de iot_nodes.
+
+<p __align__="center">
+  <img src="images/BoundedContext/IotManagement/desingDiagram.png">
+</p>
+
 
 # Capítulo V: Solution UI/UX Design
 
