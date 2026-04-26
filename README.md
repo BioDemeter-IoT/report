@@ -3090,7 +3090,275 @@ En esta sección, se explica los diagramas que presentan un mayor detalle sobre 
 
 <hr class="page-break">
 
+### 4.2.6. Bounded Context: Inteligencia Botánica y Análisis Externo
 
+#### 4.2.6.1. Domain Layer
+
+En esta capa se define el núcleo de la generación de recomendaciones personalizadas de cuidado por especie, encapsulando las reglas de negocio para analizar telemetría de sensores, consultar datos botánicos externos y producir consejos accionables para el usuario.
+
+**Aggregate: `Recommendation`**
+
+El agregado Recommendation es la raíz que gestiona las recomendaciones de cuidado generadas para una planta específica, asegurando que la evaluación de condiciones y los consejos producidos sean consistentes y válidos.
+
+| Atributos | Tipo de dato | Visibilidad | Descripción |
+|---|---|---|---|
+| id | RecommendationId | Private | Identificador único de la recomendación. |
+| plantId | String | Private | Identificador de la planta evaluada. |
+| userId | String | Private | Identificador del usuario propietario. |
+| telemetrySnapshot | TelemetrySnapshot | Private | Captura inmutable de telemetría relevante. |
+| externalSpeciesData | ExternalSpeciesData | Private | Datos externos de especie consultados. |
+| plantCondition | PlantCondition | Private | Estado evaluado de la planta. |
+| advices | List\<CareAdvice\> | Private | Lista de consejos priorizados generados. |
+| generatedAt | LocalDateTime | Private | Fecha y hora de generación. |
+| domainEvents | List\<DomainEvent\> | Private | Eventos de dominio pendientes de publicación. |
+
+| Métodos | Tipo de retorno | Visibilidad | Descripción |
+|---|---|---|---|
+| getId() | RecommendationId | Public | Devuelve el ID de la recomendación. |
+| getPlantId() | String | Public | Devuelve el ID de la planta asociada. |
+| getUserId() | String | Public | Devuelve el ID del usuario propietario. |
+| getPlantCondition() | PlantCondition | Public | Devuelve la condición evaluada de la planta. |
+| getAdvicesOrderedByPriority() | List\<CareAdvice\> | Public | Devuelve consejos ordenados por prioridad. |
+| pullDomainEvents() | List\<DomainEvent\> | Public | Extrae eventos de dominio para publicación. |
+| evaluate(RecommendationService) | void | Public | Ejecuta evaluación con servicio de dominio. |
+| Recommendation(RecommendationId, String, String, TelemetrySnapshot, ExternalSpeciesData) | Constructor | Public | Crea una nueva recomendación. |
+
+**Entity: `CareAdvice`**
+
+Entidad que representa un consejo específico generado como parte de una recomendación, incluyendo prioridad, tipo y mensaje de acción.
+
+| Atributos | Tipo de dato | Visibilidad | Descripción |
+|---|---|---|---|
+| id | UUID | Private | Identificador único del consejo. |
+| type | CareAdviceType | Private | Tipo de consejo generado. |
+| priority | int | Private | Nivel de prioridad del consejo. |
+| message | String | Private | Mensaje descriptivo para el usuario. |
+| actionRequired | String | Private | Acción recomendada a ejecutar. |
+
+| Métodos | Tipo de retorno | Visibilidad | Descripción |
+|---|---|---|---|
+| getId() | UUID | Public | Devuelve el ID del consejo. |
+| getType() | CareAdviceType | Public | Devuelve el tipo de consejo. |
+| getPriority() | int | Public | Devuelve la prioridad del consejo. |
+| getMessage() | String | Public | Devuelve el mensaje descriptivo. |
+| isHighPriority() | boolean | Public | Indica si el consejo es de alta prioridad. |
+| CareAdvice(CareAdviceType, int, String, String) | Constructor | Public | Crea un nuevo consejo de cuidado. |
+
+**Value Objects**
+
+| Value Object | Descripción |
+|---|---|
+| RecommendationId | Registro que representa el identificador único de una recomendación. Encapsula un UUID. |
+| TelemetrySnapshot | Captura inmutable de telemetría relevante: humedad del suelo, temperatura ambiental, nivel de luz, timestamp y origen. Proporciona métodos de validación contra umbrales. |
+| ExternalSpeciesData | Información externa por especie: rangos óptimos de humedad, temperatura, iluminación mínima, frecuencia de riego sugerida y fuente de datos. |
+| PlantCondition | Enumeración que representa el estado evaluado de la planta: OPTIMAL, STRESS_HUMIDITY, STRESS_TEMPERATURE, STRESS_LIGHT, CRITICAL. |
+| CareAdviceType | Enumeración del tipo de consejo: WATERING, LIGHT_SUPPLEMENT, TEMPERATURE_ADJUSTMENT, FERTILIZER, GENERAL. |
+
+**Domain Events**
+
+| Event | Descripción |
+|---|---|
+| RecommendationGenerated | Evento de dominio emitido cuando se genera exitosamente una nueva recomendación para una planta. Contiene ID de recomendación, plantId, userId, condición detectada y cantidad de consejos. |
+
+**Domain Services**
+
+| Service | Descripción |
+|---|---|
+| RecommendationService | Servicio de dominio que compara telemetría contra datos externos de especie, determina PlantCondition y construye la lista priorizada de CareAdvice. |
+
+**Clase: `RecommendationQueryService`**
+
+| Título | RecommendationQueryService |
+|---|---|
+| Descripción | Interfaz de servicio de consultas para operaciones de lectura de recomendaciones generadas. |
+
+**Métodos**
+
+| Método | Descripción |
+|---|---|
+| handle(GetLatestRecommendationQuery) | Recupera la recomendación más reciente de una planta. |
+| handle(GetRecommendationHistoryQuery) | Recupera el historial paginado de recomendaciones de una planta. |
+
+**Clase: `RecommendationCommandService`**
+
+| Título | RecommendationCommandService |
+|---|---|
+| Descripción | Interfaz de servicio de comandos para la generación de recomendaciones. |
+
+**Métodos**
+
+| Método | Descripción |
+|---|---|
+| handle(GenerateRecommendationCommand) | Orquesta la generación completa de una recomendación: consulta telemetría, especie, datos externos, evalúa, persiste y publica evento. |
+
+#### 4.2.6.2. Interface Layer
+
+La capa de interfaz del contexto Inteligencia Botánica y Análisis Externo expone controladores REST para consulta de recomendaciones y consumidores de eventos para procesamiento asíncrono de telemetría. Utiliza assemblers especializados para transformar las solicitudes y respuestas, asegurando que el dominio no se vea afectado por cambios en la API externa.
+
+**Controlador: `RecommendationController`**
+
+Gestiona las operaciones de consulta de recomendaciones generadas para plantas específicas.
+
+**Métodos**
+
+| Método | Ruta | Descripción |
+|---|---|---|
+| getLatestRecommendation | GET /api/v1/recommendations/{plantId}/latest | Devuelve la última recomendación generada para una planta. |
+| getRecommendationHistory | GET /api/v1/recommendations/{plantId}/history | Devuelve el historial paginado de recomendaciones de una planta. |
+
+**Consumidor de Eventos: `TelemetryEventConsumer`**
+
+Escucha eventos de nueva telemetría publicados por el bounded context IoT Management y desencadena la generación automática de recomendaciones.
+
+**Métodos**
+
+| Método | Descripción |
+|---|---|
+| onTelemetrySaved(TelemetrySavedEvent) | Consume el evento de telemetría guardada y activa el comando GenerateRecommendation. |
+
+**Recursos (DTOs)**
+
+| Recurso | Descripción |
+|---|---|
+| RecommendationResource | Representa la respuesta de una recomendación: plantCondition, lista de advices ordenados por prioridad, timestamp de generación y fuente de datos. |
+
+**Assemblers (Transformadores)**
+
+| Assembler | Descripción |
+|---|---|
+| RecommendationAssembler | Convierte el aggregate Recommendation en un RecommendationResource para exposición vía API REST. |
+
+#### 4.2.6.3. Application Layer
+
+Los servicios internos implementan la lógica de orquestación para la generación y consulta de recomendaciones. Se encargan de coordinar la interacción entre telemetría, perfiles de planta, datos externos y persistencia.
+
+**Clase: `GenerateRecommendationCommandHandler`**
+
+| Título | GenerateRecommendationCommandHandler |
+|---|---|
+| Descripción | Implementación del handler de comando que orquesta la generación completa de una recomendación. |
+
+**Dependencias**
+
+| Dependencia | Descripción |
+|---|---|
+| IRecommendationRepository | Repositorio para persistencia de recomendaciones. |
+| ISpeciesDataRepository | Repositorio para consulta de datos externos de especie. |
+| RecommendationService | Servicio de dominio para evaluación de condiciones. |
+| RecommendationEventPublisher | Publicador de eventos de dominio. |
+| PlantProfilesClient | Cliente HTTP para consulta de especie desde PlantProfiles BC. |
+
+**Clase: `GetLatestRecommendationQueryHandler`**
+
+| Título | GetLatestRecommendationQueryHandler |
+|---|---|
+| Descripción | Implementación del handler de consulta para recuperar la última recomendación de una planta. |
+
+**Dependencias**
+
+| Dependencia | Descripción |
+|---|---|
+| IRecommendationRepository | Repositorio para acceso a datos de recomendaciones. |
+
+**Clase: `GetRecommendationHistoryQueryHandler`**
+
+| Título | GetRecommendationHistoryQueryHandler |
+|---|---|
+| Descripción | Implementación del handler de consulta para recuperar historial paginado de recomendaciones. |
+
+**Dependencias**
+
+| Dependencia | Descripción |
+|---|---|
+| IRecommendationRepository | Repositorio para acceso paginado al historial. |
+
+#### 4.2.6.4. Infrastructure Layer
+
+Esta capa implementa los mecanismos de persistencia, integración con servicios externos y publicación de eventos.
+
+**Clase: `RecommendationRepositoryImpl`**
+
+| Título | RecommendationRepositoryImpl |
+|---|---|
+| Descripción | Implementación JPA del repositorio de recomendaciones para persistencia en base de datos relacional. |
+
+**Métodos**
+
+| Método | Descripción |
+|---|---|
+| save(Recommendation) | Persiste o actualiza una recomendación. |
+| findById(RecommendationId) | Recupera una recomendación por su ID. |
+| findLatestByPlantId(String) | Recupera la recomendación más reciente de una planta. |
+| findByPlantIdPaginated(String, int, int) | Recupera historial paginado de recomendaciones. |
+
+**Clase: `SpeciesDataRepositoryImpl`**
+
+| Título | SpeciesDataRepositoryImpl |
+|---|---|
+| Descripción | Implementación del repositorio que consume API externa de datos botánicos por especie (ej. Perenual API). |
+
+**Métodos**
+
+| Método | Descripción |
+|---|---|
+| findBySpeciesName(String) | Consulta datos externos de especie y retorna ExternalSpeciesData. |
+
+**Clase: `TelemetryEventConsumerImpl`**
+
+| Título | TelemetryEventConsumerImpl |
+|---|---|
+| Descripción | Implementación del consumidor de eventos que escucha TelemetrySaved desde el message broker y delega al command handler. |
+
+**Clase: `RecommendationEventPublisher`**
+
+| Título | RecommendationEventPublisher |
+|---|---|
+| Descripción | Adaptador que publica el evento RecommendationGenerated al message broker (RabbitMQ/Kafka) para notificaciones. |
+
+**Infraestructura de Soporte**
+
+| Component | Descripción |
+|---|---|
+| SpeciesDataCache | Caché basada en Redis con TTL configurable para reducir llamadas a API externa. Almacena ExternalSpeciesData indexado por speciesName. |
+
+#### 4.2.6.5. Bounded Context Software Architecture Component Level Diagrams
+
+Este diagrama representa cómo el Bounded Context de Inteligencia Botánica y Análisis Externo gestiona la generación de recomendaciones personalizadas de cuidado por especie.
+
+El RecommendationController es el punto de entrada principal para las consultas de recomendaciones, delegando en los query handlers correspondientes. El TelemetryEventConsumer escucha eventos de nueva telemetría desde IoT Management y activa el GenerateRecommendationCommandHandler, quien orquesta la consulta de especie desde PlantProfiles, la obtención de datos externos desde SpeciesDataRepository, la evaluación con RecommendationService y la persistencia del resultado. La persistencia se realiza en una base de datos relacional MySQL a través de RecommendationRepositoryImpl.
+
+<p align="center">
+  <img src="https://i.imgur.com/z3WV0Na.png">
+</p>
+<p align="center">
+  Elaboración propia
+</p>
+
+#### 4.2.6.6. Bounded Context Software Architecture Code Level Diagrams
+
+En esta sección, se explican los diagramas que presentan un mayor detalle sobre la implementación de componentes en el bounded context de Inteligencia Botánica y Análisis Externo.
+
+##### 4.2.6.6.1. Bounded Context Domain Layer Class Diagrams
+
+<br>
+<p align="center">
+  <img src="https://i.imgur.com/txZn7ir.png" alt="Bounded Context Class Diagram" width="100%">
+</p>
+<p align="center">
+    Bounded Context Class Diagram - Elaboración propia
+</p>
+
+##### 4.2.6.6.2. Bounded Context Database Design Diagram
+
+<p align="center">
+  <img src="https://i.imgur.com/dmbd8Iz.png" alt="Database Design Diagram" width="80%">
+</p>
+
+<p align="center">
+  Elaboración propia
+</p>
+
+<hr class="page-break">
 
 # Capítulo V: Solution UI/UX Design
 
