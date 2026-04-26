@@ -861,15 +861,15 @@ Por motivos de almacenamiento, tuvimos que mantener por separado la entrevista 3
   <tbody>
     <tr>
       <td>Entrevista 3</td>
-      <td> <img src="https://i.ibb.co/HDSTKLcL/marcelo.png" alt="interview 3" width="400"/> </td>
+      <td> <img src="https://i.ibb.co/wZ45Bvgj/pedro.png" alt="interview 6" width="400"/> </td>
     </tr>
     <tr>
       <td>Nombre Entrevistado</td>
-      <td>Marcelo Barrientos</td>
+      <td>Pedro Vargas</td>
     </tr>
     <tr>
       <td>Edad</td>
-      <td>21</td>
+      <td>24</td>
     </tr>
     <tr>
       <td>Distrito</td>
@@ -881,16 +881,16 @@ Por motivos de almacenamiento, tuvimos que mantener por separado la entrevista 3
     </tr>
     <tr>
       <td>Duración Entrevista</td>
-      <td>09:52</td>
+      <td>09:21</td>
     </tr>
     <tr>
       <td>Minuto de Inicio</td>
-      <td>00:00 - 09:52</td>
+      <td>00:00 - 09:21</td>
     </tr>
         <tr>
       <td><strong>Resumen:</strong></td>
       <td>
-        Marcelo Barrientos, el cual se le pregunta acerca de que tan beneficioso seria para el una aplicación tecnológica relacionada con la agricultura o el cultivo, posiblemente enfocada en el análisis de imágenes (fotos) para diagnosticar problemas en plantas, recomendar soluciones y facilitar el control automático mediante sensores y retroalimentación.
+        Pedro Vargas, un joven de 24 años con una afición botánica heredada de su familia, experimenta incertidumbre al determinar los requerimientos específicos de riego y clima para cada especie, especialmente con su palto, al cual considera una planta difícil y sensible al exceso de agua. Actualmente gestiona sus cuidados de manera empírica e informal mediante un grupo de WhatsApp personal y tutoriales de YouTube, por lo que valora positivamente una herramienta que centralice el monitoreo visual y ofrezca recomendaciones personalizadas según su ubicación en Lima. Aunque disfruta del proceso manual por la tranquilidad que le brinda, se muestra abierto a la implementación de tecnología IoT y sugiere funciones innovadoras como barreras automatizadas contra el viento para proteger brotes delicados. Finalmente, pese a ser reacio a las suscripciones digitales, estaría dispuesto a realizar pagos eventuales por asesoría avanzada en nutrientes y predicciones climáticas si esto le garantiza la salud de sus plantas más complejas.
       </td>
     </tr>
   </tbody>
@@ -980,15 +980,15 @@ Por motivos de almacenamiento, tuvimos que mantener por separado la entrevista 3
   <tbody>
     <tr>
       <td>Entrevista 6</td>
-      <td> <img src="https://i.ibb.co/wZ45Bvgj/pedro.png" alt="interview 6" width="400"/> </td>
+      <td> <img src="https://i.ibb.co/HDSTKLcL/marcelo.png" alt="interview 3" width="400"/> </td>
     </tr>
     <tr>
       <td>Nombre Entrevistado</td>
-      <td>Pedro Vargas</td>
+      <td>Marcelo Barrientos</td>
     </tr>
     <tr>
       <td>Edad</td>
-      <td>24</td>
+      <td>21</td>
     </tr>
     <tr>
       <td>Distrito</td>
@@ -1000,16 +1000,16 @@ Por motivos de almacenamiento, tuvimos que mantener por separado la entrevista 3
     </tr>
     <tr>
       <td>Duración Entrevista</td>
-      <td>09:21</td>
+      <td>09:52</td>
     </tr>
     <tr>
       <td>Minuto de Inicio</td>
-      <td>00:00 - 09:21</td>
+      <td>00:00 - 09:52</td>
     </tr>
         <tr>
       <td><strong>Resumen:</strong></td>
       <td>
-        Pedro Vargas, un joven de 24 años con una afición botánica heredada de su familia, experimenta incertidumbre al determinar los requerimientos específicos de riego y clima para cada especie, especialmente con su palto, al cual considera una planta difícil y sensible al exceso de agua. Actualmente gestiona sus cuidados de manera empírica e informal mediante un grupo de WhatsApp personal y tutoriales de YouTube, por lo que valora positivamente una herramienta que centralice el monitoreo visual y ofrezca recomendaciones personalizadas según su ubicación en Lima. Aunque disfruta del proceso manual por la tranquilidad que le brinda, se muestra abierto a la implementación de tecnología IoT y sugiere funciones innovadoras como barreras automatizadas contra el viento para proteger brotes delicados. Finalmente, pese a ser reacio a las suscripciones digitales, estaría dispuesto a realizar pagos eventuales por asesoría avanzada en nutrientes y predicciones climáticas si esto le garantiza la salud de sus plantas más complejas.
+        Marcelo Barrientos, el cual se le pregunta acerca de que tan beneficioso seria para el una aplicación tecnológica relacionada con la agricultura o el cultivo, posiblemente enfocada en el análisis de imágenes (fotos) para diagnosticar problemas en plantas, recomendar soluciones y facilitar el control automático mediante sensores y retroalimentación.
       </td>
     </tr>
   </tbody>
