@@ -955,7 +955,7 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
       <td>US01</td>
       <td>Visualización de beneficios botánicos en el Landing Page</td>
       <td>
-        <strong>Como</strong> visitante, <strong>deseo</strong> visualizar una sección informativa sobre los beneficios psicológicos del cuidado de plantas, <strong>para</strong> motivarme a adquirir la solución.
+        <strong>Como</strong> visitante, <strong>quiero</strong> visualizar una sección informativa sobre los beneficios psicológicos del cuidado de plantas, <strong>para</strong> motivarme a adquirir la solución.
       </td>
       <td>
         <strong>Escenario 1: Acceso a información de bienestar.</strong><br>
@@ -967,7 +967,7 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
       <td>US02</td>
       <td>Vinculación de dispositivo IoT con la cuenta</td>
       <td>
-        <strong>Como</strong> usuario, <strong>deseo</strong> vincular mi dispositivo físico con mi cuenta en la aplicación móvil, <strong>para</strong> visualizar los datos capturados de forma privada y exclusiva.
+        <strong>Como</strong> usuario, <strong>quiero</strong> vincular mi dispositivo físico con mi cuenta en la aplicación móvil, <strong>para</strong> visualizar los datos capturados de forma privada y exclusiva.
       </td>
       <td>
         <strong>Escenario 1: Asociación exitosa de hardware.</strong><br>
@@ -979,7 +979,7 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
       <td>US03</td>
       <td>Notificación de activación de actuador</td>
       <td>
-        <strong>Como</strong> entusiasta del cuidado de plantas, <strong>deseo</strong> recibir una notificación en tiempo real cuando la luz UV se encienda, <strong>para</strong> estar al tanto del soporte que recibe mi planta.
+        <strong>Como</strong> entusiasta del cuidado de plantas, <strong>quiero</strong> recibir una notificación en tiempo real cuando la luz UV se encienda, <strong>para</strong> estar al tanto del soporte que recibe mi planta.
       </td>
       <td>
         <strong>Escenario 1: Envío exitoso de alerta.</strong><br>
@@ -991,7 +991,7 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
       <td>US04</td>
       <td>Redirección a plataformas desde el Landing Page</td>
       <td>
-        <strong>Como</strong> visitante, <strong>deseo</strong> encontrar enlaces directos a la aplicación web y a las tiendas de descarga móvil, <strong>para</strong> acceder a las herramientas de gestión botánica.
+        <strong>Como</strong> visitante, <strong>quiero</strong> encontrar enlaces directos a la aplicación web y a las tiendas de descarga móvil, <strong>para</strong> acceder a las herramientas de gestión botánica.
       </td>
       <td>
         <strong>Escenario 1: Uso de Call-to-Action (CTA).</strong><br>
@@ -1003,7 +1003,7 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
       <td>US05</td>
       <td>Registro de métricas de sensores</td>
       <td>
-        <strong>Como</strong> Developer, <strong>deseo</strong> implementar un endpoint que reciba y almacene los datos de luminosidad enviados por el dispositivo IoT, <strong>para</strong> asegurar la persistencia de la información.
+        <strong>Como</strong> Developer, <strong>quiero</strong> implementar un endpoint que reciba y almacene los datos de luminosidad enviados por el dispositivo IoT, <strong>para</strong> asegurar la persistencia de la información.
       </td>
       <td>
         <strong>Escenario 1: Recepción de datos IoT.</strong><br>
@@ -1015,7 +1015,7 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
       <td>US06</td>
       <td>Registro de nueva planta desde la app móvil</td>
       <td>
-        <strong>Como</strong> usuario, <strong>deseo</strong> registrar una nueva planta ingresando su nombre, especie y ubicación, <strong>para</strong> comenzar a monitorear su cuidado desde la aplicación.
+        <strong>Como</strong> usuario, <strong>quiero</strong> registrar una nueva planta ingresando su nombre, especie y ubicación, <strong>para</strong> comenzar a monitorear su cuidado desde la aplicación.
       </td>
       <td>
         <strong>Escenario 1: Registro exitoso de planta.</strong><br>
@@ -1029,7 +1029,7 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
       <td>US07</td>
       <td>Visualización del historial de cuidados</td>
       <td>
-        <strong>Como</strong> usuario, <strong>deseo</strong> consultar el historial de acciones realizadas sobre cada una de mis plantas, <strong>para</strong> identificar patrones y mejorar mis rutinas de cuidado.
+        <strong>Como</strong> usuario, <strong>quiero</strong> consultar el historial de acciones realizadas sobre cada una de mis plantas, <strong>para</strong> identificar patrones y mejorar mis rutinas de cuidado.
       </td>
       <td>
         <strong>Escenario 1: Acceso al historial.</strong><br>
@@ -1055,7 +1055,7 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
       <td>US09</td>
       <td>Registro manual de acción de cuidado</td>
       <td>
-        <strong>Como</strong> usuario, <strong>deseo</strong> registrar manualmente una acción de cuidado, <strong>para</strong> mantener el historial actualizado aunque no cuente con sensor IoT activo.
+        <strong>Como</strong> usuario, <strong>quiero</strong> registrar manualmente una acción de cuidado, <strong>para</strong> mantener el historial actualizado aunque no cuente con sensor IoT activo.
       </td>
       <td>
         <strong>Escenario 1: Registro exitoso.</strong><br>
@@ -1327,7 +1327,7 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
       <td>US30</td>
       <td>Vinculación con datos climáticos locales</td>
       <td>
-        <strong>Como</strong> usuario, <strong>necesito</strong> que el sistema tenga en cuenta el clima local al recomendar cuidados, <strong>para</strong> evitar regar cuando ya ha llovido.
+        <strong>Como</strong> usuario, <strong>quiero</strong> que el sistema tenga en cuenta el clima local al recomendar cuidados, <strong>para</strong> evitar regar cuando ya ha llovido.
       </td>
       <td>
         <strong>Escenario 1: Clima disponible.</strong><br>
@@ -1458,7 +1458,7 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
       <td>1</td>
       <td>US01</td>
       <td>Visualización de beneficios botánicos en el Landing Page</td>
-      <td>Como visitante, deseo visualizar una sección informativa sobre los beneficios psicológicos del cuidado de plantas para motivarme a adquirir la solución.</td>
+      <td>Como visitante, quiero visualizar una sección informativa sobre los beneficios psicológicos del cuidado de plantas para motivarme a adquirir la solución.</td>
       <td>2</td>
     </tr>
     <tr>
@@ -1486,7 +1486,7 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
       <td>5</td>
       <td>US04</td>
       <td>Redirección a plataformas desde el Landing Page</td>
-      <td>Como visitante, deseo encontrar enlaces directos a la aplicación web y a las tiendas de descarga móvil para acceder a las herramientas de gestión botánica.</td>
+      <td>Como visitante, quiero encontrar enlaces directos a la aplicación web y a las tiendas de descarga móvil para acceder a las herramientas de gestión botánica.</td>
       <td>1</td>
     </tr>
     <tr>
@@ -1556,7 +1556,7 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
       <td>15</td>
       <td>US06</td>
       <td>Registro de nueva planta desde la app móvil</td>
-      <td>Como usuario, deseo registrar una nueva planta ingresando su nombre, especie y ubicación para comenzar a monitorear su cuidado desde la aplicación.</td>
+      <td>Como usuario, quiero registrar una nueva planta ingresando su nombre, especie y ubicación para comenzar a monitorear su cuidado desde la aplicación.</td>
       <td>5</td>
     </tr>
     <tr>
@@ -1612,35 +1612,35 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
       <td>23</td>
       <td>US09</td>
       <td>Registro manual de acción de cuidado</td>
-      <td>Como usuario, deseo registrar manualmente una acción de cuidado realizada sobre una planta para mantener el historial actualizado aunque no cuente con sensor IoT activo.</td>
+      <td>Como usuario, quiero registrar manualmente una acción de cuidado realizada sobre una planta para mantener el historial actualizado aunque no cuente con sensor IoT activo.</td>
       <td>3</td>
     </tr>
     <tr>
       <td>24</td>
       <td>US07</td>
       <td>Visualización del historial de cuidados</td>
-      <td>Como usuario, deseo consultar el historial de acciones realizadas sobre cada una de mis plantas para identificar patrones y mejorar mis rutinas de cuidado.</td>
+      <td>Como usuario, quiero consultar el historial de acciones realizadas sobre cada una de mis plantas para identificar patrones y mejorar mis rutinas de cuidado.</td>
       <td>3</td>
     </tr>
     <tr>
       <td>25</td>
       <td>US34</td>
       <td>Disponibilidad en múltiples dispositivos</td>
-      <td>Como usuario, necesito poder ingresar a mi cuenta desde distintos dispositivos, para gestionar mis plantas desde cualquier lugar.</td>
+      <td>Como usuario, quiero poder ingresar a mi cuenta desde distintos dispositivos, para gestionar mis plantas desde cualquier lugar.</td>
       <td>5</td>
     </tr>
     <tr>
       <td>26</td>
       <td>US02</td>
       <td>Vinculación de dispositivo IoT con la cuenta</td>
-      <td>Como usuario, deseo vincular mi dispositivo físico con mi cuenta en la aplicación móvil para visualizar los datos capturados de forma privada y exclusiva.</td>
+      <td>Como usuario, quiero vincular mi dispositivo físico con mi cuenta en la aplicación móvil para visualizar los datos capturados de forma privada y exclusiva.</td>
       <td>5</td>
     </tr>
     <tr>
       <td>27</td>
       <td>US05</td>
       <td>Registro de métricas de sensores</td>
-      <td>Como Developer, deseo implementar un endpoint que reciba y almacene los datos de luminosidad enviados por el dispositivo IoT para asegurar la persistencia de la información.</td>
+      <td>Como Developer, quiero implementar un endpoint que reciba y almacene los datos de luminosidad enviados por el dispositivo IoT para asegurar la persistencia de la información.</td>
       <td>5</td>
     </tr>
     <tr>
@@ -1668,21 +1668,21 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
       <td>31</td>
       <td>US33</td>
       <td>Gestión de Lámpara de Calor</td>
-      <td>Como usuario, quiero encender la lámpara de calor manualmente si noto que el clima es muy frío.</td>
+      <td>Como usuario, quiero encender la lámpara de calor manualmente si noto que el clima es muy frío, para proteger la planta si noto que el clima es muy frío.</td>
       <td>3</td>
     </tr>
     <tr>
       <td>32</td>
       <td>US03</td>
       <td>Notificación de activación de actuador</td>
-      <td>Como entusiasta del cuidado de plantas, deseo recibir una notificación en tiempo real cuando la luz UV se encienda para estar al tanto del soporte que recibe mi planta.</td>
+      <td>Como entusiasta del cuidado de plantas, quiero recibir una notificación en tiempo real cuando la luz UV se encienda para estar al tanto del soporte que recibe mi planta.</td>
       <td>5</td>
     </tr>
     <tr>
       <td>33</td>
       <td>US30</td>
       <td>Vinculación con datos climáticos locales</td>
-      <td>Como usuario, necesito que el sistema tenga en cuenta el clima local al recomendar cuidados, para evitar regar cuando ya ha llovido.</td>
+      <td>Como usuario, quiero que el sistema tenga en cuenta el clima local al recomendar cuidados, para evitar regar cuando ya ha llovido.</td>
       <td>5</td>
     </tr>
     <tr>
