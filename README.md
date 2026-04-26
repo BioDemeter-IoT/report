@@ -805,6 +805,90 @@ Tácticas:
       <td>Minuto de Inicio</td>
       <td>00:00 - 04:54</td>
     </tr>
+        <tr>
+      <td><strong>Resumen:</strong></td>
+      <td>
+        Genaro Ledesma (23), estudiante de ingeniería Civil en la UNMSM, con 7 años de experiencia, vive en Lima y busca profesionalizar el cuidado de sus plantas mediante tecnología. Aunque domina la inspección visual, enfrenta retos con las plagas, el clima inestable y el seguimiento de la fertilización. Le interesa integrar detección de hongos por IA y sistemas IoT para automatizar la humedad y luz, estando dispuesto a pagar por diagnósticos de alta precisión y contacto con especialistas para llevar su hobby al siguiente nivel.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table cellpadding="8" cellspacing="0">
+  <tbody>
+    <tr>
+      <td>Entrevista 2</td>
+      <td> <img src="https://i.ibb.co/VYLmSby9/dione.png" alt="interview 2" width="400"/> </td>
+    </tr>
+    <tr>
+      <td>Nombre Entrevistado</td>
+      <td>Dione Ostos Guillén</td>
+    </tr>
+    <tr>
+      <td>Edad</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>Distrito</td>
+      <td>Lima</td>
+    </tr>
+    <tr>
+      <td>Ocupacion</td>
+      <td>Niñera</td>
+    </tr>
+    <tr>
+      <td>Duración Entrevista</td>
+      <td>06:41</td>
+    </tr>
+    <tr>
+      <td>Minuto de Inicio</td>
+      <td>00:00 - 06:41</td>
+    </tr>
+        <tr>
+      <td><strong>Resumen:</strong></td>
+      <td>
+        Dione Ostos Guillén, una hobbista experta que trabaja como niñera y se interesa por cuidar plantas en maceta, tanto en hogares ajenos como en sus propios cultivos. Siembra flores y hortalizas (como lechuga), todo en macetas, y ha aprendido a manejar problemas como plagas, hongos y los efectos del exceso de riego. Su planta favorita es el jazmín por su aroma; utiliza abono orgánico y complementa su experiencia investigando sobre el cuidado y posibles daños en sus cultivos. Le resulta atractiva una app que explique cómo el clima afecta a las plantas y que pueda reconocer especies mediante fotos. También estaría dispuesta a pagar por un servicio que automatice el cuidado para ahorrar tiempo y mantener sus cultivos saludables.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table cellpadding="8" cellspacing="0">
+  <tbody>
+    <tr>
+      <td>Entrevista 3</td>
+      <td> <img src="https://i.ibb.co/HDSTKLcL/marcelo.png" alt="interview 3" width="400"/> </td>
+    </tr>
+    <tr>
+      <td>Nombre Entrevistado</td>
+      <td>Marcelo Barrientos</td>
+    </tr>
+    <tr>
+      <td>Edad</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>Distrito</td>
+      <td>Lima</td>
+    </tr>
+    <tr>
+      <td>Ocupacion</td>
+      <td>Estudiante</td>
+    </tr>
+    <tr>
+      <td>Duración Entrevista</td>
+      <td>09:52</td>
+    </tr>
+    <tr>
+      <td>Minuto de Inicio</td>
+      <td>00:00 - 09:52</td>
+    </tr>
+        <tr>
+      <td><strong>Resumen:</strong></td>
+      <td>
+        Marcelo Barrientos, el cual se le pregunta acerca de que tan beneficioso seria para el una aplicación tecnológica relacionada con la agricultura o el cultivo, posiblemente enfocada en el análisis de imágenes (fotos) para diagnosticar problemas en plantas, recomendar soluciones y facilitar el control automático mediante sensores y retroalimentación.
+      </td>
+    </tr>
   </tbody>
 </table>
 
@@ -840,6 +924,90 @@ Tácticas:
       <td>Minuto de Inicio</td>
       <td>00:00 - 04:33</td>
     </tr>
+        <tr>
+      <td><strong>Resumen:</strong></td>
+      <td>
+        Melany Paitan (22), estudiante de derecho en la PUCP, cuidadora de plantas principiante con dificultades en la gestión del tiempo y falta de conocimiento técnico, lo que afecta la supervivencia de sus plantas. Busca un sistema de seguimiento claro mediante notificaciones móviles y alertas preventivas basadas en el clima. Debido a su interés en la domótica y la IA, valora la automatización total a través de sensores para garantizar el cuidado óptimo sin depender de su memoria, mostrando disposición a usar herramientas avanzadas para diagnósticos rápidos y efectivos.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table cellpadding="8" cellspacing="0">
+  <tbody>
+    <tr>
+      <td>Entrevista 5</td>
+      <td> <img src="https://i.ibb.co/k2wLSt9N/josue.png" alt="interview 5" width="400"/> </td>
+    </tr>
+    <tr>
+      <td>Nombre Entrevistado</td>
+      <td>Josue Paiva</td>
+    </tr>
+    <tr>
+      <td>Edad</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>Distrito</td>
+      <td>Lima</td>
+    </tr>
+    <tr>
+      <td>Ocupacion</td>
+      <td>Estudiante</td>
+    </tr>
+    <tr>
+      <td>Duración Entrevista</td>
+      <td>04:50</td>
+    </tr>
+    <tr>
+      <td>Minuto de Inicio</td>
+      <td>00:00 - 04:50</td>
+    </tr>
+        <tr>
+      <td><strong>Resumen:</strong></td>
+      <td>
+        Josué Paiva (23), estudiante de Ingeniería de Software en la UPC, cuida como hobby 10 plantas del hogar que pertenecen a su madre y están distribuidas por distintas zonas de la casa. Su mayor dificultad es recordar qué necesita cada planta y en qué momento, lo que le hace perder tiempo desplazándose y a veces cometer errores. Para organizarse usa una app de notas y alarmas, aunque requiere configurar varios recordatorios para no olvidarse. Considera muy acertada la idea de identificar la planta y conocer sus cuidados con solo tomarle una foto, y cree que incluir información del clima le ayudaría a decidir si conviene sacarla al exterior. Estaría dispuesto a pagar si el servicio realmente le brinda recomendaciones que mejoren la vitalidad de sus plantas y le interesa explorar opciones con tecnología IoT para automatizar el cuidado.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table cellpadding="8" cellspacing="0">
+  <tbody>
+    <tr>
+      <td>Entrevista 6</td>
+      <td> <img src="https://i.ibb.co/wZ45Bvgj/pedro.png" alt="interview 6" width="400"/> </td>
+    </tr>
+    <tr>
+      <td>Nombre Entrevistado</td>
+      <td>Pedro Vargas</td>
+    </tr>
+    <tr>
+      <td>Edad</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>Distrito</td>
+      <td>Lima</td>
+    </tr>
+    <tr>
+      <td>Ocupacion</td>
+      <td>Estudiante</td>
+    </tr>
+    <tr>
+      <td>Duración Entrevista</td>
+      <td>09:21</td>
+    </tr>
+    <tr>
+      <td>Minuto de Inicio</td>
+      <td>00:00 - 09:21</td>
+    </tr>
+        <tr>
+      <td><strong>Resumen:</strong></td>
+      <td>
+        Pedro Vargas, un joven de 24 años con una afición botánica heredada de su familia, experimenta incertidumbre al determinar los requerimientos específicos de riego y clima para cada especie, especialmente con su palto, al cual considera una planta difícil y sensible al exceso de agua. Actualmente gestiona sus cuidados de manera empírica e informal mediante un grupo de WhatsApp personal y tutoriales de YouTube, por lo que valora positivamente una herramienta que centralice el monitoreo visual y ofrezca recomendaciones personalizadas según su ubicación en Lima. Aunque disfruta del proceso manual por la tranquilidad que le brinda, se muestra abierto a la implementación de tecnología IoT y sugiere funciones innovadoras como barreras automatizadas contra el viento para proteger brotes delicados. Finalmente, pese a ser reacio a las suscripciones digitales, estaría dispuesto a realizar pagos eventuales por asesoría avanzada en nutrientes y predicciones climáticas si esto le garantiza la salud de sus plantas más complejas.
+      </td>
+    </tr>
   </tbody>
 </table>
 
@@ -847,7 +1015,7 @@ Tácticas:
 
 **Análisis de entrevista para expertos cuidadores de plantas:**
 
-Este segmento, integrado por personas de entre 23 y 60 años con una vasta experiencia heredada o desarrollada recientemente, mantiene sus plantas mediante rutinas diarias sin el uso de aplicaciones, aunque reconoce dificultades para gestionar la personalización en colecciones amplias. Existe un interés unánime en adoptar soluciones digitales que ofrezcan registros y recordatorios, destacando de manera especial la utilidad de herramientas que permitan automatizar parámetros como la luz artificial o la humedad ambiental. Para estos aficionados, el hecho de que un sistema pueda reaccionar de forma autónoma ante cambios climáticos extremos representa un nivel de seguridad superior y una ayuda imprescindible para la protección de sus ejemplares más delicados. Por esta razón, muestran una disposición total a pagar por una suscripción que optimice sus tareas y garantice la salud de sus plantas mediante este tipo de asistencia tecnológica.
+Este segmento, integrado por personas de entre 21 y 60 años con una vasta experiencia heredada o desarrollada recientemente, mantiene sus plantas mediante rutinas diarias sin el uso de aplicaciones, aunque reconoce dificultades para gestionar la personalización en colecciones amplias. Existe un interés unánime en adoptar soluciones digitales que ofrezcan registros y recordatorios, destacando de manera especial la utilidad de herramientas que permitan automatizar parámetros como la luz artificial o la humedad ambiental. Para estos aficionados, el hecho de que un sistema pueda reaccionar de forma autónoma ante cambios climáticos extremos representa un nivel de seguridad superior y una ayuda imprescindible para la protección de sus ejemplares más delicados. Por esta razón, muestran una disposición total a pagar por una suscripción que optimice sus tareas y garantice la salud de sus plantas mediante este tipo de asistencia tecnológica.
 
 **Análisis de entrevista para principiantes cuidadores de plantas:**
 
