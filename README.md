@@ -927,21 +927,834 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
 
 ## 3.1. User Stories
 
-| Epic / Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
-|-----------------|--------|-------------|-------------------------|---------------------------|
-|                 |        |             |                         |                           |
-
+<table border="1">
+  <tbody>
+    <tr>
+      <td><strong>Epic / Story ID</strong></td>
+      <td><strong>Título</strong></td>
+      <td><strong>Descripción</strong></td>
+      <td><strong>Criterios de Aceptación</strong></td>
+      <td><strong>Relación con Epic</strong></td>
+    </tr>
+    <tr>
+      <td>EP01</td>
+      <td>Presencia Digital y Conversión</td>
+      <td>
+        <strong>Como</strong> visitante o cliente potencial, <strong>quiero</strong> explorar una página de aterrizaje informativa y confiable, <strong>para</strong> entender los beneficios del sistema y registrarme fácilmente en la plataforma.
+      </td>
+      <td>No corresponde</td>
+      <td>No corresponde</td>
+    </tr>
+    <tr>
+      <td>EP02</td>
+      <td>Gestión de Identidad y Perfil de Usuario</td>
+      <td>
+        <strong>Como</strong> usuario de la plataforma, <strong>quiero</strong> gestionar mi identidad, seguridad y personalizar la interfaz, <strong>para</strong> tener una experiencia de uso cómoda y visualizar mis estadísticas personales.
+      </td>
+      <td>No corresponde</td>
+      <td>No corresponde</td>
+    </tr>
+    <tr>
+      <td>EP03</td>
+      <td>Gestión del Inventario Botánico</td>
+      <td>
+        <strong>Como</strong> cuidador de plantas, <strong>quiero</strong> registrar, editar y documentar visualmente el ciclo de vida de mis plantas, <strong>para</strong> mantener un inventario botánico digital organizado.
+      </td>
+      <td>No corresponde</td>
+      <td>No corresponde</td>
+    </tr>
+    <tr>
+      <td>EP04</td>
+      <td>Integración IoT y Monitoreo de Variables</td>
+      <td>
+        <strong>Como</strong> usuario con hardware IoT, <strong>quiero</strong> vincular mis sensores y actuadores a la aplicación, <strong>para</strong> monitorear las métricas ambientales y automatizar el entorno físico de mis plantas.
+      </td>
+      <td>No corresponde</td>
+      <td>No corresponde</td>
+    </tr>
+    <tr>
+      <td>EP05</td>
+      <td>Planificación y Registro de Cuidados</td>
+      <td>
+        <strong>Como</strong> usuario, <strong>quiero</strong> programar recordatorios automáticos y registrar el historial de mis acciones manuales, <strong>para</strong> planificar adecuadamente los cuidados y no olvidar ninguna tarea.
+      </td>
+      <td>No corresponde</td>
+      <td>No corresponde</td>
+    </tr>
+    <tr>
+      <td>EP06</td>
+      <td>Inteligencia Botánica y Análisis Externo</td>
+      <td>
+        <strong>Como</strong> usuario, <strong>quiero</strong> recibir asesoría de un asistente inteligente y consultar datos climáticos locales, <strong>para</strong> obtener recomendaciones expertas y personalizadas según cada especie.
+      </td>
+      <td>No corresponde</td>
+      <td>No corresponde</td>
+    </tr>
+    <tr>
+      <td>US01</td>
+      <td>Visualización de beneficios botánicos en el Landing Page</td>
+      <td>
+        <strong>Como</strong> visitante, <strong>quiero</strong> visualizar una sección informativa sobre los beneficios psicológicos del cuidado de plantas, <strong>para</strong> motivarme a adquirir la solución.
+      </td>
+      <td>
+        <strong>Escenario 1: Acceso a información de bienestar.</strong><br>
+        <strong>Dado que</strong> el visitante se encuentra en la página de inicio, <strong>cuando</strong> navega hacia la sección de beneficios, <strong>entonces</strong> el sistema muestra los datos de salud mental y reducción de estrés vinculados a la horticultura.
+      </td>
+      <td>EP01</td>
+    </tr>
+    <tr>
+      <td>US02</td>
+      <td>Vinculación de dispositivo IoT con la cuenta</td>
+      <td>
+        <strong>Como</strong> usuario, <strong>quiero</strong> vincular mi dispositivo físico con mi cuenta en la aplicación móvil, <strong>para</strong> visualizar los datos capturados de forma privada y exclusiva.
+      </td>
+      <td>
+        <strong>Escenario 1: Asociación exitosa de hardware.</strong><br>
+        <strong>Dado que</strong> el usuario ha iniciado sesión en la aplicación, <strong>cuando</strong> ingresa el identificador único de su kit IoT, <strong>entonces</strong> el sistema vincula el dispositivo a su perfil y confirma la conexión.
+      </td>
+      <td>EP04</td>
+    </tr>
+    <tr>
+      <td>US03</td>
+      <td>Notificación de activación de actuador</td>
+      <td>
+        <strong>Como</strong> entusiasta del cuidado de plantas, <strong>quiero</strong> recibir una notificación en tiempo real cuando la luz UV se encienda, <strong>para</strong> estar al tanto del soporte que recibe mi planta.
+      </td>
+      <td>
+        <strong>Escenario 1: Envío exitoso de alerta.</strong><br>
+        <strong>Dado que</strong> el sistema detecta un nivel de luz inferior al umbral, <strong>cuando</strong> el actuador activa la iluminación UV, <strong>entonces</strong> el sistema envía una notificación push al dispositivo móvil del usuario.
+      </td>
+      <td>EP04</td>
+    </tr>
+    <tr>
+      <td>US04</td>
+      <td>Redirección a plataformas desde el Landing Page</td>
+      <td>
+        <strong>Como</strong> visitante, <strong>quiero</strong> encontrar enlaces directos a la aplicación web y a las tiendas de descarga móvil, <strong>para</strong> acceder a las herramientas de gestión botánica.
+      </td>
+      <td>
+        <strong>Escenario 1: Uso de Call-to-Action (CTA).</strong><br>
+        <strong>Dado que</strong> el visitante se encuentra en el Landing Page, <strong>cuando</strong> selecciona el botón de "Acceder a la plataforma" o "Descargar App", <strong>entonces</strong> el sistema le redirige al punto de acceso correspondiente.
+      </td>
+      <td>EP01</td>
+    </tr>
+    <tr>
+      <td>US05</td>
+      <td>Registro de métricas de sensores</td>
+      <td>
+        <strong>Como</strong> Developer, <strong>quiero</strong> implementar un endpoint que reciba y almacene los datos de luminosidad enviados por el dispositivo IoT, <strong>para</strong> asegurar la persistencia de la información.
+      </td>
+      <td>
+        <strong>Escenario 1: Recepción de datos IoT.</strong><br>
+        <strong>Dado que</strong> el dispositivo IoT tiene conexión a internet, <strong>cuando</strong> envía un request HTTP POST con el valor de luminosidad al endpoint, <strong>entonces</strong> el sistema responde con un status 201 y registra el dato.
+      </td>
+      <td>EP04</td>
+    </tr>
+    <tr>
+      <td>US06</td>
+      <td>Registro de nueva planta desde la app móvil</td>
+      <td>
+        <strong>Como</strong> usuario, <strong>quiero</strong> registrar una nueva planta ingresando su nombre, especie y ubicación, <strong>para</strong> comenzar a monitorear su cuidado desde la aplicación.
+      </td>
+      <td>
+        <strong>Escenario 1: Registro exitoso de planta.</strong><br>
+        <strong>Dado que</strong> el usuario ha iniciado sesión, <strong>cuando</strong> completa el formulario de registro con nombre, especie y ubicación, <strong>entonces</strong> el sistema guarda la planta y la muestra en el dashboard.<br><br>
+        <strong>Escenario 2: Campos obligatorios incompletos.</strong><br>
+        <strong>Dado que</strong> el usuario intenta registrar una planta, <strong>cuando</strong> deja el campo de especie vacío, <strong>entonces</strong> el sistema muestra un mensaje de validación y no procesa el registro.
+      </td>
+      <td>EP03</td>
+    </tr>
+    <tr>
+      <td>US07</td>
+      <td>Visualización del historial de cuidados</td>
+      <td>
+        <strong>Como</strong> usuario, <strong>quiero</strong> consultar el historial de acciones realizadas sobre cada una de mis plantas, <strong>para</strong> identificar patrones y mejorar mis rutinas de cuidado.
+      </td>
+      <td>
+        <strong>Escenario 1: Acceso al historial.</strong><br>
+        <strong>Dado que</strong> el usuario se encuentra en el detalle de una planta, <strong>cuando</strong> selecciona la opción "Ver historial", <strong>entonces</strong> el sistema muestra una lista cronológica de las acciones registradas.<br><br>
+        <strong>Escenario 2: Historial vacío.</strong><br>
+        <strong>Dado que</strong> el usuario accede al historial de una planta recién registrada, <strong>cuando</strong> no existe ninguna acción previa, <strong>entonces</strong> el sistema muestra un mensaje indicando que aún no hay cuidados registrados.
+      </td>
+      <td>EP05</td>
+    </tr>
+    <tr>
+      <td>US08</td>
+      <td>Monitoreo de Humedad de Tierra</td>
+      <td>
+        <strong>Como</strong> usuario, <strong>quiero</strong> ver el porcentaje de humedad del suelo, <strong>para</strong> saber si la tierra está seca.
+      </td>
+      <td>
+        <strong>Escenario 1: Visualización de humedad.</strong><br>
+        <strong>Dado que</strong> el sensor de humedad envía datos, <strong>cuando</strong> el usuario abre la app, <strong>entonces</strong> visualiza el porcentaje real de agua en el sustrato.
+      </td>
+      <td>EP04</td>
+    </tr>
+    <tr>
+      <td>US09</td>
+      <td>Registro manual de acción de cuidado</td>
+      <td>
+        <strong>Como</strong> usuario, <strong>quiero</strong> registrar manualmente una acción de cuidado, <strong>para</strong> mantener el historial actualizado aunque no cuente con sensor IoT activo.
+      </td>
+      <td>
+        <strong>Escenario 1: Registro exitoso.</strong><br>
+        <strong>Dado que</strong> el usuario se encuentra en el detalle de una planta, <strong>cuando</strong> selecciona "Registrar cuidado", elige el tipo de acción y confirma, <strong>entonces</strong> el sistema lo agrega al historial.<br><br>
+        <strong>Escenario 2: Acción duplicada.</strong><br>
+        <strong>Dado que</strong> el usuario ya registró un riego hoy, <strong>cuando</strong> intenta registrar la misma acción nuevamente, <strong>entonces</strong> el sistema muestra una advertencia solicitando confirmación.
+      </td>
+      <td>EP05</td>
+    </tr>
+    <tr>
+      <td>US10</td>
+      <td>Integración de API de IA</td>
+      <td>
+        <strong>Como</strong> Developer, <strong>quiero</strong> conectar un LLM al backend, <strong>para</strong> procesar consultas botánicas.
+      </td>
+      <td>
+        <strong>Escenario 1: Recomendación generada exitosamente.</strong><br>
+        <strong>Dado que</strong> el usuario envía un mensaje, <strong>cuando</strong> el backend procesa la solicitud, <strong>entonces</strong> el sistema retorna una respuesta coherente basada en conocimiento botánico.
+      </td>
+      <td>EP06</td>
+    </tr>
+    <tr>
+      <td>US11</td>
+      <td>Subir fotos de una planta</td>
+      <td>
+        <strong>Como</strong> usuario, <strong>quiero</strong> subir una imagen de una planta a lo largo del tiempo, <strong>para</strong> saber qué planta es.
+      </td>
+      <td>
+        <strong>Escenario 1: Foto añadida.</strong><br>
+        <strong>Dado que</strong> el usuario selecciona una foto, <strong>cuando</strong> se procesa el archivo, <strong>entonces</strong> el sistema la carga y muestra la imagen de la planta.
+      </td>
+      <td>EP03</td>
+    </tr>
+    <tr>
+      <td>US12</td>
+      <td>Eliminación de planta</td>
+      <td>
+        <strong>Como</strong> usuario, <strong>quiero</strong> eliminar una planta de mi lista, <strong>para</strong> quitar aquellas que ya no tengo o que se han perdido.
+      </td>
+      <td>
+        <strong>Escenario 1: Eliminación confirmada.</strong><br>
+        <strong>Dado que</strong> el usuario solicitó eliminar la planta, <strong>cuando</strong> confirma la acción, <strong>entonces</strong> el sistema elimina la planta y muestra: "Planta eliminada correctamente".<br><br>
+        <strong>Escenario 2: Cancelación de eliminación.</strong><br>
+        <strong>Dado que</strong> el usuario es consultado sobre la eliminación, <strong>cuando</strong> cancela la acción, <strong>entonces</strong> el sistema no realiza cambios.
+      </td>
+      <td>EP03</td>
+    </tr>
+    <tr>
+      <td>US13</td>
+      <td>Inicio sesión de usuario</td>
+      <td>
+        <strong>Como</strong> usuario registrado, <strong>quiero</strong> iniciar sesión con mi correo y contraseña, <strong>para</strong> acceder a mi cuenta y mis plantas monitoreadas.
+      </td>
+      <td>
+        <strong>Escenario 1: Inicio de sesión exitoso.</strong><br>
+        <strong>Dado que</strong> el usuario ingresó credenciales correctas, <strong>cuando</strong> presiona "Iniciar sesión", <strong>entonces</strong> el sistema lo redirige a su panel principal.<br><br>
+        <strong>Escenario 2: Credenciales incorrectas.</strong><br>
+        <strong>Dado que</strong> el usuario ingresó mal sus datos, <strong>cuando</strong> presiona "Iniciar sesión", <strong>entonces</strong> el sistema muestra: "Correo o contraseña incorrectos".<br><br>
+        <strong>Escenario 3: Campos vacíos.</strong><br>
+        <strong>Dado que</strong> el usuario dejó campos vacíos, <strong>cuando</strong> intenta iniciar sesión, <strong>entonces</strong> el sistema muestra: "Por favor, completa todos los campos".
+      </td>
+      <td>EP02</td>
+    </tr>
+    <tr>
+      <td>US14</td>
+      <td>Registrarse en la app</td>
+      <td>
+        <strong>Como</strong> usuario, <strong>quiero</strong> registrarme en la app, <strong>para</strong> crear mi cuenta y acceder a sus funcionalidades.
+      </td>
+      <td>
+        <strong>Escenario 1: Registro exitoso.</strong><br>
+        <strong>Dado que</strong> el usuario se encuentra en la pantalla de registro, <strong>cuando</strong> completa los datos requeridos y pulsa "Registrarse", <strong>entonces</strong> el sistema debe crear una cuenta nueva y mostrarle la pantalla principal.
+      </td>
+      <td>EP02</td>
+    </tr>
+    <tr>
+      <td>US15</td>
+      <td>Edición de datos personales</td>
+      <td>
+        <strong>Como</strong> usuario registrado, <strong>quiero</strong> poder actualizar mis datos personales, <strong>para</strong> mantener mi perfil al día con mi información actual.
+      </td>
+      <td>
+        <strong>Escenario 1: Visualización de datos.</strong><br>
+        <strong>Dado que</strong> el usuario ha iniciado sesión, <strong>cuando</strong> accede a la sección de perfil, <strong>entonces</strong> el sistema debe mostrar los datos actuales en campos editables.<br><br>
+        <strong>Escenario 2: Actualización exitosa.</strong><br>
+        <strong>Dado que</strong> el usuario ha editado su información, <strong>cuando</strong> hace clic en "Guardar cambios", <strong>entonces</strong> el sistema valida los campos y actualiza la base de datos.
+      </td>
+      <td>EP02</td>
+    </tr>
+    <tr>
+      <td>US16</td>
+      <td>Edición de datos de planta</td>
+      <td>
+        <strong>Como</strong> usuario que cuida plantas, <strong>quiero</strong> editar la información de una planta registrada, <strong>para</strong> actualizar datos como su nombre, tipo o imagen.
+      </td>
+      <td>
+        <strong>Escenario 1: Edición exitosa.</strong><br>
+        <strong>Dado que</strong> el usuario accedió a los datos de la planta, <strong>cuando</strong> cambió los datos y guardó, <strong>entonces</strong> el sistema muestra: "Datos de la planta actualizados correctamente".
+      </td>
+      <td>EP03</td>
+    </tr>
+    <tr>
+      <td>US17</td>
+      <td>Modo oscuro en la interfaz</td>
+      <td>
+        <strong>Como</strong> usuario, <strong>quiero</strong> activar el modo oscuro, <strong>para</strong> usar la aplicación en ambientes con poca luz.
+      </td>
+      <td>
+        <strong>Escenario 1: Tema aplicado.</strong><br>
+        <strong>Dado que</strong> la opción está disponible en configuración, <strong>cuando</strong> el usuario activa el modo oscuro, <strong>entonces</strong> el sistema cambia la interfaz a colores oscuros inmediatamente.
+      </td>
+      <td>EP02</td>
+    </tr>
+    <tr>
+      <td>US18</td>
+      <td>Comparar planes de suscripción</td>
+      <td>
+        <strong>Como</strong> visitante de la landing page, <strong>quiero</strong> comparar fácilmente los planes de suscripción, <strong>para</strong> elegir el que mejor se ajuste a mis necesidades.
+      </td>
+      <td>
+        <strong>Escenario 1: Comparación de planes.</strong><br>
+        <strong>Dado que</strong> el visitante se encuentra en la landing page, <strong>cuando</strong> se desplaza hasta la sección de planes, <strong>entonces</strong> debe visualizar claramente los distintos planes de suscripción con sus características.
+      </td>
+      <td>EP01</td>
+    </tr>
+    <tr>
+      <td>US19</td>
+      <td>Cambio de correo electrónico asociado</td>
+      <td>
+        <strong>Como</strong> usuario, <strong>quiero</strong> cambiar el correo electrónico asociado a mi cuenta, <strong>para</strong> asegurar que las notificaciones lleguen a la dirección correcta.
+      </td>
+      <td>
+        <strong>Escenario 1: Cambio exitoso.</strong><br>
+        <strong>Dado que</strong> el usuario ha ingresado un nuevo correo válido, <strong>cuando</strong> hace clic en "Guardar cambios", <strong>entonces</strong> el sistema verifica el formato y actualiza el correo en la base de datos.
+      </td>
+      <td>EP02</td>
+    </tr>
+    <tr>
+      <td>US20</td>
+      <td>Selección de idioma</td>
+      <td>
+        <strong>Como</strong> usuario, <strong>quiero</strong> elegir el idioma de la página web, <strong>para</strong> usarla cómodamente.
+      </td>
+      <td>
+        <strong>Escenario 1: Selección de idioma.</strong><br>
+        <strong>Dado que</strong> se muestra un selector de idioma, <strong>cuando</strong> el usuario selecciona "Español", <strong>entonces</strong> todo el contenido visible cambia a ese idioma y se mantiene al navegar.
+      </td>
+      <td>EP01</td>
+    </tr>
+    <tr>
+      <td>US21</td>
+      <td>Preguntas Frecuentes - FAQ</td>
+      <td>
+        <strong>Como</strong> usuario, <strong>quiero</strong> visualizar una sección de dudas comunes sobre el cuidado de plantas, <strong>para</strong> entender rápido cómo me ayudará la plataforma.
+      </td>
+      <td>
+        <strong>Escenario 1: Despliegue de respuestas.</strong><br>
+        <strong>Dado que</strong> el usuario se encuentra en la sección de FAQ, <strong>cuando</strong> hace clic sobre una pregunta específica, <strong>entonces</strong> el sistema despliega el texto con la respuesta detallada de forma fluida.
+      </td>
+      <td>EP01</td>
+    </tr>
+    <tr>
+      <td>US22</td>
+      <td>Visualización de Testimonios de Usuarios</td>
+      <td>
+        <strong>Como</strong> visitante, <strong>quiero</strong> leer experiencias breves de otros usuarios, <strong>para</strong> tener mayor confianza en el producto antes de registrarme.
+      </td>
+      <td>
+        <strong>Escenario 1: Lectura de reseñas.</strong><br>
+        <strong>Dado que</strong> el visitante se desplaza por el Landing Page, <strong>cuando</strong> visualiza la sección de testimonios, <strong>entonces</strong> el sistema le muestra un carrusel o cuadrícula estática con reseñas.
+      </td>
+      <td>EP01</td>
+    </tr>
+    <tr>
+      <td>US23</td>
+      <td>Botones de llamado a la acción para Registro</td>
+      <td>
+        <strong>Como</strong> usuario, <strong>quiero</strong> encontrar botones llamativos de "Empieza ahora", <strong>para</strong> ser redirigido de inmediato al formulario de registro.
+      </td>
+      <td>
+        <strong>Escenario 1: Redirección exitosa a la Web App.</strong><br>
+        <strong>Dado que</strong> el usuario lee una sección del Landing Page, <strong>cuando</strong> hace clic en "Empieza ahora" o "Únete", <strong>entonces</strong> el sistema lo redirige a la vista de sign-up.
+      </td>
+      <td>EP01</td>
+    </tr>
+    <tr>
+      <td>US24</td>
+      <td>Acceso a Redes Sociales y Contacto en Footer</td>
+      <td>
+        <strong>Como</strong> usuario, <strong>quiero</strong> encontrar enlaces a las redes sociales del proyecto en el pie de página, <strong>para</strong> comunicarme con el equipo de soporte.
+      </td>
+      <td>
+        <strong>Escenario 1: Redirección a redes sociales.</strong><br>
+        <strong>Dado que</strong> el visitante se encuentra en el footer, <strong>cuando</strong> hace clic en uno de los íconos de redes sociales, <strong>entonces</strong> el sistema abre una nueva pestaña al perfil oficial.<br><br>
+        <strong>Escenario 2: Enlace de contacto por correo.</strong><br>
+        <strong>Dado que</strong> el visitante está en el footer, <strong>cuando</strong> hace clic en el correo de soporte, <strong>entonces</strong> se abre la aplicación de correo predeterminada.
+      </td>
+      <td>EP01</td>
+    </tr>
+    <tr>
+      <td>US25</td>
+      <td>Visualización de perfil de usuario</td>
+      <td>
+        <strong>Como</strong> usuario, <strong>quiero</strong> ver mi perfil, <strong>para</strong> tener una visión general de mis actividades de cuidado.
+      </td>
+      <td>
+        <strong>Escenario 1: Perfil con datos.</strong><br>
+        <strong>Dado que</strong> el usuario tiene plantas y tareas, <strong>cuando</strong> ingresa al perfil, <strong>entonces</strong> el perfil muestra estadísticas como cantidad de plantas y tareas realizadas.<br><br>
+        <strong>Escenario 2: Perfil sin datos.</strong><br>
+        <strong>Dado que</strong> el usuario es nuevo, <strong>cuando</strong> ingresa al perfil, <strong>entonces</strong> el sistema muestra: "Aún no has registrado plantas ni actividades".
+      </td>
+      <td>EP02</td>
+    </tr>
+    <tr>
+      <td>US26</td>
+      <td>Visualización de tareas con fechas</td>
+      <td>
+        <strong>Como</strong> usuario, <strong>quiero</strong> ver mis tareas del día por fechas, <strong>para</strong> poder organizarme mejor en el cuidado de las plantas.
+      </td>
+      <td>
+        <strong>Escenario 1: Tareas con fechas.</strong><br>
+        <strong>Dado que</strong> el usuario tiene tareas, <strong>cuando</strong> accede a Tareas, <strong>entonces</strong> el sistema muestra las tareas con sus respectivas fechas.<br><br>
+        <strong>Escenario 2: No hay tareas.</strong><br>
+        <strong>Dado que</strong> no hay tareas programadas, <strong>cuando</strong> ingresa, <strong>entonces</strong> el sistema no muestra tareas ni fechas.
+      </td>
+      <td>EP05</td>
+    </tr>
+    <tr>
+      <td>US27</td>
+      <td>Visualización de tareas de cuidado</td>
+      <td>
+        <strong>Como</strong> usuario con plantas registradas, <strong>quiero</strong> ver las tareas pendientes de cuidado, <strong>para</strong> saber qué debo hacer cada día.
+      </td>
+      <td>
+        <strong>Escenario 1: Tareas del día visibles.</strong><br>
+        <strong>Dado que</strong> el usuario tiene tareas programadas, <strong>cuando</strong> entra al panel principal o calendario, <strong>entonces</strong> se muestra la lista de tareas del día.<br><br>
+        <strong>Escenario 2: Sin tareas pendientes.</strong><br>
+        <strong>Dado que</strong> no hay tareas para hoy, <strong>cuando</strong> entra al panel, <strong>entonces</strong> se muestra: "No hay tareas para hoy".
+      </td>
+      <td>EP05</td>
+    </tr>
+    <tr>
+      <td>US28</td>
+      <td>Configuración de tareas</td>
+      <td>
+        <strong>Como</strong> usuario que cuida plantas, <strong>quiero</strong> configurar tareas para regar o fertilizar, <strong>para</strong> no olvidar sus cuidados.
+      </td>
+      <td>
+        <strong>Escenario 1: Tarea creada.</strong><br>
+        <strong>Dado que</strong> el usuario eligió la tarea, hora y frecuencia, <strong>cuando</strong> guarda la tarea, <strong>entonces</strong> el sistema confirma: "Tarea creada correctamente".<br><br>
+        <strong>Escenario 2: Notificación enviada.</strong><br>
+        <strong>Dado que</strong> el usuario tiene una tarea activa, <strong>cuando</strong> llega la hora de la tarea, <strong>entonces</strong> el sistema muestra una notificación de recordatorio.
+      </td>
+      <td>EP05</td>
+    </tr>
+    <tr>
+      <td>US29</td>
+      <td>Acceder a perfil de planta</td>
+      <td>
+        <strong>Como</strong> usuario, <strong>quiero</strong> acceder a los perfiles de las plantas que poseo, <strong>para</strong> ver su información actual.
+      </td>
+      <td>
+        <strong>Escenario 1: Usuario accede al perfil de una planta.</strong><br>
+        <strong>Dado que</strong> el usuario se encuentra en la pantalla principal donde se listan sus plantas, <strong>cuando</strong> selecciona una planta de la lista, <strong>entonces</strong> debe visualizar el perfil detallado de la planta con su información actual.
+      </td>
+      <td>EP03</td>
+    </tr>
+    <tr>
+      <td>US30</td>
+      <td>Vinculación con datos climáticos locales</td>
+      <td>
+        <strong>Como</strong> usuario, <strong>quiero</strong> que el sistema tenga en cuenta el clima local al recomendar cuidados, <strong>para</strong> evitar regar cuando ya ha llovido.
+      </td>
+      <td>
+        <strong>Escenario 1: Clima disponible.</strong><br>
+        <strong>Dado que</strong> el usuario ha autorizado su ubicación, <strong>cuando</strong> consulta las recomendaciones de cuidado, <strong>entonces</strong> el sistema informa si ha llovido y sugiere evitar el riego.<br><br>
+        <strong>Escenario 2: Clima no disponible.</strong><br>
+        <strong>Dado que</strong> no es posible obtener el clima, <strong>cuando</strong> consulta, <strong>entonces</strong> el sistema muestra el mensaje de error verificando la conexión.
+      </td>
+      <td>EP06</td>
+    </tr>
+    <tr>
+      <td>US31</td>
+      <td>Telemetría de Temperatura Ambiental</td>
+      <td>
+        <strong>Como</strong> usuario, <strong>quiero</strong> visualizar la temperatura ambiental de mi planta, <strong>para</strong> evitar que se queme o se congele.
+      </td>
+      <td>
+        <strong>Escenario 1: Visualización de temperatura.</strong><br>
+        <strong>Dado que</strong> el sensor de temperatura está activo, <strong>cuando</strong> el usuario revisa el perfil de la planta, <strong>entonces</strong> ve la temperatura en grados Celsius actualizada.
+      </td>
+      <td>EP04</td>
+    </tr>
+    <tr>
+      <td>US32</td>
+      <td>Control Manual de Riego</td>
+      <td>
+        <strong>Como</strong> usuario, <strong>quiero</strong> activar la bomba de agua desde mi celular, <strong>para</strong> regar mi planta a distancia.
+      </td>
+      <td>
+        <strong>Escenario 1: Solicitud de regado exitoso.</strong><br>
+        <strong>Dado que</strong> el dispositivo IoT está vinculado, <strong>cuando</strong> el usuario presiona "Regar ahora", <strong>entonces</strong> la señal llega al kit, el actuador se activa y confirma el éxito en la app.
+      </td>
+      <td>EP04</td>
+    </tr>
+    <tr>
+      <td>US33</td>
+      <td>Gestión de Lámpara de Calor</td>
+      <td>
+        <strong>Como</strong> usuario, <strong>quiero</strong> encender la lámpara de calor manualmente, <strong>para</strong> proteger la planta si noto que el clima es muy frío.
+      </td>
+      <td>
+        <strong>Escenario 1: Encendido exitoso.</strong><br>
+        <strong>Dado que</strong> el dispositivo tiene la lámpara vinculada, <strong>cuando</strong> el usuario activa el switch de calor, <strong>entonces</strong> el hardware recibe la orden y la lámpara se enciende.
+      </td>
+      <td>EP04</td>
+    </tr>
+    <tr>
+      <td>US34</td>
+      <td>Disponibilidad en múltiples dispositivos</td>
+      <td>
+        <strong>Como</strong> usuario, <strong>necesito</strong> poder ingresar a mi cuenta desde distintos dispositivos, <strong>para</strong> gestionar mis plantas desde cualquier lugar.
+      </td>
+      <td>
+        <strong>Escenario 1: Inicio de sesión exitoso en otro dispositivo.</strong><br>
+        <strong>Dado que</strong> el usuario usa credenciales válidas, <strong>cuando</strong> inicia sesión desde un dispositivo diferente, <strong>entonces</strong> el sistema sincroniza y muestra los mismos datos.<br><br>
+        <strong>Escenario 2: Acceso con verificación adicional.</strong><br>
+        <strong>Dado que</strong> hay un inicio de sesión inusual, <strong>cuando</strong> el sistema lo detecta, <strong>entonces</strong> solicita una verificación adicional para permitir el acceso.
+      </td>
+      <td>EP04</td>
+    </tr>
+    <tr>
+      <td>US35</td>
+      <td>Consulta a Asistente Botánico IA</td>
+      <td>
+        <strong>Como</strong> usuario, <strong>quiero</strong> chatear con el chatbot, <strong>para</strong> recibir guías personalizadas sobre cómo cuidar mis plantas.
+      </td>
+      <td>
+        <strong>Escenario 1: Asistencia mediante Chat.</strong><br>
+        <strong>Dado que</strong> el asistente de IA está disponible, <strong>cuando</strong> el usuario hace una pregunta sobre una especie, <strong>entonces</strong> el chatbot responde y entrega consejos para su cuidado.
+      </td>
+      <td>EP06</td>
+    </tr>
+    <tr>
+      <td>US36</td>
+      <td>Asesoría basada en Telemetría IoT</td>
+      <td>
+        <strong>Como</strong> usuario, <strong>quiero</strong> que el chatbot analice los datos de mis sensores, <strong>para</strong> darme consejos preventivos personalizados.
+      </td>
+      <td>
+        <strong>Escenario 1: Recomendaciones preventivas con IoT.</strong><br>
+        <strong>Dado que</strong> los sensores reportan baja humedad, <strong>cuando</strong> el usuario abre el chatbot y pregunta, <strong>entonces</strong> la IA sugiere regar la planta basándose en los datos capturados en tiempo real.
+      </td>
+      <td>EP06</td>
+    </tr>
+  </tbody>
+</table>
 <hr class="page-break">
 
 ## 3.2. Impact Mapping
+
+<p align="center">
+  <img src="images/logos/Impact Mapping Jardinero Novato.png" alt="impact mapping" width="80%">
+</p>
+
+<p align="center">
+  Impact Mapping 1 - Elaboración propia
+</p>
+
+<br>
+
+
+<p align="center">
+  <img src="images/logos/Impact Mapping Jardinero Experto.png" alt="impact mapping" width="80%">
+</p>
+
+<p align="center">
+  Impact Mapping 2 - Elaboración propia
+</p>
+
 
 <hr class="page-break">
 
 ## 3.3. Product Backlog
 
-| # Orden | User Story ID | Título | Descripción | Story Points |
-|---------|---------------|--------|-------------|--------------|
-|         |               |        |             |              |
+<br>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th># Orden</th>
+      <th>User Story Id</th>
+      <th>Título</th>
+      <th>Descripción</th>
+      <th>Story Points (1 / 2 / 3 / 5 / 8)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>US01</td>
+      <td>Visualización de beneficios botánicos en el Landing Page</td>
+      <td>Como visitante, quiero visualizar una sección informativa sobre los beneficios psicológicos del cuidado de plantas para motivarme a adquirir la solución.</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>US18</td>
+      <td>Comparar planes de suscripción</td>
+      <td>Como visitante de la landing page, quiero comparar fácilmente los planes de suscripción para elegir el que mejor se ajuste a mis necesidades.</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>US21</td>
+      <td>Preguntas Frecuentes - FAQ</td>
+      <td>Como usuario, quiero visualizar una sección de dudas comunes sobre el cuidado de plantas, para entender rápido cómo me ayudará la plataforma.</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>US22</td>
+      <td>Visualización de Testimonios de Usuarios</td>
+      <td>Como usuarios, quiero leer experiencias breves de otros usuarios que han utilizado la aplicación, para tener mayor confianza en el producto antes de tomar la decisión de registrarme.</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>US04</td>
+      <td>Redirección a plataformas desde el Landing Page</td>
+      <td>Como visitante, quiero encontrar enlaces directos a la aplicación web y a las tiendas de descarga móvil para acceder a las herramientas de gestión botánica.</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>US23</td>
+      <td>Botones de llamado a la acción para Registro</td>
+      <td>Como usuario, quiero encontrar botones llamativos de "Empieza ahora" en puntos estratégicos de la página, para ser redirigido de inmediato y sin fricciones al formulario de registro.</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>US24</td>
+      <td>Acceso a Redes Sociales y Contacto en Footer</td>
+      <td>Como usuario, quiero encontrar enlaces a las redes sociales del proyecto y medios de contacto en el pie de página, para seguir sus actualizaciones o comunicarme con el equipo de soporte.</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>US20</td>
+      <td>Selección de idioma</td>
+      <td>Como usuario, quiero elegir el idioma de la pagina web para usarla cómodamente.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>US14</td>
+      <td>Registrarse en la app</td>
+      <td>Como usuario quiero registrarme en la app para crear mi cuenta y acceder a sus funcionalidades.</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>US13</td>
+      <td>Inicio sesión de usuario</td>
+      <td>Como usuario registrado, quiero iniciar sesión con mi correo y contraseña, para acceder a mi cuenta y mis plantas monitoreadas.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>US25</td>
+      <td>Visualización de perfil de usuario</td>
+      <td>Como usuario, quiero ver mi perfil, para tener una visión general de mis actividades de cuidado.</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>US15</td>
+      <td>Edición de datos personales</td>
+      <td>Como usuario registrado, quiero poder actualizar mis datos personales, para mantener mi perfil al día con mi información actual.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>US19</td>
+      <td>Cambio de correo electrónico asociado</td>
+      <td>Como usuario, quiero cambiar el correo electrónico asociado a mi cuenta, para asegurar que las notificaciones y comunicaciones lleguen a la dirección correcta.</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>US17</td>
+      <td>Modo oscuro en la interfaz</td>
+      <td>Como usuario, quiero activar el modo oscuro, para usar la aplicación en ambientes con poca luz.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>US06</td>
+      <td>Registro de nueva planta desde la app móvil</td>
+      <td>Como usuario, quiero registrar una nueva planta ingresando su nombre, especie y ubicación para comenzar a monitorear su cuidado desde la aplicación.</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>US11</td>
+      <td>Subir fotos de una planta</td>
+      <td>Como usuario, quiero subir una imagen de una planta a lo largo del tiempo, para saber que planta es.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>US29</td>
+      <td>Acceder a perfil de planta</td>
+      <td>Como usuario, quiero acceder a los perfiles de las plantas que poseo para ver su información actual.</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>US16</td>
+      <td>Edición de datos de planta</td>
+      <td>Como usuario que cuida plantas, quiero editar la información de una planta registrada, para actualizar datos como su nombre, tipo o imagen.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>US12</td>
+      <td>Eliminación de planta</td>
+      <td>Como usuario, quiero eliminar una planta de mi lista, para quitar aquellas que ya no tengo o que se han perdido.</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>US28</td>
+      <td>Configuración de tareas</td>
+      <td>Como usuario que cuida plantas, quiero configurar tareas para regar o fertilizar, para no olvidar sus cuidados.</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>US27</td>
+      <td>Visualización de tareas de cuidado</td>
+      <td>Como usuario con plantas registradas, quiero ver las tareas pendientes de cuidado, para saber qué debo hacer cada día.</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>US26</td>
+      <td>Visualización de tareas con fechas</td>
+      <td>Como usuario, quiero ver mis tareas del día por fechas para poder organizarme mejor en el cuidado de las mismas.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>US09</td>
+      <td>Registro manual de acción de cuidado</td>
+      <td>Como usuario, quiero registrar manualmente una acción de cuidado realizada sobre una planta para mantener el historial actualizado aunque no cuente con sensor IoT activo.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>US07</td>
+      <td>Visualización del historial de cuidados</td>
+      <td>Como usuario, quiero consultar el historial de acciones realizadas sobre cada una de mis plantas para identificar patrones y mejorar mis rutinas de cuidado.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>US34</td>
+      <td>Disponibilidad en múltiples dispositivos</td>
+      <td>Como usuario, quiero poder ingresar a mi cuenta desde distintos dispositivos, para gestionar mis plantas desde cualquier lugar.</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>US02</td>
+      <td>Vinculación de dispositivo IoT con la cuenta</td>
+      <td>Como usuario, quiero vincular mi dispositivo físico con mi cuenta en la aplicación móvil para visualizar los datos capturados de forma privada y exclusiva.</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>US05</td>
+      <td>Registro de métricas de sensores</td>
+      <td>Como Developer, quiero implementar un endpoint que reciba y almacene los datos de luminosidad enviados por el dispositivo IoT para asegurar la persistencia de la información.</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>US08</td>
+      <td>Monitoreo de Humedad de Tierra</td>
+      <td>Como usuario, quiero ver el porcentaje de humedad del suelo para saber si la tierra está seca.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>US31</td>
+      <td>Telemetría de Temperatura Ambiental</td>
+      <td>Como usuario, quiero visualizar la temperatura ambiental de mi planta para evitar que se queme o se congele.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>US32</td>
+      <td>Control Manual de Riego</td>
+      <td>Como usuario, quiero activar la bomba de agua desde mi celular para regar mi planta a distancia.</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>US33</td>
+      <td>Gestión de Lámpara de Calor</td>
+      <td>Como usuario, quiero encender la lámpara de calor manualmente si noto que el clima es muy frío, para proteger la planta si noto que el clima es muy frío.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>US03</td>
+      <td>Notificación de activación de actuador</td>
+      <td>Como entusiasta del cuidado de plantas, quiero recibir una notificación en tiempo real cuando la luz UV se encienda para estar al tanto del soporte que recibe mi planta.</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>US30</td>
+      <td>Vinculación con datos climáticos locales</td>
+      <td>Como usuario, quiero que el sistema tenga en cuenta el clima local al recomendar cuidados, para evitar regar cuando ya ha llovido.</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>US10</td>
+      <td>Integración de API de IA</td>
+      <td>Como Developer, quiero conectar un LLM al backend para procesar consultas botánicas.</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>US35</td>
+      <td>Consulta a Asistente Botánico IA</td>
+      <td>Como usuario, quiero chatear con el chatbot para recibir guías personalizadas sobre cómo cuidar mis planta.</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>US36</td>
+      <td>Asesoría basada en Telemetría IoT</td>
+      <td>Como usuario, quiero que el chatbot analice los datos de mis sensores para darme consejos preventivos personalizados.</td>
+      <td>8</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<img src="images/logos/Product Backlog.png" alt = "impact mapping" width="100%">
+
+<p align="center">
+  Product Backlog - Elaboración propia
+</p>
 
 <hr class="page-break">
 
@@ -963,11 +1776,43 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
 
 #### 4.1.3.1. Software Architecture System Landscape Diagram
 
+Este diagrama representa la visión de más alto nivel del ecosistema de la startup BioDemeter, mostrando las interacciones que mantienen los diferentes actores con la plataforma PlantSync, el hardware IoT y los servicios externos.
+
+![InnoSpace-diagram-landscape](./images/logos/Diagrama%20Landscape.png)
+
+<p align="center">
+  Elaboración propia
+</p>
+
 #### 4.1.3.2. Software Architecture Context Level Diagrams
+
+Este diagrama representa el enfoque central de la solución PlantSync, mostrando las interacciones directas que mantiene la plataforma principal con sus distintos tipos de usuarios, el hardware IoT y las dependencias tecnológicas externas.
+
+![InnoSpace-diagram-context](./images/logos/Diagrama%20Contexto.png)
+
+<p align="center">
+  Elaboración propia
+</p>
 
 #### 4.1.3.3. Software Architecture Container Level Diagrams
 
+Este diagrama detalla la arquitectura interna de la plataforma PlantSync, exponiendo los diferentes contenedores de software, las tecnologías empleadas en cada uno y los flujos de comunicación y datos entre estas piezas.
+
+![InnoSpace-diagram-container](./images/logos/Diagrama%20Contenedores.png)
+
+<p align="center">
+  Elaboración propia
+</p>
+
 #### 4.1.3.4. Software Architecture Deployment Diagrams
+
+Este diagrama ilustra la infraestructura y el entorno de ejecución de la solución PlantSync, mapeando cómo se distribuyen físicamente los contenedores de software en la nube de Microsoft Azure, los dispositivos cliente de los usuarios y los microcontroladores IoT instalados en sus hogares.
+
+![InnoSpace-diagram-deployment](./images/logos/Diagrama%20Deploy.png)
+
+<p align="center">
+  Elaboración propia
+</p>
 
 <hr class="page-break">
 
