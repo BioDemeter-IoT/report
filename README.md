@@ -409,16 +409,18 @@ plantas saludables mientras fortalecen su conexión con el medio ambiente.
       <td>Mi Nombre es Carlos Andrés Coca, tengo 20 años, actualmente me encuentro cursando el septimo ciclo de la carrera de Ingeniería de Software. Cuento con conocimientos en C++, Python y HTML. y desde muy joven me ha interesado el desarrollo Web. Teniendo en cuenta el gran impacto que presentan a día de hoy las novedosas soluciones presentadas.</td>
     </tr>
     <tr>
-      <td><img src="assets/images/members/[NOMBRE].png" alt="[NOMBRE]" width="200"></td>
-      <td><strong>[Apellido, Nombre]</strong></td>
-      <td>U[CÓDIGO ESTUDIANTE]</td>
-      <td>[Descripción breve de perfil profesional, habilidades y especialidades - similar al ejemplo de Diego]</td>
+      <td><img src="images/members/Palomino.jpeg" alt="[NOMBRE]" width="200"></td>
+      <td><strong>Palomino Fiestas, Erick Leonardo</strong></td>
+      <td>U20231A500</td>
+      <td>Hola, soy Erick Leonardo Palomino Fiestas, un estudiante entusiasta de séptimo ciclo en Ingeniería de Software. Mi conjunto de habilidades técnicas incluye C++, HTML, CSS, .NET, Python, fundamentos de JavaScript y experiencia con bases de datos SQL y MongoDB. Me considero una persona responsable, con sólidas habilidades de comunicación para trabajar en equipo y una perspectiva optimista. También tengo un nivel básico de inglés.
+
+</td>
     </tr>
     <tr>
-      <td><img src="assets/images/members/[NOMBRE].png" alt="[NOMBRE]" width="200"></td>
-      <td><strong>[Apellido, Nombre]</strong></td>
-      <td>U[CÓDIGO ESTUDIANTE]</td>
-      <td>[Descripción breve de perfil profesional, habilidades y especialidades - similar al ejemplo de Diego]</td>
+      <td><img src="images/members/Renzo.jpeg" alt="[NOMBRE]" width="200"></td>
+      <td><strong>Rivera Ratachi, Renzo Sebastian</strong></td>
+      <td>U20231D974</td>
+      <td>Soy Renzo Sebastian Rivera Ratachi y soy estudiante de la carrera de Ingeniería de Software. Actualmente estoy cursando el 7mo ciclo de mi carrera y tengo conocimientos intermedios de JavaScript y C++. Me considero una persona responsable y puntual.</td>
     </tr>
     <tr>
       <td><img src="assets/images/members/[NOMBRE].png" alt="[NOMBRE]" width="200"></td>
@@ -640,14 +642,14 @@ En esta sección se identifican y describen los principales competidores del mer
   </tr>
   <tr>
     <th colspan="2">Nombre</th>
-    <th>BioDemeter</th>
+    <th>PlantSync</th>
     <th>Xiaomi Flower Care</th>
     <th>Planta App</th>
     <th>Vera: Plant Care Made Easy</th>
   </tr>
   <tr>
     <td colspan="2" align="center"><b>Logo</b></td>
-    <td align="center"><img src="assets/images/logos/[startup]-logo.png" alt="Startup logo" width="100"></td>
+    <td align="center"><img src="images/logos/logo.png" alt="Startup logo" width="100"></td>
     <td align="center"><img src="images/logos/XiaomiFlowerCare.jpg" alt="[Competidor 1]" width="100"></td>
     <td align="center"><img src="images/logos/PlantaApp.png" alt="[Competidor 2]" width="100"></td>
     <td align="center"><img src="images/logos/Vera.jpg" alt="[Competidor 3]" width="100"></td>
@@ -4336,318 +4338,25 @@ En esta sección, se explica los diagramas que presentan un mayor detalle sobre 
 
 <hr class="page-break">
 
-# Capítulo V: Solution UI/UX Design
-
-## 5.1. Style Guidelines
-
-### 5.1.1. General Style Guidelines
-
-### 5.1.2. Web, Mobile and IoT Style Guidelines
-
-## 5.2. Information Architecture
-
-### 5.2.1. Organization Systems
-
-### 5.2.2. Labeling Systems
-
-### 5.2.3. SEO Tags and Meta Tags
-
-### 5.2.4. Searching Systems
-
-### 5.2.5. Navigation Systems
-
-## 5.3. Landing Page UI Design
-
-### 5.3.1. Landing Page Wireframe
-
-### 5.3.2. Landing Page Mock-up
-
-<hr class="page-break">
-
-## 5.4. Applications UX/UI Design
-
-### 5.4.1. Applications Wireframes
-
-### 5.4.2. Applications Wireflow Diagrams
-
-### 5.4.3. Applications Mock-ups
-
-### 5.4.4. Applications User Flow Diagrams
-
-## 5.5. Applications Prototyping
-
-## 5.6. IoT Device Design
-
-<hr class="page-break">
-
-# Capítulo VI: Product Implementation, Validation & Deployment
-
-## 6.1. Software Configuration Management
-
-### 6.1.1. Software Development Environment Configuration
-
-### 6.1.2. Source Code Management
-
-Se utilizó **GitHub** como plataforma de control de versiones y colaboración en equipo.
-Los integrantes del equipo y sus nombres de usuario en GitHub son los siguientes:
-
-| Integrantes | Nombre en GitHub |
-|-------------|------------------|
-|             |                  |
-|             |                  |
-|             |                  |
-|             |                  |
-|             |                  |
-
-### 6.1.3. Source Code Style Guide & Conventions
-
-### 6.1.4. Software Deployment Configuration
-
-<hr class="page-break">
-
-## 6.2. Landing Page, Services & Applications Implementation
-
-### 6.2.1. Sprint 1
-
-#### 6.2.1.1. Sprint Planning 1
-
-| Sprint # | Fecha | Hora | Lugar | Preparado por | Asistentes |
-|----------|-------|------|-------|---------------|------------|
-| Sprint 1 |       |      |       |               |            |
-
-| Sprint Goal & User Stories | |
-|----------------------------|-|
-| Sprint 1 Goal              |  |
-| Sprint 1 Velocity          |  |
-| Sum of Story Points        |  |
-
-#### 6.2.1.2. Aspect Leaders and Collaborators
-
-| Team Member | GitHub Username | Aspect | Role |
-|-------------|-----------------|--------|------|
-|             |                 |        |      |
-
-#### 6.2.1.3. Sprint Backlog 1
-
-| Sprint # | User Story | Work-Item / Task | Descripción | Estimación (horas) | Asignado a | Estado |
-|----------|------------|------------------|-------------|-------------------|------------|--------|
-| Sprint 1 |            |                  |             |                   |            |        |
-
-#### 6.2.1.4. Development Evidence for Sprint Review
-
-| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
-|------------|--------|-----------|----------------|---------------------|---------------------|
-|            |        |           |                |                     |                     |
-
-#### 6.2.1.5. Testing Suite Evidence for Sprint Review
-
-| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
-|------------|--------|-----------|----------------|---------------------|---------------------|
-|            |        |           |                |                     |                     |
-
-#### 6.2.1.6. Execution Evidence for Sprint Review
-
-#### 6.2.1.7. Services Documentation Evidence for Sprint Review
-
-| Servicio | Verbo | Endpoint | Parámetros | Response |
-|----------|-------|----------|------------|----------|
-|          |       |          |            |          |
-
-#### 6.2.1.8. Software Deployment Evidence for Sprint Review
-
-#### 6.2.1.9. Team Collaboration Insights during Sprint
-
-| Integrantes | Tarea asignada |
-|-------------|----------------|
-|             |                |
-
-<hr class="page-break">
-
-### 6.2.2. Sprint 2
-
-#### 6.2.2.1. Sprint Planning 2
-
-| Sprint # | Fecha | Hora | Lugar | Preparado por | Asistentes |
-|----------|-------|------|-------|---------------|------------|
-| Sprint 2 |       |      |       |               |            |
-
-| Sprint Goal & User Stories | |
-|----------------------------|-|
-| Sprint 2 Goal              |  |
-| Sprint 2 Velocity          |  |
-| Sum of Story Points        |  |
-
-#### 6.2.2.2. Aspect Leaders and Collaborators
-
-| Team Member | GitHub Username | Aspect | Role |
-|-------------|-----------------|--------|------|
-|             |                 |        |      |
-
-#### 6.2.2.3. Sprint Backlog 2
-
-| Sprint # | User Story | Work-Item / Task | Descripción | Estimación (horas) | Asignado a | Estado |
-|----------|------------|------------------|-------------|-------------------|------------|--------|
-| Sprint 2 |            |                  |             |                   |            |        |
-
-#### 6.2.2.4. Development Evidence for Sprint Review
-
-| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
-|------------|--------|-----------|----------------|---------------------|---------------------|
-|            |        |           |                |                     |                     |
-
-#### 6.2.2.5. Testing Suite Evidence for Sprint Review
-
-| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
-|------------|--------|-----------|----------------|---------------------|---------------------|
-|            |        |           |                |                     |                     |
-
-#### 6.2.2.6. Execution Evidence for Sprint Review
-
-#### 6.2.2.7. Services Documentation Evidence for Sprint Review
-
-| Servicio | Verbo | Endpoint | Parámetros | Response |
-|----------|-------|----------|------------|----------|
-|          |       |          |            |          |
-
-#### 6.2.2.8. Software Deployment Evidence for Sprint Review
-
-#### 6.2.2.9. Team Collaboration Insights during Sprint
-
-| Integrantes | Tarea asignada |
-|-------------|----------------|
-|             |                |
-
-<hr class="page-break">
-
-### 6.2.3. Sprint 3
-
-#### 6.2.3.1. Sprint Planning 3
-
-| Sprint # | Fecha | Hora | Lugar | Preparado por | Asistentes |
-|----------|-------|------|-------|---------------|------------|
-| Sprint 3 |       |      |       |               |            |
-
-| Sprint Goal & User Stories | |
-|----------------------------|-|
-| Sprint 3 Goal              |  |
-| Sprint 3 Velocity          |  |
-| Sum of Story Points        |  |
-
-#### 6.2.3.2. Aspect Leaders and Collaborators
-
-| Team Member | GitHub Username | Aspect | Role |
-|-------------|-----------------|--------|------|
-|             |                 |        |      |
-
-#### 6.2.3.3. Sprint Backlog 3
-
-| Sprint # | User Story | Work-Item / Task | Descripción | Estimación (horas) | Asignado a | Estado |
-|----------|------------|------------------|-------------|-------------------|------------|--------|
-| Sprint 3 |            |                  |             |                   |            |        |
-
-#### 6.2.3.4. Development Evidence for Sprint Review
-
-| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
-|------------|--------|-----------|----------------|---------------------|---------------------|
-|            |        |           |                |                     |                     |
-
-#### 6.2.3.5. Testing Suite Evidence for Sprint Review
-
-| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
-|------------|--------|-----------|----------------|---------------------|---------------------|
-|            |        |           |                |                     |                     |
-
-#### 6.2.3.6. Execution Evidence for Sprint Review
-
-#### 6.2.3.7. Services Documentation Evidence for Sprint Review
-
-| Servicio | Verbo | Endpoint | Parámetros | Response |
-|----------|-------|----------|------------|----------|
-|          |       |          |            |          |
-
-#### 6.2.3.8. Software Deployment Evidence for Sprint Review
-
-#### 6.2.3.9. Team Collaboration Insights during Sprint
-
-| Integrantes | Tarea asignada |
-|-------------|----------------|
-|             |                |
-
-<hr class="page-break">
-
-### 6.2.4. Sprint 4
-
-#### 6.2.4.1. Sprint Planning 4
-
-| Sprint # | Fecha | Hora | Lugar | Preparado por | Asistentes |
-|----------|-------|------|-------|---------------|------------|
-| Sprint 4 |       |      |       |               |            |
-
-| Sprint Goal & User Stories | |
-|----------------------------|-|
-| Sprint 4 Goal              |  |
-| Sprint 4 Velocity          |  |
-| Sum of Story Points        |  |
-
-#### 6.2.4.2. Aspect Leaders and Collaborators
-
-| Team Member | GitHub Username | Aspect | Role |
-|-------------|-----------------|--------|------|
-|             |                 |        |      |
-
-#### 6.2.4.3. Sprint Backlog 4
-
-| Sprint # | User Story | Work-Item / Task | Descripción | Estimación (horas) | Asignado a | Estado |
-|----------|------------|------------------|-------------|-------------------|------------|--------|
-| Sprint 4 |            |                  |             |                   |            |        |
-
-#### 6.2.4.4. Development Evidence for Sprint Review
-
-| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
-|------------|--------|-----------|----------------|---------------------|---------------------|
-|            |        |           |                |                     |                     |
-
-#### 6.2.4.5. Testing Suite Evidence for Sprint Review
-
-| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
-|------------|--------|-----------|----------------|---------------------|---------------------|
-|            |        |           |                |                     |                     |
-
-#### 6.2.4.6. Execution Evidence for Sprint Review
-
-#### 6.2.4.7. Services Documentation Evidence for Sprint Review
-
-| Servicio | Verbo | Endpoint | Parámetros | Response |
-|----------|-------|----------|------------|----------|
-|          |       |          |            |          |
-
-#### 6.2.4.8. Software Deployment Evidence for Sprint Review
-
-#### 6.2.4.9. Team Collaboration Insights during Sprint
-
-| Integrantes | Tarea asignada |
-|-------------|----------------|
-|             |                |
-
-<hr class="page-break">
-
-## 6.3. Validation Interviews
-
-### 6.3.1. Diseño de Entrevistas
-
-### 6.3.2. Registro de Entrevistas
-
-### 6.3.3. Evaluaciones según heurísticas
-
-<hr class="page-break">
-
-## 6.4. Video About-the-Product
-
-<hr class="page-break">
-
 # Conclusiones
 
 ## Conclusiones y recomendaciones
+
+**Conclusiones**
+
+-  Se ha confirmado que la problemática central no es solo el olvido del riego, sino la falta de conocimiento técnico sobre las necesidades específicas de cada especie. El diseño de los Bounded Contexts de Inteligencia Botánica y Plant Profiles responde directamente a esta brecha, proporcionando una solución que centraliza el conocimiento especializado.
+
+- Inicialmente, el equipo asumió que los usuarios preferirían guías estáticas de cuidado. Sin embargo, tras el análisis de las entrevistas y el Needfinding, se validó que los segmentos objetivo demandan inmediatez e interactividad. Esto motivó el incluir un Chatbot con IA, desplazando las guías tradicionales por una interfaz conversacional más eficiente.
+
+- La hipótesis de que la monitorización en tiempo real mediante dispositivos IoT reduciría la incertidumbre del usuario resultó ser acertada. Los criterios de éxito definidos en el Lean UX Canvasmuestran una tendencia positiva tras las validaciones de los prototipos iniciales y el flujo de mensajes del dominio.
+
+- La implementación de Domain-Driven Design (DDD) permitió delimitar claramente las responsabilidades del sistema. La separación de contextos como IoT Management y Care Scheduling asegura que el producto sea escalable y que la complejidad técnica de los sensores no interfiera con la experiencia de usuario en la capa de aplicación.
+
+**Recomendaciones**
+
+- Implementar de manera progresiva los requerimientos y sugerencias recolectados durante la fase de entrevistas con los segmentos objetivo, asegurando que el desarrollo de funcionalidades esté estrictamente alineado con las necesidades reales detectadas para maximizar la satisfacción del usuario y la propuesta de valor del producto.
+
+- Supervisar rigurosamente que, durante la etapa de codificación y construcción del sistema, se respeten los límites y la autonomía de cada Bounded Context definidos en el diseño estratégico. Esto es fundamental para evitar el acoplamiento innecesario, facilitar el mantenimiento y garantizar la integridad de la arquitectura de software propuesta.
 
 ## Video About-the-Team
 
@@ -4661,4 +4370,7 @@ Revista Economía. (2020). Incremento del interés de los peruanos por el cuidad
 
 # Anexos
 
+- Link Video TB1: 
+
 ## Links
+
