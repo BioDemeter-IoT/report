@@ -381,10 +381,10 @@ plantas saludables mientras fortalecen su conexión con el medio ambiente.
       <td>Soy estudiante de Ingeniería de Software con un fuerte interés en el desarrollo de productos digitales y la tecnología. En mi tiempo libre, me gusta jugar videojuegos. También tengo un interés especial en la música, lo que me ayuda a equilibrar mi vida académica y personal. Cuento con habilidades en gestión de bases de datos relacionales, frontend y backend; también me gusta estar al pendiente de las noticias de software, lo que me anima a experimentar con nuevas tecnologías.</td>
     </tr>
     <tr>
-      <td><img src="assets/images/members/[NOMBRE].png" alt="[NOMBRE]" width="200"></td>
-      <td><strong>[Apellido, Nombre]</strong></td>
-      <td>U[CÓDIGO ESTUDIANTE]</td>
-      <td>[Descripción breve de perfil profesional, habilidades y especialidades - similar al ejemplo de Diego]</td>
+      <td><img src="images/members/foto-cr7.jpg" alt="[NOMBRE]" width="200"></td>
+      <td><strong>Coca Lavado, Carlos Andrés</strong></td>
+      <td>U202313172</td>
+      <td>Mi Nombre es Carlos Andrés Coca, tengo 20 años, actualmente me encuentro cursando el septimo ciclo de la carrera de Ingeniería de Software. Cuento con conocimientos en C++, Python y HTML. y desde muy joven me ha interesado el desarrollo Web. Teniendo en cuenta el gran impacto que presentan a día de hoy las novedosas soluciones presentadas.</td>
     </tr>
     <tr>
       <td><img src="assets/images/members/[NOMBRE].png" alt="[NOMBRE]" width="200"></td>
