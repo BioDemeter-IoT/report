@@ -2051,6 +2051,201 @@ El diseño de base de datos del bounded context IoT Management se compone de tre
   <img src="images/BoundedContext/IotManagement/desingDiagram.png">
 </p>
 
+### 4.2.5. Bounded Context: CareScheduling
+
+#### 4.2.5.1. Domain Layer
+
+En esta capa se define el núcleo de la programación de cuidados de plantas, encapsulando las reglas de negocio para la gestión de tareas de mantenimiento como riego, fertilización y otras acciones programadas.
+
+**Aggregate: `Task`**
+
+El agregado Task es la raíz que gestiona las tareas de cuidado de plantas en el sistema, asegurando que las acciones programadas sean consistentes y válidas.
+
+| Atributos | Tipo de dato | Visibilidad | Descripción |
+|---|---|---|---|
+| id | Long | Private | Identificador único de la tarea. |
+| date | LocalDate | Private | Fecha programada para la ejecución de la tarea. |
+| action | String | Private | Acción a realizar (ej. "WATER", "FERTILIZE"). |
+| completed | Boolean | Private | Indica si la tarea ha sido completada. |
+| plantId | PlantId | Private | ID de la planta asociada a la tarea. |
+| profileId | ProfileId | Private | ID del perfil propietario de la tarea. |
+
+| Métodos | Tipo de retorno | Visibilidad | Descripción |
+|---|---|---|---|
+| getId() | Long | Public | Devuelve el ID de la tarea. |
+| getDate() | LocalDate | Public | Devuelve la fecha programada. |
+| getAction() | String | Public | Devuelve la acción a realizar. |
+| getCompleted() | Boolean | Public | Devuelve si la tarea está completada. |
+| getPlantId() | PlantId | Public | Devuelve el ID de la planta asociada. |
+| getProfileId() | ProfileId | Public | Devuelve el ID del perfil propietario. |
+| updateInformation(String, LocalDate, PlantId, ProfileId, Boolean) | Task | Public | Actualiza la información de la tarea. |
+| Task(CreateTaskCommand) | Constructor | Public | Crea una nueva tarea a partir de un comando. |
+
+**Value Objects**
+
+| Value Object | Descripción |
+|---|---|
+| PlantId | Registro que representa el identificador de una planta. Valida que no sea nulo o menor o igual a cero. |
+| ProfileId | Registro que representa el identificador de un perfil. Valida que no sea nulo o menor o igual a cero. |
+
+**Excepciones de Dominio**
+
+| Excepción | Descripción |
+|---|---|
+| TaskCreationException | Se lanza cuando ocurre un error durante la creación de una tarea. |
+| TaskDeletionException | Se lanza cuando ocurre un error durante la eliminación de una tarea. |
+
+**Clase: `TaskQueryService`**
+
+| Título | TaskQueryService |
+|---|---|
+| Descripción | Interfaz de servicio de consultas para operaciones de lectura de tareas. |
+
+**Métodos**
+
+| Método | Descripción |
+|---|---|
+| handle(GetAllTasksQuery) | Recupera la lista completa de tareas registradas en el sistema. |
+| handle(GetTaskByIdQuery) | Obtiene una tarea por su identificador único. |
+
+**Clase: `TaskCommandService`**
+
+| Título | TaskCommandService |
+|---|---|
+| Descripción | Interfaz de servicio de comandos para la gestión de tareas. |
+
+**Métodos**
+
+| Método | Descripción |
+|---|---|
+| handle(CreateTaskCommand) | Crea una nueva tarea a partir del comando y retorna su ID. |
+| handle(DeleteTaskCommand) | Elimina una tarea del sistema. |
+
+#### 4.2.5.2. Interface Layer
+
+La capa de interfaz del contexto CareScheduling expone controladores REST para la gestión de tareas de cuidado. Utiliza assemblers especializados para transformar las solicitudes HTTP en comandos y consultas, asegurando que el dominio no se vea afectado por cambios en la API externa.
+
+**Controlador: `TaskCommandController`**
+
+Maneja las operaciones de escritura sobre tareas, permitiendo la creación y eliminación de las mismas.
+
+**Métodos**
+
+| Método | Ruta | Descripción |
+|---|---|---|
+| createTask | POST /api/v1/tasks | Crea una nueva tarea y devuelve sus datos. |
+| deleteTask | DELETE /api/v1/tasks/{taskId} | Elimina una tarea del sistema. |
+
+**Controlador: `TaskQueryController`**
+
+Gestiona las operaciones de consulta y lectura de tareas en la plataforma.
+
+**Métodos**
+
+| Método | Ruta | Descripción |
+|---|---|---|
+| getAllTasks | GET /api/v1/tasks | Lista todas las tareas del sistema. |
+
+**Recursos (DTOs)**
+
+| Recurso | Descripción |
+|---|---|
+| CreateTaskResource | Contiene los datos para crear una tarea: action, date, plantId, profileId, completed. |
+| TaskResource | Representa la respuesta de una tarea: id, action, date, plantId, profileId, completed. |
+
+**Assemblers (Transformadores)**
+
+| Assembler | Descripción |
+|---|---|
+| CreateTaskCommandFromResourceAssembler | Convierte un CreateTaskResource en un CreateTaskCommand. |
+| TaskResourceFromEntityAssembler | Convierte la entidad Task en un TaskResource. |
+
+#### 4.2.5.3. Application Layer
+
+Los servicios internos implementan la lógica de orquestación para la gestión de tareas. Se encargan de ejecutar comandos y coordinar la persistencia.
+
+**Clase: `TaskCommandServiceImpl`**
+
+| Título | TaskCommandServiceImpl |
+|---|---|
+| Descripción | Implementación del servicio de comandos para gestionar la creación y eliminación de tareas. |
+
+**Dependencias**
+
+| Dependencia | Descripción |
+|---|---|
+| TaskRepository | Repositorio para la persistencia de tareas. |
+
+**Clase: `TaskQueryServiceImpl`**
+
+| Título | TaskQueryServiceImpl |
+|---|---|
+| Descripción | Implementación del servicio de consultas para operaciones de lectura de tareas. |
+
+**Dependencias**
+
+| Dependencia | Descripción |
+|---|---|
+| TaskRepository | Repositorio para el acceso a la base de datos de tareas. |
+
+#### 4.2.5.4. Infrastructure Layer
+
+Esta capa implementa los mecanismos de persistencia mediante JPA y Spring Data JPA.
+
+**Clase: `TaskRepository`**
+
+| Título | TaskRepository |
+|---|---|
+| Descripción | Interfaz de persistencia para operaciones CRUD de tareas. |
+
+**Métodos**
+
+| Método | Descripción |
+|---|---|
+| findById(Long) | Recupera una tarea por su ID. |
+| findAll() | Recupera todas las tareas. |
+| save(Task) | Persiste o actualiza la información de la tarea. |
+| deleteById(Long) | Elimina una tarea por su ID. |
+
+#### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams
+
+Este diagrama representa cómo el Bounded Context de CareScheduling gestiona las tareas de cuidado de plantas.
+El TaskCommandController es el punto de entrada principal para el flujo de creación y eliminación de tareas, mientras que el TaskQueryController maneja las consultas de lectura. Ambos controladores delegan respectivamente en TaskCommandService y TaskQueryService.
+La persistencia se realiza en una base de datos relacional MySQL a través de TaskRepository.
+<p __align__="center">
+  <img src="images/BoundedContext/CareScheduling/CareScheduling.png">
+</p>
+<p __align__="center">
+  Elaboración propia
+</p>
+
+#### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams
+
+En esta sección, se explica los diagramas que presentan un mayor detalle sobre la implementación de componentes en el bounded context de CareScheduling.
+
+##### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams
+
+<br>
+<p __align__="center">
+  <img src="images/BoundedContext/CareScheduling/careschedulinguml.png" alt = "updated class diagram" width="100%">
+</p>
+<p __align__="center">
+    Bounded Context Class Diagram - Elaboración propia
+</p>
+
+##### 4.2.5.6.2. Bounded Context Database Design Diagram
+
+<p align="center">
+  <img src="images/BoundedContext/CareScheduling/taskdbtable.png" alt = "database diagram" width="80%">
+</p>
+
+<p align="center">
+  Elaboración propia
+</p>
+
+<hr class="page-break">
+
+
 
 # Capítulo V: Solution UI/UX Design
 
