@@ -803,11 +803,11 @@ Por motivos de almacenamiento, tuvimos que mantener por separado la entrevista 3
     </tr>
     <tr>
       <td>Duración Entrevista</td>
-      <td>04:54</td>
+      <td>04:53</td>
     </tr>
     <tr>
       <td>Minuto de Inicio</td>
-      <td>00:00 - 04:54</td>
+      <td>00:00 - 04:53</td>
     </tr>
         <tr>
       <td><strong>Resumen:</strong></td>
@@ -846,7 +846,7 @@ Por motivos de almacenamiento, tuvimos que mantener por separado la entrevista 3
     </tr>
     <tr>
       <td>Minuto de Inicio</td>
-      <td>00:00 - 06:41</td>
+      <td>04:54 - 11:34</td>
     </tr>
         <tr>
       <td><strong>Resumen:</strong></td>
@@ -885,7 +885,7 @@ Por motivos de almacenamiento, tuvimos que mantener por separado la entrevista 3
     </tr>
     <tr>
       <td>Minuto de Inicio</td>
-      <td>00:00 - 09:21</td>
+      <td>20:58 - 30:17</td>
     </tr>
         <tr>
       <td><strong>Resumen:</strong></td>
@@ -926,7 +926,7 @@ Por motivos de almacenamiento, tuvimos que mantener por separado la entrevista 3
     </tr>
     <tr>
       <td>Minuto de Inicio</td>
-      <td>00:00 - 04:33</td>
+      <td>11:35 - 16:07</td>
     </tr>
         <tr>
       <td><strong>Resumen:</strong></td>
@@ -965,7 +965,7 @@ Por motivos de almacenamiento, tuvimos que mantener por separado la entrevista 3
     </tr>
     <tr>
       <td>Minuto de Inicio</td>
-      <td>00:00 - 04:50</td>
+      <td>16:08 - 20:57</td>
     </tr>
         <tr>
       <td><strong>Resumen:</strong></td>
@@ -1004,7 +1004,7 @@ Por motivos de almacenamiento, tuvimos que mantener por separado la entrevista 3
     </tr>
     <tr>
       <td>Minuto de Inicio</td>
-      <td>00:00 - 09:52</td>
+      <td>00:00 - 09:52 (link separado por problemas de almacenamiento)</td>
     </tr>
         <tr>
       <td><strong>Resumen:</strong></td>
