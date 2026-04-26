@@ -1026,12 +1026,67 @@ __Quinto paso:__
 
 __Sexto paso:__
 <p align="center">
-  <img src="images/Miro/EventStorming-Paso6.jpeg">
+  <img src="images/Miro/EventStorming-Paso6_1.jpeg">
 </p>
 <p align="center">
-  Event Storming 6 - Elaboración propia
+  Event Storming 6.1 - Elaboración propia
+</p>
+<p align="center">
+  <img src="images/Miro/EventStorming-Paso6_2.jpeg">
+</p>
+<p align="center">
+  Event Storming 6.2 - Elaboración propia
+</p>
+<p align="center">
+  <img src="images/Miro/EventStorming-Paso6_3.jpeg">
+</p>
+<p align="center">
+  Event Storming 6.3 - Elaboración propia
+</p>
+<p align="center">
+  <img src="images/Miro/EventStorming-Paso6_4.jpeg">
+</p>
+<p align="center">
+  Event Storming 6.4 - Elaboración propia
+</p>
+<p align="center">
+  <img src="images/Miro/EventStorming-Paso6_5.jpeg">
+</p>
+<p align="center">
+  Event Storming 6.5 - Elaboración propia
 </p>
 
+__Séptimo paso:__
+<p align="center">
+  <img src="images/Miro/EventStorming-Paso7_1.jpeg">
+</p>
+<p align="center">
+  Event Storming 7.1 - Elaboración propia
+</p>
+<p align="center">
+  <img src="images/Miro/EventStorming-Paso7_2.jpeg">
+</p>
+<p align="center">
+  Event Storming 7.2 - Elaboración propia
+</p>
+<p align="center">
+  <img src="images/Miro/EventStorming-Paso7_3.jpeg">
+</p>
+<p align="center">
+  Event Storming 7.3 - Elaboración propia
+</p>
+<p align="center">
+  <img src="images/Miro/EventStorming-Paso7_4.jpeg">
+</p>
+<p align="center">
+  Event Storming 7.4 - Elaboración propia
+</p>
+<p align="center">
+  <img src="images/Miro/EventStorming-Paso7_5.jpeg">
+</p>
+<p align="center">
+  Event Storming 7.5 - Elaboración propia
+</p>
 
 ---
 
