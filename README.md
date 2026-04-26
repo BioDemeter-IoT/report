@@ -2051,186 +2051,192 @@ El diseño de base de datos del bounded context IoT Management se compone de tre
   <img src="images/BoundedContext/IotManagement/desingDiagram.png">
 </p>
 
-### 4.2.5. Bounded Context: \<PlantGuidance\>
+### 4.2.5. Bounded Context: CareScheduling
 
 #### 4.2.5.1. Domain Layer
 
-En esta capa se define el núcleo de la seguridad y gestión de identidades, encapsulando las reglas de negocio para la autenticación y autorización de usuarios.
+En esta capa se define el núcleo de la programación de cuidados de plantas, encapsulando las reglas de negocio para la gestión de tareas de mantenimiento como riego, fertilización y otras acciones programadas.
 
-En esta capa se gestiona la inteligencia del sistema. Integrando la ia del chatbot con los datos dinámicos de los sensores y de los perfiles de las plantas para ofrecer recomendaciones.
+**Aggregate: `Task`**
 
-**Aggregate: `Consultation`**
+El agregado Task es la raíz que gestiona las tareas de cuidado de plantas en el sistema, asegurando que las acciones programadas sean consistentes y válidas.
 
-Representa una sesión de consulta temporal donde un usuario interactúa con la IA para obtener asesoría basada en los datos específicos de una de sus plantas.
+| Atributos | Tipo de dato | Visibilidad | Descripción |
+|---|---|---|---|
+| id | Long | Private | Identificador único de la tarea. |
+| date | LocalDate | Private | Fecha programada para la ejecución de la tarea. |
+| action | String | Private | Acción a realizar (ej. "WATER", "FERTILIZE"). |
+| completed | Boolean | Private | Indica si la tarea ha sido completada. |
+| plantId | PlantId | Private | ID de la planta asociada a la tarea. |
+| profileId | ProfileId | Private | ID del perfil propietario de la tarea. |
 
-| Atributos      | Tipo de dato     | Visibilidad | Descripción                                     |
-|----------------|-----------------|------------|------------------------------------------------|
-| consultationId    | Long            | Private    | Identificador único de la consulta.            |
-| plantId      | Long           | Private    | ID de la planta sobre la cual se realiza la consulta.    |
-| userMessage       | String          | Private    | Pregunta o inquietud enviada por el usuario.                      |
-| aiResponse    | String         | Private    | Respuesta generada por el modelo de IA          |
-| plantSnapshot    | PlantSnapshot         | Private    | Objeto de valor con los datos de la planta en el momento de la consulta.          |
-| createdAt    | Timestamp         | Private    | Fecha y hora de la interacción.          |
-
-| Métodos                         | Tipo de retorno | Visibilidad | Descripción                                      |
-|---------------------------------|----------------|------------|------------------------------------------------|
-| getConsultationId()                 | Long           | Public     | Devuelve el ID de la consulta.                   |
-| getPlantId()                 | Long          | Public     | Devuelve el ID de la planta asociada.    |
-| getAiResponse()                      | String         | Public     | Devuelve la respuesta generada por la IA.              |
-| updateResponse(response)                |void       | Public     | Asigna la respuesta final generada por el servicio de IA.        |
-| getCreatedAt()                     | Timestamp  | Public     | Devuelve la fecha de la consulta.       |
+| Métodos | Tipo de retorno | Visibilidad | Descripción |
+|---|---|---|---|
+| getId() | Long | Public | Devuelve el ID de la tarea. |
+| getDate() | LocalDate | Public | Devuelve la fecha programada. |
+| getAction() | String | Public | Devuelve la acción a realizar. |
+| getCompleted() | Boolean | Public | Devuelve si la tarea está completada. |
+| getPlantId() | PlantId | Public | Devuelve el ID de la planta asociada. |
+| getProfileId() | ProfileId | Public | Devuelve el ID del perfil propietario. |
+| updateInformation(String, LocalDate, PlantId, ProfileId, Boolean) | Task | Public | Actualiza la información de la tarea. |
+| Task(CreateTaskCommand) | Constructor | Public | Crea una nueva tarea a partir de un comando. |
 
 **Value Objects**
 
-| Value Object   | Descripción                                                                 |
-|----------------|-----------------------------------------------------------------------------|
-| ChatRole  | Define el rol del emisor del mensaje: `USER`, `ASSISTANT` y `SYSTEM`.      |
-| PlantSnapshot | Contiene los datos técnicos de la planta al momento de la duda: nombre, descripción, temperatura y humedad.|
+| Value Object | Descripción |
+|---|---|
+| PlantId | Registro que representa el identificador de una planta. Valida que no sea nulo o menor o igual a cero. |
+| ProfileId | Registro que representa el identificador de un perfil. Valida que no sea nulo o menor o igual a cero. |
 
-**Clase: `ChatbotQueryService`**
+**Excepciones de Dominio**
 
-| Título       | ChatbotQueryService |
-|--------------|----------------------|
-| Descripción  | Interfaz de servicio de consultas para recuperar el historial de interacciones de una planta específica. |
+| Excepción | Descripción |
+|---|---|
+| TaskCreationException | Se lanza cuando ocurre un error durante la creación de una tarea. |
+| TaskDeletionException | Se lanza cuando ocurre un error durante la eliminación de una tarea. |
 
-**Métodos**
+**Clase: `TaskQueryService`**
 
-| Método                             | Descripción                                               |
-|-----------------------------------|-----------------------------------------------------------|
-| handle(GetConsultationsByPlantIdQuery)        | Obtiene todas las consultas realizadas para una planta específica.   |
-| handle(GetConsultationByIdQuery) | Obtiene los detalles de una consulta específica.     |
-
-**Clase: `ChatbotCommandService`**
-
-| Título       | ChatbotCommandService |
-|--------------|------------------------|
-| Descripción  | Interfaz de servicio de comandos para procesar la lógica de generación de asesoría mediante IA. |
+| Título | TaskQueryService |
+|---|---|
+| Descripción | Interfaz de servicio de consultas para operaciones de lectura de tareas. |
 
 **Métodos**
 
-| Método                           | Descripción                                                        |
-|---------------------------------|--------------------------------------------------------------------|
-| handle(ProcessPlantConsultationCommand)     | Orquesta la obtención de datos de la planta, genera el prompt para la IA y registra la respuesta.            |
-| handle(ClearPlantConsultationsCommand)     | Elimina el historial de consultas de una planta. |
+| Método | Descripción |
+|---|---|
+| handle(GetAllTasksQuery) | Recupera la lista completa de tareas registradas en el sistema. |
+| handle(GetTaskByIdQuery) | Obtiene una tarea por su identificador único. |
 
+**Clase: `TaskCommandService`**
+
+| Título | TaskCommandService |
+|---|---|
+| Descripción | Interfaz de servicio de comandos para la gestión de tareas. |
+
+**Métodos**
+
+| Método | Descripción |
+|---|---|
+| handle(CreateTaskCommand) | Crea una nueva tarea a partir del comando y retorna su ID. |
+| handle(DeleteTaskCommand) | Elimina una tarea del sistema. |
 
 #### 4.2.5.2. Interface Layer
 
-La capa de interfaz del contexto PlantGuidance expone los endpoints necesarios para que la aplicación móvil o web envíe las preguntas del usuario. Utiliza transformadores para convertir las solicitudes en comandos que incluyen el contexto de la planta seleccionada.
+La capa de interfaz del contexto CareScheduling expone controladores REST para la gestión de tareas de cuidado. Utiliza assemblers especializados para transformar las solicitudes HTTP en comandos y consultas, asegurando que el dominio no se vea afectado por cambios en la API externa.
 
-**Controlador: `ChatbotController`**
+**Controlador: `TaskCommandController`**
 
-Controlador REST que maneja el flujo de comunicación entre el usuario y el agente de IA botánico.
+Maneja las operaciones de escritura sobre tareas, permitiendo la creación y eliminación de las mismas.
 
-**Metodos**
+**Métodos**
 
-| Método           | Ruta                              | Descripción                                               |
-|-----------------|----------------------------------|-----------------------------------------------------------|
-| consultAi   | POST /api/v1/chatbot/consult        | Recibe la pregunta del usuario y el ID de la planta para generar asesoría. |
-| getPlantHistory | GET /api/v1/chatbot/history/{plantId} | Recupera la conversación actual para una planta. |
-| deleteHistory | DELETE /api/v1/chatbot/history/{plantId} | Borra la conversación al salir de la vista del chatbot. |
+| Método | Ruta | Descripción |
+|---|---|---|
+| createTask | POST /api/v1/tasks | Crea una nueva tarea y devuelve sus datos. |
+| deleteTask | DELETE /api/v1/tasks/{taskId} | Elimina una tarea del sistema. |
 
-**Dependencias**
+**Controlador: `TaskQueryController`**
 
-| Dependencia                         | Descripción                                                                 |
-|------------------------------------|-----------------------------------------------------------------------------|
-| ChatbotCommandService                 | Servicio para procesar la generación de respuestas con IA.               |
-| ChatbotQueryService               | Servicio para recuperar datos de consultas previas. |
-| ConsultationResourceFromEntityAssembler | Convierte la entidad Consultation a un recurso JSON.           |
-| ProcessConsultationCommandFromResourceAssembler | Mapea el request del usuario a un comando de dominio.      |
+Gestiona las operaciones de consulta y lectura de tareas en la plataforma.
+
+**Métodos**
+
+| Método | Ruta | Descripción |
+|---|---|---|
+| getAllTasks | GET /api/v1/tasks | Lista todas las tareas del sistema. |
+
+**Recursos (DTOs)**
+
+| Recurso | Descripción |
+|---|---|
+| CreateTaskResource | Contiene los datos para crear una tarea: action, date, plantId, profileId, completed. |
+| TaskResource | Representa la respuesta de una tarea: id, action, date, plantId, profileId, completed. |
+
+**Assemblers (Transformadores)**
+
+| Assembler | Descripción |
+|---|---|
+| CreateTaskCommandFromResourceAssembler | Convierte un CreateTaskResource en un CreateTaskCommand. |
+| TaskResourceFromEntityAssembler | Convierte la entidad Task en un TaskResource. |
 
 #### 4.2.5.3. Application Layer
 
-LEl servicio ChatbotCommandServiceImpl actúa como el orquestador principal. No solo llama a la IA, sino que primero utiliza un ProfilesContextFacade (ACL) para obtener la temperatura y humedad actual del Bounded Context de Plant Profiles antes de enviar la solicitud al agente de IA
+Los servicios internos implementan la lógica de orquestación para la gestión de tareas. Se encargan de ejecutar comandos y coordinar la persistencia.
 
-**Clase: `ChatbotCommandServiceImpl`**
+**Clase: `TaskCommandServiceImpl`**
 
-| Título       | ChatbotCommandServiceImpl |
-|--------------|--------------------------|
-| Descripción  | Implementación de la lógica de negocio para la generación de consejos botánicos inteligentes. |
-
-**Dependencias**
-
-| Dependencia            | Descripción                                   |
-|-------------------------|-----------------------------------------------|
-| ConsultationRepository       | Repositorio para persistencia (audit log) de las consultas.  |
-| AiServiceAgent     | Adaptador de infraestructura para la API  |
-| ProfilesContextFacade     | Fachada para obtener datos de la planta desde otro Bounded Context.  |
-
-**Clase: `ChatbotQueryServiceImpl`**
-
-| Título       | ChatbotQueryServiceImpl |
-|--------------|----------------------------|
-| Descripción  | Implementación del servicio de lectura para el historial de chat del usuario. |
+| Título | TaskCommandServiceImpl |
+|---|---|
+| Descripción | Implementación del servicio de comandos para gestionar la creación y eliminación de tareas. |
 
 **Dependencias**
 
-| Dependencia            | Descripción                                   |
-|-------------------------|-----------------------------------------------|
-| ConsultationRepository      | Acceso a la persistencia de consultas. |
+| Dependencia | Descripción |
+|---|---|
+| TaskRepository | Repositorio para la persistencia de tareas. |
+
+**Clase: `TaskQueryServiceImpl`**
+
+| Título | TaskQueryServiceImpl |
+|---|---|
+| Descripción | Implementación del servicio de consultas para operaciones de lectura de tareas. |
+
+**Dependencias**
+
+| Dependencia | Descripción |
+|---|---|
+| TaskRepository | Repositorio para el acceso a la base de datos de tareas. |
 
 #### 4.2.5.4. Infrastructure Layer
 
-Esta capa maneja la integración técnica con la API de la IA y la base de datos de auditoría. El AiServiceAdapter transforma el contexto del dominio en un prompt optimizado para el modelo de lenguaje.
+Esta capa implementa los mecanismos de persistencia mediante JPA y Spring Data JPA.
 
-**Clase: `ConsultationRepository`**
+**Clase: `TaskRepository`**
 
-| Título       | ConsultationRepository |
-|-------------|------------------|
-| Descripción | Interfaz de persistencia para las entidades de consulta de IA. |
+| Título | TaskRepository |
+|---|---|
+| Descripción | Interfaz de persistencia para operaciones CRUD de tareas. |
 
-**Metodos**
+**Métodos**
 
-| Método             | Descripción                                           |
-|-------------------|-------------------------------------------------------|
-| save(Consultation) | Persiste el log de la consulta y la respuesta generada. |
-| findByPlantId(Long)   | Recupera las consultas asociadas a una planta.                        |
-| deleteAllByPlantId(Long)    | Elimina el historial de consultas.                        |
-
-**Dependencias**
-
-| Dependencia            | Propósito                                   |
-|-------------------------|-----------------------------------------------|
-| ConsultationEntity      | Representación JPA de la consulta en la base de datos. |
-| AiClient      | Cliente externo para la comunicación con los servidores de la IA |
+| Método | Descripción |
+|---|---|
+| findById(Long) | Recupera una tarea por su ID. |
+| findAll() | Recupera todas las tareas. |
+| save(Task) | Persiste o actualiza la información de la tarea. |
+| deleteById(Long) | Elimina una tarea por su ID. |
 
 #### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams
 
-Este diagrama de componentes representa cómo el sistema consume datos de plantas para alimentar la IA. 
-
-El `ChatbotController` recibe la consulta del usuario. El `ChatbotCommandService` orquesta el flujo: solicita los datos de temperatura y humedad al `ProfilesContextFacade`, combina esta información con la pregunta del usuario y la envía al `AiServiceAdapter`. Finalmente, la respuesta se entrega al usuario y se registra en el repositorio mediante JPA.
-
-<p align="center">
-  <img src="images/BoundedContext/PlantGuidance/PlantGuidance.png">
+Este diagrama representa cómo el Bounded Context de CareScheduling gestiona las tareas de cuidado de plantas.
+El TaskCommandController es el punto de entrada principal para el flujo de creación y eliminación de tareas, mientras que el TaskQueryController maneja las consultas de lectura. Ambos controladores delegan respectivamente en TaskCommandService y TaskQueryService.
+La persistencia se realiza en una base de datos relacional MySQL a través de TaskRepository.
+<p __align__="center">
+  <img src="images/BoundedContext/CareScheduling/CareScheduling.png">
 </p>
-
-<p align="center">
+<p __align__="center">
   Elaboración propia
 </p>
 
 #### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams
 
-En esta sección, se explica los diagramas que presentan un mayor detalle sobre la implementación de componentes en el bounded context de IAM.
+En esta sección, se explica los diagramas que presentan un mayor detalle sobre la implementación de componentes en el bounded context de CareScheduling.
 
 ##### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams
 
 <br>
-
-<p align="center">
-  <img src="images/BoundedContext/PlantGuidance/PlantGuidance-1-UML.png" alt = "updated class diagram" width="90%">
+<p __align__="center">
+  <img src="images/BoundedContext/CareScheduling/careschedulinguml.png" alt = "updated class diagram" width="100%">
 </p>
-<p align="center">
-  <img src="images/BoundedContext/PlantGuidance/PlantGuidance-2-UML.png" alt = "updated class diagram" width="90%">
-</p>
-
-<p align="center">
+<p __align__="center">
     Bounded Context Class Diagram - Elaboración propia
 </p>
 
 ##### 4.2.5.6.2. Bounded Context Database Design Diagram
 
 <p align="center">
-  <img src="images/BoundedContext/PlantGuidance/PlantGuidance Database.png" alt = "database diagram" width="80%">
+  <img src="images/BoundedContext/CareScheduling/taskdbtable.png" alt = "database diagram" width="80%">
 </p>
 
 <p align="center">
@@ -2238,6 +2244,8 @@ En esta sección, se explica los diagramas que presentan un mayor detalle sobre 
 </p>
 
 <hr class="page-break">
+
+
 
 # Capítulo V: Solution UI/UX Design
 
