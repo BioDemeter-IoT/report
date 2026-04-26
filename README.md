@@ -1418,7 +1418,7 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
 ## 3.2. Impact Mapping
 
 <p align="center">
-  <img src="images/logos/Impact Mappig Usuario.png" alt="impact mapping" width="80%">
+  <img src="images/logos/Impact Mapping Jardinero Novato.png" alt="impact mapping" width="80%">
 </p>
 
 <p align="center">
@@ -1429,7 +1429,7 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
 
 
 <p align="center">
-  <img src="images/logos/Impact mapping Jardinero Veterano.png" alt="impact mapping" width="80%">
+  <img src="images/logos/Impact Mapping Jardinero Experto.png" alt="impact mapping" width="80%">
 </p>
 
 <p align="center">
