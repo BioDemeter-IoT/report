@@ -2195,7 +2195,7 @@ Este diagrama representa cómo el Bounded Context de Profiles gestiona los perfi
 El ProfilesCommandController es el punto de entrada principal para el flujo de creación y actualización de perfiles, mientras que el ProfilesQueryController maneja las consultas de lectura. Ambos controladores delegan respectivamente en ProfileCommandService y ProfileQueryService.
 La persistencia se realiza en una base de datos relacional MySQL a través de ProfileRepository.
 <p __align__="center">
-  <img src="images/BoundedContext/IAM/IAM.png">
+  <img src="images/BoundedContext/Profiles/profiles.jpeg">
 </p>
 <p __align__="center">
   Elaboración propia
@@ -2219,7 +2219,7 @@ En esta sección, se explica los diagramas que presentan un mayor detalle sobre 
 ##### 4.2.2.6.2. Bounded Context Database Design Diagram
 
 <p align="center">
-  <img src="images/BoundedContext/Profiles/Database.png" alt = "database diagram" width="80%">
+  <img src="images/BoundedContext/Profiles/profilesdbdiagram.png" alt = "database diagram" width="80%">
 </p>
 
 <p align="center">
@@ -2531,7 +2531,7 @@ Este diagrama representa cómo el Bounded Context de PlantProfiles gestiona las 
 El PlantCommandController es el punto de entrada principal para el flujo de creación, actualización y eliminación de plantas, mientras que el PlantQueryController maneja las consultas de lectura. Adicionalmente, el PlantHistoryCommandController y PlantHistoryQueryController gestionan los registros históricos de cuidado de las plantas. Todos los controladores delegan respectivamente en PlantCommandService, PlantQueryService, PlantHistoryCommandService y PlantHistoryQueryService.
 La persistencia se realiza en una base de datos relacional MySQL a través de PlantRepository y PlantHistoryRepository.
 <p __align__="center">
-  <img src="images/BoundedContext/IAM/IAM.png">
+  <img src="images/BoundedContext/PlantProfiles/pantprofiles.jpeg">
 </p>
 <p __align__="center">
   Elaboración propia
@@ -3058,7 +3058,7 @@ Este diagrama representa cómo el Bounded Context de CareScheduling gestiona las
 El TaskCommandController es el punto de entrada principal para el flujo de creación y eliminación de tareas, mientras que el TaskQueryController maneja las consultas de lectura. Ambos controladores delegan respectivamente en TaskCommandService y TaskQueryService.
 La persistencia se realiza en una base de datos relacional MySQL a través de TaskRepository.
 <p __align__="center">
-  <img src="images/BoundedContext/CareScheduling/CareScheduling.png">
+  <img src="images/BoundedContext/CareScheduling/care-scheduling.jpeg">
 </p>
 <p __align__="center">
   Elaboración propia
