@@ -279,28 +279,40 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
     <tr>
       <th>Perfil</th>
       <th>Foto</th>
+      <th>Código de estudiante</th>
+      <th>Conocimientos técnicos y habilidades</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td><strong>[COMPLETAR: Apellidos, Nombres]</strong><br>[COMPLETAR: descripción]</td>
       <td><img src="assets/images/photos/[COMPLETAR].jpg" alt="[COMPLETAR]" width="200"></td>
+      <td>U[CÓDIGO ESTUDIANTE]</td>
+      <td>[Descripción breve de perfil profesional, habilidades y especialidades - similar al ejemplo de Diego]</td>
     </tr>
     <tr>
       <td><strong>[COMPLETAR: Apellidos, Nombres]</strong><br>[COMPLETAR: descripción]</td>
       <td><img src="assets/images/photos/[COMPLETAR].jpg" alt="[COMPLETAR]" width="200"></td>
+      <td>U[CÓDIGO ESTUDIANTE]</td>
+      <td>[Descripción breve de perfil profesional, habilidades y especialidades - similar al ejemplo de Diego]</td>
+    </tr>
+    <tr>
+      <td><strong>Coca Lavado, Carlos Andrés</strong><br></td>
+      <td><img src="images/logos/foto-cr7.jpg" alt="[COMPLETAR]" width="200"></td>
+      <td>U202313172</td>
+      <td>Mi Nombre es Carlos Andrés Coca, tengo 20 años, actualmente me encuentro cursando el septimo ciclo de la carrera de Ingeniería de Software. Cuento con conocimientos en C++, Python y HTML. y desde muy joven me ha interesado el desarrollo Web. Teniendo en cuenta el gran impacto que presentan a día de hoy las novedosas soluciones presentadas.</td>
     </tr>
     <tr>
       <td><strong>[COMPLETAR: Apellidos, Nombres]</strong><br>[COMPLETAR: descripción]</td>
       <td><img src="assets/images/photos/[COMPLETAR].jpg" alt="[COMPLETAR]" width="200"></td>
+      <td>U[CÓDIGO ESTUDIANTE]</td>
+      <td>[Descripción breve de perfil profesional, habilidades y especialidades - similar al ejemplo de Diego]</td>
     </tr>
     <tr>
       <td><strong>[COMPLETAR: Apellidos, Nombres]</strong><br>[COMPLETAR: descripción]</td>
       <td><img src="assets/images/photos/[COMPLETAR].jpg" alt="[COMPLETAR]" width="200"></td>
-    </tr>
-    <tr>
-      <td><strong>[COMPLETAR: Apellidos, Nombres]</strong><br>[COMPLETAR: descripción]</td>
-      <td><img src="assets/images/photos/[COMPLETAR].jpg" alt="[COMPLETAR]" width="200"></td>
+      <td>U[CÓDIGO ESTUDIANTE]</td>
+      <td>[Descripción breve de perfil profesional, habilidades y especialidades - similar al ejemplo de Diego]</td>
     </tr>
   </tbody>
 </table>
