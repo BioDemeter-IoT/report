@@ -24,28 +24,28 @@
          <td>Palomino Fiestas, Erick Leonardo</td>
       </tr>
       <tr>
-         <td>[COMPLETAR]</td>
-         <td>[COMPLETAR]</td>
+         <td>U20231D974</td>
+         <td>Rivera Ratachi, Renzo Sebastian</td>
       </tr>
       <tr>
-         <td>[COMPLETAR]</td>
-         <td>[COMPLETAR]</td>
+         <td>U201314454</td>
+         <td>Paitan Pumacahua, Max Anthony</td>
       </tr>
       <tr>
-         <td>[COMPLETAR]</td>
-         <td>[COMPLETAR]</td>
+         <td>U20231C784</td>
+         <td>Rodríguez Villa, Elvia Marcela</td>
       </tr>
       <tr>
-         <td>[COMPLETAR]</td>
-         <td>[COMPLETAR]</td>
+         <td>U202313172</td>
+         <td>Coca Lavado, Carlos Andrés</td>
       </tr>
        <tr>
-         <td>[COMPLETAR]</td>
-         <td>[COMPLETAR]</td>
+         <td>U20211F211</td>
+         <td>Briceño De La Cruz, Farid Sebastian</td>
       </tr>
        <tr>
-         <td>[COMPLETAR]</td>
-         <td>[COMPLETAR]</td>
+         <td>U202221436</td>
+         <td>Acuña Tomas, Diego Rolin</td>
       </tr>
    </table>
 </div>
@@ -4358,10 +4358,6 @@ En esta sección, se explica los diagramas que presentan un mayor detalle sobre 
 
 - Supervisar rigurosamente que, durante la etapa de codificación y construcción del sistema, se respeten los límites y la autonomía de cada Bounded Context definidos en el diseño estratégico. Esto es fundamental para evitar el acoplamiento innecesario, facilitar el mantenimiento y garantizar la integridad de la arquitectura de software propuesta.
 
-## Video About-the-Team
-
-<hr class="page-break">
-
 # Bibliografía
 
 Revista Economía. (2020). Incremento del interés de los peruanos por el cuidado de las áreas verdes. https://www.revistaeconomia.com/incremento-del-interes-de-los-peruanos-por-el-cuidado-de-las-areas-verdes/
@@ -4370,7 +4366,8 @@ Revista Economía. (2020). Incremento del interés de los peruanos por el cuidad
 
 # Anexos
 
-- Link Video TB1: 
+- Link Video TB1: `https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQBkDt1uzmT5Ro1mWs3A0bWMASojRLdRjF21GPgz28Es7Yc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=gySJdu`
 
 ## Links
 
+Link del repositorio del reporte: https://github.com/BioDemeter-IoT/report/tree/develop
