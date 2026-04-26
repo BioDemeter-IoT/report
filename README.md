@@ -4126,6 +4126,194 @@ En esta sección, se explican los diagramas que presentan un mayor detalle sobre
 
 <hr class="page-break">
 
+### 4.2.7. Bounded Context: \<PlantGuidance\>
+
+#### 4.2.7.1. Domain Layer
+
+En esta capa se define el núcleo de la seguridad y gestión de identidades, encapsulando las reglas de negocio para la autenticación y autorización de usuarios.
+
+En esta capa se gestiona la inteligencia del sistema. Integrando la ia del chatbot con los datos dinámicos de los sensores y de los perfiles de las plantas para ofrecer recomendaciones.
+
+**Aggregate: `Consultation`**
+
+Representa una sesión de consulta temporal donde un usuario interactúa con la IA para obtener asesoría basada en los datos específicos de una de sus plantas.
+
+| Atributos      | Tipo de dato     | Visibilidad | Descripción                                     |
+|----------------|-----------------|------------|------------------------------------------------|
+| consultationId    | Long            | Private    | Identificador único de la consulta.            |
+| plantId      | Long           | Private    | ID de la planta sobre la cual se realiza la consulta.    |
+| userMessage       | String          | Private    | Pregunta o inquietud enviada por el usuario.                      |
+| aiResponse    | String         | Private    | Respuesta generada por el modelo de IA          |
+| plantSnapshot    | PlantSnapshot         | Private    | Objeto de valor con los datos de la planta en el momento de la consulta.          |
+| createdAt    | Timestamp         | Private    | Fecha y hora de la interacción.          |
+
+| Métodos                         | Tipo de retorno | Visibilidad | Descripción                                      |
+|---------------------------------|----------------|------------|------------------------------------------------|
+| getConsultationId()                 | Long           | Public     | Devuelve el ID de la consulta.                   |
+| getPlantId()                 | Long          | Public     | Devuelve el ID de la planta asociada.    |
+| getAiResponse()                      | String         | Public     | Devuelve la respuesta generada por la IA.              |
+| updateResponse(response)                |void       | Public     | Asigna la respuesta final generada por el servicio de IA.        |
+| getCreatedAt()                     | Timestamp  | Public     | Devuelve la fecha de la consulta.       |
+
+**Value Objects**
+
+| Value Object   | Descripción                                                                 |
+|----------------|-----------------------------------------------------------------------------|
+| ChatRole  | Define el rol del emisor del mensaje: `USER`, `ASSISTANT` y `SYSTEM`.      |
+| PlantSnapshot | Contiene los datos técnicos de la planta al momento de la duda: nombre, descripción, temperatura y humedad.|
+
+**Clase: `ChatbotQueryService`**
+
+| Título       | ChatbotQueryService |
+|--------------|----------------------|
+| Descripción  | Interfaz de servicio de consultas para recuperar el historial de interacciones de una planta específica. |
+
+**Métodos**
+
+| Método                             | Descripción                                               |
+|-----------------------------------|-----------------------------------------------------------|
+| handle(GetConsultationsByPlantIdQuery)        | Obtiene todas las consultas realizadas para una planta específica.   |
+| handle(GetConsultationByIdQuery) | Obtiene los detalles de una consulta específica.     |
+
+**Clase: `ChatbotCommandService`**
+
+| Título       | ChatbotCommandService |
+|--------------|------------------------|
+| Descripción  | Interfaz de servicio de comandos para procesar la lógica de generación de asesoría mediante IA. |
+
+**Métodos**
+
+| Método                           | Descripción                                                        |
+|---------------------------------|--------------------------------------------------------------------|
+| handle(ProcessPlantConsultationCommand)     | Orquesta la obtención de datos de la planta, genera el prompt para la IA y registra la respuesta.            |
+| handle(ClearPlantConsultationsCommand)     | Elimina el historial de consultas de una planta. |
+
+
+#### 4.2.7.2. Interface Layer
+
+La capa de interfaz del contexto PlantGuidance expone los endpoints necesarios para que la aplicación móvil o web envíe las preguntas del usuario. Utiliza transformadores para convertir las solicitudes en comandos que incluyen el contexto de la planta seleccionada.
+
+**Controlador: `ChatbotController`**
+
+Controlador REST que maneja el flujo de comunicación entre el usuario y el agente de IA botánico.
+
+**Metodos**
+
+| Método           | Ruta                              | Descripción                                               |
+|-----------------|----------------------------------|-----------------------------------------------------------|
+| consultAi   | POST /api/v1/chatbot/consult        | Recibe la pregunta del usuario y el ID de la planta para generar asesoría. |
+| getPlantHistory | GET /api/v1/chatbot/history/{plantId} | Recupera la conversación actual para una planta. |
+| deleteHistory | DELETE /api/v1/chatbot/history/{plantId} | Borra la conversación al salir de la vista del chatbot. |
+
+**Dependencias**
+
+| Dependencia                         | Descripción                                                                 |
+|------------------------------------|-----------------------------------------------------------------------------|
+| ChatbotCommandService                 | Servicio para procesar la generación de respuestas con IA.               |
+| ChatbotQueryService               | Servicio para recuperar datos de consultas previas. |
+| ConsultationResourceFromEntityAssembler | Convierte la entidad Consultation a un recurso JSON.           |
+| ProcessConsultationCommandFromResourceAssembler | Mapea el request del usuario a un comando de dominio.      |
+
+#### 4.2.7.3. Application Layer
+
+LEl servicio ChatbotCommandServiceImpl actúa como el orquestador principal. No solo llama a la IA, sino que primero utiliza un ProfilesContextFacade (ACL) para obtener la temperatura y humedad actual del Bounded Context de Plant Profiles antes de enviar la solicitud al agente de IA
+
+**Clase: `ChatbotCommandServiceImpl`**
+
+| Título       | ChatbotCommandServiceImpl |
+|--------------|--------------------------|
+| Descripción  | Implementación de la lógica de negocio para la generación de consejos botánicos inteligentes. |
+
+**Dependencias**
+
+| Dependencia            | Descripción                                   |
+|-------------------------|-----------------------------------------------|
+| ConsultationRepository       | Repositorio para persistencia (audit log) de las consultas.  |
+| AiServiceAgent     | Adaptador de infraestructura para la API  |
+| ProfilesContextFacade     | Fachada para obtener datos de la planta desde otro Bounded Context.  |
+
+**Clase: `ChatbotQueryServiceImpl`**
+
+| Título       | ChatbotQueryServiceImpl |
+|--------------|----------------------------|
+| Descripción  | Implementación del servicio de lectura para el historial de chat del usuario. |
+
+**Dependencias**
+
+| Dependencia            | Descripción                                   |
+|-------------------------|-----------------------------------------------|
+| ConsultationRepository      | Acceso a la persistencia de consultas. |
+
+#### 4.2.7.4. Infrastructure Layer
+
+Esta capa maneja la integración técnica con la API de la IA y la base de datos de auditoría. El AiServiceAdapter transforma el contexto del dominio en un prompt optimizado para el modelo de lenguaje.
+
+**Clase: `ConsultationRepository`**
+
+| Título       | ConsultationRepository |
+|-------------|------------------|
+| Descripción | Interfaz de persistencia para las entidades de consulta de IA. |
+
+**Metodos**
+
+| Método             | Descripción                                           |
+|-------------------|-------------------------------------------------------|
+| save(Consultation) | Persiste el log de la consulta y la respuesta generada. |
+| findByPlantId(Long)   | Recupera las consultas asociadas a una planta.                        |
+| deleteAllByPlantId(Long)    | Elimina el historial de consultas.                        |
+
+**Dependencias**
+
+| Dependencia            | Propósito                                   |
+|-------------------------|-----------------------------------------------|
+| ConsultationEntity      | Representación JPA de la consulta en la base de datos. |
+| AiClient      | Cliente externo para la comunicación con los servidores de la IA |
+
+#### 4.2.7.5. Bounded Context Software Architecture Component Level Diagrams
+
+Este diagrama de componentes representa cómo el sistema consume datos de plantas para alimentar la IA. 
+
+El `ChatbotController` recibe la consulta del usuario. El `ChatbotCommandService` orquesta el flujo: solicita los datos de temperatura y humedad al `ProfilesContextFacade`, combina esta información con la pregunta del usuario y la envía al `AiServiceAdapter`. Finalmente, la respuesta se entrega al usuario y se registra en el repositorio mediante JPA.
+
+<p align="center">
+  <img src="images/BoundedContext/PlantGuidance/PlantGuidance.png">
+</p>
+
+<p align="center">
+  Elaboración propia
+</p>
+
+#### 4.2.7.6. Bounded Context Software Architecture Code Level Diagrams
+
+En esta sección, se explica los diagramas que presentan un mayor detalle sobre la implementación de componentes en el bounded context de IAM.
+
+##### 4.2.7.6.1. Bounded Context Domain Layer Class Diagrams
+
+<br>
+
+<p align="center">
+  <img src="images/BoundedContext/PlantGuidance/PlantGuidance-1-UML.png" alt = "updated class diagram" width="90%">
+</p>
+<p align="center">
+  <img src="images/BoundedContext/PlantGuidance/PlantGuidance-2-UML.png" alt = "updated class diagram" width="90%">
+</p>
+
+<p align="center">
+    Bounded Context Class Diagram - Elaboración propia
+</p>
+
+##### 4.2.7.6.2. Bounded Context Database Design Diagram
+
+<p align="center">
+  <img src="images/BoundedContext/PlantGuidance/PlantGuidance Database.png" alt = "database diagram" width="80%">
+</p>
+
+<p align="center">
+  Elaboración propia
+</p>
+
+<hr class="page-break">
+
 # Capítulo V: Solution UI/UX Design
 
 ## 5.1. Style Guidelines
