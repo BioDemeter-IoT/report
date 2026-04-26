@@ -423,16 +423,16 @@ plantas saludables mientras fortalecen su conexión con el medio ambiente.
       <td>Soy Renzo Sebastian Rivera Ratachi y soy estudiante de la carrera de Ingeniería de Software. Actualmente estoy cursando el 7mo ciclo de mi carrera y tengo conocimientos intermedios de JavaScript y C++. Me considero una persona responsable y puntual.</td>
     </tr>
     <tr>
-      <td><img src="assets/images/members/[NOMBRE].png" alt="[NOMBRE]" width="200"></td>
-      <td><strong>[Apellido, Nombre]</strong></td>
-      <td>U[CÓDIGO ESTUDIANTE]</td>
-      <td>[Descripción breve de perfil profesional, habilidades y especialidades - similar al ejemplo de Diego]</td>
+      <td><img src="images/members/elvia.jpg" alt="[NOMBRE]" width="200"></td>
+      <td><strong>Rodríguez Villa, Elvia Marcela</strong></td>
+      <td>U20231c784</td>
+      <td>Soy estudiante de Ingeniería de Software y actualmente me desempeño como AI/ML Engineer. Cuento con experiencia en Python, AWS, ingeniería de datos y automatización de procesos. He trabajado en proyectos de inteligencia artificial como chatbots y speech analytics, motivada por el impacto de la tecnología basada en datos en la actualidad.</td>
     </tr>
     <tr>
-      <td><img src="assets/images/members/[NOMBRE].png" alt="[NOMBRE]" width="200"></td>
-      <td><strong>[Apellido, Nombre]</strong></td>
-      <td>U[CÓDIGO ESTUDIANTE]</td>
-      <td>[Descripción breve de perfil profesional, habilidades y especialidades - similar al ejemplo de Diego]</td>
+      <td><img src="images/members/Max.jpeg" alt="[NOMBRE]" width="200"></td>
+      <td><strong>Paitan Pumacahua, Max Anthony</strong></td>
+      <td>U201314454</td>
+      <td>Soy Max Anthony y estoy retomando la carrera de Ingeniería de Software. Actualmente estoy cursando el noveno ciclo. Entre mis habilidades están: Ágil capacidad de análisis -tanto individual como también en colectivo-, empático en un contexto determinado -tomando decisiones de manera sensata-, y puedo ser tanto gestor como un participante activo dentro de un grupo de trabajo.</td>
     </tr>
   </tbody>
 </table>
