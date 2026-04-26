@@ -172,6 +172,24 @@
       - [4.2.4.6. Bounded Context Software Architecture Code Level Diagrams](#4246-bounded-context-software-architecture-code-level-diagrams)
         - [4.2.4.6.1. Bounded Context Domain Layer Class Diagrams](#42461-bounded-context-domain-layer-class-diagrams)
         - [4.2.4.6.2. Bounded Context Database Design Diagram](#42462-bounded-context-database-design-diagram)
+    - [4.2.5. Bounded Context: CareScheduling](#425-bounded-context-carescheduling)
+      - [4.2.5.1. Domain Layer](#4251-domain-layer)
+      - [4.2.5.2. Interface Layer](#4252-interface-layer)
+      - [4.2.5.3. Application Layer](#4253-application-layer)
+      - [4.2.5.4. Infrastructure Layer](#4254-infrastructure-layer)
+      - [4.2.5.5. Bounded Context Software Architecture Component Level Diagrams](#4255-bounded-context-software-architecture-component-level-diagrams)
+      - [4.2.5.6. Bounded Context Software Architecture Code Level Diagrams](#4256-bounded-context-software-architecture-code-level-diagrams)
+        - [4.2.5.6.1. Bounded Context Domain Layer Class Diagrams](#42561-bounded-context-domain-layer-class-diagrams)
+        - [4.2.5.6.2. Bounded Context Database Design Diagram](#42562-bounded-context-database-design-diagram)
+    - [4.2.6. Bounded Context: Inteligencia Botánica y Análisis Externo](#426-bounded-context-inteligencia-botánica-y-análisis-externo)
+      - [4.2.6.1. Domain Layer](#4261-domain-layer)
+      - [4.2.6.2. Interface Layer](#4262-interface-layer)
+      - [4.2.6.3. Application Layer](#4263-application-layer)
+      - [4.2.6.4. Infrastructure Layer](#4264-infrastructure-layer)
+      - [4.2.6.5. Bounded Context Software Architecture Component Level Diagrams](#4265-bounded-context-software-architecture-component-level-diagrams)
+      - [4.2.6.6. Bounded Context Software Architecture Code Level Diagrams](#4266-bounded-context-software-architecture-code-level-diagrams)
+        - [4.2.6.6.1. Bounded Context Domain Layer Class Diagrams](#42661-bounded-context-domain-layer-class-diagrams)
+        - [4.2.6.6.2. Bounded Context Database Design Diagram](#42662-bounded-context-database-design-diagram)
 - [Capítulo V: Solution UI/UX Design](#capítulo-v-solution-uiux-design)
   - [5.1. Style Guidelines](#51-style-guidelines)
     - [5.1.1. General Style Guidelines](#511-general-style-guidelines)
@@ -311,35 +329,86 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 ### 1.1.1. Descripción de la Startup
 
+Nuestra startup, BioDemeter, se establece con la misión de ofrecer soluciones tecnológicas 
+para el mantenimiento de plantas en hogares, aprovechando al máximo las tecnologías IoT para 
+promover un cambio positivo en el medio ambiente.
+
+Nuestro producto, PlantSync, es un servicio digital accesible desde aplicaciones web y móvil 
+que facilita a los usuarios el seguimiento y cuidado de sus plantas. Proporciona información 
+en tiempo real sobre las condiciones ambientales, recomendaciones personalizadas de riego y 
+fertilización, alertas automáticas, guías de cuidado e identificación de plantas mediante 
+fotografías. Nuestro compromiso es fomentar la responsabilidad ambiental mientras 
+contribuimos a la sostenibilidad.
+
+**Visión:** 
+
+En un período de cinco años, BioDemeter alcanzará la posición de vanguardia en el 
+mercado de soluciones tecnológicas para el cuidado de plantas en el hogar. PlantSync 
+se consolidará como la aplicación de referencia para entusiastas de la jardinería 
+hogareña en América Latina, quienes buscan mantener sus plantas saludables y 
+vibrantes. Nos destacaremos por la excelencia, la asequibilidad y la originalidad 
+de nuestras soluciones.
+
+**Misión:**
+
+Nuestra misión es facilitar el cuidado de plantas en el hogar mediante soluciones 
+tecnológicas accesibles e inteligentes. Nos comprometemos a proporcionar 
+herramientas personalizadas que permitan a nuestros usuarios mantener sus 
+plantas saludables mientras fortalecen su conexión con el medio ambiente.
+
 ### 1.1.2. Perfiles de integrantes del equipo
 
 <table>
   <thead>
     <tr>
-      <th>Perfil</th>
-      <th>Foto</th>
+      <th>Fotos del Integrantes</th>
+      <th>Nombres y Apellidos</th>
+      <th>Código de estudiante</th>
+      <th>Conocimientos técnicos y habilidades</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><strong>[COMPLETAR: Apellidos, Nombres]</strong><br>[COMPLETAR: descripción]</td>
-      <td><img src="assets/images/photos/[COMPLETAR].jpg" alt="[COMPLETAR]" width="200"></td>
+      <td><img src="images/members/Diego.png" alt="Diego" width="200"></td>
+      <td><strong>Acuña Tomas, Diego Rolin</strong></td>      
+      <td>U202221436</td>
+      <td>Soy estudiante de Ingeniería de Software en la UPC, actualmente cursando el octavo ciclo. Durante mi formación académica he adquirido sólidos conocimientos en múltiples lenguajes de programación y frameworks, desarrollando competencias especializadas en frontend, backend y bases de datos. Me interesa especialmente contribuir a proyectos de código abierto, como Angular, Spring y otras herramientas modernas. Me considero una persona curiosa y proactiva, con una visión optimista del futuro tecnológico.</td>
     </tr>
     <tr>
-      <td><strong>[COMPLETAR: Apellidos, Nombres]</strong><br>[COMPLETAR: descripción]</td>
-      <td><img src="assets/images/photos/[COMPLETAR].jpg" alt="[COMPLETAR]" width="200"></td>
+      <td><img src="images/members/Farid.jpeg" alt="Farid" width="200"></td>
+      <td><strong>Briceño De La Cruz, Farid Sebastian</strong></td>
+      <td>U20211F211</td>
+      <td>Soy estudiante de Ingeniería de Software con un fuerte interés en el desarrollo de productos digitales y la tecnología. En mi tiempo libre, me gusta jugar videojuegos. También tengo un interés especial en la música, lo que me ayuda a equilibrar mi vida académica y personal. Cuento con habilidades en gestión de bases de datos relacionales, frontend y backend; también me gusta estar al pendiente de las noticias de software, lo que me anima a experimentar con nuevas tecnologías.</td>
     </tr>
     <tr>
-      <td><strong>[COMPLETAR: Apellidos, Nombres]</strong><br>[COMPLETAR: descripción]</td>
-      <td><img src="assets/images/photos/[COMPLETAR].jpg" alt="[COMPLETAR]" width="200"></td>
+      <td><img src="assets/images/members/[NOMBRE].png" alt="[NOMBRE]" width="200"></td>
+      <td><strong>[Apellido, Nombre]</strong></td>
+      <td>U[CÓDIGO ESTUDIANTE]</td>
+      <td>[Descripción breve de perfil profesional, habilidades y especialidades - similar al ejemplo de Diego]</td>
     </tr>
     <tr>
-      <td><strong>[COMPLETAR: Apellidos, Nombres]</strong><br>[COMPLETAR: descripción]</td>
-      <td><img src="assets/images/photos/[COMPLETAR].jpg" alt="[COMPLETAR]" width="200"></td>
+      <td><img src="assets/images/members/[NOMBRE].png" alt="[NOMBRE]" width="200"></td>
+      <td><strong>[Apellido, Nombre]</strong></td>
+      <td>U[CÓDIGO ESTUDIANTE]</td>
+      <td>[Descripción breve de perfil profesional, habilidades y especialidades - similar al ejemplo de Diego]</td>
     </tr>
     <tr>
-      <td><strong>[COMPLETAR: Apellidos, Nombres]</strong><br>[COMPLETAR: descripción]</td>
-      <td><img src="assets/images/photos/[COMPLETAR].jpg" alt="[COMPLETAR]" width="200"></td>
+      <td><img src="assets/images/members/[NOMBRE].png" alt="[NOMBRE]" width="200"></td>
+      <td><strong>[Apellido, Nombre]</strong></td>
+      <td>U[CÓDIGO ESTUDIANTE]</td>
+      <td>[Descripción breve de perfil profesional, habilidades y especialidades - similar al ejemplo de Diego]</td>
+    </tr>
+    <tr>
+      <td><img src="assets/images/members/[NOMBRE].png" alt="[NOMBRE]" width="200"></td>
+      <td><strong>[Apellido, Nombre]</strong></td>
+      <td>U[CÓDIGO ESTUDIANTE]</td>
+      <td>[Descripción breve de perfil profesional, habilidades y especialidades - similar al ejemplo de Diego]</td>
+    </tr>
+    <tr>
+      <td><img src="assets/images/members/[NOMBRE].png" alt="[NOMBRE]" width="200"></td>
+      <td><strong>[Apellido, Nombre]</strong></td>
+      <td>U[CÓDIGO ESTUDIANTE]</td>
+      <td>[Descripción breve de perfil profesional, habilidades y especialidades - similar al ejemplo de Diego]</td>
     </tr>
   </tbody>
 </table>
