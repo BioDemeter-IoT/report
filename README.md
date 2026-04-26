@@ -2051,9 +2051,9 @@ El diseño de base de datos del bounded context IoT Management se compone de tre
   <img src="images/BoundedContext/IotManagement/desingDiagram.png">
 </p>
 
-### 4.2.5. Bounded Context: \<PlantGuidance\>
+### 4.2.7. Bounded Context: \<PlantGuidance\>
 
-#### 4.2.5.1. Domain Layer
+#### 4.2.7.1. Domain Layer
 
 En esta capa se define el núcleo de la seguridad y gestión de identidades, encapsulando las reglas de negocio para la autenticación y autorización de usuarios.
 
@@ -2114,7 +2114,7 @@ Representa una sesión de consulta temporal donde un usuario interactúa con la 
 | handle(ClearPlantConsultationsCommand)     | Elimina el historial de consultas de una planta. |
 
 
-#### 4.2.5.2. Interface Layer
+#### 4.2.7.2. Interface Layer
 
 La capa de interfaz del contexto PlantGuidance expone los endpoints necesarios para que la aplicación móvil o web envíe las preguntas del usuario. Utiliza transformadores para convertir las solicitudes en comandos que incluyen el contexto de la planta seleccionada.
 
@@ -2139,7 +2139,7 @@ Controlador REST que maneja el flujo de comunicación entre el usuario y el agen
 | ConsultationResourceFromEntityAssembler | Convierte la entidad Consultation a un recurso JSON.           |
 | ProcessConsultationCommandFromResourceAssembler | Mapea el request del usuario a un comando de dominio.      |
 
-#### 4.2.5.3. Application Layer
+#### 4.2.7.3. Application Layer
 
 LEl servicio ChatbotCommandServiceImpl actúa como el orquestador principal. No solo llama a la IA, sino que primero utiliza un ProfilesContextFacade (ACL) para obtener la temperatura y humedad actual del Bounded Context de Plant Profiles antes de enviar la solicitud al agente de IA
 
@@ -2169,7 +2169,7 @@ LEl servicio ChatbotCommandServiceImpl actúa como el orquestador principal. No 
 |-------------------------|-----------------------------------------------|
 | ConsultationRepository      | Acceso a la persistencia de consultas. |
 
-#### 4.2.5.4. Infrastructure Layer
+#### 4.2.7.4. Infrastructure Layer
 
 Esta capa maneja la integración técnica con la API de la IA y la base de datos de auditoría. El AiServiceAdapter transforma el contexto del dominio en un prompt optimizado para el modelo de lenguaje.
 
@@ -2194,7 +2194,7 @@ Esta capa maneja la integración técnica con la API de la IA y la base de datos
 | ConsultationEntity      | Representación JPA de la consulta en la base de datos. |
 | AiClient      | Cliente externo para la comunicación con los servidores de la IA |
 
-#### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams
+#### 4.2.7.5. Bounded Context Software Architecture Component Level Diagrams
 
 Este diagrama de componentes representa cómo el sistema consume datos de plantas para alimentar la IA. 
 
@@ -2208,11 +2208,11 @@ El `ChatbotController` recibe la consulta del usuario. El `ChatbotCommandService
   Elaboración propia
 </p>
 
-#### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams
+#### 4.2.7.6. Bounded Context Software Architecture Code Level Diagrams
 
 En esta sección, se explica los diagramas que presentan un mayor detalle sobre la implementación de componentes en el bounded context de IAM.
 
-##### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams
+##### 4.2.7.6.1. Bounded Context Domain Layer Class Diagrams
 
 <br>
 
@@ -2227,7 +2227,7 @@ En esta sección, se explica los diagramas que presentan un mayor detalle sobre 
     Bounded Context Class Diagram - Elaboración propia
 </p>
 
-##### 4.2.5.6.2. Bounded Context Database Design Diagram
+##### 4.2.7.6.2. Bounded Context Database Design Diagram
 
 <p align="center">
   <img src="images/BoundedContext/PlantGuidance/PlantGuidance Database.png" alt = "database diagram" width="80%">
