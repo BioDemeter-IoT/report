@@ -957,6 +957,32 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
 
 #### 4.1.1.3. Bounded Context Canvases
 
+En esta sección se desarrollan los Bounded Context Canvases correspondientes a los contextos identificados en la arquitectura del dominio. Cada canvas permite describir el propósito, responsabilidades, comunicaciones, lenguaje ubicuo, decisiones de negocio, supuestos, métricas y preguntas abiertas de un bounded context específico. De esta manera, se documenta con mayor detalle el rol que cumple cada contexto dentro del sistema y se facilita la validación de su diseño.
+
+#### IOT Management
+
+<a href="https://ibb.co/WvBW2x1B"><img src="https://i.ibb.co/VYMWqj8M/A.png" alt="iot management canvas" border="0"></a>
+
+#### Plant Profile
+
+<a href="https://ibb.co/HSRd1Fr"><img src="https://i.ibb.co/cBRLMgN/B.png" alt="plant profile canvas" border="0"></a>
+
+#### Care Scheduling
+
+<a href="https://ibb.co/bRPJNV7f"><img src="https://i.ibb.co/rfms5hvW/C.png" alt="care scheduling canvas" border="0" /></a>
+
+#### Analytics
+
+<a href="https://ibb.co/wZYWzfyj"><img src="https://i.ibb.co/WNsy2Lnj/D.png" alt="analytics canvas" border="0"></a>
+
+#### Plant Guidance
+
+<a href="https://ibb.co/Tqpqxdsr"><img src="https://i.ibb.co/h1h1JwSC/E.png" alt="plant guidancee canvas" border="0"></a>
+
+#### IAM
+
+<a href="https://ibb.co/n8gv6wfs"><img src="https://i.ibb.co/YTRMPN87/F.png" alt="iam canvas" border="0"></a>
+
 ### 4.1.2. Context Mapping
 
 En esta sección elaboramos un conjunto de context maps para representar las relaciones entre los bounded contexts del sistema. A partir de la información recolectada, analizamos distintas alternativas de diseño, evaluando cómo cambiaría la estructura si se reubican, agrupan, dividen o aíslan determinadas capabilities. Para ello, consideramos patrones de Domain-Driven Design como Customer/Supplier, Conformist, Anti-corruption Layer y Shared Kernel, con el fin de identificar la mejor aproximación para la arquitectura del dominio. A continuación, presentamos las opciones evaluadas para Tavolo y la propuesta seleccionada.
@@ -966,7 +992,7 @@ En esta sección elaboramos un conjunto de context maps para representar las rel
 En esta alternativa se mantienen los seis bounded contexts separados, con relaciones claramente definidas entre ellos. Esta opción permite una mejor separación de responsabilidades, ya que cada contexto se concentra en una funcionalidad específica del sistema, facilitando su comprensión y evolución. Como desventaja, implica una mayor cantidad de dependencias e interacciones entre contextos, lo que incrementa la complejidad de integración y sincronización.
 
 <p align="center">
-    <img src="https://i.ibb.co/VYrTchXf/Op1.png" alt="leanux" width="850px" height="450px"/>
+    <img src="https://i.ibb.co/VYrTchXf/Op1.png" alt="1st option context mapping" width="850px" height="450px"/>
 </p>
 
 #### Opción 2:
@@ -974,7 +1000,7 @@ En esta alternativa se mantienen los seis bounded contexts separados, con relaci
 En esta alternativa se agrupan los bounded contexts PlantProfile y Care Scheduling en un solo contexto denominado Plant Management, debido a que ambos trabajan directamente sobre la gestión de plantas y sus cuidados programados. Esta opción reduce la cantidad de relaciones entre contextos y simplifica la coordinación entre el perfil de la planta y sus tareas de mantenimiento. Sin embargo, como desventaja, el nuevo contexto concentra más responsabilidades, mezclando la administración de información de la planta con la planificación de tareas, lo que podría dificultar su evolución independiente si el sistema crece.
 
 <p align="center">
-    <img src="https://i.ibb.co/b5TMqjRk/Op2.png" alt="leanux" width="850px" height="450px"/>
+    <img src="https://i.ibb.co/b5TMqjRk/Op2.png" alt="2nd option context mapping" width="850px" height="450px"/>
 </p>
 
 ### Opción 3:
@@ -982,7 +1008,7 @@ En esta alternativa se agrupan los bounded contexts PlantProfile y Care Scheduli
 En esta alternativa se agrupan los bounded contexts IoT Management y Analytics en un solo contexto denominado IoT Operations, debido a que ambos trabajan directamente con la captura, procesamiento e interpretación de datos provenientes de sensores. Esta opción simplifica la comunicación entre el hardware y el análisis de datos, reduciendo dependencias internas del flujo IoT. Sin embargo, como desventaja, mezcla la gestión técnica de dispositivos con la generación de insights y alertas, lo que podría dificultar la evolución independiente de ambas capacidades si el sistema crece.
 
 <p align="center">
-    <img src="https://i.ibb.co/Df7CL0nh/Op3.png" alt="leanux" width="850px" height="450px"/>
+    <img src="https://i.ibb.co/Df7CL0nh/Op3.png" alt="3th option context mapping" width="850px" height="450px"/>
 </p>
 
 Finalmente, se seleccionó la Opción 1, ya que permite mantener los seis bounded contexts separados y con responsabilidades claramente delimitadas. Esta alternativa resulta más adecuada porque evita mezclar capacidades distintas, como la gestión de plantas, la planificación de cuidados, la comunicación IoT, el análisis de datos y el soporte mediante chatbot. Aunque implica una mayor cantidad de relaciones entre contextos, ofrece una arquitectura más ordenada, escalable y fácil de mantener, permitiendo que cada contexto evolucione de forma independiente según las necesidades del sistema.
