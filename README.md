@@ -1739,7 +1739,7 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
 
 Este diagrama representa la visión de más alto nivel del ecosistema de la startup BioDemeter, mostrando las interacciones que mantienen los diferentes actores con la plataforma PlantSync, el hardware IoT y los servicios externos.
 
-![InnoSpace-diagram-context](./images/logos/Diagrama%20Landscape.png)
+![InnoSpace-diagram-landscape](./images/logos/Diagrama%20Landscape.png)
 
 <p align="center">
   Elaboración propia
@@ -1759,7 +1759,7 @@ Este diagrama representa el enfoque central de la solución PlantSync, mostrando
 
 Este diagrama detalla la arquitectura interna de la plataforma PlantSync, exponiendo los diferentes contenedores de software, las tecnologías empleadas en cada uno y los flujos de comunicación y datos entre estas piezas.
 
-![InnoSpace-diagram-context](./images/logos/Diagrama%20Contenedores.png)
+![InnoSpace-diagram-container](./images/logos/Diagrama%20Contenedores.png)
 
 <p align="center">
   Elaboración propia
@@ -1769,7 +1769,7 @@ Este diagrama detalla la arquitectura interna de la plataforma PlantSync, exponi
 
 Este diagrama ilustra la infraestructura y el entorno de ejecución de la solución PlantSync, mapeando cómo se distribuyen físicamente los contenedores de software en la nube de Microsoft Azure, los dispositivos cliente de los usuarios y los microcontroladores IoT instalados en sus hogares.
 
-![InnoSpace-diagram-context](./images/logos/Diagrama%20Despliegue.png)
+![InnoSpace-diagram-deployment](./images/logos/Diagrama%20Deploy.png)
 
 <p align="center">
   Elaboración propia
