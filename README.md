@@ -955,6 +955,56 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
 
 #### 4.1.1.2. Domain Message Flows Modeling
 
+En esta sección se desarrollan los Domain Message Flow Models para representar cómo fluyen los mensajes entre usuarios, sistemas externos y bounded contexts en los escenarios principales del sistema. Estos diagramas permiten visualizar la secuencia de commands, events y queries que ocurren durante cada proceso, facilitando la comprensión de las interacciones del dominio y validando que las responsabilidades de cada contexto estén correctamente definidas.
+
+#### Scenario: User Registration
+
+<a href="https://ibb.co/qMhLcW9X"><img src="https://i.ibb.co/N6fgJmpQ/1.png" alt="user registration scenario" border="0"></a>
+
+#### Scenario: User Login
+
+<a href="https://ibb.co/5xzYdK29"><img src="https://i.ibb.co/sJD5hWtP/2.png" alt="user login scenario" border="0"></a>
+
+#### Scenario: Registering a New Plant
+
+<a href="https://ibb.co/JjQkfBPb"><img src="https://i.ibb.co/Swrvhsp1/3.png" alt="registering a new plant scenario" border="0"></a>
+
+#### Scenario: Linking an IoT Device to a Plant
+
+<a href="https://ibb.co/SXSLN5F3"><img src="https://i.ibb.co/5WZ7TGbR/4.png" alt="linking an iot device to a plant scenario" border="0"></a>
+
+#### Scenario: Receiving Temperature and Humidity Sensor Data
+
+<a href="https://ibb.co/gF7nfyrq"><img src="https://i.ibb.co/vvBtT1cy/5.png" alt="receiving temperature and humidity sensor data scenario" border="0"></a>
+
+#### Scenario: Generating Plant Alerts From Sensor Data
+
+<a href="https://ibb.co/qY9Xz0hm"><img src="https://i.ibb.co/Kx7RYNBV/6.png" alt="generating plant alerts from sensor data scenario" border="0"></a>
+
+#### Scenario: Activating an IoT Actuator Automatically
+
+<a href="https://ibb.co/NnpsHjF0"><img src="https://i.ibb.co/prZx9z1H/7.png" alt="activating an iot actuator automatically scenario" border="0"></a>
+
+#### Scenario: Viewing Plant Health Status
+
+<a href="https://ibb.co/gZZnTS9r"><img src="https://i.ibb.co/chhmF63y/8.png" alt="viewwing plant health status scenario" border="0"></a>
+
+#### Scenario: Scheduling a Plant Care Task
+
+<a href="https://ibb.co/nqznW1mr"><img src="https://i.ibb.co/p6JRmKw2/9.png" alt="scheduling a plant care task scenario" border="0"></a>
+
+#### Scenario: Getting Plant Care Guidance From RootBot (bot temporal name)
+
+<a href="https://ibb.co/hF4cmh9w"><img src="https://i.ibb.co/CKY6HN8D/10.png" alt="getting plant care guidance from rootbot scenario" border="0"></a>
+
+#### Scenario: Viewing Plant Care History
+
+<a href="https://ibb.co/gF7R6cGb"><img src="https://i.ibb.co/84B7XQJn/11.png" alt="viewing plant care history scenario" border="0"></a>
+
+#### Scenario: Viewing Sensor History and Insights
+
+<a href="https://ibb.co/JR9NdkMq"><img src="https://i.ibb.co/Z603JTkS/12.png" alt="viewing sensor history and insights scenario" border="0"></a>
+
 #### 4.1.1.3. Bounded Context Canvases
 
 En esta sección se desarrollan los Bounded Context Canvases correspondientes a los contextos identificados en la arquitectura del dominio. Cada canvas permite describir el propósito, responsabilidades, comunicaciones, lenguaje ubicuo, decisiones de negocio, supuestos, métricas y preguntas abiertas de un bounded context específico. De esta manera, se documenta con mayor detalle el rol que cumple cada contexto dentro del sistema y se facilita la validación de su diseño.
