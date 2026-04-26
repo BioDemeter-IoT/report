@@ -1737,11 +1737,43 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
 
 #### 4.1.3.1. Software Architecture System Landscape Diagram
 
+Este diagrama representa la visión de más alto nivel del ecosistema de la startup BioDemeter, mostrando las interacciones que mantienen los diferentes actores con la plataforma PlantSync, el hardware IoT y los servicios externos.
+
+![InnoSpace-diagram-context](./images/logos/Diagrama%20Landscape.png)
+
+<p align="center">
+  Elaboración propia
+</p>
+
 #### 4.1.3.2. Software Architecture Context Level Diagrams
+
+Este diagrama representa el enfoque central de la solución PlantSync, mostrando las interacciones directas que mantiene la plataforma principal con sus distintos tipos de usuarios, el hardware IoT y las dependencias tecnológicas externas.
+
+![InnoSpace-diagram-context](./images/logos/Diagrama%20Contexto.png)
+
+<p align="center">
+  Elaboración propia
+</p>
 
 #### 4.1.3.3. Software Architecture Container Level Diagrams
 
+Este diagrama detalla la arquitectura interna de la plataforma PlantSync, exponiendo los diferentes contenedores de software, las tecnologías empleadas en cada uno y los flujos de comunicación y datos entre estas piezas.
+
+![InnoSpace-diagram-context](./images/logos/Diagrama%20Contenedores.png)
+
+<p align="center">
+  Elaboración propia
+</p>
+
 #### 4.1.3.4. Software Architecture Deployment Diagrams
+
+Este diagrama ilustra la infraestructura y el entorno de ejecución de la solución PlantSync, mapeando cómo se distribuyen físicamente los contenedores de software en la nube de Microsoft Azure, los dispositivos cliente de los usuarios y los microcontroladores IoT instalados en sus hogares.
+
+![InnoSpace-diagram-context](./images/logos/Diagrama%20Despliegue.png)
+
+<p align="center">
+  Elaboración propia
+</p>
 
 <hr class="page-break">
 
