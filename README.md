@@ -773,6 +773,10 @@ Tácticas:
 
 ### 2.2.2. Registro de entrevistas
 
+Se han realizado las entrevistas de acuerdo al diseño de preguntas. Se puede visualizar el video de las entrevistas en el siguiente link: https://1drv.ms/v/c/9fed6c4f629930aa/IQAYDCTdw01JQqxtd9UvgOK1AS-h7GujJ3JhC70KI1Xfn3I?e=P7c49p
+
+Por motivos de almacenamiento, tuvimos que mantener por separado la entrevista 3, la cual se puede visualizar en el siguiente link: https://drive.google.com/drive/folders/1d0wVikpVQSXuzfDZE4gxl3loqMahencH
+
 #### Expertos cuidadores de plantas:
 
 <table cellpadding="8" cellspacing="0">
