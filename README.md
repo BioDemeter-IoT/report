@@ -1832,8 +1832,215 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
 ## 4.1. Strategic-Level Domain-Driven Design
 
 ### 4.1.1. Design-Level EventStorming
+Como grupo llevamos a cabo una reunión de EventStorming con la finalidad de entender el ámbito del problema y proponer un enfoque inicial al modelado general de Innospace. Esta actividad tuvo una duración aproximada de 1-2 horas, durante las cuales identificamos los eventos clave, los participantes y las normas que determinan las interacciones entre los estudiantes y las empresas.
+
+A lo largo de la sesión, utilizamos una herramienta colaborativa para estructurar y visualizar los elementos, lo que nos permitió conversar, llegar a un acuerdo y definir los primeros contextos delimitados del sistema. El resultado es un mapa preliminar del ámbito que servirá como fundamento para el análisis y diseño más detallado en las etapas siguientes.
+
+__Paleta de colores aplicados a los post-its utilizados:__
+
++ 🟧 Naranja: Domain Event (Evento que ya ocurrió, siempre en pasado. Ej: Luz Registrada).
++ 🟦 Azul: Command (Acción o intención. Ej: Registrar Luz).
++ 🟨 Amarillo Claro (pequeño): Actor (El usuario).
++ 🟪 Rosado: External System (Sensores, Actuadores, APIs externas).
++ 🟩 Verde: Read Model (Lo que el usuario ve: Dashboards, Notificaciones).
++ 🟨 Amarillo Oscuro (grande): Aggregate / System (El componente de software que procesa la lógica).
++ 🟪 Lila: Policy (Regla de negocio: "Si pasa X, entonces haz Y"). 
+
+__Primer paso:__
+<p align="center">
+  <img src="images/Miro/EventStorming-Paso1.jpeg">
+</p>
+<p align="center">
+  Event Storming 1 - Elaboración propia
+</p>
+
+__Segundo paso:__
+<p align="center">
+  <img src="images/Miro/EventStorming-Paso2.jpeg">
+</p>
+<p align="center">
+  Event Storming 2 - Elaboración propia
+</p>
+
+__Tercer paso:__
+<p align="center">
+  <img src="images/Miro/EventStorming-Paso3.jpeg">
+</p>
+<p align="center">
+  Event Storming 3 - Elaboración propia
+</p>
+
+__Cuarto paso:__
+<p align="center">
+  <img src="images/Miro/EventStorming-Paso4_1.jpeg">
+</p>
+<p align="center">
+  Event Storming 4.1 - Elaboración propia
+</p>
+<p align="center">
+  <img src="images/Miro/EventStorming-Paso4_2.jpeg">
+</p>
+<p align="center">
+  Event Storming 4.2 - Elaboración propia
+</p>
+
+__Quinto paso:__
+<p align="center">
+  <img src="images/Miro/EventStorming-Paso5_1.jpeg">
+</p>
+<p align="center">
+  Event Storming 5.1 - Elaboración propia
+</p>
+<p align="center">
+  <img src="images/Miro/EventStorming-Paso5_2.jpeg">
+</p>
+<p align="center">
+  Event Storming 5.2 - Elaboración propia
+</p>
+<p align="center">
+  <img src="images/Miro/EventStorming-Paso5_3.jpeg">
+</p>
+<p align="center">
+  Event Storming 5.3 - Elaboración propia
+</p><p align="center">
+  <img src="images/Miro/EventStorming-Paso5_4.jpeg">
+</p>
+<p align="center">
+  Event Storming 5.4 - Elaboración propia
+</p><p align="center">
+  <img src="images/Miro/EventStorming-Paso5_5.jpeg">
+</p>
+<p align="center">
+  Event Storming 5.5 - Elaboración propia
+</p>
+
+__Sexto paso:__
+<p align="center">
+  <img src="images/Miro/EventStorming-Paso6_1.jpeg">
+</p>
+<p align="center">
+  Event Storming 6.1 - Elaboración propia
+</p>
+<p align="center">
+  <img src="images/Miro/EventStorming-Paso6_2.jpeg">
+</p>
+<p align="center">
+  Event Storming 6.2 - Elaboración propia
+</p>
+<p align="center">
+  <img src="images/Miro/EventStorming-Paso6_3.jpeg">
+</p>
+<p align="center">
+  Event Storming 6.3 - Elaboración propia
+</p>
+<p align="center">
+  <img src="images/Miro/EventStorming-Paso6_4.jpeg">
+</p>
+<p align="center">
+  Event Storming 6.4 - Elaboración propia
+</p>
+<p align="center">
+  <img src="images/Miro/EventStorming-Paso6_5.jpeg">
+</p>
+<p align="center">
+  Event Storming 6.5 - Elaboración propia
+</p>
+
+__Séptimo paso:__
+<p align="center">
+  <img src="images/Miro/EventStorming-Paso7_1.jpeg">
+</p>
+<p align="center">
+  Event Storming 7.1 - Elaboración propia
+</p>
+<p align="center">
+  <img src="images/Miro/EventStorming-Paso7_2.jpeg">
+</p>
+<p align="center">
+  Event Storming 7.2 - Elaboración propia
+</p>
+<p align="center">
+  <img src="images/Miro/EventStorming-Paso7_3.jpeg">
+</p>
+<p align="center">
+  Event Storming 7.3 - Elaboración propia
+</p>
+<p align="center">
+  <img src="images/Miro/EventStorming-Paso7_4.jpeg">
+</p>
+<p align="center">
+  Event Storming 7.4 - Elaboración propia
+</p>
+<p align="center">
+  <img src="images/Miro/EventStorming-Paso7_5.jpeg">
+</p>
+<p align="center">
+  Event Storming 7.5 - Elaboración propia
+</p>
 
 #### 4.1.1.1. Candidate Context Discovery
+
+Después de completar la sesión de tormenta de eventos, se realizó un análisis detallado de los eventos detectados con la herramienta Miro para identificar los contextos candidatos más relevantes para el dominio. Este trabajo implicó reconocer patrones y relaciones entre eventos y crear flujos a partir de ellos. Como resultado, se organizaron una serie de eventos que correspondían a un mismo proceso dentro de la aplicación.
+
+__IoT Management context:__
+<p align="center">
+  <img src="images/Miro/Candidate_IoT Management.jpeg">
+</p>
+<p align="center">
+  IoT Management - Elaboración propia
+</p>
+
+__Profiles context:__
+<p align="center">
+  <img src="images/Miro/Candidate_Profiles.jpeg">
+</p>
+<p align="center">
+  Profiles - Elaboración propia
+</p>
+
+__PlantGuidance context:__
+<p align="center">
+  <img src="images/Miro/Candidate_PlantGuidance.jpeg">
+</p>
+<p align="center">
+  PlantGuidance - Elaboración propia
+</p>
+
+__PlantProfiles context:__
+<p align="center">
+  <img src="images/Miro/Candidate_PlantProfiles.jpeg">
+</p>
+<p align="center">
+  PlantProfiles - Elaboración propia
+</p>
+
+__IAM context:__
+<p align="center">
+  <img src="images/Miro/Candidate_IAM.jpeg">
+</p>
+<p align="center">
+  IAM - Elaboración propia
+</p>
+
+Después de identificar los flujos de eventos dentro de la aplicación, se determinaron los pivotal points (eventos que cambian el curso del sistema), los cuales representan momentos clave en la interacción del usuario con la plataforma y el comportamiento del sistema IoT:
+
++ El registro y autenticación de un usuario en la plataforma
++ La creación y gestión de una planta por parte del usuario
++ La recepción de datos de sensores (temperatura y humedad) desde dispositivos IoT
++ La detección de condiciones críticas en el entorno de la planta
++ La activación o desactivación automática de actuadores
++ El envío de consultas del usuario al sistema de inteligencia artificial
++ La generación de respuestas, diagnósticos y recomendaciones de cuidado
+
+Al identificar estos pivotal points, se puede observar cómo los eventos se agrupan naturalmente en distintos contextos del dominio, permitiendo definir los siguientes bounded contexts:
+
++ __IAM:__ Encargado de la gestión de identidad y acceso, incluyendo el registro, autenticación y control de sesiones de los usuarios.
++ __Profiles:__ Responsable de la administración de la información personal del usuario, como datos personales, suscripción y configuración del perfil.
++ __PlantProfiles:__ Gestiona el ciclo de vida de las plantas registradas por el usuario, incluyendo su creación, actualización, asociación, eliminación y almacenamiento de información relevante como fotos y características.
++ __IoT Management:__ Maneja la interacción con los dispositivos IoT, incluyendo la conexión, recepción de datos de sensores, detección de condiciones críticas y ejecución de acciones sobre actuadores.
++ __PlantGuidance:__ Encargado de procesar las consultas del usuario mediante inteligencia artificial, generando respuestas, diagnósticos y recomendaciones para el cuidado de las plantas.
+
+Finalmente, utilizando la herramienta Miro, se realizó la división de estos bounded contexts, representando de manera visual los flujos de eventos dentro de cada uno y facilitando la comprensión de las responsabilidades y límites de cada contexto dentro del sistema.
 
 #### 4.1.1.2. Domain Message Flows Modeling
 
