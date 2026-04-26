@@ -827,24 +827,339 @@ Tácticas:
 
 ### 2.2.1. Diseño de entrevistas
 
+**Entrevista para personas con experiencia como hobbista (años cuidando plantas en casa):**
+
+**1.-** ¿Cuánto tiempo llevas cuidando plantas en tu hogar y qué motivó ese interés?
+
+**2.-** ¿Qué dificultades principales enfrentas al momento de cuidar tus plantas?
+
+**3.-** ¿Tienes alguna planta preferida o rutina que sigas con mayor frecuencia?
+
+**4.-** ¿Acostumbras llevar un registro de los cuidados (riego, fertilización, etc.)? ¿De qué manera lo haces?
+
+**5.-** ¿Has utilizado aplicaciones o blogs especializados para apoyarte en el cuidado de plantas?
+
+**6.-** ¿Qué tan útil te parecería una herramienta que analice el clima de tu zona y sugiera cuidados personalizados?
+
+**7.-** ¿Qué opinión tienes sobre una función que identifique plantas mediante fotografías?
+
+**8.-** ¿Qué te parece la idea de usar una app que permita registrar y monitorear el estado de tus plantas mediante formularios visuales y predicciones (por ejemplo, seleccionar “hojas verdes” o “tierra húmeda” para recibir recomendaciones)?
+
+**9.-** ¿Qué funcionalidades avanzadas te gustaría encontrar en una aplicación para mejorar tu experiencia cuidando plantas?
+
+**10.-** ¿Pagarías por una suscripción que ofrezca beneficios adicionales para el cuidado de tus plantas?
+
+**11.-** ¿Cómo te sentirías si pudieras automatizar algunos cuidados de tus plantas para mantener condiciones adecuadas sin tener que intervenir constantemente?
+
+**12.-** ¿Qué tan útil te parecería contar con un sistema que reaccione por sí solo ante cambios en el ambiente para proteger tus plantas?
+
+**Entrevista para personas con poca experiencia en el cuidado de plantas:**
+
+**1.-** ¿Has tenido alguna vez una planta en casa? De ser así, ¿cómo fue esa experiencia?
+
+**2.-** ¿Qué problemas o dificultades encuentras actualmente al cuidar plantas?
+
+**3.-** ¿Te resulta complicado determinar la cantidad de agua, luz u otros cuidados necesarios? ¿Por qué?
+
+**4.-** ¿Utilizas alguna aplicación, blog o comunidad en línea para orientarte? ¿Qué aspectos te agradan o desagradan de estas herramientas?
+
+**5.-** ¿Te interesaría usar una aplicación que te envíe recordatorios y consejos básicos según el tipo de planta? ¿Por qué?
+
+**6.-** ¿Te parecería útil una función que analice el clima local y brinde recomendaciones específicas? ¿Por qué?
+
+**7.-** ¿Qué opinas de una herramienta que identifique plantas a partir de una foto? ¿La usarías?
+
+**8.-** ¿Cómo percibirías una función que permita registrar el estado de la planta mediante opciones visuales y que, en base a ello, sugiera acciones?
+
+**9.-** ¿Qué características avanzadas te gustaría que tenga una app para ayudarte en el cuidado de plantas (por ejemplo: detección de enfermedades, guías de trasplante, alertas inteligentes, etc.)?
+
+**10.-** ¿Estarías dispuesto/a a pagar por funciones premium? ¿Qué debería ofrecer la aplicación para que consideres que vale la pena?
+
+**11.-** ¿Qué tan cómodo/a te sentirías utilizando herramientas que ajusten automáticamente el entorno de tus plantas para ayudarte a mantenerlas en buen estado?
+
+**12.-** ¿Te parecería útil que ciertos cuidados de tus plantas se realicen de forma automática para evitar errores o descuidos?
+
 ### 2.2.2. Registro de entrevistas
 
+Se han realizado las entrevistas de acuerdo al diseño de preguntas. Se puede visualizar el video de las entrevistas en el siguiente link: https://1drv.ms/v/c/9fed6c4f629930aa/IQAYDCTdw01JQqxtd9UvgOK1AS-h7GujJ3JhC70KI1Xfn3I?e=P7c49p
+
+Por motivos de almacenamiento, tuvimos que mantener por separado la entrevista 3, la cual se puede visualizar en el siguiente link: https://drive.google.com/drive/folders/1d0wVikpVQSXuzfDZE4gxl3loqMahencH
+
+#### Expertos cuidadores de plantas:
+
+<table cellpadding="8" cellspacing="0">
+  <tbody>
+    <tr>
+      <td>Entrevista 1</td>
+      <td> <img src="https://i.ibb.co/mFMGLZbG/genaro.png" alt="interview 1" width="400"/> </td>
+    </tr>
+    <tr>
+      <td>Nombre Entrevistado</td>
+      <td>Genaro Ledesma</td>
+    </tr>
+    <tr>
+      <td>Edad</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>Distrito</td>
+      <td>Lima Cercado</td>
+    </tr>
+    <tr>
+      <td>Ocupacion</td>
+      <td>Estudiante</td>
+    </tr>
+    <tr>
+      <td>Duración Entrevista</td>
+      <td>04:54</td>
+    </tr>
+    <tr>
+      <td>Minuto de Inicio</td>
+      <td>00:00 - 04:54</td>
+    </tr>
+        <tr>
+      <td><strong>Resumen:</strong></td>
+      <td>
+        Genaro Ledesma (23), estudiante de ingeniería Civil en la UNMSM, con 7 años de experiencia, vive en Lima y busca profesionalizar el cuidado de sus plantas mediante tecnología. Aunque domina la inspección visual, enfrenta retos con las plagas, el clima inestable y el seguimiento de la fertilización. Le interesa integrar detección de hongos por IA y sistemas IoT para automatizar la humedad y luz, estando dispuesto a pagar por diagnósticos de alta precisión y contacto con especialistas para llevar su hobby al siguiente nivel.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table cellpadding="8" cellspacing="0">
+  <tbody>
+    <tr>
+      <td>Entrevista 2</td>
+      <td> <img src="https://i.ibb.co/VYLmSby9/dione.png" alt="interview 2" width="400"/> </td>
+    </tr>
+    <tr>
+      <td>Nombre Entrevistado</td>
+      <td>Dione Ostos Guillén</td>
+    </tr>
+    <tr>
+      <td>Edad</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>Distrito</td>
+      <td>Lima</td>
+    </tr>
+    <tr>
+      <td>Ocupacion</td>
+      <td>Niñera</td>
+    </tr>
+    <tr>
+      <td>Duración Entrevista</td>
+      <td>06:41</td>
+    </tr>
+    <tr>
+      <td>Minuto de Inicio</td>
+      <td>00:00 - 06:41</td>
+    </tr>
+        <tr>
+      <td><strong>Resumen:</strong></td>
+      <td>
+        Dione Ostos Guillén, una hobbista experta que trabaja como niñera y se interesa por cuidar plantas en maceta, tanto en hogares ajenos como en sus propios cultivos. Siembra flores y hortalizas (como lechuga), todo en macetas, y ha aprendido a manejar problemas como plagas, hongos y los efectos del exceso de riego. Su planta favorita es el jazmín por su aroma; utiliza abono orgánico y complementa su experiencia investigando sobre el cuidado y posibles daños en sus cultivos. Le resulta atractiva una app que explique cómo el clima afecta a las plantas y que pueda reconocer especies mediante fotos. También estaría dispuesta a pagar por un servicio que automatice el cuidado para ahorrar tiempo y mantener sus cultivos saludables.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table cellpadding="8" cellspacing="0">
+  <tbody>
+    <tr>
+      <td>Entrevista 3</td>
+      <td> <img src="https://i.ibb.co/wZ45Bvgj/pedro.png" alt="interview 6" width="400"/> </td>
+    </tr>
+    <tr>
+      <td>Nombre Entrevistado</td>
+      <td>Pedro Vargas</td>
+    </tr>
+    <tr>
+      <td>Edad</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>Distrito</td>
+      <td>Lima</td>
+    </tr>
+    <tr>
+      <td>Ocupacion</td>
+      <td>Estudiante</td>
+    </tr>
+    <tr>
+      <td>Duración Entrevista</td>
+      <td>09:21</td>
+    </tr>
+    <tr>
+      <td>Minuto de Inicio</td>
+      <td>00:00 - 09:21</td>
+    </tr>
+        <tr>
+      <td><strong>Resumen:</strong></td>
+      <td>
+        Pedro Vargas, un joven de 24 años con una afición botánica heredada de su familia, experimenta incertidumbre al determinar los requerimientos específicos de riego y clima para cada especie, especialmente con su palto, al cual considera una planta difícil y sensible al exceso de agua. Actualmente gestiona sus cuidados de manera empírica e informal mediante un grupo de WhatsApp personal y tutoriales de YouTube, por lo que valora positivamente una herramienta que centralice el monitoreo visual y ofrezca recomendaciones personalizadas según su ubicación en Lima. Aunque disfruta del proceso manual por la tranquilidad que le brinda, se muestra abierto a la implementación de tecnología IoT y sugiere funciones innovadoras como barreras automatizadas contra el viento para proteger brotes delicados. Finalmente, pese a ser reacio a las suscripciones digitales, estaría dispuesto a realizar pagos eventuales por asesoría avanzada en nutrientes y predicciones climáticas si esto le garantiza la salud de sus plantas más complejas.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+#### Principiantes cuidadores de plantas:
+
+<table cellpadding="8" cellspacing="0">
+  <tbody>
+    <tr>
+      <td>Entrevista 4</td>
+      <td> <img src="https://i.ibb.co/gbKg5Jq6/melany.png" alt="interview 4" width="400"/> </td>
+    </tr>
+    <tr>
+      <td>Nombre Entrevistado</td>
+      <td>Melany Paitan</td>
+    </tr>
+    <tr>
+      <td>Edad</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>Distrito</td>
+      <td>Lima Cercado</td>
+    </tr>
+    <tr>
+      <td>Ocupacion</td>
+      <td>Estudiante</td>
+    </tr>
+    <tr>
+      <td>Duración Entrevista</td>
+      <td>04:33</td>
+    </tr>
+    <tr>
+      <td>Minuto de Inicio</td>
+      <td>00:00 - 04:33</td>
+    </tr>
+        <tr>
+      <td><strong>Resumen:</strong></td>
+      <td>
+        Melany Paitan (22), estudiante de derecho en la PUCP, cuidadora de plantas principiante con dificultades en la gestión del tiempo y falta de conocimiento técnico, lo que afecta la supervivencia de sus plantas. Busca un sistema de seguimiento claro mediante notificaciones móviles y alertas preventivas basadas en el clima. Debido a su interés en la domótica y la IA, valora la automatización total a través de sensores para garantizar el cuidado óptimo sin depender de su memoria, mostrando disposición a usar herramientas avanzadas para diagnósticos rápidos y efectivos.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table cellpadding="8" cellspacing="0">
+  <tbody>
+    <tr>
+      <td>Entrevista 5</td>
+      <td> <img src="https://i.ibb.co/k2wLSt9N/josue.png" alt="interview 5" width="400"/> </td>
+    </tr>
+    <tr>
+      <td>Nombre Entrevistado</td>
+      <td>Josue Paiva</td>
+    </tr>
+    <tr>
+      <td>Edad</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>Distrito</td>
+      <td>Lima</td>
+    </tr>
+    <tr>
+      <td>Ocupacion</td>
+      <td>Estudiante</td>
+    </tr>
+    <tr>
+      <td>Duración Entrevista</td>
+      <td>04:50</td>
+    </tr>
+    <tr>
+      <td>Minuto de Inicio</td>
+      <td>00:00 - 04:50</td>
+    </tr>
+        <tr>
+      <td><strong>Resumen:</strong></td>
+      <td>
+        Josué Paiva (23), estudiante de Ingeniería de Software en la UPC, cuida como hobby 10 plantas del hogar que pertenecen a su madre y están distribuidas por distintas zonas de la casa. Su mayor dificultad es recordar qué necesita cada planta y en qué momento, lo que le hace perder tiempo desplazándose y a veces cometer errores. Para organizarse usa una app de notas y alarmas, aunque requiere configurar varios recordatorios para no olvidarse. Considera muy acertada la idea de identificar la planta y conocer sus cuidados con solo tomarle una foto, y cree que incluir información del clima le ayudaría a decidir si conviene sacarla al exterior. Estaría dispuesto a pagar si el servicio realmente le brinda recomendaciones que mejoren la vitalidad de sus plantas y le interesa explorar opciones con tecnología IoT para automatizar el cuidado.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table cellpadding="8" cellspacing="0">
+  <tbody>
+    <tr>
+      <td>Entrevista 6</td>
+      <td> <img src="https://i.ibb.co/HDSTKLcL/marcelo.png" alt="interview 3" width="400"/> </td>
+    </tr>
+    <tr>
+      <td>Nombre Entrevistado</td>
+      <td>Marcelo Barrientos</td>
+    </tr>
+    <tr>
+      <td>Edad</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>Distrito</td>
+      <td>Lima</td>
+    </tr>
+    <tr>
+      <td>Ocupacion</td>
+      <td>Estudiante</td>
+    </tr>
+    <tr>
+      <td>Duración Entrevista</td>
+      <td>09:52</td>
+    </tr>
+    <tr>
+      <td>Minuto de Inicio</td>
+      <td>00:00 - 09:52</td>
+    </tr>
+        <tr>
+      <td><strong>Resumen:</strong></td>
+      <td>
+        Marcelo Barrientos, el cual se le pregunta acerca de que tan beneficioso seria para el una aplicación tecnológica relacionada con la agricultura o el cultivo, posiblemente enfocada en el análisis de imágenes (fotos) para diagnosticar problemas en plantas, recomendar soluciones y facilitar el control automático mediante sensores y retroalimentación.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 ### 2.2.3. Análisis de entrevistas
+
+**Análisis de entrevista para expertos cuidadores de plantas:**
+
+Este segmento, integrado por personas de entre 21 y 60 años con una vasta experiencia heredada o desarrollada recientemente, mantiene sus plantas mediante rutinas diarias sin el uso de aplicaciones, aunque reconoce dificultades para gestionar la personalización en colecciones amplias. Existe un interés unánime en adoptar soluciones digitales que ofrezcan registros y recordatorios, destacando de manera especial la utilidad de herramientas que permitan automatizar parámetros como la luz artificial o la humedad ambiental. Para estos aficionados, el hecho de que un sistema pueda reaccionar de forma autónoma ante cambios climáticos extremos representa un nivel de seguridad superior y una ayuda imprescindible para la protección de sus ejemplares más delicados. Por esta razón, muestran una disposición total a pagar por una suscripción que optimice sus tareas y garantice la salud de sus plantas mediante este tipo de asistencia tecnológica.
+
+**Análisis de entrevista para principiantes cuidadores de plantas:**
+
+Los cuidadores principiantes, con edades entre 21 y 23 años, se encuentran en una etapa de aprendizaje marcada por la iniciativa personal y la pérdida de plantas debido a errores comunes como el exceso de riego. Ante la carencia de conocimientos técnicos, este grupo busca guías simples y se muestra sumamente interesado en la incorporación de herramientas que ajusten automáticamente el entorno de sus plantas para evitar descuidos. Se sienten muy cómodos delegando funciones a sistemas que actúen por sí solos, ya que ven en la automatización una forma eficaz de asegurar que sus plantas reciban exactamente lo que necesitan sin tener que depender de su propia memoria o experiencia. Debido a su deseo de evitar fallos y sentirse acompañados en el proceso, están totalmente dispuestos a invertir en una plataforma que sea clara y que facilite el cuidado botánico a través de estas funciones automáticas.
 
 <hr class="page-break">
 
 ## 2.3. Needfinding
 
+Después de realizar las entrevistas y detectar los problemas, necesidades y expectativas del público objetivo, se procede a construir los User Persona y otros elementos relacionados con la experiencia del usuario antes de interactuar con la solución propuesta.
+
 ### 2.3.1. User Personas
+
+Para desarrollar estos artefactos se consideraron factores como edad, ocupación, ubicación, intereses y frustraciones de los entrevistados. Estos perfiles reflejan usuarios reales que desean incorporar plantas en su rutina diaria, pero requieren orientación clara y soluciones acordes a su estilo de vida. A continuación, se presentan los User Persona definidos.
+
+- #### User Persona: Interesados en comenzar a cuidar plantas
+  <a href="https://ibb.co/zVvHPdpN"><img src="https://i.ibb.co/3mZYSK2k/Jose-Avendano.png" alt="Jose-Avendano" border="0" /></a>
+
+- #### User Persona: Personas con experiencia en el cuidado de plantas
+  <a href="https://ibb.co/Ps5YMsfV"><img src="https://i.ibb.co/Xfz4DfvG/Mariana-Mendoza.png" alt="Mariana-Mendoza" border="0" /></a>
+
 
 ### 2.3.2. User Task Matrix
 
-<table>
+En esta sección se construye la User Task Matrix considerando los dos segmentos definidos y vinculados a los User Persona. Se analizan perfiles como estudiantes universitarios que buscan adquirir experiencia y gerentes interesados en incorporar talento joven para sus proyectos.
+
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: center; width: 100%;">
   <thead>
     <tr>
-      <th rowspan="2">Tareas</th>
-      <th colspan="2">[Segmento 1]</th>
-      <th colspan="2">[Segmento 2]</th>
+      <th rowspan="2">Tarea</th>
+      <th colspan="2">Experto</th>
+      <th colspan="2">Persona sin experiencia</th>
     </tr>
     <tr>
       <th>Frecuencia</th>
@@ -855,14 +1170,85 @@ Tácticas:
   </thead>
   <tbody>
     <tr>
-      <td>[COMPLETAR]</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>Adquirir nuevas plantas</td>
+      <td>Sometimes</td>
+      <td>Medium</td>
+      <td>Rarely</td>
+      <td>Low</td>
+    </tr>
+    <tr>
+      <td>Ajustar los cuidados de acuerdo al clima</td>
+      <td>Sometimes</td>
+      <td>Medium</td>
+      <td>Never</td>
+      <td>Low</td>
+    </tr>
+    <tr>
+      <td>Registrar todas las actividades de cuidado</td>
+      <td>Sometimes</td>
+      <td>High</td>
+      <td>Never</td>
+      <td>Low</td>
+    </tr>
+    <tr>
+      <td>Evaluar el estado de salud de sus plantas</td>
+      <td>Often</td>
+      <td>High</td>
+      <td>Rarely</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>Comprar los insumos para el cuidado</td>
+      <td>Sometimes</td>
+      <td>Medium</td>
+      <td>Rarely</td>
+      <td>Low</td>
+    </tr>
+    <tr>
+      <td>Consultar guías o videos sobre plantas</td>
+      <td>Rarely</td>
+      <td>Medium</td>
+      <td>Often</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>Decorar su habitación con plantas</td>
+      <td>Rarely</td>
+      <td>Low</td>
+      <td>Medium</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>Preguntar por consejos a sus conocidos</td>
+      <td>Rarely</td>
+      <td>Low</td>
+      <td>Sometimes</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>Buscar soluciones digitales de apoyo</td>
+      <td>Sometimes</td>
+      <td>Medium</td>
+      <td>Sometimes</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>Tomar fotos para seguimiento del crecimiento</td>
+      <td>Sometimes</td>
+      <td>Low</td>
+      <td>Sometimes</td>
+      <td>Medium</td>
     </tr>
   </tbody>
 </table>
+
+A partir de esta matriz se pueden extraer las siguientes conclusiones sobre las actividades de los User Persona:
+
+- Para el usuario con experiencia, las tareas más relevantes son evaluar la salud de sus plantas y llevar un registro de los cuidados. En contraste, el usuario principiante se enfoca más en aprender y en encontrar herramientas digitales de apoyo.
+
+- Ambos perfiles coinciden en su interés por documentar el crecimiento mediante fotografías y en la búsqueda de soluciones tecnológicas que faciliten el cuidado.
+
+- Las diferencias se evidencian en el nivel de experiencia: el usuario experto dedica más tiempo a monitorear y mantener un plan estructurado, mientras que el principiante prioriza el aprendizaje y valora más el aspecto estético de las plantas.
 
 ### 2.3.3. User Journey Mapping
 #### Journey principiante
