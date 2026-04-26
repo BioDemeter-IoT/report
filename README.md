@@ -20,8 +20,8 @@
          <th>Apellidos y Nombres</th>
       </tr>
       <tr>
-         <td>[COMPLETAR]</td>
-         <td>[COMPLETAR]</td>
+         <td>U20231A500</td>
+         <td>Palomino Fiestas, Erick Leonardo</td>
       </tr>
       <tr>
          <td>[COMPLETAR]</td>
@@ -56,8 +56,18 @@
 # Registro de Versiones del Informe
 
 | Version | Fecha | Autor | Descripción de modificación |
-|---------|-------|-------|-----------------------------|
-|         |       |       |                             |
+| :--- | :--- | :--- | :--- |
+| 0.1 | 14/04/2026 | Acuña Tomas, Diego Rolin | Creación del documento base y redacción del Capítulo I: Startup Profile. |
+| 0.2 | 15/04/2026 | Briceño De La Cruz, Farid Sebastian | Desarrollo del Solution Profile, antecedentes y procesos Lean UX. |
+| 0.3 | 16/04/2026 | Palomino Fiestas, Erick Leonardo y Rivera Ratachi, Renzo Sebastian | Elaboración del Segmento Objetivvo y Análisis de competidores y estrategias competitivas del Capítulo II. |
+| 0.4 | 17/04/2026 | Paitan Pumacahua, Max Anthony | Elaboración de la sección de entrevistas, Needfinding y Big Picture EventStorming. |
+| 0.5 | 18/04/2026 | Rodríguez Villa, Elvia Marcela | Finalización del Capítulo II con Ubiquitous Language y User Journey Mapping. |
+| 0.6 | 19/04/2026 | Coca Lavado, Carlos Andrés | Redacción del Capítulo III: User Stories, Impact Mapping y Product Backlog. |
+| 0.7 | 21/04/2026 | Briceño De La Cruz, Farid Sebastian | Inicio del Capítulo IV: Design-Level EventStorming y Candidate Context Discovery. |
+| 0.8 | 23/04/2026 | Paitan Pumacahua, Max Anthony | Modelado de Bounded Context Canvases y Context Mapping en el Capítulo IV. |
+| 0.9 | 24/04/2026 | Rodríguez Villa, Elvia Marcela | Diseño de Software Architecture y diagramas de contenedores y despliegue. |
+| 0.10 | 25/04/2026 | Rivera Ratachi, Renzo Sebastian | Desarrollo del Tactical-Level DDD (capas de dominio, interfaz y aplicación). |
+| 1.0 | 26/04/2026 | Coca Lavado, Carlos Andrés | Revisión final de diagramas de componentes y base de datos. |
 
 <hr class="page-break">
 
@@ -285,38 +295,50 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
   </thead>
   <tbody>
     <tr>
-      <td rowspan="5"><strong>[COMPLETAR: Criterio 1]</strong></td>
-      <td><strong>[COMPLETAR: Integrante 1]</strong><br><b>TB1:</b></td>
-      <td rowspan="5"><b>TB1:</b></td>
+      <td rowspan="7"><strong>Trabaja en equipo para proporcionar liderazgo en forma conjunta</strong></td>
+      <td><strong>Rivera Ratachi, Renzo Sebastian</strong><br><b>TB1:</b> Lideró la definición estratégica mediante la elaboración de Lean UX Hypothesis Statements y la identificación de segmentos objetivo.</td>
+      <td rowspan="7"><b>TB1:</b> El equipo ejerció un liderazgo compartido donde cada integrante asumió la dirección de áreas críticas. La integración entre el análisis de negocio, la investigación de campo y el modelado técnico permitió establecer una visión unificada para la solución IoT, asegurando que cada componente del sistema estuviera alineado con los objetivos estratégicos del proyecto.</td>
     </tr>
     <tr>
-      <td><strong>[COMPLETAR: Integrante 2]</strong><br><b>TB1:</b></td>
+      <td><strong>Palomino Fiestas, Erick Leonardo</strong><br><b>TB1:</b> Dirigió el análisis de competidores y estableció la base de seguridad en el IAM Bounded Context.</td>
     </tr>
     <tr>
-      <td><strong>[COMPLETAR: Integrante 3]</strong><br><b>TB1:</b></td>
+      <td><strong>Coca Lavado, Carlos Andrés</strong><br><b>TB1:</b> Lideró la planificación técnica mediante la estructuración del Product Backlog y los diagramas de arquitectura C4.</td>
     </tr>
     <tr>
-      <td><strong>[COMPLETAR: Integrante 4]</strong><br><b>TB1:</b></td>
+      <td><strong>Paitan Pumacahua, Max Anthony</strong><br><b>TB1:</b> Ejerció liderazgo en el modelado estructural del dominio mediante el Context Mapping y el Domain Message Flows Modeling.</td>
     </tr>
     <tr>
-      <td><strong>[COMPLETAR: Integrante 5]</strong><br><b>TB1:</b></td>
+      <td><strong>Rodríguez Villa, Elvia Marcela</strong><br><b>TB1:</b> Lideró el diseño arquitectónico de los Bounded Context de Inteligencia Botánica y Análisis Externo.</td>
     </tr>
     <tr>
-      <td rowspan="5"><strong>[COMPLETAR: Criterio 2]</strong></td>
-      <td><strong>[COMPLETAR: Integrante 1]</strong><br><b>TB1:</b></td>
-      <td rowspan="5"><b>TB1:</b></td>
+      <td><strong>Briceño De La Cruz, Farid Sebastian</strong><br><b>TB1:</b> Dirigió la fase de descubrimiento conceptual mediante el Design Level Event Storming y la definición de la problemática.</td>
     </tr>
     <tr>
-      <td><strong>[COMPLETAR: Integrante 2]</strong><br><b>TB1:</b></td>
+      <td><strong>Acuña Tomas, Diego Rolin</strong><br><b>TB1:</b> Lideró la identidad de la Startup y el diseño técnico del Bounded Context de IoT Management.</td>
     </tr>
     <tr>
-      <td><strong>[COMPLETAR: Integrante 3]</strong><br><b>TB1:</b></td>
+      <td rowspan="7"><strong>Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.</strong></td>
+      <td><strong>Rivera Ratachi, Renzo Sebastian</strong><br><b>TB1:</b> Colaboró en la definición de los Bounded Context de Plant Profiles y Care Scheduling para alcanzar los hitos de la entrega.</td>
+      <td rowspan="7"><b>TB1:</b> Se logró un entorno colaborativo donde los hallazgos de las entrevistas y el Needfinding fueron la base para el diseño de User Stories y la arquitectura. El cumplimiento de los objetivos de la TB1 se facilitó mediante una planificación coordinada, asegurando que cada entregable técnico respondiera a las necesidades reales de los usuarios identificadas por el equipo.</td>
     </tr>
     <tr>
-      <td><strong>[COMPLETAR: Integrante 4]</strong><br><b>TB1:</b></td>
+      <td><strong>Palomino Fiestas, Erick Leonardo</strong><br><b>TB1:</b> Cumplió con los objetivos de diseño para el PlantGuidence Bounded Context en colaboración con el área de UX.</td>
     </tr>
     <tr>
-      <td><strong>[COMPLETAR: Integrante 5]</strong><br><b>TB1:</b></td>
+      <td><strong>Coca Lavado, Carlos Andrés</strong><br><b>TB1:</b> Estableció las metas de usuario mediante el desarrollo de User Stories e Impact Mapping para ambos segmentos.</td>
+    </tr>
+    <tr>
+      <td><strong>Paitan Pumacahua, Max Anthony</strong><br><b>TB1:</b> Facilitó un entorno inclusivo mediante el análisis de entrevistas, transformándolas en User Personas y Task Matrix.</td>
+    </tr>
+    <tr>
+      <td><strong>Rodríguez Villa, Elvia Marcela</strong><br><b>TB1:</b> Validó los flujos de trabajo grupales mediante el Event Storming del dominio y la creación de User Journey Maps.</td>
+    </tr>
+    <tr>
+      <td><strong>Briceño De La Cruz, Farid Sebastian</strong><br><b>TB1:</b> Participó en el Candidate Context Discovery y la investigación de antecedentes para alinear las tareas del grupo.</td>
+    </tr>
+    <tr>
+      <td><strong>Acuña Tomas, Diego Rolin</strong><br><b>TB1:</b> Cumplió con la planificación de los perfiles de equipo y la descripción técnica de la gestión de dispositivos IoT.</td>
     </tr>
   </tbody>
 </table>
