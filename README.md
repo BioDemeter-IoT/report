@@ -381,10 +381,10 @@ plantas saludables mientras fortalecen su conexión con el medio ambiente.
       <td>Soy estudiante de Ingeniería de Software con un fuerte interés en el desarrollo de productos digitales y la tecnología. En mi tiempo libre, me gusta jugar videojuegos. También tengo un interés especial en la música, lo que me ayuda a equilibrar mi vida académica y personal. Cuento con habilidades en gestión de bases de datos relacionales, frontend y backend; también me gusta estar al pendiente de las noticias de software, lo que me anima a experimentar con nuevas tecnologías.</td>
     </tr>
     <tr>
-      <td><img src="assets/images/members/[NOMBRE].png" alt="[NOMBRE]" width="200"></td>
-      <td><strong>[Apellido, Nombre]</strong></td>
-      <td>U[CÓDIGO ESTUDIANTE]</td>
-      <td>[Descripción breve de perfil profesional, habilidades y especialidades - similar al ejemplo de Diego]</td>
+      <td><img src="images/members/erodriguez.jpg" alt="Elvia" width="200"></td>
+      <td><strong>Rodríguez Villa, Elvia Marcela </strong></td>
+      <td>U20231c784</td>
+      <td>Soy estudiante de Ingeniería de Software y actualmente me desempeño como AI/ML Engineer. Cuento con experiencia en Python, AWS, ingeniería de datos y automatización de procesos. He trabajado en proyectos de inteligencia artificial como chatbots y speech analytics, motivada por el impacto de la tecnología basada en datos en la actualidad.</td>
     </tr>
     <tr>
       <td><img src="assets/images/members/[NOMBRE].png" alt="[NOMBRE]" width="200"></td>
