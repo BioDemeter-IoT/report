@@ -4401,6 +4401,70 @@ En este apartado se especifican las normas, directrices y procedimientos que se 
 
 ### 6.1.1. Software Development Environment Configuration
 
+**Project Management**
+Herramientas utilizadas para la planificación, asignación de tareas y seguimiento de los Sprints del equipo.
+
+| Herramienta | Descripción | Enlace |
+| --- | --- | --- |
+| Trello | Plataforma para la gestión ágil del proyecto, control de Sprints y seguimiento del Product Backlog mediante tableros Kanban/Scrum. | [https://trello.com/es](https://trello.com/es) |
+| Discord / WhatsApp | Aplicaciones de mensajería para la comunicación rápida y coordinación diaria entre los 7 miembros del equipo. | No aplica |
+
+**Requirements Management**
+Herramientas enfocadas en la recolección, estructuración y trazabilidad de los requerimientos y el modelado del dominio.
+
+| Herramienta | Descripción | Enlace |
+| --- | --- | --- |
+| Miro | Pizarra virtual colaborativa utilizada para las sesiones de Big Picture y Design-Level EventStorming. | [https://miro.com/](https://miro.com/) |
+| GitHub (Markdown) | Repositorio central utilizado para documentar los User Stories, Acceptance Criteria y el formato Gherkin. | https://github.com/ |
+
+**Product UX/UI Design**
+Plataformas empleadas para la investigación de usuarios, flujos de interacción y diseño visual de las interfaces.
+
+| Herramienta | Descripción | Enlace |
+| --- | --- | --- |
+| UXPressia | Herramienta utilizada para elaborar los User Personas, Empathy Maps, Journey Maps e Impact Maps. | [https://uxpressia.com/](https://uxpressia.com/) |
+| Figma | Plataforma colaborativa de diseño para la creación de Wireframes, Mock-ups, Style Guidelines y Prototipos interactivos. | [https://www.figma.com/](https://www.figma.com/) |
+| Lucidchart | Empleada para la diagramación estructurada de los User Flows y Wireflows de la aplicación. | [https://lucid.app/](https://lucid.app/) |
+
+**Software Development**
+Entornos de Desarrollo Integrado (IDE) y lenguajes base utilizados para la codificación de las soluciones.
+
+| Herramienta | Descripción | Enlace |
+| --- | --- | --- |
+| Visual Studio Code | IDE ligero y versátil utilizado principalmente para el desarrollo del Landing Page (HTML/CSS/JS) y la Web App (Angular). | [https://code.visualstudio.com/](https://code.visualstudio.com/) |
+| IntelliJ IDEA | Entorno de desarrollo avanzado utilizado para la programación del RESTful API Backend utilizando Spring Boot (Java). | [https://www.jetbrains.com/idea/](https://www.jetbrains.com/idea/) |
+| Android Studio | IDE oficial utilizado para el desarrollo de la Mobile Application nativa en Kotlin. | [https://developer.android.com/studio](https://developer.android.com/studio) |
+| Arduino IDE | Entorno utilizado para programar en C++ la lógica de los dispositivos IoT (Arduino UNO R4) y el manejo de sensores/actuadores. | [https://www.arduino.cc/en/software](https://www.arduino.cc/en/software) |
+
+**Software Testing**
+Herramientas aplicadas para asegurar la calidad del código, el correcto funcionamiento de los endpoints y las pruebas de usuario.
+
+| Herramienta | Descripción | Enlace |
+| --- | --- | --- |
+| Postman | Plataforma utilizada para diseñar, probar y depurar las peticiones HTTP (GET, POST, PUT, DELETE) del RESTful API. | [https://www.postman.com/](https://www.postman.com/) |
+| JUnit / Mockito | Frameworks de pruebas implementados dentro del entorno de Spring Boot para realizar las pruebas unitarias (Unit Tests). | [https://junit.org/junit5/](https://junit.org/junit5/) |
+| Firebase App Distribution | Herramienta utilizada para distribuir versiones previas de la aplicación móvil al equipo para pruebas en dispositivos físicos. | [https://firebase.google.com/](https://firebase.google.com/) |
+
+**Software Deployment**
+Servicios en la nube y repositorios para la integración, despliegue y alojamiento de las soluciones tecnológicas.
+
+| Herramienta | Descripción | Enlace |
+| --- | --- | --- |
+| Git / GitHub | Sistema de control de versiones bajo GitFlow y plataforma de alojamiento para gestionar el código fuente del proyecto. | [https://github.com/](https://github.com/) |
+| AWS App Runner | Servicio en la nube (Cloud Computing) de Amazon utilizado para el despliegue rápido y escalable del Backend API. | [https://aws.amazon.com/apprunner/](https://aws.amazon.com/apprunner/) |
+| Vercel | Plataforma de alojamiento en la nube orientada a frontend, utilizada para desplegar la Web Application y el Landing Page. | [https://vercel.com/](https://vercel.com/) |
+| MySQL (AWS RDS) | Sistema de gestión de bases de datos relacional alojado en la nube para persistir la información del ecosistema. | [https://www.mysql.com/](https://www.mysql.com/) |
+
+**Software Documentation**
+Herramientas utilizadas para documentar la arquitectura, los componentes técnicos y la especificación de los servicios.
+
+| Herramienta | Descripción | Enlace |
+| --- | --- | --- |
+| Swagger (OpenAPI) | Framework utilizado para generar de manera automatizada e interactiva la documentación de los endpoints del RESTful API. | [https://swagger.io/](https://swagger.io/) |
+| Structurizr | Herramienta de modelado (Diagram-as-Code) utilizada para diseñar la Arquitectura de Software bajo el estándar C4 Model. | [https://structurizr.com/](https://structurizr.com/) |
+| Vertabelo / Lucidchart | Software utilizado para el modelado visual de las bases de datos (Database Design Diagrams) de los Bounded Contexts. | [https://vertabelo.com/](https://vertabelo.com/) |
+
+
 ### 6.1.2. Source Code Management
 
 ### 6.1.3. Source Code Style Guide & Conventions
