@@ -4337,22 +4337,289 @@ En esta sección, se explica los diagramas que presentan un mayor detalle sobre 
 
 ## 5.1. Style Guidelines
 
+Las guías de estilo de la solución definen los criterios visuales, comunicacionales e interactivos que orientan el diseño de la experiencia digital de **BioDemeter** y de su producto **PlantSync**. Su finalidad es asegurar consistencia entre la identidad de marca, la interfaz de usuario y las funcionalidades ofrecidas en la landing page, la aplicación web, la aplicación móvil y los componentes vinculados al ecosistema IoT.
+
 ### 5.1.1. General Style Guidelines
+
+#### Branding
+
+**Brand Overview**
+
+**BioDemeter** es una startup orientada al desarrollo de soluciones tecnológicas para el cuidado de plantas en el hogar, combinando monitoreo, automatización y asistencia digital con un enfoque de sostenibilidad y bienestar ambiental. Su primer producto es **PlantSync**, una solución digital disponible en entorno web y móvil que permite registrar plantas, monitorear su estado, gestionar tareas de cuidado, consultar información útil y acceder a recomendaciones personalizadas basadas en datos y contexto de uso.
+
+**Brand Name**
+
+El nombre **PlantSync** proviene de la idea de sincronizar el cuidado vegetal con la tecnología y con la rutina diaria del usuario. Esta denominación representa una plataforma que integra organización, monitoreo y acompañamiento digital para hacer más simple, accesible y constante el cuidado de las plantas en casa.
+
+**Colores**
+
+La propuesta cromática se basa principalmente en tonalidades de verde, debido a su fuerte asociación con naturaleza, crecimiento, equilibrio y bienestar. Este color principal se complementa con verdes oscuros para encabezados y elementos de contraste, verdes claros para resaltar áreas positivas, y tonos neutros como beige, blanco y gris para fondos y superficies limpias que favorezcan la lectura y reduzcan la fatiga visual.
+
+Asimismo, se incorporan colores funcionales para representar estados dentro del sistema, como rojo para alertas o problemas, amarillo para advertencias y verde para condiciones normales, especialmente en pantallas relacionadas con monitoreo, tareas y seguimiento del estado de las plantas.
+
+<p align="center">
+  <img src="https://i.imgur.com/eRBfgiy.png" alt="updated class diagram" width="90%">
+</p>
+
+#### Tipografía
+
+La tipografía seleccionada para la solución está orientada a garantizar jerarquía visual, legibilidad y consistencia en dispositivos digitales. Para ello, se utilizarán las familias tipográficas **Poppins** y **Nunito**.
+
+**Poppins** será empleada principalmente en títulos, encabezados y botones de acción debido a su apariencia moderna, limpia y estructurada. **Nunito**, por su parte, será utilizada en textos descriptivos, mensajes auxiliares y cuerpos de contenido, ya que ofrece una lectura clara y amigable tanto en pantallas web como móviles.
+
+<p align="center">
+  <img src="https://i.imgur.com/SH4EL6p.png" alt="utipografia" width="90%">
+</p>
+
+#### Lenguaje aplicado
+
+El lenguaje utilizado en la solución será claro, cercano y fácil de comprender para usuarios con distintos niveles de experiencia en jardinería y tecnología. El tono de comunicación será amigable y motivador, evitando tecnicismos innecesarios y priorizando mensajes breves, optimistas y orientados a la acción.
+
+Este estilo comunicacional busca acompañar al usuario durante toda su experiencia, reforzando hábitos positivos de cuidado y promoviendo una interacción intuitiva con mensajes consistentes, comprensibles y alineados con el contexto vegetal de la plataforma.
+
 
 ### 5.1.2. Web, Mobile and IoT Style Guidelines
 
+La solución ha sido diseñada bajo un enfoque visual minimalista, ordenado y adaptable, con el objetivo de facilitar la interacción del usuario en diferentes contextos de uso. Este enfoque abarca la landing page, la aplicación web, la aplicación móvil y los componentes visuales asociados a la integración con dispositivos IoT, manteniendo coherencia estética y funcional en todo el ecosistema digital.
+
+#### Estilo visual de la landing page
+
+La landing page presenta una estructura clara y persuasiva, orientada a comunicar rápidamente la propuesta de valor del producto y facilitar la conversión. Su diseño prioriza una lectura fluida, bloques visuales bien definidos y secciones que resaltan beneficios, funcionamiento, planes y datos institucionales de la startup.
+
+La composición se apoya en jerarquías visuales simples, contrastes bien controlados y botones de llamado a la acción visibles, favoreciendo una experiencia confiable y comprensible desde el primer contacto con la marca.
+
+#### Estilo visual de la aplicación web y móvil
+
+La aplicación web y móvil comparte una misma línea gráfica para garantizar continuidad de uso entre plataformas. La interfaz prioriza claridad visual, uso moderado de color, tarjetas informativas, iconografía reconocible y componentes reutilizables que permitan al usuario identificar fácilmente acciones, estados y módulos principales.
+
+En la versión web, se aprovechan áreas más amplias para paneles, dashboards y vistas comparativas, mientras que en la versión móvil la información se reorganiza para priorizar accesos rápidos, navegación táctil y lectura vertical, manteniendo la misma identidad visual y semántica.
+
+#### Estilo visual de componentes IoT
+
+Los componentes relacionados con monitoreo e integración IoT deben transmitir precisión, confiabilidad y respuesta en tiempo real. Para ello, las métricas ambientales, estados de conexión y controles de actuadores se representarán mediante indicadores claros, tarjetas de datos, etiquetas de estado y colores funcionales que faciliten la interpretación rápida del usuario.
+
+El diseño de estos módulos debe mantener consistencia con la interfaz principal, evitando que la sección IoT parezca un sistema independiente. De esta manera, la visualización de humedad, temperatura, iluminación o acciones remotas se integra de forma natural al flujo general de cuidado de plantas.
+
+#### Botones
+
+Los botones constituyen elementos centrales de interacción dentro de la solución. Se utilizarán para ejecutar acciones como registrarse, iniciar sesión, agregar plantas, guardar cambios, programar tareas, activar funciones específicas y navegar entre módulos.
+
+Se establecerá una jerarquía visual entre botones primarios, secundarios y de advertencia, utilizando color, contraste y tamaño para diferenciar su relevancia dentro de cada contexto. Los botones principales emplearán el color verde predominante de la marca, mientras que los de confirmación o alerta utilizarán variantes funcionales según el tipo de acción.
+
+#### Imágenes
+
+Las imágenes estarán presentes tanto en la landing page como en la aplicación. En la landing, servirán para representar el uso del sistema, comunicar cercanía y reforzar visualmente la propuesta de valor. En la aplicación, podrán emplearse en perfiles de plantas, registros visuales de crecimiento e identificación mediante fotografías.
+
+Además, en los componentes asociados al monitoreo inteligente será conveniente incluir recursos gráficos o iconos que ayuden a representar sensores, conectividad y variables ambientales sin complejizar la interfaz.
+
+#### Pantallas emergentes
+
+Las pantallas emergentes se utilizarán para confirmar acciones importantes, notificar resultados, advertir sobre errores o presentar mensajes contextuales relevantes para el usuario. Estas ventanas deberán ser visualmente llamativas pero consistentes con la paleta de color general, utilizando una jerarquía clara entre mensaje, acción principal y acción secundaria.
+
+Su diseño debe favorecer decisiones seguras, especialmente en acciones sensibles como eliminación de registros, cambios importantes en la configuración o activación de funciones remotas.
+
+#### Encabezado
+
+En la landing page, el encabezado incluirá el logotipo, accesos a secciones principales y botones para ingresar o registrarse en la plataforma. Su diseño será fijo o persistentemente visible para facilitar el acceso rápido a los contenidos más relevantes.
+
+En la aplicación web y móvil, el encabezado podrá complementarse con elementos de contexto como el nombre del módulo actual, indicadores de perfil, accesos rápidos o notificaciones, manteniendo siempre simplicidad visual y claridad funcional.
+
+#### Pie de página
+
+El pie de página contendrá enlaces institucionales, medios de contacto, redes sociales, políticas y accesos complementarios a otras secciones del sitio. En la landing page, este componente servirá también como refuerzo de confianza y continuidad informativa, permitiendo al usuario acceder fácilmente a recursos de soporte y comunicación.
+
+
 ## 5.2. Information Architecture
+
+La arquitectura de información de la solución establece la manera en que el contenido y las funcionalidades se estructuran, organizan, etiquetan y presentan dentro del ecosistema digital de BioDemeter y PlantSync. Su propósito es garantizar una experiencia fluida, comprensible y consistente en la landing page, la aplicación web, la aplicación móvil y los módulos asociados al monitoreo inteligente.
 
 ### 5.2.1. Organization Systems
 
+La organización del contenido responde a un modelo combinado que integra estructuras jerárquicas, secuenciales y matriciales, permitiendo ordenar adecuadamente la información según la naturaleza de cada vista y según las tareas que el usuario necesita realizar dentro del sistema.
+
+#### Organización jerárquica
+
+La organización jerárquica se aplica principalmente en la landing page, el panel principal de la aplicación y las vistas de detalle. En estas pantallas, los elementos más importantes se ubican en zonas de mayor visibilidad y con mayor peso visual, como acciones principales, información resumida del estado de las plantas, métricas destacadas o accesos directos a funcionalidades clave.
+
+Este enfoque permite que el usuario identifique rápidamente qué información requiere atención prioritaria y qué acciones puede ejecutar primero, reduciendo la carga cognitiva y facilitando la toma de decisiones.
+
+#### Organización secuencial
+
+La organización secuencial se utiliza en procesos que requieren una progresión ordenada, como el registro de usuarios, la incorporación de una nueva planta, la configuración de tareas o la vinculación de dispositivos. En estos casos, la interfaz guía al usuario paso a paso, mostrando únicamente la información necesaria en cada momento para favorecer la comprensión del flujo.
+
+Este tipo de organización es especialmente útil en interacciones iniciales o en configuraciones técnicas, ya que reduce errores y mejora la percepción de control durante el proceso.
+
+#### Organización matricial
+
+La organización matricial se aplica en módulos donde el usuario necesita explorar información de manera flexible, comparar elementos o revisar múltiples registros. Esto ocurre, por ejemplo, en el inventario de plantas, en el historial de acciones, en el listado de tareas o en la visualización de métricas ambientales.
+
+En estos casos, el contenido puede presentarse mediante tarjetas, listas o cuadrículas que permitan navegar libremente entre elementos, ordenar resultados y detectar patrones o diferencias entre registros.
+
+#### Esquemas de categorización
+
+La solución emplea distintos esquemas de categorización según el tipo de información presentada:
+
+- **Por tópicos**, para organizar guías, recomendaciones y contenidos de ayuda según temas como riego, luz, temperatura, plagas o mantenimiento.
+- **Alfabético**, para ordenar listados de plantas o búsquedas por nombre.
+- **Cronológico**, para historiales de cuidado, tareas registradas, eventos recientes y datos de monitoreo.
+- **Por estado**, para clasificar condiciones normales, alertas, advertencias o situaciones pendientes de atención.
+
 ### 5.2.2. Labeling Systems
+
+El sistema de etiquetado ha sido definido para ser claro, directo y consistente en todos los puntos de interacción. El objetivo es que el usuario comprenda con rapidez el significado de cada sección, botón, estado o módulo, sin necesidad de interpretaciones complejas ni conocimientos técnicos previos.
+
+#### Menú principal del Landing Page
+
+- Inicio
+- ¿Cómo funciona?
+- Planes
+- ¿Quiénes somos?
+- Acceder
+
+#### Menú de navegación de la solución
+
+- Mis plantas
+- Guías
+- Tareas
+- Historial
+- Sensores
+- ChatBot
+- Perfil
+- Configuración
+- Cerrar sesión
+
+#### Tipos de etiquetas en la interfaz
+
+<p align="center">
+  <img src="https://i.imgur.com/hziWznJ.jpeg" alt="Nnavegacion" width="90%">
+</p>
+
+| Tipo de etiqueta | Ejemplo                  | Aparición                                        |
+|------------------|--------------------------|--------------------------------------------------|
+| Encabezado       | “Mis plantas”           | Parte superior de la pantalla principal          |
+| Panel            | “Historial de cuidados” | Dentro de módulos informativos o tarjetas        |
+| Botón            | “Agregar planta”        | Acción principal en formularios o vistas de gestión |
+| Navegación       | “Guías”, “Tareas”, “ChatBot” | Menú principal, barra lateral o navegación inferior |
+| Estado           | “Último riego hace 3 días” | Dentro de tarjetas o secciones de seguimiento |
+
+Las etiquetas se mantendrán uniformes entre web, móvil y componentes vinculados al monitoreo inteligente, lo que permite conservar continuidad semántica y facilitar el aprendizaje del sistema.
 
 ### 5.2.3. SEO Tags and Meta Tags
 
+Las metaetiquetas permiten describir estructuralmente el contenido de la solución y mejorar su visibilidad en motores de búsqueda. Aunque no son visibles para el usuario final, cumplen un papel importante en la indexación de la landing page y en el posicionamiento digital de la marca BioDemeter y del producto PlantSync.
+
+#### Landing Page
+
+**Título**
+```html
+<title>BioDemeter | Tecnología inteligente para el cuidado de plantas</title>
+```
+
+**Codificación de caracteres**
+```html
+<meta charset="utf-8" />
+```
+
+**Meta Description**
+```html
+<meta
+  name="description"
+  content="BioDemeter es una startup que desarrolla soluciones digitales para el monitoreo, registro y cuidado inteligente de plantas mediante su app PlantSync en web y móvil."
+/>
+```
+
+**Keywords**
+```html
+<meta
+  name="keywords"
+  content="BioDemeter, PlantSync, cuidado de plantas, monitoreo de plantas, app para plantas, jardinería digital, recomendaciones para plantas, web y móvil"
+/>
+```
+
+**Author y Derechos de Autor**
+```html
+<meta name="author" content="Equipo BioDemeter" />
+<meta name="copyright" content="Copyright BioDemeter team" />
+```
+
+#### Web and Mobile Application
+
+**Título**
+```html
+<title>PlantSync | Gestiona y cuida tus plantas desde web y móvil</title>
+```
+
+**Codificación de caracteres**
+```html
+<meta charset="utf-8" />
+```
+
+**Meta Description**
+```html
+<meta
+  name="description"
+  content="PlantSync permite registrar plantas, consultar guías, gestionar tareas, recibir recordatorios y obtener recomendaciones personalizadas desde una experiencia web y móvil."
+/>
+```
+
+**Keywords**
+```html
+<meta
+  name="keywords"
+  content="PlantSync, BioDemeter, historial de riego, guías para plantas, monitoreo manual, recomendaciones por clima, app móvil de plantas, plataforma web de plantas"
+/>
+```
+
+**Author y Derechos de Autor**
+```html
+<meta name="author" content="Equipo BioDemeter" />
+<meta name="copyright" content="Copyright BioDemeter team" />
+```
+
 ### 5.2.4. Searching Systems
+
+Dado que la solución manejará una cantidad considerable de información, incluyendo guías, registros de plantas, historiales, tareas y datos de monitoreo, resulta fundamental implementar un sistema de búsqueda y filtrado eficiente. Este sistema debe permitir al usuario encontrar rápidamente el contenido que necesita, reduciendo el esfuerzo cognitivo y mejorando la fluidez de navegación.
+
+Las principales opciones de búsqueda incluirán:
+
+- Búsqueda de guías y contenidos informativos.
+- Búsqueda de plantas registradas.
+- Búsqueda de tareas y actividades programadas.
+- Búsqueda de registros asociados a cada planta.
+- Búsqueda de información contextual relacionada con recomendaciones y monitoreo.
+
+Asimismo, se incorporarán filtros que permitan refinar los resultados según distintos criterios:
+
+- Tipo de planta.
+- Tipo de tarea.
+- Estado de la planta.
+- Tipo de guía.
+- Periodo de tiempo.
+- Estado de conectividad o condición monitoreada, cuando corresponda.
+
+Este sistema de búsqueda y filtrado resulta especialmente útil para usuarios con múltiples plantas registradas o con un uso más frecuente del monitoreo y del historial de cuidados, ya que permite identificar patrones, revisar eventos y acceder con rapidez a información relevante.
 
 ### 5.2.5. Navigation Systems
 
+La navegación de la solución ha sido diseñada con un enfoque intuitivo, flexible y adaptable a diferentes dispositivos. Su objetivo es ofrecer una experiencia ordenada, evitando la saturación visual y facilitando el acceso a contenidos, acciones y módulos relevantes dentro del ecosistema digital.
+
+#### Landing Page
+
+La landing page utiliza un diseño de tipo **one-page scroll**, que permite recorrer el contenido mediante desplazamiento vertical continuo. Este modelo facilita una lectura lineal de la propuesta de valor, los beneficios, los planes, la información institucional y los llamados a la acción, todo dentro de una experiencia de navegación simple y predecible.
+
+Para reforzar la orientación, se incorpora un encabezado fijo con enlaces directos a las secciones principales, permitiendo al usuario desplazarse rápidamente sin necesidad de recorrer manualmente toda la página.
+
+#### Web Application
+
+La aplicación web adopta una navegación híbrida que combina accesos directos entre módulos con flujos guiados para tareas específicas. El usuario puede desplazarse libremente entre secciones como plantas, tareas, historial, sensores, chatbot, perfil y configuración, mientras que ciertos procesos más estructurados mantienen una secuencia paso a paso.
+
+Este modelo permite equilibrar libertad de exploración con orden funcional, favoreciendo una experiencia de uso flexible, eficiente y orientada a objetivos.
+
+#### Mobile Application
+
+La aplicación móvil mantiene la lógica de navegación de la versión web, pero adaptada a pantallas más pequeñas y a patrones táctiles de uso. La distribución prioriza acciones rápidas, lectura vertical, accesibilidad con una sola mano y accesos compactos a los módulos principales, asegurando continuidad funcional sin perder claridad visual.
+
+De este modo, la experiencia entre plataformas se mantiene coherente, permitiendo al usuario interactuar con la solución desde distintos dispositivos sin necesidad de reaprender la estructura general del sistema.
 ## 5.3. Landing Page UI Design
 
 ### 5.3.1. Landing Page Wireframe
