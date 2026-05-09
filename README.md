@@ -4368,7 +4368,7 @@ La tipografía seleccionada para la solución está orientada a garantizar jerar
 **Poppins** será empleada principalmente en títulos, encabezados y botones de acción debido a su apariencia moderna, limpia y estructurada. **Nunito**, por su parte, será utilizada en textos descriptivos, mensajes auxiliares y cuerpos de contenido, ya que ofrece una lectura clara y amigable tanto en pantallas web como móviles.
 
 <p align="center">
-  <img src="https://i.imgur.com/SH4EL6p.png" alt="utipografia" width="90%">
+  <img src="https://i.imgur.com/SH4EL6p.png" alt="muestra de tipografías Poppins y Nunito" width="90%">
 </p>
 
 #### Lenguaje aplicado
