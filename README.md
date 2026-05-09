@@ -4483,7 +4483,7 @@ El sistema de etiquetado ha sido definido para ser claro, directo y consistente 
 - Tareas
 - Historial
 - Sensores
-- ChatBot
+- Chatbot
 - Perfil
 - Configuración
 - Cerrar sesión
