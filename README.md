@@ -4499,7 +4499,7 @@ El sistema de etiquetado ha sido definido para ser claro, directo y consistente 
 | Encabezado       | “Mis plantas”           | Parte superior de la pantalla principal          |
 | Panel            | “Historial de cuidados” | Dentro de módulos informativos o tarjetas        |
 | Botón            | “Agregar planta”        | Acción principal en formularios o vistas de gestión |
-| Navegación       | “Guías”, “Tareas”, “ChatBot” | Menú principal, barra lateral o navegación inferior |
+| Navegación       | “Guías”, “Tareas”, “Chatbot” | Menú principal, barra lateral o navegación inferior |
 | Estado           | “Último riego hace 3 días” | Dentro de tarjetas o secciones de seguimiento |
 
 Las etiquetas se mantendrán uniformes entre web, móvil y componentes vinculados al monitoreo inteligente, lo que permite conservar continuidad semántica y facilitar el aprendizaje del sistema.
