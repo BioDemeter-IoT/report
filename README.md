@@ -4611,7 +4611,7 @@ Para reforzar la orientación, se incorpora un encabezado fijo con enlaces direc
 
 #### Web Application
 
-La aplicación web adopta una navegación híbrida que combina accesos directos entre módulos con flujos guiados para tareas específicas. El usuario puede desplazarse libremente entre secciones como plantas, tareas, historial, sensores, chatbot, perfil y configuración, mientras que ciertos procesos más estructurados mantienen una secuencia paso a paso.
+La aplicación web adopta una navegación híbrida que combina accesos directos entre módulos con flujos guiados para tareas específicas. El usuario puede desplazarse libremente entre secciones como plantas, tareas, historial, sensores, Chatbot, perfil y configuración, mientras que ciertos procesos más estructurados mantienen una secuencia paso a paso.
 
 Este modelo permite equilibrar libertad de exploración con orden funcional, favoreciendo una experiencia de uso flexible, eficiente y orientada a objetivos.
 
