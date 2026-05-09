@@ -4464,8 +4464,53 @@ Herramientas utilizadas para documentar la arquitectura, los componentes técnic
 | Structurizr | Herramienta de modelado (Diagram-as-Code) utilizada para diseñar la Arquitectura de Software bajo el estándar C4 Model. | [https://structurizr.com/](https://structurizr.com/) |
 | Vertabelo / Lucidchart | Software utilizado para el modelado visual de las bases de datos (Database Design Diagrams) de los Bounded Contexts. | [https://vertabelo.com/](https://vertabelo.com/) |
 
-
 ### 6.1.2. Source Code Management
+
+Repositorio principal [https://github.com/orgs/BioDemeter-IoT/repositories](https://github.com/orgs/BioDemeter-IoT/repositories)
+
+**GitFlow:**
+Se utilizará el modelo GitFlow propuesto por Vincent Driessen para organizar el trabajo de desarrollo de forma estructurada.
+
++ Ejemplo de GitFlow:
+<p align="center">
+  <img src="images/others/gitflow.png" alt = "ejemplo de gitflow" width="80%">
+</p>
+
+Estructura de branches:
+
+1. **Main branch**: Contendrá la versión estable de producción de la aplicación. Solo se fusionarán cambios probados y verificados.
+
+2. **Develop branch**: Incluirá las últimas funcionalidades completadas y en proceso de validación.
+
+3. **Feature branches**: Se utilizarán estas ramas para trabajar funcionalidades por separado y posteriormente fusionarlas con develop cuando se haya completado el trabajo. Se usará el prefijo `feature/<nombre-de-la-funcionalidad>`
+
+Las convenciones a utilizar para Release branches y Hotfix branches serán:
+
+**Release branches:**
+Se utilizarán para gestionar versiones estables de la aplicación que están listas para ser implementadas en producción. Su propósito es consolidar las características y mejoras de la rama develop que ya han sido verificadas y son aptas para el despliegue. Se adoptará el sistema de Versionado Semántico (Semantic Versioning) para nombrar las versiones, siguiendo el formato MAJOR.MINOR.PATCH.
+
+**Hotfix branches:**
+Estas ramas se crearán para solucionar errores críticos detectados en la rama main (producción) que afecten de manera importante el funcionamiento de la plataforma.
+
+**Semantic Versioning**: Se aplicará Semantic Versioning 2.0.0 para nombrar releases (por ejemplo: v1.0.0, v1.1.0, v2.0.0).
+
+**Commits**: Se seguirá la convención Conventional Commits para mantener claridad en el historial de cambios.
+
+`<type>[optional scope]: <description>`
+
+**Ejemplo:**
+`feat(auth): add user login validation`
+
+**Mensajes de Commit siguiendo la Convención Conventional Commits**
+Se adoptará el estándar de Conventional Commits en los mensajes de commit para garantizar una mayor claridad sobre las modificaciones efectuadas en el código.
+
+* **feat**: Implementación de nuevas funciones o características.
+* **fix**: Solución de errores o fallos.
+* **docs**: Actualizaciones o modificaciones en la documentación.
+* **style**: Ajustes de formato que no afectan al comportamiento del código.
+* **refactor**: Reestructuración del código sin alterar su funcionalidad.
+* **test**: Creación o modificación de pruebas.
+* **chore**: Actividades de mantenimiento o tareas menores.
 
 ### 6.1.3. Source Code Style Guide & Conventions
 
