@@ -4358,7 +4358,7 @@ La propuesta cromática se basa principalmente en tonalidades de verde, debido a
 Asimismo, se incorporan colores funcionales para representar estados dentro del sistema, como rojo para alertas o problemas, amarillo para advertencias y verde para condiciones normales, especialmente en pantallas relacionadas con monitoreo, tareas y seguimiento del estado de las plantas.
 
 <p align="center">
-  <img src="https://i.imgur.com/eRBfgiy.png" alt="updated class diagram" width="90%">
+  <img src="https://i.imgur.com/eRBfgiy.png" alt="Paleta de colores de PlantSync con tonos verdes, neutros y colores funcionales para alertas, advertencias y estados normales" width="90%">
 </p>
 
 #### Tipografía
