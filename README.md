@@ -4450,10 +4450,10 @@ Servicios en la nube y repositorios para la integración, despliegue y alojamien
 
 | Herramienta | Descripción | Enlace |
 | --- | --- | --- |
-| Git / GitHub | Sistema de control de versiones bajo GitFlow y plataforma de alojamiento para gestionar el código fuente del proyecto. | [https://github.com/](https://github.com/) |
-| AWS App Runner | Servicio en la nube (Cloud Computing) de Amazon utilizado para el despliegue rápido y escalable del Backend API. | [https://aws.amazon.com/apprunner/](https://aws.amazon.com/apprunner/) |
-| Vercel | Plataforma de alojamiento en la nube orientada a frontend, utilizada para desplegar la Web Application y el Landing Page. | [https://vercel.com/](https://vercel.com/) |
-| MySQL (AWS RDS) | Sistema de gestión de bases de datos relacional alojado en la nube para persistir la información del ecosistema. | [https://www.mysql.com/](https://www.mysql.com/) |
+| Git / GitHub | Sistema de control de versiones bajo GitFlow y plataforma de alojamiento para gestionar el código fuente del proyecto. | [https://github.com](https://github.com) |
+| MS Azure | Servicio en la nube (Cloud Computing) de Microsoft utilizado para el despliegue rápido y escalable del Backend API y del Frontend | [https://portal.azure.com/auth/login](https://portal.azure.com) |
+| GitHub Pages | Plataforma de alojamiento en la nube orientada a frontend, utilizada para desplegar la Web Application y el Landing Page. | [https://docs.github.com/es/pages](https://docs.github.com/es/pages) |
+| MySQL | Sistema de gestión de bases de datos relacional alojado en la nube para persistir la información del ecosistema. | [https://www.mysql.com](https://www.mysql.com) |
 
 **Software Documentation**
 Herramientas utilizadas para documentar la arquitectura, los componentes técnicos y la especificación de los servicios.
