@@ -4468,7 +4468,7 @@ La solución emplea distintos esquemas de categorización según el tipo de info
 
 El sistema de etiquetado ha sido definido para ser claro, directo y consistente en todos los puntos de interacción. El objetivo es que el usuario comprenda con rapidez el significado de cada sección, botón, estado o módulo, sin necesidad de interpretaciones complejas ni conocimientos técnicos previos.
 
-#### Menú principal del Landing Page
+#### Menú principal de la landing page
 
 - Inicio
 - ¿Cómo funciona?
