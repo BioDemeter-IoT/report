@@ -4491,7 +4491,7 @@ El sistema de etiquetado ha sido definido para ser claro, directo y consistente 
 #### Tipos de etiquetas en la interfaz
 
 <p align="center">
-  <img src="https://i.imgur.com/hziWznJ.jpeg" alt="Nnavegacion" width="90%">
+  <img src="https://i.imgur.com/hziWznJ.jpeg" alt="Ejemplo de navegación" width="90%">
 </p>
 
 | Tipo de etiqueta | Ejemplo                  | Aparición                                        |
