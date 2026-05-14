@@ -4644,6 +4644,8 @@ La aplicación móvil mantiene la lógica de navegación de la versión web, per
 De este modo, la experiencia entre plataformas se mantiene coherente, permitiendo al usuario interactuar con la solución desde distintos dispositivos sin necesidad de reaprender la estructura general del sistema.
 ## 5.3. Landing Page UI Design
 
+Enlace del Figma para visualización de el Landing Page UI Design: [Enlace del figma](https://www.figma.com/design/5cSEKvg4XXUzsXTpOPJySb/PlantSync?node-id=0-1&t=y4kxXaWBUrJgtPEo-1)
+
 ### 5.3.1. Landing Page Wireframe
 
 ### 5.3.2. Landing Page Mock-up
