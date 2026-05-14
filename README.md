@@ -4660,6 +4660,75 @@ A partir de nuestro wireframe, que representa una versión básica de la landing
 
 ## 5.4. Applications UX/UI Design
 
+#### 4.4.1. Web Applications Wireframes<br><br>
+
+Los wireframes desarrollados para la aplicación web de BioPafi reflejan una planificación enfocada en el usuario, incorporando principios de diseño como la claridad visual, la jerarquía de la información, la consistencia y la inclusividad. Cada pantalla presenta una estructura ordenada y limpia, con encabezados visibles, elementos organizados según su nivel de importancia y una navegación lateral constante que facilita la orientación.
+
+Se prioriza el uso de etiquetas claras y botones con alto contraste para mejorar la accesibilidad. Asimismo, el diseño contempla usuarios con distintos niveles de experiencia, ofreciendo formularios guiados para principiantes y paneles informativos más detallados para usuarios avanzados. Por otro lado, se evidencia una adecuada arquitectura de la información mediante la organización en módulos como Plantas, Guías, Tareas, ChatBot y Configuración, lo que permite encontrar fácilmente cada funcionalidad. En conjunto, cada vista demuestra un equilibrio entre lo funcional y lo estético, respondiendo a las necesidades del público objetivo.
+
+[Enlace del figma](https://www.figma.com/design/5cSEKvg4XXUzsXTpOPJySb/PlantSync?node-id=42-2&t=y4kxXaWBUrJgtPEo-1)
+
+- Mis Planta:
+
+Pantalla principal del usuario donde se muestra el listado de todas sus plantas registradas. Desde esta vista, puede consultar el estado general de cada planta, acceder a su información detallada, editar sus datos o agregar una nueva.
+
+<a href="https://ibb.co/svgK5zrV"><img src="https://i.ibb.co/tMHqZF5J/Mis-Plantas.png" alt="Mis-Plantas" border="0"></a>
+
+- Guías:
+Catálogo de recomendaciones organizado por categorías como riego, luz, fertilización y control de plagas. Permite a los usuarios consultar guías de acuerdo con sus necesidades o el tipo de planta que poseen.
+
+<a href="https://ibb.co/s9zKc4pY"><img src="https://i.ibb.co/60LHGScC/guias.png" alt="guias" border="0"></a>
+
+- Tareas:
+
+Sección con formato de calendario que presenta los recordatorios programados para cada planta, como riegos, fertilización y otras tareas. Facilita la organización de la rutina de cuidado del usuario.
+
+<a href="https://ibb.co/v47YTWP0"><img src="https://i.ibb.co/DfxpvFC0/tareas.png" alt="tareas" border="0"></a>
+
+- Chatbot:
+
+Pantalla principal del asistente virtual (RootBot), desde la cual el usuario puede iniciar una conversación para resolver dudas rápidas relacionadas con el cuidado de plantas.
+
+<a href="https://ibb.co/v6prJzqz"><img src="https://i.ibb.co/DHh67KWK/chatbot.png" alt="chatbot" border="0"></a>
+
+- Configuración personal
+
+Panel en el que el usuario puede actualizar su información personal, configurar las notificaciones y administrar su tipo de suscripción (básico, PRO o premium).
+
+<a href="https://ibb.co/KchvWvv1"><img src="https://i.ibb.co/DPW2Q22q/Configuracion-Personal.png" alt="Configuracion-Personal" border="0"></a>
+
+- Añadir Planta:
+
+Interfaz de registro asistido para añadir una nueva planta. Contempla campos como nombre asignado, especie, fecha de adquisición y la opción de habilitar notificaciones.
+
+<a href="https://ibb.co/ch4r4X1G"><img src="https://i.ibb.co/7ts1sNXw/A-adir-Planta.png" alt="A-adir-Planta" border="0"></a>
+
+- Ver Guía:
+
+Pantalla que presenta el contenido completo de una guía específica, con indicaciones paso a paso, recursos visuales ilustrativos y consejos prácticos para el usuario.
+
+<a href="https://ibb.co/qYpdJ3nQ"><img src="https://i.ibb.co/wh4RcFLm/Ver-Planta.png" alt="Ver-Planta" border="0"></a>
+
+- Chateando con ChatBot:
+
+Vista de la conversación en curso con el bot, donde el usuario puede realizar consultas sobre el cuidado o la adquisición de plantas y recibir respuestas adaptadas al contexto.
+
+<a href="https://ibb.co/4RHdr3RN"><img src="https://i.ibb.co/chjLnVhT/Chat-Chatbot.png" alt="Chat-Chatbot" border="0"></a>
+
+- Ver Planta:
+
+Pantalla que muestra la información completa de una planta específica, incluyendo su imagen, especie, historial de cuidados y recomendaciones según el clima.
+
+<a href="https://ibb.co/qYpdJ3nQ"><img src="https://i.ibb.co/wh4RcFLm/Ver-Planta.png" alt="Ver-Planta" border="0"></a>
+
+- Ver historial de planta:
+
+Historial organizado de las acciones realizadas sobre una planta, como riego, fertilización o cambios de estado, complementado con gráficas sencillas que muestran la humedad y su evolución.
+
+<a href="https://ibb.co/0VpKDycs"><img src="https://i.ibb.co/2Y0Sn3yZ/Historial-Planta.png" alt="Historial-Planta" border="0"></a>
+
+<br><br>
+
 ### 5.4.1. Applications Wireflow Diagrams
 
 ### 5.4.2. Applications Mock-ups
