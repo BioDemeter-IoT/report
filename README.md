@@ -4644,11 +4644,143 @@ La aplicación móvil mantiene la lógica de navegación de la versión web, per
 De este modo, la experiencia entre plataformas se mantiene coherente, permitiendo al usuario interactuar con la solución desde distintos dispositivos sin necesidad de reaprender la estructura general del sistema.
 ## 5.3. Landing Page UI Design
 
+Enlace del Figma para visualización de el Landing Page UI Design: [Enlace del figma](https://www.figma.com/design/5cSEKvg4XXUzsXTpOPJySb/PlantSync?node-id=0-1&t=y4kxXaWBUrJgtPEo-1)
+
 ### 5.3.1. Landing Page Wireframe
+
+En esta sección se presenta una versión básica de nuestra landing page para navegador de escritorio. En ella se incluyen los elementos clave para generar una buena primera impresión en el usuario: una breve introducción sobre el proyecto, una explicación simplificada de su funcionamiento en tres pasos, la visualización de los distintos planes disponibles y, finalmente, una pequeña presentación de nuestra startup.
+
+<a href="https://ibb.co/9kNGHtMT"><img src="https://i.ibb.co/ycXVFS3y/wireframelandingpage.png" alt="wireframelandingpage" border="0"></a><br /><a target='_blank' href='https://es.imgbb.com/'>compartir imágenes en redes sociales</a><br />
 
 ### 5.3.2. Landing Page Mock-up
 
+A partir de nuestro wireframe, que representa una versión básica de la landing page, se desarrolló la versión final. Esta mantiene los mismos apartados definidos previamente, incorporando además los colores seleccionados y un lenguaje pensado para ser claro y amigable para el usuario.
+
+<a href="https://ibb.co/tw806D0M"><img src="https://i.ibb.co/Q7rWVMWF/Landing-Page-Updated.png" alt="Landing-Page-Updated" border="0"></a>
+
 ## 5.4. Applications UX/UI Design
+
+#### 4.4.1. Web Applications Wireframes<br><br>
+
+Los wireframes desarrollados para la aplicación web de BioPafi reflejan una planificación enfocada en el usuario, incorporando principios de diseño como la claridad visual, la jerarquía de la información, la consistencia y la inclusividad. Cada pantalla presenta una estructura ordenada y limpia, con encabezados visibles, elementos organizados según su nivel de importancia y una navegación lateral constante que facilita la orientación.
+
+Se prioriza el uso de etiquetas claras y botones con alto contraste para mejorar la accesibilidad. Asimismo, el diseño contempla usuarios con distintos niveles de experiencia, ofreciendo formularios guiados para principiantes y paneles informativos más detallados para usuarios avanzados. Por otro lado, se evidencia una adecuada arquitectura de la información mediante la organización en módulos como Plantas, Guías, Tareas, ChatBot y Configuración, lo que permite encontrar fácilmente cada funcionalidad. En conjunto, cada vista demuestra un equilibrio entre lo funcional y lo estético, respondiendo a las necesidades del público objetivo.
+
+[Enlace del figma](https://www.figma.com/design/5cSEKvg4XXUzsXTpOPJySb/PlantSync?node-id=42-2&t=y4kxXaWBUrJgtPEo-1)
+
+- Mis Planta:
+
+Pantalla principal del usuario donde se muestra el listado de todas sus plantas registradas. Desde esta vista, puede consultar el estado general de cada planta, acceder a su información detallada, editar sus datos o agregar una nueva.
+
+<a href="https://ibb.co/svgK5zrV"><img src="https://i.ibb.co/tMHqZF5J/Mis-Plantas.png" alt="Mis-Plantas" border="0"></a>
+
+- Guías:
+Catálogo de recomendaciones organizado por categorías como riego, luz, fertilización y control de plagas. Permite a los usuarios consultar guías de acuerdo con sus necesidades o el tipo de planta que poseen.
+
+<a href="https://ibb.co/s9zKc4pY"><img src="https://i.ibb.co/60LHGScC/guias.png" alt="guias" border="0"></a>
+
+- Tareas:
+
+Sección con formato de calendario que presenta los recordatorios programados para cada planta, como riegos, fertilización y otras tareas. Facilita la organización de la rutina de cuidado del usuario.
+
+<a href="https://ibb.co/v47YTWP0"><img src="https://i.ibb.co/DfxpvFC0/tareas.png" alt="tareas" border="0"></a>
+
+- Chatbot:
+
+Pantalla principal del asistente virtual (RootBot), desde la cual el usuario puede iniciar una conversación para resolver dudas rápidas relacionadas con el cuidado de plantas.
+
+<a href="https://ibb.co/v6prJzqz"><img src="https://i.ibb.co/DHh67KWK/chatbot.png" alt="chatbot" border="0"></a>
+
+- Configuración personal
+
+Panel en el que el usuario puede actualizar su información personal, configurar las notificaciones y administrar su tipo de suscripción (básico, PRO o premium).
+
+<a href="https://ibb.co/KchvWvv1"><img src="https://i.ibb.co/DPW2Q22q/Configuracion-Personal.png" alt="Configuracion-Personal" border="0"></a>
+
+- Añadir Planta:
+
+Interfaz de registro asistido para añadir una nueva planta. Contempla campos como nombre asignado, especie, fecha de adquisición y la opción de habilitar notificaciones.
+
+<a href="https://ibb.co/ch4r4X1G"><img src="https://i.ibb.co/7ts1sNXw/A-adir-Planta.png" alt="A-adir-Planta" border="0"></a>
+
+- Ver Guía:
+
+Pantalla que presenta el contenido completo de una guía específica, con indicaciones paso a paso, recursos visuales ilustrativos y consejos prácticos para el usuario.
+
+<a href="https://ibb.co/qYpdJ3nQ"><img src="https://i.ibb.co/wh4RcFLm/Ver-Planta.png" alt="Ver-Planta" border="0"></a>
+
+- Chateando con ChatBot:
+
+Vista de la conversación en curso con el bot, donde el usuario puede realizar consultas sobre el cuidado o la adquisición de plantas y recibir respuestas adaptadas al contexto.
+
+<a href="https://ibb.co/4RHdr3RN"><img src="https://i.ibb.co/chjLnVhT/Chat-Chatbot.png" alt="Chat-Chatbot" border="0"></a>
+
+- Ver Planta:
+
+Pantalla que muestra la información completa de una planta específica, incluyendo su imagen, especie, historial de cuidados y recomendaciones según el clima.
+
+<a href="https://ibb.co/qYpdJ3nQ"><img src="https://i.ibb.co/wh4RcFLm/Ver-Planta.png" alt="Ver-Planta" border="0"></a>
+
+- Ver historial de planta:
+
+Historial organizado de las acciones realizadas sobre una planta, como riego, fertilización o cambios de estado, complementado con gráficas sencillas que muestran la humedad y su evolución.
+
+<a href="https://ibb.co/0VpKDycs"><img src="https://i.ibb.co/2Y0Sn3yZ/Historial-Planta.png" alt="Historial-Planta" border="0"></a>
+
+#### 4.4.2. Mobile Applications Wireframes
+
+- Login:  
+Pantalla de inicio de sesión que permite al usuario ingresar con correo (usuario) y contraseña; incluye logo, campos para credenciales, botón "Ingresar" y enlace para registrarse.
+
+<a href="https://ibb.co/99SpTT6x"><img src="https://i.ibb.co/TBdw886Q/1.png" alt="1" border="0"></a>
+
+- Registro:  
+Pantalla de creación de cuenta con campos para nombre, apellido, email y contraseña, junto a un botón "Registrarse" para completar el alta.
+
+<a href="https://ibb.co/4ZK2fzHL"><img src="https://i.ibb.co/xSXYsWNb/2.png" alt="2" border="0"></a>
+
+- Navegación principal:  
+Interfaz con barra de navegación inferior que muestra las pestañas principales (Plantas, IoT, Tareas, Perfil) y un área de contenido central que cambia según la pestaña activa.
+
+<a href="https://ibb.co/qMTGy3bs"><img src="https://i.ibb.co/VWfyjcXS/3.png" alt="3" border="0"></a>
+
+- Mis Plantas (Dashboard):  
+Vista en cuadrícula de tarjetas de plantas que muestran imagen, nombre y especie; incluye un botón flotante para añadir una nueva planta.
+
+<a href="https://ibb.co/d4j5Ykp9"><img src="https://i.ibb.co/hFLmz2d5/4.png" alt="4" border="0"></a>
+
+- Detalle de Planta:  
+Pantalla de ficha individual con imagen, especie y un historial de cuidados (p. ej. regada, abonada) presentado como lista de acciones recientes.
+
+<a href="https://ibb.co/GQ8Fvzxf"><img src="https://i.ibb.co/9H1G9Q8m/5.png" alt="5" border="0"></a>
+
+- Añadir Planta:  
+Formulario sencillo para registrar una nueva planta con campos como nombre y especie y un botón "Guardar Planta" para confirmar el registro.
+
+<a href="https://ibb.co/WWq6wJvf"><img src="https://i.ibb.co/0j8cSbyr/6.png" alt="6" border="0"></a>
+
+- Panel IoT:  
+Panel de telemetría con lecturas en vivo (por ejemplo humedad y temperatura) y controles manuales para actuadores (como bomba o lámpara) con toggles.
+
+<a href="https://ibb.co/N6rVQ974"><img src="https://i.ibb.co/nsBgZ7RW/7.png" alt="7" border="0"></a>
+
+- Tareas / Cuidados:  
+Lista de tareas de cuidado con casillas de verificación, título de la tarea y fecha programada, que permite marcar tareas como completadas.
+
+<a href="https://ibb.co/b57tJRNH"><img src="https://i.ibb.co/3mkKzYSf/8.png" alt="8" border="0"></a>
+
+- Perfil:  
+Resumen del usuario con avatar, nombre y plan de suscripción, más accesos a opciones como configuración de notificaciones y gestión de suscripción.
+
+<a href="https://ibb.co/fYPfJm9g"><img src="https://i.ibb.co/hRtb0pc6/9.png" alt="9" border="0"></a>
+
+- Editar Perfil:  
+Formulario para actualizar datos del usuario (nombre, plan de suscripción) y un botón para guardar los cambios.
+
+<a href="https://ibb.co/PG98rmD9"><img src="https://i.ibb.co/whw1d0cw/10.png" alt="10" border="0"></a>
+
+<br><br>
+
 
 ### 5.4.1. Applications Wireflow Diagrams
 
