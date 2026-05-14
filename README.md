@@ -4654,6 +4654,10 @@ En esta sección se presenta una versión básica de nuestra landing page para n
 
 ### 5.3.2. Landing Page Mock-up
 
+A partir de nuestro wireframe, que representa una versión básica de la landing page, se desarrolló la versión final. Esta mantiene los mismos apartados definidos previamente, incorporando además los colores seleccionados y un lenguaje pensado para ser claro y amigable para el usuario.
+
+<a href="https://ibb.co/tw806D0M"><img src="https://i.ibb.co/Q7rWVMWF/Landing-Page-Updated.png" alt="Landing-Page-Updated" border="0"></a>
+
 ## 5.4. Applications UX/UI Design
 
 ### 5.4.1. Applications Wireflow Diagrams
