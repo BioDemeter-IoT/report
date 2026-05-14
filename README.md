@@ -4727,7 +4727,60 @@ Historial organizado de las acciones realizadas sobre una planta, como riego, fe
 
 <a href="https://ibb.co/0VpKDycs"><img src="https://i.ibb.co/2Y0Sn3yZ/Historial-Planta.png" alt="Historial-Planta" border="0"></a>
 
+#### 4.4.2. Mobile Applications Wireframes
+
+- Login:  
+Pantalla de inicio de sesión que permite al usuario ingresar con correo (usuario) y contraseña; incluye logo, campos para credenciales, botón "Ingresar" y enlace para registrarse.
+
+<a href="https://ibb.co/99SpTT6x"><img src="https://i.ibb.co/TBdw886Q/1.png" alt="1" border="0"></a>
+
+- Registro:  
+Pantalla de creación de cuenta con campos para nombre, apellido, email y contraseña, junto a un botón "Registrarse" para completar el alta.
+
+<a href="https://ibb.co/4ZK2fzHL"><img src="https://i.ibb.co/xSXYsWNb/2.png" alt="2" border="0"></a>
+
+- Navegación principal:  
+Interfaz con barra de navegación inferior que muestra las pestañas principales (Plantas, IoT, Tareas, Perfil) y un área de contenido central que cambia según la pestaña activa.
+
+<a href="https://ibb.co/qMTGy3bs"><img src="https://i.ibb.co/VWfyjcXS/3.png" alt="3" border="0"></a>
+
+- Mis Plantas (Dashboard):  
+Vista en cuadrícula de tarjetas de plantas que muestran imagen, nombre y especie; incluye un botón flotante para añadir una nueva planta.
+
+<a href="https://ibb.co/d4j5Ykp9"><img src="https://i.ibb.co/hFLmz2d5/4.png" alt="4" border="0"></a>
+
+- Detalle de Planta:  
+Pantalla de ficha individual con imagen, especie y un historial de cuidados (p. ej. regada, abonada) presentado como lista de acciones recientes.
+
+<a href="https://ibb.co/GQ8Fvzxf"><img src="https://i.ibb.co/9H1G9Q8m/5.png" alt="5" border="0"></a>
+
+- Añadir Planta:  
+Formulario sencillo para registrar una nueva planta con campos como nombre y especie y un botón "Guardar Planta" para confirmar el registro.
+
+<a href="https://ibb.co/WWq6wJvf"><img src="https://i.ibb.co/0j8cSbyr/6.png" alt="6" border="0"></a>
+
+- Panel IoT:  
+Panel de telemetría con lecturas en vivo (por ejemplo humedad y temperatura) y controles manuales para actuadores (como bomba o lámpara) con toggles.
+
+<a href="https://ibb.co/N6rVQ974"><img src="https://i.ibb.co/nsBgZ7RW/7.png" alt="7" border="0"></a>
+
+- Tareas / Cuidados:  
+Lista de tareas de cuidado con casillas de verificación, título de la tarea y fecha programada, que permite marcar tareas como completadas.
+
+<a href="https://ibb.co/b57tJRNH"><img src="https://i.ibb.co/3mkKzYSf/8.png" alt="8" border="0"></a>
+
+- Perfil:  
+Resumen del usuario con avatar, nombre y plan de suscripción, más accesos a opciones como configuración de notificaciones y gestión de suscripción.
+
+<a href="https://ibb.co/fYPfJm9g"><img src="https://i.ibb.co/hRtb0pc6/9.png" alt="9" border="0"></a>
+
+- Editar Perfil:  
+Formulario para actualizar datos del usuario (nombre, plan de suscripción) y un botón para guardar los cambios.
+
+<a href="https://ibb.co/PG98rmD9"><img src="https://i.ibb.co/whw1d0cw/10.png" alt="10" border="0"></a>
+
 <br><br>
+
 
 ### 5.4.1. Applications Wireflow Diagrams
 
