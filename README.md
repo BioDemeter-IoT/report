@@ -4648,6 +4648,10 @@ Enlace del Figma para visualización de el Landing Page UI Design: [Enlace del f
 
 ### 5.3.1. Landing Page Wireframe
 
+En esta sección se presenta una versión básica de nuestra landing page para navegador de escritorio. En ella se incluyen los elementos clave para generar una buena primera impresión en el usuario: una breve introducción sobre el proyecto, una explicación simplificada de su funcionamiento en tres pasos, la visualización de los distintos planes disponibles y, finalmente, una pequeña presentación de nuestra startup.
+
+<a href="https://ibb.co/9kNGHtMT"><img src="https://i.ibb.co/ycXVFS3y/wireframelandingpage.png" alt="wireframelandingpage" border="0"></a><br /><a target='_blank' href='https://es.imgbb.com/'>compartir imágenes en redes sociales</a><br />
+
 ### 5.3.2. Landing Page Mock-up
 
 ## 5.4. Applications UX/UI Design
