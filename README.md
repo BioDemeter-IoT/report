@@ -4913,6 +4913,36 @@ Se adoptará el estándar de Conventional Commits en los mensajes de commit para
 
 ### 6.1.3. Source Code Style Guide & Conventions
 
+
+
+Para asegurar la calidad, legibilidad y el mantenimiento a largo plazo de la solución IoT Plant Sync, se ha definido un marco de convenciones técnicas. Estas guías deben ser respetadas por los integrantes del equipo de desarrollo  en los diferentes componentes de la solución.
+
+
+####  Landing Page (HTML, CSS, JavaScript)
+* **HTML:** Cierre estricto de etiquetas, uso obligatorio de texto alt para accesibilidad y nombres de atributos en minúsculas.
+* **CSS:** Implementación de nomenclatura kebab-case para clases y mantenimiento de especificidad baja para facilitar cambios.
+* **JavaScript:** Desarrollo íntegro en inglés con variables en camelCase y clases siguiendo el estándar PascalCase.
+
+####  Web App (TypeScript)
+* **Tipado estricto:** Uso obligatorio de interfaces y tipos definidos para los datos del sensor, evitando el tipo "any".
+* **Componentes:** Definición de selectores con prefijos personalizados y nomenclatura de archivos alineada a las guías de Angular.
+* **Lógica de negocio:** Separación clara entre la lógica de los servicios y la gestión de la vista en los componentes.
+
+#### Mobile App (Dart)
+* **Nomenclatura:** Uso de snake_case para nombres de archivos y PascalCase para la definición de clases de Widgets.
+* **Organización:** Extracción de widgets complejos en componentes independientes para mejorar la legibilidad del árbol de widgets.
+
+
+####  Backend (Java)
+* **Estándares Java:** Uso de PascalCase para clases y camelCase para métodos, manteniendo el código y comentarios en inglés.
+* **Arquitectura REST:** Diseño de endpoints utilizando sustantivos en plural y siguiendo los verbos HTTP estándares.
+* **Persistencia:** Nomenclatura clara para entidades y repositorios que reflejen el modelo de datos IoT de PlantSync.
+
+#### Testing & Documentación (Gherkin)
+* **Estructura Gherkin:** Seguimiento riguroso del formato Given - When - Then para la redacción de escenarios de prueba.
+* **Criterios de Aceptación:** Enfoque en el comportamiento del usuario y la respuesta del hardware ante cambios de humedad.
+* **Consistencia:** Redacción de escenarios en inglés para mantener la uniformidad con el resto del repositorio técnico.
+
 ### 6.1.4. Software Deployment Configuration
 
 ## 6.2. Landing Page, Services & Applications Implementation
