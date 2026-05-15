@@ -4961,9 +4961,152 @@ Se siguieron estos pasos para el despliegue de la Landing Page en GitHub Pages:
 
 ### 6.2.1. Sprint 1
 
+
 #### 6.2.1.1. Sprint Planning 1
 
+
+
+
+<table border="1">
+  <tbody>
+    <tr>
+      <td><b>Sprint 1</b></td>
+      <td>implementacion de Landing Page, Backend, Frontend para Aplicación Web y Movil </td>
+    </tr>
+    <tr>
+      <td colspan="2"><b>Sprint Planning Background</b></td>
+    </tr>
+    <tr>
+      <td><b>Date</b></td>
+      <td>10/05/2026</td>
+    </tr>
+    <tr>
+      <td><b>Time</b></td>
+      <td>19:30 PM</td>
+    </tr>
+    <tr>
+      <td><b>Location</b></td>
+      <td>Reunión realizada mediante Discord</td>
+    </tr>
+    <tr>
+      <td><b>Prepared By</b></td>
+      <td>Palomino Fiestas, Erick Leonardo</td>
+    </tr>
+    <tr>
+      <td><b>Attendees (to planning meeting)</b></td>
+      <td>
+           Diego Rolin Acuña Tomas<br>
+           Farid Sebastian Briceño De La Cruz <br>
+          Rivera Ratachi, Renzo Sebastian <br>
+          Erick Leonardo Palomino Fiestas <br>
+          Carlos Andres Coca Lavado <br>
+          Elvia Marcela Rodriguez Villa <br>
+          Max Anthony Paitan Pumacahua <br>
+  </td>
+    </tr>
+    <tr>
+      <td><b> Previous Sprint  Review</b></td>
+      <td> Al ser el primer sprint, no se realizo.
+      </td>
+    </tr>
+    <tr>
+      <td><b>Previous Sprint Retrospective</b></td>
+      <td>Al ser el primer sprint, no se realizo.</td>
+    </tr>
+    <tr>
+      <td colspan="2"><b>Sprint Goal & User Stories</b></td>
+    </tr>
+    <tr>
+      <td><b>Sprint 1 Goal</b></td>
+      <td>Our focus is on delivering an informative and visually appealing landing page for PlantSync. We believe it delivers a clear first impression and encourages user interest in the application. This will be confirmed when potential users can access the landing page and understand the app’s value proposition and core features.</td>
+    </tr>
+    <tr>
+      <td><b>Sprint 1 Velocity</b></td>
+      <td> Points</td>
+    </tr>
+    <tr>
+      <td><b>Sum of Story Points</b></td>
+      <td> Points
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
 #### 6.2.1.2. Aspect Leaders and Collaborators
+
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Team Member<br>(Last Name, First Name)</th>
+      <th>Github Username</th>
+      <th> ae<br>Leader (L) / Collaborator (C)</th>
+      <th>ae <br>(L) / (C)</th>
+      <th>ae <br>(L) / (C)</th>
+      <th>ae <br>(L) / (C)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Palomino Fiestas, Erick Leonardo</td>
+      <td>erickLeo13</td>
+      <td>L</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>Diego Rolin Acuña Tomas</td>
+      <td>ComidaRapida007</td>
+      <td>C</td>
+      <td>C</td>
+      <td>L</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>Farid Sebastian Briceño De La Cruz</td>
+      <td>InjustShin</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td>Rivera Ratachi, Renzo Sebastian</td>
+      <td>1sopod</td>
+      <td>C</td>
+      <td>L</td>
+      <td>C</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>Carlos Andres Coca Lavado</td>
+      <td>MrAndres08DV</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+    </tr>
+     <tr>
+      <td>Max Anthony Paitan Pumacahua</td>
+      <td>maxpp2910</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+    </tr>
+ <tr>
+      <td>Elvia Marcela Rodriguez Villa</td>
+      <td>ElviaRV</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+    </tr>
+
+  </tbody>
+</table>
 
 #### 6.2.1.3. Sprint Backlog 1
 
