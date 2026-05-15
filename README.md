@@ -4740,6 +4740,21 @@ Historial organizado de las acciones realizadas sobre una planta, como riego, fe
 
 <a href="https://ibb.co/0VpKDycs"><img src="https://i.ibb.co/2Y0Sn3yZ/Historial-Planta.png" alt="Historial-Planta" border="0"></a>
 
+- Mis dispositivos IoT:  
+Vista general que agrupa a las plantas que cuentan con dispositivos IoT conectados para su control, mostrando los resultados actualizados de la humedad del suelo, la temperatura y la humedad del aire. Puede hacerse clic en cada uno, para poder abrir el control personalizado por cada planta.
+
+<a href="https://ibb.co/yJQxBy4"><img src="https://i.ibb.co/qwr2FsJ/iotdevice-drawio.png" alt="iotdevice-drawio" border="0"></a>
+
+- Sensores y métricas de planta:  
+Pantalla de seguimiento que presenta las mediciones obtenidas por los sensores por la planta seleccionada, como humedad del suelo, temperatura y humedad ambiental, permitiendo interpretar de forma clara el estado actual de la planta. Además, se cuenta con un análisis general de los resultados obtenidos durante un periodo de tiempo (dashboard para análitica)
+
+<a href="https://ibb.co/LD0QBVtK"><img src="https://i.ibb.co/spg5c8w7/sensors-drawio.png" alt="sensors-drawio" border="0"></a>
+
+- Actuadores de planta:  
+Interfaz destinada al control de actuadores como bomba para riego y las luces, donde el usuario puede activar o desactivar cada componente y revisar su estado para automatizar acciones de cuidado.
+
+<a href="https://ibb.co/zV1FjB6J"><img src="https://i.ibb.co/WvQ0qMVt/actuators-drawio.png" alt="actuators-drawio" border="0"></a>
+
 #### 4.4.2. Mobile Applications Wireframes
 
 - Login:  
