@@ -4945,6 +4945,18 @@ Para asegurar la calidad, legibilidad y el mantenimiento a largo plazo de la sol
 
 ### 6.1.4. Software Deployment Configuration
 
+Se siguieron estos pasos para el despliegue de la Landing Page en GitHub Pages:
+
+1. Los archivos finales se cargan al repositorio mediante commits descriptivos, asegurando que el estado actual de la rama principal sea estable
+2.  Dentro del repositorio de la Landing Page, se accede a la sección de Settings > Pages, seleccionando la rama main y estableciendo la carpeta raíz /main como origen del despliegue
+3. Al guardar la configuración, GitHub Actions inicia el flujo automático de compilación y preparación de los activos estáticos del sitio
+4.  Tras completar el proceso de despliegue, la plataforma genera una URL pública segura (HTTPS), permitiendo el acceso global a la Landing Page de PlantSync
+
+[Enlace a la Landing Page desplegada](https://biopafi-opensource.github.io/plantSync-LandingPage/)
+
+
+
+
 ## 6.2. Landing Page, Services & Applications Implementation
 
 ### 6.2.1. Sprint 1
