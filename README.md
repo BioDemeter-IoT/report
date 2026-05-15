@@ -313,8 +313,12 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
   <tbody>
     <tr>
       <td rowspan="7"><strong>Trabaja en equipo para proporcionar liderazgo en forma conjunta</strong></td>
-      <td><strong>Rivera Ratachi, Renzo Sebastian</strong><br><b>TB1:</b> Lideró la definición estratégica mediante la elaboración de Lean UX Hypothesis Statements y la identificación de segmentos objetivo.</td>
-      <td rowspan="7"><b>TB1:</b> El equipo ejerció un liderazgo compartido donde cada integrante asumió la dirección de áreas críticas. La integración entre el análisis de negocio, la investigación de campo y el modelado técnico permitió establecer una visión unificada para la solución IoT, asegurando que cada componente del sistema estuviera alineado con los objetivos estratégicos del proyecto.</td>
+      <td><strong>Rivera Ratachi, Renzo Sebastian</strong><br><b>TB1:</b> Lideró la definición estratégica mediante la elaboración de Lean UX Hypothesis Statements y la identificación de segmentos objetivo.
+      <b>TP:</b>Lideró la planificación del Sprint Planning 1, el Software Deployment Configuration y el Source Code Style Guide & Conventions</td>
+      <td rowspan="7"><b>TB1:</b> El equipo ejerció un liderazgo compartido donde cada integrante asumió la dirección de áreas críticas. La integración entre el análisis de negocio, la investigación de campo y el modelado técnico permitió establecer una visión unificada para la solución IoT, asegurando que cada componente del sistema estuviera alineado con los objetivos estratégicos del proyecto.
+      <br></br>
+      <b>TP:</b>
+      </td>
     </tr>
     <tr>
       <td><strong>Palomino Fiestas, Erick Leonardo</strong><br><b>TB1:</b> Dirigió el análisis de competidores y estableció la base de seguridad en el IAM Bounded Context.</td>
@@ -5110,7 +5114,413 @@ Se siguieron estos pasos para el despliegue de la Landing Page en GitHub Pages:
 
 #### 6.2.1.3. Sprint Backlog 1
 
+<h3>Sprint Backlog – Sprint 1</h3>
+<table border="1" cellspacing="0" cellpadding="5">
+<thead>
+<tr>
+<th colspan="8">Sprint 1</th>
+</tr>
+<tr>
+<th colspan="2">User Story</th>
+<th colspan="2">Work-Item / Task</th>
+<th rowspan="2">Description</th>
+<th rowspan="2">Estimation (Hours)</th>
+<th rowspan="2">Assigned To</th>
+<th rowspan="2">Status (To-do / In-Process / To-Review / Done)</th>
+</tr>
+<tr>
+<th>Id</th>
+<th>Title</th>
+<th>Id</th>
+<th>Title</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
 #### 6.2.1.4. Development Evidence for Sprint Review
+
+<br>
+
+<table align="center">
+  <tr>
+    <td><strong>Repository</strong></td>
+    <td><strong>Branch</strong></td>
+    <td><strong>Commit Id</strong></td>
+    <td><strong>Commit Message</strong></td>
+    <td><strong>Commit Message Body</strong></td>
+    <td><strong>Commited on (Date)</strong></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+    <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</tr>
+    <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+ <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+<table>
+
+<br>
 
 #### 6.2.1.5. Testing Suite Evidence for Sprint Review
 
@@ -5118,19 +5528,74 @@ Se siguieron estos pasos para el despliegue de la Landing Page en GitHub Pages:
 
 #### 6.2.1.7. Services Documentation Evidence for Sprint Review
 
+<h3>Endpoints implementados</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Endpoint URL (local)</th>
+      <th>Recurso</th>
+      <th>Verbo HTTP</th>
+      <th>Acción / Sintaxis</th>
+      <th>Parámetros</th>
+      <th>Ejemplo de Response</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 #### 6.2.1.8. Software Deployment Evidence for Sprint Review
 
 #### 6.2.1.9. Team Collaboration Insights during Sprint
-
-## 6.3. Validation Interviews
-
-### 6.3.1. Diseño de Entrevistas
-
-### 6.3.2. Registro de Entrevistas
-
-### 6.3.3. Evaluaciones según heurísticas
-
-## 6.4. Video About-the-Product
 
 # Conclusiones
 
