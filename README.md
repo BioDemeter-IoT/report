@@ -4648,15 +4648,28 @@ Enlace del Figma para visualización de el Landing Page UI Design: [Enlace del f
 
 ### 5.3.1. Landing Page Wireframe
 
-En esta sección se presenta una versión básica de nuestra landing page para navegador de escritorio. En ella se incluyen los elementos clave para generar una buena primera impresión en el usuario: una breve introducción sobre el proyecto, una explicación simplificada de su funcionamiento en tres pasos, la visualización de los distintos planes disponibles y, finalmente, una pequeña presentación de nuestra startup.
+En esta sección se presenta una versión básica de nuestra landing page para navegador de escritorio. En ella se incluyen los elementos clave para generar una buena primera impresión en el usuario: una breve introducción sobre el proyecto, una explicación simplificada de su funcionamiento, el uso de herramientas IoT en el monitoreo de la planta, el uso de IA botánica para resolver dudas, la visualización de los distintos planes disponibles, el FAQ y, finalmente, una pequeña presentación de nuestra startup y nuestro grupo de trabajo.
 
-<a href="https://ibb.co/9kNGHtMT"><img src="https://i.ibb.co/ycXVFS3y/wireframelandingpage.png" alt="wireframelandingpage" border="0"></a><br /><a target='_blank' href='https://es.imgbb.com/'>compartir imágenes en redes sociales</a><br />
+
+<a href="https://ibb.co/xSL39dWw"><img src="https://i.ibb.co/Fb3nZC2c/wire1.png" alt="wire1" border="0"></a>
+
+<a href="https://ibb.co/HpY5K1kP"><img src="https://i.ibb.co/vvm0cgKd/wire2.png" alt="wire2" border="0"></a>
+
+<a href="https://ibb.co/gb6myw0r"><img src="https://i.ibb.co/xK3XhGn2/wire3.png" alt="wire3" border="0"></a>
 
 ### 5.3.2. Landing Page Mock-up
 
 A partir de nuestro wireframe, que representa una versión básica de la landing page, se desarrolló la versión final. Esta mantiene los mismos apartados definidos previamente, incorporando además los colores seleccionados y un lenguaje pensado para ser claro y amigable para el usuario.
 
-<a href="https://ibb.co/tw806D0M"><img src="https://i.ibb.co/Q7rWVMWF/Landing-Page-Updated.png" alt="Landing-Page-Updated" border="0"></a>
+<a href="https://ibb.co/WpHHM6HX"><img src="https://i.ibb.co/3YTTj7Tb/mock1.png" alt="mock1" border="0"></a>
+
+<a href="https://ibb.co/Zz7XBj7V"><img src="https://i.ibb.co/23Hhv9Hy/mock2.png" alt="mock2" border="0"></a>
+
+<a href="https://ibb.co/rW2g8cL"><img src="https://i.ibb.co/MXkbwGj/mock3.png" alt="mock3" border="0"></a>
+
+<a href="https://ibb.co/TMK9RXrF"><img src="https://i.ibb.co/s958QStM/mock4.png" alt="mock4" border="0"></a>
+
+<a href="https://ibb.co/20FdTVRP"><img src="https://i.ibb.co/zWmZz9Cb/mock5.png" alt="mock5" border="0"></a>
 
 ## 5.4. Applications UX/UI Design
 
