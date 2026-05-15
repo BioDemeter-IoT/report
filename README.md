@@ -321,22 +321,26 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
       </td>
     </tr>
     <tr>
-      <td><strong>Palomino Fiestas, Erick Leonardo</strong><br><b>TB1:</b> Dirigió el análisis de competidores y estableció la base de seguridad en el IAM Bounded Context.</td>
+      <td><strong>Palomino Fiestas, Erick Leonardo</strong><br><b>TB1:</b> Dirigió el análisis de competidores y estableció la base de seguridad en el IAM Bounded Context.
+      <b>TP:</b>Lideró la mejora del frontend de la aplicación web y el apartado del Sprint 1</td>
     </tr>
     <tr>
-      <td><strong>Coca Lavado, Carlos Andrés</strong><br><b>TB1:</b> Lideró la planificación técnica mediante la estructuración del Product Backlog y los diagramas de arquitectura C4.</td>
+      <td><strong>Coca Lavado, Carlos Andrés</strong><br><b>TB1:</b> Lideró la planificación técnica mediante la estructuración del Product Backlog y los diagramas de arquitectura C4.
+      <b>TP:</b>Lideró el desarrollo del figma, del sprint Backlog 1 y del Services Documentation on Evidence for Sprint Review
+      </td>
     </tr>
     <tr>
-      <td><strong>Paitan Pumacahua, Max Anthony</strong><br><b>TB1:</b> Ejerció liderazgo en el modelado estructural del dominio mediante el Context Mapping y el Domain Message Flows Modeling.</td>
+      <td><strong>Paitan Pumacahua, Max Anthony</strong><br><b>TB1:</b> Ejerció liderazgo en el modelado estructural del dominio mediante el Context Mapping y el Domain Message Flows Modeling.
+      <b>TP:</b>Lideró el desarrollo de la Landing page wireframe & mockup, Web application wireframes & mockups y el Mobile application wireframes</td>
     </tr>
     <tr>
       <td><strong>Rodríguez Villa, Elvia Marcela</strong><br><b>TB1:</b> Lideró el diseño arquitectónico de los Bounded Context de Inteligencia Botánica y Análisis Externo.</td>
     </tr>
     <tr>
-      <td><strong>Briceño De La Cruz, Farid Sebastian</strong><br><b>TB1:</b> Dirigió la fase de descubrimiento conceptual mediante el Design Level Event Storming y la definición de la problemática.</td>
+      <td><strong>Briceño De La Cruz, Farid Sebastian</strong><br><b>TB1:</b> Dirigió la fase de descubrimiento conceptual mediante el Design Level Event Storming y la definición de la problemática.<b>TP:</b>Lideró el desarrollo del Software Development, Evironment Configuration y el Source Code Managment</td>
     </tr>
     <tr>
-      <td><strong>Acuña Tomas, Diego Rolin</strong><br><b>TB1:</b> Lideró la identidad de la Startup y el diseño técnico del Bounded Context de IoT Management.</td>
+      <td><strong>Acuña Tomas, Diego Rolin</strong><br><b>TB1:</b> Lideró la identidad de la Startup y el diseño técnico del Bounded Context de IoT Management.<b>TP:</b>Lideró el desarrollo del Applications Wireflow Diagrams, Applications Mock-ups, Applications User Flow Diagrams, Applications Prototyping e IoT Device Design</td>
     </tr>
     <tr>
       <td rowspan="7"><strong>Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.</strong></td>
