@@ -5053,15 +5053,15 @@ Se siguieron estos pasos para el despliegue de la Landing Page en GitHub Pages:
     </tr>
     <tr>
       <td><b>Sprint 1 Goal</b></td>
-      <td>Our focus is on delivering an informative and visually appealing landing page for PlantSync. We believe it delivers a clear first impression and encourages user interest in the application. This will be confirmed when potential users can access the landing page and understand the app’s value proposition and core features.</td>
+      <td>Our focus is on establishing the public presence of PlantSync by deploying an informative and appealing landing page. We believe this delivers a clear first impression and drives early user engagement. This will be confirmed when the frontend application is successfully deployed and accessible to potential users, allowing them to explore the app's value proposition and core features, while the supporting backend services remain in a local development environment.</td>
     </tr>
     <tr>
       <td><b>Sprint 1 Velocity</b></td>
-      <td> Points</td>
+      <td> 68 Points</td>
     </tr>
     <tr>
-      <td><b>Sum of Story Points</b></td>
-      <td> Points
+      <td><b>14 Sum of Story Points</b></td>
+      <td> 68 Points
       </td>
     </tr>
   </tbody>
