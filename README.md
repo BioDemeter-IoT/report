@@ -4947,12 +4947,17 @@ Para asegurar la calidad, legibilidad y el mantenimiento a largo plazo de la sol
 
 Se siguieron estos pasos para el despliegue de la Landing Page en GitHub Pages:
 
-1. Los archivos finales se cargan al repositorio mediante commits descriptivos, asegurando que el estado actual de la rama principal sea estable
-2.  Dentro del repositorio de la Landing Page, se accede a la sección de Settings > Pages, seleccionando la rama main y estableciendo la carpeta raíz /main como origen del despliegue
-3. Al guardar la configuración, GitHub Actions inicia el flujo automático de compilación y preparación de los activos estáticos del sitio
-4.  Tras completar el proceso de despliegue, la plataforma genera una URL pública segura (HTTPS), permitiendo el acceso global a la Landing Page de PlantSync
+1. El diseño y la estructura inicial de la interfaz de la Landing Page se generaron de forma iterativa utilizando v0 de Vercel, optimizando los componentes visuales mediante inteligencia artificial generativa basada en los requerimientos del proyecto.
 
-[Enlace a la Landing Page desplegada](https://biopafi-opensource.github.io/plantSync-LandingPage/)
+2.  Una vez finalizado el diseño en v0, el código fuente se exportó y conectó directamente a un repositorio específico en GitHub, el cual almacena el código del frontend de PlantSync de manera segura y versionada.
+
+3. Dentro del panel de control de Vercel, se importó el repositorio de GitHub. La plataforma detectó automáticamente el framework y las configuraciones base del proyecto, estableciendo la rama principal (main) como la fuente de producción para los despliegues.
+
+4.  Con la integración activa, cada vez que se realiza un nuevo commit o push a la rama principal en GitHub, Vercel activa un flujo automático de compilación (build) y verificación de código, reduciendo la intervención manual.
+
+5. Tras completar con éxito el proceso de compilación, Vercel genera un enlace de producción único y seguro con protocolo HTTPS, permitiendo el acceso global e inmediato a la Landing Page de PlantSync.
+
+[Enlace a la Landing Page desplegada](https://v0-landingpage-seven-mu.vercel.app/en)
 
 
 
@@ -5045,6 +5050,7 @@ Se siguieron estos pasos para el despliegue de la Landing Page en GitHub Pages:
       <th>ae <br>(L) / (C)</th>
       <th>ae <br>(L) / (C)</th>
       <th>ae <br>(L) / (C)</th>
+      <th>ae <br>(L) / (C)</th>
     </tr>
   </thead>
   <tbody>
@@ -5052,6 +5058,7 @@ Se siguieron estos pasos para el despliegue de la Landing Page en GitHub Pages:
       <td>Palomino Fiestas, Erick Leonardo</td>
       <td>erickLeo13</td>
       <td>L</td>
+      <td>C</td>
       <td>C</td>
       <td>C</td>
       <td>C</td>
@@ -5063,6 +5070,7 @@ Se siguieron estos pasos para el despliegue de la Landing Page en GitHub Pages:
       <td>C</td>
       <td>L</td>
       <td>C</td>
+      <td>C</td>
     </tr>
     <tr>
       <td>Farid Sebastian Briceño De La Cruz</td>
@@ -5071,6 +5079,7 @@ Se siguieron estos pasos para el despliegue de la Landing Page en GitHub Pages:
       <td>C</td>
       <td>C</td>
       <td>L</td>
+      <td>C</td>
     </tr>
     <tr>
       <td>Rivera Ratachi, Renzo Sebastian</td>
@@ -5079,10 +5088,12 @@ Se siguieron estos pasos para el despliegue de la Landing Page en GitHub Pages:
       <td>L</td>
       <td>C</td>
       <td>C</td>
+      <td>C</td>
     </tr>
     <tr>
       <td>Carlos Andres Coca Lavado</td>
       <td>MrAndres08DV</td>
+      <td>C</td>
       <td>C</td>
       <td>C</td>
       <td>C</td>
@@ -5095,6 +5106,7 @@ Se siguieron estos pasos para el despliegue de la Landing Page en GitHub Pages:
       <td>C</td>
       <td>C</td>
       <td>C</td>
+      <td>C</td>
     </tr>
  <tr>
       <td>Elvia Marcela Rodriguez Villa</td>
@@ -5103,8 +5115,8 @@ Se siguieron estos pasos para el despliegue de la Landing Page en GitHub Pages:
       <td>C</td>
       <td>C</td>
       <td>C</td>
+      <td>C</td>
     </tr>
-
   </tbody>
 </table>
 
