@@ -4989,6 +4989,8 @@ Se siguieron estos pasos para el despliegue de la Landing Page en GitHub Pages:
 
 [Enlace a la Landing Page desplegada](https://v0-landingpage-seven-mu.vercel.app/en)
 
+[Enlace al FrontEnd desplegado](https://bio-demeter-plant-sync-frontend.vercel.app/login)
+
 
 
 
@@ -5265,16 +5267,6 @@ Link al trello: https://trello.com/invite/b/69ed479188a27ae377d2c567/ATTI868dfd2
 <td>Done</td>
 </tr>
 <tr>
-<td>US25</td>
-<td>Visualización de perfil de usuario</td>
-<td>WI009</td>
-<td>Implementar vista de perfil</td>
-<td>Desarrollar la interfaz para que el usuario visualice su resumen de actividades de cuidado y estadísticas.</td>
-<td>6</td>
-<td>Renzo Rivera</td>
-<td>Done</td>
-</tr>
-<tr>
 <td>US29</td>
 <td>Acceder a perfil de planta</td>
 <td>WI010</td>
@@ -5335,11 +5327,11 @@ Link al trello: https://trello.com/invite/b/69ed479188a27ae377d2c567/ATTI868dfd2
 <td>Done</td>
 </tr>
 <tr>
-<td>US16</td>
-<td>Edición de datos de planta</td>
+<td>US28</td>
+<td>Configuración de tareas</td>
 <td>WI016</td>
-<td>Funcionalidad de edición de planta</td>
-<td>Habilitar la edición de datos para actualizar nombre, tipo o características de una planta previamente registrada.</td>
+<td>Funcionalidad de añadir tareas</td>
+<td>Permitir al usuario crear una determinada tarea para el cuidado de sus plantas</td>
 <td>4</td>
 <td>Renzo Rivera</td>
 <td>Done</td>
@@ -5439,6 +5431,122 @@ Link al trello: https://trello.com/invite/b/69ed479188a27ae377d2c567/ATTI868dfd2
 </table>
 
 #### 6.2.1.6. Execution Evidence for Sprint Review
+
+<br>
+
+En el Sprint 1 se alcanzó un desarrollo completo en la implementación y maquetación de la Landing Page, asegurando la presencia digital del proyecto. Además, se logró avanzar significativamente en el desarrollo del frontend y las pantallas principales de la aplicación móvil para la gestión de usuarios y plantas.
+
+<br>
+
+<ul>
+  <li>US01 Visualización de beneficios botánicos en el Landing Page</li>
+  <li>US18 Comparar planes de suscripción</li>
+</ul>
+
+<br>
+<p align="center">
+  <img src="images/EvidenceTesting/LandingPage2.png" alt="execution landing page 1" width="800">
+</p>
+<br>
+<p align="center">
+  <img src="images/EvidenceTesting/LandingPage3.png" alt="execution landing page 2" width="800">
+</p>
+<br>
+<p align="center">
+  <img src="images/EvidenceTesting/LandingPage7.png" alt="execution landing page 2" width="800">
+</p>
+<br>
+
+<ul>
+  <li>US21 Preguntas Frecuentes - FAQ</li>
+  <li>US22 Visualización de Testimonios de Usuarios</li>
+</ul>
+
+<br>
+<p align="center">
+  <img src="images/EvidenceTesting/LandingPage4.png" alt="execution landing page 3" width="800">
+</p>
+<br>
+
+<ul>
+  <li>US04 Redirección a plataformas desde el Landing Page</li>
+  <li>US23 Botones de llamado a la acción para Registro</li>
+</ul>
+
+<br>
+<p align="center">
+  <img src="images/EvidenceTesting/LandingPage1.png" alt="execution landing page 5" width="800">
+</p>
+<br>
+<p align="center">
+  <img src="images/EvidenceTesting/FrontEnd1.jpeg" alt="execution landing page 5" width="800">
+</p>
+<br>
+
+<ul>
+  <li>US20 Selección de idioma</li>
+  <li>US24 Acceso a Redes Sociales y Contacto en Footer</li>
+</ul>
+
+<br>
+<p align="center">
+  <img src="images/EvidenceTesting/LandingPage8.png" alt="execution landing page footer" width="800">
+</p>
+<br>
+<p align="center">
+  <img src="images/EvidenceTesting/LandingPage5.png" alt="execution landing page footer" width="800">
+</p>
+<br>
+
+<ul>
+  <li>US13 Inicio sesión de usuario</li>
+  <li>US14 Registrarse en la app</li>
+</ul>
+
+<br>
+<p align="center">
+  <img src="images/EvidenceTesting/FrontEnd1.jpeg" alt="execution frontend auth" width="350">
+</p>
+<br>
+<p align="center">
+  <img src="images/EvidenceTesting/AppMovil2.png" alt="execution frontend auth" width="350">
+</p>
+<br>
+
+<ul>
+  <li>US06 Registro de nueva planta desde la app móvil</li>
+  <li>US11 Subir fotos de una planta</li>
+  <li>US28 Configuración de tareas</li>
+  <li>US12 Eliminación de planta</li>
+</ul>
+
+<br>
+<p align="center">
+  <img src="images/EvidenceTesting/AppMovil.png" alt="execution frontend plant management" width="350">
+</p>
+<br>
+<p align="center">
+  <img src="images/EvidenceTesting/FrontEnd8.jpeg" alt="execution frontend plant management" width="350">
+</p>
+<br>
+<p align="center">
+  <img src="images/EvidenceTesting/FrontEnd6.jpeg alt="execution frontend plant management" width="350">
+</p>
+<br>
+<p align="center">
+  <img src="images/EvidenceTesting/FrontEnd4.jpeg alt="execution frontend plant management" width="350">
+</p>
+<br>
+
+<ul>
+  <li>US29 Acceder a perfil de planta</li>
+</ul>
+
+<br>
+<p align="center">
+  <img src="images/EvidenceTesting/FrontEnd6.jpeg" alt="execution frontend profiles" width="350">
+</p>
+<br>
 
 #### 6.2.1.7. Services Documentation Evidence for Sprint Review
 
