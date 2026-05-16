@@ -5574,198 +5574,309 @@ En el Sprint 1 se alcanzó un desarrollo completo en la implementación y maquet
 
 <h3>Endpoints implementados</h3>
 
-<table border="1" cellspacing="0" cellpadding="5">
+<table>
   <thead>
     <tr>
-      <th>Endpoint URL (local)</th>
-      <th>Recurso</th>
-      <th>Verbo HTTP</th>
-      <th>Acción / Sintaxis</th>
+      <th>Endpoint</th>
+      <th>Acciones soportadas</th>
       <th>Parámetros</th>
+      <th>Ejemplo de Request</th>
       <th>Ejemplo de Response</th>
+      <th>Documentación (URL)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><code>/api/v1/authentication/sign-up</code></td>
-      <td>IAM</td>
-      <td>POST</td>
-      <td>Registra un usuario y devuelve sus datos básicos.</td>
-      <td><strong>Body:</strong><br><code>email</code>, <code>password</code></td>
-      <td><pre><code>{ "id": 1, "email": "user@plantsync.com", "roles": ["ROLE_USER"] }</code></pre></td>
+      <td>/plants</td>
+      <td>GET, POST, PUT, DELETE</td>
+      <td>id (path), userId, name, species, humidity, imageUrl</td>
+      <td><code>POST /plants</code><br>{ "name": "Cactus", "species": "Suculenta", "userId": 1 }</td>
+      <td>{ "id": 10, "name": "Cactus", "userId": 1 }</td>
+      <td>http://localhost:3000/api-docs</td>
     </tr>
     <tr>
-      <td><code>/api/v1/authentication/sign-in</code></td>
-      <td>IAM</td>
-      <td>POST</td>
-      <td>Autentica al usuario y devuelve el token JWT generado.</td>
-      <td><strong>Body:</strong><br><code>email</code>, <code>password</code></td>
-      <td><pre><code>{ "id": 1, "email": "user@plantsync.com", "token": "eyJhbGci..." }</code></pre></td>
+      <td>/tasks</td>
+      <td>GET, POST, PUT</td>
+      <td>userId, plantId, date, action</td>
+      <td><code>GET /tasks?userId=1</code></td>
+      <td>[{ "id": 3, "action": "Fertilizar", "date": "2025-05-17" }]</td>
+      <td>http://localhost:3000/api-docs</td>
     </tr>
     <tr>
-      <td><code>/api/v1/users/{id}</code></td>
-      <td>IAM</td>
+      <td>/users</td>
+      <td>GET, POST, PUT</td>
+      <td>id (path), email, password, name</td>
+      <td><code>POST /users</code><br>{ "email": "javier@example.com", "password": "123456" }</td>
+      <td>{ "id": 1, "name": "Javier", "email": "javier@example.com" }</td>
+      <td>http://localhost:3000/api-docs</td>
+    </tr>
+    <tr>
+      <td>/api/v1/profiles</td>
+      <td>Profiles</td>
       <td>GET</td>
-      <td>Recupera un usuario por su ID.</td>
-      <td><strong>Path:</strong> <code>id</code></td>
-      <td><pre><code>{ "id": 1, "email": "user@plantsync.com" }</code></pre></td>
+      <td>Get all profiles</td>
+      <td>Ninguno</td>
+      <td><pre><code>{
+  "name": "Monstera Deliciosa",
+  "species": "Planta Trepadora",
+  "acquisitionDate": "2024-04-01",
+  "humidity": "Media",
+  "nextWateringDate": "2024-05-14",
+  "imageUrl": "https://static.wixstatic.com/media/b4df8d_29038c38771f4c67aa279995240d5717~mv2.jpg",
+  "notificationsEnabled": true,
+  "profileId": 1,
+  "id": 1
+}</code></pre></td>
     </tr>
     <tr>
-      <td><code>/api/v1/users</code></td>
-      <td>IAM</td>
-      <td>GET</td>
-      <td>Lista todos los usuarios del sistema.</td>
-      <td><strong>Header:</strong> Bearer Token</td>
-      <td><pre><code>[ { "id": 1, "email": "user@plantsync.com" } ]</code></pre></td>
-    </tr>
-    <tr>
-      <td><code>/api/v1/users/{userId}</code></td>
-      <td>IAM</td>
-      <td>PUT</td>
-      <td>Actualiza la información de un usuario.</td>
-      <td><strong>Path:</strong> <code>id</code><br><strong>Body:</strong> <code>email</code>, <code>password</code></td>
-      <td><pre><code>{ "id": 1, "email": "nuevo@plantsync.com" }</code></pre></td>
-    </tr>
-    <tr>
-      <td><code>/api/v1/profiles</code></td>
+      <td>/api/v1/profiles</td>
       <td>Profiles</td>
       <td>POST</td>
-      <td>Crea un nuevo perfil y devuelve sus datos.</td>
-      <td><strong>Body:</strong><br><code>personName</code>, <code>subscriptionPlan</code>, <code>userId</code></td>
-      <td><pre><code>{ "id": 1, "personName": "Carlos Coca", "subscriptionPlan": "BASIC" }</code></pre></td>
+      <td>Create a new profile</td>
+      <td>Body: profile data</td>
+      <td><pre><code>{
+  "id": 1,
+  "personName": "javier",
+  "subscriptionPLan": "PREMIUM",
+  "UserId": 1
+}</code></pre></td>
     </tr>
     <tr>
-      <td><code>/api/v1/profiles/{id}</code></td>
-      <td>Profiles</td>
-      <td>PUT</td>
-      <td>Actualiza la información de un perfil existente.</td>
-      <td><strong>Path:</strong> <code>id</code><br><strong>Body:</strong> <code>personName</code>, <code>subscriptionPlan</code></td>
-      <td><pre><code>{ "id": 1, "personName": "Carlos Andrés", "subscriptionPlan": "PRO" }</code></pre></td>
-    </tr>
-    <tr>
-      <td><code>/api/v1/profiles/{profileId}</code></td>
+      <td>/api/v1/profiles/{profileId}</td>
       <td>Profiles</td>
       <td>GET</td>
-      <td>Recupera un perfil por su ID.</td>
-      <td><strong>Path:</strong> <code>profileId</code></td>
-      <td><pre><code>{ "id": 1, "personName": "Carlos Coca", "subscriptionPlan": "BASIC" }</code></pre></td>
+      <td>Get a profile by ID</td>
+      <td>Path: profileId</td>
+      <td><pre><code>{
+  "id": 1,
+  "personName": "javier",
+  "subscriptionPLan": "PREMIUM",
+  "UserId": 1
+}</code></pre></td>
     </tr>
     <tr>
-      <td><code>/api/v1/profiles</code></td>
-      <td>Profiles</td>
+      <td>/api/v1/tasks</td>
+      <td>Tasks</td>
       <td>GET</td>
-      <td>Lista todos los perfiles del sistema.</td>
-      <td><strong>Header:</strong> Bearer Token</td>
-      <td><pre><code>[ { "id": 1, "personName": "Carlos Coca" } ]</code></pre></td>
+      <td>Get all tasks</td>
+      <td>Ninguno</td>
+      <td><pre><code>[
+  {
+    "id": 1,
+    "date": "2025-06-16",
+    "action": "Regar planta",
+    "completed": false,
+    "plantId": 2
+  }
+]</code></pre></td>
     </tr>
     <tr>
-      <td><code>/api/v1/profiles/by-user-id</code></td>
-      <td>Profiles</td>
-      <td>GET</td>
-      <td>Recupera un perfil por ID de usuario.</td>
-      <td><strong>Query/Header:</strong> User ID</td>
-      <td><pre><code>{ "id": 1, "personName": "Carlos Coca", "userId": 1 }</code></pre></td>
+      <td>/api/v1/tasks</td>
+      <td>Tasks</td>
+      <td>POST</td>
+      <td>Create a new task</td>
+      <td>Body: task data</td>
+      <td><pre><code>{
+  "id": 1,
+  "date": "2025-06-16",
+  "action": "Regar planta",
+  "completed": false,
+  "plantId": 2
+}</code></pre></td>
     </tr>
     <tr>
-      <td><code>/api/v1/plants</code></td>
+      <td>/api/v1/tasks/{taskId}</td>
+      <td>Tasks</td>
+      <td>DELETE</td>
+      <td>Delete task</td>
+      <td>Path: taskId</td>
+      <td><pre><code>Task with id successfully deleted</code></pre></td>
+    </tr>
+    <tr>
+      <td>/api/v1/plants</td>
       <td>Plants</td>
       <td>POST</td>
-      <td>Crea una nueva planta y devuelve sus datos.</td>
-      <td><strong>Body:</strong><br><code>name</code>, <code>species</code>, <code>profileId</code>, <code>humidity</code></td>
-      <td><pre><code>{ "id": 1, "name": "Mi Ficus", "species": "Ficus lyrata" }</code></pre></td>
+      <td>Create a new plant</td>
+      <td>Body: plant data</td>
+      <td><pre><code>{
+  "name": "Monstera Deliciosa",
+  "species": "Planta Trepadora",
+  "acquisitionDate": "2024-04-01",
+  "humidity": "Media",
+  "nextWateringDate": "2024-05-14",
+  "imageUrl": "https://static.wixstatic.com/media/b4df8d_29038c38771f4c67aa279995240d5717~mv2.jpg",
+  "notificationsEnabled": true,
+  "profileId": 1,
+  "id": 1
+}</code></pre></td>
     </tr>
     <tr>
-      <td><code>/api/v1/plants/{plantId}</code></td>
+      <td>/api/v1/plants/{plantId}</td>
       <td>Plants</td>
       <td>PUT</td>
-      <td>Actualiza la información de una planta existente.</td>
-      <td><strong>Path:</strong> <code>plantId</code><br><strong>Body:</strong> datos a actualizar</td>
-      <td><pre><code>{ "id": 1, "name": "Ficus de Sala", "species": "Ficus lyrata" }</code></pre></td>
+      <td>Update a plant</td>
+      <td>Path: plantId, Body: plant</td>
+      <td><pre><code>{
+  "name": "Monstera Deliciosa",
+  "species": "Planta Trepadora",
+  "acquisitionDate": "2024-04-01",
+  "humidity": "Media",
+  "nextWateringDate": "2024-05-14",
+  "imageUrl": "https://static.wixstatic.com/media/b4df8d_29038c38771f4c67aa279995240d5717~mv2.jpg",
+  "notificationsEnabled": true,
+  "profileId": 1,
+  "id": 1
+}</code></pre></td>
     </tr>
     <tr>
-      <td><code>/api/v1/plants/{plantId}</code></td>
+      <td>/api/v1/plants/{plantId}</td>
       <td>Plants</td>
       <td>DELETE</td>
-      <td>Elimina una planta del sistema.</td>
-      <td><strong>Path:</strong> <code>plantId</code></td>
-      <td><pre><code>Status: 204 No Content</code></pre></td>
+      <td>Delete plant</td>
+      <td>Path: plantId</td>
+      <td><pre><code>Plant with id successfully deleted</code></pre></td>
     </tr>
     <tr>
-      <td><code>/api/v1/plants</code></td>
+      <td>/api/v1/plants</td>
       <td>Plants</td>
       <td>GET</td>
-      <td>Lista todas las plantas del sistema.</td>
-      <td><strong>Header:</strong> Bearer Token</td>
-      <td><pre><code>[ { "id": 1, "name": "Mi Ficus" } ]</code></pre></td>
+      <td>Get all plants</td>
+      <td>Ninguno</td>
+      <td><pre><code>[
+{
+    "name": "Monstera Deliciosa",
+    "species": "Planta Trepadora",
+    "acquisitionDate": "2024-04-01",
+    "humidity": "Media",
+    "nextWateringDate": "2024-05-14",
+    "imageUrl": "https://static.wixstatic.com/media/b4df8d_29038c38771f4c67aa279995240d5717~mv2.jpg",
+    "notificationsEnabled": true,
+    "profileId": 1,
+    "id": 1
+  }
+]</code></pre></td>
     </tr>
     <tr>
-      <td><code>/api/v1/plants/by-profile/{profileId}</code></td>
-      <td>Plants</td>
+      <td>/api/v1/profiles</td>
+      <td>Profiles</td>
       <td>GET</td>
-      <td>Recupera las plantas asociadas a un perfil.</td>
-      <td><strong>Path:</strong> <code>profileId</code></td>
-      <td><pre><code>[ { "id": 1, "name": "Mi Ficus", "profileId": 1 } ]</code></pre></td>
+      <td>Get all profiles</td>
+      <td>Ninguno</td>
+      <td>
+        {
+          "name": "Monstera Deliciosa",
+          "species": "Planta Tropical",
+          "humidity": "Media",
+          "nextWateringDate": "2024-08-01",
+          "imageUrl": "https://static.wixstatic.com/media/example.jpg",
+          "notificationsEnabled": true,
+          "profileId": 1,
+          "id": 1
+        }
+      </td>
     </tr>
     <tr>
-      <td><code>/api/v1/plants/{plantId}</code></td>
-      <td>Plants</td>
-      <td>GET</td>
-      <td>Recupera una planta por su ID.</td>
-      <td><strong>Path:</strong> <code>plantId</code></td>
-      <td><pre><code>{ "id": 1, "name": "Mi Ficus", "humidity": "MEDIA" }</code></pre></td>
-    </tr>
-    <tr>
-      <td><code>/api/v1/plants/{plantId}</code></td>
-      <td>Plants</td>
-      <td>PUT</td>
-      <td>Crea un nuevo registro histórico de planta.</td>
-      <td><strong>Body:</strong><br><code>plantId</code>, <code>type</code>, <code>date</code>, <code>humidity</code></td>
-      <td><pre><code>{ "id": 1, "plantId": 1, "type": "WATERED" }</code></pre></td>
-    </tr>
-    <tr>
-      <td><code>/api/v1/plants/{plantId}</code></td>
-      <td>Plants</td>
-      <td>DELETE</td>
-      <td>Obtiene datos climáticos de OpenWeather API por ciudad.</td>
-      <td><strong>Query:</strong> <code>city</code></td>
-      <td><pre><code>{ "temperature": 22.5, "condition": "Cloudy" }</code></pre></td>
-    </tr>
-    <tr>
-      <td><code>/api/v1/tasks</code></td>
-      <td>CareScheduling</td>
+      <td>/api/v1/profiles</td>
+      <td>Profiles</td>
       <td>POST</td>
-      <td>Crea una nueva tarea de cuidado (ej. riego) y devuelve sus datos.</td>
-      <td><strong>Body:</strong><br><code>action</code>, <code>date</code>, <code>plantId</code>, <code>profileId</code></td>
-      <td><pre><code>{ "id": 1, "action": "WATER", "date": "2026-04-26", "completed": false }</code></pre></td>
+      <td>Create a new profile</td>
+      <td>Body: profile data</td>
+      <td>
+        {
+          "id": 1,
+          "personName": "javier",
+          "subscriptionPlan": "PREMIUM",
+          "userId": 1
+        }
+      </td>
     </tr>
     <tr>
-      <td><code>/api/v1/tasks</code></td>
-      <td>CareScheduling</td>
-      <td>GET</td>
-      <td>Lista todas las tareas de cuidado programadas.</td>
-      <td><strong>Header:</strong> Bearer Token</td>
-      <td><pre><code>[ { "id": 1, "action": "WATER", "completed": false } ]</code></pre></td>
+      <td>/api/v1/authentication/sign-up</td>
+      <td>Authentication</td>
+      <td>POST</td>
+      <td>Sign-up</td>
+      <td>Body: name, email, password, subscriptionPlan</td>
+      <td>
+        {
+          "name": "string",
+          "email": "string",
+          "password": "string",
+          "subscriptionPlan": "string"
+        }
+      </td>
     </tr>
     <tr>
-      <td><code>/api/v1/tasks/{taskId}</code></td>
-      <td>CareScheduling</td>
-      <td>DELETE</td>
-      <td>Elimina una tarea de cuidado del sistema.</td>
-      <td><strong>Path:</strong> <code>taskId</code></td>
-      <td><pre><code>Status: 204 No Content</code></pre></td>
+      <td>/api/v1/authentication/sign-in</td>
+      <td>Authentication</td>
+      <td>POST</td>
+      <td>Sign-in</td>
+      <td>Body: email, password</td>
+      <td>
+        {
+          "email": "string",
+          "password": "string"
+        }
+      </td>
     </tr>
   </tbody>
 </table>
 
 #### 6.2.1.8. Software Deployment Evidence for Sprint Review
 
+Durante este Sprint se realizo el despliegue al 100% del FrontEnd y de la Landing Page de BioDemeter
+
+FrontEnd:
+
+Configuración en vercel para el despliegue del FrontEnd:
+
+<p align="center">
+  <img src="images/EvidenceTesting/DeployFrontEnd.jpeg" alt="execution frontend profiles" width="350">
+</p>
+
+LandingPage:
+
+Configuración en vercel para el despliegue de la Landing Page:
+
+<p align="center">
+  <img src="images/EvidenceTesting/DeployLandingPage.jpeg" alt="execution frontend profiles" width="350">
+</p>
+
 #### 6.2.1.9. Team Collaboration Insights during Sprint
+
+Se podra visualizar los commit y contribuciones hechas por los integrantes.
+
+Report Insights:
+
+<p align="center">
+  <img src="images/insights/TB1/InsightsReport.png" alt="execution frontend profiles" width="350">
+</p>
+
+FrontEnd Insights:
+
+<p align="center">
+  <img src="images/insights/TB1/InsightsFrontEnd.png" alt="execution frontend profiles" width="350">
+</p>
+
+BackEnd Insights:
+
+<p align="center">
+  <img src="images/insights/TB1/InsightsBackEnd.png" alt="execution frontend profiles" width="350">
+</p>
+
+Landing Page Insights:
+
+<p align="center">
+  <img src="images/insights/TB1/InsightsLanding.png" alt="execution frontend profiles" width="350">
+</p>
+
 
 # Conclusiones
 
 ## Conclusiones y recomendaciones
 
 **Conclusiones**
+
+AV1:
 
 -  Se ha confirmado que la problemática central no es solo el olvido del riego, sino la falta de conocimiento técnico sobre las necesidades específicas de cada especie. El diseño de los Bounded Contexts de Inteligencia Botánica y Plant Profiles responde directamente a esta brecha, proporcionando una solución que centraliza el conocimiento especializado.
 
@@ -5775,11 +5886,33 @@ En el Sprint 1 se alcanzó un desarrollo completo en la implementación y maquet
 
 - La implementación de Domain-Driven Design (DDD) permitió delimitar claramente las responsabilidades del sistema. La separación de contextos como IoT Management y Care Scheduling asegura que el producto sea escalable y que la complejidad técnica de los sensores no interfiera con la experiencia de usuario en la capa de aplicación.
 
+TB1:
+
+- La implementación de la metodología GitFlow, combinada con el uso de Semantic Versioning y Conventional Commits, ha garantizado un control de versiones altamente estructurado para el ecosistema PlantSync. Esta arquitectura de repositorios permite una separación clara entre el desarrollo de nuevas características (Feature branches), la estabilización (Release) y la resolución de incidentes críticos (Hotfix), asegurando la integridad de la rama principal de producción.
+
+- La definición exhaustiva de guías de estilo para cada componente tecnológico (React para la Landing Page, TypeScript para la Web App, Dart para la aplicación móvil y Java para el Backend REST) asegura la escalabilidad, legibilidad y mantenibilidad del código a largo plazo. El requerimiento de tipado estricto y nomenclaturas unificadas minimiza la deuda técnica desde las etapas iniciales.
+
+- La estrategia de despliegue apoyada en Vercel y conectada directamente al repositorio de GitHub ha optimizado significativamente el flujo de trabajo. La capacidad de detectar cambios en la rama main y ejecutar flujos automáticos de compilación y validación reduce el error humano y acelera el tiempo de entrega (Time-to-Market) de la Landing Page.
+
+- Durante el primer sprint, el equipo logró consolidar con éxito la presencia digital del proyecto mediante el despliegue funcional de la Landing Page (abarcando testimonios, planes, FAQ y llamadas a la acción). De manera paralela, la maquetación de la aplicación móvil con Dart alcanzó hitos críticos, cubriendo los flujos esenciales de autenticación de usuario y gestión de inventario botánico.
+
+- El uso de herramientas de IA generativa (v0 de Vercel) para la estructuración inicial de la Landing Page, refinado mediante repositorios centralizados, demostró ser una táctica eficiente para traducir requerimientos visuales complejos en código funcional de manera iterativa.
+
 **Recomendaciones**
+
+AV1:
 
 - Implementar de manera progresiva los requerimientos y sugerencias recolectados durante la fase de entrevistas con los segmentos objetivo, asegurando que el desarrollo de funcionalidades esté estrictamente alineado con las necesidades reales detectadas para maximizar la satisfacción del usuario y la propuesta de valor del producto.
 
 - Supervisar rigurosamente que, durante la etapa de codificación y construcción del sistema, se respeten los límites y la autonomía de cada Bounded Context definidos en el diseño estratégico. Esto es fundamental para evitar el acoplamiento innecesario, facilitar el mantenimiento y garantizar la integridad de la arquitectura de software propuesta.
+
+TB1:
+
+- Tras haber consolidado exitosamente las interfaces móviles en Dart durante el Sprint 1, se recomienda que los próximos Sprints prioricen la conexión de estas vistas con los endpoints del Backend en Java. Es vital validar tempranamente los contratos de las API REST definidas.
+
+- Aprovechando que la Landing Page ya se encuentra desplegada en producción a través de Vercel de manera pública (HTTPS), se recomienda integrar herramientas de analítica web. Esto permitirá medir la interacción real de los usuarios con las llamadas a la acción y las tablas de precios para futuras optimizaciones de conversión.
+
+- A medida que la lógica de negocio en el backend y la aplicación móvil crezca, se recomienda mantener los escenarios Given-When-Then en constante actualización, asegurando que cubran no solo los flujos felices, sino también los flujos de error.
 
 # Bibliografía
 
