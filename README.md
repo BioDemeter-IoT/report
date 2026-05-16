@@ -313,57 +313,51 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
   <tbody>
     <tr>
       <td rowspan="7"><strong>Trabaja en equipo para proporcionar liderazgo en forma conjunta</strong></td>
-      <td><strong>Rivera Ratachi, Renzo Sebastian</strong><br><b>TB1:</b> Lideró la definición estratégica mediante la elaboración de Lean UX Hypothesis Statements y la identificación de segmentos objetivo.
-      <b>TP:</b>Lideró la planificación del Sprint Planning 1, el Software Deployment Configuration y el Source Code Style Guide & Conventions</td>
-      <td rowspan="7"><b>TB1:</b> El equipo ejerció un liderazgo compartido donde cada integrante asumió la dirección de áreas críticas. La integración entre el análisis de negocio, la investigación de campo y el modelado técnico permitió establecer una visión unificada para la solución IoT, asegurando que cada componente del sistema estuviera alineado con los objetivos estratégicos del proyecto.
-      <br></br>
-      <b>TP:</b>
-      </td>
+      <td><strong>Rivera Ratachi, Renzo Sebastian</strong><br><b>TB1:</b> Lideró la definición estratégica mediante la elaboración de Lean UX Hypothesis Statements y la identificación de segmentos objetivo.<br><b>TP:</b> Lideró la planificación del Sprint Planning 1, el Software Deployment Configuration y estableció las normativas técnicas en el Source Code Style Guide & Conventions.</td>
+      <td rowspan="7"><b>TB1:</b> El equipo ejerció un liderazgo compartido donde cada integrante asumió la dirección de áreas críticas. La integración entre el análisis de negocio, la investigación de campo y el modelado técnico permitió establecer una visión unificada para la solución IoT, asegurando que cada componente del sistema estuviera alineado con los objetivos estratégicos del proyecto.<br><br>
+      <b>TP:</b> Para el Trabajo Parcial, el equipo demostró un liderazgo distribuido eficaz. Cada integrante se apropió de un dominio crítico, desde el diseño integral UX/UI y flujos de usuario en Figma, hasta la configuración técnica de entornos de desarrollo (Source Code Management, Deployment) y la gestión ágil (Sprint Planning, Sprint Backlog), consolidando exitosamente la infraestructura e identidad visual del proyecto.</td>
     </tr>
     <tr>
-      <td><strong>Palomino Fiestas, Erick Leonardo</strong><br><b>TB1:</b> Dirigió el análisis de competidores y estableció la base de seguridad en el IAM Bounded Context.
-      <b>TP:</b>Lideró la mejora del frontend de la aplicación web y el apartado del Sprint 1</td>
+      <td><strong>Palomino Fiestas, Erick Leonardo</strong><br><b>TB1:</b> Dirigió el análisis de competidores y estableció la base de seguridad en el IAM Bounded Context.<br><b>TP:</b> Lideró la estructuración del apartado del Sprint 1 en la documentación y dirigió la implementación y mejora del frontend de la aplicación web.</td>
     </tr>
     <tr>
-      <td><strong>Coca Lavado, Carlos Andrés</strong><br><b>TB1:</b> Lideró la planificación técnica mediante la estructuración del Product Backlog y los diagramas de arquitectura C4.
-      <b>TP:</b>Lideró el desarrollo del figma, del sprint Backlog 1 y del Services Documentation on Evidence for Sprint Review
-      </td>
+      <td><strong>Coca Lavado, Carlos Andrés</strong><br><b>TB1:</b> Lideró la planificación técnica mediante la estructuración del Product Backlog y los diagramas de arquitectura C4.<br><b>TP:</b> Lideró la estructuración general del proyecto en Figma, la gestión y distribución del Sprint Backlog 1, y la elaboración del Services Documentation Evidence for Sprint Review.</td>
     </tr>
     <tr>
-      <td><strong>Paitan Pumacahua, Max Anthony</strong><br><b>TB1:</b> Ejerció liderazgo en el modelado estructural del dominio mediante el Context Mapping y el Domain Message Flows Modeling.
-      <b>TP:</b>Lideró el desarrollo de la Landing page wireframe & mockup, Web application wireframes & mockups y el Mobile application wireframes</td>
+      <td><strong>Paitan Pumacahua, Max Anthony</strong><br><b>TB1:</b> Ejerció liderazgo en el modelado estructural del dominio mediante el Context Mapping y el Domain Message Flows Modeling.<br><b>TP:</b> Lideró el diseño visual inicial desarrollando los wireframes y mockups para la Landing page, así como para la Web application y Mobile application.</td>
     </tr>
     <tr>
-      <td><strong>Rodríguez Villa, Elvia Marcela</strong><br><b>TB1:</b> Lideró el diseño arquitectónico de los Bounded Context de Inteligencia Botánica y Análisis Externo.</td>
+      <td><strong>Rodríguez Villa, Elvia Marcela</strong><br><b>TB1:</b> Lideró el diseño arquitectónico de los Bounded Context de Inteligencia Botánica y Análisis Externo.<br><b>TP:</b> Lideró la primera fase del Solution UX/UI Design, estableciendo la identidad y estructura visual principal de la Landing Page.</td>
     </tr>
     <tr>
-      <td><strong>Briceño De La Cruz, Farid Sebastian</strong><br><b>TB1:</b> Dirigió la fase de descubrimiento conceptual mediante el Design Level Event Storming y la definición de la problemática.<b>TP:</b>Lideró el desarrollo del Software Development, Evironment Configuration y el Source Code Managment</td>
+      <td><strong>Briceño De La Cruz, Farid Sebastian</strong><br><b>TB1:</b> Dirigió la fase de descubrimiento conceptual mediante el Design Level Event Storming y la definición de la problemática.<br><b>TP:</b> Lideró la configuración técnica de la infraestructura con el Software Development Environment Configuration y estableció el flujo de trabajo en el Source Code Management.</td>
     </tr>
     <tr>
-      <td><strong>Acuña Tomas, Diego Rolin</strong><br><b>TB1:</b> Lideró la identidad de la Startup y el diseño técnico del Bounded Context de IoT Management.<b>TP:</b>Lideró el desarrollo del Applications Wireflow Diagrams, Applications Mock-ups, Applications User Flow Diagrams, Applications Prototyping e IoT Device Design</td>
+      <td><strong>Acuña Tomas, Diego Rolin</strong><br><b>TB1:</b> Lideró la identidad de la Startup y el diseño técnico del Bounded Context de IoT Management.<br><b>TP:</b> Lideró la conceptualización de la experiencia mediante Applications Wireflow Diagrams, User Flow Diagrams, Prototyping, y el diseño del dispositivo físico (IoT Device Design).</td>
     </tr>
     <tr>
       <td rowspan="7"><strong>Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.</strong></td>
-      <td><strong>Rivera Ratachi, Renzo Sebastian</strong><br><b>TB1:</b> Colaboró en la definición de los Bounded Context de Plant Profiles y Care Scheduling para alcanzar los hitos de la entrega.</td>
-      <td rowspan="7"><b>TB1:</b> Se logró un entorno colaborativo donde los hallazgos de las entrevistas y el Needfinding fueron la base para el diseño de User Stories y la arquitectura. El cumplimiento de los objetivos de la TB1 se facilitó mediante una planificación coordinada, asegurando que cada entregable técnico respondiera a las necesidades reales de los usuarios identificadas por el equipo.</td>
+      <td><strong>Rivera Ratachi, Renzo Sebastian</strong><br><b>TB1:</b> Colaboró en la definición de los Bounded Context de Plant Profiles y Care Scheduling para alcanzar los hitos de la entrega.<br><b>TP:</b> Planificó y organizó las metas iniciales mediante el Sprint Planning, asegurando que todos compartieran un entorno estandarizado (Style Guide) para cumplir con los objetivos de despliegue a tiempo.</td>
+      <td rowspan="7"><b>TB1:</b> Se logró un entorno colaborativo donde los hallazgos de las entrevistas y el Needfinding fueron la base para el diseño de User Stories y la arquitectura. El cumplimiento de los objetivos de la TB1 se facilitó mediante una planificación coordinada, asegurando que cada entregable técnico respondiera a las necesidades reales de los usuarios identificadas por el equipo.<br><br>
+      <b>TP:</b> El equipo consolidó un entorno de trabajo altamente colaborativo al estructurar el Sprint 1 mediante herramientas ágiles y control de versiones unificado. La clara definición de guías de estilo, la distribución equitativa del Sprint Backlog y la entrega puntual de wireframes, prototipos y configuraciones de entorno garantizaron que cada miembro cumpliera sus objetivos a tiempo para la presentación.</td>
     </tr>
     <tr>
-      <td><strong>Palomino Fiestas, Erick Leonardo</strong><br><b>TB1:</b> Cumplió con los objetivos de diseño para el PlantGuidence Bounded Context en colaboración con el área de UX.</td>
+      <td><strong>Palomino Fiestas, Erick Leonardo</strong><br><b>TB1:</b> Cumplió con los objetivos de diseño para el PlantGuidence Bounded Context en colaboración con el área de UX.<br><b>TP:</b> Contribuyó al cumplimiento de las metas del Sprint 1 aplicando mejoras continuas en la web, colaborando activamente con el equipo de diseño para unificar la interfaz visual.</td>
     </tr>
     <tr>
-      <td><strong>Coca Lavado, Carlos Andrés</strong><br><b>TB1:</b> Estableció las metas de usuario mediante el desarrollo de User Stories e Impact Mapping para ambos segmentos.</td>
+      <td><strong>Coca Lavado, Carlos Andrés</strong><br><b>TB1:</b> Estableció las metas de usuario mediante el desarrollo de User Stories e Impact Mapping para ambos segmentos.<br><b>TP:</b> Estableció metas claras al definir y asignar el Sprint Backlog 1, y documentó colaborativamente las evidencias del sprint para asegurar la transparencia del trabajo en equipo.</td>
     </tr>
     <tr>
-      <td><strong>Paitan Pumacahua, Max Anthony</strong><br><b>TB1:</b> Facilitó un entorno inclusivo mediante el análisis de entrevistas, transformándolas en User Personas y Task Matrix.</td>
+      <td><strong>Paitan Pumacahua, Max Anthony</strong><br><b>TB1:</b> Facilitó un entorno inclusivo mediante el análisis de entrevistas, transformándolas en User Personas y Task Matrix.<br><b>TP:</b> Facilitó el trabajo del equipo de desarrollo al proporcionar oportunamente los wireframes y mockups multiplataforma, lo que permitió cumplir con las metas de maquetación del Sprint 1.</td>
     </tr>
     <tr>
-      <td><strong>Rodríguez Villa, Elvia Marcela</strong><br><b>TB1:</b> Validó los flujos de trabajo grupales mediante el Event Storming del dominio y la creación de User Journey Maps.</td>
+      <td><strong>Rodríguez Villa, Elvia Marcela</strong><br><b>TB1:</b> Validó los flujos de trabajo grupales mediante el Event Storming del dominio y la creación de User Journey Maps.<br><b>TP:</b> Colaboró estrechamente con los desarrolladores proveyendo los lineamientos de UX/UI de la Landing Page, garantizando que el producto final cumpliera con los estándares visuales propuestos.</td>
     </tr>
     <tr>
-      <td><strong>Briceño De La Cruz, Farid Sebastian</strong><br><b>TB1:</b> Participó en el Candidate Context Discovery y la investigación de antecedentes para alinear las tareas del grupo.</td>
+      <td><strong>Briceño De La Cruz, Farid Sebastian</strong><br><b>TB1:</b> Participó en el Candidate Context Discovery y la investigación de antecedentes para alinear las tareas del grupo.<br><b>TP:</b> Creó un entorno colaborativo técnico al configurar los repositorios y políticas de ramas, permitiendo que el equipo integrara su código sin conflictos y cumpliera sus objetivos diarios.</td>
     </tr>
     <tr>
-      <td><strong>Acuña Tomas, Diego Rolin</strong><br><b>TB1:</b> Cumplió con la planificación de los perfiles de equipo y la descripción técnica de la gestión de dispositivos IoT.</td>
+      <td><strong>Acuña Tomas, Diego Rolin</strong><br><b>TB1:</b> Cumplió con la planificación de los perfiles de equipo y la descripción técnica de la gestión de dispositivos IoT.<br><b>TP:</b> Clarificó las metas del equipo al mapear la experiencia de usuario (User Flows y Prototyping) y conectarla con las especificaciones del hardware IoT, uniendo el trabajo de software y electrónica.</td>
     </tr>
   </tbody>
 </table>
@@ -5158,6 +5152,16 @@ Se siguieron estos pasos para el despliegue de la Landing Page en GitHub Pages:
 
 #### 6.2.1.3. Sprint Backlog 1
 
+<br>
+<p align="center">
+  <img src="images/chapter5-sprint1/sprintbacklog1.png" alt="execution" width="600">
+</p>
+<p align="center">
+     Sprint Backlog 1 - Elaboración propia
+</p>
+
+Link al trello: https://trello.com/invite/b/69ed479188a27ae377d2c567/ATTI868dfd258366f94b4921e997ac3b2cc58A9652CC/sprintbacklog-1
+
 <h3>Sprint Backlog – Sprint 1</h3>
 <table border="1" cellspacing="0" cellpadding="5">
 <thead>
@@ -5181,392 +5185,258 @@ Se siguieron estos pasos para el despliegue de la Landing Page en GitHub Pages:
 </thead>
 <tbody>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>US18</td>
+<td>Comparar planes de suscripción</td>
+<td>WI001</td>
+<td>Implementar comparación de planes</td>
+<td>Desarrollar la sección comparativa de planes de suscripción en el landing page para facilitar la elección del usuario.</td>
+<td>5</td>
+<td>Renzo Rivera</td>
+<td>Done</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>US21</td>
+<td>Preguntas Frecuentes - FAQ</td>
+<td>WI002</td>
+<td>Implementar sección FAQ</td>
+<td>Desarrollar el componente interactivo de acordeón para visualizar las preguntas y respuestas comunes.</td>
+<td>4</td>
+<td>Elvia Rodríguez</td>
+<td>Done</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>US22</td>
+<td>Visualización de Testimonios de Usuarios</td>
+<td>WI003</td>
+<td>Desarrollar carrusel de testimonios</td>
+<td>Implementar un carrusel dinámico en la landing page para mostrar experiencias breves de otros usuarios.</td>
+<td>4</td>
+<td>Carlos Coca</td>
+<td>Done</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>US04</td>
+<td>Redirección a plataformas desde el Landing Page</td>
+<td>WI004</td>
+<td>Configurar enlaces de redirección</td>
+<td>Añadir y validar los enlaces directos a la aplicación web y tiendas móviles en los botones principales.</td>
+<td>2</td>
+<td>Erick Palomino</td>
+<td>Done</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>US23</td>
+<td>Botones de llamado a la acción para Registro</td>
+<td>WI005</td>
+<td>Implementar botones CTA</td>
+<td>Diseñar y posicionar botones de "Empieza ahora" estratégicos para redireccionar al flujo de registro.</td>
+<td>3</td>
+<td>Farid Briceño</td>
+<td>Done</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>US24</td>
+<td>Acceso a Redes Sociales y Contacto en Footer</td>
+<td>WI006</td>
+<td>Desarrollar Footer</td>
+<td>Maquetar e implementar el pie de página con accesos a redes sociales y correo de soporte.</td>
+<td>3</td>
+<td>Erick Palomino</td>
+<td>Done</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>US20</td>
+<td>Selección de idioma</td>
+<td>WI007</td>
+<td>Implementar internacionalización</td>
+<td>Configurar la selección de múltiples idiomas y la librería de traducciones en la página web.</td>
+<td>6</td>
+<td>Diego Acuña</td>
+<td>Done</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>US01</td>
+<td>Visualización de beneficios botánicos en el Landing Page</td>
+<td>WI008</td>
+<td>Desarrollar sección de beneficios</td>
+<td>Maquetar la sección informativa sobre los beneficios psicológicos del cuidado de las plantas.</td>
+<td>5</td>
+<td>Max Paitan</td>
+<td>Done</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>US25</td>
+<td>Visualización de perfil de usuario</td>
+<td>WI009</td>
+<td>Implementar vista de perfil</td>
+<td>Desarrollar la interfaz para que el usuario visualice su resumen de actividades de cuidado y estadísticas.</td>
+<td>6</td>
+<td>Renzo Rivera</td>
+<td>Done</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>US29</td>
+<td>Acceder a perfil de planta</td>
+<td>WI010</td>
+<td>Desarrollar detalle de planta</td>
+<td>Crear la vista de detalle donde el usuario pueda acceder a la información actual de una planta en específico.</td>
+<td>5</td>
+<td>Carlos Coca</td>
+<td>Done</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>US06</td>
+<td>Registro de nueva planta desde la app móvil</td>
+<td>WI011</td>
+<td>Implementar registro de planta</td>
+<td>Desarrollar el formulario en la app móvil para añadir el nombre, especie y ubicación de una nueva planta.</td>
+<td>7</td>
+<td>Diego Acuña</td>
+<td>Done</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>US11</td>
+<td>Subir fotos de una planta</td>
+<td>WI012</td>
+<td>Funcionalidad de carga de fotos</td>
+<td>Permitir a los usuarios subir e integrar imágenes de sus plantas para facilitar el monitoreo a lo largo del tiempo.</td>
+<td>6</td>
+<td>Farid Briceño</td>
+<td>Done</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>US12</td>
+<td>Eliminación de planta</td>
+<td>WI013</td>
+<td>Implementar borrado de planta</td>
+<td>Añadir la opción de eliminar y un modal de confirmación para retirar plantas del inventario personal.</td>
+<td>3</td>
+<td>Elvia Rodríguez</td>
+<td>Done</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>US13</td>
+<td>Inicio sesión de usuario</td>
+<td>WI014</td>
+<td>Desarrollar inicio de sesión</td>
+<td>Implementar la autenticación de usuarios registrados mediante correo electrónico y contraseña.</td>
+<td>5</td>
+<td>Max Paitan</td>
+<td>Done</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>US14</td>
+<td>Registrarse en la app</td>
+<td>WI015</td>
+<td>Implementar flujo de registro</td>
+<td>Desarrollar la creación de una cuenta nueva para que el usuario pueda acceder a las funcionalidades de la app.</td>
+<td>6</td>
+<td>Erick Palomino</td>
+<td>Done</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>US16</td>
+<td>Edición de datos de planta</td>
+<td>WI016</td>
+<td>Funcionalidad de edición de planta</td>
+<td>Habilitar la edición de datos para actualizar nombre, tipo o características de una planta previamente registrada.</td>
+<td>4</td>
+<td>Renzo Rivera</td>
+<td>Done</td>
 </tr>
 </tbody>
 </table>
 
-#### 6.2.1.4. Development Evidence for Sprint Review
-
-<br>
-
-<table align="center">
-  <tr>
-    <td><strong>Repository</strong></td>
-    <td><strong>Branch</strong></td>
-    <td><strong>Commit Id</strong></td>
-    <td><strong>Commit Message</strong></td>
-    <td><strong>Commit Message Body</strong></td>
-    <td><strong>Commited on (Date)</strong></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-<tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-<tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-    <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-</tr>
-    <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
- <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-<tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-<table>
-
-<br>
-
 #### 6.2.1.5. Testing Suite Evidence for Sprint Review
+
+<br>
+
+<table align="center" border="1" cellspacing="0" cellpadding="5">
+  <thead>
+    <tr>
+      <th><strong>Repository</strong></th>
+      <th><strong>Branch</strong></th>
+      <th><strong>Commit Id</strong></th>
+      <th><strong>Commit Message</strong></th>
+      <th><strong>Commit Message Body</strong></th>
+      <th><strong>Commited on (Date)</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>https://github.com/BioDemeter-IoT/landingpage</td>
+      <td>main</td>
+      <td>402c09a</td>
+      <td>Initialize plant care chat application</td>
+      <td>Initialize plant care chat application</td>
+      <td>15/05/26</td>
+    </tr>
+    <tr>
+      <td>https://github.com/BioDemeter-IoT/landingpage</td>
+      <td>main</td>
+      <td>f258006</td>
+      <td>fix: resolve Framer Motion TypeScript ease type errors</td>
+      <td>Add 'as const' to all 'ease' string properties in 6 files</td>
+      <td>15/05/26</td>
+    </tr>
+    <tr>
+      <td>https://github.com/BioDemeter-IoT/report</td>
+      <td>develop</td>
+      <td>971e533</td>
+      <td>fix: landing page link</td>
+      <td>-</td>
+      <td>16/05/26</td>
+    </tr>
+    <tr>
+      <td>https://github.com/BioDemeter-IoT/report</td>
+      <td>develop</td>
+      <td>089d404</td>
+      <td>docs: student Outcome</td>
+      <td>-</td>
+      <td>16/05/26</td>
+    </tr>
+    <tr>
+      <td>https://github.com/BioDemeter-IoT/report</td>
+      <td>develop</td>
+      <td>d92c564</td>
+      <td>docs: source code management</td>
+      <td>documentación el modelo GitFlow (main, develop, feature, release, hotfix), el uso de Semantic Versioning para releases y los Conventional Commits.También se incorpora la imagen images/others/gitflow.png como ilustración del flujo de trabajo.</td>
+      <td>09/04/26</td>
+    </tr>
+    <tr>
+      <td>https://github.com/BioDemeter-IoT/report</td>
+      <td>develop</td>
+      <td>2325750</td>
+      <td>docs: added the sprint review</td>
+      <td>-</td>
+      <td>15/05/26</td>
+    </tr>
+    <tr>
+      <td>https://github.com/BioDemeter-IoT/report</td>
+      <td>develop</td>
+      <td>0ffed64</td>
+      <td>docs: add insights</td>
+      <td>-</td>
+      <td>26/04/26</td>
+    </tr>
+    <tr>
+      <td>https://github.com/BioDemeter-IoT/report</td>
+      <td>develop</td>
+      <td>ec635bb</td>
+      <td>docs: add template</td>
+      <td>Added template for project report</td>
+      <td>14/05/26</td>
+    </tr>
+    <tr>
+      <td>https://github.com/BioDemeter-IoT/report</td>
+      <td>develop</td>
+      <td>77e853f</td>
+      <td>file: add member photos</td>
+      <td>-</td>
+      <td>26/04/26</td>
+    </tr>
+  </tbody>
+</table>
 
 #### 6.2.1.6. Execution Evidence for Sprint Review
 
