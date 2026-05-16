@@ -68,6 +68,13 @@
 | 0.9 | 24/04/2026 | Rodríguez Villa, Elvia Marcela | Diseño de Software Architecture y diagramas de contenedores y despliegue. |
 | 0.10 | 25/04/2026 | Rivera Ratachi, Renzo Sebastian | Desarrollo del Tactical-Level DDD (capas de dominio, interfaz y aplicación). |
 | 1.0 | 26/04/2026 | Coca Lavado, Carlos Andrés | Revisión final de diagramas de componentes y base de datos. |
+| 1.1 | 27/04/2026 | Rivera Ratachi, Renzo Sebastian | Adición de Source Code Style Guide & Conventions, Sprint Planning 1, Software Deployment Configuration y Desarrollo del Testing Suite Evidence for Sprint Review. |
+| 1.2 | 28/04/2026 | Palomino Fiestas, Erick Leonardo | Mejora del frontend de la aplicación web, redacción del Apartado de Sprint 1, Desarrollo del Sprint Backlog 1 y Aspect Leaders and Collaborators. |
+| 1.3 | 29/04/2026 | Coca Lavado, Carlos Andrés | Desarrollo del Figma, Sprint Backlog general, Services Documentation Evidence, Team Collaboration Insights y Software Deployment Evidence for Sprint Review. |
+| 1.4 | 30/04/2026 | Paitan Pumacahua, Max Anthony | Diseño de Landing page wireframe & mockup, Web application wireframes & mockups y Mobile application wireframes. |
+| 1.5 | 01/05/2026 | Rodríguez Villa, Elvia Marcela | Elaboración de Solution UX/UI Design parte 1 y diseño de Landing Page. |
+| 1.6 | 02/05/2026 | Briceño De La Cruz, Farid Sebastian | Integración de Software Development Environment Configuration y Source Code Management. |
+| 1.7 | 03/05/2026 | Acuña Tomas, Diego Rolin | Creación de Applications Wireflow Diagrams, Mock-ups, User Flow Diagrams, Prototyping y diseño de IoT Device. |
 
 <hr class="page-break">
 
@@ -134,6 +141,8 @@ El repositorio del informe se encuentra en GitHub en el siguiente link: https://
   - [2.2. Entrevistas](#22-entrevistas)
     - [2.2.1. Diseño de entrevistas](#221-diseño-de-entrevistas)
     - [2.2.2. Registro de entrevistas](#222-registro-de-entrevistas)
+      - [Expertos cuidadores de plantas:](#expertos-cuidadores-de-plantas-1)
+      - [Principiantes cuidadores de plantas:](#principiantes-cuidadores-de-plantas-1)
     - [2.2.3. Análisis de entrevistas](#223-análisis-de-entrevistas)
   - [2.3. Needfinding](#23-needfinding)
     - [2.3.1. User Personas](#231-user-personas)
@@ -155,8 +164,29 @@ El repositorio del informe se encuentra en GitHub en el siguiente link: https://
     - [4.1.1. Design-Level EventStorming](#411-design-level-eventstorming)
       - [4.1.1.1. Candidate Context Discovery](#4111-candidate-context-discovery)
       - [4.1.1.2. Domain Message Flows Modeling](#4112-domain-message-flows-modeling)
+      - [Scenario: User Registration](#scenario-user-registration)
+      - [Scenario: User Login](#scenario-user-login)
+      - [Scenario: Registering a New Plant](#scenario-registering-a-new-plant)
+      - [Scenario: Linking an IoT Device to a Plant](#scenario-linking-an-iot-device-to-a-plant)
+      - [Scenario: Receiving Temperature and Humidity Sensor Data](#scenario-receiving-temperature-and-humidity-sensor-data)
+      - [Scenario: Generating Plant Alerts From Sensor Data](#scenario-generating-plant-alerts-from-sensor-data)
+      - [Scenario: Activating an IoT Actuator Automatically](#scenario-activating-an-iot-actuator-automatically)
+      - [Scenario: Viewing Plant Health Status](#scenario-viewing-plant-health-status)
+      - [Scenario: Scheduling a Plant Care Task](#scenario-scheduling-a-plant-care-task)
+      - [Scenario: Getting Plant Care Guidance From RootBot (bot temporal name)](#scenario-getting-plant-care-guidance-from-rootbot-bot-temporal-name)
+      - [Scenario: Viewing Plant Care History](#scenario-viewing-plant-care-history)
+      - [Scenario: Viewing Sensor History and Insights](#scenario-viewing-sensor-history-and-insights)
       - [4.1.1.3. Bounded Context Canvases](#4113-bounded-context-canvases)
+      - [IOT Management](#iot-management)
+      - [Plant Profile](#plant-profile)
+      - [Care Scheduling](#care-scheduling)
+      - [Analytics](#analytics)
+      - [Plant Guidance](#plant-guidance)
+      - [IAM](#iam)
     - [4.1.2. Context Mapping](#412-context-mapping)
+      - [Opción 1:](#opción-1)
+      - [Opción 2:](#opción-2)
+    - [Opción 3:](#opción-3)
     - [4.1.3. Software Architecture](#413-software-architecture)
       - [4.1.3.1. Software Architecture System Landscape Diagram](#4131-software-architecture-system-landscape-diagram)
       - [4.1.3.2. Software Architecture Context Level Diagrams](#4132-software-architecture-context-level-diagrams)
@@ -217,7 +247,7 @@ El repositorio del informe se encuentra en GitHub en el siguiente link: https://
       - [4.2.6.6. Bounded Context Software Architecture Code Level Diagrams](#4266-bounded-context-software-architecture-code-level-diagrams)
         - [4.2.6.6.1. Bounded Context Domain Layer Class Diagrams](#42661-bounded-context-domain-layer-class-diagrams)
         - [4.2.6.6.2. Bounded Context Database Design Diagram](#42662-bounded-context-database-design-diagram)
-    - [4.2.7. Bounded Context: PlantGuidence](#427-bounded-context-plant-guidance)
+    - [4.2.7. Bounded Context: \<PlantGuidance\>](#427-bounded-context-plantguidance)
       - [4.2.7.1. Domain Layer](#4271-domain-layer)
       - [4.2.7.2. Interface Layer](#4272-interface-layer)
       - [4.2.7.3. Application Layer](#4273-application-layer)
@@ -226,6 +256,47 @@ El repositorio del informe se encuentra en GitHub en el siguiente link: https://
       - [4.2.7.6. Bounded Context Software Architecture Code Level Diagrams](#4276-bounded-context-software-architecture-code-level-diagrams)
         - [4.2.7.6.1. Bounded Context Domain Layer Class Diagrams](#42761-bounded-context-domain-layer-class-diagrams)
         - [4.2.7.6.2. Bounded Context Database Design Diagram](#42762-bounded-context-database-design-diagram)
+- [Capítulo V: Solution UI/UX Design](#capítulo-v-solution-uiux-design)
+  - [5.1. Style Guidelines](#51-style-guidelines)
+    - [5.1.1. General Style Guidelines](#511-general-style-guidelines)
+    - [5.1.2. Web, Mobile and IoT Style Guidelines](#512-web-mobile-and-iot-style-guidelines)
+  - [5.2. Information Architecture](#52-information-architecture)
+    - [5.2.1. Organization Systems](#521-organization-systems)
+    - [5.2.2. Labeling Systems](#522-labeling-systems)
+    - [5.2.3. SEO Tags and Meta Tags](#523-seo-tags-and-meta-tags)
+    - [5.2.4. Searching Systems](#524-searching-systems)
+    - [5.2.5. Navigation Systems](#525-navigation-systems)
+  - [5.3. Landing Page UI Design](#53-landing-page-ui-design)
+    - [5.3.1. Landing Page Wireframe](#531-landing-page-wireframe)
+    - [5.3.2. Landing Page Mock-up](#532-landing-page-mock-up)
+  - [5.4. Applications UX/UI Design](#54-applications-uxui-design)
+    - [5.4.1. Applications Wireflow Diagrams](#541-applications-wireflow-diagrams)
+    - [5.4.2. Applications Mock-ups](#542-applications-mock-ups)
+    - [5.4.3. Applications User Flow Diagrams](#543-applications-user-flow-diagrams)
+  - [5.5. Applications Prototyping](#55-applications-prototyping)
+  - [5.6. IoT Device Design](#56-iot-device-design)
+- [Capítulo VI: Product Implementation, Validation \& Deployment](#capítulo-vi-product-implementation-validation--deployment)
+  - [6.1. Software Configuration Management](#61-software-configuration-management)
+    - [6.1.1. Software Development Environment Configuration](#611-software-development-environment-configuration)
+    - [6.1.2. Source Code Management](#612-source-code-management)
+    - [6.1.3. Source Code Style Guide \& Conventions](#613-source-code-style-guide--conventions)
+    - [6.1.4. Software Deployment Configuration](#614-software-deployment-configuration)
+  - [6.2. Landing Page, Services \& Applications Implementation](#62-landing-page-services--applications-implementation)
+    - [6.2.1. Sprint 1](#621-sprint-1)
+      - [6.2.1.1. Sprint Planning 1](#6211-sprint-planning-1)
+      - [6.2.1.2. Aspect Leaders and Collaborators](#6212-aspect-leaders-and-collaborators)
+      - [6.2.1.3. Sprint Backlog 1](#6213-sprint-backlog-1)
+      - [6.2.1.4. Development Evidence for Sprint Review](#6214-development-evidence-for-sprint-review)
+      - [6.2.1.5. Testing Suite Evidence for Sprint Review](#6215-testing-suite-evidence-for-sprint-review)
+      - [6.2.1.6. Execution Evidence for Sprint Review](#6216-execution-evidence-for-sprint-review)
+      - [6.2.1.7. Services Documentation Evidence for Sprint Review](#6217-services-documentation-evidence-for-sprint-review)
+      - [6.2.1.8. Software Deployment Evidence for Sprint Review](#6218-software-deployment-evidence-for-sprint-review)
+      - [6.2.1.9. Team Collaboration Insights during Sprint](#6219-team-collaboration-insights-during-sprint)
+  - [6.3. Validation Interviews](#63-validation-interviews)
+    - [6.3.1. Diseño de Entrevistas](#631-diseño-de-entrevistas)
+    - [6.3.2. Registro de Entrevistas](#632-registro-de-entrevistas)
+    - [6.3.3. Evaluaciones según heurísticas](#633-evaluaciones-según-heurísticas)
+  - [6.4. Video About-the-Product](#64-video-about-the-product)
 - [Conclusiones](#conclusiones)
   - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
 - [Bibliografía](#bibliografía)
@@ -249,49 +320,51 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
   <tbody>
     <tr>
       <td rowspan="7"><strong>Trabaja en equipo para proporcionar liderazgo en forma conjunta</strong></td>
-      <td><strong>Rivera Ratachi, Renzo Sebastian</strong><br><b>TB1:</b> Lideró la definición estratégica mediante la elaboración de Lean UX Hypothesis Statements y la identificación de segmentos objetivo.</td>
-      <td rowspan="7"><b>TB1:</b> El equipo ejerció un liderazgo compartido donde cada integrante asumió la dirección de áreas críticas. La integración entre el análisis de negocio, la investigación de campo y el modelado técnico permitió establecer una visión unificada para la solución IoT, asegurando que cada componente del sistema estuviera alineado con los objetivos estratégicos del proyecto.</td>
+      <td><strong>Rivera Ratachi, Renzo Sebastian</strong><br><b>TB1:</b> Lideró la definición estratégica mediante la elaboración de Lean UX Hypothesis Statements y la identificación de segmentos objetivo.<br><b>TP:</b> Lideró la planificación del Sprint Planning 1, el Software Deployment Configuration y estableció las normativas técnicas en el Source Code Style Guide & Conventions.</td>
+      <td rowspan="7"><b>TB1:</b> El equipo ejerció un liderazgo compartido donde cada integrante asumió la dirección de áreas críticas. La integración entre el análisis de negocio, la investigación de campo y el modelado técnico permitió establecer una visión unificada para la solución IoT, asegurando que cada componente del sistema estuviera alineado con los objetivos estratégicos del proyecto.<br><br>
+      <b>TP:</b> Para el Trabajo Parcial, el equipo demostró un liderazgo distribuido eficaz. Cada integrante se apropió de un dominio crítico, desde el diseño integral UX/UI y flujos de usuario en Figma, hasta la configuración técnica de entornos de desarrollo (Source Code Management, Deployment) y la gestión ágil (Sprint Planning, Sprint Backlog), consolidando exitosamente la infraestructura e identidad visual del proyecto.</td>
     </tr>
     <tr>
-      <td><strong>Palomino Fiestas, Erick Leonardo</strong><br><b>TB1:</b> Dirigió el análisis de competidores y estableció la base de seguridad en el IAM Bounded Context.</td>
+      <td><strong>Palomino Fiestas, Erick Leonardo</strong><br><b>TB1:</b> Dirigió el análisis de competidores y estableció la base de seguridad en el IAM Bounded Context.<br><b>TP:</b> Lideró la estructuración del apartado del Sprint 1 en la documentación y dirigió la implementación y mejora del frontend de la aplicación web.</td>
     </tr>
     <tr>
-      <td><strong>Coca Lavado, Carlos Andrés</strong><br><b>TB1:</b> Lideró la planificación técnica mediante la estructuración del Product Backlog y los diagramas de arquitectura C4.</td>
+      <td><strong>Coca Lavado, Carlos Andrés</strong><br><b>TB1:</b> Lideró la planificación técnica mediante la estructuración del Product Backlog y los diagramas de arquitectura C4.<br><b>TP:</b> Lideró la estructuración general del proyecto en Figma, la gestión y distribución del Sprint Backlog 1, y la elaboración del Services Documentation Evidence for Sprint Review.</td>
     </tr>
     <tr>
-      <td><strong>Paitan Pumacahua, Max Anthony</strong><br><b>TB1:</b> Ejerció liderazgo en el modelado estructural del dominio mediante el Context Mapping y el Domain Message Flows Modeling.</td>
+      <td><strong>Paitan Pumacahua, Max Anthony</strong><br><b>TB1:</b> Ejerció liderazgo en el modelado estructural del dominio mediante el Context Mapping y el Domain Message Flows Modeling.<br><b>TP:</b> Lideró el diseño visual inicial desarrollando los wireframes y mockups para la Landing page, así como para la Web application y Mobile application.</td>
     </tr>
     <tr>
-      <td><strong>Rodríguez Villa, Elvia Marcela</strong><br><b>TB1:</b> Lideró el diseño arquitectónico de los Bounded Context de Inteligencia Botánica y Análisis Externo.</td>
+      <td><strong>Rodríguez Villa, Elvia Marcela</strong><br><b>TB1:</b> Lideró el diseño arquitectónico de los Bounded Context de Inteligencia Botánica y Análisis Externo.<br><b>TP:</b> Lideró la primera fase del Solution UX/UI Design, estableciendo la identidad y estructura visual principal de la Landing Page.</td>
     </tr>
     <tr>
-      <td><strong>Briceño De La Cruz, Farid Sebastian</strong><br><b>TB1:</b> Dirigió la fase de descubrimiento conceptual mediante el Design Level Event Storming y la definición de la problemática.</td>
+      <td><strong>Briceño De La Cruz, Farid Sebastian</strong><br><b>TB1:</b> Dirigió la fase de descubrimiento conceptual mediante el Design Level Event Storming y la definición de la problemática.<br><b>TP:</b> Lideró la configuración técnica de la infraestructura con el Software Development Environment Configuration y estableció el flujo de trabajo en el Source Code Management.</td>
     </tr>
     <tr>
-      <td><strong>Acuña Tomas, Diego Rolin</strong><br><b>TB1:</b> Lideró la identidad de la Startup y el diseño técnico del Bounded Context de IoT Management.</td>
+      <td><strong>Acuña Tomas, Diego Rolin</strong><br><b>TB1:</b> Lideró la identidad de la Startup y el diseño técnico del Bounded Context de IoT Management.<br><b>TP:</b> Lideró la conceptualización de la experiencia mediante Applications Wireflow Diagrams, User Flow Diagrams, Prototyping, y el diseño del dispositivo físico (IoT Device Design).</td>
     </tr>
     <tr>
       <td rowspan="7"><strong>Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.</strong></td>
-      <td><strong>Rivera Ratachi, Renzo Sebastian</strong><br><b>TB1:</b> Colaboró en la definición de los Bounded Context de Plant Profiles y Care Scheduling para alcanzar los hitos de la entrega.</td>
-      <td rowspan="7"><b>TB1:</b> Se logró un entorno colaborativo donde los hallazgos de las entrevistas y el Needfinding fueron la base para el diseño de User Stories y la arquitectura. El cumplimiento de los objetivos de la TB1 se facilitó mediante una planificación coordinada, asegurando que cada entregable técnico respondiera a las necesidades reales de los usuarios identificadas por el equipo.</td>
+      <td><strong>Rivera Ratachi, Renzo Sebastian</strong><br><b>TB1:</b> Colaboró en la definición de los Bounded Context de Plant Profiles y Care Scheduling para alcanzar los hitos de la entrega.<br><b>TP:</b> Planificó y organizó las metas iniciales mediante el Sprint Planning, asegurando que todos compartieran un entorno estandarizado (Style Guide) para cumplir con los objetivos de despliegue a tiempo.</td>
+      <td rowspan="7"><b>TB1:</b> Se logró un entorno colaborativo donde los hallazgos de las entrevistas y el Needfinding fueron la base para el diseño de User Stories y la arquitectura. El cumplimiento de los objetivos de la TB1 se facilitó mediante una planificación coordinada, asegurando que cada entregable técnico respondiera a las necesidades reales de los usuarios identificadas por el equipo.<br><br>
+      <b>TP:</b> El equipo consolidó un entorno de trabajo altamente colaborativo al estructurar el Sprint 1 mediante herramientas ágiles y control de versiones unificado. La clara definición de guías de estilo, la distribución equitativa del Sprint Backlog y la entrega puntual de wireframes, prototipos y configuraciones de entorno garantizaron que cada miembro cumpliera sus objetivos a tiempo para la presentación.</td>
     </tr>
     <tr>
-      <td><strong>Palomino Fiestas, Erick Leonardo</strong><br><b>TB1:</b> Cumplió con los objetivos de diseño para el PlantGuidence Bounded Context en colaboración con el área de UX.</td>
+      <td><strong>Palomino Fiestas, Erick Leonardo</strong><br><b>TB1:</b> Cumplió con los objetivos de diseño para el PlantGuidence Bounded Context en colaboración con el área de UX.<br><b>TP:</b> Contribuyó al cumplimiento de las metas del Sprint 1 aplicando mejoras continuas en la web, colaborando activamente con el equipo de diseño para unificar la interfaz visual.</td>
     </tr>
     <tr>
-      <td><strong>Coca Lavado, Carlos Andrés</strong><br><b>TB1:</b> Estableció las metas de usuario mediante el desarrollo de User Stories e Impact Mapping para ambos segmentos.</td>
+      <td><strong>Coca Lavado, Carlos Andrés</strong><br><b>TB1:</b> Estableció las metas de usuario mediante el desarrollo de User Stories e Impact Mapping para ambos segmentos.<br><b>TP:</b> Estableció metas claras al definir y asignar el Sprint Backlog 1, y documentó colaborativamente las evidencias del sprint para asegurar la transparencia del trabajo en equipo.</td>
     </tr>
     <tr>
-      <td><strong>Paitan Pumacahua, Max Anthony</strong><br><b>TB1:</b> Facilitó un entorno inclusivo mediante el análisis de entrevistas, transformándolas en User Personas y Task Matrix.</td>
+      <td><strong>Paitan Pumacahua, Max Anthony</strong><br><b>TB1:</b> Facilitó un entorno inclusivo mediante el análisis de entrevistas, transformándolas en User Personas y Task Matrix.<br><b>TP:</b> Facilitó el trabajo del equipo de desarrollo al proporcionar oportunamente los wireframes y mockups multiplataforma, lo que permitió cumplir con las metas de maquetación del Sprint 1.</td>
     </tr>
     <tr>
-      <td><strong>Rodríguez Villa, Elvia Marcela</strong><br><b>TB1:</b> Validó los flujos de trabajo grupales mediante el Event Storming del dominio y la creación de User Journey Maps.</td>
+      <td><strong>Rodríguez Villa, Elvia Marcela</strong><br><b>TB1:</b> Validó los flujos de trabajo grupales mediante el Event Storming del dominio y la creación de User Journey Maps.<br><b>TP:</b> Colaboró estrechamente con los desarrolladores proveyendo los lineamientos de UX/UI de la Landing Page, garantizando que el producto final cumpliera con los estándares visuales propuestos.</td>
     </tr>
     <tr>
-      <td><strong>Briceño De La Cruz, Farid Sebastian</strong><br><b>TB1:</b> Participó en el Candidate Context Discovery y la investigación de antecedentes para alinear las tareas del grupo.</td>
+      <td><strong>Briceño De La Cruz, Farid Sebastian</strong><br><b>TB1:</b> Participó en el Candidate Context Discovery y la investigación de antecedentes para alinear las tareas del grupo.<br><b>TP:</b> Creó un entorno colaborativo técnico al configurar los repositorios y políticas de ramas, permitiendo que el equipo integrara su código sin conflictos y cumpliera sus objetivos diarios.</td>
     </tr>
     <tr>
-      <td><strong>Acuña Tomas, Diego Rolin</strong><br><b>TB1:</b> Cumplió con la planificación de los perfiles de equipo y la descripción técnica de la gestión de dispositivos IoT.</td>
+      <td><strong>Acuña Tomas, Diego Rolin</strong><br><b>TB1:</b> Cumplió con la planificación de los perfiles de equipo y la descripción técnica de la gestión de dispositivos IoT.<br><b>TP:</b> Clarificó las metas del equipo al mapear la experiencia de usuario (User Flows y Prototyping) y conectarla con las especificaciones del hardware IoT, uniendo el trabajo de software y electrónica.</td>
     </tr>
   </tbody>
 </table>
@@ -4291,11 +4364,1526 @@ En esta sección, se explica los diagramas que presentan un mayor detalle sobre 
 
 <hr class="page-break">
 
+# Capítulo V: Solution UI/UX Design
+
+## 5.1. Style Guidelines
+
+Las guías de estilo de la solución definen los criterios visuales, comunicacionales e interactivos que orientan el diseño de la experiencia digital de **BioDemeter** y de su producto **PlantSync**. Su finalidad es asegurar consistencia entre la identidad de marca, la interfaz de usuario y las funcionalidades ofrecidas en la landing page, la aplicación web, la aplicación móvil y los componentes vinculados al ecosistema IoT.
+
+### 5.1.1. General Style Guidelines
+
+#### Branding
+
+**Brand Overview**
+
+**BioDemeter** es una startup orientada al desarrollo de soluciones tecnológicas para el cuidado de plantas en el hogar, combinando monitoreo, automatización y asistencia digital con un enfoque de sostenibilidad y bienestar ambiental. Su primer producto es **PlantSync**, una solución digital disponible en entorno web y móvil que permite registrar plantas, monitorear su estado, gestionar tareas de cuidado, consultar información útil y acceder a recomendaciones personalizadas basadas en datos y contexto de uso.
+
+**Brand Name**
+
+El nombre **PlantSync** proviene de la idea de sincronizar el cuidado vegetal con la tecnología y con la rutina diaria del usuario. Esta denominación representa una plataforma que integra organización, monitoreo y acompañamiento digital para hacer más simple, accesible y constante el cuidado de las plantas en casa.
+
+**Colores**
+
+La propuesta cromática se basa principalmente en tonalidades de verde, debido a su fuerte asociación con naturaleza, crecimiento, equilibrio y bienestar. Este color principal se complementa con verdes oscuros para encabezados y elementos de contraste, verdes claros para resaltar áreas positivas, y tonos neutros como beige, blanco y gris para fondos y superficies limpias que favorezcan la lectura y reduzcan la fatiga visual.
+
+Asimismo, se incorporan colores funcionales para representar estados dentro del sistema, como rojo para alertas o problemas, amarillo para advertencias y verde para condiciones normales, especialmente en pantallas relacionadas con monitoreo, tareas y seguimiento del estado de las plantas.
+
+<p align="center">
+  <img src="https://i.imgur.com/eRBfgiy.png" alt="Paleta de colores de PlantSync con tonos verdes, neutros y colores funcionales para alertas, advertencias y estados normales" width="90%">
+</p>
+
+#### Tipografía
+
+La tipografía seleccionada para la solución está orientada a garantizar jerarquía visual, legibilidad y consistencia en dispositivos digitales. Para ello, se utilizarán las familias tipográficas **Poppins** y **Nunito**.
+
+**Poppins** será empleada principalmente en títulos, encabezados y botones de acción debido a su apariencia moderna, limpia y estructurada. **Nunito**, por su parte, será utilizada en textos descriptivos, mensajes auxiliares y cuerpos de contenido, ya que ofrece una lectura clara y amigable tanto en pantallas web como móviles.
+
+<p align="center">
+  <img src="https://i.imgur.com/SH4EL6p.png" alt="muestra de tipografías Poppins y Nunito" width="90%">
+</p>
+
+#### Lenguaje aplicado
+
+El lenguaje utilizado en la solución será claro, cercano y fácil de comprender para usuarios con distintos niveles de experiencia en jardinería y tecnología. El tono de comunicación será amigable y motivador, evitando tecnicismos innecesarios y priorizando mensajes breves, optimistas y orientados a la acción.
+
+Este estilo comunicacional busca acompañar al usuario durante toda su experiencia, reforzando hábitos positivos de cuidado y promoviendo una interacción intuitiva con mensajes consistentes, comprensibles y alineados con el contexto vegetal de la plataforma.
+
+
+### 5.1.2. Web, Mobile and IoT Style Guidelines
+
+La solución ha sido diseñada bajo un enfoque visual minimalista, ordenado y adaptable, con el objetivo de facilitar la interacción del usuario en diferentes contextos de uso. Este enfoque abarca la landing page, la aplicación web, la aplicación móvil y los componentes visuales asociados a la integración con dispositivos IoT, manteniendo coherencia estética y funcional en todo el ecosistema digital.
+
+#### Estilo visual de la landing page
+
+La landing page presenta una estructura clara y persuasiva, orientada a comunicar rápidamente la propuesta de valor del producto y facilitar la conversión. Su diseño prioriza una lectura fluida, bloques visuales bien definidos y secciones que resaltan beneficios, funcionamiento, planes y datos institucionales de la startup.
+
+La composición se apoya en jerarquías visuales simples, contrastes bien controlados y botones de llamado a la acción visibles, favoreciendo una experiencia confiable y comprensible desde el primer contacto con la marca.
+
+#### Estilo visual de la aplicación web y móvil
+
+La aplicación web y móvil comparte una misma línea gráfica para garantizar continuidad de uso entre plataformas. La interfaz prioriza claridad visual, uso moderado de color, tarjetas informativas, iconografía reconocible y componentes reutilizables que permitan al usuario identificar fácilmente acciones, estados y módulos principales.
+
+En la versión web, se aprovechan áreas más amplias para paneles, dashboards y vistas comparativas, mientras que en la versión móvil la información se reorganiza para priorizar accesos rápidos, navegación táctil y lectura vertical, manteniendo la misma identidad visual y semántica.
+
+#### Estilo visual de componentes IoT
+
+Los componentes relacionados con monitoreo e integración IoT deben transmitir precisión, confiabilidad y respuesta en tiempo real. Para ello, las métricas ambientales, estados de conexión y controles de actuadores se representarán mediante indicadores claros, tarjetas de datos, etiquetas de estado y colores funcionales que faciliten la interpretación rápida del usuario.
+
+El diseño de estos módulos debe mantener consistencia con la interfaz principal, evitando que la sección IoT parezca un sistema independiente. De esta manera, la visualización de humedad, temperatura, iluminación o acciones remotas se integra de forma natural al flujo general de cuidado de plantas.
+
+#### Botones
+
+Los botones constituyen elementos centrales de interacción dentro de la solución. Se utilizarán para ejecutar acciones como registrarse, iniciar sesión, agregar plantas, guardar cambios, programar tareas, activar funciones específicas y navegar entre módulos.
+
+Se establecerá una jerarquía visual entre botones primarios, secundarios y de advertencia, utilizando color, contraste y tamaño para diferenciar su relevancia dentro de cada contexto. Los botones principales emplearán el color verde predominante de la marca, mientras que los de confirmación o alerta utilizarán variantes funcionales según el tipo de acción.
+
+#### Imágenes
+
+Las imágenes estarán presentes tanto en la landing page como en la aplicación. En la landing, servirán para representar el uso del sistema, comunicar cercanía y reforzar visualmente la propuesta de valor. En la aplicación, podrán emplearse en perfiles de plantas, registros visuales de crecimiento e identificación mediante fotografías.
+
+Además, en los componentes asociados al monitoreo inteligente será conveniente incluir recursos gráficos o iconos que ayuden a representar sensores, conectividad y variables ambientales sin complejizar la interfaz.
+
+#### Pantallas emergentes
+
+Las pantallas emergentes se utilizarán para confirmar acciones importantes, notificar resultados, advertir sobre errores o presentar mensajes contextuales relevantes para el usuario. Estas ventanas deberán ser visualmente llamativas pero consistentes con la paleta de color general, utilizando una jerarquía clara entre mensaje, acción principal y acción secundaria.
+
+Su diseño debe favorecer decisiones seguras, especialmente en acciones sensibles como eliminación de registros, cambios importantes en la configuración o activación de funciones remotas.
+
+#### Encabezado
+
+En la landing page, el encabezado incluirá el logotipo, accesos a secciones principales y botones para ingresar o registrarse en la plataforma. Su diseño será fijo o persistentemente visible para facilitar el acceso rápido a los contenidos más relevantes.
+
+En la aplicación web y móvil, el encabezado podrá complementarse con elementos de contexto como el nombre del módulo actual, indicadores de perfil, accesos rápidos o notificaciones, manteniendo siempre simplicidad visual y claridad funcional.
+
+#### Pie de página
+
+El pie de página contendrá enlaces institucionales, medios de contacto, redes sociales, políticas y accesos complementarios a otras secciones del sitio. En la landing page, este componente servirá también como refuerzo de confianza y continuidad informativa, permitiendo al usuario acceder fácilmente a recursos de soporte y comunicación.
+
+
+## 5.2. Information Architecture
+
+La arquitectura de información de la solución establece la manera en que el contenido y las funcionalidades se estructuran, organizan, etiquetan y presentan dentro del ecosistema digital de BioDemeter y PlantSync. Su propósito es garantizar una experiencia fluida, comprensible y consistente en la landing page, la aplicación web, la aplicación móvil y los módulos asociados al monitoreo inteligente.
+
+### 5.2.1. Organization Systems
+
+La organización del contenido responde a un modelo combinado que integra estructuras jerárquicas, secuenciales y matriciales, permitiendo ordenar adecuadamente la información según la naturaleza de cada vista y según las tareas que el usuario necesita realizar dentro del sistema.
+
+#### Organización jerárquica
+
+La organización jerárquica se aplica principalmente en la landing page, el panel principal de la aplicación y las vistas de detalle. En estas pantallas, los elementos más importantes se ubican en zonas de mayor visibilidad y con mayor peso visual, como acciones principales, información resumida del estado de las plantas, métricas destacadas o accesos directos a funcionalidades clave.
+
+Este enfoque permite que el usuario identifique rápidamente qué información requiere atención prioritaria y qué acciones puede ejecutar primero, reduciendo la carga cognitiva y facilitando la toma de decisiones.
+
+#### Organización secuencial
+
+La organización secuencial se utiliza en procesos que requieren una progresión ordenada, como el registro de usuarios, la incorporación de una nueva planta, la configuración de tareas o la vinculación de dispositivos. En estos casos, la interfaz guía al usuario paso a paso, mostrando únicamente la información necesaria en cada momento para favorecer la comprensión del flujo.
+
+Este tipo de organización es especialmente útil en interacciones iniciales o en configuraciones técnicas, ya que reduce errores y mejora la percepción de control durante el proceso.
+
+#### Organización matricial
+
+La organización matricial se aplica en módulos donde el usuario necesita explorar información de manera flexible, comparar elementos o revisar múltiples registros. Esto ocurre, por ejemplo, en el inventario de plantas, en el historial de acciones, en el listado de tareas o en la visualización de métricas ambientales.
+
+En estos casos, el contenido puede presentarse mediante tarjetas, listas o cuadrículas que permitan navegar libremente entre elementos, ordenar resultados y detectar patrones o diferencias entre registros.
+
+#### Esquemas de categorización
+
+La solución emplea distintos esquemas de categorización según el tipo de información presentada:
+
+- **Por tópicos**, para organizar guías, recomendaciones y contenidos de ayuda según temas como riego, luz, temperatura, plagas o mantenimiento.
+- **Alfabético**, para ordenar listados de plantas o búsquedas por nombre.
+- **Cronológico**, para historiales de cuidado, tareas registradas, eventos recientes y datos de monitoreo.
+- **Por estado**, para clasificar condiciones normales, alertas, advertencias o situaciones pendientes de atención.
+
+### 5.2.2. Labeling Systems
+
+El sistema de etiquetado ha sido definido para ser claro, directo y consistente en todos los puntos de interacción. El objetivo es que el usuario comprenda con rapidez el significado de cada sección, botón, estado o módulo, sin necesidad de interpretaciones complejas ni conocimientos técnicos previos.
+
+#### Menú principal de la landing page
+
+- Inicio
+- ¿Cómo funciona?
+- Planes
+- ¿Quiénes somos?
+- Acceder
+
+#### Menú de navegación de la solución
+
+- Mis plantas
+- Guías
+- Tareas
+- Historial
+- Sensores
+- Chatbot
+- Perfil
+- Configuración
+- Cerrar sesión
+
+#### Tipos de etiquetas en la interfaz
+
+<p align="center">
+  <img src="https://i.imgur.com/hziWznJ.jpeg" alt="Ejemplo de navegación" width="90%">
+</p>
+
+| Tipo de etiqueta | Ejemplo                  | Aparición                                        |
+|------------------|--------------------------|--------------------------------------------------|
+| Encabezado       | “Mis plantas”           | Parte superior de la pantalla principal          |
+| Panel            | “Historial de cuidados” | Dentro de módulos informativos o tarjetas        |
+| Botón            | “Agregar planta”        | Acción principal en formularios o vistas de gestión |
+| Navegación       | “Guías”, “Tareas”, “Chatbot” | Menú principal, barra lateral o navegación inferior |
+| Estado           | “Último riego hace 3 días” | Dentro de tarjetas o secciones de seguimiento |
+
+Las etiquetas se mantendrán uniformes entre web, móvil y componentes vinculados al monitoreo inteligente, lo que permite conservar continuidad semántica y facilitar el aprendizaje del sistema.
+
+### 5.2.3. SEO Tags and Meta Tags
+
+Las metaetiquetas permiten describir estructuralmente el contenido de la solución y mejorar su visibilidad en motores de búsqueda. Aunque no son visibles para el usuario final, cumplen un papel importante en la indexación de la landing page y en el posicionamiento digital de la marca BioDemeter y del producto PlantSync.
+
+#### Landing Page
+
+**Título**
+```html
+<title>BioDemeter | Tecnología inteligente para el cuidado de plantas</title>
+```
+
+**Codificación de caracteres**
+```html
+<meta charset="utf-8" />
+```
+
+**Meta Description**
+```html
+<meta
+  name="description"
+  content="BioDemeter es una startup que desarrolla soluciones digitales para el monitoreo, registro y cuidado inteligente de plantas mediante su app PlantSync en web y móvil."
+/>
+```
+
+**Keywords**
+```html
+<meta
+  name="keywords"
+  content="BioDemeter, PlantSync, cuidado de plantas, monitoreo de plantas, app para plantas, jardinería digital, recomendaciones para plantas, web y móvil"
+/>
+```
+
+**Author y Derechos de Autor**
+```html
+<meta name="author" content="Equipo BioDemeter" />
+<meta name="copyright" content="Copyright BioDemeter team" />
+```
+
+#### Web and Mobile Application
+
+**Título**
+```html
+<title>PlantSync | Gestiona y cuida tus plantas desde web y móvil</title>
+```
+
+**Codificación de caracteres**
+```html
+<meta charset="utf-8" />
+```
+
+**Meta Description**
+```html
+<meta
+  name="description"
+  content="PlantSync permite registrar plantas, consultar guías, gestionar tareas, recibir recordatorios y obtener recomendaciones personalizadas desde una experiencia web y móvil."
+/>
+```
+
+**Keywords**
+```html
+<meta
+  name="keywords"
+  content="PlantSync, BioDemeter, historial de riego, guías para plantas, monitoreo manual, recomendaciones por clima, app móvil de plantas, plataforma web de plantas"
+/>
+```
+
+**Author y Derechos de Autor**
+```html
+<meta name="author" content="Equipo BioDemeter" />
+<meta name="copyright" content="Copyright BioDemeter team" />
+```
+
+### 5.2.4. Searching Systems
+
+Dado que la solución manejará una cantidad considerable de información, incluyendo guías, registros de plantas, historiales, tareas y datos de monitoreo, resulta fundamental implementar un sistema de búsqueda y filtrado eficiente. Este sistema debe permitir al usuario encontrar rápidamente el contenido que necesita, reduciendo el esfuerzo cognitivo y mejorando la fluidez de navegación.
+
+Las principales opciones de búsqueda incluirán:
+
+- Búsqueda de guías y contenidos informativos.
+- Búsqueda de plantas registradas.
+- Búsqueda de tareas y actividades programadas.
+- Búsqueda de registros asociados a cada planta.
+- Búsqueda de información contextual relacionada con recomendaciones y monitoreo.
+
+Asimismo, se incorporarán filtros que permitan refinar los resultados según distintos criterios:
+
+- Tipo de planta.
+- Tipo de tarea.
+- Estado de la planta.
+- Tipo de guía.
+- Periodo de tiempo.
+- Estado de conectividad o condición monitoreada, cuando corresponda.
+
+Este sistema de búsqueda y filtrado resulta especialmente útil para usuarios con múltiples plantas registradas o con un uso más frecuente del monitoreo y del historial de cuidados, ya que permite identificar patrones, revisar eventos y acceder con rapidez a información relevante.
+
+### 5.2.5. Navigation Systems
+
+La navegación de la solución ha sido diseñada con un enfoque intuitivo, flexible y adaptable a diferentes dispositivos. Su objetivo es ofrecer una experiencia ordenada, evitando la saturación visual y facilitando el acceso a contenidos, acciones y módulos relevantes dentro del ecosistema digital.
+
+#### Landing Page
+
+La landing page utiliza un diseño de tipo **one-page scroll**, que permite recorrer el contenido mediante desplazamiento vertical continuo. Este modelo facilita una lectura lineal de la propuesta de valor, los beneficios, los planes, la información institucional y los llamados a la acción, todo dentro de una experiencia de navegación simple y predecible.
+
+Para reforzar la orientación, se incorpora un encabezado fijo con enlaces directos a las secciones principales, permitiendo al usuario desplazarse rápidamente sin necesidad de recorrer manualmente toda la página.
+
+#### Web Application
+
+La aplicación web adopta una navegación híbrida que combina accesos directos entre módulos con flujos guiados para tareas específicas. El usuario puede desplazarse libremente entre secciones como plantas, tareas, historial, sensores, Chatbot, perfil y configuración, mientras que ciertos procesos más estructurados mantienen una secuencia paso a paso.
+
+Este modelo permite equilibrar libertad de exploración con orden funcional, favoreciendo una experiencia de uso flexible, eficiente y orientada a objetivos.
+
+#### Mobile Application
+
+La aplicación móvil mantiene la lógica de navegación de la versión web, pero adaptada a pantallas más pequeñas y a patrones táctiles de uso. La distribución prioriza acciones rápidas, lectura vertical, accesibilidad con una sola mano y accesos compactos a los módulos principales, asegurando continuidad funcional sin perder claridad visual.
+
+De este modo, la experiencia entre plataformas se mantiene coherente, permitiendo al usuario interactuar con la solución desde distintos dispositivos sin necesidad de reaprender la estructura general del sistema.
+## 5.3. Landing Page UI Design
+
+Enlace del Figma para visualización de el Landing Page UI Design: [Enlace del figma](https://www.figma.com/design/5cSEKvg4XXUzsXTpOPJySb/PlantSync?node-id=0-1&t=y4kxXaWBUrJgtPEo-1)
+
+### 5.3.1. Landing Page Wireframe
+
+En esta sección se presenta una versión básica de nuestra landing page para navegador de escritorio. En ella se incluyen los elementos clave para generar una buena primera impresión en el usuario: una breve introducción sobre el proyecto, una explicación simplificada de su funcionamiento, el uso de herramientas IoT en el monitoreo de la planta, el uso de IA botánica para resolver dudas, la visualización de los distintos planes disponibles, el FAQ y, finalmente, una pequeña presentación de nuestra startup y nuestro grupo de trabajo.
+
+
+<a href="https://ibb.co/xSL39dWw"><img src="https://i.ibb.co/Fb3nZC2c/wire1.png" alt="wire1" border="0"></a>
+
+<a href="https://ibb.co/HpY5K1kP"><img src="https://i.ibb.co/vvm0cgKd/wire2.png" alt="wire2" border="0"></a>
+
+<a href="https://ibb.co/gb6myw0r"><img src="https://i.ibb.co/xK3XhGn2/wire3.png" alt="wire3" border="0"></a>
+
+### 5.3.2. Landing Page Mock-up
+
+A partir de nuestro wireframe, que representa una versión básica de la landing page, se desarrolló la versión final. Esta mantiene los mismos apartados definidos previamente, incorporando además los colores seleccionados y un lenguaje pensado para ser claro y amigable para el usuario.
+
+<a href="https://ibb.co/WpHHM6HX"><img src="https://i.ibb.co/3YTTj7Tb/mock1.png" alt="mock1" border="0"></a>
+
+<a href="https://ibb.co/Zz7XBj7V"><img src="https://i.ibb.co/23Hhv9Hy/mock2.png" alt="mock2" border="0"></a>
+
+<a href="https://ibb.co/rW2g8cL"><img src="https://i.ibb.co/MXkbwGj/mock3.png" alt="mock3" border="0"></a>
+
+<a href="https://ibb.co/TMK9RXrF"><img src="https://i.ibb.co/s958QStM/mock4.png" alt="mock4" border="0"></a>
+
+<a href="https://ibb.co/20FdTVRP"><img src="https://i.ibb.co/zWmZz9Cb/mock5.png" alt="mock5" border="0"></a>
+
+## 5.4. Applications UX/UI Design
+
+#### 4.4.1. Web Applications Wireframes<br><br>
+
+Los wireframes desarrollados para la aplicación web de BioPafi reflejan una planificación enfocada en el usuario, incorporando principios de diseño como la claridad visual, la jerarquía de la información, la consistencia y la inclusividad. Cada pantalla presenta una estructura ordenada y limpia, con encabezados visibles, elementos organizados según su nivel de importancia y una navegación lateral constante que facilita la orientación.
+
+Se prioriza el uso de etiquetas claras y botones con alto contraste para mejorar la accesibilidad. Asimismo, el diseño contempla usuarios con distintos niveles de experiencia, ofreciendo formularios guiados para principiantes y paneles informativos más detallados para usuarios avanzados. Por otro lado, se evidencia una adecuada arquitectura de la información mediante la organización en módulos como Plantas, Guías, Tareas, ChatBot y Configuración, lo que permite encontrar fácilmente cada funcionalidad. En conjunto, cada vista demuestra un equilibrio entre lo funcional y lo estético, respondiendo a las necesidades del público objetivo.
+
+[Enlace del figma](https://www.figma.com/design/5cSEKvg4XXUzsXTpOPJySb/PlantSync?node-id=42-2&t=y4kxXaWBUrJgtPEo-1)
+
+- Mis Planta:
+
+Pantalla principal del usuario donde se muestra el listado de todas sus plantas registradas. Desde esta vista, puede consultar el estado general de cada planta, acceder a su información detallada, editar sus datos o agregar una nueva.
+
+<a href="https://ibb.co/svgK5zrV"><img src="https://i.ibb.co/tMHqZF5J/Mis-Plantas.png" alt="Mis-Plantas" border="0"></a>
+
+- Guías:
+Catálogo de recomendaciones organizado por categorías como riego, luz, fertilización y control de plagas. Permite a los usuarios consultar guías de acuerdo con sus necesidades o el tipo de planta que poseen.
+
+<a href="https://ibb.co/s9zKc4pY"><img src="https://i.ibb.co/60LHGScC/guias.png" alt="guias" border="0"></a>
+
+- Tareas:
+
+Sección con formato de calendario que presenta los recordatorios programados para cada planta, como riegos, fertilización y otras tareas. Facilita la organización de la rutina de cuidado del usuario.
+
+<a href="https://ibb.co/v47YTWP0"><img src="https://i.ibb.co/DfxpvFC0/tareas.png" alt="tareas" border="0"></a>
+
+- Chatbot:
+
+Pantalla principal del asistente virtual (RootBot), desde la cual el usuario puede iniciar una conversación para resolver dudas rápidas relacionadas con el cuidado de plantas.
+
+<a href="https://ibb.co/v6prJzqz"><img src="https://i.ibb.co/DHh67KWK/chatbot.png" alt="chatbot" border="0"></a>
+
+- Configuración personal
+
+Panel en el que el usuario puede actualizar su información personal, configurar las notificaciones y administrar su tipo de suscripción (básico, PRO o premium).
+
+<a href="https://ibb.co/KchvWvv1"><img src="https://i.ibb.co/DPW2Q22q/Configuracion-Personal.png" alt="Configuracion-Personal" border="0"></a>
+
+- Añadir Planta:
+
+Interfaz de registro asistido para añadir una nueva planta. Contempla campos como nombre asignado, especie, fecha de adquisición y la opción de habilitar notificaciones.
+
+<a href="https://ibb.co/ch4r4X1G"><img src="https://i.ibb.co/7ts1sNXw/A-adir-Planta.png" alt="A-adir-Planta" border="0"></a>
+
+- Ver Guía:
+
+Pantalla que presenta el contenido completo de una guía específica, con indicaciones paso a paso, recursos visuales ilustrativos y consejos prácticos para el usuario.
+
+<a href="https://ibb.co/qYpdJ3nQ"><img src="https://i.ibb.co/wh4RcFLm/Ver-Planta.png" alt="Ver-Planta" border="0"></a>
+
+- Chateando con ChatBot:
+
+Vista de la conversación en curso con el bot, donde el usuario puede realizar consultas sobre el cuidado o la adquisición de plantas y recibir respuestas adaptadas al contexto.
+
+<a href="https://ibb.co/4RHdr3RN"><img src="https://i.ibb.co/chjLnVhT/Chat-Chatbot.png" alt="Chat-Chatbot" border="0"></a>
+
+- Ver Planta:
+
+Pantalla que muestra la información completa de una planta específica, incluyendo su imagen, especie, historial de cuidados y recomendaciones según el clima.
+
+<a href="https://ibb.co/qYpdJ3nQ"><img src="https://i.ibb.co/wh4RcFLm/Ver-Planta.png" alt="Ver-Planta" border="0"></a>
+
+- Ver historial de planta:
+
+Historial organizado de las acciones realizadas sobre una planta, como riego, fertilización o cambios de estado, complementado con gráficas sencillas que muestran la humedad y su evolución.
+
+<a href="https://ibb.co/0VpKDycs"><img src="https://i.ibb.co/2Y0Sn3yZ/Historial-Planta.png" alt="Historial-Planta" border="0"></a>
+
+- Mis dispositivos IoT:  
+Vista general que agrupa a las plantas que cuentan con dispositivos IoT conectados para su control, mostrando los resultados actualizados de la humedad del suelo, la temperatura y la humedad del aire. Puede hacerse clic en cada uno, para poder abrir el control personalizado por cada planta.
+
+<a href="https://ibb.co/yJQxBy4"><img src="https://i.ibb.co/qwr2FsJ/iotdevice-drawio.png" alt="iotdevice-drawio" border="0"></a>
+
+- Sensores y métricas de planta:  
+Pantalla de seguimiento que presenta las mediciones obtenidas por los sensores por la planta seleccionada, como humedad del suelo, temperatura y humedad ambiental, permitiendo interpretar de forma clara el estado actual de la planta. Además, se cuenta con un análisis general de los resultados obtenidos durante un periodo de tiempo (dashboard para análitica)
+
+<a href="https://ibb.co/LD0QBVtK"><img src="https://i.ibb.co/spg5c8w7/sensors-drawio.png" alt="sensors-drawio" border="0"></a>
+
+- Actuadores de planta:  
+Interfaz destinada al control de actuadores como bomba para riego y las luces, donde el usuario puede activar o desactivar cada componente y revisar su estado para automatizar acciones de cuidado.
+
+<a href="https://ibb.co/zV1FjB6J"><img src="https://i.ibb.co/WvQ0qMVt/actuators-drawio.png" alt="actuators-drawio" border="0"></a>
+
+#### 4.4.2. Mobile Applications Wireframes
+
+- Login:  
+Pantalla de inicio de sesión que permite al usuario ingresar con correo (usuario) y contraseña; incluye logo, campos para credenciales, botón "Ingresar" y enlace para registrarse.
+
+<a href="https://ibb.co/99SpTT6x"><img src="https://i.ibb.co/TBdw886Q/1.png" alt="1" border="0"></a>
+
+- Registro:  
+Pantalla de creación de cuenta con campos para nombre, apellido, email y contraseña, junto a un botón "Registrarse" para completar el alta.
+
+<a href="https://ibb.co/4ZK2fzHL"><img src="https://i.ibb.co/xSXYsWNb/2.png" alt="2" border="0"></a>
+
+- Navegación principal:  
+Interfaz con barra de navegación inferior que muestra las pestañas principales (Plantas, IoT, Tareas, Perfil) y un área de contenido central que cambia según la pestaña activa.
+
+<a href="https://ibb.co/qMTGy3bs"><img src="https://i.ibb.co/VWfyjcXS/3.png" alt="3" border="0"></a>
+
+- Mis Plantas (Dashboard):  
+Vista en cuadrícula de tarjetas de plantas que muestran imagen, nombre y especie; incluye un botón flotante para añadir una nueva planta.
+
+<a href="https://ibb.co/d4j5Ykp9"><img src="https://i.ibb.co/hFLmz2d5/4.png" alt="4" border="0"></a>
+
+- Detalle de Planta:  
+Pantalla de ficha individual con imagen, especie y un historial de cuidados (p. ej. regada, abonada) presentado como lista de acciones recientes.
+
+<a href="https://ibb.co/GQ8Fvzxf"><img src="https://i.ibb.co/9H1G9Q8m/5.png" alt="5" border="0"></a>
+
+- Añadir Planta:  
+Formulario sencillo para registrar una nueva planta con campos como nombre y especie y un botón "Guardar Planta" para confirmar el registro.
+
+<a href="https://ibb.co/WWq6wJvf"><img src="https://i.ibb.co/0j8cSbyr/6.png" alt="6" border="0"></a>
+
+- Panel IoT:  
+Panel de telemetría con lecturas en vivo (por ejemplo humedad y temperatura) y controles manuales para actuadores (como bomba o lámpara) con toggles.
+
+<a href="https://ibb.co/N6rVQ974"><img src="https://i.ibb.co/nsBgZ7RW/7.png" alt="7" border="0"></a>
+
+- Tareas / Cuidados:  
+Lista de tareas de cuidado con casillas de verificación, título de la tarea y fecha programada, que permite marcar tareas como completadas.
+
+<a href="https://ibb.co/b57tJRNH"><img src="https://i.ibb.co/3mkKzYSf/8.png" alt="8" border="0"></a>
+
+- Perfil:  
+Resumen del usuario con avatar, nombre y plan de suscripción, más accesos a opciones como configuración de notificaciones y gestión de suscripción.
+
+<a href="https://ibb.co/fYPfJm9g"><img src="https://i.ibb.co/hRtb0pc6/9.png" alt="9" border="0"></a>
+
+- Editar Perfil:  
+Formulario para actualizar datos del usuario (nombre, plan de suscripción) y un botón para guardar los cambios.
+
+<a href="https://ibb.co/PG98rmD9"><img src="https://i.ibb.co/whw1d0cw/10.png" alt="10" border="0"></a>
+
+<br><br>
+
+
+### 5.4.1. Applications Wireflow Diagrams
+
+### 5.4.2. Applications Mock-ups
+
+### 5.4.3. Applications User Flow Diagrams
+
+## 5.5. Applications Prototyping
+
+## 5.6. IoT Device Design
+
+# Capítulo VI: Product Implementation, Validation & Deployment
+
+## 6.1. Software Configuration Management
+
+En este apartado se especifican las normas, directrices y procedimientos que se definieron mientras se desarrollaba PlantSync, el entorno de soluciones de la startup BioDemeter. El objetivo de estas directrices es garantizar la integridad, la trazabilidad y la coherencia del software durante todo su ciclo de vida; desde su etapa inicial de desarrollo, a través de la integración y las pruebas, hasta el despliegue y el mantenimiento en producción.
+
+### 6.1.1. Software Development Environment Configuration
+
+**Project Management**
+Herramientas utilizadas para la planificación, asignación de tareas y seguimiento de los Sprints del equipo.
+
+| Herramienta | Descripción | Enlace |
+| --- | --- | --- |
+| Trello | Plataforma para la gestión ágil del proyecto, control de Sprints y seguimiento del Product Backlog mediante tableros Kanban/Scrum. | [https://trello.com/es](https://trello.com/es) |
+| Discord / WhatsApp | Aplicaciones de mensajería para la comunicación rápida y coordinación diaria entre los 7 miembros del equipo. | No aplica |
+
+**Requirements Management**
+Herramientas enfocadas en la recolección, estructuración y trazabilidad de los requerimientos y el modelado del dominio.
+
+| Herramienta | Descripción | Enlace |
+| --- | --- | --- |
+| Miro | Pizarra virtual colaborativa utilizada para las sesiones de Big Picture y Design-Level EventStorming. | [https://miro.com/](https://miro.com/) |
+| GitHub (Markdown) | Repositorio central utilizado para documentar los User Stories, Acceptance Criteria y el formato Gherkin. | https://github.com/ |
+
+**Product UX/UI Design**
+Plataformas empleadas para la investigación de usuarios, flujos de interacción y diseño visual de las interfaces.
+
+| Herramienta | Descripción | Enlace |
+| --- | --- | --- |
+| UXPressia | Herramienta utilizada para elaborar los User Personas, Empathy Maps, Journey Maps e Impact Maps. | [https://uxpressia.com/](https://uxpressia.com/) |
+| Figma | Plataforma colaborativa de diseño para la creación de Wireframes, Mock-ups, Style Guidelines y Prototipos interactivos. | [https://www.figma.com/](https://www.figma.com/) |
+| Lucidchart | Empleada para la diagramación estructurada de los User Flows y Wireflows de la aplicación. | [https://lucid.app/](https://lucid.app/) |
+
+**Software Development**
+Entornos de Desarrollo Integrado (IDE) y lenguajes base utilizados para la codificación de las soluciones.
+
+| Herramienta | Descripción | Enlace |
+| --- | --- | --- |
+| Visual Studio Code | IDE ligero y versátil utilizado principalmente para el desarrollo del Landing Page (HTML/CSS/JS) y la Web App (Angular). | [https://code.visualstudio.com/](https://code.visualstudio.com/) |
+| IntelliJ IDEA | Entorno de desarrollo avanzado utilizado para la programación del RESTful API Backend utilizando Spring Boot (Java). | [https://www.jetbrains.com/idea/](https://www.jetbrains.com/idea/) |
+| Android Studio | IDE oficial utilizado para el desarrollo de la Mobile Application nativa en Kotlin. | [https://developer.android.com/studio](https://developer.android.com/studio) |
+| Arduino IDE | Entorno utilizado para programar en C++ la lógica de los dispositivos IoT (Arduino UNO R4) y el manejo de sensores/actuadores. | [https://www.arduino.cc/en/software](https://www.arduino.cc/en/software) |
+
+**Software Testing**
+Herramientas aplicadas para asegurar la calidad del código, el correcto funcionamiento de los endpoints y las pruebas de usuario.
+
+| Herramienta | Descripción | Enlace |
+| --- | --- | --- |
+| Postman | Plataforma utilizada para diseñar, probar y depurar las peticiones HTTP (GET, POST, PUT, DELETE) del RESTful API. | [https://www.postman.com/](https://www.postman.com/) |
+| JUnit / Mockito | Frameworks de pruebas implementados dentro del entorno de Spring Boot para realizar las pruebas unitarias (Unit Tests). | [https://junit.org/junit5/](https://junit.org/junit5/) |
+| Firebase App Distribution | Herramienta utilizada para distribuir versiones previas de la aplicación móvil al equipo para pruebas en dispositivos físicos. | [https://firebase.google.com/](https://firebase.google.com/) |
+
+**Software Deployment**
+Servicios en la nube y repositorios para la integración, despliegue y alojamiento de las soluciones tecnológicas.
+
+| Herramienta | Descripción | Enlace |
+| --- | --- | --- |
+| Git / GitHub | Sistema de control de versiones bajo GitFlow y plataforma de alojamiento para gestionar el código fuente del proyecto. | [https://github.com](https://github.com) |
+| MS Azure | Servicio en la nube (Cloud Computing) de Microsoft utilizado para el despliegue rápido y escalable del Backend API y del Frontend | [https://portal.azure.com/auth/login](https://portal.azure.com) |
+| GitHub Pages | Plataforma de alojamiento en la nube orientada a frontend, utilizada para desplegar la Web Application y el Landing Page. | [https://docs.github.com/es/pages](https://docs.github.com/es/pages) |
+| MySQL | Sistema de gestión de bases de datos relacional alojado en la nube para persistir la información del ecosistema. | [https://www.mysql.com](https://www.mysql.com) |
+
+**Software Documentation**
+Herramientas utilizadas para documentar la arquitectura, los componentes técnicos y la especificación de los servicios.
+
+| Herramienta | Descripción | Enlace |
+| --- | --- | --- |
+| Swagger (OpenAPI) | Framework utilizado para generar de manera automatizada e interactiva la documentación de los endpoints del RESTful API. | [https://swagger.io/](https://swagger.io/) |
+| Structurizr | Herramienta de modelado (Diagram-as-Code) utilizada para diseñar la Arquitectura de Software bajo el estándar C4 Model. | [https://structurizr.com/](https://structurizr.com/) |
+| Vertabelo / Lucidchart | Software utilizado para el modelado visual de las bases de datos (Database Design Diagrams) de los Bounded Contexts. | [https://vertabelo.com/](https://vertabelo.com/) |
+
+### 6.1.2. Source Code Management
+
+Repositorio principal [https://github.com/orgs/BioDemeter-IoT/repositories](https://github.com/orgs/BioDemeter-IoT/repositories)
+
+**GitFlow:**
+Se utilizará el modelo GitFlow propuesto por Vincent Driessen para organizar el trabajo de desarrollo de forma estructurada.
+
++ Ejemplo de GitFlow:
+<p align="center">
+  <img src="images/others/gitflow.png" alt = "ejemplo de gitflow" width="80%">
+</p>
+
+Estructura de branches:
+
+1. **Main branch**: Contendrá la versión estable de producción de la aplicación. Solo se fusionarán cambios probados y verificados.
+
+2. **Develop branch**: Incluirá las últimas funcionalidades completadas y en proceso de validación.
+
+3. **Feature branches**: Se utilizarán estas ramas para trabajar funcionalidades por separado y posteriormente fusionarlas con develop cuando se haya completado el trabajo. Se usará el prefijo `feature/<nombre-de-la-funcionalidad>`
+
+Las convenciones a utilizar para Release branches y Hotfix branches serán:
+
+**Release branches:**
+Se utilizarán para gestionar versiones estables de la aplicación que están listas para ser implementadas en producción. Su propósito es consolidar las características y mejoras de la rama develop que ya han sido verificadas y son aptas para el despliegue. Se adoptará el sistema de Versionado Semántico (Semantic Versioning) para nombrar las versiones, siguiendo el formato MAJOR.MINOR.PATCH.
+
+**Hotfix branches:**
+Estas ramas se crearán para solucionar errores críticos detectados en la rama main (producción) que afecten de manera importante el funcionamiento de la plataforma.
+
+**Semantic Versioning**: Se aplicará Semantic Versioning 2.0.0 para nombrar releases (por ejemplo: v1.0.0, v1.1.0, v2.0.0).
+
+**Commits**: Se seguirá la convención Conventional Commits para mantener claridad en el historial de cambios.
+
+`<type>[optional scope]: <description>`
+
+**Ejemplo:**
+`feat(auth): add user login validation`
+
+**Mensajes de Commit siguiendo la Convención Conventional Commits**
+Se adoptará el estándar de Conventional Commits en los mensajes de commit para garantizar una mayor claridad sobre las modificaciones efectuadas en el código.
+
+* **feat**: Implementación de nuevas funciones o características.
+* **fix**: Solución de errores o fallos.
+* **docs**: Actualizaciones o modificaciones en la documentación.
+* **style**: Ajustes de formato que no afectan al comportamiento del código.
+* **refactor**: Reestructuración del código sin alterar su funcionalidad.
+* **test**: Creación o modificación de pruebas.
+* **chore**: Actividades de mantenimiento o tareas menores.
+
+### 6.1.3. Source Code Style Guide & Conventions
+
+
+
+Para asegurar la calidad, legibilidad y el mantenimiento a largo plazo de la solución IoT Plant Sync, se ha definido un marco de convenciones técnicas. Estas guías deben ser respetadas por los integrantes del equipo de desarrollo  en los diferentes componentes de la solución.
+
+
+####  Landing Page (HTML, CSS, JavaScript)
+* **HTML:** Cierre estricto de etiquetas, uso obligatorio de texto alt para accesibilidad y nombres de atributos en minúsculas.
+* **CSS:** Implementación de nomenclatura kebab-case para clases y mantenimiento de especificidad baja para facilitar cambios.
+* **JavaScript:** Desarrollo íntegro en inglés con variables en camelCase y clases siguiendo el estándar PascalCase.
+
+####  Web App (TypeScript)
+* **Tipado estricto:** Uso obligatorio de interfaces y tipos definidos para los datos del sensor, evitando el tipo "any".
+* **Componentes:** Definición de selectores con prefijos personalizados y nomenclatura de archivos alineada a las guías de Angular.
+* **Lógica de negocio:** Separación clara entre la lógica de los servicios y la gestión de la vista en los componentes.
+
+#### Mobile App (Dart)
+* **Nomenclatura:** Uso de snake_case para nombres de archivos y PascalCase para la definición de clases de Widgets.
+* **Organización:** Extracción de widgets complejos en componentes independientes para mejorar la legibilidad del árbol de widgets.
+
+
+####  Backend (Java)
+* **Estándares Java:** Uso de PascalCase para clases y camelCase para métodos, manteniendo el código y comentarios en inglés.
+* **Arquitectura REST:** Diseño de endpoints utilizando sustantivos en plural y siguiendo los verbos HTTP estándares.
+* **Persistencia:** Nomenclatura clara para entidades y repositorios que reflejen el modelo de datos IoT de PlantSync.
+
+#### Testing & Documentación (Gherkin)
+* **Estructura Gherkin:** Seguimiento riguroso del formato Given - When - Then para la redacción de escenarios de prueba.
+* **Criterios de Aceptación:** Enfoque en el comportamiento del usuario y la respuesta del hardware ante cambios de humedad.
+* **Consistencia:** Redacción de escenarios en inglés para mantener la uniformidad con el resto del repositorio técnico.
+
+### 6.1.4. Software Deployment Configuration
+
+Se siguieron estos pasos para el despliegue de la Landing Page en GitHub Pages:
+
+1. El diseño y la estructura inicial de la interfaz de la Landing Page se generaron de forma iterativa utilizando v0 de Vercel, optimizando los componentes visuales mediante inteligencia artificial generativa basada en los requerimientos del proyecto.
+
+2.  Una vez finalizado el diseño en v0, el código fuente se exportó y conectó directamente a un repositorio específico en GitHub, el cual almacena el código del frontend de PlantSync de manera segura y versionada.
+
+3. Dentro del panel de control de Vercel, se importó el repositorio de GitHub. La plataforma detectó automáticamente el framework y las configuraciones base del proyecto, estableciendo la rama principal (main) como la fuente de producción para los despliegues.
+
+4.  Con la integración activa, cada vez que se realiza un nuevo commit o push a la rama principal en GitHub, Vercel activa un flujo automático de compilación (build) y verificación de código, reduciendo la intervención manual.
+
+5. Tras completar con éxito el proceso de compilación, Vercel genera un enlace de producción único y seguro con protocolo HTTPS, permitiendo el acceso global e inmediato a la Landing Page de PlantSync.
+
+[Enlace a la Landing Page desplegada](https://v0-landingpage-seven-mu.vercel.app/en)
+
+[Enlace al FrontEnd desplegado](https://bio-demeter-plant-sync-frontend.vercel.app/login)
+
+
+
+
+## 6.2. Landing Page, Services & Applications Implementation
+
+### 6.2.1. Sprint 1
+
+
+#### 6.2.1.1. Sprint Planning 1
+
+
+
+
+<table border="1">
+  <tbody>
+    <tr>
+      <td><b>Sprint 1</b></td>
+      <td>implementacion de Landing Page, Backend, Frontend para Aplicación Web y Movil </td>
+    </tr>
+    <tr>
+      <td colspan="2"><b>Sprint Planning Background</b></td>
+    </tr>
+    <tr>
+      <td><b>Date</b></td>
+      <td>10/05/2026</td>
+    </tr>
+    <tr>
+      <td><b>Time</b></td>
+      <td>19:30 PM</td>
+    </tr>
+    <tr>
+      <td><b>Location</b></td>
+      <td>Reunión realizada mediante Discord</td>
+    </tr>
+    <tr>
+      <td><b>Prepared By</b></td>
+      <td>Palomino Fiestas, Erick Leonardo</td>
+    </tr>
+    <tr>
+      <td><b>Attendees (to planning meeting)</b></td>
+      <td>
+           Diego Rolin Acuña Tomas<br>
+           Farid Sebastian Briceño De La Cruz <br>
+          Rivera Ratachi, Renzo Sebastian <br>
+          Erick Leonardo Palomino Fiestas <br>
+          Carlos Andres Coca Lavado <br>
+          Elvia Marcela Rodriguez Villa <br>
+          Max Anthony Paitan Pumacahua <br>
+  </td>
+    </tr>
+    <tr>
+      <td><b> Previous Sprint  Review</b></td>
+      <td> Al ser el primer sprint, no se realizo.
+      </td>
+    </tr>
+    <tr>
+      <td><b>Previous Sprint Retrospective</b></td>
+      <td>Al ser el primer sprint, no se realizo.</td>
+    </tr>
+    <tr>
+      <td colspan="2"><b>Sprint Goal & User Stories</b></td>
+    </tr>
+    <tr>
+      <td><b>Sprint 1 Goal</b></td>
+      <td>Our focus is on establishing the public presence of PlantSync by deploying an informative and appealing landing page. We believe this delivers a clear first impression and drives early user engagement. This will be confirmed when the frontend application is successfully deployed and accessible to potential users, allowing them to explore the app's value proposition and core features, while the supporting backend services remain in a local development environment.</td>
+    </tr>
+    <tr>
+      <td><b>Sprint 1 Velocity</b></td>
+      <td> 68 Points</td>
+    </tr>
+    <tr>
+      <td><b>14 Sum of Story Points</b></td>
+      <td> 68 Points
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+#### 6.2.1.2. Aspect Leaders and Collaborators
+
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Team Member<br>(Last Name, First Name)</th>
+      <th>Github Username</th>
+      <th><br>Desarrollo del Backend</th>
+      <th><br>Desarollo del FrontEnd</th>
+      <th><br>Desarrollo de la app Movil</th>
+      <th><br>Desarrollo de la landing page</th>
+      <th><br>Desarrollo de los MockUps</th>
+      <th><br>Desarrollo del Prototipo Movil</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Palomino Fiestas, Erick Leonardo</td>
+      <td>erickLeo13</td>
+      <td>C</td>
+      <td>L</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>Diego Rolin Acuña Tomas</td>
+      <td>ComidaRapida007</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>Farid Sebastian Briceño De La Cruz</td>
+      <td>InjustShin</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+      <td>L</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>Rivera Ratachi, Renzo Sebastian</td>
+      <td>1sopod</td>
+      <td>L</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>Carlos Andres Coca Lavado</td>
+      <td>MrAndres08DV</td>
+      <td>C</td>
+      <td>C</td>
+      <td>L</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+    </tr>
+     <tr>
+      <td>Max Anthony Paitan Pumacahua</td>
+      <td>maxpp2910</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+      <td>L</td>
+    </tr>
+ <tr>
+      <td>Elvia Marcela Rodriguez Villa</td>
+      <td>ElviaRV</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+      <td>L</td>
+      <td>C</td>
+      <td>C</td>
+    </tr>
+  </tbody>
+</table>
+
+#### 6.2.1.3. Sprint Backlog 1
+
+<br>
+<p align="center">
+  <img src="images/chapter5-sprint1/sprintbacklog1.png" alt="execution" width="600">
+</p>
+<p align="center">
+     Sprint Backlog 1 - Elaboración propia
+</p>
+
+Link al trello: https://trello.com/invite/b/69ed479188a27ae377d2c567/ATTI868dfd258366f94b4921e997ac3b2cc58A9652CC/sprintbacklog-1
+
+<h3>Sprint Backlog – Sprint 1</h3>
+<table border="1" cellspacing="0" cellpadding="5">
+<thead>
+<tr>
+<th colspan="8">Sprint 1</th>
+</tr>
+<tr>
+<th colspan="2">User Story</th>
+<th colspan="2">Work-Item / Task</th>
+<th rowspan="2">Description</th>
+<th rowspan="2">Estimation (Hours)</th>
+<th rowspan="2">Assigned To</th>
+<th rowspan="2">Status (To-do / In-Process / To-Review / Done)</th>
+</tr>
+<tr>
+<th>Id</th>
+<th>Title</th>
+<th>Id</th>
+<th>Title</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>US18</td>
+<td>Comparar planes de suscripción</td>
+<td>WI001</td>
+<td>Implementar comparación de planes</td>
+<td>Desarrollar la sección comparativa de planes de suscripción en el landing page para facilitar la elección del usuario.</td>
+<td>5</td>
+<td>Renzo Rivera</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US21</td>
+<td>Preguntas Frecuentes - FAQ</td>
+<td>WI002</td>
+<td>Implementar sección FAQ</td>
+<td>Desarrollar el componente interactivo de acordeón para visualizar las preguntas y respuestas comunes.</td>
+<td>4</td>
+<td>Elvia Rodríguez</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US22</td>
+<td>Visualización de Testimonios de Usuarios</td>
+<td>WI003</td>
+<td>Desarrollar carrusel de testimonios</td>
+<td>Implementar un carrusel dinámico en la landing page para mostrar experiencias breves de otros usuarios.</td>
+<td>4</td>
+<td>Carlos Coca</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US04</td>
+<td>Redirección a plataformas desde el Landing Page</td>
+<td>WI004</td>
+<td>Configurar enlaces de redirección</td>
+<td>Añadir y validar los enlaces directos a la aplicación web y tiendas móviles en los botones principales.</td>
+<td>2</td>
+<td>Erick Palomino</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US23</td>
+<td>Botones de llamado a la acción para Registro</td>
+<td>WI005</td>
+<td>Implementar botones CTA</td>
+<td>Diseñar y posicionar botones de "Empieza ahora" estratégicos para redireccionar al flujo de registro.</td>
+<td>3</td>
+<td>Farid Briceño</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US24</td>
+<td>Acceso a Redes Sociales y Contacto en Footer</td>
+<td>WI006</td>
+<td>Desarrollar Footer</td>
+<td>Maquetar e implementar el pie de página con accesos a redes sociales y correo de soporte.</td>
+<td>3</td>
+<td>Erick Palomino</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US20</td>
+<td>Selección de idioma</td>
+<td>WI007</td>
+<td>Implementar internacionalización</td>
+<td>Configurar la selección de múltiples idiomas y la librería de traducciones en la página web.</td>
+<td>6</td>
+<td>Diego Acuña</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US01</td>
+<td>Visualización de beneficios botánicos en el Landing Page</td>
+<td>WI008</td>
+<td>Desarrollar sección de beneficios</td>
+<td>Maquetar la sección informativa sobre los beneficios psicológicos del cuidado de las plantas.</td>
+<td>5</td>
+<td>Max Paitan</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US29</td>
+<td>Acceder a perfil de planta</td>
+<td>WI010</td>
+<td>Desarrollar detalle de planta</td>
+<td>Crear la vista de detalle donde el usuario pueda acceder a la información actual de una planta en específico.</td>
+<td>5</td>
+<td>Carlos Coca</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US06</td>
+<td>Registro de nueva planta desde la app móvil</td>
+<td>WI011</td>
+<td>Implementar registro de planta</td>
+<td>Desarrollar el formulario en la app móvil para añadir el nombre, especie y ubicación de una nueva planta.</td>
+<td>7</td>
+<td>Diego Acuña</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US11</td>
+<td>Subir fotos de una planta</td>
+<td>WI012</td>
+<td>Funcionalidad de carga de fotos</td>
+<td>Permitir a los usuarios subir e integrar imágenes de sus plantas para facilitar el monitoreo a lo largo del tiempo.</td>
+<td>6</td>
+<td>Farid Briceño</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US12</td>
+<td>Eliminación de planta</td>
+<td>WI013</td>
+<td>Implementar borrado de planta</td>
+<td>Añadir la opción de eliminar y un modal de confirmación para retirar plantas del inventario personal.</td>
+<td>3</td>
+<td>Elvia Rodríguez</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US13</td>
+<td>Inicio sesión de usuario</td>
+<td>WI014</td>
+<td>Desarrollar inicio de sesión</td>
+<td>Implementar la autenticación de usuarios registrados mediante correo electrónico y contraseña.</td>
+<td>5</td>
+<td>Max Paitan</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US14</td>
+<td>Registrarse en la app</td>
+<td>WI015</td>
+<td>Implementar flujo de registro</td>
+<td>Desarrollar la creación de una cuenta nueva para que el usuario pueda acceder a las funcionalidades de la app.</td>
+<td>6</td>
+<td>Erick Palomino</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US28</td>
+<td>Configuración de tareas</td>
+<td>WI016</td>
+<td>Funcionalidad de añadir tareas</td>
+<td>Permitir al usuario crear una determinada tarea para el cuidado de sus plantas</td>
+<td>4</td>
+<td>Renzo Rivera</td>
+<td>Done</td>
+</tr>
+</tbody>
+</table>
+
+#### 6.2.1.5. Testing Suite Evidence for Sprint Review
+
+<br>
+
+<table align="center" border="1" cellspacing="0" cellpadding="5">
+  <thead>
+    <tr>
+      <th><strong>Repository</strong></th>
+      <th><strong>Branch</strong></th>
+      <th><strong>Commit Id</strong></th>
+      <th><strong>Commit Message</strong></th>
+      <th><strong>Commit Message Body</strong></th>
+      <th><strong>Commited on (Date)</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>https://github.com/BioDemeter-IoT/landingpage</td>
+      <td>main</td>
+      <td>402c09a</td>
+      <td>Initialize plant care chat application</td>
+      <td>Initialize plant care chat application</td>
+      <td>15/05/26</td>
+    </tr>
+    <tr>
+      <td>https://github.com/BioDemeter-IoT/landingpage</td>
+      <td>main</td>
+      <td>f258006</td>
+      <td>fix: resolve Framer Motion TypeScript ease type errors</td>
+      <td>Add 'as const' to all 'ease' string properties in 6 files</td>
+      <td>15/05/26</td>
+    </tr>
+    <tr>
+      <td>https://github.com/BioDemeter-IoT/report</td>
+      <td>develop</td>
+      <td>971e533</td>
+      <td>fix: landing page link</td>
+      <td>-</td>
+      <td>16/05/26</td>
+    </tr>
+    <tr>
+      <td>https://github.com/BioDemeter-IoT/report</td>
+      <td>develop</td>
+      <td>089d404</td>
+      <td>docs: student Outcome</td>
+      <td>-</td>
+      <td>16/05/26</td>
+    </tr>
+    <tr>
+      <td>https://github.com/BioDemeter-IoT/report</td>
+      <td>develop</td>
+      <td>d92c564</td>
+      <td>docs: source code management</td>
+      <td>documentación el modelo GitFlow (main, develop, feature, release, hotfix), el uso de Semantic Versioning para releases y los Conventional Commits.También se incorpora la imagen images/others/gitflow.png como ilustración del flujo de trabajo.</td>
+      <td>09/04/26</td>
+    </tr>
+    <tr>
+      <td>https://github.com/BioDemeter-IoT/report</td>
+      <td>develop</td>
+      <td>2325750</td>
+      <td>docs: added the sprint review</td>
+      <td>-</td>
+      <td>15/05/26</td>
+    </tr>
+    <tr>
+      <td>https://github.com/BioDemeter-IoT/report</td>
+      <td>develop</td>
+      <td>0ffed64</td>
+      <td>docs: add insights</td>
+      <td>-</td>
+      <td>26/04/26</td>
+    </tr>
+    <tr>
+      <td>https://github.com/BioDemeter-IoT/report</td>
+      <td>develop</td>
+      <td>ec635bb</td>
+      <td>docs: add template</td>
+      <td>Added template for project report</td>
+      <td>14/05/26</td>
+    </tr>
+    <tr>
+      <td>https://github.com/BioDemeter-IoT/report</td>
+      <td>develop</td>
+      <td>77e853f</td>
+      <td>file: add member photos</td>
+      <td>-</td>
+      <td>26/04/26</td>
+    </tr>
+  </tbody>
+</table>
+
+#### 6.2.1.6. Execution Evidence for Sprint Review
+
+<br>
+
+En el Sprint 1 se alcanzó un desarrollo completo en la implementación y maquetación de la Landing Page, asegurando la presencia digital del proyecto. Además, se logró avanzar significativamente en el desarrollo del frontend y las pantallas principales de la aplicación móvil para la gestión de usuarios y plantas.
+
+<br>
+
+<ul>
+  <li>US01 Visualización de beneficios botánicos en el Landing Page</li>
+  <li>US18 Comparar planes de suscripción</li>
+</ul>
+
+<br>
+<p align="center">
+  <img src="images/EvidenceTesting/LandingPage2.png" alt="execution landing page 1" width="800">
+</p>
+<br>
+<p align="center">
+  <img src="images/EvidenceTesting/LandingPage3.png" alt="execution landing page 2" width="800">
+</p>
+<br>
+<p align="center">
+  <img src="images/EvidenceTesting/LandingPage7.png" alt="execution landing page 2" width="800">
+</p>
+<br>
+
+<ul>
+  <li>US21 Preguntas Frecuentes - FAQ</li>
+  <li>US22 Visualización de Testimonios de Usuarios</li>
+</ul>
+
+<br>
+<p align="center">
+  <img src="images/EvidenceTesting/LandingPage4.png" alt="execution landing page 3" width="800">
+</p>
+<br>
+
+<ul>
+  <li>US04 Redirección a plataformas desde el Landing Page</li>
+  <li>US23 Botones de llamado a la acción para Registro</li>
+</ul>
+
+<br>
+<p align="center">
+  <img src="images/EvidenceTesting/LandingPage1.png" alt="execution landing page 5" width="800">
+</p>
+<br>
+<p align="center">
+  <img src="images/EvidenceTesting/FrontEnd1.jpeg" alt="execution landing page 5" width="800">
+</p>
+<br>
+
+<ul>
+  <li>US20 Selección de idioma</li>
+  <li>US24 Acceso a Redes Sociales y Contacto en Footer</li>
+</ul>
+
+<br>
+<p align="center">
+  <img src="images/EvidenceTesting/LandingPage8.png" alt="execution landing page footer" width="800">
+</p>
+<br>
+<p align="center">
+  <img src="images/EvidenceTesting/LandingPage5.png" alt="execution landing page footer" width="800">
+</p>
+<br>
+
+<ul>
+  <li>US13 Inicio sesión de usuario</li>
+  <li>US14 Registrarse en la app</li>
+</ul>
+
+<br>
+<p align="center">
+  <img src="images/EvidenceTesting/FrontEnd1.jpeg" alt="execution frontend auth" width="350">
+</p>
+<br>
+<p align="center">
+  <img src="images/EvidenceTesting/AppMovil2.png" alt="execution frontend auth" width="350">
+</p>
+<br>
+
+<ul>
+  <li>US06 Registro de nueva planta desde la app móvil</li>
+  <li>US11 Subir fotos de una planta</li>
+  <li>US28 Configuración de tareas</li>
+  <li>US12 Eliminación de planta</li>
+</ul>
+
+<br>
+<p align="center">
+  <img src="images/EvidenceTesting/AppMovil.png" alt="execution frontend plant management" width="350">
+</p>
+<br>
+<p align="center">
+  <img src="images/EvidenceTesting/FrontEnd8.jpeg" alt="execution frontend plant management" width="350">
+</p>
+<br>
+<p align="center">
+  <img src="images/EvidenceTesting/FrontEnd6.jpeg" alt="execution frontend plant management" width="350">
+</p>
+<br>
+<p align="center">
+  <img src="images/EvidenceTesting/FrontEnd4.jpeg" alt="execution frontend plant management" width="350">
+</p>
+<br>
+
+<ul>
+  <li>US29 Acceder a perfil de planta</li>
+</ul>
+
+<br>
+<p align="center">
+  <img src="images/EvidenceTesting/FrontEnd6.jpeg" alt="execution frontend profiles" width="350">
+</p>
+<br>
+
+#### 6.2.1.7. Services Documentation Evidence for Sprint Review
+
+<br>
+<p align="center">
+  <img src="images/EvidenceTesting/BackEnd1.jpeg" alt="execution frontend profiles" width="350">
+</p>
+<br>
+<p align="center">
+  <img src="images/EvidenceTesting/BackEnd2.jpeg" alt="execution frontend profiles" width="350">
+</p>
+<br>
+<p align="center">
+  <img src="images/EvidenceTesting/BackEnd3.jpeg" alt="execution frontend profiles" width="350">
+</p>
+<br>
+
+<h3>Endpoints implementados</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Endpoint</th>
+      <th>Acciones soportadas</th>
+      <th>Parámetros</th>
+      <th>Ejemplo de Request</th>
+      <th>Ejemplo de Response</th>
+      <th>Documentación (URL)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>/plants</td>
+      <td>GET, POST, PUT, DELETE</td>
+      <td>id (path), userId, name, species, humidity, imageUrl</td>
+      <td><code>POST /plants</code><br>{ "name": "Cactus", "species": "Suculenta", "userId": 1 }</td>
+      <td>{ "id": 10, "name": "Cactus", "userId": 1 }</td>
+      <td>http://localhost:3000/api-docs</td>
+    </tr>
+    <tr>
+      <td>/tasks</td>
+      <td>GET, POST, PUT</td>
+      <td>userId, plantId, date, action</td>
+      <td><code>GET /tasks?userId=1</code></td>
+      <td>[{ "id": 3, "action": "Fertilizar", "date": "2025-05-17" }]</td>
+      <td>http://localhost:3000/api-docs</td>
+    </tr>
+    <tr>
+      <td>/users</td>
+      <td>GET, POST, PUT</td>
+      <td>id (path), email, password, name</td>
+      <td><code>POST /users</code><br>{ "email": "javier@example.com", "password": "123456" }</td>
+      <td>{ "id": 1, "name": "Javier", "email": "javier@example.com" }</td>
+      <td>http://localhost:3000/api-docs</td>
+    </tr>
+    <tr>
+      <td>/api/v1/profiles</td>
+      <td>Profiles</td>
+      <td>GET</td>
+      <td>Get all profiles</td>
+      <td>Ninguno</td>
+      <td><pre><code>{
+  "name": "Monstera Deliciosa",
+  "species": "Planta Trepadora",
+  "acquisitionDate": "2024-04-01",
+  "humidity": "Media",
+  "nextWateringDate": "2024-05-14",
+  "imageUrl": "https://static.wixstatic.com/media/b4df8d_29038c38771f4c67aa279995240d5717~mv2.jpg",
+  "notificationsEnabled": true,
+  "profileId": 1,
+  "id": 1
+}</code></pre></td>
+    </tr>
+    <tr>
+      <td>/api/v1/profiles</td>
+      <td>Profiles</td>
+      <td>POST</td>
+      <td>Create a new profile</td>
+      <td>Body: profile data</td>
+      <td><pre><code>{
+  "id": 1,
+  "personName": "javier",
+  "subscriptionPLan": "PREMIUM",
+  "UserId": 1
+}</code></pre></td>
+    </tr>
+    <tr>
+      <td>/api/v1/profiles/{profileId}</td>
+      <td>Profiles</td>
+      <td>GET</td>
+      <td>Get a profile by ID</td>
+      <td>Path: profileId</td>
+      <td><pre><code>{
+  "id": 1,
+  "personName": "javier",
+  "subscriptionPLan": "PREMIUM",
+  "UserId": 1
+}</code></pre></td>
+    </tr>
+    <tr>
+      <td>/api/v1/tasks</td>
+      <td>Tasks</td>
+      <td>GET</td>
+      <td>Get all tasks</td>
+      <td>Ninguno</td>
+      <td><pre><code>[
+  {
+    "id": 1,
+    "date": "2025-06-16",
+    "action": "Regar planta",
+    "completed": false,
+    "plantId": 2
+  }
+]</code></pre></td>
+    </tr>
+    <tr>
+      <td>/api/v1/tasks</td>
+      <td>Tasks</td>
+      <td>POST</td>
+      <td>Create a new task</td>
+      <td>Body: task data</td>
+      <td><pre><code>{
+  "id": 1,
+  "date": "2025-06-16",
+  "action": "Regar planta",
+  "completed": false,
+  "plantId": 2
+}</code></pre></td>
+    </tr>
+    <tr>
+      <td>/api/v1/tasks/{taskId}</td>
+      <td>Tasks</td>
+      <td>DELETE</td>
+      <td>Delete task</td>
+      <td>Path: taskId</td>
+      <td><pre><code>Task with id successfully deleted</code></pre></td>
+    </tr>
+    <tr>
+      <td>/api/v1/plants</td>
+      <td>Plants</td>
+      <td>POST</td>
+      <td>Create a new plant</td>
+      <td>Body: plant data</td>
+      <td><pre><code>{
+  "name": "Monstera Deliciosa",
+  "species": "Planta Trepadora",
+  "acquisitionDate": "2024-04-01",
+  "humidity": "Media",
+  "nextWateringDate": "2024-05-14",
+  "imageUrl": "https://static.wixstatic.com/media/b4df8d_29038c38771f4c67aa279995240d5717~mv2.jpg",
+  "notificationsEnabled": true,
+  "profileId": 1,
+  "id": 1
+}</code></pre></td>
+    </tr>
+    <tr>
+      <td>/api/v1/plants/{plantId}</td>
+      <td>Plants</td>
+      <td>PUT</td>
+      <td>Update a plant</td>
+      <td>Path: plantId, Body: plant</td>
+      <td><pre><code>{
+  "name": "Monstera Deliciosa",
+  "species": "Planta Trepadora",
+  "acquisitionDate": "2024-04-01",
+  "humidity": "Media",
+  "nextWateringDate": "2024-05-14",
+  "imageUrl": "https://static.wixstatic.com/media/b4df8d_29038c38771f4c67aa279995240d5717~mv2.jpg",
+  "notificationsEnabled": true,
+  "profileId": 1,
+  "id": 1
+}</code></pre></td>
+    </tr>
+    <tr>
+      <td>/api/v1/plants/{plantId}</td>
+      <td>Plants</td>
+      <td>DELETE</td>
+      <td>Delete plant</td>
+      <td>Path: plantId</td>
+      <td><pre><code>Plant with id successfully deleted</code></pre></td>
+    </tr>
+    <tr>
+      <td>/api/v1/plants</td>
+      <td>Plants</td>
+      <td>GET</td>
+      <td>Get all plants</td>
+      <td>Ninguno</td>
+      <td><pre><code>[
+{
+    "name": "Monstera Deliciosa",
+    "species": "Planta Trepadora",
+    "acquisitionDate": "2024-04-01",
+    "humidity": "Media",
+    "nextWateringDate": "2024-05-14",
+    "imageUrl": "https://static.wixstatic.com/media/b4df8d_29038c38771f4c67aa279995240d5717~mv2.jpg",
+    "notificationsEnabled": true,
+    "profileId": 1,
+    "id": 1
+  }
+]</code></pre></td>
+    </tr>
+    <tr>
+      <td>/api/v1/profiles</td>
+      <td>Profiles</td>
+      <td>GET</td>
+      <td>Get all profiles</td>
+      <td>Ninguno</td>
+      <td>
+        {
+          "name": "Monstera Deliciosa",
+          "species": "Planta Tropical",
+          "humidity": "Media",
+          "nextWateringDate": "2024-08-01",
+          "imageUrl": "https://static.wixstatic.com/media/example.jpg",
+          "notificationsEnabled": true,
+          "profileId": 1,
+          "id": 1
+        }
+      </td>
+    </tr>
+    <tr>
+      <td>/api/v1/profiles</td>
+      <td>Profiles</td>
+      <td>POST</td>
+      <td>Create a new profile</td>
+      <td>Body: profile data</td>
+      <td>
+        {
+          "id": 1,
+          "personName": "javier",
+          "subscriptionPlan": "PREMIUM",
+          "userId": 1
+        }
+      </td>
+    </tr>
+    <tr>
+      <td>/api/v1/authentication/sign-up</td>
+      <td>Authentication</td>
+      <td>POST</td>
+      <td>Sign-up</td>
+      <td>Body: name, email, password, subscriptionPlan</td>
+      <td>
+        {
+          "name": "string",
+          "email": "string",
+          "password": "string",
+          "subscriptionPlan": "string"
+        }
+      </td>
+    </tr>
+    <tr>
+      <td>/api/v1/authentication/sign-in</td>
+      <td>Authentication</td>
+      <td>POST</td>
+      <td>Sign-in</td>
+      <td>Body: email, password</td>
+      <td>
+        {
+          "email": "string",
+          "password": "string"
+        }
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+#### 6.2.1.8. Software Deployment Evidence for Sprint Review
+
+Durante este Sprint se realizo el despliegue al 100% del FrontEnd y de la Landing Page de BioDemeter
+
+FrontEnd:
+
+Configuración en vercel para el despliegue del FrontEnd:
+
+<p align="center">
+  <img src="images/EvidenceTesting/DeployFrontEnd.jpeg" alt="execution frontend profiles" width="350">
+</p>
+
+LandingPage:
+
+Configuración en vercel para el despliegue de la Landing Page:
+
+<p align="center">
+  <img src="images/EvidenceTesting/DeployLandingPage.jpeg" alt="execution frontend profiles" width="350">
+</p>
+
+#### 6.2.1.9. Team Collaboration Insights during Sprint
+
+Se podra visualizar los commit y contribuciones hechas por los integrantes.
+
+Report Insights:
+
+<p align="center">
+  <img src="images/insights/TB1/InsightsReport.png" alt="execution frontend profiles" width="350">
+</p>
+
+FrontEnd Insights:
+
+<p align="center">
+  <img src="images/insights/TB1/InsightsFrontEnd.png" alt="execution frontend profiles" width="350">
+</p>
+
+BackEnd Insights:
+
+<p align="center">
+  <img src="images/insights/TB1/InsightsBackEnd.png" alt="execution frontend profiles" width="350">
+</p>
+
+Landing Page Insights:
+
+<p align="center">
+  <img src="images/insights/TB1/InsightsLanding.png" alt="execution frontend profiles" width="350">
+</p>
+
+
 # Conclusiones
 
 ## Conclusiones y recomendaciones
 
 **Conclusiones**
+
+AV1:
 
 -  Se ha confirmado que la problemática central no es solo el olvido del riego, sino la falta de conocimiento técnico sobre las necesidades específicas de cada especie. El diseño de los Bounded Contexts de Inteligencia Botánica y Plant Profiles responde directamente a esta brecha, proporcionando una solución que centraliza el conocimiento especializado.
 
@@ -4305,11 +5893,33 @@ En esta sección, se explica los diagramas que presentan un mayor detalle sobre 
 
 - La implementación de Domain-Driven Design (DDD) permitió delimitar claramente las responsabilidades del sistema. La separación de contextos como IoT Management y Care Scheduling asegura que el producto sea escalable y que la complejidad técnica de los sensores no interfiera con la experiencia de usuario en la capa de aplicación.
 
+TB1:
+
+- La implementación de la metodología GitFlow, combinada con el uso de Semantic Versioning y Conventional Commits, ha garantizado un control de versiones altamente estructurado para el ecosistema PlantSync. Esta arquitectura de repositorios permite una separación clara entre el desarrollo de nuevas características (Feature branches), la estabilización (Release) y la resolución de incidentes críticos (Hotfix), asegurando la integridad de la rama principal de producción.
+
+- La definición exhaustiva de guías de estilo para cada componente tecnológico (React para la Landing Page, TypeScript para la Web App, Dart para la aplicación móvil y Java para el Backend REST) asegura la escalabilidad, legibilidad y mantenibilidad del código a largo plazo. El requerimiento de tipado estricto y nomenclaturas unificadas minimiza la deuda técnica desde las etapas iniciales.
+
+- La estrategia de despliegue apoyada en Vercel y conectada directamente al repositorio de GitHub ha optimizado significativamente el flujo de trabajo. La capacidad de detectar cambios en la rama main y ejecutar flujos automáticos de compilación y validación reduce el error humano y acelera el tiempo de entrega (Time-to-Market) de la Landing Page.
+
+- Durante el primer sprint, el equipo logró consolidar con éxito la presencia digital del proyecto mediante el despliegue funcional de la Landing Page (abarcando testimonios, planes, FAQ y llamadas a la acción). De manera paralela, la maquetación de la aplicación móvil con Dart alcanzó hitos críticos, cubriendo los flujos esenciales de autenticación de usuario y gestión de inventario botánico.
+
+- El uso de herramientas de IA generativa (v0 de Vercel) para la estructuración inicial de la Landing Page, refinado mediante repositorios centralizados, demostró ser una táctica eficiente para traducir requerimientos visuales complejos en código funcional de manera iterativa.
+
 **Recomendaciones**
+
+AV1:
 
 - Implementar de manera progresiva los requerimientos y sugerencias recolectados durante la fase de entrevistas con los segmentos objetivo, asegurando que el desarrollo de funcionalidades esté estrictamente alineado con las necesidades reales detectadas para maximizar la satisfacción del usuario y la propuesta de valor del producto.
 
 - Supervisar rigurosamente que, durante la etapa de codificación y construcción del sistema, se respeten los límites y la autonomía de cada Bounded Context definidos en el diseño estratégico. Esto es fundamental para evitar el acoplamiento innecesario, facilitar el mantenimiento y garantizar la integridad de la arquitectura de software propuesta.
+
+TB1:
+
+- Tras haber consolidado exitosamente las interfaces móviles en Dart durante el Sprint 1, se recomienda que los próximos Sprints prioricen la conexión de estas vistas con los endpoints del Backend en Java. Es vital validar tempranamente los contratos de las API REST definidas.
+
+- Aprovechando que la Landing Page ya se encuentra desplegada en producción a través de Vercel de manera pública (HTTPS), se recomienda integrar herramientas de analítica web. Esto permitirá medir la interacción real de los usuarios con las llamadas a la acción y las tablas de precios para futuras optimizaciones de conversión.
+
+- A medida que la lógica de negocio en el backend y la aplicación móvil crezca, se recomienda mantener los escenarios Given-When-Then en constante actualización, asegurando que cubran no solo los flujos felices, sino también los flujos de error.
 
 # Bibliografía
 
