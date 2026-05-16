@@ -5078,17 +5078,19 @@ Se siguieron estos pasos para el despliegue de la Landing Page en GitHub Pages:
     <tr>
       <th>Team Member<br>(Last Name, First Name)</th>
       <th>Github Username</th>
-      <th> ae<br>Leader (L) / Collaborator (C)</th>
-      <th>ae <br>(L) / (C)</th>
-      <th>ae <br>(L) / (C)</th>
-      <th>ae <br>(L) / (C)</th>
-      <th>ae <br>(L) / (C)</th>
+      <th><br>Desarrollo del Backend</th>
+      <th><br>Desarollo del FrontEnd</th>
+      <th><br>Desarrollo de la app Movil</th>
+      <th><br>Desarrollo de la landing page</th>
+      <th><br>Desarrollo de los MockUps</th>
+      <th><br>Desarrollo del Prototipo Movil</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>Palomino Fiestas, Erick Leonardo</td>
       <td>erickLeo13</td>
+      <td>C</td>
       <td>L</td>
       <td>C</td>
       <td>C</td>
@@ -5100,7 +5102,8 @@ Se siguieron estos pasos para el despliegue de la Landing Page en GitHub Pages:
       <td>ComidaRapida007</td>
       <td>C</td>
       <td>C</td>
-      <td>L</td>
+      <td>C</td>
+      <td>C</td>
       <td>C</td>
       <td>C</td>
     </tr>
@@ -5110,14 +5113,16 @@ Se siguieron estos pasos para el despliegue de la Landing Page en GitHub Pages:
       <td>C</td>
       <td>C</td>
       <td>C</td>
+      <td>C</td>
       <td>L</td>
       <td>C</td>
     </tr>
     <tr>
       <td>Rivera Ratachi, Renzo Sebastian</td>
       <td>1sopod</td>
-      <td>C</td>
       <td>L</td>
+      <td>C</td>
+      <td>C</td>
       <td>C</td>
       <td>C</td>
       <td>C</td>
@@ -5127,6 +5132,7 @@ Se siguieron estos pasos para el despliegue de la Landing Page en GitHub Pages:
       <td>MrAndres08DV</td>
       <td>C</td>
       <td>C</td>
+      <td>L</td>
       <td>C</td>
       <td>C</td>
       <td>C</td>
@@ -5139,6 +5145,7 @@ Se siguieron estos pasos para el despliegue de la Landing Page en GitHub Pages:
       <td>C</td>
       <td>C</td>
       <td>C</td>
+      <td>L</td>
     </tr>
  <tr>
       <td>Elvia Marcela Rodriguez Villa</td>
@@ -5146,6 +5153,7 @@ Se siguieron estos pasos para el despliegue de la Landing Page en GitHub Pages:
       <td>C</td>
       <td>C</td>
       <td>C</td>
+      <td>L</td>
       <td>C</td>
       <td>C</td>
     </tr>
@@ -5530,11 +5538,11 @@ En el Sprint 1 se alcanzó un desarrollo completo en la implementación y maquet
 </p>
 <br>
 <p align="center">
-  <img src="images/EvidenceTesting/FrontEnd6.jpeg alt="execution frontend plant management" width="350">
+  <img src="images/EvidenceTesting/FrontEnd6.jpeg" alt="execution frontend plant management" width="350">
 </p>
 <br>
 <p align="center">
-  <img src="images/EvidenceTesting/FrontEnd4.jpeg alt="execution frontend plant management" width="350">
+  <img src="images/EvidenceTesting/FrontEnd4.jpeg" alt="execution frontend plant management" width="350">
 </p>
 <br>
 
@@ -5550,9 +5558,23 @@ En el Sprint 1 se alcanzó un desarrollo completo en la implementación y maquet
 
 #### 6.2.1.7. Services Documentation Evidence for Sprint Review
 
+<br>
+<p align="center">
+  <img src="images/EvidenceTesting/BackEnd1.jpeg" alt="execution frontend profiles" width="350">
+</p>
+<br>
+<p align="center">
+  <img src="images/EvidenceTesting/BackEnd2.jpeg" alt="execution frontend profiles" width="350">
+</p>
+<br>
+<p align="center">
+  <img src="images/EvidenceTesting/BackEnd3.jpeg" alt="execution frontend profiles" width="350">
+</p>
+<br>
+
 <h3>Endpoints implementados</h3>
 
-<table>
+<table border="1" cellspacing="0" cellpadding="5">
   <thead>
     <tr>
       <th>Endpoint URL (local)</th>
@@ -5565,52 +5587,172 @@ En el Sprint 1 se alcanzó un desarrollo completo en la implementación y maquet
   </thead>
   <tbody>
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td><code>/api/v1/authentication/sign-up</code></td>
+      <td>IAM</td>
+      <td>POST</td>
+      <td>Registra un usuario y devuelve sus datos básicos.</td>
+      <td><strong>Body:</strong><br><code>email</code>, <code>password</code></td>
+      <td><pre><code>{ "id": 1, "email": "user@plantsync.com", "roles": ["ROLE_USER"] }</code></pre></td>
     </tr>
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td><code>/api/v1/authentication/sign-in</code></td>
+      <td>IAM</td>
+      <td>POST</td>
+      <td>Autentica al usuario y devuelve el token JWT generado.</td>
+      <td><strong>Body:</strong><br><code>email</code>, <code>password</code></td>
+      <td><pre><code>{ "id": 1, "email": "user@plantsync.com", "token": "eyJhbGci..." }</code></pre></td>
     </tr>
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td><code>/api/v1/users/{id}</code></td>
+      <td>IAM</td>
+      <td>GET</td>
+      <td>Recupera un usuario por su ID.</td>
+      <td><strong>Path:</strong> <code>id</code></td>
+      <td><pre><code>{ "id": 1, "email": "user@plantsync.com" }</code></pre></td>
     </tr>
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td><code>/api/v1/users</code></td>
+      <td>IAM</td>
+      <td>GET</td>
+      <td>Lista todos los usuarios del sistema.</td>
+      <td><strong>Header:</strong> Bearer Token</td>
+      <td><pre><code>[ { "id": 1, "email": "user@plantsync.com" } ]</code></pre></td>
     </tr>
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td><code>/api/v1/users/{userId}</code></td>
+      <td>IAM</td>
+      <td>PUT</td>
+      <td>Actualiza la información de un usuario.</td>
+      <td><strong>Path:</strong> <code>id</code><br><strong>Body:</strong> <code>email</code>, <code>password</code></td>
+      <td><pre><code>{ "id": 1, "email": "nuevo@plantsync.com" }</code></pre></td>
     </tr>
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td><code>/api/v1/profiles</code></td>
+      <td>Profiles</td>
+      <td>POST</td>
+      <td>Crea un nuevo perfil y devuelve sus datos.</td>
+      <td><strong>Body:</strong><br><code>personName</code>, <code>subscriptionPlan</code>, <code>userId</code></td>
+      <td><pre><code>{ "id": 1, "personName": "Carlos Coca", "subscriptionPlan": "BASIC" }</code></pre></td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/profiles/{id}</code></td>
+      <td>Profiles</td>
+      <td>PUT</td>
+      <td>Actualiza la información de un perfil existente.</td>
+      <td><strong>Path:</strong> <code>id</code><br><strong>Body:</strong> <code>personName</code>, <code>subscriptionPlan</code></td>
+      <td><pre><code>{ "id": 1, "personName": "Carlos Andrés", "subscriptionPlan": "PRO" }</code></pre></td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/profiles/{profileId}</code></td>
+      <td>Profiles</td>
+      <td>GET</td>
+      <td>Recupera un perfil por su ID.</td>
+      <td><strong>Path:</strong> <code>profileId</code></td>
+      <td><pre><code>{ "id": 1, "personName": "Carlos Coca", "subscriptionPlan": "BASIC" }</code></pre></td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/profiles</code></td>
+      <td>Profiles</td>
+      <td>GET</td>
+      <td>Lista todos los perfiles del sistema.</td>
+      <td><strong>Header:</strong> Bearer Token</td>
+      <td><pre><code>[ { "id": 1, "personName": "Carlos Coca" } ]</code></pre></td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/profiles/by-user-id</code></td>
+      <td>Profiles</td>
+      <td>GET</td>
+      <td>Recupera un perfil por ID de usuario.</td>
+      <td><strong>Query/Header:</strong> User ID</td>
+      <td><pre><code>{ "id": 1, "personName": "Carlos Coca", "userId": 1 }</code></pre></td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/plants</code></td>
+      <td>Plants</td>
+      <td>POST</td>
+      <td>Crea una nueva planta y devuelve sus datos.</td>
+      <td><strong>Body:</strong><br><code>name</code>, <code>species</code>, <code>profileId</code>, <code>humidity</code></td>
+      <td><pre><code>{ "id": 1, "name": "Mi Ficus", "species": "Ficus lyrata" }</code></pre></td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/plants/{plantId}</code></td>
+      <td>Plants</td>
+      <td>PUT</td>
+      <td>Actualiza la información de una planta existente.</td>
+      <td><strong>Path:</strong> <code>plantId</code><br><strong>Body:</strong> datos a actualizar</td>
+      <td><pre><code>{ "id": 1, "name": "Ficus de Sala", "species": "Ficus lyrata" }</code></pre></td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/plants/{plantId}</code></td>
+      <td>Plants</td>
+      <td>DELETE</td>
+      <td>Elimina una planta del sistema.</td>
+      <td><strong>Path:</strong> <code>plantId</code></td>
+      <td><pre><code>Status: 204 No Content</code></pre></td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/plants</code></td>
+      <td>Plants</td>
+      <td>GET</td>
+      <td>Lista todas las plantas del sistema.</td>
+      <td><strong>Header:</strong> Bearer Token</td>
+      <td><pre><code>[ { "id": 1, "name": "Mi Ficus" } ]</code></pre></td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/plants/by-profile/{profileId}</code></td>
+      <td>Plants</td>
+      <td>GET</td>
+      <td>Recupera las plantas asociadas a un perfil.</td>
+      <td><strong>Path:</strong> <code>profileId</code></td>
+      <td><pre><code>[ { "id": 1, "name": "Mi Ficus", "profileId": 1 } ]</code></pre></td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/plants/{plantId}</code></td>
+      <td>Plants</td>
+      <td>GET</td>
+      <td>Recupera una planta por su ID.</td>
+      <td><strong>Path:</strong> <code>plantId</code></td>
+      <td><pre><code>{ "id": 1, "name": "Mi Ficus", "humidity": "MEDIA" }</code></pre></td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/plants/{plantId}</code></td>
+      <td>Plants</td>
+      <td>PUT</td>
+      <td>Crea un nuevo registro histórico de planta.</td>
+      <td><strong>Body:</strong><br><code>plantId</code>, <code>type</code>, <code>date</code>, <code>humidity</code></td>
+      <td><pre><code>{ "id": 1, "plantId": 1, "type": "WATERED" }</code></pre></td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/plants/{plantId}</code></td>
+      <td>Plants</td>
+      <td>DELETE</td>
+      <td>Obtiene datos climáticos de OpenWeather API por ciudad.</td>
+      <td><strong>Query:</strong> <code>city</code></td>
+      <td><pre><code>{ "temperature": 22.5, "condition": "Cloudy" }</code></pre></td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/tasks</code></td>
+      <td>CareScheduling</td>
+      <td>POST</td>
+      <td>Crea una nueva tarea de cuidado (ej. riego) y devuelve sus datos.</td>
+      <td><strong>Body:</strong><br><code>action</code>, <code>date</code>, <code>plantId</code>, <code>profileId</code></td>
+      <td><pre><code>{ "id": 1, "action": "WATER", "date": "2026-04-26", "completed": false }</code></pre></td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/tasks</code></td>
+      <td>CareScheduling</td>
+      <td>GET</td>
+      <td>Lista todas las tareas de cuidado programadas.</td>
+      <td><strong>Header:</strong> Bearer Token</td>
+      <td><pre><code>[ { "id": 1, "action": "WATER", "completed": false } ]</code></pre></td>
+    </tr>
+    <tr>
+      <td><code>/api/v1/tasks/{taskId}</code></td>
+      <td>CareScheduling</td>
+      <td>DELETE</td>
+      <td>Elimina una tarea de cuidado del sistema.</td>
+      <td><strong>Path:</strong> <code>taskId</code></td>
+      <td><pre><code>Status: 204 No Content</code></pre></td>
     </tr>
   </tbody>
 </table>
