@@ -293,6 +293,10 @@ El repositorio del informe se encuentra en GitHub en el siguiente link: https://
     - [5.4.3. Applications User Flow Diagrams](#543-applications-user-flow-diagrams)
   - [5.5. Applications Prototyping](#55-applications-prototyping)
   - [5.6. IoT Device Design](#56-iot-device-design)
+    - [5.6.1. Criterios de Diseño Físico e Introducción](#561-criterios-de-diseño-físico-e-introducción)
+    - [5.6.2. Relación con la Arquitectura de Información y Guía de Estilos](#562-relación-con-la-arquitectura-de-información-y-guía-de-estilos)
+    - [5.6.3. Diseño de Circuito (Hardware Architecture)](#563-diseño-de-circuito-hardware-architecture)
+    - [5.6.4. Flujos de Interacción del Prototipo](#564-flujos-de-interacción-del-prototipo)
 - [Capítulo VI: Product Implementation, Validation \& Deployment](#capítulo-vi-product-implementation-validation--deployment)
   - [6.1. Software Configuration Management](#61-software-configuration-management)
     - [6.1.1. Software Development Environment Configuration](#611-software-development-environment-configuration)
@@ -5189,6 +5193,59 @@ Pantalla de gestión de la cuenta de usuario donde se pueden modificar datos per
 ## 5.5. Applications Prototyping
 
 ## 5.6. IoT Device Design
+
+Esta sección detalla la propuesta de diseño físico y el modelado de los circuitos electrónicos de los dispositivos IoT que conforman la solución de monitoreo botánico. El ecosistema físico actúa como el puente principal (Edge) entre el entorno biológico de la planta y la plataforma digital.
+
+### 5.6.1. Criterios de Diseño Físico e Introducción
+
+El diseño físico del dispositivo IoT se rige bajo los principios de diseño no intrusivo, resistencia ambiental y modularidad. Al tratarse de un hardware que convivirá en entornos húmedos (macetas, jardines de interior), los principales criterios de decisión para el diseño de la carcasa (enclosure) y la disposición de componentes son:
+
+1. **Aislamiento y Protección (IP Rating):** El microcontrolador y los módulos de relé deben estar sellados herméticamente para evitar cortocircuitos por salpicaduras del rociador de agua o la humedad propia del riego.
+2. **Disposición Estratégica de Sensores:** Los sensores de luz (BH1750 y ML8511) deben ubicarse en la parte superior del dispositivo sin obstrucciones físicas, mientras que los sensores de tierra (Capacitivo v2.0 y NPK) requieren cableado extendido para sumergirse a la profundidad adecuada de las raíces.
+3. **Mantenibilidad:** El diseño modular debe permitir al usuario final reemplazar fácilmente componentes específicos, como el depósito de agua de la bomba, sin necesidad de desarmar el núcleo del Arduino.
+
+### 5.6.2. Relación con la Arquitectura de Información y Guía de Estilos
+El diseño físico refleja estrictamente las decisiones tomadas en la Arquitectura de Información (IA) y la Guía de Estilos para IoT Device Physical Interfaces.
+
++ **Feedback Visual (Physical UI):** La arquitectura de información de la aplicación móvil clasifica las alertas en niveles de severidad y tipos de acción (riego, iluminación). Esto se traslada al dispositivo físico mediante un panel de LEDs indicadores (ej. luz azul para estado de bomba de agua activa, luz amarilla para compensación UV en curso).
++ **Estética Biofílica:** Siguiendo la guía de estilos, la carcasa del prototipo adopta tonos tierra y acabados mate para camuflarse con el entorno de la maceta, minimizando el impacto visual tecnológico (Tech-camouflage) y manteniendo la coherencia con la interfaz limpia y natural de las aplicaciones web y móvil.
+
+### 5.6.3. Diseño de Circuito (Hardware Architecture)
+
+El prototipo funcional está centralizado en un Arduino UNO, el cual actúa como unidad de procesamiento en el Edge. La distribución de pines y conexiones se ha diseñado para optimizar el consumo energético y evitar conflictos de interfaz.
+
+1. **Unidad de Control Central:**
+   + **Arduino UNO:** Placa base encargada de la lectura cíclica de sensores y la ejecución de reglas lógicas locales para accionar relés.
+2. **Integración de Sensores (Inputs):**
+   + **Sensor de Humedad de Suelo Capacitivo v2.0:** Conectado a un pin analógico (ej. A0). Se prefiere su versión capacitiva sobre la resistiva por su mayor resistencia a la corrosión bajo tierra.
+   + **Módulo Detector de Radiación UVB (ML8511):** Conectado a un pin analógico (ej. A1) con alimentación a 3.3V, proporcionando una lectura lineal de la intensidad de los rayos UV.
+   + **Módulo Sensor de Luz (BH1750):** Utiliza el protocolo de comunicación I2C, por lo que se conecta a los pines SDA (A4) y SCL (A5) del Arduino, entregando lecturas precisas en Lux.
+   + **Sensor de Suelo NPK:** Al ser de estándar industrial (generalmente RS485), se integra mediante un módulo conversor RS485-a-TTL, utilizando pines digitales (ej. D2 y D3 vía SoftwareSerial) para evaluar Nitrógeno, Fósforo y Potasio.
+3. **Integración de Actuadores (Outputs):**
+   + **Bomba de Agua / Rociador:** Conectada mediante un módulo de Relé de 5V al pin digital D4. El relé actúa como interruptor para habilitar la potencia requerida por el motor de la bomba sin dañar el Arduino.
+
+   + **Lámpara Inteligente IoT (Actuador UV):** Conectada mediante un segundo módulo de Relé al pin digital D5, permitiendo aislar la corriente (probablemente 12V o 220V dependiendo de la lámpara) del circuito lógico de 5V.
+
+### 5.6.4. Flujos de Interacción del Prototipo
+
+A nivel físico y sistémico, el dispositivo ejecuta flujos de interacción automatizados basados en el paradigma Event-Driven:
++ **Flujo 1: Compensación de Estrés Hídrico (Auto-Riego)**
+  **1.** El Sensor Capacitivo v2.0 detecta una caída de humedad por debajo del 25% (umbral de estrés).
+
+  **2.** El Arduino procesa la señal y enciende el LED azul de estado físico.
+
+  **3.** El Arduino envía un pulso ALTO al Relé del Rociador/Bomba de agua por un tiempo determinado (ej. 5 segundos) para hidratar la maceta.
+
+  **4.** El sistema detiene la bomba y registra el evento para sincronizarlo con el backend cuando haya conectividad.
+
++ **Flujo 2: Regulación de Ciclo Lumínico**
+  **1.** El Sensor BH1750 y el Sensor ML8511 realizan muestreos periódicos del ambiente.
+
+  **2.** Si la suma de luminosidad detectada durante las horas de luz naturales es insuficiente para el tipo de planta configurada, se levanta un evento de déficit lumínico.
+
+  **3.** El Arduino activa el Relé de la Lámpara de iluminación UV para compensar los fotones requeridos.
+
+  **4.** Una vez cumplida la cuota lumínica (o si se detecta luz natural suficiente), el actuador se apaga automáticamente.
 
 # Capítulo VI: Product Implementation, Validation & Deployment
 
