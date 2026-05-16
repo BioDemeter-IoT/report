@@ -252,17 +252,42 @@ El repositorio del informe se encuentra en GitHub en el siguiente link: https://
 - [Capítulo V: Solution UI/UX Design](#capítulo-v-solution-uiux-design)
   - [5.1. Style Guidelines](#51-style-guidelines)
     - [5.1.1. General Style Guidelines](#511-general-style-guidelines)
+      - [Branding](#branding)
+      - [Tipografía](#tipografía)
+      - [Lenguaje aplicado](#lenguaje-aplicado)
     - [5.1.2. Web, Mobile and IoT Style Guidelines](#512-web-mobile-and-iot-style-guidelines)
+      - [Estilo visual de la landing page](#estilo-visual-de-la-landing-page)
+      - [Estilo visual de la aplicación web y móvil](#estilo-visual-de-la-aplicación-web-y-móvil)
+      - [Estilo visual de componentes IoT](#estilo-visual-de-componentes-iot)
+      - [Botones](#botones)
+      - [Imágenes](#imágenes)
+      - [Pantallas emergentes](#pantallas-emergentes)
+      - [Encabezado](#encabezado)
+      - [Pie de página](#pie-de-página)
   - [5.2. Information Architecture](#52-information-architecture)
     - [5.2.1. Organization Systems](#521-organization-systems)
+      - [Organización jerárquica](#organización-jerárquica)
+      - [Organización secuencial](#organización-secuencial)
+      - [Organización matricial](#organización-matricial)
+      - [Esquemas de categorización](#esquemas-de-categorización)
     - [5.2.2. Labeling Systems](#522-labeling-systems)
+      - [Menú principal de la landing page](#menú-principal-de-la-landing-page)
+      - [Menú de navegación de la solución](#menú-de-navegación-de-la-solución)
+      - [Tipos de etiquetas en la interfaz](#tipos-de-etiquetas-en-la-interfaz)
     - [5.2.3. SEO Tags and Meta Tags](#523-seo-tags-and-meta-tags)
+      - [Landing Page](#landing-page)
+      - [Web and Mobile Application](#web-and-mobile-application)
     - [5.2.4. Searching Systems](#524-searching-systems)
     - [5.2.5. Navigation Systems](#525-navigation-systems)
+      - [Landing Page](#landing-page-1)
+      - [Web Application](#web-application)
+      - [Mobile Application](#mobile-application)
   - [5.3. Landing Page UI Design](#53-landing-page-ui-design)
     - [5.3.1. Landing Page Wireframe](#531-landing-page-wireframe)
     - [5.3.2. Landing Page Mock-up](#532-landing-page-mock-up)
   - [5.4. Applications UX/UI Design](#54-applications-uxui-design)
+      - [4.4.1. Web Applications Wireframes](#441-web-applications-wireframes)
+      - [4.4.2. Mobile Applications Wireframes](#442-mobile-applications-wireframes)
     - [5.4.1. Applications Wireflow Diagrams](#541-applications-wireflow-diagrams)
     - [5.4.2. Applications Mock-ups](#542-applications-mock-ups)
     - [5.4.3. Applications User Flow Diagrams](#543-applications-user-flow-diagrams)
@@ -273,23 +298,22 @@ El repositorio del informe se encuentra en GitHub en el siguiente link: https://
     - [6.1.1. Software Development Environment Configuration](#611-software-development-environment-configuration)
     - [6.1.2. Source Code Management](#612-source-code-management)
     - [6.1.3. Source Code Style Guide \& Conventions](#613-source-code-style-guide--conventions)
+      - [Landing Page (HTML, CSS, JavaScript)](#landing-page-html-css-javascript)
+      - [Web App (TypeScript)](#web-app-typescript)
+      - [Mobile App (Dart)](#mobile-app-dart)
+      - [Backend (Java)](#backend-java)
+      - [Testing \& Documentación (Gherkin)](#testing--documentación-gherkin)
     - [6.1.4. Software Deployment Configuration](#614-software-deployment-configuration)
   - [6.2. Landing Page, Services \& Applications Implementation](#62-landing-page-services--applications-implementation)
     - [6.2.1. Sprint 1](#621-sprint-1)
       - [6.2.1.1. Sprint Planning 1](#6211-sprint-planning-1)
       - [6.2.1.2. Aspect Leaders and Collaborators](#6212-aspect-leaders-and-collaborators)
       - [6.2.1.3. Sprint Backlog 1](#6213-sprint-backlog-1)
-      - [6.2.1.4. Development Evidence for Sprint Review](#6214-development-evidence-for-sprint-review)
       - [6.2.1.5. Testing Suite Evidence for Sprint Review](#6215-testing-suite-evidence-for-sprint-review)
       - [6.2.1.6. Execution Evidence for Sprint Review](#6216-execution-evidence-for-sprint-review)
       - [6.2.1.7. Services Documentation Evidence for Sprint Review](#6217-services-documentation-evidence-for-sprint-review)
       - [6.2.1.8. Software Deployment Evidence for Sprint Review](#6218-software-deployment-evidence-for-sprint-review)
       - [6.2.1.9. Team Collaboration Insights during Sprint](#6219-team-collaboration-insights-during-sprint)
-  - [6.3. Validation Interviews](#63-validation-interviews)
-    - [6.3.1. Diseño de Entrevistas](#631-diseño-de-entrevistas)
-    - [6.3.2. Registro de Entrevistas](#632-registro-de-entrevistas)
-    - [6.3.3. Evaluaciones según heurísticas](#633-evaluaciones-según-heurísticas)
-  - [6.4. Video About-the-Product](#64-video-about-the-product)
 - [Conclusiones](#conclusiones)
   - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
 - [Bibliografía](#bibliografía)
@@ -4814,7 +4838,385 @@ Formulario para actualizar datos del usuario (nombre, plan de suscripción) y un
 
 ### 5.4.1. Applications Wireflow Diagrams
 
+<h4>Web Applications Wireflow Diagrams</h4>
+
+<br><br>
+
+[Enlace del Lucid parte 1](https://lucid.app/lucidchart/84007aa3-229d-41c7-95be-36ba79ede3d5/edit?viewport_loc=-4889%2C-386%2C12110%2C5687%2C0_0&invitationId=inv_454cb49d-3128-4c42-8ea7-98ae9f14da50)
+[Enlace del Lucid parte 2](https://lucid.app/lucidchart/705f0f0f-e376-4335-b188-bb234cde86a2/edit?viewport_loc=-7424%2C-5702%2C25532%2C11991%2C0_0&invitationId=inv_bc7d108f-b673-49da-9fd9-06710a5600a1)
+
+<br><br>
+
+- **Wireflow 1: Registrar una nueva planta**
+
+**User Goal:** Como usuario principiante, quiero registrar mi nueva planta para empezar a cuidarla con ayuda de la aplicación.
+
+**User Persona:** Personas con poca y mucha experiencia en el cuidado de plantas
+
+**Flujo:** Este flujo comienza cuando el usuario ingresa a la sección "Mis Plantas" y hace clic en el botón “Agregar Planta”. Se abre un formulario donde debe completar campos como nombre personalizado, especie, fecha de adquisición, subir una foto opcional, y seleccionar si desea recibir recordatorios. Además, puede indicar su nivel de experiencia y activar el monitoreo manual asistido. Una vez completado, pulsa “Añadir” y es redirigido al dashboard con la planta registrada y visible. Este flujo está pensado especialmente para usuarios principiantes que requieren orientación paso a paso.
+
+<p align="center">
+  <img src="images/wireframes/Wireframes1.png" alt="Wireflow" width="1000">
+</p>
+
+<br><br>
+
+- **Wireflow 2: Consultar guía de cuidado**
+
+**User Goal:** Como usuario experto, quiero consultar una guía específica para verificar recomendaciones de cuidado avanzado.
+
+**User Persona:** Personas con poca y mucha experiencia en el cuidado de plantas
+
+**Flujo:** El flujo inicia desde la sección “Guías”, donde el usuario visualiza un catálogo de recomendaciones. Filtra por categoría o especie y selecciona una guía específica. Al hacer clic en “Ver guía”, accede a una vista con información detallada, pasos visuales, imágenes y consejos según el tipo de planta. Desde ahí, el usuario puede regresar al catálogo o asociar la guía a una planta registrada. Este flujo está enfocado tanto en principiantes como en expertos que buscan información puntual.
+
+<p align="center">
+  <img src="images/wireframes/Wireframes2.png" alt="Wireflow" width="1000">
+</p>
+
+<br><br>
+
+- **Wireflow 3: Ver historial de cuidado**
+
+**User Goal:** Como usuario frecuente, quiero revisar el historial de mi planta para entender cómo ha evolucionado su estado.
+
+**User Persona:** Personas con poca y mucha experiencia en el cuidado de plantas
+
+**Flujo:** Desde “Mis Plantas”, el usuario selecciona una planta específica y accede a su vista detallada. Allí, hace clic en “Ver Historial”, lo que lo dirige a una pantalla donde puede visualizar los registros de cuidado (riego, fertilización, observaciones) ordenados cronológicamente. También accede a un gráfico de humedad que le permite analizar el estado de la planta a lo largo del tiempo. Este flujo está pensado para usuarios que buscan tomar decisiones basadas en datos.
+
+<p align="center">
+  <img src="images/wireframes/Wireframes3.png" alt="Wireflow" width="1000">
+</p>
+
+<br><br>
+
+- **Wireflow 4: Consultar recomendaciones por clima**
+
+**User Goal:** Como usuario con poco tiempo, quiero saber si hoy debo regar o proteger mis plantas, según el clima actual.
+
+**User Persona:** Personas con poca y mucha experiencia en el cuidado de plantas
+
+**Flujo:** En el apartado de "Mis Plantas", cuando el usuario desea consultar recomendaciones basadas en el clima, debe hacer clic sobre una de sus plantas previamente registradas. Luego, en la parte inferior izquierda de la pantalla, se mostrará la temperatura actual junto con sugerencias específicas según las condiciones climáticas del día.
+
+<p align="center">
+  <img src="images/wireframes/Wireframes4.png" alt="Wireflow" width="1000">
+</p>
+
+<br><br>
+
+- **Wireflow 5: Configurar mis preferencias y cuenta**
+
+**User Goal:** Como usuario PRO, quiero actualizar mis datos y gestionar mi suscripción.
+
+**User Persona:** Personas con poca y mucha experiencia en el cuidado de plantas
+
+**Flujo:** Desde el ícono de perfil o el menú lateral, el usuario accede a “Configuración personal”. Aquí puede modificar sus datos (nombre, email), activar o desactivar notificaciones, y gestionar su plan de suscripción. Si decide cambiar de plan, selecciona uno nuevo y confirma. Al guardar los cambios, recibe una notificación y es redirigido a su perfil actualizado. Este flujo aplica tanto a usuarios nuevos como recurrentes.
+
+<p align="center">
+  <img src="images/wireframes/Wireframes5.png" alt="Wireflow" width="1000">
+</p>
+
+<br><br>
+
+- **Wireflow 6: Chatear con el bot**
+
+
+**User Goal:** Como usuario de PlantSync, quiero hacer preguntas rápidas sobre el cuidado o adquisición de mis plantas para obtener respuestas inmediatas sin tener que navegar por todo el sitio.
+
+**User Persona:** Personas con poca y mucha experiencia en el cuidado de plantas
+
+
+
+**Flujo:** Este flujo comienza cuando el usuario accede a la opción “Chatbot” desde el menú lateral o directamente desde una tarjeta destacada en el dashboard. Al ingresar, se presenta una interfaz de mensajería con un campo de texto inferior y mensajes de bienvenida del bot. El usuario escribe su consulta, por ejemplo: “¿Cada cuánto debo regar una lavanda?” o “¿Dónde puedo conseguir plantas para interior?”. El bot procesa la pregunta y responde con un mensaje textual y, si corresponde, con enlaces a guías, recomendaciones o catálogos. El usuario puede continuar haciendo más preguntas o cerrar el chat. En caso de ser un usuario PRO o Premium, también podrá acceder a respuestas más detalladas o enlaces externos. Este flujo está pensado para ofrecer una experiencia conversacional ágil que complemente la navegación tradicional, ideal para usuarios que prefieren resolver dudas en tiempo real.
+
+<p align="center">
+  <img src="images/wireframes/Wireframes6.png" alt="Wireflow" width="1000">
+</p>
+
+<br><br>
+
+<h4>Movil Applications Wireflow Diagrams</h4>
+
+<br><br>
+[Enlace del Miro](https://miro.com/app/board/uXjVHVl1p8U=/?share_link_id=982143810898)
+<br><br>
+
+- **Wireflow 1: Conectar o desconectar dispositivo IoT**
+
+**User Goal:** Como usuario de la plataforma, quiero vincular o desvincular mi hardware de monitoreo para habilitar el control automatizado y la lectura de sensores de mi planta.
+
+**User Persona:** Usuarios con interés en la automatización y control de hardware para el cuidado de plantas.
+
+**Flujo:** Este flujo inicia en el panel de la planta seleccionada, donde el usuario accede a la sección de configuración de hardware. Al hacer clic en "Conectar Dispositivo", el sistema vincula el equipo y la interfaz transiciona para mostrar el tablero de telemetría. Esto habilita el acceso en tiempo real a las lecturas de los sensores (humedad, temperatura) y a los controles de los actuadores (sistemas de riego). Si el usuario selecciona "Desconectar", el flujo muestra una confirmación y posteriormente inactiva estos controles manuales y automáticos en la interfaz.
+
+<p align="center">
+  <img src="images/wireframes/Wireframes7.png" alt="Wireflow" width="1000">
+</p>
+
+<br><br>
+
+- **Wireflow 2: Ver los cuidados específicos que requiere cada planta**
+
+**User Goal:** Como usuario, quiero consultar los requerimientos técnicos y recomendaciones específicas de mi planta guardada para brindarle el mantenimiento adecuado.
+
+**User Persona:** Personas con poca y mucha experiencia en el cuidado de plantas.
+
+**Flujo:** El recorrido comienza en el catálogo principal "Mis Plantas". El usuario hace clic sobre la tarjeta de una especie particular y es redirigido a la vista de detalle. El sistema extrae de la base de datos y despliega en pantalla la información estructurada sobre la planta, mostrando indicadores visuales y de texto sobre la frecuencia ideal de riego, exposición solar necesaria, tipo de sustrato y humedad recomendada.
+
+<p align="center">
+  <img src="images/wireframes/Wireframes8.png" alt="Wireflow" width="1000">
+</p>
+
+<br><br>
+
+- **Wireflow 3: Ver mi perfil y editar mi información personal**
+
+**User Goal:** Como usuario, quiero acceder a la configuración de mi cuenta para actualizar mis datos personales y credenciales dentro de la plataforma.
+
+**User Persona:** Todo tipo de usuario registrado en la aplicación.
+
+**Flujo:** La secuencia parte desde el menú principal o barra de navegación lateral, donde el usuario selecciona la opción "Mi Perfil". La interfaz muestra primero los datos en modo de solo lectura. Al pulsar el botón "Editar", se habilita un formulario que permite modificar el nombre, correo electrónico y preferencias. El recorrido finaliza cuando el usuario presiona "Guardar Cambios", momento en el que el sistema valida la información, muestra una alerta de éxito y retorna a la vista actualizada del perfil.
+
+<p align="center">
+  <img src="images/wireframes/Wireframes9.png" alt="Wireflow" width="1000">
+</p>
+
+<br><br>
+
+- **Wireflow 4: Registrarse en la plataforma**
+
+**User Goal:** Como nuevo usuario, quiero crear una cuenta en BioPafi para acceder a las herramientas de monitoreo y gestión del cuidado de plantas.
+
+**User Persona:** Personas interesadas en comenzar a utilizar la plataforma por primera vez.
+
+**Flujo:** El proceso abarca desde la landing page o pantalla de inicio de sesión. El usuario selecciona "Registrarse" y es dirigido a un formulario en blanco. Aquí ingresa sus credenciales básicas (nombre, correo electrónico, contraseña y confirmación de contraseña). Tras completar los campos y pulsar "Crear Cuenta", el sistema ejecuta las validaciones de seguridad. Una vez aprobado, el flujo redirige automáticamente al usuario a su nuevo Dashboard principal, completando el onboarding.
+
+<p align="center">
+  <img src="images/wireframes/Wireframes10.png" alt="Wireflow" width="1000">
+</p>
+
+<br><br>
+
+- **Wireflow 5: Registrar una nueva planta**
+
+**User Goal:** Como usuario principiante, quiero registrar mi nueva planta para empezar a cuidarla con ayuda de la aplicación.
+
+**User Persona:** Personas con poca y mucha experiencia en el cuidado de plantas.
+
+**Flujo:** Este flujo comienza cuando el usuario ingresa a la sección "Mis Plantas" y hace clic en el botón “Agregar Planta”. Se abre un formulario donde debe completar campos como nombre personalizado, especie, fecha de adquisición, subir una foto opcional, y seleccionar si desea recibir recordatorios. Además, puede indicar su nivel de experiencia y activar el monitoreo manual asistido. Una vez completado, pulsa “Añadir” y es redirigido al dashboard con la planta registrada y visible. Este flujo está pensado especialmente para usuarios principiantes que requieren orientación paso a paso.
+
+<p align="center">
+  <img src="images/wireframes/Wireframes11.png" alt="Wireflow" width="1000">
+</p>
+
+<br><br>
+
+- **Wireflow 6: Ver los datos y acceso al historial de cuidados**
+
+**User Goal:** Como usuario, quiero revisar la bitácora de eventos y datos pasados de mi planta para realizar un seguimiento continuo de su salud y mantenimiento.
+
+**User Persona:** Usuarios metódicos o aquellos que utilizan hardware IoT para auditoría de cuidados.
+
+**Flujo:** Partiendo de la vista detallada de una planta, el usuario hace clic en la pestaña "Historial". El flujo ilustra cómo la interfaz cambia para desplegar una línea de tiempo cronológica. En esta pantalla, el usuario puede visualizar y filtrar eventos pasados, tales como registros de riego activados por los actuadores, alertas automáticas emitidas por los sensores ambientales y notas o cuidados manuales que el usuario haya registrado previamente.
+
+<p align="center">
+  <img src="images/wireframes/Wireframes12.png" alt="Wireflow" width="1000">
+</p>
+
+<br><br>
+
+
+
 ### 5.4.2. Applications Mock-ups
+
+Los siguientes prototipos visuales se han desarrollado a partir de los wireframes documentados anteriormente, reflejando con precisión las interfaces y funcionalidades que los usuarios experimentarán al interactuar con la plataforma. Ambas versiones (web y móvil) se encuentran consolidadas en un único proyecto de Figma para facilitar la coherencia visual y la gestión unificada del diseño.
+
+[Enlace del Figma](https://www.figma.com/design/5cSEKvg4XXUzsXTpOPJySb/PlantSync?node-id=44-4&t=txBRNOk6AKu7kNCJ-1)
+
+<br><br>
+
+<h4> Web Platform <h4>
+
+- Mis Plantas
+
+Vista principal del usuario con el listado de todas sus plantas registradas. Desde aquí puede visualizar el estado general de cada planta, acceder a sus detalles, editarla o añadir una nueva.
+
+<p align="center">
+  <img src="images/mockups/DashBoard Plantas.png" alt="MisPlantas" width="1000">
+</p>
+
+- Guías:
+
+Catálogo de recomendaciones organizadas por tema (riego, luz, fertilizante, plagas). Permite a los usuarios consultar guías según sus necesidades o tipo de planta.
+
+<p align="center">
+  <img src="images/mockups/Guias Dashboard MockUp.png" alt="Guías" width="1000">
+</p>
+
+- Tareas:
+
+Sección tipo calendario que muestra los recordatorios programados para cada planta, incluyendo riegos, fertilización u otras tareas. Ayuda al usuario a organizar su rutina de cuidado permitiendole informar que planta ya cuidó o no.
+
+<p align="center">
+  <img src="images/mockups/Tareas.png" alt="Tareas" width="1000">
+</p>
+
+<p align="center">
+  <img src="images/mockups/Tareas Recordatorio.png" alt="TareasRecordatorio" width="1000">
+</p>
+
+- Chatbot:
+
+Vista principal del asistente virtual (RootBot), que permite al usuario iniciar una conversación para resolver dudas rápidas sobre el cuidado de plantas.
+
+<p align="center">
+  <img src="images/mockups/chatbot1.png" alt="ChatBot" width="1000">
+</p>
+
+- Configuración personal
+
+Panel donde el usuario puede actualizar su información personal, configurar notificaciones y gestionar su tipo de suscripción (básico, PRO o premium).
+
+<p align="center">
+  <img src="images/mockups/profile config.png" alt="Configuraciones" width="1000">
+</p>
+
+<p align="center">
+  <img src="images/mockups/Eleccion de plan.png" alt="ConfiguracionPLan" width="1000">
+</p>
+
+- Añadir Planta:
+
+Formulario guiado para registrar una nueva planta. Incluye campos como nombre personalizado, especie, fecha de adquisición y opción para activar notificaciones.
+
+<p align="center">
+  <img src="images/mockups/añadirplanta.png" alt="AddPlanta" width="1000">
+</p>
+
+- Ver Guía:
+
+Pantalla con el contenido detallado de una guía específica, incluyendo instrucciones paso a paso, imágenes ilustrativas y recomendaciones prácticas.
+
+<p align="center">
+  <img src="images/mockups/guia.png" alt="ViewGuide" width="1000">
+</p>
+
+- Chateando con ChatBot:
+
+Vista activa de la conversación con el bot. El usuario realiza preguntas relacionadas al cuidado o adquisición de plantas y recibe respuestas contextualizadas.
+
+<p align="center">
+  <img src="images/mockups/chatbot2.png" alt="ChatBotConversation" width="1000">
+</p>
++ Ver Planta:
+
+Pantalla detallada con toda la información de una planta específica, incluyendo foto, especie, historial de cuidado y recomendaciones por clima.
+
+<p align="center">
+  <img src="images/mockups/perfilplanta.png" alt="VerPlanta" width="1000">
+</p>
+
+- Ver historial de planta:
+
+Registro cronológico de las acciones realizadas sobre una planta (riego, fertilización, cambios de estado), acompañado de gráficas simples de humedad y evolución.
+
+<p align="center">
+  <img src="images/mockups/historialPlanta.png" alt="Historial" width="1000">
+</p>
+
+<br><br>
+
+<h4> Mobile Application <h4>
+
+A continuación, se presentan los mock-ups diseñados para la aplicación móvil de PlantSync, detallando las interfaces clave con las que interactuará el usuario.
+
+- **Pantalla de Bienvenida (Onboarding):**
+Pantalla inicial que recibe al usuario al abrir la aplicación, presentando la identidad visual de la marca y un llamado a la acción para comenzar a cuidar sus plantas.
+
+<p align="center">
+  <img src="images/mockups/mobile_onboarding.png" alt="Pantalla de Bienvenida" width="1000">
+</p>
+
+- **Iniciar Sesión:**
+Interfaz para que los usuarios ya registrados ingresen a su cuenta utilizando su correo electrónico y contraseña.
+
+<p align="center">
+  <img src="images/mockups/mobile_login.png" alt="Iniciar Sesión" width="1000">
+</p>
+
+- **Registro de Usuario:**
+Formulario de creación de cuenta donde los nuevos usuarios pueden registrarse ingresando sus datos personales básicos y credenciales.
+
+<p align="center">
+  <img src="images/mockups/mobile_registro.png" alt="Registro de Usuario" width="1000">
+</p>
+
+- **Mis Plantas (Inicio):**
+Pantalla principal (Dashboard) donde el usuario visualiza su colección de plantas registradas, su estado actual y accesos rápidos a las acciones de cuidado.
+
+<p align="center">
+  <img src="images/mockups/mobile_mis_plantas.png" alt="Mis Plantas" width="1000">
+</p>
+
+- **Detalles y Cuidados de la Planta:**
+Vista específica de una planta (ej. Monstera Deliciosa) que muestra indicadores vitales detallados como temperatura, humedad, luz requerida y consejos específicos de cuidado.
+
+<p align="center">
+  <img src="images/mockups/mobile_detalles_planta.png" alt="Detalles de la Planta" width="1000">
+</p>
+
+- **Ver Historial de Planta:**
+Registro cronológico de las acciones realizadas sobre una planta (riego, fertilización, cambios de estado), acompañado de gráficas simples de humedad y evolución.
+
+<p align="center">
+  <img src="images/mockups/historialPlanta.png" alt="Historial de Planta" width="1000">
+</p>
+
+- **Calendario de Tareas y Recordatorios:**
+Vista en formato de agenda donde el usuario puede realizar el seguimiento diario de las actividades pendientes (riego, abono, limpieza) programadas para sus plantas y marcarlas como completadas.
+
+<p align="center">
+  <img src="images/mockups/mobile_calendario.png" alt="Calendario de Tareas" width="1000">
+</p>
+
+- **Búsqueda y Agregar Planta:**
+Sección que permite al usuario buscar nuevas plantas en la base de datos mediante una barra de búsqueda para añadirlas a su colección personal.
+
+<p align="center">
+  <img src="images/mockups/mobile_agregar_planta.png" alt="Buscar Planta" width="1000">
+</p>
+
+- **Identificador por Cámara:**
+Funcionalidad que activa la cámara del dispositivo móvil para escanear y reconocer automáticamente la especie de una planta a partir de una fotografía.
+
+<p align="center">
+  <img src="images/mockups/mobile_identificador.png" alt="Identificador de Plantas" width="1000">
+</p>
+
+- **Comunidad y Foro:**
+Espacio social donde los usuarios interactúan publicando dudas, consejos, fotografías y experiencias relacionadas con la botánica, permitiendo dar "me gusta" y comentar los aportes de otros.
+
+<p align="center">
+  <img src="images/mockups/mobile_comunidad.png" alt="Comunidad y Foro" width="1000">
+</p>
+
+- **Detalle de Publicación (Foro):**
+Interfaz enfocada en un hilo de discusión específico de la comunidad, donde se muestra a detalle la consulta de un usuario y el desglose de comentarios y soluciones brindadas por la comunidad.
+
+<p align="center">
+  <img src="images/mockups/mobile_detalle_publicacion.png" alt="Detalle de Publicación" width="1000">
+</p>
+
+- **Perfil y Ajustes:**
+Pantalla de gestión de la cuenta de usuario donde se pueden modificar datos personales, preferencias de notificaciones, seguridad y soporte de la aplicación.
+
+<p align="center">
+  <img src="images/mockups/mobile_perfil.png" alt="Perfil y Ajustes" width="1000">
+</p>
+
+
+
+
+<br><br>
 
 ### 5.4.3. Applications User Flow Diagrams
 
