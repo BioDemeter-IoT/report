@@ -5129,12 +5129,6 @@ Registro cronológico de las acciones realizadas sobre una planta (riego, fertil
 
 A continuación, se presentan los mock-ups diseñados para la aplicación móvil de PlantSync, detallando las interfaces clave con las que interactuará el usuario.
 
-- **Pantalla de Bienvenida (Onboarding):**
-Pantalla inicial que recibe al usuario al abrir la aplicación, presentando la identidad visual de la marca y un llamado a la acción para comenzar a cuidar sus plantas.
-
-<p align="center">
-  <img src="images/mockups/mobile_onboarding.png" alt="Pantalla de Bienvenida" width="1000">
-</p>
 
 - **Iniciar Sesión:**
 Interfaz para que los usuarios ya registrados ingresen a su cuenta utilizando su correo electrónico y contraseña.
@@ -5164,12 +5158,6 @@ Vista específica de una planta (ej. Monstera Deliciosa) que muestra indicadores
   <img src="images/mockups/mobile_detalles_planta.png" alt="Detalles de la Planta" width="1000">
 </p>
 
-- **Ver Historial de Planta:**
-Registro cronológico de las acciones realizadas sobre una planta (riego, fertilización, cambios de estado), acompañado de gráficas simples de humedad y evolución.
-
-<p align="center">
-  <img src="images/mockups/historialPlanta.png" alt="Historial de Planta" width="1000">
-</p>
 
 - **Calendario de Tareas y Recordatorios:**
 Vista en formato de agenda donde el usuario puede realizar el seguimiento diario de las actividades pendientes (riego, abono, limpieza) programadas para sus plantas y marcarlas como completadas.
@@ -5185,26 +5173,6 @@ Sección que permite al usuario buscar nuevas plantas en la base de datos median
   <img src="images/mockups/mobile_agregar_planta.png" alt="Buscar Planta" width="1000">
 </p>
 
-- **Identificador por Cámara:**
-Funcionalidad que activa la cámara del dispositivo móvil para escanear y reconocer automáticamente la especie de una planta a partir de una fotografía.
-
-<p align="center">
-  <img src="images/mockups/mobile_identificador.png" alt="Identificador de Plantas" width="1000">
-</p>
-
-- **Comunidad y Foro:**
-Espacio social donde los usuarios interactúan publicando dudas, consejos, fotografías y experiencias relacionadas con la botánica, permitiendo dar "me gusta" y comentar los aportes de otros.
-
-<p align="center">
-  <img src="images/mockups/mobile_comunidad.png" alt="Comunidad y Foro" width="1000">
-</p>
-
-- **Detalle de Publicación (Foro):**
-Interfaz enfocada en un hilo de discusión específico de la comunidad, donde se muestra a detalle la consulta de un usuario y el desglose de comentarios y soluciones brindadas por la comunidad.
-
-<p align="center">
-  <img src="images/mockups/mobile_detalle_publicacion.png" alt="Detalle de Publicación" width="1000">
-</p>
 
 - **Perfil y Ajustes:**
 Pantalla de gestión de la cuenta de usuario donde se pueden modificar datos personales, preferencias de notificaciones, seguridad y soporte de la aplicación.
@@ -5212,8 +5180,6 @@ Pantalla de gestión de la cuenta de usuario donde se pueden modificar datos per
 <p align="center">
   <img src="images/mockups/mobile_perfil.png" alt="Perfil y Ajustes" width="1000">
 </p>
-
-
 
 
 <br><br>
