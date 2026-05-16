@@ -74,7 +74,7 @@
 | 1.4 | 30/04/2026 | Paitan Pumacahua, Max Anthony | Diseño de Landing page wireframe & mockup, Web application wireframes & mockups y Mobile application wireframes. |
 | 1.5 | 01/05/2026 | Rodríguez Villa, Elvia Marcela | Elaboración de Solution UX/UI Design parte 1 y diseño de Landing Page. |
 | 1.6 | 02/05/2026 | Briceño De La Cruz, Farid Sebastian | Integración de Software Development Environment Configuration y Source Code Management. |
-| 1.7 | 03/05/2026 | Acuña Tomas, Diego Rolin | Creación de Applications Wireflow Diagrams, Mock-ups, User Flow Diagrams, Prototyping y diseño de IoT Device. |
+| 1.7 | 16/05/2026 | Acuña Tomas, Diego Rolin | Creación de Applications Wireflow Diagrams, Mock-ups, User Flow Diagrams, Prototyping y diseño de IoT Device. |
 
 <hr class="page-break">
 
@@ -82,7 +82,7 @@
 
 El repositorio del informe se encuentra en GitHub en el siguiente link: https://github.com/BioDemeter-IoT/report 
 
-**TB1**
+**AV1**
 
 <p __align__="center">
   <img src="images/insights/TB1/1.png">
@@ -95,6 +95,23 @@ El repositorio del informe se encuentra en GitHub en el siguiente link: https://
 <p __align__="center">
   <img src="images/insights/TB1/3.png">
 </p>
+
+
+**TB1**
+
+<p __align__="center">
+  <img src="images/insights/456.jpg">
+</p>
+
+
+
+
+
+<p __align__="center">
+  <img src="images/insights/123.jpg">
+</p>
+
+
 
 
 <hr class="page-break">
