@@ -6583,13 +6583,131 @@ Landing Page Insights:
 
 ### 6.3.1. Diseño de Entrevistas
 
+Preguntas para personas con experiencia en el cuidado de plantas en el hogar:
+
+1.	¿Qué funcionalidades del dashboard (tanto en la versión web como en la móvil) consideras más valiosas para el monitoreo de tus plantas?
+2.	¿Te resultó intuitivo el proceso para conectar/vincular el dispositivo IoT de humedad y temperatura a una de tus plantas?
+3.	Al revisar los datos actuales de humedad y temperatura que reporta la app, ¿consideras que disponer de estos valores exactos te ayuda a tomar mejores decisiones en el cuidado de tus plantas?
+4.	¿Te resultó fácil registrar tus plantas en "Mis Plantas" y gestionar sus cuidados específicos desde tu teléfono móvil?
+5.	¿Consideras que ver el estado actual de temperatura y humedad en vivo te aporta mayor precisión al planificar tus rutinas en comparación con los métodos tradicionales de observación a ojo?
+6.	¿La estructura actual del módulo de tareas te permite organizar de manera eficiente tus flujos de trabajo y el mantenimiento de múltiples plantas a la vez?"
+7.	Al interactuar con Rootbot, ¿consideras útil contar con este chatbot de IA integrado como una herramienta de consulta general frente a dudas específicas o problemas complejos con tus plantas?
+8.	¿Qué opinas de la experiencia de diseño y fluidez al pasar de la plataforma web a la aplicación móvil? ¿Se complementan bien?
+9.	¿Qué herramientas adicionales o automatizaciones basadas en los sensores IoT crees que aportarían mayor valor para usuarios avanzados?
+10.	¿Recomendarías esta plataforma híbrida (App + IoT) a otros cuidadores con experiencia? ¿Qué los motivaría a usarla?
+
+
+Preguntas para personas con poca experiencia o iniciantes en el cuidado de plantas en el hogar:
+
+1.	Al usar la app en la versión web y móvil por primera vez, ¿Qué tan clara te resultó su función principal?
+2.	¿Qué te pareció el proceso para registrar una planta en “Mis Plantas” desde tu celular? ¿Fue fácil de seguir?
+3.	¿Cómo describirías la experiencia visual de conectar el dispositivo IoT dentro de la aplicación? ¿Te pareció un proceso guiado y sencillo?
+4.	Al revisar los datos actuales de humedad y temperatura que reporta la app, ¿consideras que disponer de estos valores exactos te ayuda a tomar mejores decisiones en el cuidado de tus plantas?
+5.	¿La sección de tareas te ayuda a organizarte mejor sabiendo que puedes consultar los niveles de humedad del sensor antes de decidir si es momento de regar?
+6.	¿Qué te pareció Rootbot como un chatbot diseñado para responder preguntas sobre tus plantas? ¿Te dio confianza su forma de interactuar?
+7.	¿Consideras que el diseño del dashboard (tanto en web como en móvil) te permite encontrar de forma rápida y clara los datos actuales de tus sensores de humedad y temperatura?
+8.	¿Crees que el diseño del dashboard (en móvil y web) te permitió encontrar el estado de tus plantas rápidamente?
+9.	¿ ¿Qué herramientas adicionales o automatizaciones basadas en los sensores IoT crees que te  aportarían mayor valor
+10.	 ¿Qué cambiarías o mejorarías en la forma de mostrar los datos del sensor o en la navegación general de la app para que sea aún más fácil de usar por alguien que recién empieza?
+
 ### 6.3.2. Registro de Entrevistas
 
+## _Expertos cuidadores de plantas_
+
+<br>
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 1</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Pedro vargas</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>24 años</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>San Miguel</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>00:00 - 17:25</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td><a href=""></a></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen:<br>
+       Pedro Vargas destacó que la funcionalidad más valiosa de la plataforma es el sistema de tareas y recordatorios, ya que facilita el seguimiento del cuidado de las plantas y evita olvidar actividades importantes como el riego. Consideró que la integración con dispositivos IoT sería muy útil, especialmente para automatizar procesos cuando el usuario no se encuentra en casa. Asimismo, señaló que los datos de humedad y temperatura pueden aportar valor.Respecto al registro de plantas, lo encontró sencillo e intuitivo. También indicó que la visualización de datos en tiempo real permite tomar decisiones más precisas que los métodos tradicionales de observación.Sobre el chatbot Root, mencionó que no sería una herramienta de uso constante para él, pero sí útil para resolver dudas puntuales y obtener información rápida. Además, consideró que la experiencia entre la aplicación web y móvil es consistente y complementaria, aunque cree que utilizaría con mayor frecuencia la versión móvil por su practicidad. Como mejora, sugirió incorporar sensores capaces de medir la acidez del suelo, ya que considera que este factor es determinante para la salud de muchas plantas. Finalmente, afirmó que recomendaría la plataforma a otros cuidadores, especialmente por la facilidad que brinda para organizar tareas, automatizar procesos y mantener un mejor control del cuidado de las plantas.
+    </td>
+  </tr>
+  <tr>
+<td colspan="2">
+  <img src="images/entrevistadevalidacion/entrevista1.png" alt="Screenshot Entrevista 2" width="1000">
+    </td>
+  </tr>
+</table>
+
+<br>
+
 ### 6.3.3. Evaluaciones según heurísticas
+
+
 
 <hr class="page-break">
 
 ## 6.4. Video About-the-Product
+
+<table align="center">
+  <tr>
+    <td><strong>Duración</strong></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><strong>URL Microsoft</strong></td>
+    <td><a href="" target="_blank"></a></td>
+  </tr>
+  <tr>
+    <td><strong>URL Youtube</strong></td>
+    <td><a href="" target="_blank"></a></td>
+  </tr>
+  </tr>
+  <tr>
+<td colspan="2">
+  <img src="" alt="screenshot about the team" width="1000">
+    </td>
+  </tr>
+</table>
+
+## 6.5. Video About-the-Team
+
+El video resume el proyecto del equipo, mostrando a cada integrante explicar las tareas que realizó para cumplir con el trabajo.
+
+<table align="center">
+  <tr>
+    <td><strong>Duración</strong></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><strong>URL Microsoft</strong></td>
+    <td><a href="" target="_blank"></a></td>
+  </tr>
+  <tr>
+    <td><strong>URL Youtube</strong></td>
+    <td><a href="" target="_blank"></a></td>
+  </tr>
+  </tr>
+  <tr>
+<td colspan="2">
+  <img src="" alt="screenshot about the team" width="1000">
+    </td>
+  </tr>
+</table>
 
 <hr class="page-break">
 
