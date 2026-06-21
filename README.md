@@ -6655,6 +6655,49 @@ Preguntas para personas con poca experiencia o iniciantes en el cuidado de plant
 
 <br>
 
+## _Cuidadores de plantas principiantes_
+
+<br>
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 1</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Marcelo Barrientos</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>21 años</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>Lima</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td><a href=""></a></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen:<br>
+       En la presente entrevista, se analiza la experiencia de Marcelo, un cuidador de plantas principiante, tras interactuar con nuestra solución orientada al monitoreo botánico. Durante la evaluación, se destacó que, para garantizar una adopción exitosa, la interfaz debe ser altamente intuitiva, facilitando la gestión de perfiles, la personalización de alertas y la lectura clara de datos en el panel de control, apoyándose en integraciones con inteligencia artificial. A pesar de que Marcelo detectó ciertos problemas técnicos puntuales —como inconsistencias en la entrega de notificaciones y fallos menores en el registro de la temperatura—, mantuvo una valoración general muy positiva, concluyendo que la aplicación cuenta con la usabilidad, la arquitectura y la madurez necesarias para adaptarse eficientemente a las rutinas reales de usuarios sin conocimientos técnicos avanzados.
+    </td>
+  </tr>
+  <tr>
+<td colspan="2">
+  <img src="images/entrevistadevalidacion/Entrevista Principiantes 1.png" alt="Screenshot Entrevista 2" width="1000">
+    </td>
+  </tr>
+</table>
+
+<br>
+
 ### 6.3.3. Evaluaciones según heurísticas
 
 
