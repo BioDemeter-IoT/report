@@ -6694,13 +6694,25 @@ Landing Page Insights:
 
 | Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
 |------------|--------|-----------|----------------|---------------------|---------------------|
-|            |        |           |                |                     |                     |
+| LandingPageV2 | main | 0d172d6abc06e4a1da753a42c8a7333444bb05b8 | feat: section of about the team and product | - | 18 junio 2026 |
+| LandingPageV2 | develop | d2d5d374e8c6aff526c20d94308e72f7f4a36e4c | feat: update styles | - | 17 junio 2026 |
+| BioDemeter_PlantSync_Backend | main | 728c746ac0871b05e3c667961ab63d98cbbf0c98 | feat: add description field to Plant aggregate | Introduce a new description field for Plant and propagate it through the domain, API and tests. | 9 junio 2026 |
+| BioDemeter_PlantSync_Backend | main | 188734fb6d2fa93adcb7db1f412b14744a477722 | feat: Add profile picture support and account update API | - | 9 junio 2026 |
+| BioDemeter_PlantSync_Backend | task-history | 029a34c2b8a2893d2960a6595db605ee346ca737 | Merge pull request #3 from BioDemeter-IoT/feature/task-history | Feature/task history | 9 junio 2026 |
+| BioDemeter_PlantSync_Mobile | main | d3df2e2a745812e2d7d6329e8d5f4eb9afcd3ac4 | feat: add plants files, with models, repo, ui and bloc | - | 19 junio 2026 |
+| BioDemeter_PlantSync_Mobile | main | 514e3fc71372712c23ad2ce93ec90d62afdf92b4 | feat: add core services, network interceptor and theme | - | 19 junio 2026 |
+| BioDemeter_PlantSync_Mobile | main | 5f054e2bc069a2fab576de624ea5a252edd1dd12 | feat: add chatbot page | - | 19 junio 2026 |
+| BioDemeter_PlantSync_Vue | main | f145a3ef2714dffd9c92f61b50f38e9327edd5c3 | feat: initial Vue project setup with DDD, Login and Dashboard views | - | 16 junio 2026 |
 
 #### 6.2.2.5. Testing Suite Evidence for Sprint Review
 
-| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
-|------------|--------|-----------|----------------|---------------------|---------------------|
-|            |        |           |                |                     |                     |
+Se implementaron tests unitarios y de integración en el Backend para asegurar el correcto funcionamiento del mismo.
+
+![Unit Test](/images/evidence2/UnitTest.png)
+
+
+
+
 
 #### 6.2.2.6. Execution Evidence for Sprint Review
 
