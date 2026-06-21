@@ -6545,9 +6545,150 @@ Landing Page Insights:
 
 #### 6.2.2.3. Sprint Backlog 2
 
-| Sprint # | User Story | Work-Item / Task | Descripción | Estimación (horas) | Asignado a | Estado |
-|----------|------------|------------------|-------------|-------------------|------------|--------|
-| Sprint 2 |            |                  |             |                   |            |        |
+<h3>Sprint Backlog – Sprint 2</h3>
+<table border="1" cellspacing="0" cellpadding="5">
+<thead>
+<tr>
+<th colspan="8">Sprint 2</th>
+</tr>
+<tr>
+<th colspan="2">User Story</th>
+<th colspan="2">Work-Item / Task</th>
+<th rowspan="2">Description</th>
+<th rowspan="2">Estimation (Hours)</th>
+<th rowspan="2">Assigned To</th>
+<th rowspan="2">Status (To-do / In-Process / To-Review / Done)</th>
+</tr>
+<tr>
+<th>Id</th>
+<th>Title</th>
+<th>Id</th>
+<th>Title</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>US25</td>
+<td>Visualización de perfil de usuario</td>
+<td>WI017</td>
+<td>Desarrollar página de perfil</td>
+<td>Implementar la vista de perfil para que el usuario pueda visualizar su resumen de actividad y métricas de plantas.</td>
+<td>5</td>
+<td>Renzo Rivera</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US15</td>
+<td>Edición de datos personales</td>
+<td>WI018</td>
+<td>Formulario de actualización de datos</td>
+<td>Integrar los servicios para permitir la modificación y persistencia de los datos del usuario en el perfil.</td>
+<td>4</td>
+<td>Elvia Rodríguez</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US17</td>
+<td>Modo oscuro en la interfaz</td>
+<td>WI019</td>
+<td>Configurar Tema Oscuro</td>
+<td>Implementar la lógica del tema oscuro para alternar entre modo claro y oscuro a nivel global en la aplicación.</td>
+<td>3</td>
+<td>Carlos Coca</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US26</td>
+<td>Visualización de tareas con fechas</td>
+<td>WI020</td>
+<td>Crear línea de tiempo de tareas</td>
+<td>Construir el componente de las fechas de las tareas para ordenar de manera cronológica las actividades pendientes.</td>
+<td>6</td>
+<td>Erick Palomino</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US27</td>
+<td>Visualización de tareas de cuidado</td>
+<td>WI021</td>
+<td>Integrar listado de tareas diarias</td>
+<td>Consumir los datos del tareas para mostrar u ocultar el estado de las tareas de cada jornada.</td>
+<td>4</td>
+<td>Farid Briceño</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US35</td>
+<td>Consulta a Asistente Botánico IA</td>
+<td>WI022</td>
+<td>Desarrollar interfaz del Chatbot</td>
+<td>Desarrollar la ventana de conversación en el dashboard de la aplicacion para la interacción natural con el asistente de IA.</td>
+<td>5</td>
+<td>Erick Palomino</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US10</td>
+<td>Integración de API de IA</td>
+<td>WI023</td>
+<td>Conectar servicios de IA</td>
+<td>Vincular el chatbot con el endpoint del backend para emitir consultas y recibir recomendaciones botánicas.</td>
+<td>7</td>
+<td>Diego Acuña</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US02</td>
+<td>Vinculación de dispositivo IoT con la cuenta</td>
+<td>WI024</td>
+<td>Flujo de emparejamiento IoT</td>
+<td>Crear el formulario y validaciones necesarias para asociar de manera segura el identificador del hardware con la cuenta.</td>
+<td>5</td>
+<td>Max Paitan</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US08</td>
+<td>Monitoreo de Humedad de Tierra</td>
+<td>WI025</td>
+<td>Visualización de humedad en Dashboard</td>
+<td>Implementar los indicadores gráficos para reflejar el estado hídrico.</td>
+<td>4</td>
+<td>Carlos Coca</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US31</td>
+<td>Telemetría de Temperatura Ambiental</td>
+<td>WI026</td>
+<td>Temperatura IoT</td>
+<td>Integrar la lectura en tiempo real del sensor de temperatura dentro del panel de control de la planta.</td>
+<td>3</td>
+<td>Diego Acuña</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US16</td>
+<td>Edición de datos de planta</td>
+<td>WI027</td>
+<td>Actualización de perfil botánico</td>
+<td>Habilitar la edición de características (nombre, tipo, foto) dentro del perfil de la planta</td>
+<td>4</td>
+<td>Farid Briceño</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US07</td>
+<td>Visualización del historial de cuidados</td>
+<td>WI028</td>
+<td>Componente de registro histórico</td>
+<td>Renderizar una lista cronológica en el detalle de la planta que muestre todas las interacciones de riego y fertilización pasadas.</td>
+<td>5</td>
+<td>Elvia Rodríguez</td>
+<td>Done</td>
+</tr>
+</tbody>
+</table>
 
 #### 6.2.2.4. Development Evidence for Sprint Review
 
@@ -6563,6 +6704,82 @@ Landing Page Insights:
 
 #### 6.2.2.6. Execution Evidence for Sprint Review
 
+<br>
+
+En el Sprint 2 se alcanzó una consolidación funcional de la plataforma, destacando la implementación del asistente botánico inteligente basado en IA. Además, se logró avanzar significativamente en la experiencia y retención del usuario mediante el desarrollo de la gestión de perfiles, la visualización interactiva de la línea de tiempo de tareas y el registro detallado del historial de cuidados de las plantas.
+<br>
+
+<ul>
+  <li>US25 Visualización de perfil de usuario</li>
+  <li>US15 Edición de datos personales</li>
+  <li>US17 Modo oscuro en la interfaz</li>
+</ul>
+
+<br>
+<p align="center">
+  <img src="images/evidence2/perfil.png" alt="execution frontend plant management" width="350">
+</p>
+<br>
+<p align="center">
+  <img src="images/evidence2/editprofile.png" alt="execution frontend plant management" width="350">
+</p>
+<br>
+<p align="center">
+  <img src="images/evidence2/darkmode.png" alt="execution frontend plant management" width="100">
+</p>
+
+<br>
+
+
+<ul>
+  <li>US26 Visualización de tareas con fechas</li>
+  <li>US27 Visualización de tareas de cuidados</li>
+</ul>
+
+<br>
+<p align="center">
+  <img src="images/evidence2/Tareas.png" alt="execution frontend plant management" width="350">
+</p>
+<br>
+
+<ul>
+  <li>US35 Consulta a Asistente Botánico IA</li>
+  <li>US10 Integración de API de IA</li>
+</ul>
+
+<br>
+<p align="center">
+  <img src="images/evidence2/chatbot.png" alt="execution frontend plant management" width="350">
+</p>
+<br>
+
+<ul>
+  <li>US02 Vinculación de dispositivo IoT con la cuenta</li>
+  <li>US08 Monitoreo de Humedad de Tierra</li>
+  <li>US31 Telemetría de Temperatura Ambiental</li>
+</ul>
+
+<br>
+<p align="center">
+  <img src="images/evidence2/iot.png" alt="execution frontend plant management" width="350">
+</p>
+<br>
+<p align="center">
+  <img src="images/evidence2/iot2.png" alt="execution frontend plant management" width="350">
+</p>
+<br>
+
+<ul>
+  <li>US16 Edición de datos de planta</li>
+  <li>US07 Visualización del historial de cuidados</li>
+</ul>
+
+<br>
+<p align="center">
+  <img src="images/evidence2/planta.png" alt="execution frontend profiles" width="350">
+</p>
+<br>
+
 #### 6.2.2.7. Services Documentation Evidence for Sprint Review
 
 | Servicio | Verbo | Endpoint | Parámetros | Response |
@@ -6573,9 +6790,36 @@ Landing Page Insights:
 
 #### 6.2.2.9. Team Collaboration Insights during Sprint
 
-| Integrantes | Tarea asignada |
-|-------------|----------------|
-|             |                |
+Se podra visualizar los commit y contribuciones hechas por los integrantes.
+
+Report Insights:
+
+<p align="center">
+  <img src="images/insights/TB1/InsightsReport.png" alt="execution frontend profiles" width="350">
+</p>
+
+FrontEnd Insights:
+
+<p align="center">
+  <img src="images/evidence2/evidence3.png" alt="execution frontend profiles" width="350">
+</p>
+
+BackEnd Insights:
+
+<p align="center">
+  <img src="images/evidence2/evidence2.png" alt="execution frontend profiles" width="350">
+</p>
+
+Landing Page Insights:
+
+<p align="center">
+  <img src="images/insights/TB1/InsightsLanding.png" alt="execution frontend profiles" width="350">
+</p>
+
+<p align="center">
+  <img src="images/evidence2/evidence1.png" alt="execution frontend profiles" width="350">
+</p>
+
 
 <hr class="page-break">
 
