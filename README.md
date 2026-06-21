@@ -6539,9 +6539,15 @@ Landing Page Insights:
 
 #### 6.2.2.2. Aspect Leaders and Collaborators
 
-| Team Member | GitHub Username | Aspect | Role |
-|-------------|-----------------|--------|------|
-|             |                 |        |      |
+| Team Member | GitHub Username | Desarrollo y corrección del backend    |  Desarrollo del frontend - Web app    |   Desarrollo del frontend - Mobile app     |  Desarrollo de IoT System     | Desarrollo del landing page   |
+|-------------|-----------------|--------|------|------|------|------|
+|      Palomino Fiestas, Erick Leonardo   |   erickLeo13         |    L    |   C   |    C    |   C   |  C   |   
+|      Diego Rolin Acuña Tomas            |   ComidaRapida007    |    C    |   C   |    L    |   C   |  C   |
+|      Farid Sebastian Briceño De La Cruz |   InjustShin         |    C    |   C   |    C    |   L   |  C   |
+|      Rivera Ratachi, Renzo Sebastian    |   1sopod             |    L    |   C   |    C    |   C   |  C   |
+|      Carlos Andres Coca Lavado          |   MrAndres08DV       |    C    |   L   |    C    |   C   |  L   |
+|      Max Anthony Paitan Pumacahua       |   maxpp2910          |    C    |   C   |    L    |   C   |  C   |
+|      Elvia Marcela Rodriguez Villa      |   ElviaRV            |    C    |   L   |    C    |   C   |  C   |
 
 #### 6.2.2.3. Sprint Backlog 2
 
