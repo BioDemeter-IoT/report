@@ -6788,9 +6788,249 @@ En el Sprint 2 se alcanzó una consolidación funcional de la plataforma, destac
 
 #### 6.2.2.7. Services Documentation Evidence for Sprint Review
 
-| Servicio | Verbo | Endpoint | Parámetros | Response |
-|----------|-------|----------|------------|----------|
-|          |       |          |            |          |
+<br>
+<p align="center">
+  <img src="images/evidence2/documentation1.png" alt="execution frontend profiles" width="350">
+</p>
+<br>
+<p align="center">
+  <img src="images/evidence2/documentation2.png" alt="execution frontend profiles" width="350">
+</p>
+<br>
+
+
+<h3>Endpoints implementados</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Endpoint</th>
+      <th>Acciones soportadas</th>
+      <th>Parámetros</th>
+      <th>Ejemplo de Request</th>
+      <th>Ejemplo de Response</th>
+      <th>Documentación (URL)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>/api/v1/iot/nodes</td>
+      <td>POST</td>
+      <td>nodeCode, plantId, profileId</td>
+      <td>
+        <code>POST /api/v1/iot/nodes</code><br>
+<pre><code>{
+  "nodeCode": "NODE-XYZ-01",
+  "plantId": 2,
+  "profileId": 1
+}</code></pre>
+      </td>
+      <td>
+<pre><code>{
+  "id": 1,
+  "nodeCode": "NODE-XYZ-01",
+  "status": "ACTIVE",
+  "plantId": 2,
+  "profileId": 1,
+  "createdAt": "2026-06-21T10:00:00"
+}</code></pre>
+      </td>
+      <td>https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/swagger-ui/index.html</td>
+    </tr>
+    <tr>
+      <td>/api/v1/iot/readings</td>
+      <td>POST</td>
+      <td>nodeId, soilHumidity, airTemperature</td>
+      <td>
+        <code>POST /api/v1/iot/readings</code><br>
+<pre><code>{
+  "nodeId": 1,
+  "soilHumidity": 45.5,
+  "airTemperature": 22.1
+}</code></pre>
+      </td>
+      <td>
+<pre><code>{
+  "id": 100,
+  "nodeId": 1,
+  "soilHumidity": 45.5,
+  "airTemperature": 22.1,
+  "timestamp": "2026-06-21T10:15:30"
+}</code></pre>
+      </td>
+      <td>https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/swagger-ui/index.html</td>
+    </tr>
+    <tr>
+      <td>/api/v1/iot/edge/sensor-readings/batch</td>
+      <td>POST</td>
+      <td>Header: X-Edge-Api-Key, Array of readings</td>
+      <td>
+        <code>POST /api/v1/iot/edge/sensor-readings/batch</code><br>
+<pre><code>[
+  {
+    "nodeId": 1,
+    "soilHumidity": 45.0,
+    "airTemperature": 22.0
+  }
+]</code></pre>
+      </td>
+      <td>
+<pre><code>{
+  "message": "Batch processed successfully",
+  "readingIds": [ 101 ]
+}</code></pre>
+      </td>
+      <td>https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/swagger-ui/index.html</td>
+    </tr>
+    <tr>
+      <td>/api/v1/iot/edge/nodes/{nodeCode}/actuator-commands/pending</td>
+      <td>GET</td>
+      <td>nodeCode (path)</td>
+      <td><code>GET /api/v1/iot/edge/nodes/NODE-XYZ-01/actuator-commands/pending</code></td>
+      <td>
+<pre><code>[
+  {
+    "id": 10,
+    "nodeId": 1,
+    "actuatorType": "WATER_PUMP",
+    "action": "TURN_ON",
+    "status": "PENDING",
+    "issuedAt": "2026-06-21T09:00:00"
+  }
+]</code></pre>
+      </td>
+      <td>https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/swagger-ui/index.html</td>
+    </tr>
+    <tr>
+      <td>/api/v1/iot/edge/nodes/{nodeCode}/actuator-commands/{commandId}/complete</td>
+      <td>PUT</td>
+      <td>nodeCode (path), commandId (path)</td>
+      <td><code>PUT /api/v1/iot/edge/nodes/NODE-XYZ-01/actuator-commands/10/complete</code></td>
+      <td>
+<pre><code>{
+  "message": "Command executed successfully"
+}</code></pre>
+      </td>
+      <td>https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/swagger-ui/index.html</td>
+    </tr>
+    <tr>
+      <td>/api/v1/tasks/pending</td>
+      <td>GET</td>
+      <td>plantId (query)</td>
+      <td><code>GET /api/v1/tasks/pending?plantId=2</code></td>
+      <td>
+<pre><code>[
+  {
+    "id": 5,
+    "action": "Watering",
+    "scheduledDate": "2026-06-22",
+    "plantId": 2,
+    "profileId": 1,
+    "status": "PENDING"
+  }
+]</code></pre>
+      </td>
+      <td>https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/swagger-ui/index.html</td>
+    </tr>
+    <tr>
+      <td>/api/v1/tasks/{taskId}/complete</td>
+      <td>PATCH</td>
+      <td>taskId (path), humidity, notes</td>
+      <td>
+        <code>PATCH /api/v1/tasks/5/complete</code><br>
+<pre><code>{
+  "humidity": 60,
+  "notes": "Riego completado manualmente"
+}</code></pre>
+      </td>
+      <td>
+<pre><code>{
+  "id": 5,
+  "action": "Watering",
+  "status": "COMPLETED",
+  "completedAt": "2026-06-21T10:30:00",
+  "humidity": 60,
+  "notes": "Riego completado manualmente"
+}</code></pre>
+      </td>
+      <td>https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/swagger-ui/index.html</td>
+    </tr>
+    <tr>
+      <td>/api/v1/tasks/history</td>
+      <td>GET</td>
+      <td>plantId (query)</td>
+      <td><code>GET /api/v1/tasks/history?plantId=2</code></td>
+      <td>
+<pre><code>[
+  {
+    "id": 4,
+    "action": "Fertilize",
+    "status": "COMPLETED",
+    "completedAt": "2026-05-10"
+  }
+]</code></pre>
+      </td>
+      <td>https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/swagger-ui/index.html</td>
+    </tr>
+    <tr>
+      <td>/api/v1/analytics/global-telemetry</td>
+      <td>GET</td>
+      <td>Ninguno</td>
+      <td><code>GET /api/v1/analytics/global-telemetry</code></td>
+      <td>
+<pre><code>{
+  "averageSoilHumidity": 42.5,
+  "averageAirTemperature": 23.1
+}</code></pre>
+      </td>
+      <td>https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/swagger-ui/index.html</td>
+    </tr>
+    <tr>
+      <td>/api/v1/analytics/device-status</td>
+      <td>GET</td>
+      <td>Ninguno</td>
+      <td><code>GET /api/v1/analytics/device-status</code></td>
+      <td>
+<pre><code>{
+  "onlineCount": 150,
+  "offlineCount": 5,
+  "errorCount": 2
+}</code></pre>
+      </td>
+      <td>https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/swagger-ui/index.html</td>
+    </tr>
+    <tr>
+      <td>/api/v1/weather/city</td>
+      <td>GET</td>
+      <td>city (query)</td>
+      <td><code>GET /api/v1/weather/city?city=Lima</code></td>
+      <td>
+<pre><code>{
+  "temp": 18.5,
+  "humidity": 80,
+  "condition": "Cloudy"
+}</code></pre>
+      </td>
+      <td>https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/swagger-ui/index.html</td>
+    </tr>
+    <tr>
+      <td>/api/v1/account</td>
+      <td>PUT</td>
+      <td>firstName, lastName, email, profilePictureBase64</td>
+      <td>
+        <code>PUT /api/v1/account</code><br>
+<pre><code>{
+  "firstName": "Javier",
+  "lastName": "Perez",
+  "email": "javier@example.com",
+  "profilePictureBase64": "base64string..."
+}</code></pre>
+      </td>
+      <td>Status 200 OK</td>
+      <td>https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/swagger-ui/index.html</td>
+    </tr>
+  </tbody>
+</table>
 
 #### 6.2.2.8. Software Deployment Evidence for Sprint Review
 
@@ -7050,9 +7290,7 @@ El video resume el proyecto del equipo, mostrando a cada integrante explicar las
 
 **Conclusiones**
 
-TB2:
-
-- El valor central del proyecto se materializó al lograr la conexión exitosa entre los módulos físicos y las cuentas de cada persona, permitiendo visualizar al instante métricas esenciales, como la humedad de la tierra y la temperatura del ambiente, directamente en las pantallas de la aplicación.
+AV2:
 
 - La integración del asistente virtual (chatbot) representa un avance clave en este ciclo, transformando la plataforma de una herramienta de registro manual a un sistema de apoyo interactivo y directo para resolver las dudas sobre el cuidado botánico.
 
@@ -7060,7 +7298,7 @@ TB2:
 
 - El desarrollo de funciones enfocadas en la comodidad y la personalización, como la configuración visual en modo oscuro, la actualización de datos personales y la organización del historial de actividades en una línea de tiempo cronológica, mejoró notablemente la retención y el seguimiento del progreso de las plantas.
 
-AV1:
+TB1:
 
 -  Se ha confirmado que la problemática central no es solo el olvido del riego, sino la falta de conocimiento técnico sobre las necesidades específicas de cada especie. El diseño de los Bounded Contexts de Inteligencia Botánica y Plant Profiles responde directamente a esta brecha, proporcionando una solución que centraliza el conocimiento especializado.
 
@@ -7070,7 +7308,7 @@ AV1:
 
 - La implementación de Domain-Driven Design (DDD) permitió delimitar claramente las responsabilidades del sistema. La separación de contextos como IoT Management y Care Scheduling asegura que el producto sea escalable y que la complejidad técnica de los sensores no interfiera con la experiencia de usuario en la capa de aplicación.
 
-TB1:
+AV1:
 
 - La implementación de la metodología GitFlow, combinada con el uso de Semantic Versioning y Conventional Commits, ha garantizado un control de versiones altamente estructurado para el ecosistema PlantSync. Esta arquitectura de repositorios permite una separación clara entre el desarrollo de nuevas características (Feature branches), la estabilización (Release) y la resolución de incidentes críticos (Hotfix), asegurando la integridad de la rama principal de producción.
 
@@ -7086,7 +7324,7 @@ TB1:
 
 **Recomendaciones**
 
-TB2:
+AV2:
 
 - Considerar la integración de medidores adicionales en unas próximas versiones físicas, como sensores de acidez (pH) del suelo, para responder directamente a las sugerencias obtenidas durante las entrevistas con aquellos usuarios que buscan un nivel de control más profundo.
 
@@ -7094,13 +7332,13 @@ TB2:
 
 - Afinar gradualmente la información que alimenta al asistente virtual, apoyándose en el historial de actividades de cada cuenta. Esto ayudará a que las recomendaciones brindadas sean cada vez más precisas, seguras y adaptadas a las necesidades únicas de cada especie registrada en el sistema.
 
-AV1:
+TB1:
 
 - Implementar de manera progresiva los requerimientos y sugerencias recolectados durante la fase de entrevistas con los segmentos objetivo, asegurando que el desarrollo de funcionalidades esté estrictamente alineado con las necesidades reales detectadas para maximizar la satisfacción del usuario y la propuesta de valor del producto.
 
 - Supervisar rigurosamente que, durante la etapa de codificación y construcción del sistema, se respeten los límites y la autonomía de cada Bounded Context definidos en el diseño estratégico. Esto es fundamental para evitar el acoplamiento innecesario, facilitar el mantenimiento y garantizar la integridad de la arquitectura de software propuesta.
 
-TB1:
+AV2:
 
 - Tras haber consolidado exitosamente las interfaces móviles en Dart durante el Sprint 1, se recomienda que los próximos Sprints prioricen la conexión de estas vistas con los endpoints del Backend en Java. Es vital validar tempranamente los contratos de las API REST definidas.
 
@@ -7117,8 +7355,18 @@ Revista Economía. (2020). Incremento del interés de los peruanos por el cuidad
 
 # Anexos
 
-- Link Video TB1: `https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQBkDt1uzmT5Ro1mWs3A0bWMASojRLdRjF21GPgz28Es7Yc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=gySJdu`
+- Link Video AV1: `https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQBkDt1uzmT5Ro1mWs3A0bWMASojRLdRjF21GPgz28Es7Yc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=gySJdu`
+
+- Link Video TB1: 
+
+- Link Video AV2: 
 
 ## Links
 
 Link del repositorio del reporte: https://github.com/BioDemeter-IoT/report
+Link del repositorio de App Web: https://github.com/BioDemeter-IoT/PlantSync-Frontend 
+Link del repositorio de Backend: https://github.com/BioDemeter-IoT/BioDemeter_PlantSync_Backend 
+Link del repositorio de landing page: https://github.com/BioDemeter-IoT/LandingPageV2 
+Link del repositorio App Mobile: https://github.com/BioDemeter-IoT/BioDemeter_PlantSync_Mobile 
+Link de Wokwi Embebed app (Humedad): https://wokwi.com/projects/467231875296935937
+Link de Wokwi Embebed app (Temperatura): https://wokwi.com/projects/467378078446248961
