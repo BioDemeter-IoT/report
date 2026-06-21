@@ -7050,6 +7050,16 @@ El video resume el proyecto del equipo, mostrando a cada integrante explicar las
 
 **Conclusiones**
 
+TB2:
+
+- El valor central del proyecto se materializó al lograr la conexión exitosa entre los módulos físicos y las cuentas de cada persona, permitiendo visualizar al instante métricas esenciales, como la humedad de la tierra y la temperatura del ambiente, directamente en las pantallas de la aplicación.
+
+- La integración del asistente virtual (chatbot) representa un avance clave en este ciclo, transformando la plataforma de una herramienta de registro manual a un sistema de apoyo interactivo y directo para resolver las dudas sobre el cuidado botánico.
+
+- Las entrevistas con los usuarios validaron que la aplicación cumple su propósito de manera intuitiva; las personas destacaron especialmente la utilidad de la agenda de cuidados y la lectura directa de los módulos físicos, mientras que reconocieron al asistente conversacional como un excelente soporte adicional para inquietudes específicas.
+
+- El desarrollo de funciones enfocadas en la comodidad y la personalización, como la configuración visual en modo oscuro, la actualización de datos personales y la organización del historial de actividades en una línea de tiempo cronológica, mejoró notablemente la retención y el seguimiento del progreso de las plantas.
+
 AV1:
 
 -  Se ha confirmado que la problemática central no es solo el olvido del riego, sino la falta de conocimiento técnico sobre las necesidades específicas de cada especie. El diseño de los Bounded Contexts de Inteligencia Botánica y Plant Profiles responde directamente a esta brecha, proporcionando una solución que centraliza el conocimiento especializado.
@@ -7072,7 +7082,17 @@ TB1:
 
 - El uso de herramientas de IA generativa (v0 de Vercel) para la estructuración inicial de la Landing Page, refinado mediante repositorios centralizados, demostró ser una táctica eficiente para traducir requerimientos visuales complejos en código funcional de manera iterativa.
 
+
+
 **Recomendaciones**
+
+TB2:
+
+- Considerar la integración de medidores adicionales en unas próximas versiones físicas, como sensores de acidez (pH) del suelo, para responder directamente a las sugerencias obtenidas durante las entrevistas con aquellos usuarios que buscan un nivel de control más profundo.
+
+- Establecer un monitoreo constante sobre la velocidad de respuesta del asistente virtual para asegurar que la generación de recomendaciones o consejos de jardinería no cause demoras que afecten la navegación fluida dentro de las interfaces.
+
+- Afinar gradualmente la información que alimenta al asistente virtual, apoyándose en el historial de actividades de cada cuenta. Esto ayudará a que las recomendaciones brindadas sean cada vez más precisas, seguras y adaptadas a las necesidades únicas de cada especie registrada en el sistema.
 
 AV1:
 
@@ -7087,6 +7107,7 @@ TB1:
 - Aprovechando que la Landing Page ya se encuentra desplegada en producción a través de Vercel de manera pública (HTTPS), se recomienda integrar herramientas de analítica web. Esto permitirá medir la interacción real de los usuarios con las llamadas a la acción y las tablas de precios para futuras optimizaciones de conversión.
 
 - A medida que la lógica de negocio en el backend y la aplicación móvil crezca, se recomienda mantener los escenarios Given-When-Then en constante actualización, asegurando que cubran no solo los flujos felices, sino también los flujos de error.
+
 
 # Bibliografía
 
