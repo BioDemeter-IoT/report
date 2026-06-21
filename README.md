@@ -6527,15 +6527,70 @@ Landing Page Insights:
 
 #### 6.2.2.1. Sprint Planning 2
 
-| Sprint # | Fecha | Hora | Lugar | Preparado por | Asistentes |
-|----------|-------|------|-------|---------------|------------|
-| Sprint 2 |       |      |       |               |            |
-
-| Sprint Goal & User Stories | |
-|----------------------------|-|
-| Sprint 2 Goal              |  |
-| Sprint 2 Velocity          |  |
-| Sum of Story Points        |  |
+<table border="1">
+  <tbody>
+    <tr>
+      <td><b>Sprint 2</b></td>
+      <td>implementacion de Landing Page, Backend, Frontend para Aplicación Web y Movil </td>
+    </tr>
+    <tr>
+      <td colspan="2"><b>Sprint Planning Background</b></td>
+    </tr>
+    <tr>
+      <td><b>Date</b></td>
+      <td>11/06/2026</td>
+    </tr>
+    <tr>
+      <td><b>Time</b></td>
+      <td>18:30 PM</td>
+    </tr>
+    <tr>
+      <td><b>Location</b></td>
+      <td>Reunión realizada mediante Discord</td>
+    </tr>
+    <tr>
+      <td><b>Prepared By</b></td>
+      <td>Palomino Fiestas, Erick Leonardo</td>
+    </tr>
+    <tr>
+      <td><b>Attendees (to planning meeting)</b></td>
+      <td>
+           Diego Rolin Acuña Tomas<br>
+           Farid Sebastian Briceño De La Cruz <br>
+          Rivera Ratachi, Renzo Sebastian <br>
+          Erick Leonardo Palomino Fiestas <br>
+          Carlos Andres Coca Lavado <br>
+          Elvia Marcela Rodriguez Villa <br>
+          Max Anthony Paitan Pumacahua <br>
+  </td>
+    </tr>
+    <tr>
+      <td><b> Previous Sprint  Review</b></td>
+      <td> Durante el Sprint 1, el equipo se enfocó en cimentar las bases arquitectónicas y de diseño de la solución. Se entregaron los primeros prototipos interactivos en Figma para la Landing Page y la aplicación web, se configuraron los repositorios bajo estrictas normativas de Source Code Management, y se definió la estructura técnica mediante diagramas C4 y Context Mapping. Se logró un avance sólido en la documentación y en la conceptualización del dispositivo IoT
+      </td>
+    </tr>
+    <tr>
+      <td><b>Previous Sprint Retrospective</b></td>
+      <td>El equipo destacó la buena organización inicial y el cumplimiento de las normativas de estilo, pero identificó que la fase de integración de código requería mayor sincronización. Se acordó como mejora principal establecer metas más granulares durante el Sprint Planning y mejorar la comunicación entre los encargados del diseño y los desarrolladores para evitar cuellos de botella en la maquetación.</td>
+    </tr>
+    <tr>
+      <td colspan="2"><b>Sprint Goal & User Stories</b></td>
+    </tr>
+    <tr>
+      <td><b>Sprint 2 Goal</b></td>
+      <td>Our focus for Sprint 2 is to establish and enhance the public presence of PlantSync by deploying an informative, fully responsive, and appealing Landing Page. We believe this delivers a strong first impression and drives early user engagement. This will be confirmed when our Web Frontend application is successfully improved, deployed, and seamlessly accessible to potential users. This allows them to explore the app's value proposition and core features in a highly polished interface, while the supporting backend services and IoT simulations remain in a local development environment for ongoing testing.</td>
+    </tr>
+    <tr>
+      <td><b>Sprint 2 Velocity</b></td>
+      <td> 48 Points</td>
+    </tr>
+    <tr>
+      <td><b>Sum of Story Points</b></td>
+      <td> 48 Points
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 #### 6.2.2.2. Aspect Leaders and Collaborators
 
