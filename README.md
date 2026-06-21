@@ -276,40 +276,72 @@ El repositorio del informe se encuentra en GitHub en el siguiente link: https://
 - [Capítulo V: Solution UI/UX Design](#capítulo-v-solution-uiux-design)
   - [5.1. Style Guidelines](#51-style-guidelines)
     - [5.1.1. General Style Guidelines](#511-general-style-guidelines)
+      - [Branding](#branding)
+      - [Tipografía](#tipografía)
+      - [Lenguaje aplicado](#lenguaje-aplicado)
     - [5.1.2. Web, Mobile and IoT Style Guidelines](#512-web-mobile-and-iot-style-guidelines)
+      - [Estilo visual de la landing page](#estilo-visual-de-la-landing-page)
+      - [Estilo visual de la aplicación web y móvil](#estilo-visual-de-la-aplicación-web-y-móvil)
+      - [Estilo visual de componentes IoT](#estilo-visual-de-componentes-iot)
+      - [Botones](#botones)
+      - [Imágenes](#imágenes)
+      - [Pantallas emergentes](#pantallas-emergentes)
+      - [Encabezado](#encabezado)
+      - [Pie de página](#pie-de-página)
   - [5.2. Information Architecture](#52-information-architecture)
     - [5.2.1. Organization Systems](#521-organization-systems)
+      - [Organización jerárquica](#organización-jerárquica)
+      - [Organización secuencial](#organización-secuencial)
+      - [Organización matricial](#organización-matricial)
+      - [Esquemas de categorización](#esquemas-de-categorización)
     - [5.2.2. Labeling Systems](#522-labeling-systems)
+      - [Menú principal de la landing page](#menú-principal-de-la-landing-page)
+      - [Menú de navegación de la solución](#menú-de-navegación-de-la-solución)
+      - [Tipos de etiquetas en la interfaz](#tipos-de-etiquetas-en-la-interfaz)
     - [5.2.3. SEO Tags and Meta Tags](#523-seo-tags-and-meta-tags)
+      - [Landing Page](#landing-page)
+      - [Web and Mobile Application](#web-and-mobile-application)
     - [5.2.4. Searching Systems](#524-searching-systems)
     - [5.2.5. Navigation Systems](#525-navigation-systems)
+      - [Landing Page](#landing-page-1)
+      - [Web Application](#web-application)
+      - [Mobile Application](#mobile-application)
   - [5.3. Landing Page UI Design](#53-landing-page-ui-design)
     - [5.3.1. Landing Page Wireframe](#531-landing-page-wireframe)
     - [5.3.2. Landing Page Mock-up](#532-landing-page-mock-up)
   - [5.4. Applications UX/UI Design](#54-applications-uxui-design)
-    - [5.4.1. Applications Wireflow Diagrams](#541-applications-wireflow-diagrams)
+      - [4.4.1. Web Applications Wireframes](#441-web-applications-wireframes)
+      - [4.4.2. Mobile Applications Wireframes](#442-mobile-applications-wireframes)
     - [5.4.2. Applications Mock-ups](#542-applications-mock-ups)
     - [5.4.3. Applications User Flow Diagrams](#543-applications-user-flow-diagrams)
   - [5.5. Applications Prototyping](#55-applications-prototyping)
   - [5.6. IoT Device Design](#56-iot-device-design)
+    - [5.6.1. Criterios de Diseño Físico e Introducción](#561-criterios-de-diseño-físico-e-introducción)
+    - [5.6.2. Relación con la Arquitectura de Información y Guía de Estilos](#562-relación-con-la-arquitectura-de-información-y-guía-de-estilos)
+    - [5.6.3. Diseño de Circuito (Hardware Architecture)](#563-diseño-de-circuito-hardware-architecture)
+    - [5.6.4. Flujos de Interacción del Prototipo](#564-flujos-de-interacción-del-prototipo)
 - [Capítulo VI: Product Implementation, Validation \& Deployment](#capítulo-vi-product-implementation-validation--deployment)
   - [6.1. Software Configuration Management](#61-software-configuration-management)
     - [6.1.1. Software Development Environment Configuration](#611-software-development-environment-configuration)
     - [6.1.2. Source Code Management](#612-source-code-management)
     - [6.1.3. Source Code Style Guide \& Conventions](#613-source-code-style-guide--conventions)
+      - [Landing Page (HTML, CSS, JavaScript)](#landing-page-html-css-javascript)
+      - [Web App (TypeScript)](#web-app-typescript)
+      - [Mobile App (Dart)](#mobile-app-dart)
+      - [Backend (Java)](#backend-java)
+      - [Testing \& Documentación (Gherkin)](#testing--documentación-gherkin)
     - [6.1.4. Software Deployment Configuration](#614-software-deployment-configuration)
   - [6.2. Landing Page, Services \& Applications Implementation](#62-landing-page-services--applications-implementation)
     - [6.2.1. Sprint 1](#621-sprint-1)
       - [6.2.1.1. Sprint Planning 1](#6211-sprint-planning-1)
       - [6.2.1.2. Aspect Leaders and Collaborators](#6212-aspect-leaders-and-collaborators)
       - [6.2.1.3. Sprint Backlog 1](#6213-sprint-backlog-1)
-      - [6.2.1.4. Development Evidence for Sprint Review](#6214-development-evidence-for-sprint-review)
       - [6.2.1.5. Testing Suite Evidence for Sprint Review](#6215-testing-suite-evidence-for-sprint-review)
       - [6.2.1.6. Execution Evidence for Sprint Review](#6216-execution-evidence-for-sprint-review)
       - [6.2.1.7. Services Documentation Evidence for Sprint Review](#6217-services-documentation-evidence-for-sprint-review)
       - [6.2.1.8. Software Deployment Evidence for Sprint Review](#6218-software-deployment-evidence-for-sprint-review)
       - [6.2.1.9. Team Collaboration Insights during Sprint](#6219-team-collaboration-insights-during-sprint)
-      - [6.2.2. Sprint 2](#622-sprint-2)
+    - [6.2.2. Sprint 2](#622-sprint-2)
       - [6.2.2.1. Sprint Planning 2](#6221-sprint-planning-2)
       - [6.2.2.2. Aspect Leaders and Collaborators](#6222-aspect-leaders-and-collaborators)
       - [6.2.2.3. Sprint Backlog 2](#6223-sprint-backlog-2)
@@ -322,8 +354,11 @@ El repositorio del informe se encuentra en GitHub en el siguiente link: https://
   - [6.3. Validation Interviews](#63-validation-interviews)
     - [6.3.1. Diseño de Entrevistas](#631-diseño-de-entrevistas)
     - [6.3.2. Registro de Entrevistas](#632-registro-de-entrevistas)
+  - [_Expertos cuidadores de plantas_](#expertos-cuidadores-de-plantas-2)
+  - [_Cuidadores de plantas principiantes_](#cuidadores-de-plantas-principiantes)
     - [6.3.3. Evaluaciones según heurísticas](#633-evaluaciones-según-heurísticas)
   - [6.4. Video About-the-Product](#64-video-about-the-product)
+  - [6.5. Video About-the-Team](#65-video-about-the-team)
 - [Conclusiones](#conclusiones)
   - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
 - [Bibliografía](#bibliografía)
@@ -7212,6 +7247,45 @@ Preguntas para personas con poca experiencia o iniciantes en el cuidado de plant
 
 <br>
 
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 2</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Dione Ostos</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>57 años</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>Puente Piedra</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>00:00 - 00:01</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td><a href=""></a></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen:<br>
+       La sesión con Dione Ostos, cuidadora con amplia experiencia en botánica hogareña, permitió evaluar el impacto de nuestra plataforma híbrida desde una perspectiva mucho más técnica y especializada. La usuaria validó la integración del ecosistema (web, móvil e IoT), destacando su valor para optimizar el mantenimiento avanzado y, sobre todo, para guiar de manera precisa a cuidadores menos experimentados que suelen aprender mediante el ensayo y error. Desde su enfoque experto, Dione resaltó que el monitoreo constante ayuda a cubrir esos vacíos de conocimiento botánico que la mayoría de los aficionados enfrenta en el día a día. En definitiva, su perspectiva confirma que la solución no solo es robusta para satisfacer a usuarios exigentes, sino que posee un alto valor educativo, sirviendo como el puente ideal para quienes buscan profesionalizar el cuidado de sus plantas.
+    </td>
+  </tr>
+  <tr>
+<td colspan="2">
+  <a href="https://ibb.co/7ty670Tt"><img src="https://i.ibb.co/s93MLXD9/imagen-2026-06-21-184514849.png" alt="Screenshot Entrevista 2 experto" width="1000"></a>
+    </td>
+  </tr>
+</table>
+
+<br>
+
 ## _Cuidadores de plantas principiantes_
 
 <br>
@@ -7288,6 +7362,46 @@ Preguntas para personas con poca experiencia o iniciantes en el cuidado de plant
   <tr>
 <td colspan="2">
 <a href="https://ibb.co/WWNQpz38"><img src="https://i.ibb.co/8DnJ4xBv/cap1.png" alt="cap1" border="0"></a>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 3</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Yakeli Apaza</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>23 años</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>Lima</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>00:00 - 1</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td><a href=""></a></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen:<br>
+      La sesión con Yanina, estudiante de ingeniería civil, permitió evaluar la viabilidad de nuestra plataforma de monitoreo botánico en un entorno cotidiano. La usuaria valoró la fluidez de la experiencia tanto en web como en móvil, haciendo hincapié en el control preventivo que ofrecen las métricas de los sensores y el soporte personalizado del asistente virtual. Como puntos de mejora para optimizar la interacción inicial, sugirió simplificar la carga multimedia mediante archivos locales en lugar de enlaces URL, además de incorporar alertas enfocadas en las etapas de fertilización. En definitiva, el feedback valida el enfoque funcional del sistema, demostrando que la interfaz es lo bastante clara y accesible como para integrarse con éxito en las rutinas de personas que no están familiarizadas con la tecnología IoT.
+    </td>
+  </tr>
+  <tr>
+<td colspan="2">
+<a href="https://ibb.co/rRHpQCsx"><img src="https://i.ibb.co/1tTX0D6r/imagen-2026-06-21-183602562.png" alt="Screenshot Entrevista 3 principante" width="1000"></a>
     </td>
   </tr>
 </table>
