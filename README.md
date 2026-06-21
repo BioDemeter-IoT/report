@@ -6655,6 +6655,88 @@ Preguntas para personas con poca experiencia o iniciantes en el cuidado de plant
 
 <br>
 
+## _Cuidadores de plantas principiantes_
+
+<br>
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 1</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Marcelo Barrientos</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>21 años</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>Lima</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td><a href=""></a></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen:<br>
+       En la presente entrevista, se analiza la experiencia de Marcelo, un cuidador de plantas principiante, tras interactuar con nuestra solución orientada al monitoreo botánico. Durante la evaluación, se destacó que, para garantizar una adopción exitosa, la interfaz debe ser altamente intuitiva, facilitando la gestión de perfiles, la personalización de alertas y la lectura clara de datos en el panel de control, apoyándose en integraciones con inteligencia artificial. A pesar de que Marcelo detectó ciertos problemas técnicos puntuales —como inconsistencias en la entrega de notificaciones y fallos menores en el registro de la temperatura—, mantuvo una valoración general muy positiva, concluyendo que la aplicación cuenta con la usabilidad, la arquitectura y la madurez necesarias para adaptarse eficientemente a las rutinas reales de usuarios sin conocimientos técnicos avanzados.
+    </td>
+  </tr>
+  <tr>
+<td colspan="2">
+  <img src="images/entrevistadevalidacion/Entrevista Principiantes 1.png" alt="Screenshot Entrevista 2" width="1000">
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 2</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Melany Esther</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>22 años</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>Lima</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>00:00 - 1</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td><a href=""></a></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen:<br>
+      La entrevistada destacó que la función principal de la aplicación resulta muy clara tanto en su versión web como móvil, resaltando la facilidad para manejar el control de temperatura y humedad de las plantas. Respecto al registro de plantas en "Mis Plantas", lo consideró un proceso sencillo de completar y fácil de localizar dentro de la interfaz. También indicó que la conexión del dispositivo IoT es relativamente simple, ya que el acceso mediante un único botón por planta elimina cualquier complejidad. En cuanto a los datos de humedad y temperatura reportados por la app, afirmó que disponer de estos valores exactos le facilita el control y la toma de mejores decisiones en el cuidado de sus plantas. Sobre la sección de tareas, señaló que no solo le permite organizar el riego consultando los niveles del sensor, sino también gestionar otras actividades relacionadas sin preocuparse por posibles olvidos. Respecto al chatbot, lo valoró de manera muy positiva, destacando que el conoce la información específica de cada planta registrada, lo cual le ayuda a comprender aspectos que desconocía. En relación con el dashboard, confirmó que tanto en web como en móvil permite encontrar de forma rápida y clara los datos de los sensores y el estado de las plantas. Como mejoras, sugirió incorporar un sensor más completo capaz de detectar la calidad de la tierra, así como una pantalla pequeña junto a la planta para realizar un control manual sin depender de la activación automática de los dispositivos. Finalmente, recomendó que los valores ideales para cada tipo de planta se configuren automáticamente al momento del registro, lo cual ahorraría tiempo especialmente a usuarios que recién comienzan.
+    </td>
+  </tr>
+  <tr>
+<td colspan="2">
+<a href="https://ibb.co/WWNQpz38"><img src="https://i.ibb.co/8DnJ4xBv/cap1.png" alt="cap1" border="0"></a>
+    </td>
+  </tr>
+</table>
+
+<br>
+
 ### 6.3.3. Evaluaciones según heurísticas
 
 
