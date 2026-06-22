@@ -59,7 +59,7 @@
 | :--- | :--- | :--- | :--- |
 | 0.1 | 14/04/2026 | Acuña Tomas, Diego Rolin | Creación del documento base y redacción del Capítulo I: Startup Profile. |
 | 0.2 | 15/04/2026 | Briceño De La Cruz, Farid Sebastian | Desarrollo del Solution Profile, antecedentes y procesos Lean UX. |
-| 0.3 | 16/04/2026 | Palomino Fiestas, Erick Leonardo y Rivera Ratachi, Renzo Sebastian | Elaboración del Segmento Objetivvo y Análisis de competidores y estrategias competitivas del Capítulo II. |
+| 0.3 | 16/04/2026 | Palomino Fiestas, Erick Leonardo y Rivera Ratachi, Renzo Sebastian | Elaboración del Segmento Objetivo y Análisis de competidores y estrategias competitivas del Capítulo II. |
 | 0.4 | 17/04/2026 | Paitan Pumacahua, Max Anthony | Elaboración de la sección de entrevistas, Needfinding y Big Picture EventStorming. |
 | 0.5 | 18/04/2026 | Rodríguez Villa, Elvia Marcela | Finalización del Capítulo II con Ubiquitous Language y User Journey Mapping. |
 | 0.6 | 19/04/2026 | Coca Lavado, Carlos Andrés | Redacción del Capítulo III: User Stories, Impact Mapping y Product Backlog. |
@@ -75,6 +75,13 @@
 | 1.5 | 01/05/2026 | Rodríguez Villa, Elvia Marcela | Elaboración de Solution UX/UI Design parte 1 y diseño de Landing Page. |
 | 1.6 | 02/05/2026 | Briceño De La Cruz, Farid Sebastian | Integración de Software Development Environment Configuration y Source Code Management. |
 | 1.7 | 16/05/2026 | Acuña Tomas, Diego Rolin | Creación de Applications Wireflow Diagrams, Mock-ups, User Flow Diagrams, Prototyping y diseño de IoT Device. |
+| 1.8 | 25/05/2026 | Coca Lavado, Carlos Andrés | Documentación del Sprint 2 Planning, Entrevista de Validación, Desarrollo del prototipo en Wokwi y Modificaciones en la Landing Page. |
+| 1.9 | 29/05/2026 | Palomino Fiestas, Erick Leonardo | Definición del Sprint Backlog 2, Entrevista de validación, Execution Evidence for Sprint Review y Desarrollo de cambios del backend. |
+| 2.0 | 02/06/2026 | Briceño De La Cruz, Farid Sebastian | Registro de Evaluaciones según heurísticas, Planeación y desarrollo de la aplicación web, y Desarrollo del maquetado del dispositivo IoT en Wokwi. |
+| 2.1 | 06/06/2026 | Acuña Tomas, Diego Rolin | Planeación y desarrollo de la aplicación móvil, Entrevistas de validación e Implementación de la aplicación móvil. |
+| 2.2 | 10/06/2026 | Rodríguez Villa, Elvia Marcela | Documentación de la Implementación y despliegue de la aplicación web (frontend). |
+| 2.3 | 14/06/2026 | Paitan Pumacahua, Max Anthony | Actualización de Aspect Leaders and Collaborators, Entrevistas de validación e Implementación de la aplicación móvil. |
+| 2.4 | 18/06/2026 | Rivera Ratachi, Renzo Sebastian | Documentación del Desarrollo de cambios del backend, Development Evidence for Sprint Review y Testing Suite Evidence for Sprint Review. |
 
 <hr class="page-break">
 
@@ -104,12 +111,11 @@ El repositorio del informe se encuentra en GitHub en el siguiente link: https://
 </p>
 
 
-
-
-
 <p __align__="center">
   <img src="images/insights/123.jpg">
 </p>
+
+**AV2**
 
 
 
@@ -419,51 +425,111 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
   <tbody>
     <tr>
       <td rowspan="7"><strong>Trabaja en equipo para proporcionar liderazgo en forma conjunta</strong></td>
-      <td><strong>Rivera Ratachi, Renzo Sebastian</strong><br><b>TB1:</b> Lideró la definición estratégica mediante la elaboración de Lean UX Hypothesis Statements y la identificación de segmentos objetivo.<br><b>TP:</b> Lideró la planificación del Sprint Planning 1, el Software Deployment Configuration y estableció las normativas técnicas en el Source Code Style Guide & Conventions.</td>
+      <td><strong>Rivera Ratachi, Renzo Sebastian</strong><br>
+        <b>TB1:</b> Lideró la definición estratégica mediante la elaboración de Lean UX Hypothesis Statements y la identificación de segmentos objetivo.<br>
+        <b>TP:</b> Lideró la planificación del Sprint Planning 1, el Software Deployment Configuration y estableció las normativas técnicas en el Source Code Style Guide & Conventions.<br>
+        <b>AV2:</b> Lideró la presentación de evidencias técnicas organizando el Development Evidence y el Testing Suite Evidence para el Sprint Review, además de dirigir cambios estructurales en el backend.
+      </td>
       <td rowspan="7"><b>TB1:</b> El equipo ejerció un liderazgo compartido donde cada integrante asumió la dirección de áreas críticas. La integración entre el análisis de negocio, la investigación de campo y el modelado técnico permitió establecer una visión unificada para la solución IoT, asegurando que cada componente del sistema estuviera alineado con los objetivos estratégicos del proyecto.<br><br>
-      <b>TP:</b> Para el Trabajo Parcial, el equipo demostró un liderazgo distribuido eficaz. Cada integrante se apropió de un dominio crítico, desde el diseño integral UX/UI y flujos de usuario en Figma, hasta la configuración técnica de entornos de desarrollo (Source Code Management, Deployment) y la gestión ágil (Sprint Planning, Sprint Backlog), consolidando exitosamente la infraestructura e identidad visual del proyecto.</td>
+      <b>TP:</b> Para el Trabajo Parcial, el equipo demostró un liderazgo distribuido eficaz. Cada integrante se apropió de un dominio crítico, desde el diseño integral UX/UI y flujos de usuario en Figma, hasta la configuración técnica de entornos de desarrollo (Source Code Management, Deployment) y la gestión ágil (Sprint Planning, Sprint Backlog), consolidando exitosamente la infraestructura e identidad visual del proyecto.<br><br>
+      <b>AV2:</b> Durante la AV2, el equipo demostró un liderazgo técnico sólido y proactivo. La gestión técnica del backend, frontend, desarrollo móvil y simulación del dispositivo IoT en Wokwi, sumado a la dirección en las entrevistas de validación y la correcta estructuración del Sprint 2, evidenciaron que cada integrante asumió el liderazgo en áreas vitales para garantizar la madurez y viabilidad del producto de software.
+      </td>
     </tr>
     <tr>
-      <td><strong>Palomino Fiestas, Erick Leonardo</strong><br><b>TB1:</b> Dirigió el análisis de competidores y estableció la base de seguridad en el IAM Bounded Context.<br><b>TP:</b> Lideró la estructuración del apartado del Sprint 1 en la documentación y dirigió la implementación y mejora del frontend de la aplicación web.</td>
+      <td><strong>Palomino Fiestas, Erick Leonardo</strong><br>
+        <b>TB1:</b> Dirigió el análisis de competidores y estableció la base de seguridad en el IAM Bounded Context.<br>
+        <b>TP:</b> Lideró la estructuración del apartado del Sprint 1 en la documentación y dirigió la implementación y mejora del frontend de la aplicación web.<br>
+        <b>AV2:</b> Lideró la organización y asignación del Sprint Backlog 2, gestionó el Execution Evidence para el Sprint Review y dirigió sesiones clave de entrevistas de validación.
+      </td>
     </tr>
     <tr>
-      <td><strong>Coca Lavado, Carlos Andrés</strong><br><b>TB1:</b> Lideró la planificación técnica mediante la estructuración del Product Backlog y los diagramas de arquitectura C4.<br><b>TP:</b> Lideró la estructuración general del proyecto en Figma, la gestión y distribución del Sprint Backlog 1, y la elaboración del Services Documentation Evidence for Sprint Review.</td>
+      <td><strong>Coca Lavado, Carlos Andrés</strong><br>
+        <b>TB1:</b> Lideró la planificación técnica mediante la estructuración del Product Backlog y los diagramas de arquitectura C4.<br>
+        <b>TP:</b> Lideró la estructuración general del proyecto en Figma, la gestión y distribución del Sprint Backlog 1, y la elaboración del Services Documentation Evidence for Sprint Review.<br>
+        <b>AV2:</b> Lideró la planificación estratégica del Sprint 2 Planning, así como la dirección técnica inicial del desarrollo del prototipo de hardware en Wokwi.
+      </td>
     </tr>
     <tr>
-      <td><strong>Paitan Pumacahua, Max Anthony</strong><br><b>TB1:</b> Ejerció liderazgo en el modelado estructural del dominio mediante el Context Mapping y el Domain Message Flows Modeling.<br><b>TP:</b> Lideró el diseño visual inicial desarrollando los wireframes y mockups para la Landing page, así como para la Web application y Mobile application.</td>
+      <td><strong>Paitan Pumacahua, Max Anthony</strong><br>
+        <b>TB1:</b> Ejerció liderazgo en el modelado estructural del dominio mediante el Context Mapping y el Domain Message Flows Modeling.<br>
+        <b>TP:</b> Lideró el diseño visual inicial desarrollando los wireframes y mockups para la Landing page, así como para la Web application y Mobile application.<br>
+        <b>AV2:</b> Asumió el liderazgo técnico como Aspect Leader y orientó al equipo mediante la conducción de entrevistas de validación cruciales para la aplicación móvil.
+      </td>
     </tr>
     <tr>
-      <td><strong>Rodríguez Villa, Elvia Marcela</strong><br><b>TB1:</b> Lideró el diseño arquitectónico de los Bounded Context de Inteligencia Botánica y Análisis Externo.<br><b>TP:</b> Lideró la primera fase del Solution UX/UI Design, estableciendo la identidad y estructura visual principal de la Landing Page.</td>
+      <td><strong>Rodríguez Villa, Elvia Marcela</strong><br>
+        <b>TB1:</b> Lideró el diseño arquitectónico de los Bounded Context de Inteligencia Botánica y Análisis Externo.<br>
+        <b>TP:</b> Lideró la primera fase del Solution UX/UI Design, estableciendo la identidad y estructura visual principal de la Landing Page.<br>
+        <b>AV2:</b> Lideró la fase de despliegue técnico, haciéndose cargo de la implementación y el despliegue final en producción de la aplicación web (frontend).
+      </td>
     </tr>
     <tr>
-      <td><strong>Briceño De La Cruz, Farid Sebastian</strong><br><b>TB1:</b> Dirigió la fase de descubrimiento conceptual mediante el Design Level Event Storming y la definición de la problemática.<br><b>TP:</b> Lideró la configuración técnica de la infraestructura con el Software Development Environment Configuration y estableció el flujo de trabajo en el Source Code Management.</td>
+      <td><strong>Briceño De La Cruz, Farid Sebastian</strong><br>
+        <b>TB1:</b> Dirigió la fase de descubrimiento conceptual mediante el Design Level Event Storming y la definición de la problemática.<br>
+        <b>TP:</b> Lideró la configuración técnica de la infraestructura con el Software Development Environment Configuration y estableció el flujo de trabajo en el Source Code Management.<br>
+        <b>AV2:</b> Dirigió el control de calidad liderando las evaluaciones según heurísticas de usabilidad y encabezó el desarrollo técnico del maquetado del dispositivo IoT en Wokwi.
+      </td>
     </tr>
     <tr>
-      <td><strong>Acuña Tomas, Diego Rolin</strong><br><b>TB1:</b> Lideró la identidad de la Startup y el diseño técnico del Bounded Context de IoT Management.<br><b>TP:</b> Lideró la conceptualización de la experiencia mediante Applications Wireflow Diagrams, User Flow Diagrams, Prototyping, y el diseño del dispositivo físico (IoT Device Design).</td>
+      <td><strong>Acuña Tomas, Diego Rolin</strong><br>
+        <b>TB1:</b> Lideró la identidad de la Startup y el diseño técnico del Bounded Context de IoT Management.<br>
+        <b>TP:</b> Lideró la conceptualización de la experiencia mediante Applications Wireflow Diagrams, User Flow Diagrams, Prototyping, y el diseño del dispositivo físico (IoT Device Design).<br>
+        <b>AV2:</b> Lideró la planeación integral de la arquitectura móvil y condujo entrevistas de validación para asegurar la viabilidad del enfoque del aplicativo.
+      </td>
     </tr>
     <tr>
       <td rowspan="7"><strong>Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.</strong></td>
-      <td><strong>Rivera Ratachi, Renzo Sebastian</strong><br><b>TB1:</b> Colaboró en la definición de los Bounded Context de Plant Profiles y Care Scheduling para alcanzar los hitos de la entrega.<br><b>TP:</b> Planificó y organizó las metas iniciales mediante el Sprint Planning, asegurando que todos compartieran un entorno estandarizado (Style Guide) para cumplir con los objetivos de despliegue a tiempo.</td>
+      <td><strong>Rivera Ratachi, Renzo Sebastian</strong><br>
+        <b>TB1:</b> Colaboró en la definición de los Bounded Context de Plant Profiles y Care Scheduling para alcanzar los hitos de la entrega.<br>
+        <b>TP:</b> Planificó y organizó las metas iniciales mediante el Sprint Planning, asegurando que todos compartieran un entorno estandarizado (Style Guide) para cumplir con los objetivos de despliegue a tiempo.<br>
+        <b>AV2:</b> Cumplió con los objetivos técnicos mediante el desarrollo colaborativo de cambios continuos en el backend, garantizando que la lógica del negocio estuviera lista para las evaluaciones del sprint.
+      </td>
       <td rowspan="7"><b>TB1:</b> Se logró un entorno colaborativo donde los hallazgos de las entrevistas y el Needfinding fueron la base para el diseño de User Stories y la arquitectura. El cumplimiento de los objetivos de la TB1 se facilitó mediante una planificación coordinada, asegurando que cada entregable técnico respondiera a las necesidades reales de los usuarios identificadas por el equipo.<br><br>
-      <b>TP:</b> El equipo consolidó un entorno de trabajo altamente colaborativo al estructurar el Sprint 1 mediante herramientas ágiles y control de versiones unificado. La clara definición de guías de estilo, la distribución equitativa del Sprint Backlog y la entrega puntual de wireframes, prototipos y configuraciones de entorno garantizaron que cada miembro cumpliera sus objetivos a tiempo para la presentación.</td>
+      <b>TP:</b> El equipo consolidó un entorno de trabajo altamente colaborativo al estructurar el Sprint 1 mediante herramientas ágiles y control de versiones unificado. La clara definición de guías de estilo, la distribución equitativa del Sprint Backlog y la entrega puntual de wireframes, prototipos y configuraciones de entorno garantizaron que cada miembro cumpliera sus objetivos a tiempo para la presentación.<br><br>
+      <b>AV2:</b> Se mantuvo un entorno altamente cohesionado enfocado en la ejecución técnica y la validación con usuarios. El cumplimiento de las metas del Sprint 2 se logró gracias a la comunicación constante para integrar los cambios del backend con las interfaces web y móviles. Asimismo, la retroalimentación obtenida de las evaluaciones heurísticas y entrevistas de validación se aplicó de manera colaborativa para mejorar la landing page y afinar el prototipo IoT en Wokwi.
+      </td>
     </tr>
     <tr>
-      <td><strong>Palomino Fiestas, Erick Leonardo</strong><br><b>TB1:</b> Cumplió con los objetivos de diseño para el PlantGuidence Bounded Context en colaboración con el área de UX.<br><b>TP:</b> Contribuyó al cumplimiento de las metas del Sprint 1 aplicando mejoras continuas en la web, colaborando activamente con el equipo de diseño para unificar la interfaz visual.</td>
+      <td><strong>Palomino Fiestas, Erick Leonardo</strong><br>
+        <b>TB1:</b> Cumplió con los objetivos de diseño para el PlantGuidence Bounded Context en colaboración con el área de UX.<br>
+        <b>TP:</b> Contribuyó al cumplimiento de las metas del Sprint 1 aplicando mejoras continuas en la web, colaborando activamente con el equipo de diseño para unificar la interfaz visual.<br>
+        <b>AV2:</b> Facilitó el cumplimiento de las metas iterativas colaborando en la codificación de los cambios del backend y alineando los resultados con el feedback de las entrevistas.
+      </td>
     </tr>
     <tr>
-      <td><strong>Coca Lavado, Carlos Andrés</strong><br><b>TB1:</b> Estableció las metas de usuario mediante el desarrollo de User Stories e Impact Mapping para ambos segmentos.<br><b>TP:</b> Estableció metas claras al definir y asignar el Sprint Backlog 1, y documentó colaborativamente las evidencias del sprint para asegurar la transparencia del trabajo en equipo.</td>
+      <td><strong>Coca Lavado, Carlos Andrés</strong><br>
+        <b>TB1:</b> Estableció las metas de usuario mediante el desarrollo de User Stories e Impact Mapping para ambos segmentos.<br>
+        <b>TP:</b> Estableció metas claras al definir y asignar el Sprint Backlog 1, y documentó colaborativamente las evidencias del sprint para asegurar la transparencia del trabajo en equipo.<br>
+        <b>AV2:</b> Contribuyó al entorno colaborativo aplicando las modificaciones necesarias en la Landing Page basadas en las observaciones recolectadas en sus entrevistas de validación.
+      </td>
     </tr>
     <tr>
-      <td><strong>Paitan Pumacahua, Max Anthony</strong><br><b>TB1:</b> Facilitó un entorno inclusivo mediante el análisis de entrevistas, transformándolas en User Personas y Task Matrix.<br><b>TP:</b> Facilitó el trabajo del equipo de desarrollo al proporcionar oportunamente los wireframes y mockups multiplataforma, lo que permitió cumplir con las metas de maquetación del Sprint 1.</td>
+      <td><strong>Paitan Pumacahua, Max Anthony</strong><br>
+        <b>TB1:</b> Facilitó un entorno inclusivo mediante el análisis de entrevistas, transformándolas en User Personas y Task Matrix.<br>
+        <b>TP:</b> Facilitó el trabajo del equipo de desarrollo al proporcionar oportunamente los wireframes y mockups multiplataforma, lo que permitió cumplir con las metas de maquetación del Sprint 1.<br>
+        <b>AV2:</b> Cumplió con las metas de desarrollo al ejecutar la implementación directa de la aplicación móvil y actuar como nexo de colaboración (Aspect Collaborator) entre subsistemas.
+      </td>
     </tr>
     <tr>
-      <td><strong>Rodríguez Villa, Elvia Marcela</strong><br><b>TB1:</b> Validó los flujos de trabajo grupales mediante el Event Storming del dominio y la creación de User Journey Maps.<br><b>TP:</b> Colaboró estrechamente con los desarrolladores proveyendo los lineamientos de UX/UI de la Landing Page, garantizando que el producto final cumpliera con los estándares visuales propuestos.</td>
+      <td><strong>Rodríguez Villa, Elvia Marcela</strong><br>
+        <b>TB1:</b> Validó los flujos de trabajo grupales mediante el Event Storming del dominio y la creación de User Journey Maps.<br>
+        <b>TP:</b> Colaboró estrechamente con los desarrolladores proveyendo los lineamientos de UX/UI de la Landing Page, garantizando que el producto final cumpliera con los estándares visuales propuestos.<br>
+        <b>AV2:</b> Cumplió rigurosamente con los tiempos planificados para lograr una correcta implementación técnica del frontend, proveyendo al grupo de un entorno web funcional para el review.
+      </td>
     </tr>
     <tr>
-      <td><strong>Briceño De La Cruz, Farid Sebastian</strong><br><b>TB1:</b> Participó en el Candidate Context Discovery y la investigación de antecedentes para alinear las tareas del grupo.<br><b>TP:</b> Creó un entorno colaborativo técnico al configurar los repositorios y políticas de ramas, permitiendo que el equipo integrara su código sin conflictos y cumpliera sus objetivos diarios.</td>
+      <td><strong>Briceño De La Cruz, Farid Sebastian</strong><br>
+        <b>TB1:</b> Participó en el Candidate Context Discovery y la investigación de antecedentes para alinear las tareas del grupo.<br>
+        <b>TP:</b> Creó un entorno colaborativo técnico al configurar los repositorios y políticas de ramas, permitiendo que el equipo integrara su código sin conflictos y cumpliera sus objetivos diarios.<br>
+        <b>AV2:</b> Colaboró en la planeación y desarrollo iterativo de la aplicación web, tomando como insumos sus propias evaluaciones de usabilidad para mejorar la experiencia del producto final.
+      </td>
     </tr>
     <tr>
-      <td><strong>Acuña Tomas, Diego Rolin</strong><br><b>TB1:</b> Cumplió con la planificación de los perfiles de equipo y la descripción técnica de la gestión de dispositivos IoT.<br><b>TP:</b> Clarificó las metas del equipo al mapear la experiencia de usuario (User Flows y Prototyping) y conectarla con las especificaciones del hardware IoT, uniendo el trabajo de software y electrónica.</td>
+      <td><strong>Acuña Tomas, Diego Rolin</strong><br>
+        <b>TB1:</b> Cumplió con la planificación de los perfiles de equipo y la descripción técnica de la gestión de dispositivos IoT.<br>
+        <b>TP:</b> Clarificó las metas del equipo al mapear la experiencia de usuario (User Flows y Prototyping) y conectarla con las especificaciones del hardware IoT, uniendo el trabajo de software y electrónica.<br>
+        <b>AV2:</b> Ejecutó los objetivos trazados logrando la implementación exitosa de la aplicación móvil, garantizando que reflejara las necesidades reales recopiladas durante las validaciones.
+      </td>
     </tr>
   </tbody>
 </table>
@@ -7925,9 +7991,7 @@ Revista Economía. (2020). Incremento del interés de los peruanos por el cuidad
 
 - Link Video AV1: `https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQBkDt1uzmT5Ro1mWs3A0bWMASojRLdRjF21GPgz28Es7Yc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=gySJdu`
 
-- Link Video TB1: 
-
-- Link Video AV2: 
+- Link Video AV2: `https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQBh-OfArGB-Q65yD_TYDuZHAUEW2tCd-wfSluKZlqsPEOQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=1t1diG`
 
 ## Links
 
