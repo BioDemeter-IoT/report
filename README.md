@@ -8004,9 +8004,15 @@ Revista Economía. (2020). Incremento del interés de los peruanos por el cuidad
 ## Links
 
 Link del repositorio del reporte: https://github.com/BioDemeter-IoT/report
+
 Link del repositorio de App Web: https://github.com/BioDemeter-IoT/PlantSync-Frontend 
+
 Link del repositorio de Backend: https://github.com/BioDemeter-IoT/BioDemeter_PlantSync_Backend 
+
 Link del repositorio de landing page: https://github.com/BioDemeter-IoT/LandingPageV2 
+
 Link del repositorio App Mobile: https://github.com/BioDemeter-IoT/BioDemeter_PlantSync_Mobile 
+
 Link de Wokwi Embebed app (Humedad): https://wokwi.com/projects/467231875296935937
+
 Link de Wokwi Embebed app (Temperatura): https://wokwi.com/projects/467378078446248961
