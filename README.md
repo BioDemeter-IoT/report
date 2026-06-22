@@ -7376,11 +7376,11 @@ Preguntas para personas con poca experiencia o iniciantes en el cuidado de plant
   </tr>
   <tr>
     <td><strong>Timing</strong></td>
-    <td>00:00 - 17:25</td>
+    <td>00:03 - 17:25</td>
   </tr>
   <tr>
     <td><strong>URL</strong></td>
-    <td><a href=""></a></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQB97cG_P5n5R7_uXGaFymEjAb4SdRB-nZh2xVnPrGtuHks?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjozLCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=zT4Y3f" target="_blank">https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQB97cG_P5n5R7_uXGaFymEjAb4SdRB-nZh2xVnPrGtuHks?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjozLCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=zT4Y3f</a></td>
   </tr>
   <tr>
     <td colspan="2" style="text-align:justify">
@@ -7415,11 +7415,11 @@ Preguntas para personas con poca experiencia o iniciantes en el cuidado de plant
   </tr>
   <tr>
     <td><strong>Timing</strong></td>
-    <td>00:00 - 00:01</td>
+    <td>17:29 - 26:05</td>
   </tr>
   <tr>
     <td><strong>URL</strong></td>
-    <td><a href=""></a></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQB97cG_P5n5R7_uXGaFymEjAb4SdRB-nZh2xVnPrGtuHks?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjoxMDQ5LCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=v07aZs" target="_blank">https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQB97cG_P5n5R7_uXGaFymEjAb4SdRB-nZh2xVnPrGtuHks?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjoxMDQ5LCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=v07aZs</a></td>
   </tr>
   <tr>
     <td colspan="2" style="text-align:justify">
@@ -7458,11 +7458,11 @@ Preguntas para personas con poca experiencia o iniciantes en el cuidado de plant
   </tr>
   <tr>
     <td><strong>Timing</strong></td>
-    <td></td>
+    <td>26:05 - 44:32</td>
   </tr>
   <tr>
     <td><strong>URL</strong></td>
-    <td><a href=""></a></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQB97cG_P5n5R7_uXGaFymEjAb4SdRB-nZh2xVnPrGtuHks?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjoxNTY0LjE2NywidGltZXN0YW1wZWRMaW5rUmVmZXJyZXJJbmZvIjp7InNjZW5hcmlvIjoiQ2hhcHRlclNoYXJlIiwiYWRkaXRpb25hbEluZm8iOnsiaXNTaGFyZWRDaGFwdGVyQXV0byI6ZmFsc2V9fX0sInJlZmVycmFsSW5mbyI6eyJyZWZlcnJhbEFwcCI6IlN0cmVhbVdlYkFwcCIsInJlZmVycmFsVmlldyI6IlNoYXJlQ2hhcHRlckxpbmsiLCJyZWZlcnJhbEFwcFBsYXRmb3JtIjoiV2ViIiwicmVmZXJyYWxNb2RlIjoidmlldyJ9fQ&e=1TeXMe" target="_blank">https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQB97cG_P5n5R7_uXGaFymEjAb4SdRB-nZh2xVnPrGtuHks?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjoxNTY0LjE2NywidGltZXN0YW1wZWRMaW5rUmVmZXJyZXJJbmZvIjp7InNjZW5hcmlvIjoiQ2hhcHRlclNoYXJlIiwiYWRkaXRpb25hbEluZm8iOnsiaXNTaGFyZWRDaGFwdGVyQXV0byI6ZmFsc2V9fX0sInJlZmVycmFsSW5mbyI6eyJyZWZlcnJhbEFwcCI6IlN0cmVhbVdlYkFwcCIsInJlZmVycmFsVmlldyI6IlNoYXJlQ2hhcHRlckxpbmsiLCJyZWZlcnJhbEFwcFBsYXRmb3JtIjoiV2ViIiwicmVmZXJyYWxNb2RlIjoidmlldyJ9fQ&e=1TeXMe</a></td>
   </tr>
   <tr>
     <td colspan="2" style="text-align:justify">
@@ -7497,11 +7497,11 @@ Preguntas para personas con poca experiencia o iniciantes en el cuidado de plant
   </tr>
   <tr>
     <td><strong>Timing</strong></td>
-    <td>00:00 - 1</td>
+    <td>44:32 - 57:36</td>
   </tr>
   <tr>
     <td><strong>URL</strong></td>
-    <td><a href=""></a></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQB97cG_P5n5R7_uXGaFymEjAb4SdRB-nZh2xVnPrGtuHks?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjoyNjcyLjk3MywidGltZXN0YW1wZWRMaW5rUmVmZXJyZXJJbmZvIjp7InNjZW5hcmlvIjoiQ2hhcHRlclNoYXJlIiwiYWRkaXRpb25hbEluZm8iOnsiaXNTaGFyZWRDaGFwdGVyQXV0byI6ZmFsc2V9fX0sInJlZmVycmFsSW5mbyI6eyJyZWZlcnJhbEFwcCI6IlN0cmVhbVdlYkFwcCIsInJlZmVycmFsVmlldyI6IlNoYXJlQ2hhcHRlckxpbmsiLCJyZWZlcnJhbEFwcFBsYXRmb3JtIjoiV2ViIiwicmVmZXJyYWxNb2RlIjoidmlldyJ9fQ&e=ILeTlm" target="_blank">https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQB97cG_P5n5R7_uXGaFymEjAb4SdRB-nZh2xVnPrGtuHks?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjoyNjcyLjk3MywidGltZXN0YW1wZWRMaW5rUmVmZXJyZXJJbmZvIjp7InNjZW5hcmlvIjoiQ2hhcHRlclNoYXJlIiwiYWRkaXRpb25hbEluZm8iOnsiaXNTaGFyZWRDaGFwdGVyQXV0byI6ZmFsc2V9fX0sInJlZmVycmFsSW5mbyI6eyJyZWZlcnJhbEFwcCI6IlN0cmVhbVdlYkFwcCIsInJlZmVycmFsVmlldyI6IlNoYXJlQ2hhcHRlckxpbmsiLCJyZWZlcnJhbEFwcFBsYXRmb3JtIjoiV2ViIiwicmVmZXJyYWxNb2RlIjoidmlldyJ9fQ&e=ILeTlm</a></td>
   </tr>
   <tr>
     <td colspan="2" style="text-align:justify">
@@ -7537,11 +7537,11 @@ Preguntas para personas con poca experiencia o iniciantes en el cuidado de plant
   </tr>
   <tr>
     <td><strong>Timing</strong></td>
-    <td>00:00 - 1</td>
+    <td>57:36 - 1:07:52</td>
   </tr>
   <tr>
     <td><strong>URL</strong></td>
-    <td><a href=""></a></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQB97cG_P5n5R7_uXGaFymEjAb4SdRB-nZh2xVnPrGtuHks?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjozNDU2LjI1NiwidGltZXN0YW1wZWRMaW5rUmVmZXJyZXJJbmZvIjp7InNjZW5hcmlvIjoiQ2hhcHRlclNoYXJlIiwiYWRkaXRpb25hbEluZm8iOnsiaXNTaGFyZWRDaGFwdGVyQXV0byI6ZmFsc2V9fX0sInJlZmVycmFsSW5mbyI6eyJyZWZlcnJhbEFwcCI6IlN0cmVhbVdlYkFwcCIsInJlZmVycmFsVmlldyI6IlNoYXJlQ2hhcHRlckxpbmsiLCJyZWZlcnJhbEFwcFBsYXRmb3JtIjoiV2ViIiwicmVmZXJyYWxNb2RlIjoidmlldyJ9fQ&e=xVoi95" target="_blank">https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQB97cG_P5n5R7_uXGaFymEjAb4SdRB-nZh2xVnPrGtuHks?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjozNDU2LjI1NiwidGltZXN0YW1wZWRMaW5rUmVmZXJyZXJJbmZvIjp7InNjZW5hcmlvIjoiQ2hhcHRlclNoYXJlIiwiYWRkaXRpb25hbEluZm8iOnsiaXNTaGFyZWRDaGFwdGVyQXV0byI6ZmFsc2V9fX0sInJlZmVycmFsSW5mbyI6eyJyZWZlcnJhbEFwcCI6IlN0cmVhbVdlYkFwcCIsInJlZmVycmFsVmlldyI6IlNoYXJlQ2hhcHRlckxpbmsiLCJyZWZlcnJhbEFwcFBsYXRmb3JtIjoiV2ViIiwicmVmZXJyYWxNb2RlIjoidmlldyJ9fQ&e=xVoi95</a></td>
   </tr>
   <tr>
     <td colspan="2" style="text-align:justify">
@@ -7842,26 +7842,12 @@ Se recomienda priorizar la resolución de estos problemas en el siguiente sprint
 
 El video resume el proyecto del equipo, mostrando a cada integrante explicar las tareas que realizó para cumplir con el trabajo.
 
-<table align="center">
-  <tr>
-    <td><strong>Duración</strong></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td><strong>URL Microsoft</strong></td>
-    <td><a href="" target="_blank"></a></td>
-  </tr>
-  <tr>
-    <td><strong>URL Youtube</strong></td>
-    <td><a href="" target="_blank"></a></td>
-  </tr>
-  </tr>
-  <tr>
-<td colspan="2">
-  <img src="" alt="screenshot about the team" width="1000">
-    </td>
-  </tr>
-</table>
+| Description | Details |
+|-------------|---------|
+| **Duración** | 10:30 min |
+| **URL Microsoft** | [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQD_i2sgq9tvSbnwClApAuYrASgQwyFNVj3DcuF7uu7GWVo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=4dL2bA](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQD_i2sgq9tvSbnwClApAuYrASgQwyFNVj3DcuF7uu7GWVo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=4dL2bA) |
+| **URL YouTube** | [https://youtu.be/Usy3NDk73jM](https://youtu.be/Usy3NDk73jM) |
+| **Imagen** | ![About the Team Screen](/images/entrevistadevalidacion/aboutheteam.png) |
 
 <hr class="page-break">
 
