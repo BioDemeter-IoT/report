@@ -357,6 +357,43 @@ El repositorio del informe se encuentra en GitHub en el siguiente link: https://
   - [_Expertos cuidadores de plantas_](#expertos-cuidadores-de-plantas-2)
   - [_Cuidadores de plantas principiantes_](#cuidadores-de-plantas-principiantes)
     - [6.3.3. Evaluaciones según heurísticas](#633-evaluaciones-según-heurísticas)
+      - [UX Heuristics \& Principles Evaluation](#ux-heuristics--principles-evaluation)
+      - [SITE o APP A EVALUAR](#site-o-app-a-evaluar)
+      - [TAREAS A EVALUAR](#tareas-a-evaluar)
+      - [ESCALA DE SEVERIDAD](#escala-de-severidad)
+      - [TABLA RESUMEN](#tabla-resumen)
+      - [DESCRIPCIÓN DETALLADA DE PROBLEMAS](#descripción-detallada-de-problemas)
+        - [PROBLEMA #1: No hay un botón visible para regresar al dashboard desde la vista de detalle de sensores](#problema-1-no-hay-un-botón-visible-para-regresar-al-dashboard-desde-la-vista-de-detalle-de-sensores)
+        - [Problema](#problema)
+        - [Recomendación](#recomendación)
+        - [PROBLEMA #2: Las unidades de medida no están claramente especificadas en algunos gráficos](#problema-2-las-unidades-de-medida-no-están-claramente-especificadas-en-algunos-gráficos)
+        - [Problema](#problema-1)
+        - [Recomendación](#recomendación-1)
+        - [PROBLEMA #3: Las leyendas de gráficos de tendencias utilizan colores sin suficiente contraste](#problema-3-las-leyendas-de-gráficos-de-tendencias-utilizan-colores-sin-suficiente-contraste)
+        - [Problema](#problema-2)
+        - [Recomendación](#recomendación-2)
+        - [PROBLEMA #4: El formulario de configuración de alertas no valida valores en tiempo real](#problema-4-el-formulario-de-configuración-de-alertas-no-valida-valores-en-tiempo-real)
+        - [Problema](#problema-3)
+        - [Recomendación](#recomendación-3)
+        - [PROBLEMA #5: Falta contexto sobre rangos de pH recomendados para diferentes plantas](#problema-5-falta-contexto-sobre-rangos-de-ph-recomendados-para-diferentes-plantas)
+        - [Problema](#problema-4)
+        - [Recomendación](#recomendación-4)
+        - [PROBLEMA #6: Mensajes de error no sugieren acciones correctivas](#problema-6-mensajes-de-error-no-sugieren-acciones-correctivas)
+        - [Problema](#problema-5)
+        - [Recomendación](#recomendación-5)
+        - [PROBLEMA #7: Falta indicadores visuales claros del estado de conectividad del dispositivo IoT](#problema-7-falta-indicadores-visuales-claros-del-estado-de-conectividad-del-dispositivo-iot)
+        - [Problema](#problema-6)
+        - [Recomendación](#recomendación-6)
+        - [PROBLEMA #8: Las imágenes de plantas no tienen atributo "alt"](#problema-8-las-imágenes-de-plantas-no-tienen-atributo-alt)
+        - [Problema](#problema-7)
+        - [Recomendación](#recomendación-7)
+        - [PROBLEMA #9: Campo de búsqueda no ofrece autocompletado ni sugerencias](#problema-9-campo-de-búsqueda-no-ofrece-autocompletado-ni-sugerencias)
+        - [Problema](#problema-8)
+        - [Recomendación](#recomendación-8)
+        - [PROBLEMA #10: Los estilos de botones principales y secundarios no son diferenciables](#problema-10-los-estilos-de-botones-principales-y-secundarios-no-son-diferenciables)
+        - [Problema](#problema-9)
+        - [Recomendación](#recomendación-9)
+      - [CONCLUSIONES Y PRÓXIMOS PASOS](#conclusiones-y-próximos-pasos)
   - [6.4. Video About-the-Product](#64-video-about-the-product)
   - [6.5. Video About-the-Team](#65-video-about-the-team)
 - [Conclusiones](#conclusiones)
@@ -7410,9 +7447,274 @@ Preguntas para personas con poca experiencia o iniciantes en el cuidado de plant
 
 ### 6.3.3. Evaluaciones según heurísticas
 
+#### UX Heuristics & Principles Evaluation
 
+**Usability – Inclusive Design – Information Architecture**
 
-<hr class="page-break">
+| Aspecto | Detalle |
+|---------|---------|
+| **CARRERA** | Ingeniería de Software |
+| **CURSO** | Desarrollo de Soluciones IoT |
+| **SECCIÓN** | 1ASI0572 |
+| **AUDITOR** | BioDemeter Team |
+| **CLIENTE(S)** | Agricultores y técnicos agrícolas participantes en sesiones de validación |
+
+---
+
+#### SITE o APP A EVALUAR
+
+**Landing Page:** BioDemeter - Solución IoT para monitoreo inteligente de plantas  
+**Aplicaciones Web:** Dashboard de monitoreo, Panel de control de sensores  
+**Aplicaciones Móviles:** App móvil de monitoreo en tiempo real
+
+---
+
+#### TAREAS A EVALUAR
+
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+
+1. Registro de un nuevo usuario (agricultor)
+2. Configuración de un dispositivo IoT (sensor) en la aplicación
+3. Visualización de métricas en tiempo real (humedad, temperatura, pH)
+4. Búsqueda y filtrado de datos históricos de sensores
+5. Generación de reportes personalizados
+6. Recepción y gestión de alertas automáticas
+7. Navegación entre vistas de múltiples plantas/espacios
+8. Acceso a guías y recomendaciones de cuidado
+9. Descarga y exportación de datos en formato CSV/PDF
+10. Configuración de preferencias de usuario y notificaciones
+
+No están incluidas en esta versión de la evaluación las siguientes tareas:
+
+1. Integración con sistemas de riego automático
+2. Análisis predictivo avanzado con machine learning
+3. Gestión de múltiples usuarios por cuenta (colaboradores)
+4. Sincronización con servicios de terceros
+5. Administración de suscripciones y planes premium
+
+---
+
+#### ESCALA DE SEVERIDAD
+
+Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
+
+| Nivel | Descripción |
+|-------|-------------|
+| **1** | **Problema superficial:** Puede ser fácilmente superado por el usuario u ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. |
+| **2** | **Problema menor:** Puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja resolverlo de cara al siguiente release. |
+| **3** | **Problema mayor:** Ocurre frecuentemente o los usuarios no son capaces de resolverlo. Es importante que sean corregidos y se les debe asignar una prioridad alta. |
+| **4** | **Problema muy grave:** Un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
+
+---
+
+#### TABLA RESUMEN
+
+| # | Problema | Escala de Severidad | Heurística/Principio Violada(o) |
+|---|----------|---------------------|--------------------------------|
+| 1 | No hay un botón visible para regresar al dashboard desde la vista de detalle de sensores | 3 | Usability: Libertad y control del usuario |
+| 2 | Las unidades de medida (°C, %, ppm) no están claramente especificadas en algunos gráficos | 2 | Information Architecture: ¿Es comprensible? |
+| 3 | Las leyendas de los gráficos de tendencias utilizan colores sin suficiente contraste | 3 | Inclusive Design: Accesibilidad visual |
+| 4 | El formulario de configuración de alertas no valida los valores mínimos y máximos en tiempo real | 2 | Usability: Prevención de errores |
+| 5 | Falta información de contexto sobre qué significan los rangos de pH recomendados para diferentes plantas | 3 | Information Architecture: ¿Es findable? |
+| 6 | Los mensajes de error al fallar la conexión con un sensor no sugieren acciones correctivas | 3 | Usability: Reconocimiento de errores y recuperación |
+| 7 | La aplicación móvil no muestra indicadores visuales claros del estado de conectividad del dispositivo IoT | 3 | Usability: Visibilidad del estado del sistema |
+| 8 | Las imágenes de plantas en la galería de guías de cuidado no tienen atributo "alt" | 3 | Inclusive Design: Proporciona experiencias comparables |
+| 9 | El campo de búsqueda de plantas históricas no ofrece autocompletado ni sugerencias | 2 | Usability: Flexibilidad y eficiencia |
+| 10 | Los estilos de botones principales y secundarios no son visualmente diferenciables | 2 | Usability: Consistencia y estándares |
+
+---
+
+#### DESCRIPCIÓN DETALLADA DE PROBLEMAS
+
+##### PROBLEMA #1: No hay un botón visible para regresar al dashboard desde la vista de detalle de sensores
+
+**Severidad:** 3  
+**Heurística Violada:** Usability - Libertad y control del usuario
+
+##### Problema
+
+Cuando el usuario accede a la vista detallada de un sensor específico para revisar histórico o configurar alertas, no existe un botón o control claramente visible que le permita regresar al dashboard principal. El usuario debe utilizar el botón de atrás del navegador o cerrar la vista, lo que interrumpe la fluidez de la experiencia y puede causar pérdida de datos no guardados en formularios.
+
+**Ubicación:** Landing Page → Dashboard → Detalle de Sensor (sin opción clara de regreso)
+
+##### Recomendación
+
+Implementar un botón de navegación "Volver al Dashboard" en la parte superior izquierda de la vista de detalle, o incluir una barra de navegación consistente que permita al usuario transitar libremente entre vistas. Utilizar iconografía estándar (flecha hacia atrás o ícono de "home") para que sea reconocible inmediatamente.
+
+---
+
+##### PROBLEMA #2: Las unidades de medida no están claramente especificadas en algunos gráficos
+
+**Severidad:** 2  
+**Heurística Violada:** Information Architecture - ¿Es comprensible?
+
+##### Problema
+
+En los gráficos de tendencias de humedad y temperatura, las etiquetas del eje Y no siempre incluyen la unidad de medida (°C, %, ppm). Aunque algunos usuarios pueden inferirlo por contexto, usuarios nuevos o aquellos sin experiencia técnica pueden confundirse sobre qué representa exactamente cada valor mostrado.
+
+**Ubicación:** Dashboard → Gráficos de Tendencias; App Móvil → Vista de Métricas en Tiempo Real
+
+##### Recomendación
+
+Añadir etiquetas claras de unidades de medida a todos los ejes de gráficos. Por ejemplo: "Temperatura (°C)", "Humedad Relativa (%)", "Conductividad Eléctrica (dS/m)". Considerar incluir también un tooltip informativo al pasar el cursor sobre el eje.
+
+---
+
+##### PROBLEMA #3: Las leyendas de gráficos de tendencias utilizan colores sin suficiente contraste
+
+**Severidad:** 3  
+**Heurística Violada:** Inclusive Design - Accesibilidad visual
+
+##### Problema
+
+Algunos de los colores utilizados en las leyendas de los gráficos de tendencias (especialmente en líneas de datos secundarias) no cumplen con el estándar WCAG AA de contraste mínimo 4.5:1 para texto pequeño. Usuarios con daltonismo o baja visión tienen dificultad para distinguir entre serie de datos, especialmente en dispositivos móviles o pantallas con brillo bajo.
+
+**Ubicación:** Dashboard → Gráficos; App Móvil → Visualización de múltiples plantas simultáneamente
+
+##### Recomendación
+
+Revisar la paleta de colores utilizada y asegurar que todos los colores cumplan con WCAG AA mínimo. Considerar la inclusión de patrones o texturas adicionales además de color para diferenciar series de datos. Realizar pruebas con simuladores de daltonismo (como Coblis) para validar la accesibilidad.
+
+---
+
+##### PROBLEMA #4: El formulario de configuración de alertas no valida valores en tiempo real
+
+**Severidad:** 2  
+**Heurística Violada:** Usability - Prevención de errores
+
+##### Problema
+
+Al configurar alertas personalizadas, el usuario debe completar campos para temperatura mínima y máxima. Sin embargo, el sistema solo valida estos valores después de presionar "Guardar", permitiendo configuraciones inválidas (como temperatura mínima mayor que máxima). Esto obliga al usuario a completar el flujo nuevamente después de recibir el error.
+
+**Ubicación:** Dashboard → Configuración de Alertas; App Móvil → Ajustes de Notificaciones
+
+##### Recomendación
+
+Implementar validación en tiempo real mientras el usuario introduce valores. Mostrar un mensaje de advertencia inmediatamente si detecta valores inconsistentes (ej: "La temperatura mínima no puede ser mayor que la máxima"). Deshabilitar el botón "Guardar" hasta que todos los valores sean válidos.
+
+---
+
+##### PROBLEMA #5: Falta contexto sobre rangos de pH recomendados para diferentes plantas
+
+**Severidad:** 3  
+**Heurística Violada:** Information Architecture - ¿Es findable?
+
+##### Problema
+
+Aunque la aplicación muestra el valor actual de pH del suelo en tiempo real, no hay información accesible desde la interfaz que indique cuáles son los rangos óptimos de pH para la planta específica que el usuario está monitoreando. Los usuarios deben buscar esta información en fuentes externas, lo que reduce la utilidad de la solución como herramienta educativa.
+
+**Ubicación:** Dashboard → Vista de Planta; App Móvil → Tarjeta de pH
+
+##### Recomendación
+
+Incluir un ícono informativo (?) junto al valor de pH que al hacer clic despliegue información como: "Rango óptimo para [Nombre de Planta]: 6.0 - 7.0". Alternativamente, integrar esta información en la sección de "Guías de Cuidado" asociada a cada planta, con navegación clara desde la métrica hacia la guía.
+
+---
+
+##### PROBLEMA #6: Mensajes de error no sugieren acciones correctivas
+
+**Severidad:** 3  
+**Heurística Violada:** Usability - Reconocimiento de errores y recuperación
+
+##### Problema
+
+Cuando la conexión con un dispositivo IoT se pierde, el sistema muestra un mensaje genérico como "Error de conexión" o "No se pudo sincronizar datos". Estos mensajes no ofrecen orientación al usuario sobre por qué ocurrió el problema o qué pasos específicos tomar para resolverlo (verificar conexión WiFi, reiniciar el dispositivo, etc.).
+
+**Ubicación:** Dashboard → Estado del Dispositivo; App Móvil → Notificación de Desconexión
+
+##### Recomendación
+
+Mejorar los mensajes de error para incluir: (1) explicación clara del problema, (2) causas probables, (3) pasos de resolución específicos. Por ejemplo: "El sensor no responde. Verifique que: el dispositivo está encendido, conectado a WiFi con SSID 'YourNetwork', y está a menos de 10 metros del router. Intente reiniciar el sensor si el problema persiste."
+
+---
+
+##### PROBLEMA #7: Falta indicadores visuales claros del estado de conectividad del dispositivo IoT
+
+**Severidad:** 3  
+**Heurística Violada:** Usability - Visibilidad del estado del sistema
+
+##### Problema
+
+En la aplicación móvil, no hay una indicación visual consistente y evidente que muestre el estado de conectividad de cada sensor. El usuario debe inferir el estado basándose en la presencia o ausencia de datos, lo que puede llevar a confusion sobre si los datos son recientes o desactualizados, especialmente durante períodos sin cambios en las métricas.
+
+**Ubicación:** App Móvil → Tarjetas de Plantas/Sensores; Dashboard Web → Vista de Dispositivos
+
+##### Recomendación
+
+Implementar indicadores visuales claros como: (1) un semáforo de colores (verde = conectado, amarillo = desconectado recientemente, rojo = offline), (2) un ícono de WiFi con variación de intensidad, o (3) una etiqueta de texto con timestamp de última sincronización ("Actualizado hace 2 minutos"). Estos indicadores deben ser prominentes y actualizarse en tiempo real.
+
+---
+
+##### PROBLEMA #8: Las imágenes de plantas no tienen atributo "alt"
+
+**Severidad:** 3  
+**Heurística Violada:** Inclusive Design - Proporciona experiencias comparables
+
+##### Problema
+
+En la galería de guías de cuidado y en las tarjetas de plantas del dashboard, las imágenes utilizadas para identificar plantas no incluyen atributo "alt" (texto alternativo). Usuarios que utilizan lectores de pantalla no pueden identificar qué planta se está mostrando, lo que hace la aplicación inaccesible para personas con discapacidad visual.
+
+**Ubicación:** Landing Page → Galería de Plantas; Dashboard → Catálogo de Plantas; App Móvil → Vista de Identidad de Planta
+
+##### Recomendación
+
+Añadir atributos "alt" descriptivos a todas las imágenes. Ejemplo: `alt="Planta de Tomate con flores amarillas"` o `alt="Sensor de humedad de suelo colocado en maceta"`. El texto debe ser conciso pero descriptivo, permitiendo que usuarios de lectores de pantalla comprendan completamente el contenido.
+
+---
+
+##### PROBLEMA #9: Campo de búsqueda no ofrece autocompletado ni sugerencias
+
+**Severidad:** 2  
+**Heurística Violada:** Usability - Flexibilidad y eficiencia
+
+##### Problema
+
+Al buscar plantas o históricos en la base de datos, el campo de búsqueda es un input de texto simple sin autocompletado, sugerencias de coincidencia o historial de búsquedas previas. Usuarios que no recuerdan exactamente el nombre de una planta o sensor deben escribir toda la búsqueda correctamente, lo que reduce la eficiencia especialmente en dispositivos móviles.
+
+**Ubicación:** Dashboard → Campo de Búsqueda; App Móvil → Búsqueda de Datos Históricos
+
+##### Recomendación
+
+Implementar un sistema de autocompletado que sugiera opciones mientras el usuario escribe (ej: empieza a escribir "to" y sugiere "Tomate", "Tomillo"). Incluir un historial de búsquedas recientes que el usuario pueda seleccionar con un clic. Considerar búsqueda difusa (fuzzy search) para tolerar pequeños errores de escritura.
+
+---
+
+##### PROBLEMA #10: Los estilos de botones principales y secundarios no son diferenciables
+
+**Severidad:** 2  
+**Heurística Violada:** Usability - Consistencia y estándares
+
+##### Problema
+
+En varios formularios y vistas, los botones principales (como "Guardar" o "Enviar") y los botones secundarios (como "Cancelar") tienen estilos visuales muy similares, lo que puede causar que usuarios seleccionen accidentalmente la opción incorrecta. Esta inconsistencia en la jerarquía visual viola los estándares de diseño de interfaz.
+
+**Ubicación:** Dashboard → Formularios de Configuración; App Móvil → Diálogos de Confirmación
+
+##### Recomendación
+
+Establecer una jerarquía visual clara entre botones:
+- **Botón primario:** Color de marca (ej: verde), relleno sólido, texto blanco, sombra sutil
+- **Botón secundario:** Borde únicamente, color de texto neutral, sin relleno
+- **Botón de peligro (delete):** Color rojo, relleno sólido, para acciones destructivas
+
+Documentar estas decisiones en el Design System/Style Guide y aplicarlas consistentemente en toda la solución.
+
+---
+
+#### CONCLUSIONES Y PRÓXIMOS PASOS
+
+De los 10 problemas identificados, **7 se clasifican con severidad 3** (mayor) y requieren atención prioritaria antes del siguiente release. Los problemas con mayor impacto en la experiencia del usuario son:
+
+- **Libertad de navegación** (Problema #1): Afecta la fluidez de uso
+- **Accesibilidad visual** (Problema #3): Excluye usuarios con discapacidad visual
+- **Contexto de información** (Problema #5): Reduce utilidad educativa
+- **Recuperación de errores** (Problema #6): Frustra a usuarios con problemas técnicos
+- **Visibilidad del estado** (Problema #7): Genera incertidumbre sobre datos
+- **Accesibilidad para lectores de pantalla** (Problema #8): Incumple normativas de accesibilidad
+- **Jerarquía visual** (Problema #10): Aumenta riesgo de errores del usuario
+
+Se recomienda priorizar la resolución de estos problemas en el siguiente sprint, especialmente los relacionados con **accesibilidad (inclusivity)** ya que son requisitos normativos.
+
 
 ## 6.4. Video About-the-Product
 
