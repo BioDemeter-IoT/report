@@ -59,7 +59,7 @@
 | :--- | :--- | :--- | :--- |
 | 0.1 | 14/04/2026 | Acuña Tomas, Diego Rolin | Creación del documento base y redacción del Capítulo I: Startup Profile. |
 | 0.2 | 15/04/2026 | Briceño De La Cruz, Farid Sebastian | Desarrollo del Solution Profile, antecedentes y procesos Lean UX. |
-| 0.3 | 16/04/2026 | Palomino Fiestas, Erick Leonardo y Rivera Ratachi, Renzo Sebastian | Elaboración del Segmento Objetivvo y Análisis de competidores y estrategias competitivas del Capítulo II. |
+| 0.3 | 16/04/2026 | Palomino Fiestas, Erick Leonardo y Rivera Ratachi, Renzo Sebastian | Elaboración del Segmento Objetivo y Análisis de competidores y estrategias competitivas del Capítulo II. |
 | 0.4 | 17/04/2026 | Paitan Pumacahua, Max Anthony | Elaboración de la sección de entrevistas, Needfinding y Big Picture EventStorming. |
 | 0.5 | 18/04/2026 | Rodríguez Villa, Elvia Marcela | Finalización del Capítulo II con Ubiquitous Language y User Journey Mapping. |
 | 0.6 | 19/04/2026 | Coca Lavado, Carlos Andrés | Redacción del Capítulo III: User Stories, Impact Mapping y Product Backlog. |
@@ -75,6 +75,13 @@
 | 1.5 | 01/05/2026 | Rodríguez Villa, Elvia Marcela | Elaboración de Solution UX/UI Design parte 1 y diseño de Landing Page. |
 | 1.6 | 02/05/2026 | Briceño De La Cruz, Farid Sebastian | Integración de Software Development Environment Configuration y Source Code Management. |
 | 1.7 | 16/05/2026 | Acuña Tomas, Diego Rolin | Creación de Applications Wireflow Diagrams, Mock-ups, User Flow Diagrams, Prototyping y diseño de IoT Device. |
+| 1.8 | 25/05/2026 | Coca Lavado, Carlos Andrés | Documentación del Sprint 2 Planning, Entrevista de Validación, Desarrollo del prototipo en Wokwi y Modificaciones en la Landing Page. |
+| 1.9 | 29/05/2026 | Palomino Fiestas, Erick Leonardo | Definición del Sprint Backlog 2, Entrevista de validación, Execution Evidence for Sprint Review y Desarrollo de cambios del backend. |
+| 2.0 | 02/06/2026 | Briceño De La Cruz, Farid Sebastian | Registro de Evaluaciones según heurísticas, Planeación y desarrollo de la aplicación web, y Desarrollo del maquetado del dispositivo IoT en Wokwi. |
+| 2.1 | 06/06/2026 | Acuña Tomas, Diego Rolin | Planeación y desarrollo de la aplicación móvil, Entrevistas de validación e Implementación de la aplicación móvil. |
+| 2.2 | 10/06/2026 | Rodríguez Villa, Elvia Marcela | Documentación de la Implementación y despliegue de la aplicación web (frontend). |
+| 2.3 | 14/06/2026 | Paitan Pumacahua, Max Anthony | Actualización de Aspect Leaders and Collaborators, Entrevistas de validación e Implementación de la aplicación móvil. |
+| 2.4 | 18/06/2026 | Rivera Ratachi, Renzo Sebastian | Documentación del Desarrollo de cambios del backend, Development Evidence for Sprint Review y Testing Suite Evidence for Sprint Review. |
 
 <hr class="page-break">
 
@@ -104,12 +111,11 @@ El repositorio del informe se encuentra en GitHub en el siguiente link: https://
 </p>
 
 
-
-
-
 <p __align__="center">
   <img src="images/insights/123.jpg">
 </p>
+
+**AV2**
 
 
 
@@ -276,40 +282,72 @@ El repositorio del informe se encuentra en GitHub en el siguiente link: https://
 - [Capítulo V: Solution UI/UX Design](#capítulo-v-solution-uiux-design)
   - [5.1. Style Guidelines](#51-style-guidelines)
     - [5.1.1. General Style Guidelines](#511-general-style-guidelines)
+      - [Branding](#branding)
+      - [Tipografía](#tipografía)
+      - [Lenguaje aplicado](#lenguaje-aplicado)
     - [5.1.2. Web, Mobile and IoT Style Guidelines](#512-web-mobile-and-iot-style-guidelines)
+      - [Estilo visual de la landing page](#estilo-visual-de-la-landing-page)
+      - [Estilo visual de la aplicación web y móvil](#estilo-visual-de-la-aplicación-web-y-móvil)
+      - [Estilo visual de componentes IoT](#estilo-visual-de-componentes-iot)
+      - [Botones](#botones)
+      - [Imágenes](#imágenes)
+      - [Pantallas emergentes](#pantallas-emergentes)
+      - [Encabezado](#encabezado)
+      - [Pie de página](#pie-de-página)
   - [5.2. Information Architecture](#52-information-architecture)
     - [5.2.1. Organization Systems](#521-organization-systems)
+      - [Organización jerárquica](#organización-jerárquica)
+      - [Organización secuencial](#organización-secuencial)
+      - [Organización matricial](#organización-matricial)
+      - [Esquemas de categorización](#esquemas-de-categorización)
     - [5.2.2. Labeling Systems](#522-labeling-systems)
+      - [Menú principal de la landing page](#menú-principal-de-la-landing-page)
+      - [Menú de navegación de la solución](#menú-de-navegación-de-la-solución)
+      - [Tipos de etiquetas en la interfaz](#tipos-de-etiquetas-en-la-interfaz)
     - [5.2.3. SEO Tags and Meta Tags](#523-seo-tags-and-meta-tags)
+      - [Landing Page](#landing-page)
+      - [Web and Mobile Application](#web-and-mobile-application)
     - [5.2.4. Searching Systems](#524-searching-systems)
     - [5.2.5. Navigation Systems](#525-navigation-systems)
+      - [Landing Page](#landing-page-1)
+      - [Web Application](#web-application)
+      - [Mobile Application](#mobile-application)
   - [5.3. Landing Page UI Design](#53-landing-page-ui-design)
     - [5.3.1. Landing Page Wireframe](#531-landing-page-wireframe)
     - [5.3.2. Landing Page Mock-up](#532-landing-page-mock-up)
   - [5.4. Applications UX/UI Design](#54-applications-uxui-design)
-    - [5.4.1. Applications Wireflow Diagrams](#541-applications-wireflow-diagrams)
+      - [4.4.1. Web Applications Wireframes](#441-web-applications-wireframes)
+      - [4.4.2. Mobile Applications Wireframes](#442-mobile-applications-wireframes)
     - [5.4.2. Applications Mock-ups](#542-applications-mock-ups)
     - [5.4.3. Applications User Flow Diagrams](#543-applications-user-flow-diagrams)
   - [5.5. Applications Prototyping](#55-applications-prototyping)
   - [5.6. IoT Device Design](#56-iot-device-design)
+    - [5.6.1. Criterios de Diseño Físico e Introducción](#561-criterios-de-diseño-físico-e-introducción)
+    - [5.6.2. Relación con la Arquitectura de Información y Guía de Estilos](#562-relación-con-la-arquitectura-de-información-y-guía-de-estilos)
+    - [5.6.3. Diseño de Circuito (Hardware Architecture)](#563-diseño-de-circuito-hardware-architecture)
+    - [5.6.4. Flujos de Interacción del Prototipo](#564-flujos-de-interacción-del-prototipo)
 - [Capítulo VI: Product Implementation, Validation \& Deployment](#capítulo-vi-product-implementation-validation--deployment)
   - [6.1. Software Configuration Management](#61-software-configuration-management)
     - [6.1.1. Software Development Environment Configuration](#611-software-development-environment-configuration)
     - [6.1.2. Source Code Management](#612-source-code-management)
     - [6.1.3. Source Code Style Guide \& Conventions](#613-source-code-style-guide--conventions)
+      - [Landing Page (HTML, CSS, JavaScript)](#landing-page-html-css-javascript)
+      - [Web App (TypeScript)](#web-app-typescript)
+      - [Mobile App (Dart)](#mobile-app-dart)
+      - [Backend (Java)](#backend-java)
+      - [Testing \& Documentación (Gherkin)](#testing--documentación-gherkin)
     - [6.1.4. Software Deployment Configuration](#614-software-deployment-configuration)
   - [6.2. Landing Page, Services \& Applications Implementation](#62-landing-page-services--applications-implementation)
     - [6.2.1. Sprint 1](#621-sprint-1)
       - [6.2.1.1. Sprint Planning 1](#6211-sprint-planning-1)
       - [6.2.1.2. Aspect Leaders and Collaborators](#6212-aspect-leaders-and-collaborators)
       - [6.2.1.3. Sprint Backlog 1](#6213-sprint-backlog-1)
-      - [6.2.1.4. Development Evidence for Sprint Review](#6214-development-evidence-for-sprint-review)
       - [6.2.1.5. Testing Suite Evidence for Sprint Review](#6215-testing-suite-evidence-for-sprint-review)
       - [6.2.1.6. Execution Evidence for Sprint Review](#6216-execution-evidence-for-sprint-review)
       - [6.2.1.7. Services Documentation Evidence for Sprint Review](#6217-services-documentation-evidence-for-sprint-review)
       - [6.2.1.8. Software Deployment Evidence for Sprint Review](#6218-software-deployment-evidence-for-sprint-review)
       - [6.2.1.9. Team Collaboration Insights during Sprint](#6219-team-collaboration-insights-during-sprint)
-      - [6.2.2. Sprint 2](#622-sprint-2)
+    - [6.2.2. Sprint 2](#622-sprint-2)
       - [6.2.2.1. Sprint Planning 2](#6221-sprint-planning-2)
       - [6.2.2.2. Aspect Leaders and Collaborators](#6222-aspect-leaders-and-collaborators)
       - [6.2.2.3. Sprint Backlog 2](#6223-sprint-backlog-2)
@@ -322,8 +360,48 @@ El repositorio del informe se encuentra en GitHub en el siguiente link: https://
   - [6.3. Validation Interviews](#63-validation-interviews)
     - [6.3.1. Diseño de Entrevistas](#631-diseño-de-entrevistas)
     - [6.3.2. Registro de Entrevistas](#632-registro-de-entrevistas)
+  - [_Expertos cuidadores de plantas_](#expertos-cuidadores-de-plantas-2)
+  - [_Cuidadores de plantas principiantes_](#cuidadores-de-plantas-principiantes)
     - [6.3.3. Evaluaciones según heurísticas](#633-evaluaciones-según-heurísticas)
+      - [UX Heuristics \& Principles Evaluation](#ux-heuristics--principles-evaluation)
+      - [SITE o APP A EVALUAR](#site-o-app-a-evaluar)
+      - [TAREAS A EVALUAR](#tareas-a-evaluar)
+      - [ESCALA DE SEVERIDAD](#escala-de-severidad)
+      - [TABLA RESUMEN](#tabla-resumen)
+      - [DESCRIPCIÓN DETALLADA DE PROBLEMAS](#descripción-detallada-de-problemas)
+        - [PROBLEMA #1: No hay un botón visible para regresar al dashboard desde la vista de detalle de sensores](#problema-1-no-hay-un-botón-visible-para-regresar-al-dashboard-desde-la-vista-de-detalle-de-sensores)
+        - [Problema](#problema)
+        - [Recomendación](#recomendación)
+        - [PROBLEMA #2: Las unidades de medida no están claramente especificadas en algunos gráficos](#problema-2-las-unidades-de-medida-no-están-claramente-especificadas-en-algunos-gráficos)
+        - [Problema](#problema-1)
+        - [Recomendación](#recomendación-1)
+        - [PROBLEMA #3: Las leyendas de gráficos de tendencias utilizan colores sin suficiente contraste](#problema-3-las-leyendas-de-gráficos-de-tendencias-utilizan-colores-sin-suficiente-contraste)
+        - [Problema](#problema-2)
+        - [Recomendación](#recomendación-2)
+        - [PROBLEMA #4: El formulario de configuración de alertas no valida valores en tiempo real](#problema-4-el-formulario-de-configuración-de-alertas-no-valida-valores-en-tiempo-real)
+        - [Problema](#problema-3)
+        - [Recomendación](#recomendación-3)
+        - [PROBLEMA #5: Falta contexto sobre rangos de pH recomendados para diferentes plantas](#problema-5-falta-contexto-sobre-rangos-de-ph-recomendados-para-diferentes-plantas)
+        - [Problema](#problema-4)
+        - [Recomendación](#recomendación-4)
+        - [PROBLEMA #6: Mensajes de error no sugieren acciones correctivas](#problema-6-mensajes-de-error-no-sugieren-acciones-correctivas)
+        - [Problema](#problema-5)
+        - [Recomendación](#recomendación-5)
+        - [PROBLEMA #7: Falta indicadores visuales claros del estado de conectividad del dispositivo IoT](#problema-7-falta-indicadores-visuales-claros-del-estado-de-conectividad-del-dispositivo-iot)
+        - [Problema](#problema-6)
+        - [Recomendación](#recomendación-6)
+        - [PROBLEMA #8: Las imágenes de plantas no tienen atributo "alt"](#problema-8-las-imágenes-de-plantas-no-tienen-atributo-alt)
+        - [Problema](#problema-7)
+        - [Recomendación](#recomendación-7)
+        - [PROBLEMA #9: Campo de búsqueda no ofrece autocompletado ni sugerencias](#problema-9-campo-de-búsqueda-no-ofrece-autocompletado-ni-sugerencias)
+        - [Problema](#problema-8)
+        - [Recomendación](#recomendación-8)
+        - [PROBLEMA #10: Los estilos de botones principales y secundarios no son diferenciables](#problema-10-los-estilos-de-botones-principales-y-secundarios-no-son-diferenciables)
+        - [Problema](#problema-9)
+        - [Recomendación](#recomendación-9)
+      - [CONCLUSIONES Y PRÓXIMOS PASOS](#conclusiones-y-próximos-pasos)
   - [6.4. Video About-the-Product](#64-video-about-the-product)
+  - [6.5. Video About-the-Team](#65-video-about-the-team)
 - [Conclusiones](#conclusiones)
   - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
 - [Bibliografía](#bibliografía)
@@ -347,51 +425,111 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
   <tbody>
     <tr>
       <td rowspan="7"><strong>Trabaja en equipo para proporcionar liderazgo en forma conjunta</strong></td>
-      <td><strong>Rivera Ratachi, Renzo Sebastian</strong><br><b>TB1:</b> Lideró la definición estratégica mediante la elaboración de Lean UX Hypothesis Statements y la identificación de segmentos objetivo.<br><b>TP:</b> Lideró la planificación del Sprint Planning 1, el Software Deployment Configuration y estableció las normativas técnicas en el Source Code Style Guide & Conventions.</td>
+      <td><strong>Rivera Ratachi, Renzo Sebastian</strong><br>
+        <b>TB1:</b> Lideró la definición estratégica mediante la elaboración de Lean UX Hypothesis Statements y la identificación de segmentos objetivo.<br>
+        <b>TP:</b> Lideró la planificación del Sprint Planning 1, el Software Deployment Configuration y estableció las normativas técnicas en el Source Code Style Guide & Conventions.<br>
+        <b>AV2:</b> Lideró la presentación de evidencias técnicas organizando el Development Evidence y el Testing Suite Evidence para el Sprint Review, además de dirigir cambios estructurales en el backend.
+      </td>
       <td rowspan="7"><b>TB1:</b> El equipo ejerció un liderazgo compartido donde cada integrante asumió la dirección de áreas críticas. La integración entre el análisis de negocio, la investigación de campo y el modelado técnico permitió establecer una visión unificada para la solución IoT, asegurando que cada componente del sistema estuviera alineado con los objetivos estratégicos del proyecto.<br><br>
-      <b>TP:</b> Para el Trabajo Parcial, el equipo demostró un liderazgo distribuido eficaz. Cada integrante se apropió de un dominio crítico, desde el diseño integral UX/UI y flujos de usuario en Figma, hasta la configuración técnica de entornos de desarrollo (Source Code Management, Deployment) y la gestión ágil (Sprint Planning, Sprint Backlog), consolidando exitosamente la infraestructura e identidad visual del proyecto.</td>
+      <b>TP:</b> Para el Trabajo Parcial, el equipo demostró un liderazgo distribuido eficaz. Cada integrante se apropió de un dominio crítico, desde el diseño integral UX/UI y flujos de usuario en Figma, hasta la configuración técnica de entornos de desarrollo (Source Code Management, Deployment) y la gestión ágil (Sprint Planning, Sprint Backlog), consolidando exitosamente la infraestructura e identidad visual del proyecto.<br><br>
+      <b>AV2:</b> Durante la AV2, el equipo demostró un liderazgo técnico sólido y proactivo. La gestión técnica del backend, frontend, desarrollo móvil y simulación del dispositivo IoT en Wokwi, sumado a la dirección en las entrevistas de validación y la correcta estructuración del Sprint 2, evidenciaron que cada integrante asumió el liderazgo en áreas vitales para garantizar la madurez y viabilidad del producto de software.
+      </td>
     </tr>
     <tr>
-      <td><strong>Palomino Fiestas, Erick Leonardo</strong><br><b>TB1:</b> Dirigió el análisis de competidores y estableció la base de seguridad en el IAM Bounded Context.<br><b>TP:</b> Lideró la estructuración del apartado del Sprint 1 en la documentación y dirigió la implementación y mejora del frontend de la aplicación web.</td>
+      <td><strong>Palomino Fiestas, Erick Leonardo</strong><br>
+        <b>TB1:</b> Dirigió el análisis de competidores y estableció la base de seguridad en el IAM Bounded Context.<br>
+        <b>TP:</b> Lideró la estructuración del apartado del Sprint 1 en la documentación y dirigió la implementación y mejora del frontend de la aplicación web.<br>
+        <b>AV2:</b> Lideró la organización y asignación del Sprint Backlog 2, gestionó el Execution Evidence para el Sprint Review y dirigió sesiones clave de entrevistas de validación.
+      </td>
     </tr>
     <tr>
-      <td><strong>Coca Lavado, Carlos Andrés</strong><br><b>TB1:</b> Lideró la planificación técnica mediante la estructuración del Product Backlog y los diagramas de arquitectura C4.<br><b>TP:</b> Lideró la estructuración general del proyecto en Figma, la gestión y distribución del Sprint Backlog 1, y la elaboración del Services Documentation Evidence for Sprint Review.</td>
+      <td><strong>Coca Lavado, Carlos Andrés</strong><br>
+        <b>TB1:</b> Lideró la planificación técnica mediante la estructuración del Product Backlog y los diagramas de arquitectura C4.<br>
+        <b>TP:</b> Lideró la estructuración general del proyecto en Figma, la gestión y distribución del Sprint Backlog 1, y la elaboración del Services Documentation Evidence for Sprint Review.<br>
+        <b>AV2:</b> Lideró la planificación estratégica del Sprint 2 Planning, así como la dirección técnica inicial del desarrollo del prototipo de hardware en Wokwi.
+      </td>
     </tr>
     <tr>
-      <td><strong>Paitan Pumacahua, Max Anthony</strong><br><b>TB1:</b> Ejerció liderazgo en el modelado estructural del dominio mediante el Context Mapping y el Domain Message Flows Modeling.<br><b>TP:</b> Lideró el diseño visual inicial desarrollando los wireframes y mockups para la Landing page, así como para la Web application y Mobile application.</td>
+      <td><strong>Paitan Pumacahua, Max Anthony</strong><br>
+        <b>TB1:</b> Ejerció liderazgo en el modelado estructural del dominio mediante el Context Mapping y el Domain Message Flows Modeling.<br>
+        <b>TP:</b> Lideró el diseño visual inicial desarrollando los wireframes y mockups para la Landing page, así como para la Web application y Mobile application.<br>
+        <b>AV2:</b> Asumió el liderazgo técnico como Aspect Leader y orientó al equipo mediante la conducción de entrevistas de validación cruciales para la aplicación móvil.
+      </td>
     </tr>
     <tr>
-      <td><strong>Rodríguez Villa, Elvia Marcela</strong><br><b>TB1:</b> Lideró el diseño arquitectónico de los Bounded Context de Inteligencia Botánica y Análisis Externo.<br><b>TP:</b> Lideró la primera fase del Solution UX/UI Design, estableciendo la identidad y estructura visual principal de la Landing Page.</td>
+      <td><strong>Rodríguez Villa, Elvia Marcela</strong><br>
+        <b>TB1:</b> Lideró el diseño arquitectónico de los Bounded Context de Inteligencia Botánica y Análisis Externo.<br>
+        <b>TP:</b> Lideró la primera fase del Solution UX/UI Design, estableciendo la identidad y estructura visual principal de la Landing Page.<br>
+        <b>AV2:</b> Lideró la fase de despliegue técnico, haciéndose cargo de la implementación y el despliegue final en producción de la aplicación web (frontend).
+      </td>
     </tr>
     <tr>
-      <td><strong>Briceño De La Cruz, Farid Sebastian</strong><br><b>TB1:</b> Dirigió la fase de descubrimiento conceptual mediante el Design Level Event Storming y la definición de la problemática.<br><b>TP:</b> Lideró la configuración técnica de la infraestructura con el Software Development Environment Configuration y estableció el flujo de trabajo en el Source Code Management.</td>
+      <td><strong>Briceño De La Cruz, Farid Sebastian</strong><br>
+        <b>TB1:</b> Dirigió la fase de descubrimiento conceptual mediante el Design Level Event Storming y la definición de la problemática.<br>
+        <b>TP:</b> Lideró la configuración técnica de la infraestructura con el Software Development Environment Configuration y estableció el flujo de trabajo en el Source Code Management.<br>
+        <b>AV2:</b> Dirigió el control de calidad liderando las evaluaciones según heurísticas de usabilidad y encabezó el desarrollo técnico del maquetado del dispositivo IoT en Wokwi.
+      </td>
     </tr>
     <tr>
-      <td><strong>Acuña Tomas, Diego Rolin</strong><br><b>TB1:</b> Lideró la identidad de la Startup y el diseño técnico del Bounded Context de IoT Management.<br><b>TP:</b> Lideró la conceptualización de la experiencia mediante Applications Wireflow Diagrams, User Flow Diagrams, Prototyping, y el diseño del dispositivo físico (IoT Device Design).</td>
+      <td><strong>Acuña Tomas, Diego Rolin</strong><br>
+        <b>TB1:</b> Lideró la identidad de la Startup y el diseño técnico del Bounded Context de IoT Management.<br>
+        <b>TP:</b> Lideró la conceptualización de la experiencia mediante Applications Wireflow Diagrams, User Flow Diagrams, Prototyping, y el diseño del dispositivo físico (IoT Device Design).<br>
+        <b>AV2:</b> Lideró la planeación integral de la arquitectura móvil y condujo entrevistas de validación para asegurar la viabilidad del enfoque del aplicativo.
+      </td>
     </tr>
     <tr>
       <td rowspan="7"><strong>Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.</strong></td>
-      <td><strong>Rivera Ratachi, Renzo Sebastian</strong><br><b>TB1:</b> Colaboró en la definición de los Bounded Context de Plant Profiles y Care Scheduling para alcanzar los hitos de la entrega.<br><b>TP:</b> Planificó y organizó las metas iniciales mediante el Sprint Planning, asegurando que todos compartieran un entorno estandarizado (Style Guide) para cumplir con los objetivos de despliegue a tiempo.</td>
+      <td><strong>Rivera Ratachi, Renzo Sebastian</strong><br>
+        <b>TB1:</b> Colaboró en la definición de los Bounded Context de Plant Profiles y Care Scheduling para alcanzar los hitos de la entrega.<br>
+        <b>TP:</b> Planificó y organizó las metas iniciales mediante el Sprint Planning, asegurando que todos compartieran un entorno estandarizado (Style Guide) para cumplir con los objetivos de despliegue a tiempo.<br>
+        <b>AV2:</b> Cumplió con los objetivos técnicos mediante el desarrollo colaborativo de cambios continuos en el backend, garantizando que la lógica del negocio estuviera lista para las evaluaciones del sprint.
+      </td>
       <td rowspan="7"><b>TB1:</b> Se logró un entorno colaborativo donde los hallazgos de las entrevistas y el Needfinding fueron la base para el diseño de User Stories y la arquitectura. El cumplimiento de los objetivos de la TB1 se facilitó mediante una planificación coordinada, asegurando que cada entregable técnico respondiera a las necesidades reales de los usuarios identificadas por el equipo.<br><br>
-      <b>TP:</b> El equipo consolidó un entorno de trabajo altamente colaborativo al estructurar el Sprint 1 mediante herramientas ágiles y control de versiones unificado. La clara definición de guías de estilo, la distribución equitativa del Sprint Backlog y la entrega puntual de wireframes, prototipos y configuraciones de entorno garantizaron que cada miembro cumpliera sus objetivos a tiempo para la presentación.</td>
+      <b>TP:</b> El equipo consolidó un entorno de trabajo altamente colaborativo al estructurar el Sprint 1 mediante herramientas ágiles y control de versiones unificado. La clara definición de guías de estilo, la distribución equitativa del Sprint Backlog y la entrega puntual de wireframes, prototipos y configuraciones de entorno garantizaron que cada miembro cumpliera sus objetivos a tiempo para la presentación.<br><br>
+      <b>AV2:</b> Se mantuvo un entorno altamente cohesionado enfocado en la ejecución técnica y la validación con usuarios. El cumplimiento de las metas del Sprint 2 se logró gracias a la comunicación constante para integrar los cambios del backend con las interfaces web y móviles. Asimismo, la retroalimentación obtenida de las evaluaciones heurísticas y entrevistas de validación se aplicó de manera colaborativa para mejorar la landing page y afinar el prototipo IoT en Wokwi.
+      </td>
     </tr>
     <tr>
-      <td><strong>Palomino Fiestas, Erick Leonardo</strong><br><b>TB1:</b> Cumplió con los objetivos de diseño para el PlantGuidence Bounded Context en colaboración con el área de UX.<br><b>TP:</b> Contribuyó al cumplimiento de las metas del Sprint 1 aplicando mejoras continuas en la web, colaborando activamente con el equipo de diseño para unificar la interfaz visual.</td>
+      <td><strong>Palomino Fiestas, Erick Leonardo</strong><br>
+        <b>TB1:</b> Cumplió con los objetivos de diseño para el PlantGuidence Bounded Context en colaboración con el área de UX.<br>
+        <b>TP:</b> Contribuyó al cumplimiento de las metas del Sprint 1 aplicando mejoras continuas en la web, colaborando activamente con el equipo de diseño para unificar la interfaz visual.<br>
+        <b>AV2:</b> Facilitó el cumplimiento de las metas iterativas colaborando en la codificación de los cambios del backend y alineando los resultados con el feedback de las entrevistas.
+      </td>
     </tr>
     <tr>
-      <td><strong>Coca Lavado, Carlos Andrés</strong><br><b>TB1:</b> Estableció las metas de usuario mediante el desarrollo de User Stories e Impact Mapping para ambos segmentos.<br><b>TP:</b> Estableció metas claras al definir y asignar el Sprint Backlog 1, y documentó colaborativamente las evidencias del sprint para asegurar la transparencia del trabajo en equipo.</td>
+      <td><strong>Coca Lavado, Carlos Andrés</strong><br>
+        <b>TB1:</b> Estableció las metas de usuario mediante el desarrollo de User Stories e Impact Mapping para ambos segmentos.<br>
+        <b>TP:</b> Estableció metas claras al definir y asignar el Sprint Backlog 1, y documentó colaborativamente las evidencias del sprint para asegurar la transparencia del trabajo en equipo.<br>
+        <b>AV2:</b> Contribuyó al entorno colaborativo aplicando las modificaciones necesarias en la Landing Page basadas en las observaciones recolectadas en sus entrevistas de validación.
+      </td>
     </tr>
     <tr>
-      <td><strong>Paitan Pumacahua, Max Anthony</strong><br><b>TB1:</b> Facilitó un entorno inclusivo mediante el análisis de entrevistas, transformándolas en User Personas y Task Matrix.<br><b>TP:</b> Facilitó el trabajo del equipo de desarrollo al proporcionar oportunamente los wireframes y mockups multiplataforma, lo que permitió cumplir con las metas de maquetación del Sprint 1.</td>
+      <td><strong>Paitan Pumacahua, Max Anthony</strong><br>
+        <b>TB1:</b> Facilitó un entorno inclusivo mediante el análisis de entrevistas, transformándolas en User Personas y Task Matrix.<br>
+        <b>TP:</b> Facilitó el trabajo del equipo de desarrollo al proporcionar oportunamente los wireframes y mockups multiplataforma, lo que permitió cumplir con las metas de maquetación del Sprint 1.<br>
+        <b>AV2:</b> Cumplió con las metas de desarrollo al ejecutar la implementación directa de la aplicación móvil y actuar como nexo de colaboración (Aspect Collaborator) entre subsistemas.
+      </td>
     </tr>
     <tr>
-      <td><strong>Rodríguez Villa, Elvia Marcela</strong><br><b>TB1:</b> Validó los flujos de trabajo grupales mediante el Event Storming del dominio y la creación de User Journey Maps.<br><b>TP:</b> Colaboró estrechamente con los desarrolladores proveyendo los lineamientos de UX/UI de la Landing Page, garantizando que el producto final cumpliera con los estándares visuales propuestos.</td>
+      <td><strong>Rodríguez Villa, Elvia Marcela</strong><br>
+        <b>TB1:</b> Validó los flujos de trabajo grupales mediante el Event Storming del dominio y la creación de User Journey Maps.<br>
+        <b>TP:</b> Colaboró estrechamente con los desarrolladores proveyendo los lineamientos de UX/UI de la Landing Page, garantizando que el producto final cumpliera con los estándares visuales propuestos.<br>
+        <b>AV2:</b> Cumplió rigurosamente con los tiempos planificados para lograr una correcta implementación técnica del frontend, proveyendo al grupo de un entorno web funcional para el review.
+      </td>
     </tr>
     <tr>
-      <td><strong>Briceño De La Cruz, Farid Sebastian</strong><br><b>TB1:</b> Participó en el Candidate Context Discovery y la investigación de antecedentes para alinear las tareas del grupo.<br><b>TP:</b> Creó un entorno colaborativo técnico al configurar los repositorios y políticas de ramas, permitiendo que el equipo integrara su código sin conflictos y cumpliera sus objetivos diarios.</td>
+      <td><strong>Briceño De La Cruz, Farid Sebastian</strong><br>
+        <b>TB1:</b> Participó en el Candidate Context Discovery y la investigación de antecedentes para alinear las tareas del grupo.<br>
+        <b>TP:</b> Creó un entorno colaborativo técnico al configurar los repositorios y políticas de ramas, permitiendo que el equipo integrara su código sin conflictos y cumpliera sus objetivos diarios.<br>
+        <b>AV2:</b> Colaboró en la planeación y desarrollo iterativo de la aplicación web, tomando como insumos sus propias evaluaciones de usabilidad para mejorar la experiencia del producto final.
+      </td>
     </tr>
     <tr>
-      <td><strong>Acuña Tomas, Diego Rolin</strong><br><b>TB1:</b> Cumplió con la planificación de los perfiles de equipo y la descripción técnica de la gestión de dispositivos IoT.<br><b>TP:</b> Clarificó las metas del equipo al mapear la experiencia de usuario (User Flows y Prototyping) y conectarla con las especificaciones del hardware IoT, uniendo el trabajo de software y electrónica.</td>
+      <td><strong>Acuña Tomas, Diego Rolin</strong><br>
+        <b>TB1:</b> Cumplió con la planificación de los perfiles de equipo y la descripción técnica de la gestión de dispositivos IoT.<br>
+        <b>TP:</b> Clarificó las metas del equipo al mapear la experiencia de usuario (User Flows y Prototyping) y conectarla con las especificaciones del hardware IoT, uniendo el trabajo de software y electrónica.<br>
+        <b>AV2:</b> Ejecutó los objetivos trazados logrando la implementación exitosa de la aplicación móvil, garantizando que reflejara las necesidades reales recopiladas durante las validaciones.
+      </td>
     </tr>
   </tbody>
 </table>
@@ -6527,55 +6665,725 @@ Landing Page Insights:
 
 #### 6.2.2.1. Sprint Planning 2
 
-| Sprint # | Fecha | Hora | Lugar | Preparado por | Asistentes |
-|----------|-------|------|-------|---------------|------------|
-| Sprint 2 |       |      |       |               |            |
-
-| Sprint Goal & User Stories | |
-|----------------------------|-|
-| Sprint 2 Goal              |  |
-| Sprint 2 Velocity          |  |
-| Sum of Story Points        |  |
+<table border="1">
+  <tbody>
+    <tr>
+      <td><b>Sprint 2</b></td>
+      <td>implementacion de Landing Page, Backend, Frontend para Aplicación Web y Movil </td>
+    </tr>
+    <tr>
+      <td colspan="2"><b>Sprint Planning Background</b></td>
+    </tr>
+    <tr>
+      <td><b>Date</b></td>
+      <td>11/06/2026</td>
+    </tr>
+    <tr>
+      <td><b>Time</b></td>
+      <td>18:30 PM</td>
+    </tr>
+    <tr>
+      <td><b>Location</b></td>
+      <td>Reunión realizada mediante Discord</td>
+    </tr>
+    <tr>
+      <td><b>Prepared By</b></td>
+      <td>Palomino Fiestas, Erick Leonardo</td>
+    </tr>
+    <tr>
+      <td><b>Attendees (to planning meeting)</b></td>
+      <td>
+           Diego Rolin Acuña Tomas<br>
+           Farid Sebastian Briceño De La Cruz <br>
+          Rivera Ratachi, Renzo Sebastian <br>
+          Erick Leonardo Palomino Fiestas <br>
+          Carlos Andres Coca Lavado <br>
+          Elvia Marcela Rodriguez Villa <br>
+          Max Anthony Paitan Pumacahua <br>
+  </td>
+    </tr>
+    <tr>
+      <td><b> Previous Sprint  Review</b></td>
+      <td> Durante el Sprint 1, el equipo se enfocó en cimentar las bases arquitectónicas y de diseño de la solución. Se entregaron los primeros prototipos interactivos en Figma para la Landing Page y la aplicación web, se configuraron los repositorios bajo estrictas normativas de Source Code Management, y se definió la estructura técnica mediante diagramas C4 y Context Mapping. Se logró un avance sólido en la documentación y en la conceptualización del dispositivo IoT
+      </td>
+    </tr>
+    <tr>
+      <td><b>Previous Sprint Retrospective</b></td>
+      <td>El equipo destacó la buena organización inicial y el cumplimiento de las normativas de estilo, pero identificó que la fase de integración de código requería mayor sincronización. Se acordó como mejora principal establecer metas más granulares durante el Sprint Planning y mejorar la comunicación entre los encargados del diseño y los desarrolladores para evitar cuellos de botella en la maquetación.</td>
+    </tr>
+    <tr>
+      <td colspan="2"><b>Sprint Goal & User Stories</b></td>
+    </tr>
+    <tr>
+      <td><b>Sprint 2 Goal</b></td>
+      <td>Our focus for Sprint 2 is to establish and enhance the public presence of PlantSync by deploying an informative, fully responsive, and appealing Landing Page. We believe this delivers a strong first impression and drives early user engagement. This will be confirmed when our Web Frontend application is successfully improved, deployed, and seamlessly accessible to potential users. This allows them to explore the app's value proposition and core features in a highly polished interface, while the supporting backend services and IoT simulations remain in a local development environment for ongoing testing.</td>
+    </tr>
+    <tr>
+      <td><b>Sprint 2 Velocity</b></td>
+      <td> 48 Points</td>
+    </tr>
+    <tr>
+      <td><b>Sum of Story Points</b></td>
+      <td> 48 Points
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 #### 6.2.2.2. Aspect Leaders and Collaborators
 
-| Team Member | GitHub Username | Aspect | Role |
-|-------------|-----------------|--------|------|
-|             |                 |        |      |
+| Team Member | GitHub Username | Desarrollo y corrección del backend    |  Desarrollo del frontend - Web app    |   Desarrollo del frontend - Mobile app     |  Desarrollo de IoT System     | Desarrollo del landing page   |
+|-------------|-----------------|--------|------|------|------|------|
+|      Palomino Fiestas, Erick Leonardo   |   erickLeo13         |    L    |   C   |    C    |   C   |  C   |   
+|      Diego Rolin Acuña Tomas            |   ComidaRapida007    |    C    |   C   |    L    |   C   |  C   |
+|      Farid Sebastian Briceño De La Cruz |   InjustShin         |    C    |   C   |    C    |   L   |  C   |
+|      Rivera Ratachi, Renzo Sebastian    |   1sopod             |    L    |   C   |    C    |   C   |  C   |
+|      Carlos Andres Coca Lavado          |   MrAndres08DV       |    C    |   L   |    C    |   C   |  L   |
+|      Max Anthony Paitan Pumacahua       |   maxpp2910          |    C    |   C   |    L    |   C   |  C   |
+|      Elvia Marcela Rodriguez Villa      |   ElviaRV            |    C    |   L   |    C    |   C   |  C   |
 
 #### 6.2.2.3. Sprint Backlog 2
 
-| Sprint # | User Story | Work-Item / Task | Descripción | Estimación (horas) | Asignado a | Estado |
-|----------|------------|------------------|-------------|-------------------|------------|--------|
-| Sprint 2 |            |                  |             |                   |            |        |
+<h3>Sprint Backlog – Sprint 2</h3>
+<table border="1" cellspacing="0" cellpadding="5">
+<thead>
+<tr>
+<th colspan="8">Sprint 2</th>
+</tr>
+<tr>
+<th colspan="2">User Story</th>
+<th colspan="2">Work-Item / Task</th>
+<th rowspan="2">Description</th>
+<th rowspan="2">Estimation (Hours)</th>
+<th rowspan="2">Assigned To</th>
+<th rowspan="2">Status (To-do / In-Process / To-Review / Done)</th>
+</tr>
+<tr>
+<th>Id</th>
+<th>Title</th>
+<th>Id</th>
+<th>Title</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>US25</td>
+<td>Visualización de perfil de usuario</td>
+<td>WI017</td>
+<td>Desarrollar página de perfil</td>
+<td>Implementar la vista de perfil para que el usuario pueda visualizar su resumen de actividad y métricas de plantas.</td>
+<td>5</td>
+<td>Renzo Rivera</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US15</td>
+<td>Edición de datos personales</td>
+<td>WI018</td>
+<td>Formulario de actualización de datos</td>
+<td>Integrar los servicios para permitir la modificación y persistencia de los datos del usuario en el perfil.</td>
+<td>4</td>
+<td>Elvia Rodríguez</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US17</td>
+<td>Modo oscuro en la interfaz</td>
+<td>WI019</td>
+<td>Configurar Tema Oscuro</td>
+<td>Implementar la lógica del tema oscuro para alternar entre modo claro y oscuro a nivel global en la aplicación.</td>
+<td>3</td>
+<td>Carlos Coca</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US26</td>
+<td>Visualización de tareas con fechas</td>
+<td>WI020</td>
+<td>Crear línea de tiempo de tareas</td>
+<td>Construir el componente de las fechas de las tareas para ordenar de manera cronológica las actividades pendientes.</td>
+<td>6</td>
+<td>Erick Palomino</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US27</td>
+<td>Visualización de tareas de cuidado</td>
+<td>WI021</td>
+<td>Integrar listado de tareas diarias</td>
+<td>Consumir los datos del tareas para mostrar u ocultar el estado de las tareas de cada jornada.</td>
+<td>4</td>
+<td>Farid Briceño</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US35</td>
+<td>Consulta a Asistente Botánico IA</td>
+<td>WI022</td>
+<td>Desarrollar interfaz del Chatbot</td>
+<td>Desarrollar la ventana de conversación en el dashboard de la aplicacion para la interacción natural con el asistente de IA.</td>
+<td>5</td>
+<td>Erick Palomino</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US10</td>
+<td>Integración de API de IA</td>
+<td>WI023</td>
+<td>Conectar servicios de IA</td>
+<td>Vincular el chatbot con el endpoint del backend para emitir consultas y recibir recomendaciones botánicas.</td>
+<td>7</td>
+<td>Diego Acuña</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US02</td>
+<td>Vinculación de dispositivo IoT con la cuenta</td>
+<td>WI024</td>
+<td>Flujo de emparejamiento IoT</td>
+<td>Crear el formulario y validaciones necesarias para asociar de manera segura el identificador del hardware con la cuenta.</td>
+<td>5</td>
+<td>Max Paitan</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US08</td>
+<td>Monitoreo de Humedad de Tierra</td>
+<td>WI025</td>
+<td>Visualización de humedad en Dashboard</td>
+<td>Implementar los indicadores gráficos para reflejar el estado hídrico.</td>
+<td>4</td>
+<td>Carlos Coca</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US31</td>
+<td>Telemetría de Temperatura Ambiental</td>
+<td>WI026</td>
+<td>Temperatura IoT</td>
+<td>Integrar la lectura en tiempo real del sensor de temperatura dentro del panel de control de la planta.</td>
+<td>3</td>
+<td>Diego Acuña</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US16</td>
+<td>Edición de datos de planta</td>
+<td>WI027</td>
+<td>Actualización de perfil botánico</td>
+<td>Habilitar la edición de características (nombre, tipo, foto) dentro del perfil de la planta</td>
+<td>4</td>
+<td>Farid Briceño</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US07</td>
+<td>Visualización del historial de cuidados</td>
+<td>WI028</td>
+<td>Componente de registro histórico</td>
+<td>Renderizar una lista cronológica en el detalle de la planta que muestre todas las interacciones de riego y fertilización pasadas.</td>
+<td>5</td>
+<td>Elvia Rodríguez</td>
+<td>Done</td>
+</tr>
+</tbody>
+</table>
 
 #### 6.2.2.4. Development Evidence for Sprint Review
 
 | Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
 |------------|--------|-----------|----------------|---------------------|---------------------|
-|            |        |           |                |                     |                     |
+| LandingPageV2 | main | 0d172d6abc06e4a1da753a42c8a7333444bb05b8 | feat: section of about the team and product | - | 18 junio 2026 |
+| LandingPageV2 | develop | d2d5d374e8c6aff526c20d94308e72f7f4a36e4c | feat: update styles | - | 17 junio 2026 |
+| BioDemeter_PlantSync_Backend | main | 728c746ac0871b05e3c667961ab63d98cbbf0c98 | feat: add description field to Plant aggregate | Introduce a new description field for Plant and propagate it through the domain, API and tests. | 9 junio 2026 |
+| BioDemeter_PlantSync_Backend | main | 188734fb6d2fa93adcb7db1f412b14744a477722 | feat: Add profile picture support and account update API | - | 9 junio 2026 |
+| BioDemeter_PlantSync_Backend | task-history | 029a34c2b8a2893d2960a6595db605ee346ca737 | Merge pull request #3 from BioDemeter-IoT/feature/task-history | Feature/task history | 9 junio 2026 |
+| BioDemeter_PlantSync_Mobile | main | d3df2e2a745812e2d7d6329e8d5f4eb9afcd3ac4 | feat: add plants files, with models, repo, ui and bloc | - | 19 junio 2026 |
+| BioDemeter_PlantSync_Mobile | main | 514e3fc71372712c23ad2ce93ec90d62afdf92b4 | feat: add core services, network interceptor and theme | - | 19 junio 2026 |
+| BioDemeter_PlantSync_Mobile | main | 5f054e2bc069a2fab576de624ea5a252edd1dd12 | feat: add chatbot page | - | 19 junio 2026 |
+| BioDemeter_PlantSync_Vue | main | f145a3ef2714dffd9c92f61b50f38e9327edd5c3 | feat: initial Vue project setup with DDD, Login and Dashboard views | - | 16 junio 2026 |
 
 #### 6.2.2.5. Testing Suite Evidence for Sprint Review
 
-| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
-|------------|--------|-----------|----------------|---------------------|---------------------|
-|            |        |           |                |                     |                     |
+Se implementaron tests unitarios y de integración en el Backend para asegurar el correcto funcionamiento del mismo.
+
+![Unit Test](/images/evidence2/UnitTest.png)
+
+
+
+
 
 #### 6.2.2.6. Execution Evidence for Sprint Review
 
+<br>
+
+En el Sprint 2 se alcanzó una consolidación funcional de la plataforma, destacando la implementación del asistente botánico inteligente basado en IA. Además, se logró avanzar significativamente en la experiencia y retención del usuario mediante el desarrollo de la gestión de perfiles, la visualización interactiva de la línea de tiempo de tareas y el registro detallado del historial de cuidados de las plantas.
+<br>
+
+<ul>
+  <li>US25 Visualización de perfil de usuario</li>
+  <li>US15 Edición de datos personales</li>
+  <li>US17 Modo oscuro en la interfaz</li>
+</ul>
+
+<br>
+<p align="center">
+  <img src="images/evidence2/perfil.png" alt="execution frontend plant management" width="350">
+</p>
+<br>
+<p align="center">
+  <img src="images/evidence2/editprofile.png" alt="execution frontend plant management" width="350">
+</p>
+<br>
+<p align="center">
+  <img src="images/evidence2/darkmode.png" alt="execution frontend plant management" width="100">
+</p>
+
+<br>
+
+
+<ul>
+  <li>US26 Visualización de tareas con fechas</li>
+  <li>US27 Visualización de tareas de cuidados</li>
+</ul>
+
+<br>
+<p align="center">
+  <img src="images/evidence2/Tareas.png" alt="execution frontend plant management" width="350">
+</p>
+<br>
+
+<ul>
+  <li>US35 Consulta a Asistente Botánico IA</li>
+  <li>US10 Integración de API de IA</li>
+</ul>
+
+<br>
+<p align="center">
+  <img src="images/evidence2/chatbot.png" alt="execution frontend plant management" width="350">
+</p>
+<br>
+
+<ul>
+  <li>US02 Vinculación de dispositivo IoT con la cuenta</li>
+  <li>US08 Monitoreo de Humedad de Tierra</li>
+  <li>US31 Telemetría de Temperatura Ambiental</li>
+</ul>
+
+<br>
+<p align="center">
+  <img src="images/evidence2/iot.png" alt="execution frontend plant management" width="350">
+</p>
+<br>
+<p align="center">
+  <img src="images/evidence2/iot2.png" alt="execution frontend plant management" width="350">
+</p>
+<br>
+
+<ul>
+  <li>US16 Edición de datos de planta</li>
+  <li>US07 Visualización del historial de cuidados</li>
+</ul>
+
+<br>
+<p align="center">
+  <img src="images/evidence2/planta.png" alt="execution frontend profiles" width="350">
+</p>
+<br>
+
 #### 6.2.2.7. Services Documentation Evidence for Sprint Review
 
-| Servicio | Verbo | Endpoint | Parámetros | Response |
-|----------|-------|----------|------------|----------|
-|          |       |          |            |          |
+<br>
+<p align="center">
+  <img src="images/evidence2/documentation1.png" alt="execution frontend profiles" width="350">
+</p>
+<br>
+<p align="center">
+  <img src="images/evidence2/documentation2.png" alt="execution frontend profiles" width="350">
+</p>
+<br>
+
+
+<h3>Endpoints implementados</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Endpoint</th>
+      <th>Acciones soportadas</th>
+      <th>Parámetros</th>
+      <th>Ejemplo de Request</th>
+      <th>Ejemplo de Response</th>
+      <th>Documentación (URL)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>/api/v1/iot/nodes</td>
+      <td>POST</td>
+      <td>nodeCode, plantId, profileId</td>
+      <td>
+        <code>POST /api/v1/iot/nodes</code><br>
+<pre><code>{
+  "nodeCode": "NODE-XYZ-01",
+  "plantId": 2,
+  "profileId": 1
+}</code></pre>
+      </td>
+      <td>
+<pre><code>{
+  "id": 1,
+  "nodeCode": "NODE-XYZ-01",
+  "status": "ACTIVE",
+  "plantId": 2,
+  "profileId": 1,
+  "createdAt": "2026-06-21T10:00:00"
+}</code></pre>
+      </td>
+      <td>https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/swagger-ui/index.html</td>
+    </tr>
+    <tr>
+      <td>/api/v1/iot/readings</td>
+      <td>POST</td>
+      <td>nodeId, soilHumidity, airTemperature</td>
+      <td>
+        <code>POST /api/v1/iot/readings</code><br>
+<pre><code>{
+  "nodeId": 1,
+  "soilHumidity": 45.5,
+  "airTemperature": 22.1
+}</code></pre>
+      </td>
+      <td>
+<pre><code>{
+  "id": 100,
+  "nodeId": 1,
+  "soilHumidity": 45.5,
+  "airTemperature": 22.1,
+  "timestamp": "2026-06-21T10:15:30"
+}</code></pre>
+      </td>
+      <td>https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/swagger-ui/index.html</td>
+    </tr>
+    <tr>
+      <td>/api/v1/iot/edge/sensor-readings/batch</td>
+      <td>POST</td>
+      <td>Header: X-Edge-Api-Key, Array of readings</td>
+      <td>
+        <code>POST /api/v1/iot/edge/sensor-readings/batch</code><br>
+<pre><code>[
+  {
+    "nodeId": 1,
+    "soilHumidity": 45.0,
+    "airTemperature": 22.0
+  }
+]</code></pre>
+      </td>
+      <td>
+<pre><code>{
+  "message": "Batch processed successfully",
+  "readingIds": [ 101 ]
+}</code></pre>
+      </td>
+      <td>https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/swagger-ui/index.html</td>
+    </tr>
+    <tr>
+      <td>/api/v1/iot/edge/nodes/{nodeCode}/actuator-commands/pending</td>
+      <td>GET</td>
+      <td>nodeCode (path)</td>
+      <td><code>GET /api/v1/iot/edge/nodes/NODE-XYZ-01/actuator-commands/pending</code></td>
+      <td>
+<pre><code>[
+  {
+    "id": 10,
+    "nodeId": 1,
+    "actuatorType": "WATER_PUMP",
+    "action": "TURN_ON",
+    "status": "PENDING",
+    "issuedAt": "2026-06-21T09:00:00"
+  }
+]</code></pre>
+      </td>
+      <td>https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/swagger-ui/index.html</td>
+    </tr>
+    <tr>
+      <td>/api/v1/iot/edge/nodes/{nodeCode}/actuator-commands/{commandId}/complete</td>
+      <td>PUT</td>
+      <td>nodeCode (path), commandId (path)</td>
+      <td><code>PUT /api/v1/iot/edge/nodes/NODE-XYZ-01/actuator-commands/10/complete</code></td>
+      <td>
+<pre><code>{
+  "message": "Command executed successfully"
+}</code></pre>
+      </td>
+      <td>https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/swagger-ui/index.html</td>
+    </tr>
+    <tr>
+      <td>/api/v1/tasks/pending</td>
+      <td>GET</td>
+      <td>plantId (query)</td>
+      <td><code>GET /api/v1/tasks/pending?plantId=2</code></td>
+      <td>
+<pre><code>[
+  {
+    "id": 5,
+    "action": "Watering",
+    "scheduledDate": "2026-06-22",
+    "plantId": 2,
+    "profileId": 1,
+    "status": "PENDING"
+  }
+]</code></pre>
+      </td>
+      <td>https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/swagger-ui/index.html</td>
+    </tr>
+    <tr>
+      <td>/api/v1/tasks/{taskId}/complete</td>
+      <td>PATCH</td>
+      <td>taskId (path), humidity, notes</td>
+      <td>
+        <code>PATCH /api/v1/tasks/5/complete</code><br>
+<pre><code>{
+  "humidity": 60,
+  "notes": "Riego completado manualmente"
+}</code></pre>
+      </td>
+      <td>
+<pre><code>{
+  "id": 5,
+  "action": "Watering",
+  "status": "COMPLETED",
+  "completedAt": "2026-06-21T10:30:00",
+  "humidity": 60,
+  "notes": "Riego completado manualmente"
+}</code></pre>
+      </td>
+      <td>https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/swagger-ui/index.html</td>
+    </tr>
+    <tr>
+      <td>/api/v1/tasks/history</td>
+      <td>GET</td>
+      <td>plantId (query)</td>
+      <td><code>GET /api/v1/tasks/history?plantId=2</code></td>
+      <td>
+<pre><code>[
+  {
+    "id": 4,
+    "action": "Fertilize",
+    "status": "COMPLETED",
+    "completedAt": "2026-05-10"
+  }
+]</code></pre>
+      </td>
+      <td>https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/swagger-ui/index.html</td>
+    </tr>
+    <tr>
+      <td>/api/v1/analytics/global-telemetry</td>
+      <td>GET</td>
+      <td>Ninguno</td>
+      <td><code>GET /api/v1/analytics/global-telemetry</code></td>
+      <td>
+<pre><code>{
+  "averageSoilHumidity": 42.5,
+  "averageAirTemperature": 23.1
+}</code></pre>
+      </td>
+      <td>https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/swagger-ui/index.html</td>
+    </tr>
+    <tr>
+      <td>/api/v1/analytics/device-status</td>
+      <td>GET</td>
+      <td>Ninguno</td>
+      <td><code>GET /api/v1/analytics/device-status</code></td>
+      <td>
+<pre><code>{
+  "onlineCount": 150,
+  "offlineCount": 5,
+  "errorCount": 2
+}</code></pre>
+      </td>
+      <td>https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/swagger-ui/index.html</td>
+    </tr>
+    <tr>
+      <td>/api/v1/weather/city</td>
+      <td>GET</td>
+      <td>city (query)</td>
+      <td><code>GET /api/v1/weather/city?city=Lima</code></td>
+      <td>
+<pre><code>{
+  "temp": 18.5,
+  "humidity": 80,
+  "condition": "Cloudy"
+}</code></pre>
+      </td>
+      <td>https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/swagger-ui/index.html</td>
+    </tr>
+    <tr>
+      <td>/api/v1/account</td>
+      <td>PUT</td>
+      <td>firstName, lastName, email, profilePictureBase64</td>
+      <td>
+        <code>PUT /api/v1/account</code><br>
+<pre><code>{
+  "firstName": "Javier",
+  "lastName": "Perez",
+  "email": "javier@example.com",
+  "profilePictureBase64": "base64string..."
+}</code></pre>
+      </td>
+      <td>Status 200 OK</td>
+      <td>https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/swagger-ui/index.html</td>
+    </tr>
+  </tbody>
+</table>
 
 #### 6.2.2.8. Software Deployment Evidence for Sprint Review
 
+Durante este Sprint se realizó el despliegue completo del FrontEnd de PlantSync en Vercel, incluyendo la integración con el Backend en Azure y un chatbot con IA (Groq/Llama 3.1) desplegado como serverless function.
+
+**FrontEnd:**
+
+- **URL de producción:** https://frontend-main-orpin-seven.vercel.app
+- **Repositorio:** https://github.com/BioDemeter-IoT/PlantSync-Frontend
+- **Plataforma:** Vercel (CI/CD automático desde GitHub)
+
+**Comandos de despliegue utilizados:**
+
+Instalación de Vercel CLI:
+```bash
+npm install -g vercel
+```
+
+Autenticación:
+```bash
+vercel login
+```
+
+Creación del repositorio y primer push:
+```bash
+git init
+git add -A
+git commit -m "feat: PlantSync frontend - Vue 3 + TypeScript + PrimeVue"
+gh repo create BioDemeter-IoT/PlantSync-Frontend --public --source=. --push --description "PlantSync IoT Frontend"
+```
+
+Despliegue a producción:
+```bash
+vercel --prod --yes
+```
+
+Configuración de variables de entorno:
+```bash
+vercel env add VITE_API_BASE_URL production
+vercel env add GROQ_API_KEY production
+```
+
+Redeploy con fuerza (después de cambios en env vars):
+```bash
+vercel --prod --yes --force
+```
+
+**Configuración en Vercel (`vercel.json`):**
+
+```json
+{
+  "rewrites": [
+    { "source": "/api/v1/:path*", "destination": "https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/api/v1/:path*" },
+    { "source": "/((?!api/).*)", "destination": "/index.html" }
+  ],
+  "build": {
+    "env": {
+      "VITE_API_BASE_URL": "/api/v1"
+    }
+  }
+}
+```
+
+Esta configuración realiza:
+- Proxy de `/api/v1/*` hacia el Backend en Azure (elimina problemas de CORS)
+- SPA fallback para Vue Router (todas las rutas no-API sirven `index.html`)
+- Variable de entorno para el build de Vite
+
+**BackEnd:**
+
+- **URL:** https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net
+- **Plataforma:** Microsoft Azure App Service (Mexico Central)
+- **Framework:** Spring Boot (Java)
+- **API Docs:** Swagger UI
+
+**Chatbot con IA (Serverless Function):**
+
+Se implementó un asistente inteligente de cuidado de plantas utilizando Groq API con el modelo Llama 3.1 8B Instant, desplegado como serverless function de Node.js en Vercel.
+
+Archivo: `api/chat.js`
+
+```javascript
+import https from 'https';
+
+export default async function handler(req, res) {
+  const GROQ_KEY = process.env.GROQ_API_KEY;
+  const { messages } = req.body;
+
+  const payload = JSON.stringify({
+    model: 'llama-3.1-8b-instant',
+    messages: messages,
+    max_tokens: 400,
+    temperature: 0.7,
+  });
+
+  const groqResponse = await makeRequest('api.groq.com', '/openai/v1/chat/completions', GROQ_KEY, payload);
+  const data = JSON.parse(groqResponse.body);
+  const reply = data.choices[0].message.content;
+
+  return res.status(200).json({ reply });
+}
+```
+
+El chatbot incluye un system prompt personalizado que recibe las características de las plantas del usuario (nombre, especie, humedad, próximo riego) para dar respuestas contextualizadas.
+
+Comando para agregar la API key de Groq:
+```bash
+vercel env add GROQ_API_KEY production
+```
+
+| Componente | URL de Despliegue | Plataforma |
+|---|---|---|
+| FrontEnd | https://frontend-main-orpin-seven.vercel.app | Vercel |
+| BackEnd | https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net | Azure |
+| Chatbot API | https://frontend-main-orpin-seven.vercel.app/api/chat | Vercel Serverless |
+
 #### 6.2.2.9. Team Collaboration Insights during Sprint
 
-| Integrantes | Tarea asignada |
-|-------------|----------------|
-|             |                |
+Se podra visualizar los commit y contribuciones hechas por los integrantes.
+
+Report Insights:
+
+<p align="center">
+  <img src="images/insights/TB1/InsightsReport.png" alt="execution frontend profiles" width="350">
+</p>
+
+FrontEnd Insights:
+
+<p align="center">
+  <img src="images/evidence2/evidence3.png" alt="execution frontend profiles" width="350">
+</p>
+
+BackEnd Insights:
+
+<p align="center">
+  <img src="images/evidence2/evidence2.png" alt="execution frontend profiles" width="350">
+</p>
+
+Landing Page Insights:
+
+<p align="center">
+  <img src="images/insights/TB1/InsightsLanding.png" alt="execution frontend profiles" width="350">
+</p>
+
+<p align="center">
+  <img src="images/evidence2/evidence1.png" alt="execution frontend profiles" width="350">
+</p>
+
 
 <hr class="page-break">
 
@@ -6634,11 +7442,11 @@ Preguntas para personas con poca experiencia o iniciantes en el cuidado de plant
   </tr>
   <tr>
     <td><strong>Timing</strong></td>
-    <td>00:00 - 17:25</td>
+    <td>00:03 - 17:25</td>
   </tr>
   <tr>
     <td><strong>URL</strong></td>
-    <td><a href=""></a></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQB97cG_P5n5R7_uXGaFymEjAb4SdRB-nZh2xVnPrGtuHks?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjozLCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=zT4Y3f" target="_blank">https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQB97cG_P5n5R7_uXGaFymEjAb4SdRB-nZh2xVnPrGtuHks?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjozLCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=zT4Y3f</a></td>
   </tr>
   <tr>
     <td colspan="2" style="text-align:justify">
@@ -6649,6 +7457,45 @@ Preguntas para personas con poca experiencia o iniciantes en el cuidado de plant
   <tr>
 <td colspan="2">
   <img src="images/entrevistadevalidacion/entrevista1.png" alt="Screenshot Entrevista 2" width="1000">
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 2</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Dione Ostos</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>57 años</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>Puente Piedra</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>17:29 - 26:05</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQB97cG_P5n5R7_uXGaFymEjAb4SdRB-nZh2xVnPrGtuHks?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjoxMDQ5LCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=v07aZs" target="_blank">https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQB97cG_P5n5R7_uXGaFymEjAb4SdRB-nZh2xVnPrGtuHks?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjoxMDQ5LCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=v07aZs</a></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen:<br>
+       La sesión con Dione Ostos, cuidadora con amplia experiencia en botánica hogareña, permitió evaluar el impacto de nuestra plataforma híbrida desde una perspectiva mucho más técnica y especializada. La usuaria validó la integración del ecosistema (web, móvil e IoT), destacando su valor para optimizar el mantenimiento avanzado y, sobre todo, para guiar de manera precisa a cuidadores menos experimentados que suelen aprender mediante el ensayo y error. Desde su enfoque experto, Dione resaltó que el monitoreo constante ayuda a cubrir esos vacíos de conocimiento botánico que la mayoría de los aficionados enfrenta en el día a día. En definitiva, su perspectiva confirma que la solución no solo es robusta para satisfacer a usuarios exigentes, sino que posee un alto valor educativo, sirviendo como el puente ideal para quienes buscan profesionalizar el cuidado de sus plantas.
+    </td>
+  </tr>
+  <tr>
+<td colspan="2">
+  <a href="https://ibb.co/7ty670Tt"><img src="https://i.ibb.co/s93MLXD9/imagen-2026-06-21-184514849.png" alt="Screenshot Entrevista 2 experto" width="1000"></a>
     </td>
   </tr>
 </table>
@@ -6677,11 +7524,11 @@ Preguntas para personas con poca experiencia o iniciantes en el cuidado de plant
   </tr>
   <tr>
     <td><strong>Timing</strong></td>
-    <td></td>
+    <td>26:05 - 44:32</td>
   </tr>
   <tr>
     <td><strong>URL</strong></td>
-    <td><a href=""></a></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQB97cG_P5n5R7_uXGaFymEjAb4SdRB-nZh2xVnPrGtuHks?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjoxNTY0LjE2NywidGltZXN0YW1wZWRMaW5rUmVmZXJyZXJJbmZvIjp7InNjZW5hcmlvIjoiQ2hhcHRlclNoYXJlIiwiYWRkaXRpb25hbEluZm8iOnsiaXNTaGFyZWRDaGFwdGVyQXV0byI6ZmFsc2V9fX0sInJlZmVycmFsSW5mbyI6eyJyZWZlcnJhbEFwcCI6IlN0cmVhbVdlYkFwcCIsInJlZmVycmFsVmlldyI6IlNoYXJlQ2hhcHRlckxpbmsiLCJyZWZlcnJhbEFwcFBsYXRmb3JtIjoiV2ViIiwicmVmZXJyYWxNb2RlIjoidmlldyJ9fQ&e=1TeXMe" target="_blank">https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQB97cG_P5n5R7_uXGaFymEjAb4SdRB-nZh2xVnPrGtuHks?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjoxNTY0LjE2NywidGltZXN0YW1wZWRMaW5rUmVmZXJyZXJJbmZvIjp7InNjZW5hcmlvIjoiQ2hhcHRlclNoYXJlIiwiYWRkaXRpb25hbEluZm8iOnsiaXNTaGFyZWRDaGFwdGVyQXV0byI6ZmFsc2V9fX0sInJlZmVycmFsSW5mbyI6eyJyZWZlcnJhbEFwcCI6IlN0cmVhbVdlYkFwcCIsInJlZmVycmFsVmlldyI6IlNoYXJlQ2hhcHRlckxpbmsiLCJyZWZlcnJhbEFwcFBsYXRmb3JtIjoiV2ViIiwicmVmZXJyYWxNb2RlIjoidmlldyJ9fQ&e=1TeXMe</a></td>
   </tr>
   <tr>
     <td colspan="2" style="text-align:justify">
@@ -6698,59 +7545,375 @@ Preguntas para personas con poca experiencia o iniciantes en el cuidado de plant
 
 <br>
 
-### 6.3.3. Evaluaciones según heurísticas
-
-
-
-<hr class="page-break">
-
-## 6.4. Video About-the-Product
-
 <table align="center">
   <tr>
-    <td><strong>Duración</strong></td>
-    <td></td>
+    <th colspan="2" style="text-align:center">Entrevista 2</th>
   </tr>
   <tr>
-    <td><strong>URL Microsoft</strong></td>
-    <td><a href="" target="_blank"></a></td>
+    <td><strong>Entrevistado</strong></td>
+    <td>Melany Esther</td>
   </tr>
   <tr>
-    <td><strong>URL Youtube</strong></td>
-    <td><a href="" target="_blank"></a></td>
+    <td><strong>Edad</strong></td>
+    <td>22 años</td>
   </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>Lima</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>44:32 - 57:36</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQB97cG_P5n5R7_uXGaFymEjAb4SdRB-nZh2xVnPrGtuHks?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjoyNjcyLjk3MywidGltZXN0YW1wZWRMaW5rUmVmZXJyZXJJbmZvIjp7InNjZW5hcmlvIjoiQ2hhcHRlclNoYXJlIiwiYWRkaXRpb25hbEluZm8iOnsiaXNTaGFyZWRDaGFwdGVyQXV0byI6ZmFsc2V9fX0sInJlZmVycmFsSW5mbyI6eyJyZWZlcnJhbEFwcCI6IlN0cmVhbVdlYkFwcCIsInJlZmVycmFsVmlldyI6IlNoYXJlQ2hhcHRlckxpbmsiLCJyZWZlcnJhbEFwcFBsYXRmb3JtIjoiV2ViIiwicmVmZXJyYWxNb2RlIjoidmlldyJ9fQ&e=ILeTlm" target="_blank">https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQB97cG_P5n5R7_uXGaFymEjAb4SdRB-nZh2xVnPrGtuHks?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjoyNjcyLjk3MywidGltZXN0YW1wZWRMaW5rUmVmZXJyZXJJbmZvIjp7InNjZW5hcmlvIjoiQ2hhcHRlclNoYXJlIiwiYWRkaXRpb25hbEluZm8iOnsiaXNTaGFyZWRDaGFwdGVyQXV0byI6ZmFsc2V9fX0sInJlZmVycmFsSW5mbyI6eyJyZWZlcnJhbEFwcCI6IlN0cmVhbVdlYkFwcCIsInJlZmVycmFsVmlldyI6IlNoYXJlQ2hhcHRlckxpbmsiLCJyZWZlcnJhbEFwcFBsYXRmb3JtIjoiV2ViIiwicmVmZXJyYWxNb2RlIjoidmlldyJ9fQ&e=ILeTlm</a></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen:<br>
+      La entrevistada destacó que la función principal de la aplicación resulta muy clara tanto en su versión web como móvil, resaltando la facilidad para manejar el control de temperatura y humedad de las plantas. Respecto al registro de plantas en "Mis Plantas", lo consideró un proceso sencillo de completar y fácil de localizar dentro de la interfaz. También indicó que la conexión del dispositivo IoT es relativamente simple, ya que el acceso mediante un único botón por planta elimina cualquier complejidad. En cuanto a los datos de humedad y temperatura reportados por la app, afirmó que disponer de estos valores exactos le facilita el control y la toma de mejores decisiones en el cuidado de sus plantas. Sobre la sección de tareas, señaló que no solo le permite organizar el riego consultando los niveles del sensor, sino también gestionar otras actividades relacionadas sin preocuparse por posibles olvidos. Respecto al chatbot, lo valoró de manera muy positiva, destacando que el conoce la información específica de cada planta registrada, lo cual le ayuda a comprender aspectos que desconocía. En relación con el dashboard, confirmó que tanto en web como en móvil permite encontrar de forma rápida y clara los datos de los sensores y el estado de las plantas. Como mejoras, sugirió incorporar un sensor más completo capaz de detectar la calidad de la tierra, así como una pantalla pequeña junto a la planta para realizar un control manual sin depender de la activación automática de los dispositivos. Finalmente, recomendó que los valores ideales para cada tipo de planta se configuren automáticamente al momento del registro, lo cual ahorraría tiempo especialmente a usuarios que recién comienzan.
+    </td>
   </tr>
   <tr>
 <td colspan="2">
-  <img src="" alt="screenshot about the team" width="1000">
+<a href="https://ibb.co/WWNQpz38"><img src="https://i.ibb.co/8DnJ4xBv/cap1.png" alt="cap1" border="0"></a>
     </td>
   </tr>
 </table>
+
+<br>
+
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 3</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Yakeli Apaza</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>23 años</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>Lima</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>57:36 - 1:07:52</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQB97cG_P5n5R7_uXGaFymEjAb4SdRB-nZh2xVnPrGtuHks?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjozNDU2LjI1NiwidGltZXN0YW1wZWRMaW5rUmVmZXJyZXJJbmZvIjp7InNjZW5hcmlvIjoiQ2hhcHRlclNoYXJlIiwiYWRkaXRpb25hbEluZm8iOnsiaXNTaGFyZWRDaGFwdGVyQXV0byI6ZmFsc2V9fX0sInJlZmVycmFsSW5mbyI6eyJyZWZlcnJhbEFwcCI6IlN0cmVhbVdlYkFwcCIsInJlZmVycmFsVmlldyI6IlNoYXJlQ2hhcHRlckxpbmsiLCJyZWZlcnJhbEFwcFBsYXRmb3JtIjoiV2ViIiwicmVmZXJyYWxNb2RlIjoidmlldyJ9fQ&e=xVoi95" target="_blank">https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQB97cG_P5n5R7_uXGaFymEjAb4SdRB-nZh2xVnPrGtuHks?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjozNDU2LjI1NiwidGltZXN0YW1wZWRMaW5rUmVmZXJyZXJJbmZvIjp7InNjZW5hcmlvIjoiQ2hhcHRlclNoYXJlIiwiYWRkaXRpb25hbEluZm8iOnsiaXNTaGFyZWRDaGFwdGVyQXV0byI6ZmFsc2V9fX0sInJlZmVycmFsSW5mbyI6eyJyZWZlcnJhbEFwcCI6IlN0cmVhbVdlYkFwcCIsInJlZmVycmFsVmlldyI6IlNoYXJlQ2hhcHRlckxpbmsiLCJyZWZlcnJhbEFwcFBsYXRmb3JtIjoiV2ViIiwicmVmZXJyYWxNb2RlIjoidmlldyJ9fQ&e=xVoi95</a></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen:<br>
+      La sesión con Yanina, estudiante de ingeniería civil, permitió evaluar la viabilidad de nuestra plataforma de monitoreo botánico en un entorno cotidiano. La usuaria valoró la fluidez de la experiencia tanto en web como en móvil, haciendo hincapié en el control preventivo que ofrecen las métricas de los sensores y el soporte personalizado del asistente virtual. Como puntos de mejora para optimizar la interacción inicial, sugirió simplificar la carga multimedia mediante archivos locales en lugar de enlaces URL, además de incorporar alertas enfocadas en las etapas de fertilización. En definitiva, el feedback valida el enfoque funcional del sistema, demostrando que la interfaz es lo bastante clara y accesible como para integrarse con éxito en las rutinas de personas que no están familiarizadas con la tecnología IoT.
+    </td>
+  </tr>
+  <tr>
+<td colspan="2">
+<a href="https://ibb.co/rRHpQCsx"><img src="https://i.ibb.co/1tTX0D6r/imagen-2026-06-21-183602562.png" alt="Screenshot Entrevista 3 principante" width="1000"></a>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+### 6.3.3. Evaluaciones según heurísticas
+
+#### UX Heuristics & Principles Evaluation
+
+**Usability – Inclusive Design – Information Architecture**
+
+| Aspecto | Detalle |
+|---------|---------|
+| **CARRERA** | Ingeniería de Software |
+| **CURSO** | Desarrollo de Soluciones IoT |
+| **SECCIÓN** | 1ASI0572 |
+| **AUDITOR** | BioDemeter Team |
+| **CLIENTE(S)** | Agricultores y técnicos agrícolas participantes en sesiones de validación |
+
+---
+
+#### SITE o APP A EVALUAR
+
+**Landing Page:** BioDemeter - Solución IoT para monitoreo inteligente de plantas  
+**Aplicaciones Web:** Dashboard de monitoreo, Panel de control de sensores  
+**Aplicaciones Móviles:** App móvil de monitoreo en tiempo real
+
+---
+
+#### TAREAS A EVALUAR
+
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+
+1. Registro de un nuevo usuario (agricultor)
+2. Configuración de un dispositivo IoT (sensor) en la aplicación
+3. Visualización de métricas en tiempo real (humedad, temperatura, pH)
+4. Búsqueda y filtrado de datos históricos de sensores
+5. Generación de reportes personalizados
+6. Recepción y gestión de alertas automáticas
+7. Navegación entre vistas de múltiples plantas/espacios
+8. Acceso a guías y recomendaciones de cuidado
+9. Descarga y exportación de datos en formato CSV/PDF
+10. Configuración de preferencias de usuario y notificaciones
+
+No están incluidas en esta versión de la evaluación las siguientes tareas:
+
+1. Integración con sistemas de riego automático
+2. Análisis predictivo avanzado con machine learning
+3. Gestión de múltiples usuarios por cuenta (colaboradores)
+4. Sincronización con servicios de terceros
+5. Administración de suscripciones y planes premium
+
+---
+
+#### ESCALA DE SEVERIDAD
+
+Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
+
+| Nivel | Descripción |
+|-------|-------------|
+| **1** | **Problema superficial:** Puede ser fácilmente superado por el usuario u ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. |
+| **2** | **Problema menor:** Puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja resolverlo de cara al siguiente release. |
+| **3** | **Problema mayor:** Ocurre frecuentemente o los usuarios no son capaces de resolverlo. Es importante que sean corregidos y se les debe asignar una prioridad alta. |
+| **4** | **Problema muy grave:** Un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
+
+---
+
+#### TABLA RESUMEN
+
+| # | Problema | Escala de Severidad | Heurística/Principio Violada(o) |
+|---|----------|---------------------|--------------------------------|
+| 1 | No hay un botón visible para regresar al dashboard desde la vista de detalle de sensores | 3 | Usability: Libertad y control del usuario |
+| 2 | Las unidades de medida (°C, %, ppm) no están claramente especificadas en algunos gráficos | 2 | Information Architecture: ¿Es comprensible? |
+| 3 | Las leyendas de los gráficos de tendencias utilizan colores sin suficiente contraste | 3 | Inclusive Design: Accesibilidad visual |
+| 4 | El formulario de configuración de alertas no valida los valores mínimos y máximos en tiempo real | 2 | Usability: Prevención de errores |
+| 5 | Falta información de contexto sobre qué significan los rangos de pH recomendados para diferentes plantas | 3 | Information Architecture: ¿Es findable? |
+| 6 | Los mensajes de error al fallar la conexión con un sensor no sugieren acciones correctivas | 3 | Usability: Reconocimiento de errores y recuperación |
+| 7 | La aplicación móvil no muestra indicadores visuales claros del estado de conectividad del dispositivo IoT | 3 | Usability: Visibilidad del estado del sistema |
+| 8 | Las imágenes de plantas en la galería de guías de cuidado no tienen atributo "alt" | 3 | Inclusive Design: Proporciona experiencias comparables |
+| 9 | El campo de búsqueda de plantas históricas no ofrece autocompletado ni sugerencias | 2 | Usability: Flexibilidad y eficiencia |
+| 10 | Los estilos de botones principales y secundarios no son visualmente diferenciables | 2 | Usability: Consistencia y estándares |
+
+---
+
+#### DESCRIPCIÓN DETALLADA DE PROBLEMAS
+
+##### PROBLEMA #1: No hay un botón visible para regresar al dashboard desde la vista de detalle de sensores
+
+**Severidad:** 3  
+**Heurística Violada:** Usability - Libertad y control del usuario
+
+##### Problema
+
+Cuando el usuario accede a la vista detallada de un sensor específico para revisar histórico o configurar alertas, no existe un botón o control claramente visible que le permita regresar al dashboard principal. El usuario debe utilizar el botón de atrás del navegador o cerrar la vista, lo que interrumpe la fluidez de la experiencia y puede causar pérdida de datos no guardados en formularios.
+
+**Ubicación:** Landing Page → Dashboard → Detalle de Sensor (sin opción clara de regreso)
+
+##### Recomendación
+
+Implementar un botón de navegación "Volver al Dashboard" en la parte superior izquierda de la vista de detalle, o incluir una barra de navegación consistente que permita al usuario transitar libremente entre vistas. Utilizar iconografía estándar (flecha hacia atrás o ícono de "home") para que sea reconocible inmediatamente.
+
+---
+
+##### PROBLEMA #2: Las unidades de medida no están claramente especificadas en algunos gráficos
+
+**Severidad:** 2  
+**Heurística Violada:** Information Architecture - ¿Es comprensible?
+
+##### Problema
+
+En los gráficos de tendencias de humedad y temperatura, las etiquetas del eje Y no siempre incluyen la unidad de medida (°C, %, ppm). Aunque algunos usuarios pueden inferirlo por contexto, usuarios nuevos o aquellos sin experiencia técnica pueden confundirse sobre qué representa exactamente cada valor mostrado.
+
+**Ubicación:** Dashboard → Gráficos de Tendencias; App Móvil → Vista de Métricas en Tiempo Real
+
+##### Recomendación
+
+Añadir etiquetas claras de unidades de medida a todos los ejes de gráficos. Por ejemplo: "Temperatura (°C)", "Humedad Relativa (%)", "Conductividad Eléctrica (dS/m)". Considerar incluir también un tooltip informativo al pasar el cursor sobre el eje.
+
+---
+
+##### PROBLEMA #3: Las leyendas de gráficos de tendencias utilizan colores sin suficiente contraste
+
+**Severidad:** 3  
+**Heurística Violada:** Inclusive Design - Accesibilidad visual
+
+##### Problema
+
+Algunos de los colores utilizados en las leyendas de los gráficos de tendencias (especialmente en líneas de datos secundarias) no cumplen con el estándar WCAG AA de contraste mínimo 4.5:1 para texto pequeño. Usuarios con daltonismo o baja visión tienen dificultad para distinguir entre serie de datos, especialmente en dispositivos móviles o pantallas con brillo bajo.
+
+**Ubicación:** Dashboard → Gráficos; App Móvil → Visualización de múltiples plantas simultáneamente
+
+##### Recomendación
+
+Revisar la paleta de colores utilizada y asegurar que todos los colores cumplan con WCAG AA mínimo. Considerar la inclusión de patrones o texturas adicionales además de color para diferenciar series de datos. Realizar pruebas con simuladores de daltonismo (como Coblis) para validar la accesibilidad.
+
+---
+
+##### PROBLEMA #4: El formulario de configuración de alertas no valida valores en tiempo real
+
+**Severidad:** 2  
+**Heurística Violada:** Usability - Prevención de errores
+
+##### Problema
+
+Al configurar alertas personalizadas, el usuario debe completar campos para temperatura mínima y máxima. Sin embargo, el sistema solo valida estos valores después de presionar "Guardar", permitiendo configuraciones inválidas (como temperatura mínima mayor que máxima). Esto obliga al usuario a completar el flujo nuevamente después de recibir el error.
+
+**Ubicación:** Dashboard → Configuración de Alertas; App Móvil → Ajustes de Notificaciones
+
+##### Recomendación
+
+Implementar validación en tiempo real mientras el usuario introduce valores. Mostrar un mensaje de advertencia inmediatamente si detecta valores inconsistentes (ej: "La temperatura mínima no puede ser mayor que la máxima"). Deshabilitar el botón "Guardar" hasta que todos los valores sean válidos.
+
+---
+
+##### PROBLEMA #5: Falta contexto sobre rangos de pH recomendados para diferentes plantas
+
+**Severidad:** 3  
+**Heurística Violada:** Information Architecture - ¿Es findable?
+
+##### Problema
+
+Aunque la aplicación muestra el valor actual de pH del suelo en tiempo real, no hay información accesible desde la interfaz que indique cuáles son los rangos óptimos de pH para la planta específica que el usuario está monitoreando. Los usuarios deben buscar esta información en fuentes externas, lo que reduce la utilidad de la solución como herramienta educativa.
+
+**Ubicación:** Dashboard → Vista de Planta; App Móvil → Tarjeta de pH
+
+##### Recomendación
+
+Incluir un ícono informativo (?) junto al valor de pH que al hacer clic despliegue información como: "Rango óptimo para [Nombre de Planta]: 6.0 - 7.0". Alternativamente, integrar esta información en la sección de "Guías de Cuidado" asociada a cada planta, con navegación clara desde la métrica hacia la guía.
+
+---
+
+##### PROBLEMA #6: Mensajes de error no sugieren acciones correctivas
+
+**Severidad:** 3  
+**Heurística Violada:** Usability - Reconocimiento de errores y recuperación
+
+##### Problema
+
+Cuando la conexión con un dispositivo IoT se pierde, el sistema muestra un mensaje genérico como "Error de conexión" o "No se pudo sincronizar datos". Estos mensajes no ofrecen orientación al usuario sobre por qué ocurrió el problema o qué pasos específicos tomar para resolverlo (verificar conexión WiFi, reiniciar el dispositivo, etc.).
+
+**Ubicación:** Dashboard → Estado del Dispositivo; App Móvil → Notificación de Desconexión
+
+##### Recomendación
+
+Mejorar los mensajes de error para incluir: (1) explicación clara del problema, (2) causas probables, (3) pasos de resolución específicos. Por ejemplo: "El sensor no responde. Verifique que: el dispositivo está encendido, conectado a WiFi con SSID 'YourNetwork', y está a menos de 10 metros del router. Intente reiniciar el sensor si el problema persiste."
+
+---
+
+##### PROBLEMA #7: Falta indicadores visuales claros del estado de conectividad del dispositivo IoT
+
+**Severidad:** 3  
+**Heurística Violada:** Usability - Visibilidad del estado del sistema
+
+##### Problema
+
+En la aplicación móvil, no hay una indicación visual consistente y evidente que muestre el estado de conectividad de cada sensor. El usuario debe inferir el estado basándose en la presencia o ausencia de datos, lo que puede llevar a confusion sobre si los datos son recientes o desactualizados, especialmente durante períodos sin cambios en las métricas.
+
+**Ubicación:** App Móvil → Tarjetas de Plantas/Sensores; Dashboard Web → Vista de Dispositivos
+
+##### Recomendación
+
+Implementar indicadores visuales claros como: (1) un semáforo de colores (verde = conectado, amarillo = desconectado recientemente, rojo = offline), (2) un ícono de WiFi con variación de intensidad, o (3) una etiqueta de texto con timestamp de última sincronización ("Actualizado hace 2 minutos"). Estos indicadores deben ser prominentes y actualizarse en tiempo real.
+
+---
+
+##### PROBLEMA #8: Las imágenes de plantas no tienen atributo "alt"
+
+**Severidad:** 3  
+**Heurística Violada:** Inclusive Design - Proporciona experiencias comparables
+
+##### Problema
+
+En la galería de guías de cuidado y en las tarjetas de plantas del dashboard, las imágenes utilizadas para identificar plantas no incluyen atributo "alt" (texto alternativo). Usuarios que utilizan lectores de pantalla no pueden identificar qué planta se está mostrando, lo que hace la aplicación inaccesible para personas con discapacidad visual.
+
+**Ubicación:** Landing Page → Galería de Plantas; Dashboard → Catálogo de Plantas; App Móvil → Vista de Identidad de Planta
+
+##### Recomendación
+
+Añadir atributos "alt" descriptivos a todas las imágenes. Ejemplo: `alt="Planta de Tomate con flores amarillas"` o `alt="Sensor de humedad de suelo colocado en maceta"`. El texto debe ser conciso pero descriptivo, permitiendo que usuarios de lectores de pantalla comprendan completamente el contenido.
+
+---
+
+##### PROBLEMA #9: Campo de búsqueda no ofrece autocompletado ni sugerencias
+
+**Severidad:** 2  
+**Heurística Violada:** Usability - Flexibilidad y eficiencia
+
+##### Problema
+
+Al buscar plantas o históricos en la base de datos, el campo de búsqueda es un input de texto simple sin autocompletado, sugerencias de coincidencia o historial de búsquedas previas. Usuarios que no recuerdan exactamente el nombre de una planta o sensor deben escribir toda la búsqueda correctamente, lo que reduce la eficiencia especialmente en dispositivos móviles.
+
+**Ubicación:** Dashboard → Campo de Búsqueda; App Móvil → Búsqueda de Datos Históricos
+
+##### Recomendación
+
+Implementar un sistema de autocompletado que sugiera opciones mientras el usuario escribe (ej: empieza a escribir "to" y sugiere "Tomate", "Tomillo"). Incluir un historial de búsquedas recientes que el usuario pueda seleccionar con un clic. Considerar búsqueda difusa (fuzzy search) para tolerar pequeños errores de escritura.
+
+---
+
+##### PROBLEMA #10: Los estilos de botones principales y secundarios no son diferenciables
+
+**Severidad:** 2  
+**Heurística Violada:** Usability - Consistencia y estándares
+
+##### Problema
+
+En varios formularios y vistas, los botones principales (como "Guardar" o "Enviar") y los botones secundarios (como "Cancelar") tienen estilos visuales muy similares, lo que puede causar que usuarios seleccionen accidentalmente la opción incorrecta. Esta inconsistencia en la jerarquía visual viola los estándares de diseño de interfaz.
+
+**Ubicación:** Dashboard → Formularios de Configuración; App Móvil → Diálogos de Confirmación
+
+##### Recomendación
+
+Establecer una jerarquía visual clara entre botones:
+- **Botón primario:** Color de marca (ej: verde), relleno sólido, texto blanco, sombra sutil
+- **Botón secundario:** Borde únicamente, color de texto neutral, sin relleno
+- **Botón de peligro (delete):** Color rojo, relleno sólido, para acciones destructivas
+
+Documentar estas decisiones en el Design System/Style Guide y aplicarlas consistentemente en toda la solución.
+
+---
+
+#### CONCLUSIONES Y PRÓXIMOS PASOS
+
+De los 10 problemas identificados, **7 se clasifican con severidad 3** (mayor) y requieren atención prioritaria antes del siguiente release. Los problemas con mayor impacto en la experiencia del usuario son:
+
+- **Libertad de navegación** (Problema #1): Afecta la fluidez de uso
+- **Accesibilidad visual** (Problema #3): Excluye usuarios con discapacidad visual
+- **Contexto de información** (Problema #5): Reduce utilidad educativa
+- **Recuperación de errores** (Problema #6): Frustra a usuarios con problemas técnicos
+- **Visibilidad del estado** (Problema #7): Genera incertidumbre sobre datos
+- **Accesibilidad para lectores de pantalla** (Problema #8): Incumple normativas de accesibilidad
+- **Jerarquía visual** (Problema #10): Aumenta riesgo de errores del usuario
+
+Se recomienda priorizar la resolución de estos problemas en el siguiente sprint, especialmente los relacionados con **accesibilidad (inclusivity)** ya que son requisitos normativos.
+
+
+## 6.4. Video About-the-Product
+
+| Description | Details |
+|-------------|---------|
+| **Duración** | 7:58 min |
+| **URL Microsoft** | [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231d974_upc_edu_pe/IQDjhGjSmJS3RLINAxsCFwJAAcMXXgnv7ivM-_vAv0j9BSQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=nVfAd9](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231d974_upc_edu_pe/IQDjhGjSmJS3RLINAxsCFwJAAcMXXgnv7ivM-_vAv0j9BSQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=nVfAd9) |
+| **URL YouTube** | [https://youtu.be/zdDUXgH5VH8](https://youtu.be/zdDUXgH5VH8) |
+| **Imagen** | ![About the Product Screen](/images/entrevistadevalidacion/aboutheproductscreen.png) |
 
 ## 6.5. Video About-the-Team
 
 El video resume el proyecto del equipo, mostrando a cada integrante explicar las tareas que realizó para cumplir con el trabajo.
 
-<table align="center">
-  <tr>
-    <td><strong>Duración</strong></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td><strong>URL Microsoft</strong></td>
-    <td><a href="" target="_blank"></a></td>
-  </tr>
-  <tr>
-    <td><strong>URL Youtube</strong></td>
-    <td><a href="" target="_blank"></a></td>
-  </tr>
-  </tr>
-  <tr>
-<td colspan="2">
-  <img src="" alt="screenshot about the team" width="1000">
-    </td>
-  </tr>
-</table>
+| Description | Details |
+|-------------|---------|
+| **Duración** | 10:30 min |
+| **URL Microsoft** | [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQD_i2sgq9tvSbnwClApAuYrASgQwyFNVj3DcuF7uu7GWVo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=4dL2bA](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQD_i2sgq9tvSbnwClApAuYrASgQwyFNVj3DcuF7uu7GWVo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=4dL2bA) |
+| **URL YouTube** | [https://youtu.be/Usy3NDk73jM](https://youtu.be/Usy3NDk73jM) |
+| **Imagen** | ![About the Team Screen](/images/entrevistadevalidacion/aboutheteam.png) |
 
 <hr class="page-break">
 
@@ -6761,7 +7924,15 @@ El video resume el proyecto del equipo, mostrando a cada integrante explicar las
 
 **Conclusiones**
 
-AV1:
+AV2:
+
+- La integración del asistente virtual (chatbot) representa un avance clave en este ciclo, transformando la plataforma de una herramienta de registro manual a un sistema de apoyo interactivo y directo para resolver las dudas sobre el cuidado botánico.
+
+- Las entrevistas con los usuarios validaron que la aplicación cumple su propósito de manera intuitiva; las personas destacaron especialmente la utilidad de la agenda de cuidados y la lectura directa de los módulos físicos, mientras que reconocieron al asistente conversacional como un excelente soporte adicional para inquietudes específicas.
+
+- El desarrollo de funciones enfocadas en la comodidad y la personalización, como la configuración visual en modo oscuro, la actualización de datos personales y la organización del historial de actividades en una línea de tiempo cronológica, mejoró notablemente la retención y el seguimiento del progreso de las plantas.
+
+TB1:
 
 -  Se ha confirmado que la problemática central no es solo el olvido del riego, sino la falta de conocimiento técnico sobre las necesidades específicas de cada especie. El diseño de los Bounded Contexts de Inteligencia Botánica y Plant Profiles responde directamente a esta brecha, proporcionando una solución que centraliza el conocimiento especializado.
 
@@ -6771,7 +7942,7 @@ AV1:
 
 - La implementación de Domain-Driven Design (DDD) permitió delimitar claramente las responsabilidades del sistema. La separación de contextos como IoT Management y Care Scheduling asegura que el producto sea escalable y que la complejidad técnica de los sensores no interfiera con la experiencia de usuario en la capa de aplicación.
 
-TB1:
+AV1:
 
 - La implementación de la metodología GitFlow, combinada con el uso de Semantic Versioning y Conventional Commits, ha garantizado un control de versiones altamente estructurado para el ecosistema PlantSync. Esta arquitectura de repositorios permite una separación clara entre el desarrollo de nuevas características (Feature branches), la estabilización (Release) y la resolución de incidentes críticos (Hotfix), asegurando la integridad de la rama principal de producción.
 
@@ -6783,21 +7954,32 @@ TB1:
 
 - El uso de herramientas de IA generativa (v0 de Vercel) para la estructuración inicial de la Landing Page, refinado mediante repositorios centralizados, demostró ser una táctica eficiente para traducir requerimientos visuales complejos en código funcional de manera iterativa.
 
+
+
 **Recomendaciones**
 
-AV1:
+AV2:
+
+- Considerar la integración de medidores adicionales en unas próximas versiones físicas, como sensores de acidez (pH) del suelo, para responder directamente a las sugerencias obtenidas durante las entrevistas con aquellos usuarios que buscan un nivel de control más profundo.
+
+- Establecer un monitoreo constante sobre la velocidad de respuesta del asistente virtual para asegurar que la generación de recomendaciones o consejos de jardinería no cause demoras que afecten la navegación fluida dentro de las interfaces.
+
+- Afinar gradualmente la información que alimenta al asistente virtual, apoyándose en el historial de actividades de cada cuenta. Esto ayudará a que las recomendaciones brindadas sean cada vez más precisas, seguras y adaptadas a las necesidades únicas de cada especie registrada en el sistema.
+
+TB1:
 
 - Implementar de manera progresiva los requerimientos y sugerencias recolectados durante la fase de entrevistas con los segmentos objetivo, asegurando que el desarrollo de funcionalidades esté estrictamente alineado con las necesidades reales detectadas para maximizar la satisfacción del usuario y la propuesta de valor del producto.
 
 - Supervisar rigurosamente que, durante la etapa de codificación y construcción del sistema, se respeten los límites y la autonomía de cada Bounded Context definidos en el diseño estratégico. Esto es fundamental para evitar el acoplamiento innecesario, facilitar el mantenimiento y garantizar la integridad de la arquitectura de software propuesta.
 
-TB1:
+AV2:
 
 - Tras haber consolidado exitosamente las interfaces móviles en Dart durante el Sprint 1, se recomienda que los próximos Sprints prioricen la conexión de estas vistas con los endpoints del Backend en Java. Es vital validar tempranamente los contratos de las API REST definidas.
 
 - Aprovechando que la Landing Page ya se encuentra desplegada en producción a través de Vercel de manera pública (HTTPS), se recomienda integrar herramientas de analítica web. Esto permitirá medir la interacción real de los usuarios con las llamadas a la acción y las tablas de precios para futuras optimizaciones de conversión.
 
 - A medida que la lógica de negocio en el backend y la aplicación móvil crezca, se recomienda mantener los escenarios Given-When-Then en constante actualización, asegurando que cubran no solo los flujos felices, sino también los flujos de error.
+
 
 # Bibliografía
 
@@ -6807,8 +7989,16 @@ Revista Economía. (2020). Incremento del interés de los peruanos por el cuidad
 
 # Anexos
 
-- Link Video TB1: `https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQBkDt1uzmT5Ro1mWs3A0bWMASojRLdRjF21GPgz28Es7Yc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=gySJdu`
+- Link Video AV1: `https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQBkDt1uzmT5Ro1mWs3A0bWMASojRLdRjF21GPgz28Es7Yc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=gySJdu`
+
+- Link Video AV2: `https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQBh-OfArGB-Q65yD_TYDuZHAUEW2tCd-wfSluKZlqsPEOQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=1t1diG`
 
 ## Links
 
 Link del repositorio del reporte: https://github.com/BioDemeter-IoT/report
+Link del repositorio de App Web: https://github.com/BioDemeter-IoT/PlantSync-Frontend 
+Link del repositorio de Backend: https://github.com/BioDemeter-IoT/BioDemeter_PlantSync_Backend 
+Link del repositorio de landing page: https://github.com/BioDemeter-IoT/LandingPageV2 
+Link del repositorio App Mobile: https://github.com/BioDemeter-IoT/BioDemeter_PlantSync_Mobile 
+Link de Wokwi Embebed app (Humedad): https://wokwi.com/projects/467231875296935937
+Link de Wokwi Embebed app (Temperatura): https://wokwi.com/projects/467378078446248961
