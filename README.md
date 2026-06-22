@@ -75,13 +75,13 @@
 | 1.5 | 01/05/2026 | Rodríguez Villa, Elvia Marcela | Elaboración de Solution UX/UI Design parte 1 y diseño de Landing Page. |
 | 1.6 | 02/05/2026 | Briceño De La Cruz, Farid Sebastian | Integración de Software Development Environment Configuration y Source Code Management. |
 | 1.7 | 16/05/2026 | Acuña Tomas, Diego Rolin | Creación de Applications Wireflow Diagrams, Mock-ups, User Flow Diagrams, Prototyping y diseño de IoT Device. |
-| 1.8 | 25/05/2026 | Coca Lavado, Carlos Andrés | Documentación del Sprint 2 Planning, Entrevista de Validación, Desarrollo del prototipo en Wokwi y Modificaciones en la Landing Page. |
-| 1.9 | 29/05/2026 | Palomino Fiestas, Erick Leonardo | Definición del Sprint Backlog 2, Entrevista de validación, Execution Evidence for Sprint Review y Desarrollo de cambios del backend. |
-| 2.0 | 02/06/2026 | Briceño De La Cruz, Farid Sebastian | Registro de Evaluaciones según heurísticas, Planeación y desarrollo de la aplicación web, y Desarrollo del maquetado del dispositivo IoT en Wokwi. |
-| 2.1 | 06/06/2026 | Acuña Tomas, Diego Rolin | Planeación y desarrollo de la aplicación móvil, Entrevistas de validación e Implementación de la aplicación móvil. |
-| 2.2 | 10/06/2026 | Rodríguez Villa, Elvia Marcela | Documentación de la Implementación y despliegue de la aplicación web (frontend). |
-| 2.3 | 14/06/2026 | Paitan Pumacahua, Max Anthony | Actualización de Aspect Leaders and Collaborators, Entrevistas de validación e Implementación de la aplicación móvil. |
-| 2.4 | 18/06/2026 | Rivera Ratachi, Renzo Sebastian | Documentación del Desarrollo de cambios del backend, Development Evidence for Sprint Review y Testing Suite Evidence for Sprint Review. |
+| 1.8 | 15/05/2026 | Coca Lavado, Carlos Andrés | Documentación del Sprint 2 Planning, Entrevista de Validación, Desarrollo del prototipo en Wokwi y Modificaciones en la Landing Page. |
+| 1.9 | 16/05/2026 | Palomino Fiestas, Erick Leonardo | Definición del Sprint Backlog 2, Entrevista de validación, Execution Evidence for Sprint Review y Desarrollo de cambios del backend. |
+| 2.0 | 17/06/2026 | Briceño De La Cruz, Farid Sebastian | Registro de Evaluaciones según heurísticas, Planeación y desarrollo de la aplicación web, y Desarrollo del maquetado del dispositivo IoT en Wokwi. |
+| 2.1 | 18/06/2026 | Acuña Tomas, Diego Rolin | Planeación y desarrollo de la aplicación móvil, Entrevistas de validación e Implementación de la aplicación móvil. |
+| 2.2 | 19/06/2026 | Rodríguez Villa, Elvia Marcela | Documentación de la Implementación y despliegue de la aplicación web (frontend). |
+| 2.3 | 20/06/2026 | Paitan Pumacahua, Max Anthony | Actualización de Aspect Leaders and Collaborators, Entrevistas de validación e Implementación de la aplicación móvil. |
+| 2.4 | 21/06/2026 | Rivera Ratachi, Renzo Sebastian | Documentación del Desarrollo de cambios del backend, Development Evidence for Sprint Review y Testing Suite Evidence for Sprint Review. |
 
 <hr class="page-break">
 
@@ -117,6 +117,14 @@ El repositorio del informe se encuentra en GitHub en el siguiente link: https://
 
 **AV2**
 
+<p __align__="center">
+  <img src="images/ev2/av22.png">
+</p>
+
+
+<p __align__="center">
+  <img src="images/ev2/av21.png">
+</p>
 
 
 
@@ -7358,8 +7366,8 @@ Se podra visualizar los commit y contribuciones hechas por los integrantes.
 
 Report Insights:
 
-<p align="center">
-  <img src="images/insights/TB1/InsightsReport.png" alt="execution frontend profiles" width="350">
+<p __align__="center">
+  <img src="images/ev2/av21.png">
 </p>
 
 FrontEnd Insights:
