@@ -6915,7 +6915,9 @@ Landing Page Insights:
 
 Se implementaron tests unitarios y de integración en el Backend para asegurar el correcto funcionamiento del mismo.
 
-![Unit Test](/images/evidence2/UnitTest.png)
+<p align="center">
+  <img src="images/evidence2/UnitTest.png" alt="execution frontend plant management" width="500">
+</p>
 
 
 
@@ -8016,3 +8018,7 @@ Link del repositorio App Mobile: https://github.com/BioDemeter-IoT/BioDemeter_Pl
 Link de Wokwi Embebed app (Humedad): https://wokwi.com/projects/467231875296935937
 
 Link de Wokwi Embebed app (Temperatura): https://wokwi.com/projects/467378078446248961
+
+Backend Deployado: https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/swagger-ui/index.html
+
+App Web Deployado: https://frontend-main-orpin-seven.vercel.app/sign-in 
