@@ -7136,6 +7136,119 @@ En el Sprint 2 se alcanzó una consolidación funcional de la plataforma, destac
 
 #### 6.2.2.8. Software Deployment Evidence for Sprint Review
 
+Durante este Sprint se realizó el despliegue completo del FrontEnd de PlantSync en Vercel, incluyendo la integración con el Backend en Azure y un chatbot con IA (Groq/Llama 3.1) desplegado como serverless function.
+
+**FrontEnd:**
+
+- **URL de producción:** https://frontend-main-orpin-seven.vercel.app
+- **Repositorio:** https://github.com/BioDemeter-IoT/PlantSync-Frontend
+- **Plataforma:** Vercel (CI/CD automático desde GitHub)
+
+**Comandos de despliegue utilizados:**
+
+Instalación de Vercel CLI:
+```bash
+npm install -g vercel
+```
+
+Autenticación:
+```bash
+vercel login
+```
+
+Creación del repositorio y primer push:
+```bash
+git init
+git add -A
+git commit -m "feat: PlantSync frontend - Vue 3 + TypeScript + PrimeVue"
+gh repo create BioDemeter-IoT/PlantSync-Frontend --public --source=. --push --description "PlantSync IoT Frontend"
+```
+
+Despliegue a producción:
+```bash
+vercel --prod --yes
+```
+
+Configuración de variables de entorno:
+```bash
+vercel env add VITE_API_BASE_URL production
+vercel env add GROQ_API_KEY production
+```
+
+Redeploy con fuerza (después de cambios en env vars):
+```bash
+vercel --prod --yes --force
+```
+
+**Configuración en Vercel (`vercel.json`):**
+
+```json
+{
+  "rewrites": [
+    { "source": "/api/v1/:path*", "destination": "https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/api/v1/:path*" },
+    { "source": "/((?!api/).*)", "destination": "/index.html" }
+  ],
+  "build": {
+    "env": {
+      "VITE_API_BASE_URL": "/api/v1"
+    }
+  }
+}
+```
+
+Esta configuración realiza:
+- Proxy de `/api/v1/*` hacia el Backend en Azure (elimina problemas de CORS)
+- SPA fallback para Vue Router (todas las rutas no-API sirven `index.html`)
+- Variable de entorno para el build de Vite
+
+**BackEnd:**
+
+- **URL:** https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net
+- **Plataforma:** Microsoft Azure App Service (Mexico Central)
+- **Framework:** Spring Boot (Java)
+- **API Docs:** Swagger UI
+
+**Chatbot con IA (Serverless Function):**
+
+Se implementó un asistente inteligente de cuidado de plantas utilizando Groq API con el modelo Llama 3.1 8B Instant, desplegado como serverless function de Node.js en Vercel.
+
+Archivo: `api/chat.js`
+
+```javascript
+import https from 'https';
+
+export default async function handler(req, res) {
+  const GROQ_KEY = process.env.GROQ_API_KEY;
+  const { messages } = req.body;
+
+  const payload = JSON.stringify({
+    model: 'llama-3.1-8b-instant',
+    messages: messages,
+    max_tokens: 400,
+    temperature: 0.7,
+  });
+
+  const groqResponse = await makeRequest('api.groq.com', '/openai/v1/chat/completions', GROQ_KEY, payload);
+  const data = JSON.parse(groqResponse.body);
+  const reply = data.choices[0].message.content;
+
+  return res.status(200).json({ reply });
+}
+```
+
+El chatbot incluye un system prompt personalizado que recibe las características de las plantas del usuario (nombre, especie, humedad, próximo riego) para dar respuestas contextualizadas.
+
+Comando para agregar la API key de Groq:
+```bash
+vercel env add GROQ_API_KEY production
+```
+
+| Componente | URL de Despliegue | Plataforma |
+|---|---|---|
+| FrontEnd | https://frontend-main-orpin-seven.vercel.app | Vercel |
+| BackEnd | https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net | Azure |
+| Chatbot API | https://frontend-main-orpin-seven.vercel.app/api/chat | Vercel Serverless |
+
 #### 6.2.2.9. Team Collaboration Insights during Sprint
 
 Se podra visualizar los commit y contribuciones hechas por los integrantes.
