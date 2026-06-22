@@ -7001,26 +7001,12 @@ Preguntas para personas con poca experiencia o iniciantes en el cuidado de plant
 
 ## 6.4. Video About-the-Product
 
-<table align="center">
-  <tr>
-    <td><strong>Duración</strong></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td><strong>URL Microsoft</strong></td>
-    <td><a href="" target="_blank"></a></td>
-  </tr>
-  <tr>
-    <td><strong>URL Youtube</strong></td>
-    <td><a href="" target="_blank"></a></td>
-  </tr>
-  </tr>
-  <tr>
-<td colspan="2">
-  <img src="" alt="screenshot about the team" width="1000">
-    </td>
-  </tr>
-</table>
+| Description | Details |
+|-------------|---------|
+| **Duración** | 7:58 min |
+| **URL Microsoft** | [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231d974_upc_edu_pe/IQDjhGjSmJS3RLINAxsCFwJAAcMXXgnv7ivM-_vAv0j9BSQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=nVfAd9](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231d974_upc_edu_pe/IQDjhGjSmJS3RLINAxsCFwJAAcMXXgnv7ivM-_vAv0j9BSQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=nVfAd9) |
+| **URL YouTube** | [https://youtu.be/zdDUXgH5VH8](https://youtu.be/zdDUXgH5VH8) |
+| **Imagen** | ![About the Product Screen](/images/entrevistadevalidacion/aboutheproductscreen.png) |
 
 ## 6.5. Video About-the-Team
 
