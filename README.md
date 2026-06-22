@@ -7980,7 +7980,7 @@ TB1:
 
 - Supervisar rigurosamente que, durante la etapa de codificación y construcción del sistema, se respeten los límites y la autonomía de cada Bounded Context definidos en el diseño estratégico. Esto es fundamental para evitar el acoplamiento innecesario, facilitar el mantenimiento y garantizar la integridad de la arquitectura de software propuesta.
 
-AV2:
+AV1:
 
 - Tras haber consolidado exitosamente las interfaces móviles en Dart durante el Sprint 1, se recomienda que los próximos Sprints prioricen la conexión de estas vistas con los endpoints del Backend en Java. Es vital validar tempranamente los contratos de las API REST definidas.
 
