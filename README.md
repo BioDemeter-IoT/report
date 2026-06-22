@@ -7912,7 +7912,8 @@ Se recomienda priorizar la resolución de estos problemas en el siguiente sprint
 | **Duración** | 7:58 min |
 | **URL Microsoft** | [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231d974_upc_edu_pe/IQDjhGjSmJS3RLINAxsCFwJAAcMXXgnv7ivM-_vAv0j9BSQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=nVfAd9](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231d974_upc_edu_pe/IQDjhGjSmJS3RLINAxsCFwJAAcMXXgnv7ivM-_vAv0j9BSQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=nVfAd9) |
 | **URL YouTube** | [https://youtu.be/zdDUXgH5VH8](https://youtu.be/zdDUXgH5VH8) |
-| **Imagen** | ![About the Product Screen](/images/entrevistadevalidacion/aboutheproductscreen.png) |
+| **Imagen** | <p align="center">
+  <img src="images/entrevistadevalidacion/aboutheproductscreen.png" alt="execution frontend plant management" width="500">|
 
 ## 6.5. Video About-the-Team
 
@@ -7923,7 +7924,8 @@ El video resume el proyecto del equipo, mostrando a cada integrante explicar las
 | **Duración** | 10:30 min |
 | **URL Microsoft** | [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQD_i2sgq9tvSbnwClApAuYrASgQwyFNVj3DcuF7uu7GWVo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=4dL2bA](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQD_i2sgq9tvSbnwClApAuYrASgQwyFNVj3DcuF7uu7GWVo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=4dL2bA) |
 | **URL YouTube** | [https://youtu.be/Usy3NDk73jM](https://youtu.be/Usy3NDk73jM) |
-| **Imagen** | ![About the Team Screen](/images/entrevistadevalidacion/aboutheteam.png) |
+| **Imagen** | <p align="center">
+  <img src="images/entrevistadevalidacion/aboutheteam.png" alt="execution frontend plant management" width="500">|
 
 <hr class="page-break">
 
