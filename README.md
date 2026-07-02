@@ -357,6 +357,16 @@ El repositorio del informe se encuentra en GitHub en el siguiente link: https://
       - [6.2.2.7. Services Documentation Evidence for Sprint Review](#6227-services-documentation-evidence-for-sprint-review)
       - [6.2.2.8. Software Deployment Evidence for Sprint Review](#6228-software-deployment-evidence-for-sprint-review)
       - [6.2.2.9. Team Collaboration Insights during Sprint](#6229-team-collaboration-insights-during-sprint)
+    - [6.2.3. Sprint 3](#623-sprint-2)
+      - [6.2.3.1. Sprint Planning 3](#6231-sprint-planning-3)
+      - [6.2.3.2. Aspect Leaders and Collaborators](#6232-aspect-leaders-and-collaborators)
+      - [6.2.3.3. Sprint Backlog 2](#6233-sprint-backlog-3)
+      - [6.2.3.4. Development Evidence for Sprint Review](#6234-development-evidence-for-sprint-review)
+      - [6.2.3.5. Testing Suite Evidence for Sprint Review](#6235-testing-suite-evidence-for-sprint-review)
+      - [6.2.3.6. Execution Evidence for Sprint Review](#6236-execution-evidence-for-sprint-review)
+      - [6.2.3.7. Services Documentation Evidence for Sprint Review](#6237-services-documentation-evidence-for-sprint-review)
+      - [6.2.3.8. Software Deployment Evidence for Sprint Review](#6238-software-deployment-evidence-for-sprint-review)
+      - [6.2.3.9. Team Collaboration Insights during Sprint](#6239-team-collaboration-insights-during-sprint)
   - [6.3. Validation Interviews](#63-validation-interviews)
     - [6.3.1. Diseño de Entrevistas](#631-diseño-de-entrevistas)
     - [6.3.2. Registro de Entrevistas](#632-registro-de-entrevistas)
@@ -7386,6 +7396,181 @@ Landing Page Insights:
 
 
 <hr class="page-break">
+
+### 6.2.3. Sprint 3
+
+#### 6.2.3.1. Sprint Planning 3
+
+<table border="1">
+  <tbody>
+    <tr>
+      <td><b>Sprint 3</b></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td colspan="2"><b>Sprint Planning Background</b></td>
+    </tr>
+    <tr>
+      <td><b>Date</b></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><b>Time</b></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><b>Location</b></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><b>Prepared By</b></td>
+      <td>Palomino Fiestas, Erick Leonardo</td>
+    </tr>
+    <tr>
+      <td><b>Attendees (to planning meeting)</b></td>
+      <td>
+           Diego Rolin Acuña Tomas<br>
+           Farid Sebastian Briceño De La Cruz <br>
+          Rivera Ratachi, Renzo Sebastian <br>
+          Erick Leonardo Palomino Fiestas <br>
+          Carlos Andres Coca Lavado <br>
+          Elvia Marcela Rodriguez Villa <br>
+          Max Anthony Paitan Pumacahua <br>
+  </td>
+    </tr>
+    <tr>
+      <td><b> Previous Sprint  Review</b></td>
+      <td> 
+      </td>
+    </tr>
+    <tr>
+      <td><b>Previous Sprint Retrospective</b></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2"><b>Sprint Goal & User Stories</b></td>
+    </tr>
+    <tr>
+      <td><b>Sprint 3 Goal</b></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><b>Sprint 3 Velocity</b></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><b>Sum of Story Points</b></td>
+      <td> 
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+#### 6.2.3.2. Aspect Leaders and Collaborators
+
+| Team Member | GitHub Username |     |      |        |       |    |
+|-------------|-----------------|--------|------|------|------|------|
+|      Palomino Fiestas, Erick Leonardo   |   erickLeo13         |    L    |   C   |    C    |   C   |  C   |   
+|      Diego Rolin Acuña Tomas            |   ComidaRapida007    |    C    |   C   |    L    |   C   |  C   |
+|      Farid Sebastian Briceño De La Cruz |   InjustShin         |    C    |   C   |    C    |   L   |  C   |
+|      Rivera Ratachi, Renzo Sebastian    |   1sopod             |    L    |   C   |    C    |   C   |  C   |
+|      Carlos Andres Coca Lavado          |   MrAndres08DV       |    C    |   L   |    C    |   C   |  L   |
+|      Max Anthony Paitan Pumacahua       |   maxpp2910          |    C    |   C   |    L    |   C   |  C   |
+|      Elvia Marcela Rodriguez Villa      |   ElviaRV            |    C    |   L   |    C    |   C   |  C   |
+
+#### 6.2.3.3. Sprint Backlog 3
+
+<h3>Sprint Backlog – Sprint 2</h3>
+<table border="1" cellspacing="0" cellpadding="5">
+<thead>
+<tr>
+<th colspan="8">Sprint 3</th>
+</tr>
+<tr>
+<th colspan="2">User Story</th>
+<th colspan="2">Work-Item / Task</th>
+<th rowspan="2">Description</th>
+<th rowspan="2">Estimation (Hours)</th>
+<th rowspan="2">Assigned To</th>
+<th rowspan="2">Status (To-do / In-Process / To-Review / Done)</th>
+</tr>
+<tr>
+<th>Id</th>
+<th>Title</th>
+<th>Id</th>
+<th>Title</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tr>
+</tbody>
+</table>
+
+#### 6.2.3.4. Development Evidence for Sprint Review
+
+| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
+|------------|--------|-----------|----------------|---------------------|---------------------|
+| |  |  |  |  |  |
+
+
+#### 6.2.3.5. Testing Suite Evidence for Sprint Review
+
+
+<h3>Endpoints implementados</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Endpoint</th>
+      <th>Acciones soportadas</th>
+      <th>Parámetros</th>
+      <th>Ejemplo de Request</th>
+      <th>Ejemplo de Response</th>
+      <th>Documentación (URL)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>
+        <code></code><br>
+<pre><code></code></pre>
+      </td>
+      <td>
+<pre><code></code></pre>
+      </td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+#### 6.2.3.8. Software Deployment Evidence for Sprint Review
+
+
+#### 6.2.3.9. Team Collaboration Insights during Sprint
+
 
 ## 6.3. Validation Interviews
 
