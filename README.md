@@ -5578,52 +5578,114 @@ Esta sección detalla la propuesta de diseño físico y el modelado de los circu
 
 El diseño físico del dispositivo IoT se rige bajo los principios de diseño no intrusivo, resistencia ambiental y modularidad. Al tratarse de un hardware que convivirá en entornos húmedos (macetas, jardines de interior), los principales criterios de decisión para el diseño de la carcasa (enclosure) y la disposición de componentes son:
 
-1. **Aislamiento y Protección (IP Rating):** El microcontrolador y los módulos de relé deben estar sellados herméticamente para evitar cortocircuitos por salpicaduras del rociador de agua o la humedad propia del riego.
-2. **Disposición Estratégica de Sensores:** Los sensores de luz (BH1750 y ML8511) deben ubicarse en la parte superior del dispositivo sin obstrucciones físicas, mientras que los sensores de tierra (Capacitivo v2.0 y NPK) requieren cableado extendido para sumergirse a la profundidad adecuada de las raíces.
-3. **Mantenibilidad:** El diseño modular debe permitir al usuario final reemplazar fácilmente componentes específicos, como el depósito de agua de la bomba, sin necesidad de desarmar el núcleo del Arduino.
+1. **Aislamiento y Protección (IP Rating):** El microcontrolador, los módulos de relé y los componentes electrónicos deben estar protegidos frente a humedad, polvo y posibles salpicaduras. Esto permite reducir riesgos de cortocircuito y garantizar una mayor durabilidad del dispositivo físico.
+2. **Disposición Estratégica de Sensores:** En el prototipo Wokwi se emplean sensores ambientales como DHT22, LDR y sensor de gas, los cuales permiten representar variables clave del entorno de la planta, como temperatura, humedad, iluminación y calidad del aire. Para una futura implementación física, estos sensores deberán ubicarse en zonas expuestas al ambiente, evitando obstrucciones que alteren las lecturas.
+3. **Mantenibilidad:** El diseño modular debe permitir al usuario final reemplazar fácilmente componentes específicos, como sensores, actuadores o módulos de visualización, sin necesidad de desarmar completamente el núcleo del dispositivo.
+4. **Escalabilidad hacia hardware físico real:** El prototipo simulado permite validar la lógica de monitoreo y actuación. En futuras iteraciones, esta base podrá complementarse con sensores físicos especializados, como humedad de suelo o sensores de luz de mayor precisión, manteniendo la arquitectura funcional validada en Wokwi.
 
 ### 5.6.2. Relación con la Arquitectura de Información y Guía de Estilos
 El diseño físico refleja estrictamente las decisiones tomadas en la Arquitectura de Información (IA) y la Guía de Estilos para IoT Device Physical Interfaces.
 
-+ **Feedback Visual (Physical UI):** La arquitectura de información de la aplicación móvil clasifica las alertas en niveles de severidad y tipos de acción (riego, iluminación). Esto se traslada al dispositivo físico mediante un panel de LEDs indicadores (ej. luz azul para estado de bomba de agua activa, luz amarilla para compensación UV en curso).
-+ **Estética Biofílica:** Siguiendo la guía de estilos, la carcasa del prototipo adopta tonos tierra y acabados mate para camuflarse con el entorno de la maceta, minimizando el impacto visual tecnológico (Tech-camouflage) y manteniendo la coherencia con la interfaz limpia y natural de las aplicaciones web y móvil.
++ **Feedback Visual (Physical UI):** La arquitectura de información de la aplicación móvil clasifica las alertas y acciones según variables como humedad, temperatura, iluminación y estado de actuadores. En el prototipo Wokwi, esta retroalimentación se representa mediante dos pantallas LCD 16x2: una dedicada a mostrar métricas ambientales y otra orientada a mostrar el estado de los actuadores.
++ **Interacción Física Complementaria:** Además de la interacción desde la plataforma digital, el prototipo incorpora botones físicos que permiten modificar manualmente el comportamiento de los actuadores. Esta decisión representa una extensión física de los controles digitales propuestos en la aplicación móvil.
++ **Estética Biofílica:** Para una implementación física final, la carcasa del dispositivo deberá adoptar tonos tierra, acabados mate y una estructura compacta que permita integrarse visualmente con el entorno de la maceta, minimizando el impacto visual tecnológico y manteniendo coherencia con la interfaz limpia y natural de las aplicaciones web y móvil.
 
 ### 5.6.3. Diseño de Circuito (Hardware Architecture)
 
-El prototipo funcional está centralizado en un Arduino UNO, el cual actúa como unidad de procesamiento en el Edge. La distribución de pines y conexiones se ha diseñado para optimizar el consumo energético y evitar conflictos de interfaz.
+El prototipo funcional desarrollado en Wokwi está centralizado en un **ESP32 DevKit V1**, el cual actúa como unidad de procesamiento en el Edge. Esta placa permite integrar conectividad WiFi, lectura de sensores, control de actuadores y comunicación básica con el backend mediante peticiones HTTP.
 
 1. **Unidad de Control Central:**
-   + **Arduino UNO:** Placa base encargada de la lectura cíclica de sensores y la ejecución de reglas lógicas locales para accionar relés.
-2. **Integración de Sensores (Inputs):**
-   + **Sensor de Humedad de Suelo Capacitivo v2.0:** Conectado a un pin analógico (ej. A0). Se prefiere su versión capacitiva sobre la resistiva por su mayor resistencia a la corrosión bajo tierra.
-   + **Módulo Detector de Radiación UVB (ML8511):** Conectado a un pin analógico (ej. A1) con alimentación a 3.3V, proporcionando una lectura lineal de la intensidad de los rayos UV.
-   + **Módulo Sensor de Luz (BH1750):** Utiliza el protocolo de comunicación I2C, por lo que se conecta a los pines SDA (A4) y SCL (A5) del Arduino, entregando lecturas precisas en Lux.
-   + **Sensor de Suelo NPK:** Al ser de estándar industrial (generalmente RS485), se integra mediante un módulo conversor RS485-a-TTL, utilizando pines digitales (ej. D2 y D3 vía SoftwareSerial) para evaluar Nitrógeno, Fósforo y Potasio.
-3. **Integración de Actuadores (Outputs):**
-   + **Bomba de Agua / Rociador:** Conectada mediante un módulo de Relé de 5V al pin digital D4. El relé actúa como interruptor para habilitar la potencia requerida por el motor de la bomba sin dañar el Arduino.
+   + **ESP32 DevKit V1:** Placa base encargada de la lectura cíclica de sensores, ejecución de reglas lógicas locales, control de actuadores, conexión WiFi y comunicación inicial con el backend de PlantSync.
 
-   + **Lámpara Inteligente IoT (Actuador UV):** Conectada mediante un segundo módulo de Relé al pin digital D5, permitiendo aislar la corriente (probablemente 12V o 220V dependiendo de la lámpara) del circuito lógico de 5V.
+2. **Integración de Sensores (Inputs):**
+   + **Sensor DHT22:** Conectado al pin D4. Permite medir temperatura y humedad ambiental, variables utilizadas para evaluar el estado general del entorno de la planta.
+   + **Sensor LDR / Fotoresistor:** Conectado al pin D32. Permite estimar el nivel de iluminación del ambiente en un rango porcentual, funcionando como base para el control de la luz artificial simulada.
+   + **Sensor de Gas Analógico:** Conectado al pin D34. Permite representar una medición aproximada de calidad del aire o concentración de gases en el entorno. Esta variable se utiliza para activar alertas cuando supera un umbral definido.
+
+3. **Integración de Actuadores (Outputs):**
+   + **Relé con LED indicador:** Conectado al pin D5. El relé controla un LED rojo que representa la activación de una lámpara o fuente de iluminación artificial. En una implementación física, este componente puede ser reemplazado por una lámpara real controlada mediante relé.
+   + **Servo motor:** Conectado al pin D18. Representa el mecanismo de apertura o cierre de una válvula de riego. En el prototipo Wokwi se emplea como simulación del actuador de riego, sin utilizar una bomba de agua real.
+   + **Buzzer:** Conectado al pin D19. Funciona como alarma sonora ante condiciones ambientales críticas, como baja temperatura o mala calidad del aire.
+
+4. **Componentes de Visualización e Interacción:**
+   + **LCD 16x2 de sensores:** Conectado mediante I2C con dirección 0x27. Muestra temperatura, humedad, luz y calidad del aire.
+   + **LCD 16x2 de actuadores:** Conectado mediante I2C con dirección 0x28. Muestra el estado del buzzer, servo y luz.
+   + **Botones físicos:** Conectados a los pines D25, D26 y D27. Permiten cambiar manualmente el estado o modo de funcionamiento del buzzer, servo y luz.
+
+5. **Conectividad:**
+   + El prototipo se conecta a la red WiFi virtual de Wokwi y realiza una autenticación HTTP contra el backend de PlantSync. Esta comunicación permite validar la integración inicial entre el dispositivo IoT y la plataforma digital. En esta versión, las métricas se visualizan localmente mediante LCD y monitor serial; el envío persistente de telemetría al backend queda como mejora para futuras iteraciones.
 
 ### 5.6.4. Flujos de Interacción del Prototipo
 
-A nivel físico y sistémico, el dispositivo ejecuta flujos de interacción automatizados basados en el paradigma Event-Driven:
-+ **Flujo 1: Compensación de Estrés Hídrico (Auto-Riego)**
-  **1.** El Sensor Capacitivo v2.0 detecta una caída de humedad por debajo del 25% (umbral de estrés).
+A nivel físico y sistémico, el dispositivo ejecuta flujos de interacción automatizados y manuales basados en eventos generados por sensores, botones y reglas locales.
 
-  **2.** El Arduino procesa la señal y enciende el LED azul de estado físico.
++ **Flujo 1: Inicialización y conexión del dispositivo**
 
-  **3.** El Arduino envía un pulso ALTO al Relé del Rociador/Bomba de agua por un tiempo determinado (ej. 5 segundos) para hidratar la maceta.
+  **1.** El ESP32 inicia el sistema y establece comunicación serial.
 
-  **4.** El sistema detiene la bomba y registra el evento para sincronizarlo con el backend cuando haya conectividad.
+  **2.** El dispositivo se conecta a la red WiFi virtual de Wokwi.
 
-+ **Flujo 2: Regulación de Ciclo Lumínico**
-  **1.** El Sensor BH1750 y el Sensor ML8511 realizan muestreos periódicos del ambiente.
+  **3.** Se realiza una petición HTTP de autenticación hacia el backend de PlantSync.
 
-  **2.** Si la suma de luminosidad detectada durante las horas de luz naturales es insuficiente para el tipo de planta configurada, se levanta un evento de déficit lumínico.
+  **4.** Si la autenticación es exitosa, el dispositivo obtiene un token de acceso y consulta el perfil asociado al usuario.
 
-  **3.** El Arduino activa el Relé de la Lámpara de iluminación UV para compensar los fotones requeridos.
+  **5.** Finalmente, se inicializa el sistema local de monitoreo y se activan las pantallas LCD.
 
-  **4.** Una vez cumplida la cuota lumínica (o si se detecta luz natural suficiente), el actuador se apaga automáticamente.
++ **Flujo 2: Monitoreo ambiental local**
+
+  **1.** El sensor DHT22 captura la temperatura y humedad ambiental.
+
+  **2.** El sensor LDR mide el nivel de iluminación del entorno.
+
+  **3.** El sensor de gas registra una lectura analógica relacionada con la calidad del aire.
+
+  **4.** El ESP32 procesa los valores obtenidos y los transforma en métricas comprensibles para el usuario.
+
+  **5.** Las métricas se muestran en la pantalla LCD de sensores y también se imprimen en el monitor serial para fines de depuración.
+
++ **Flujo 3: Control automático del riego simulado**
+
+  **1.** El sistema evalúa la humedad ambiental obtenida por el sensor DHT22.
+
+  **2.** Si el modo del servo se encuentra en automático y la humedad cae por debajo del umbral configurado, el servo se mueve hacia su posición de activación.
+
+  **3.** Esta acción representa la apertura de una válvula o mecanismo de riego.
+
+  **4.** Cuando la humedad vuelve a un rango adecuado, el servo retorna a su posición inicial.
+
+  **5.** El usuario también puede modificar manualmente el modo del servo mediante el botón físico correspondiente.
+
++ **Flujo 4: Regulación de luz simulada**
+
+  **1.** El sensor LDR mide el nivel de iluminación del entorno.
+
+  **2.** El ESP32 compara la lectura obtenida con el umbral definido en la lógica local.
+
+  **3.** Según el modo configurado, el relé activa o desactiva el LED que representa la lámpara de apoyo lumínico.
+
+  **4.** El usuario puede modificar manualmente el modo de funcionamiento de la luz mediante el botón físico correspondiente.
+
+  **5.** El estado de la luz se muestra en la pantalla LCD de actuadores.
+
++ **Flujo 5: Alerta por temperatura o calidad de aire**
+
+  **1.** El sistema evalúa la temperatura ambiental y el porcentaje de gas detectado.
+
+  **2.** Si la temperatura es demasiado baja o la calidad del aire supera el umbral establecido, el buzzer se activa.
+
+  **3.** Cuando las condiciones vuelven a un estado aceptable, el buzzer se apaga automáticamente.
+
+  **4.** El usuario puede habilitar o deshabilitar el buzzer mediante el botón físico asignado.
+
++ **Flujo 6: Control manual mediante botones**
+
+  **1.** El primer botón permite alternar el estado del buzzer.
+
+  **2.** El segundo botón cambia el modo del servo entre encendido, apagado y automático.
+
+  **3.** El tercer botón cambia el modo de la luz entre encendido, apagado y automático.
+
+  **4.** Cada cambio actualiza inmediatamente el comportamiento del sistema y se refleja en las pantallas LCD.
 # Capítulo VI: Product Implementation, Validation & Deployment
 
 ## 6.1. Software Configuration Management
