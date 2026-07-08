@@ -1696,13 +1696,13 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
     </tr>
     <tr>
       <td>US03</td>
-      <td>Notificación de activación de actuador</td>
+      <td>Notificación e Historial de Acciones Automáticas IoT</td>
       <td>
-        <strong>Como</strong> entusiasta del cuidado de plantas, <strong>quiero</strong> recibir una notificación en tiempo real cuando la luz UV se encienda, <strong>para</strong> estar al tanto del soporte que recibe mi planta.
+        <strong>Como</strong> usuario, <strong>quiero</strong> recibir una notificación y ver en mi historial cuando el sistema IoT activa automáticamente el riego o la luz UV, <strong>para</strong> estar informado de los cuidados que recibe mi planta sin mi intervención directa.
       </td>
       <td>
-        <strong>Escenario 1: Envío exitoso de alerta.</strong><br>
-        <strong>Dado que</strong> el sistema detecta un nivel de luz inferior al umbral, <strong>cuando</strong> el actuador activa la iluminación UV, <strong>entonces</strong> el sistema envía una notificación push al dispositivo móvil del usuario.
+        <strong>Escenario 1: Registro de evento automático.</strong><br>
+        <strong>Dado que</strong> el sistema está en modo AUTO, <strong>cuando</strong> el hardware enciende la luz UV o abre la válvula por una métrica baja, <strong>entonces</strong> el sistema envía una alerta y guarda la acción en la línea de tiempo de la planta.
       </td>
       <td>EP04</td>
     </tr>
@@ -1720,27 +1720,25 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
     </tr>
     <tr>
       <td>US05</td>
-      <td>Registro de métricas de sensores</td>
+      <td>Sistema de Alarma por Extremos</td>
       <td>
-        <strong>Como</strong> Developer, <strong>quiero</strong> implementar un endpoint que reciba y almacene los datos de luminosidad enviados por el dispositivo IoT, <strong>para</strong> asegurar la persistencia de la información.
+        <strong>Como</strong> Usuario, <strong>quiero</strong> que el dispositivo emita una alerta sonora (Buzzer), <strong>para</strong> reaccionar a tiempo si la temperatura sale del rango (10°C - 35°C) o la humedad supera el 50%, <strong>para</strong> asegurar la persistencia de la información.
       </td>
       <td>
-        <strong>Escenario 1: Recepción de datos IoT.</strong><br>
-        <strong>Dado que</strong> el dispositivo IoT tiene conexión a internet, <strong>cuando</strong> envía un request HTTP POST con el valor de luminosidad al endpoint, <strong>entonces</strong> el sistema responde con un status 201 y registra el dato.
+        <strong>Escenario 1: Activación de alarma.</strong><br>
+        <strong>Dado que</strong> el buzzer está habilitado, <strong>cuando</strong> la temperatura cae a 9°C, <strong>entonces</strong> el componente físico emite un sonido de alerta de forma inmediata.
       </td>
       <td>EP04</td>
     </tr>
     <tr>
       <td>US06</td>
-      <td>Registro de nueva planta desde la app móvil</td>
+      <td>Registro de nueva planta y asignación de especie</td>
       <td>
-        <strong>Como</strong> usuario, <strong>quiero</strong> registrar una nueva planta ingresando su nombre, especie y ubicación, <strong>para</strong> comenzar a monitorear su cuidado desde la aplicación.
+        <strong>Como</strong> usuario, <strong>quiero</strong> registrar una nueva planta seleccionando su especie específica (ej. Portulacaria afra), <strong>para</strong> que el sistema asigne automáticamente los umbrales ideales de temperatura, humedad y luz al dispositivo IoT.
       </td>
       <td>
-        <strong>Escenario 1: Registro exitoso de planta.</strong><br>
-        <strong>Dado que</strong> el usuario ha iniciado sesión, <strong>cuando</strong> completa el formulario de registro con nombre, especie y ubicación, <strong>entonces</strong> el sistema guarda la planta y la muestra en el dashboard.<br><br>
-        <strong>Escenario 2: Campos obligatorios incompletos.</strong><br>
-        <strong>Dado que</strong> el usuario intenta registrar una planta, <strong>cuando</strong> deja el campo de especie vacío, <strong>entonces</strong> el sistema muestra un mensaje de validación y no procesa el registro.
+        <strong>Escenario 1: Carga de umbrales automáticos.</strong><br>
+        <strong>Dado que</strong> el usuario registra una nueva planta, <strong>cuando</strong> selecciona la especie "Portulacaria afra", <strong>entonces</strong> el sistema configura sus límites biológicos (ej. 10°C - 35°C) y la muestra en el dashboard.
       </td>
       <td>EP03</td>
     </tr>
@@ -1772,15 +1770,13 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
     </tr>
     <tr>
       <td>US09</td>
-      <td>Registro manual de acción de cuidado</td>
+      <td>Registro manual de cuidados complementarios</td>
       <td>
-        <strong>Como</strong> usuario, <strong>quiero</strong> registrar manualmente una acción de cuidado, <strong>para</strong> mantener el historial actualizado aunque no cuente con sensor IoT activo.
+        <strong>Como</strong> usuario, <strong>quiero</strong> registrar manualmente acciones que el sistema IoT no realiza (como poda, cambio de sustrato o fertilización), <strong>para</strong> mantener un inventario botánico digital 100% completo.
       </td>
       <td>
-        <strong>Escenario 1: Registro exitoso.</strong><br>
-        <strong>Dado que</strong> el usuario se encuentra en el detalle de una planta, <strong>cuando</strong> selecciona "Registrar cuidado", elige el tipo de acción y confirma, <strong>entonces</strong> el sistema lo agrega al historial.<br><br>
-        <strong>Escenario 2: Acción duplicada.</strong><br>
-        <strong>Dado que</strong> el usuario ya registró un riego hoy, <strong>cuando</strong> intenta registrar la misma acción nuevamente, <strong>entonces</strong> el sistema muestra una advertencia solicitando confirmación.
+        <strong>Escenario 1: Adición de cuidado físico.</strong><br>
+        <strong>Dado que</strong> el usuario realizó una tarea de mantenimiento, <strong>cuando</strong> selecciona "Registrar cuidado", elige "Fertilización" y confirma, <strong>entonces</strong> el sistema lo agrega a la línea de tiempo cronológica de la planta.
       </td>
       <td>EP05</td>
     </tr>
@@ -1788,11 +1784,11 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
       <td>US10</td>
       <td>Integración de API de IA</td>
       <td>
-        <strong>Como</strong> Developer, <strong>quiero</strong> conectar un LLM al backend, <strong>para</strong> procesar consultas botánicas.
+        <strong>Como</strong> Developer, <strong>quiero</strong> conectar un LLM al frontend, <strong>para</strong> procesar consultas botánicas de forma ágil.
       </td>
       <td>
-        <strong>Escenario 1: Recomendación generada exitosamente.</strong><br>
-        <strong>Dado que</strong> el usuario envía un mensaje, <strong>cuando</strong> el backend procesa la solicitud, <strong>entonces</strong> el sistema retorna una respuesta coherente basada en conocimiento botánico.
+        <strong>Escenario 1: Generación de respuesta en el cliente.</strong><br>
+        <strong>Dado que</strong> el usuario envía un mensaje, <strong>cuando</strong> el frontend procesa la solicitud directamente con la API de IA, <strong>entonces</strong> la interfaz renderiza una respuesta coherente basada en conocimiento botánico.
       </td>
       <td>EP06</td>
     </tr>
@@ -2082,27 +2078,25 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
     </tr>
     <tr>
       <td>US33</td>
-      <td>Gestión de Lámpara de Calor</td>
+      <td>Control Manual y Automático de Luz UV</td>
       <td>
-        <strong>Como</strong> usuario, <strong>quiero</strong> encender la lámpara de calor manualmente, <strong>para</strong> proteger la planta si noto que el clima es muy frío.
+        <strong>Como</strong> usuario, <strong>quiero</strong> gestionar el foco UV en modos ON, OFF o AUTO, <strong>para</strong> asegurar que mi planta reciba luz cuando el sensor LDR detecte niveles inferiores al 60%.
       </td>
       <td>
-        <strong>Escenario 1: Encendido exitoso.</strong><br>
-        <strong>Dado que</strong> el dispositivo tiene la lámpara vinculada, <strong>cuando</strong> el usuario activa el switch de calor, <strong>entonces</strong> el hardware recibe la orden y la lámpara se enciende.
+        <strong>Escenario 1: Activación automática por baja luz.</strong><br>
+        <strong>Dado que</strong> el sistema está en modo AUTO, <strong>cuando</strong> el LDR registra luz < 60%, <strong>entonces</strong> el Relay enciende el foco UV y actualiza el estado en la interfaz.
       </td>
       <td>EP04</td>
     </tr>
     <tr>
       <td>US34</td>
-      <td>Disponibilidad en múltiples dispositivos</td>
+      <td>Visualización y Control Físico (LCD y Botones)</td>
       <td>
-        <strong>Como</strong> usuario, <strong>necesito</strong> poder ingresar a mi cuenta desde distintos dispositivos, <strong>para</strong> gestionar mis plantas desde cualquier lugar.
+        <strong>Como</strong> usuario, <strong>quiero</strong> usar botones físicos y pantallas LCD, <strong>para</strong> alternar los modos de los actuadores y ver las métricas sin necesidad de abrir la aplicación.
       </td>
       <td>
-        <strong>Escenario 1: Inicio de sesión exitoso en otro dispositivo.</strong><br>
-        <strong>Dado que</strong> el usuario usa credenciales válidas, <strong>cuando</strong> inicia sesión desde un dispositivo diferente, <strong>entonces</strong> el sistema sincroniza y muestra los mismos datos.<br><br>
-        <strong>Escenario 2: Acceso con verificación adicional.</strong><br>
-        <strong>Dado que</strong> hay un inicio de sesión inusual, <strong>cuando</strong> el sistema lo detecta, <strong>entonces</strong> solicita una verificación adicional para permitir el acceso.
+        <strong>Escenario 1: Cambio de modo mediante botón.</strong><br>
+        <strong>Dado que</strong> eel usuario presiona el botón físico correspondiente al Servo, <strong>cuando</strong> el sistema registra el evento, <strong>entonces</strong> el LCD 2 actualiza el texto de estado alternando entre ON, OFF y AUTO.<br><br>
       </td>
       <td>EP04</td>
     </tr>
@@ -2120,15 +2114,15 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
     </tr>
     <tr>
       <td>US36</td>
-      <td>Asesoría basada en Telemetría IoT</td>
+      <td>Monitoreo de Luminosidad</td>
       <td>
-        <strong>Como</strong> usuario, <strong>quiero</strong> que el chatbot analice los datos de mis sensores, <strong>para</strong> darme consejos preventivos personalizados.
+        <strong>Como</strong> usuario, <strong>quiero</strong> visualizar el porcentaje de luz que recibe mi planta en tiempo real, <strong>para</strong> garantizar que mantenga su color y salud óptima.
       </td>
       <td>
-        <strong>Escenario 1: Recomendaciones preventivas con IoT.</strong><br>
-        <strong>Dado que</strong> los sensores reportan baja humedad, <strong>cuando</strong> el usuario abre el chatbot y pregunta, <strong>entonces</strong> la IA sugiere regar la planta basándose en los datos capturados en tiempo real.
+        <strong>Escenario 1: Recepción de datos de luz.</strong><br>
+        <strong>Dado que</strong> el fotorresistor está activo, <strong>cuando</strong> ocurren cambios significativos en la iluminación, <strong>entonces</strong> el sistema mapea el valor de 0 a 100% y lo muestra en el dashboard.
       </td>
-      <td>EP06</td>
+      <td>EP04</td>
     </tr>
   </tbody>
 </table>
@@ -2274,8 +2268,8 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
     <tr>
       <td>15</td>
       <td>US06</td>
-      <td>Registro de nueva planta desde la app móvil</td>
-      <td>Como usuario, quiero registrar una nueva planta ingresando su nombre, especie y ubicación para comenzar a monitorear su cuidado desde la aplicación.</td>
+      <td>Registro de nueva planta y asignación de especie</td>
+      <td>Como usuario, quiero registrar una nueva planta seleccionando su especie específica (ej. Portulacaria afra), para que el sistema asigne automáticamente los umbrales ideales de temperatura, humedad y luz al dispositivo IoT.</td>
       <td>5</td>
     </tr>
     <tr>
@@ -2330,8 +2324,8 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
     <tr>
       <td>23</td>
       <td>US09</td>
-      <td>Registro manual de acción de cuidado</td>
-      <td>Como usuario, quiero registrar manualmente una acción de cuidado realizada sobre una planta para mantener el historial actualizado aunque no cuente con sensor IoT activo.</td>
+      <td>Registro manual de cuidados complementarios</td>
+      <td>Como usuario, quiero registrar manualmente acciones que el sistema IoT no realiza (como poda, cambio de sustrato o fertilización), para mantener un inventario botánico digital 100% completo.</td>
       <td>3</td>
     </tr>
     <tr>
@@ -2343,9 +2337,9 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
     </tr>
     <tr>
       <td>25</td>
-      <td>US34</td>
-      <td>Disponibilidad en múltiples dispositivos</td>
-      <td>Como usuario, quiero poder ingresar a mi cuenta desde distintos dispositivos, para gestionar mis plantas desde cualquier lugar.</td>
+      <td>US38</td>
+      <td>Visualización y Control Físico (LCD y Botones)</td>
+      <td>Como usuario frente al dispositivo, quiero usar botones físicos y pantallas LCD, para alternar los modos de los actuadores y ver las métricas sin necesidad de abrir la aplicación móvil.</td>
       <td>5</td>
     </tr>
     <tr>
@@ -2357,16 +2351,16 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
     </tr>
     <tr>
       <td>27</td>
-      <td>US05</td>
-      <td>Registro de métricas de sensores</td>
-      <td>Como Developer, quiero implementar un endpoint que reciba y almacene los datos de luminosidad enviados por el dispositivo IoT para asegurar la persistencia de la información.</td>
+      <td>US37</td>
+      <td>Sistema de Alarma por Extremos (Buzzer)</td>
+      <td>Como usuario, quiero que el dispositivo emita una alerta sonora (Buzzer), para reaccionar a tiempo si la temperatura sale del rango (10°C - 35°C) o la humedad supera el 50%.</td>
       <td>5</td>
     </tr>
     <tr>
       <td>28</td>
       <td>US08</td>
-      <td>Monitoreo de Humedad de Tierra</td>
-      <td>Como usuario, quiero ver el porcentaje de humedad del suelo para saber si la tierra está seca.</td>
+      <td>Monitoreo de Humedad Ambiental</td>
+      <td>Como usuario, quiero ver el porcentaje de humedad relativa del ambiente capturado por el sensor DHT22, para saber si el entorno de mi Portulacaria es demasiado seco o húmedo.</td>
       <td>3</td>
     </tr>
     <tr>
@@ -2386,15 +2380,15 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
     <tr>
       <td>31</td>
       <td>US33</td>
-      <td>Gestión de Lámpara de Calor</td>
-      <td>Como usuario, quiero encender la lámpara de calor manualmente si noto que el clima es muy frío, para proteger la planta si noto que el clima es muy frío.</td>
+      <td>Control Manual y Automático de Luz UV</td>
+      <td>Como usuario, quiero gestionar el foco UV (Relay) en modos ON, OFF o AUTO, para asegurar que mi planta reciba luz cuando el sensor LDR detecte niveles inferiores al 60%.</td>
       <td>3</td>
     </tr>
     <tr>
       <td>32</td>
       <td>US03</td>
-      <td>Notificación de activación de actuador</td>
-      <td>Como entusiasta del cuidado de plantas, quiero recibir una notificación en tiempo real cuando la luz UV se encienda para estar al tanto del soporte que recibe mi planta.</td>
+      <td>Notificación e Historial de Acciones Automáticas IoT</td>
+      <td>Como usuario, quiero recibir una notificación y ver en mi historial cuando el sistema IoT activa automáticamente el riego o la luz UV, para estar informado de los cuidados que recibe mi planta sin mi intervención directa.</td>
       <td>5</td>
     </tr>
     <tr>
@@ -2407,22 +2401,22 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
     <tr>
       <td>34</td>
       <td>US10</td>
-      <td>Integración de API de IA</td>
-      <td>Como Developer, quiero conectar un LLM al backend para procesar consultas botánicas.</td>
+      <td>Integración de API de IA en el Frontend</td>
+      <td>Como Developer, quiero conectar un modelo de lenguaje (LLM) directamente desde la interfaz del cliente, para procesar consultas botánicas de forma ágil.</td>
       <td>8</td>
     </tr>
     <tr>
       <td>35</td>
       <td>US35</td>
-      <td>Consulta a Asistente Botánico IA</td>
-      <td>Como usuario, quiero chatear con el chatbot para recibir guías personalizadas sobre cómo cuidar mis planta.</td>
+      <td>Generación de Guías Rápidas de Cuidado</td>
+      <td>Como usuario, quiero generar guías rápidas y concretas de cuidado utilizando IA, para conocer las necesidades básicas de mi planta (riego, luz, sustrato) al instante y sin leer textos extensos.</td>
       <td>5</td>
     </tr>
     <tr>
       <td>36</td>
       <td>US36</td>
-      <td>Asesoría basada en Telemetría IoT</td>
-      <td>Como usuario, quiero que el chatbot analice los datos de mis sensores para darme consejos preventivos personalizados.</td>
+      <td>Monitoreo de Luminosidad (Sensor LDR)</td>
+      <td>Como usuario, quiero visualizar el porcentaje de luz que recibe mi planta en tiempo real, para garantizar que mantenga su color y salud óptima.</td>
       <td>8</td>
     </tr>
   </tbody>
@@ -4685,13 +4679,10 @@ El sistema de etiquetado ha sido definido para ser claro, directo y consistente 
 #### Menú de navegación de la solución
 
 - Mis plantas
-- Guías
 - Tareas
 - Historial
-- Sensores
 - Chatbot
 - Perfil
-- Configuración
 - Cerrar sesión
 
 #### Tipos de etiquetas en la interfaz
@@ -5817,7 +5808,7 @@ Para asegurar la calidad, legibilidad y el mantenimiento a largo plazo de la sol
 * **CSS:** Implementación de nomenclatura kebab-case para clases y mantenimiento de especificidad baja para facilitar cambios.
 * **JavaScript:** Desarrollo íntegro en inglés con variables en camelCase y clases siguiendo el estándar PascalCase.
 
-####  Web App (TypeScript)
+####  Web App (Vue)
 * **Tipado estricto:** Uso obligatorio de interfaces y tipos definidos para los datos del sensor, evitando el tipo "any".
 * **Componentes:** Definición de selectores con prefijos personalizados y nomenclatura de archivos alineada a las guías de Angular.
 * **Lógica de negocio:** Separación clara entre la lógica de los servicios y la gestión de la vista en los componentes.
@@ -5864,8 +5855,6 @@ Se siguieron estos pasos para el despliegue de la Landing Page en GitHub Pages:
 
 
 #### 6.2.1.1. Sprint Planning 1
-
-
 
 
 <table border="1">
@@ -6150,10 +6139,10 @@ Link al trello: https://trello.com/invite/b/69ed479188a27ae377d2c567/ATTI868dfd2
 </tr>
 <tr>
 <td>US06</td>
-<td>Registro de nueva planta desde la app móvil</td>
+<td>Registro de nueva planta y asignación de especie</td>
 <td>WI011</td>
 <td>Implementar registro de planta</td>
-<td>Desarrollar el formulario en la app móvil para añadir el nombre, especie y ubicación de una nueva planta.</td>
+<td>Desarrollar el formulario en la app móvil para registrar la planta y asignar automáticamente sus umbrales biológicos según la especie (ej. Portulacaria afra).</td>
 <td>7</td>
 <td>Diego Acuña</td>
 <td>Done</td>
@@ -6890,20 +6879,20 @@ Landing Page Insights:
 </tr>
 <tr>
 <td>US35</td>
-<td>Consulta a Asistente Botánico IA</td>
+<td>Generación de Guías Rápidas de Cuidado</td>
 <td>WI022</td>
-<td>Desarrollar interfaz del Chatbot</td>
-<td>Desarrollar la ventana de conversación en el dashboard de la aplicacion para la interacción natural con el asistente de IA.</td>
+<td>Desarrollar interfaz de Guías por IA</td>
+<td>Desarrollar la interfaz en el frontend para solicitar y visualizar guías rápidas y concretas de cuidado generadas por la IA.</td>
 <td>5</td>
 <td>Erick Palomino</td>
 <td>Done</td>
 </tr>
 <tr>
 <td>US10</td>
-<td>Integración de API de IA</td>
+<td>Integración de API de IA en el Frontend</td>
 <td>WI023</td>
-<td>Conectar servicios de IA</td>
-<td>Vincular el chatbot con el endpoint del backend para emitir consultas y recibir recomendaciones botánicas.</td>
+<td>Conectar LLM en el Frontend</td>
+<td>Conectar el modelo de lenguaje (LLM) directamente desde la interfaz del cliente para procesar consultas botánicas ágilmente.</td>
 <td>7</td>
 <td>Diego Acuña</td>
 <td>Done</td>
@@ -6920,10 +6909,10 @@ Landing Page Insights:
 </tr>
 <tr>
 <td>US08</td>
-<td>Monitoreo de Humedad de Tierra</td>
+<td>Monitoreo de Humedad Ambiental</td>
 <td>WI025</td>
 <td>Visualización de humedad en Dashboard</td>
-<td>Implementar los indicadores gráficos para reflejar el estado hídrico.</td>
+<td>Implementar los indicadores gráficos para reflejar el porcentaje de humedad relativa del ambiente capturado por el sensor DHT22.</td>
 <td>4</td>
 <td>Carlos Coca</td>
 <td>Done</td>
@@ -6943,7 +6932,7 @@ Landing Page Insights:
 <td>Edición de datos de planta</td>
 <td>WI027</td>
 <td>Actualización de perfil botánico</td>
-<td>Habilitar la edición de características (nombre, tipo, foto) dentro del perfil de la planta</td>
+<td>Habilitar la edición de características (nombre, tipo, foto) dentro del perfil de la planta.</td>
 <td>4</td>
 <td>Farid Briceño</td>
 <td>Done</td>
@@ -6956,6 +6945,66 @@ Landing Page Insights:
 <td>Renderizar una lista cronológica en el detalle de la planta que muestre todas las interacciones de riego y fertilización pasadas.</td>
 <td>5</td>
 <td>Elvia Rodríguez</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US05</td>
+<td>Sistema de Alarma por Extremos (Buzzer)</td>
+<td>WI029</td>
+<td>Implementación de Buzzer en Wokwi</td>
+<td>Configurar lógica local en IoT para emitir alerta sonora si la temperatura o humedad superan límites.</td>
+<td>4</td>
+<td>Farid Briceño</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US33</td>
+<td>Control Manual y Automático de Luz UV</td>
+<td>WI030</td>
+<td>Integración de Relay y Lógica LDR</td>
+<td>Implementar los estados ON, OFF y AUTO del Relay en función de la lectura de luz del fotorresistor.</td>
+<td>5</td>
+<td>Farid Briceño</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US34</td>
+<td>Visualización y Control Físico (LCD y Botones)</td>
+<td>WI031</td>
+<td>Interfaz de hardware local</td>
+<td>Configurar pantallas LCD y botones físicos en el circuito para alternar actuadores sin depender de la app.</td>
+<td>6</td>
+<td>Farid Briceño</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US36</td>
+<td>Monitoreo de Luminosidad (Sensor LDR)</td>
+<td>WI032</td>
+<td>Telemetría de luz en Dashboard</td>
+<td>Implementar la captura, mapeo (0-100%) y visualización de los datos del sensor LDR en la aplicación.</td>
+<td>4</td>
+<td>Carlos Coca</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US03</td>
+<td>Notificación e Historial de Acciones Automáticas IoT</td>
+<td>WI033</td>
+<td>Implementar alertas de automatización IoT</td>
+<td>Integrar el envío de notificaciones y el registro en el historial cuando el sistema IoT activa automáticamente el riego o la luz UV.</td>
+<td>5</td>
+<td>Elvia Rodríguez</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US09</td>
+<td>Registro manual de cuidados complementarios</td>
+<td>WI034</td>
+<td>Formulario de cuidados manuales</td>
+<td>Desarrollar la interfaz y conexión para registrar acciones manuales como poda o fertilización en la línea de tiempo.</td>
+<td>3</td>
+<td>Max Paitan</td>
 <td>Done</td>
 </tr>
 </tbody>
