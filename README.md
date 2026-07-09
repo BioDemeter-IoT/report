@@ -357,10 +357,10 @@ El repositorio del informe se encuentra en GitHub en el siguiente link: https://
       - [6.2.2.7. Services Documentation Evidence for Sprint Review](#6227-services-documentation-evidence-for-sprint-review)
       - [6.2.2.8. Software Deployment Evidence for Sprint Review](#6228-software-deployment-evidence-for-sprint-review)
       - [6.2.2.9. Team Collaboration Insights during Sprint](#6229-team-collaboration-insights-during-sprint)
-    - [6.2.3. Sprint 3](#623-sprint-2)
+    - [6.2.3. Sprint 3](#623-sprint-3)
       - [6.2.3.1. Sprint Planning 3](#6231-sprint-planning-3)
       - [6.2.3.2. Aspect Leaders and Collaborators](#6232-aspect-leaders-and-collaborators)
-      - [6.2.3.3. Sprint Backlog 2](#6233-sprint-backlog-3)
+      - [6.2.3.3. Sprint Backlog 3](#6233-sprint-backlog-3)
       - [6.2.3.4. Development Evidence for Sprint Review](#6234-development-evidence-for-sprint-review)
       - [6.2.3.5. Testing Suite Evidence for Sprint Review](#6235-testing-suite-evidence-for-sprint-review)
       - [6.2.3.6. Execution Evidence for Sprint Review](#6236-execution-evidence-for-sprint-review)
@@ -7530,11 +7530,18 @@ Landing Page Insights:
 
 | Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
 |------------|--------|-----------|----------------|---------------------|---------------------|
-| |  |  |  |  |  |
+| BioDemeter_PlantSync_Backend | feature/deployment | df128fb6 | Add node actuator sync and actuator state model | Introduce node actuator sync features and actuator state model. Adds NodeActuatorSyncController with /sync/status, /sync/config, and desired/reported actuator endpoints... | 06/07/2026 |
+| BioDemeter_PlantSync_Backend | feature/deployment | bac2c936 | Refactor sensor model and enable plant-node linking | Consolidate IoT repositories by moving analytics queries to IoT layer. Replace soil humidity with light percent and gas readings. Add new REST endpoints for manual actuator commands, edge thresholds, and node-plant linking. | 04/07/2026 |
+| BioDemeter_PlantSync_Backend | feature/deployment | bcde37f6 | Add humidity to readings and simplify light thresholds | Added humidityPercent field to sensor readings across IoT module. Added new REST endpoint /api/v1/iot/plants/{plantId}/readings/latest for real-time display. Removed lightThresholdMax from plant thresholds. | 07/07/2026 |
+| BioDemeter_PlantSync_Backend | feature/deployment | 445b6402 | Add nodeId to ThresholdsResource | Add nodeId field to ThresholdsResource record and populate it in EdgeThresholdsController with the IoT node ID to provide context about which node the thresholds apply to. | 04/07/2026 |
+| BioDemeter_PlantSync_Backend | feature/admin-role | a41fcdce | feat: Add IoT module and refactor analytics entities | Introduce a new IoT module: domain aggregates, commands, entities (IoTNode, SensorReading, ActuatorCommand), value objects, services, JPA repositories, REST controllers, resources and assemblers for node and reading ingestion and actuator commands. | 05/06/2026 |
 
 
 #### 6.2.3.5. Testing Suite Evidence for Sprint Review
 
+Se implementaron tests unitarios y de integración en el Backend para asegurar el correcto funcionamiento del mismo durante el Sprint 3.
+
+![Unit Test](/images/chapter6-sprint3/tests.png)
 
 <h3>Endpoints implementados</h3>
 
@@ -7551,25 +7558,238 @@ Landing Page Insights:
   </thead>
   <tbody>
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>[Ruta del endpoint]</td>
+      <td>[GET/POST/PUT/DELETE]</td>
+      <td>[parámetros]</td>
       <td>
-        <code></code><br>
-<pre><code></code></pre>
+        <code>[Método] [Ruta]</code><br>
+<pre><code>{
+  "campo": "valor"
+}</code></pre>
       </td>
       <td>
-<pre><code></code></pre>
+<pre><code>{
+  "campo": "valor"
+}</code></pre>
       </td>
-      <td></td>
+      <td>[URL de documentación]</td>
+    </tr>
+  </tbody>
+</table>
+
+#### 6.2.3.6. Execution Evidence for Sprint Review
+
+<br>
+
+En el Sprint 3 se alcanzó la finalización de la plataforma PlantSync, destacando la implementación completa de la aplicación móvil, el despliegue del prototipo IoT en Wokwi y la integración de todas las funcionalidades core del sistema.
+<br>
+
+<ul>
+  <li>[USXX Título de User Story implementada]</li>
+  <li>[USXX Título de User Story implementada]</li>
+  <li>[USXX Título de User Story implementada]</li>
+</ul>
+
+<br>
+<p align="center">
+  <img src="images/chapter6-sprint3/screenshot1.png" alt="execution screenshot 1" width="350">
+</p>
+<br>
+<p align="center">
+  <img src="images/chapter6-sprint3/screenshot2.png" alt="execution screenshot 2" width="350">
+</p>
+<br>
+<p align="center">
+  <img src="images/chapter6-sprint3/screenshot3.png" alt="execution screenshot 3" width="350">
+</p>
+<br>
+
+<ul>
+  <li>[USXX Título de User Story implementada]</li>
+  <li>[USXX Título de User Story implementada]</li>
+</ul>
+
+<br>
+<p align="center">
+  <img src="images/chapter6-sprint3/screenshot4.png" alt="execution screenshot 4" width="350">
+</p>
+<br>
+
+#### 6.2.3.7. Services Documentation Evidence for Sprint Review
+
+<br>
+<p align="center">
+  <img src="images/chapter6-sprint3/documentation1.png" alt="services documentation 1" width="350">
+</p>
+<br>
+<p align="center">
+  <img src="images/chapter6-sprint3/documentation2.png" alt="services documentation 2" width="350">
+</p>
+<br>
+
+<h3>Endpoints Implementados</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Endpoint</th>
+      <th>Acciones soportadas</th>
+      <th>Parámetros</th>
+      <th>Ejemplo de Request</th>
+      <th>Ejemplo de Response</th>
+      <th>Documentación (URL)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+    <tr>
+      <td>/api/v1/iot/actuator-commands</td>
+      <td>POST</td>
+      <td>nodeCode, actuatorType (UV_LIGHT / WATER_SPRAYER / BUZZER / SERVO / LED), action (ACTIVATE / DEACTIVATE) (body)</td>
+      <td>
+        <code>POST /api/v1/iot/actuator-commands</code><br>
+<pre><code>{
+  "nodeCode": "NODE-XYZ-01",
+  "actuatorType": "WATER_SPRAYER",
+  "action": "ACTIVATE"
+}</code></pre>
+      </td>
+      <td>
+<pre><code>{
+  "id": 20,
+  "nodeId": 1,
+  "actuatorType": "WATER_SPRAYER",
+  "action": "ACTIVATE",
+  "status": "PENDING",
+  "issuedAt": "2026-07-08T12:00:00"
+}</code></pre>
+      </td>
+      <td>https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/swagger-ui/index.html</td>
+    </tr>
+    <tr>
+      <td>/api/v1/iot/plants/{plantId}/readings/latest</td>
+      <td>GET</td>
+      <td>plantId (path)</td>
+      <td>
+        <code>GET /api/v1/iot/plants/1/readings/latest</code>
+      </td>
+      <td>
+<pre><code>{
+  "id": 100,
+  "nodeId": 1,
+  "lightPercent": 75,
+  "gasPercent": 30,
+  "airTemperature": 24.5,
+  "humidityPercent": 60,
+  "timestamp": "2026-07-08T12:00:00"
+}</code></pre>
+      </td>
+      <td>https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/swagger-ui/index.html</td>
+    </tr>
+    <tr>
+      <td>/api/v1/iot/nodes/{nodeCode}/sync/status</td>
+      <td>GET</td>
+      <td>nodeCode (path)</td>
+      <td>
+        <code>GET /api/v1/iot/nodes/NODE-XYZ-01/sync/status</code>
+      </td>
+      <td>
+<pre><code>{
+  "linked": true,
+  "desiredState": {
+    "buzzerMode": "OFF",
+    "servoMode": "OFF",
+    "ledMode": "ON"
+  }
+}</code></pre>
+      </td>
+      <td>https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/swagger-ui/index.html</td>
+    </tr>
+    <tr>
+      <td>/api/v1/iot/nodes/{nodeCode}/link-plant</td>
+      <td>PATCH</td>
+      <td>nodeCode (path), plantId (body)</td>
+      <td>
+        <code>PATCH /api/v1/iot/nodes/NODE-XYZ-01/link-plant</code><br>
+<pre><code>{
+  "plantId": 1
+}</code></pre>
+      </td>
+      <td>
+<pre><code>{
+  "id": 1,
+  "nodeCode": "NODE-XYZ-01",
+  "status": "ONLINE",
+  "plantId": 1,
+  "profileId": 1,
+  "createdAt": "2026-06-21T10:00:00"
+}</code></pre>
+      </td>
+      <td>https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/swagger-ui/index.html</td>
     </tr>
   </tbody>
 </table>
 
 #### 6.2.3.8. Software Deployment Evidence for Sprint Review
 
+Durante este Sprint se realizó el despliegue completo de todos los componentes de PlantSync en sus respectivas plataformas.
+
+**FrontEnd (Web App):**
+
+- **URL de producción:** https://frontend-main-orpin-seven.vercel.app
+- **Repositorio:** https://github.com/BioDemeter-IoT/PlantSync-Frontend
+- **Plataforma:** Vercel
+
+**BackEnd:**
+
+- **URL:** https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net
+- **Plataforma:** Microsoft Azure App Service
+- **Framework:** Spring Boot (Java)
+- **API Docs:** https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/swagger-ui/index.html
+
+**Mobile App:**
+
+- **Plataforma:** [App Store / Google Play / APK]
+- **URL de descarga:** [URL de la aplicación móvil]
+
+**IoT Device (Wokwi):**
+
+- **URL del prototipo:** [URL del proyecto en Wokwi]
+
+| Componente | URL de Despliegue | Plataforma |
+|---|---|---|
+| FrontEnd Web | https://frontend-main-orpin-seven.vercel.app | Vercel |
+| BackEnd API | https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net | Azure |
+| Mobile App | [URL] | [Plataforma] |
+| IoT Simulación | [URL] | Wokwi |
 
 #### 6.2.3.9. Team Collaboration Insights during Sprint
+
+Se podrá visualizar los commits y contribuciones hechas por los integrantes durante el Sprint 3.
+
+Report Insights:
+
+<p align="center">
+  <img src="images/chapter6-sprint3/insights-report.png" alt="team collaboration insights" width="350">
+</p>
+
+FrontEnd Insights:
+
+<p align="center">
+  <img src="images/chapter6-sprint3/insights-frontend.png" alt="frontend insights" width="350">
+</p>
+
+BackEnd Insights:
+
+<p align="center">
+  <img src="images/chapter6-sprint3/insights-backend.png" alt="backend insights" width="350">
+</p>
+
+Mobile Insights:
+
+<p align="center">
+  <img src="images/chapter6-sprint3/insights-mobile.png" alt="mobile insights" width="350">
+</p>
 
 
 ## 6.3. Validation Interviews
