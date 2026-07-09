@@ -8014,7 +8014,6 @@ En el Sprint 3 se alcanzó la finalización de la plataforma PlantSync, destacan
 <p align="center">
   <img src="images/appmobile/vista-plantas.jpg" alt="Vista plantas - App Mobile" width="250">
   <img src="images/appmobile/ver-detalle-planta.jpg" alt="Detalle de planta - App Mobile" width="250">
-  <img src="images/appmobile/editar-perfil.jpg" alt="Editar perfil - App Mobile" width="250">
 </p>
 <br>
 
@@ -8047,6 +8046,7 @@ En el Sprint 3 se alcanzó la finalización de la plataforma PlantSync, destacan
 <br>
 
 <ul>
+  <li>US15 Edición de datos personales (perfil mobile)</li>
   <li>US46 Visualizar datos de cuenta en perfil mobile</li>
   <li>US47 Cambiar plan de suscripción desde mobile</li>
   <li>US48 Gestionar notificaciones push en mobile</li>
@@ -8055,6 +8055,7 @@ En el Sprint 3 se alcanzó la finalización de la plataforma PlantSync, destacan
 
 <br>
 <p align="center">
+  <img src="images/appmobile/editar-perfil.jpg" alt="Editar perfil de usuario - App Mobile" width="250">
   <img src="images/appmobile/vista-perfil.jpg" alt="Vista perfil - App Mobile" width="250">
 </p>
 <br>
@@ -8226,7 +8227,7 @@ Durante este Sprint se realizó el despliegue completo de todos los componentes 
 | FrontEnd Web | https://frontend-main-orpin-seven.vercel.app | Vercel |
 | BackEnd API | https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net | Azure |
 | Mobile App | [URL] | [Plataforma] |
-| IoT Simulación | [URL] | Wokwi |
+| IoT Simulación | https://wokwi.com/projects/468594188996396033 | Wokwi |
 
 #### 6.2.3.9. Team Collaboration Insights during Sprint
 
