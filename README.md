@@ -1551,28 +1551,10 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
       <td>"Tu Pothos necesita riego: humedad del suelo al 22%."</td>
     </tr>
     <tr>
-      <td><strong>Estado de Salud / Plant Health Monitoring</strong></td>
-      <td>Dominio</td>
-      <td>Seguimiento automático del estado de salud de las plantas basado en reportes del usuario, fotos y datos ambientales proporcionados. Representado visualmente como: Óptimo / En riesgo / Crítico.</td>
-      <td>"Estado de salud: Crítico — humedad bajo el umbral mínimo."</td>
-    </tr>
-    <tr>
       <td><strong>Historial de Cuidados</strong></td>
       <td>Dominio</td>
       <td>Registro cronológico de todas las acciones realizadas sobre una planta y las lecturas históricas del sensor asociado.</td>
       <td>"Esta planta fue regada 3 veces en los últimos 10 días."</td>
-    </tr>
-    <tr>
-      <td><strong>Recomendación Personalizada / Adaptive Care Recommendations</strong></td>
-      <td>Sistema</td>
-      <td>Sugerencias personalizadas de cuidado generadas dinámicamente según la especie de la planta, las condiciones reportadas y los cambios ambientales detectados.</td>
-      <td>"Con 28°C y humedad baja, mueve tu helecho a sombra parcial."</td>
-    </tr>
-    <tr>
-      <td><strong>Identificación de Planta / Plant Identification</strong></td>
-      <td>Sistema</td>
-      <td>Funcionalidad que permite reconocer especies de plantas mediante fotografías, usando algoritmos de análisis de imagen.</td>
-      <td>"El sistema identificó la planta como Ficus lyrata y mostró su guía de cuidado."</td>
     </tr>
     <tr>
       <td><strong>Clima Local</strong></td>
@@ -1696,13 +1678,13 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
     </tr>
     <tr>
       <td>US03</td>
-      <td>Notificación e Historial de Acciones Automáticas IoT</td>
+      <td>Metricas de Sensor de Gas (Calidad de aire)</td>
       <td>
-        <strong>Como</strong> usuario, <strong>quiero</strong> recibir una notificación y ver en mi historial cuando el sistema IoT activa automáticamente el riego o la luz UV, <strong>para</strong> estar informado de los cuidados que recibe mi planta sin mi intervención directa.
+        <strong>Como</strong> usuario, <strong>quiero</strong> quiero poder ver las metricas del sensor de gas del dispositivo IoT, <strong>para</strong> estar informado de la calidad del aire y cuidar mejor mi planta.
       </td>
       <td>
-        <strong>Escenario 1: Registro de evento automático.</strong><br>
-        <strong>Dado que</strong> el sistema está en modo AUTO, <strong>cuando</strong> el hardware enciende la luz UV o abre la válvula por una métrica baja, <strong>entonces</strong> el sistema envía una alerta y guarda la acción en la línea de tiempo de la planta.
+        <strong>Escenario 1: Ver metrica de sensor de gas</strong><br>
+        <strong>Dado que</strong> miro el dashboard de mi planta, <strong>cuando</strong> verifico el sensor de gas, <strong>entonces</strong> debo poder ver la data de ese sensor
       </td>
       <td>EP04</td>
     </tr>
@@ -2080,11 +2062,11 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
       <td>US33</td>
       <td>Control Manual y Automático de Luz UV</td>
       <td>
-        <strong>Como</strong> usuario, <strong>quiero</strong> gestionar el foco UV en modos ON, OFF o AUTO, <strong>para</strong> asegurar que mi planta reciba luz cuando el sensor LDR detecte niveles inferiores al 60%.
+        <strong>Como</strong> usuario, <strong>quiero</strong> gestionar el foco UV en modos ON, OFF o AUTO, <strong>para</strong> asegurar que mi planta reciba luz cuando el sensor LDR detecte niveles inferiores a los umbrales establecidos.
       </td>
       <td>
         <strong>Escenario 1: Activación automática por baja luz.</strong><br>
-        <strong>Dado que</strong> el sistema está en modo AUTO, <strong>cuando</strong> el LDR registra luz < 60%, <strong>entonces</strong> el Relay enciende el foco UV y actualiza el estado en la interfaz.
+        <strong>Dado que</strong> el sistema está en modo AUTO, <strong>cuando</strong> el LDR registra luz, <strong>entonces</strong> el Relay enciende el foco UV y actualiza el estado en la interfaz.
       </td>
       <td>EP04</td>
     </tr>
@@ -2381,14 +2363,14 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
       <td>31</td>
       <td>US33</td>
       <td>Control Manual y Automático de Luz UV</td>
-      <td>Como usuario, quiero gestionar el foco UV (Relay) en modos ON, OFF o AUTO, para asegurar que mi planta reciba luz cuando el sensor LDR detecte niveles inferiores al 60%.</td>
+      <td>Como usuario, quiero gestionar el foco UV en modos ON, OFF o AUTO, para asegurar que mi planta reciba luz cuando el sensor LDR detecte niveles inferiores a los umbrales establecidos.</td>
       <td>3</td>
     </tr>
     <tr>
       <td>32</td>
       <td>US03</td>
-      <td>Notificación e Historial de Acciones Automáticas IoT</td>
-      <td>Como usuario, quiero recibir una notificación y ver en mi historial cuando el sistema IoT activa automáticamente el riego o la luz UV, para estar informado de los cuidados que recibe mi planta sin mi intervención directa.</td>
+      <td>Metricas de Sensor de Gas (Calidad de aire)</td>
+      <td>Como usuario, quiero quiero poder ver las metricas del sensor de gas del dispositivo IoT, para estar informado de la calidad del aire y cuidar mejor mi planta.</td>
       <td>5</td>
     </tr>
     <tr>
@@ -4680,7 +4662,6 @@ El sistema de etiquetado ha sido definido para ser claro, directo y consistente 
 
 - Mis plantas
 - Tareas
-- Historial
 - Chatbot
 - Perfil
 - Cerrar sesión
@@ -4696,7 +4677,7 @@ El sistema de etiquetado ha sido definido para ser claro, directo y consistente 
 | Encabezado       | “Mis plantas”           | Parte superior de la pantalla principal          |
 | Panel            | “Historial de cuidados” | Dentro de módulos informativos o tarjetas        |
 | Botón            | “Agregar planta”        | Acción principal en formularios o vistas de gestión |
-| Navegación       | “Guías”, “Tareas”, “Chatbot” | Menú principal, barra lateral o navegación inferior |
+| Navegación       |  “Tareas”, “Chatbot” | Menú principal, barra lateral o navegación inferior |
 | Estado           | “Último riego hace 3 días” | Dentro de tarjetas o secciones de seguimiento |
 
 Las etiquetas se mantendrán uniformes entre web, móvil y componentes vinculados al monitoreo inteligente, lo que permite conservar continuidad semántica y facilitar el aprendizaje del sistema.
@@ -4862,10 +4843,6 @@ Pantalla principal del usuario donde se muestra el listado de todas sus plantas 
 
 <a href="https://ibb.co/svgK5zrV"><img src="https://i.ibb.co/tMHqZF5J/Mis-Plantas.png" alt="Mis-Plantas" border="0"></a>
 
-- Guías:
-Catálogo de recomendaciones organizado por categorías como riego, luz, fertilización y control de plagas. Permite a los usuarios consultar guías de acuerdo con sus necesidades o el tipo de planta que poseen.
-
-<a href="https://ibb.co/s9zKc4pY"><img src="https://i.ibb.co/60LHGScC/guias.png" alt="guias" border="0"></a>
 
 - Tareas:
 
@@ -6989,10 +6966,10 @@ Landing Page Insights:
 </tr>
 <tr>
 <td>US03</td>
-<td>Notificación e Historial de Acciones Automáticas IoT</td>
+<td>Metricas de Sensor de Gas (Calidad de aire)</td>
 <td>WI033</td>
 <td>Implementar alertas de automatización IoT</td>
-<td>Integrar el envío de notificaciones y el registro en el historial cuando el sistema IoT activa automáticamente el riego o la luz UV.</td>
+<td>Integrar la metrica del sensor de gas dentro del dashboard del frontend</td>
 <td>5</td>
 <td>Elvia Rodríguez</td>
 <td>Done</td>
