@@ -8803,6 +8803,18 @@ AV2:
 
 - El desarrollo de funciones enfocadas en la comodidad y la personalización, como la configuración visual en modo oscuro, la actualización de datos personales y la organización del historial de actividades en una línea de tiempo cronológica, mejoró notablemente la retención y el seguimiento del progreso de las plantas.
 
+TB2:
+
+- Se logró implementar la totalidad de las funcionalidades core de la aplicación móvil, incluyendo la gestión completa de plantas con niveles de humedad (alta/media/baja) y frecuencia de riego automática, configuración de umbrales IoT, historial de tareas, chatbot botánico, y perfil de usuario con selección de plan de suscripción, notificaciones push y cierre de sesión, consolidando a PlantSync como una solución multiplataforma funcional.
+
+- La simulación del dispositivo físico en Wokwi con ESP32, sensores DHT22, LDR y gas, actuadores (servo, relay UV, buzzer) y pantallas LCD demostró la viabilidad del ecosistema IoT, validando la sincronización bidireccional con el backend mediante los endpoints de sincronización y telemetría en tiempo real.
+
+- El desarrollo del Edge Service con un planificador justo y re-autenticación automática JWT garantizó una comunicación estable y robusta entre el dispositivo IoT y el backend, incluso bajo condiciones de red variables.
+
+- Se identificaron y corrigieron IDs inconsistentes entre la tabla de User Stories y el Product Backlog, y se incorporaron 10 nuevas User Stories para funcionalidades móviles que no estaban previamente cubiertas, alineando completamente la documentación con el producto real desarrollado.
+
+- El backend se desplegó en Azure App Service con API documentada mediante Swagger, el frontend web en Vercel y la aplicación móvil empaquetada como APK, completando el ciclo de entrega integral del producto.
+
 TB1:
 
 -  Se ha confirmado que la problemática central no es solo el olvido del riego, sino la falta de conocimiento técnico sobre las necesidades específicas de cada especie. El diseño de los Bounded Contexts de Inteligencia Botánica y Plant Profiles responde directamente a esta brecha, proporcionando una solución que centraliza el conocimiento especializado.
@@ -8836,6 +8848,16 @@ AV2:
 - Establecer un monitoreo constante sobre la velocidad de respuesta del asistente virtual para asegurar que la generación de recomendaciones o consejos de jardinería no cause demoras que afecten la navegación fluida dentro de las interfaces.
 
 - Afinar gradualmente la información que alimenta al asistente virtual, apoyándose en el historial de actividades de cada cuenta. Esto ayudará a que las recomendaciones brindadas sean cada vez más precisas, seguras y adaptadas a las necesidades únicas de cada especie registrada en el sistema.
+
+TB2:
+
+- Migrar el prototipo de Wokwi a hardware físico real con ESP32, sensores y actuadores para validar el comportamiento del sistema en condiciones reales de hogar, asegurando que la lógica de monitoreo y actuación funcione correctamente fuera de la simulación.
+
+- Publicar la aplicación móvil en Google Play Store y App Store para ampliar el alcance a los segmentos objetivo identificados, aprovechando que la APK ya se encuentra generada y funcional.
+
+- Aprovechar los endpoints de analytics existentes en el backend (global-telemetry, device-status) para construir dashboards de administración que permitan monitorear métricas agregadas del ecosistema IoT en tiempo real.
+
+- Realizar pruebas de carga en el Edge Service simulando múltiples dispositivos IoT enviando telemetría simultáneamente, para garantizar que el backend escala correctamente ante un crecimiento en la base de usuarios.
 
 TB1:
 
