@@ -7998,7 +7998,7 @@ En el Sprint 3 se alcanzó la finalización de la plataforma PlantSync, destacan
 
 <br>
 <p align="center">
-  <img src="images/appmobile/iniciar-sesion.jpg" alt="Inicio de sesión - App Mobile" width="250">
+  <img src="images/appmobile/iniciar-sesión.jpg" alt="Inicio de sesión - App Mobile" width="250">
   <img src="images/appmobile/crear-cuenta.jpg" alt="Crear cuenta - App Mobile" width="250">
   <img src="images/appmobile/registrar-nueva-planta.jpg" alt="Registrar nueva planta - App Mobile" width="250">
 </p>
@@ -8198,7 +8198,7 @@ En el Sprint 3 se alcanzó la finalización de la plataforma PlantSync, destacan
 
 #### 6.2.3.8. Software Deployment Evidence for Sprint Review
 
-Durante este Sprint se realizó el despliegue completo de todos los componentes de PlantSync en sus respectivas plataformas.
+Durante este Sprint se realizó el despliegue completo de todos los componentes de PlantSync en sus respectivas plataformas, cuyas implementaciones son replicables con las instrucciones compartidas en el sprint 2.
 
 **FrontEnd (Web App):**
 
@@ -8232,6 +8232,19 @@ Durante este Sprint se realizó el despliegue completo de todos los componentes 
 #### 6.2.3.9. Team Collaboration Insights during Sprint
 
 Se podrá visualizar los commits y contribuciones hechas por los integrantes durante el Sprint 3.
+
+<p align="center">
+  <img src="images/insights-sprint3/BackEnd Insights.png" alt="BackEnd Insights - Sprint 3" width="700">
+</p>
+<p align="center">
+  <img src="images/insights-sprint3/FrontEnd Insights.png" alt="FrontEnd Insights - Sprint 3" width="700">
+</p>
+<p align="center">
+  <img src="images/insights-sprint3/Mobile Insights.png" alt="Mobile Insights - Sprint 3" width="700">
+</p>
+<p align="center">
+  <img src="images/insights-sprint3/Report Insights.png" alt="Report Insights - Sprint 3" width="700">
+</p>
 
 Report Insights:
 
