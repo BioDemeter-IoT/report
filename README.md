@@ -82,6 +82,7 @@
 | 2.2 | 10/06/2026 | Rodríguez Villa, Elvia Marcela | Documentación de la Implementación y despliegue de la aplicación web (frontend). |
 | 2.3 | 14/06/2026 | Paitan Pumacahua, Max Anthony | Actualización de Aspect Leaders and Collaborators, Entrevistas de validación e Implementación de la aplicación móvil. |
 | 2.4 | 18/06/2026 | Rivera Ratachi, Renzo Sebastian | Documentación del Desarrollo de cambios del backend, Development Evidence for Sprint Review y Testing Suite Evidence for Sprint Review. |
+| 2.5 | 09/07/2026 | Briceño De La Cruz, Farid Sebastian | Corrección de IDs inconsistentes en Product Backlog, refinamiento de User Stories (US06, US11, US15, US25, US28) para especificar plataforma mobile/web, y adición de 10 nuevas User Stories (US40-US49) para funcionalidades móviles: monitoreo climático local, niveles de humedad con frecuencia de riego, umbrales IoT, vinculación IoT, gestión de tareas, gestión de perfil con suscripciones y notificaciones, y cierre de sesión. |
 
 <hr class="page-break">
 
@@ -332,7 +333,7 @@ El repositorio del informe se encuentra en GitHub en el siguiente link: https://
     - [6.1.2. Source Code Management](#612-source-code-management)
     - [6.1.3. Source Code Style Guide \& Conventions](#613-source-code-style-guide--conventions)
       - [Landing Page (HTML, CSS, JavaScript)](#landing-page-html-css-javascript)
-      - [Web App (TypeScript)](#web-app-typescript)
+      - [Web App (Vue)](#web-app-vue)
       - [Mobile App (Dart)](#mobile-app-dart)
       - [Backend (Java)](#backend-java)
       - [Testing \& Documentación (Gherkin)](#testing--documentación-gherkin)
@@ -1720,7 +1721,9 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
       </td>
       <td>
         <strong>Escenario 1: Carga de umbrales automáticos.</strong><br>
-        <strong>Dado que</strong> el usuario registra una nueva planta, <strong>cuando</strong> selecciona la especie "Portulacaria afra", <strong>entonces</strong> el sistema configura sus límites biológicos (ej. 10°C - 35°C) y la muestra en el dashboard.
+        <strong>Dado que</strong> el usuario registra una nueva planta, <strong>cuando</strong> selecciona la especie "Portulacaria afra", <strong>entonces</strong> el sistema configura sus límites biológicos (ej. 10°C - 35°C) y la muestra en el dashboard.<br><br>
+        <strong>Escenario 2: Registro de planta desde mobile.</strong><br>
+        <strong>Dado que</strong> el usuario se encuentra en la vista de registro de planta de la aplicación móvil, <strong>cuando</strong> completa los campos de nombre, especie, descripción, fecha de adquisición (máximo el día actual), nivel de humedad (alta/riego cada 2 días, media/riego cada 4 días, baja/riego cada 7 días), foto mediante URL y umbrales de alerta IoT (temperatura, humedad, luz mínima), <strong>entonces</strong> el sistema guarda la planta con todos los parámetros y la muestra en el listado de plantas.
       </td>
       <td>EP03</td>
     </tr>
@@ -1781,8 +1784,10 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
         <strong>Como</strong> usuario, <strong>quiero</strong> subir una imagen de una planta a lo largo del tiempo, <strong>para</strong> saber qué planta es.
       </td>
       <td>
-        <strong>Escenario 1: Foto añadida.</strong><br>
-        <strong>Dado que</strong> el usuario selecciona una foto, <strong>cuando</strong> se procesa el archivo, <strong>entonces</strong> el sistema la carga y muestra la imagen de la planta.
+        <strong>Escenario 1: Foto añadida desde web.</strong><br>
+        <strong>Dado que</strong> el usuario selecciona una foto desde su dispositivo, <strong>cuando</strong> se procesa el archivo, <strong>entonces</strong> el sistema la carga y muestra la imagen de la planta.<br><br>
+        <strong>Escenario 2: Foto mediante URL desde mobile.</strong><br>
+        <strong>Dado que</strong> el usuario se encuentra en la vista de registro o edición de planta en la aplicación móvil, <strong>cuando</strong> ingresa una URL de imagen válida, <strong>entonces</strong> el sistema muestra la vista previa y guarda la referencia de la imagen.
       </td>
       <td>EP03</td>
     </tr>
@@ -1837,8 +1842,10 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
       <td>
         <strong>Escenario 1: Visualización de datos.</strong><br>
         <strong>Dado que</strong> el usuario ha iniciado sesión, <strong>cuando</strong> accede a la sección de perfil, <strong>entonces</strong> el sistema debe mostrar los datos actuales en campos editables.<br><br>
-        <strong>Escenario 2: Actualización exitosa.</strong><br>
-        <strong>Dado que</strong> el usuario ha editado su información, <strong>cuando</strong> hace clic en "Guardar cambios", <strong>entonces</strong> el sistema valida los campos y actualiza la base de datos.
+        <strong>Escenario 2: Actualización exitosa desde web.</strong><br>
+        <strong>Dado que</strong> el usuario ha editado su información en la web, <strong>cuando</strong> hace clic en "Guardar cambios", <strong>entonces</strong> el sistema valida los campos y actualiza la base de datos.<br><br>
+        <strong>Escenario 3: Edición de nombre desde mobile.</strong><br>
+        <strong>Dado que</strong> el usuario se encuentra en la vista de edición de perfil de la aplicación móvil, <strong>cuando</strong> modifica únicamente el nombre y presiona guardar, <strong>entonces</strong> el sistema actualiza el nombre en la base de datos y muestra la confirmación.
       </td>
       <td>EP02</td>
     </tr>
@@ -1962,7 +1969,9 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
         <strong>Escenario 1: Perfil con datos.</strong><br>
         <strong>Dado que</strong> el usuario tiene plantas y tareas, <strong>cuando</strong> ingresa al perfil, <strong>entonces</strong> el perfil muestra estadísticas como cantidad de plantas y tareas realizadas.<br><br>
         <strong>Escenario 2: Perfil sin datos.</strong><br>
-        <strong>Dado que</strong> el usuario es nuevo, <strong>cuando</strong> ingresa al perfil, <strong>entonces</strong> el sistema muestra: "Aún no has registrado plantas ni actividades".
+        <strong>Dado que</strong> el usuario es nuevo, <strong>cuando</strong> ingresa al perfil, <strong>entonces</strong> el sistema muestra: "Aún no has registrado plantas ni actividades".<br><br>
+        <strong>Escenario 3: Perfil desde mobile.</strong><br>
+        <strong>Dado que</strong> el usuario se encuentra en la vista de perfil de la aplicación móvil, <strong>cuando</strong> accede a la sección, <strong>entonces</strong> el sistema muestra el nombre, el correo registrado, el plan de suscripción actual (Basic, Premium o Pro), un toggle para activar o desactivar notificaciones y un botón para cerrar sesión.
       </td>
       <td>EP02</td>
     </tr>
@@ -2004,7 +2013,9 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
         <strong>Escenario 1: Tarea creada.</strong><br>
         <strong>Dado que</strong> el usuario eligió la tarea, hora y frecuencia, <strong>cuando</strong> guarda la tarea, <strong>entonces</strong> el sistema confirma: "Tarea creada correctamente".<br><br>
         <strong>Escenario 2: Notificación enviada.</strong><br>
-        <strong>Dado que</strong> el usuario tiene una tarea activa, <strong>cuando</strong> llega la hora de la tarea, <strong>entonces</strong> el sistema muestra una notificación de recordatorio.
+        <strong>Dado que</strong> el usuario tiene una tarea activa, <strong>cuando</strong> llega la hora de la tarea, <strong>entonces</strong> el sistema muestra una notificación de recordatorio.<br><br>
+        <strong>Escenario 3: Creación de tarea desde mobile.</strong><br>
+        <strong>Dado que</strong> el usuario se encuentra en la vista de nueva tarea de la aplicación móvil, <strong>cuando</strong> ingresa el nombre de la tarea, selecciona una planta de su listado, escoge una fecha y agrega notas opcionales, <strong>entonces</strong> el sistema crea la tarea y la muestra en la vista de tareas programadas.
       </td>
       <td>EP05</td>
     </tr>
@@ -2105,6 +2116,134 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
         <strong>Dado que</strong> el fotorresistor está activo, <strong>cuando</strong> ocurren cambios significativos en la iluminación, <strong>entonces</strong> el sistema mapea el valor de 0 a 100% y lo muestra en el dashboard.
       </td>
       <td>EP04</td>
+    </tr>
+    <tr>
+      <td>US40</td>
+      <td>Monitoreo climático local desde mobile</td>
+      <td>
+        <strong>Como</strong> usuario mobile, <strong>quiero</strong> ver la temperatura y humedad de mi zona geográfica detectada por el teléfono, <strong>para</strong> cuidar mejor mis plantas.
+      </td>
+      <td>
+        <strong>Escenario 1: Clima disponible.</strong><br>
+        <strong>Dado que</strong> el usuario ha autorizado el permiso de ubicación, <strong>cuando</strong> abre la vista plantas en la aplicación móvil, <strong>entonces</strong> el sistema muestra la temperatura ambiental y humedad de su zona geográfica actual.<br><br>
+        <strong>Escenario 2: Permiso de ubicación no concedido.</strong><br>
+        <strong>Dado que</strong> el usuario no ha concedido el permiso de ubicación, <strong>cuando</strong> abre la vista plantas, <strong>entonces</strong> el sistema muestra un mensaje indicando que no se puede obtener el clima local.
+      </td>
+      <td>EP06</td>
+    </tr>
+    <tr>
+      <td>US41</td>
+      <td>Configurar nivel de humedad en registro de planta</td>
+      <td>
+        <strong>Como</strong> usuario, <strong>quiero</strong> seleccionar nivel de humedad (alta/riego cada 2 días, media/riego cada 4 días, baja/riego cada 7 días) al registrar una planta desde mobile, <strong>para</strong> que el sistema calcule automáticamente la frecuencia de riego.
+      </td>
+      <td>
+        <strong>Escenario 1: Selección exitosa de nivel.</strong><br>
+        <strong>Dado que</strong> el usuario está registrando una nueva planta en la aplicación móvil, <strong>cuando</strong> selecciona un nivel de humedad (alta, media o baja), <strong>entonces</strong> el sistema asigna automáticamente la frecuencia de riego correspondiente y la guarda junto con los datos de la planta.
+      </td>
+      <td>EP03</td>
+    </tr>
+    <tr>
+      <td>US42</td>
+      <td>Configurar umbrales de alerta IoT al registrar planta</td>
+      <td>
+        <strong>Como</strong> usuario, <strong>quiero</strong> definir umbrales de temperatura, humedad y luz mínima al registrar mi planta, <strong>para</strong> recibir alertas personalizadas según las necesidades de mi especie.
+      </td>
+      <td>
+        <strong>Escenario 1: Umbrales configurados.</strong><br>
+        <strong>Dado que</strong> el usuario se encuentra en el registro de planta, <strong>cuando</strong> completa los campos de umbral de temperatura mínima, temperatura máxima, humedad mínima, humedad máxima y luz mínima, <strong>entonces</strong> el sistema guarda los umbrales y los asocia al perfil de la planta.
+      </td>
+      <td>EP04</td>
+    </tr>
+    <tr>
+      <td>US43</td>
+      <td>Vincular dispositivo IoT desde perfil de planta</td>
+      <td>
+        <strong>Como</strong> usuario, <strong>quiero</strong> acceder a la vista de vinculación IoT desde el detalle de mi planta, <strong>para</strong> conectar el hardware a la planta registrada.
+      </td>
+      <td>
+        <strong>Escenario 1: Redirección a vinculación.</strong><br>
+        <strong>Dado que</strong> el usuario ha abierto el card de una planta en la aplicación móvil, <strong>cuando</strong> presiona el botón de vincular dispositivo IoT, <strong>entonces</strong> el sistema redirige a la vista de emparejamiento IoT para asociar el hardware.
+      </td>
+      <td>EP04</td>
+    </tr>
+    <tr>
+      <td>US44</td>
+      <td>Marcar tarea como completada</td>
+      <td>
+        <strong>Como</strong> usuario, <strong>quiero</strong> marcar una tarea como completada, <strong>para</strong> llevar un registro de las actividades realizadas.
+      </td>
+      <td>
+        <strong>Escenario 1: Tarea marcada como completada.</strong><br>
+        <strong>Dado que</strong> el usuario tiene una tarea pendiente en la vista de tareas, <strong>cuando</strong> presiona el botón de completar, <strong>entonces</strong> el sistema actualiza el estado de la tarea a "completada" y la muestra visualmente como realizada.<br><br>
+        <strong>Escenario 2: Tarea ya completada.</strong><br>
+        <strong>Dado que</strong> la tarea ya fue marcada como completada previamente, <strong>cuando</strong> el usuario intenta marcarla nuevamente, <strong>entonces</strong> el botón de completar ya no está disponible.
+      </td>
+      <td>EP05</td>
+    </tr>
+    <tr>
+      <td>US45</td>
+      <td>Eliminar tarea programada</td>
+      <td>
+        <strong>Como</strong> usuario, <strong>quiero</strong> borrar una tarea programada, <strong>para</strong> eliminar las que ya no necesito.
+      </td>
+      <td>
+        <strong>Escenario 1: Eliminación confirmada.</strong><br>
+        <strong>Dado que</strong> el usuario solicitó eliminar una tarea, <strong>cuando</strong> confirma la acción en el modal de confirmación, <strong>entonces</strong> el sistema elimina la tarea y la remueve de la lista.<br><br>
+        <strong>Escenario 2: Cancelación de eliminación.</strong><br>
+        <strong>Dado que</strong> el usuario es consultado sobre la eliminación, <strong>cuando</strong> cancela la acción, <strong>entonces</strong> el sistema no realiza cambios en la lista de tareas.
+      </td>
+      <td>EP05</td>
+    </tr>
+    <tr>
+      <td>US46</td>
+      <td>Visualizar datos de cuenta en perfil mobile</td>
+      <td>
+        <strong>Como</strong> usuario mobile, <strong>quiero</strong> ver mi nombre, correo y plan de suscripción en el perfil, <strong>para</strong> conocer el estado de mi cuenta.
+      </td>
+      <td>
+        <strong>Escenario 1: Datos visibles en perfil.</strong><br>
+        <strong>Dado que</strong> el usuario ha iniciado sesión en la aplicación móvil, <strong>cuando</strong> accede a la vista de perfil, <strong>entonces</strong> el sistema muestra su nombre, correo electrónico registrado y plan de suscripción actual.
+      </td>
+      <td>EP02</td>
+    </tr>
+    <tr>
+      <td>US47</td>
+      <td>Cambiar plan de suscripción desde mobile</td>
+      <td>
+        <strong>Como</strong> usuario, <strong>quiero</strong> alternar entre Basic, Premium y Pro desde el perfil, <strong>para</strong> ajustar mi plan según mis necesidades.
+      </td>
+      <td>
+        <strong>Escenario 1: Cambio de plan exitoso.</strong><br>
+        <strong>Dado que</strong> el usuario se encuentra en la vista de perfil de la aplicación móvil, <strong>cuando</strong> selecciona un nuevo plan de suscripción (Basic, Premium o Pro), <strong>entonces</strong> el sistema actualiza el plan y muestra la confirmación del cambio.
+      </td>
+      <td>EP02</td>
+    </tr>
+    <tr>
+      <td>US48</td>
+      <td>Gestionar notificaciones push en mobile</td>
+      <td>
+        <strong>Como</strong> usuario, <strong>quiero</strong> activar o desactivar las notificaciones de la app móvil, <strong>para</strong> controlar las alertas que recibo.
+      </td>
+      <td>
+        <strong>Escenario 1: Notificaciones activadas.</strong><br>
+        <strong>Dado que</strong> el usuario accede al perfil, <strong>cuando</strong> activa el toggle de notificaciones, <strong>entonces</strong> el sistema habilita las notificaciones push para la aplicación móvil.<br><br>
+        <strong>Escenario 2: Notificaciones desactivadas.</strong><br>
+        <strong>Dado que</strong> el usuario accede al perfil, <strong>cuando</strong> desactiva el toggle de notificaciones, <strong>entonces</strong> el sistema deshabilita las notificaciones push para la aplicación móvil.
+      </td>
+      <td>EP02</td>
+    </tr>
+    <tr>
+      <td>US49</td>
+      <td>Cerrar sesión desde mobile</td>
+      <td>
+        <strong>Como</strong> usuario, <strong>quiero</strong> un botón para cerrar sesión desde el perfil, <strong>para</strong> salir de mi cuenta de forma segura.
+      </td>
+      <td>
+        <strong>Escenario 1: Cierre de sesión exitoso.</strong><br>
+        <strong>Dado que</strong> el usuario se encuentra en la vista de perfil de la aplicación móvil, <strong>cuando</strong> presiona el botón "Cerrar sesión", <strong>entonces</strong> el sistema cierra la sesión y redirige a la pantalla de inicio de sesión.
+      </td>
+      <td>EP02</td>
     </tr>
   </tbody>
 </table>
@@ -2319,7 +2458,7 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
     </tr>
     <tr>
       <td>25</td>
-      <td>US38</td>
+      <td>US34</td>
       <td>Visualización y Control Físico (LCD y Botones)</td>
       <td>Como usuario frente al dispositivo, quiero usar botones físicos y pantallas LCD, para alternar los modos de los actuadores y ver las métricas sin necesidad de abrir la aplicación móvil.</td>
       <td>5</td>
@@ -2333,7 +2472,7 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
     </tr>
     <tr>
       <td>27</td>
-      <td>US37</td>
+      <td>US05</td>
       <td>Sistema de Alarma por Extremos (Buzzer)</td>
       <td>Como usuario, quiero que el dispositivo emita una alerta sonora (Buzzer), para reaccionar a tiempo si la temperatura sale del rango (10°C - 35°C) o la humedad supera el 50%.</td>
       <td>5</td>
@@ -2400,6 +2539,76 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
       <td>Monitoreo de Luminosidad (Sensor LDR)</td>
       <td>Como usuario, quiero visualizar el porcentaje de luz que recibe mi planta en tiempo real, para garantizar que mantenga su color y salud óptima.</td>
       <td>8</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>US40</td>
+      <td>Monitoreo climático local desde mobile</td>
+      <td>Como usuario mobile, quiero ver la temperatura y humedad de mi zona geográfica detectada por el teléfono, para cuidar mejor mis plantas.</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>US41</td>
+      <td>Configurar nivel de humedad en registro de planta</td>
+      <td>Como usuario, quiero seleccionar nivel de humedad (alta/riego cada 2 días, media/riego cada 4 días, baja/riego cada 7 días) al registrar una planta, para que el sistema calcule automáticamente la frecuencia de riego.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>US42</td>
+      <td>Configurar umbrales de alerta IoT al registrar planta</td>
+      <td>Como usuario, quiero definir umbrales de temperatura, humedad y luz mínima al registrar mi planta, para recibir alertas personalizadas según las necesidades de mi especie.</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>US43</td>
+      <td>Vincular dispositivo IoT desde perfil de planta</td>
+      <td>Como usuario, quiero acceder a la vista de vinculación IoT desde el detalle de mi planta, para conectar el hardware a la planta registrada.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>US44</td>
+      <td>Marcar tarea como completada</td>
+      <td>Como usuario, quiero marcar una tarea como completada, para llevar un registro de las actividades realizadas.</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>US45</td>
+      <td>Eliminar tarea programada</td>
+      <td>Como usuario, quiero borrar una tarea programada, para eliminar las que ya no necesito.</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>US46</td>
+      <td>Visualizar datos de cuenta en perfil mobile</td>
+      <td>Como usuario mobile, quiero ver mi nombre, correo y plan de suscripción en el perfil, para conocer el estado de mi cuenta.</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td>US47</td>
+      <td>Cambiar plan de suscripción desde mobile</td>
+      <td>Como usuario, quiero alternar entre Basic, Premium y Pro desde el perfil, para ajustar mi plan según mis necesidades.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>US48</td>
+      <td>Gestionar notificaciones push en mobile</td>
+      <td>Como usuario, quiero activar o desactivar las notificaciones de la app móvil, para controlar las alertas que recibo.</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td>US49</td>
+      <td>Cerrar sesión desde mobile</td>
+      <td>Como usuario, quiero un botón para cerrar sesión desde el perfil, para salir de mi cuenta de forma segura.</td>
+      <td>1</td>
     </tr>
   </tbody>
 </table>
@@ -7544,11 +7753,11 @@ Landing Page Insights:
     </tr>
     <tr>
       <td><b>Sprint 3 Velocity</b></td>
-      <td> </td>
+      <td>50 horas</td>
     </tr>
     <tr>
       <td><b>Sum of Story Points</b></td>
-      <td> 
+      <td>40 Story Points 
       </td>
     </tr>
   </tbody>
@@ -7568,7 +7777,7 @@ Landing Page Insights:
 
 #### 6.2.3.3. Sprint Backlog 3
 
-<h3>Sprint Backlog – Sprint 2</h3>
+<h3>Sprint Backlog – Sprint 3</h3>
 <table border="1" cellspacing="0" cellpadding="5">
 <thead>
 <tr>
@@ -7591,25 +7800,134 @@ Landing Page Insights:
 </thead>
 <tbody>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>US30</td>
+<td>Vinculación con datos climáticos locales</td>
+<td>WI035</td>
+<td>Integrar API de clima externa</td>
+<td>Conectar el sistema con una API de clima local para ajustar recomendaciones de riego según datos meteorológicos de la ubicación del usuario.</td>
+<td>8</td>
+<td>Diego Acuña</td>
+<td>To-Review</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>US19</td>
+<td>Cambio de correo electrónico asociado</td>
+<td>WI036</td>
+<td>Formulario de cambio de correo</td>
+<td>Desarrollar la interfaz y lógica para que el usuario pueda cambiar el correo electrónico asociado a su cuenta.</td>
+<td>4</td>
+<td>Elvia Rodríguez</td>
+<td>In-Process</td>
 </tr>
+<tr>
+<td>US32</td>
+<td>Control Manual de Riego</td>
+<td>WI037</td>
+<td>Implementar control de bomba de agua</td>
+<td>Desarrollar la funcionalidad para que el usuario active la bomba de agua desde la app y el dispositivo IoT ejecute el riego.</td>
+<td>6</td>
+<td>Diego Acuña</td>
+<td>In-Process</td>
+</tr>
+<tr>
+<td>US40</td>
+<td>Monitoreo climático local desde mobile</td>
+<td>WI038</td>
+<td>Integrar API de clima en mobile</td>
+<td>Consumir la API de geolocalización y clima desde la app móvil para mostrar temperatura y humedad de la zona en la vista plantas.</td>
+<td>5</td>
+<td>Diego Acuña</td>
+<td>To-do</td>
+</tr>
+<tr>
+<td>US41</td>
+<td>Configurar nivel de humedad en registro de planta</td>
+<td>WI039</td>
+<td>Campo de nivel de humedad en registro mobile</td>
+<td>Agregar el selector de nivel de humedad (alta/media/baja) con frecuencia de riego automática en el formulario de registro de planta en mobile.</td>
+<td>3</td>
+<td>Max Paitan</td>
+<td>To-do</td>
+</tr>
+<tr>
+<td>US42</td>
+<td>Configurar umbrales de alerta IoT al registrar planta</td>
+<td>WI040</td>
+<td>Campos de umbrales IoT en registro</td>
+<td>Agregar los campos de umbrales de temperatura, humedad y luz mínima en el formulario de registro de planta.</td>
+<td>4</td>
+<td>Carlos Coca</td>
+<td>To-do</td>
+</tr>
+<tr>
+<td>US43</td>
+<td>Vincular dispositivo IoT desde perfil de planta</td>
+<td>WI041</td>
+<td>Botón de vinculación IoT en detalle de planta</td>
+<td>Agregar un botón en el card abierto de la planta que redirija al flujo de emparejamiento del dispositivo IoT.</td>
+<td>3</td>
+<td>Carlos Coca</td>
+<td>To-do</td>
+</tr>
+<tr>
+<td>US44</td>
+<td>Marcar tarea como completada</td>
+<td>WI042</td>
+<td>Botón de completar tarea</td>
+<td>Implementar la funcionalidad para que el usuario pueda marcar una tarea como completada desde la vista de tareas en mobile.</td>
+<td>3</td>
+<td>Farid Briceño</td>
+<td>To-do</td>
+</tr>
+<tr>
+<td>US45</td>
+<td>Eliminar tarea programada</td>
+<td>WI043</td>
+<td>Botón de eliminar tarea</td>
+<td>Implementar la opción de eliminar tarea con modal de confirmación en la vista de tareas de la app móvil.</td>
+<td>2</td>
+<td>Erick Palomino</td>
+<td>To-do</td>
+</tr>
+<tr>
+<td>US46</td>
+<td>Visualizar datos de cuenta en perfil mobile</td>
+<td>WI044</td>
+<td>Vista de datos de cuenta en perfil</td>
+<td>Mostrar nombre, correo y plan de suscripción en la vista de perfil de la aplicación móvil.</td>
+<td>3</td>
+<td>Renzo Rivera</td>
+<td>To-do</td>
+</tr>
+<tr>
+<td>US47</td>
+<td>Cambiar plan de suscripción desde mobile</td>
+<td>WI045</td>
+<td>Selector de plan en perfil</td>
+<td>Implementar un selector de planes (Basic, Premium, Pro) en la vista de perfil de la app móvil.</td>
+<td>4</td>
+<td>Renzo Rivera</td>
+<td>To-do</td>
+</tr>
+<tr>
+<td>US48</td>
+<td>Gestionar notificaciones push en mobile</td>
+<td>WI046</td>
+<td>Toggle de notificaciones en perfil</td>
+<td>Agregar un toggle para activar o desactivar las notificaciones push desde la vista de perfil de la app móvil.</td>
+<td>3</td>
+<td>Elvia Rodríguez</td>
+<td>To-do</td>
+</tr>
+<tr>
+<td>US49</td>
+<td>Cerrar sesión desde mobile</td>
+<td>WI047</td>
+<td>Botón de cerrar sesión</td>
+<td>Agregar un botón de cerrar sesión en la vista de perfil que redirija al login de la app móvil.</td>
+<td>2</td>
+<td>Erick Palomino</td>
+<td>To-do</td>
 </tr>
 </tbody>
 </table>
@@ -7673,33 +7991,84 @@ En el Sprint 3 se alcanzó la finalización de la plataforma PlantSync, destacan
 <br>
 
 <ul>
-  <li>[USXX Título de User Story implementada]</li>
-  <li>[USXX Título de User Story implementada]</li>
-  <li>[USXX Título de User Story implementada]</li>
+  <li>US13 Inicio de sesión de usuario</li>
+  <li>US14 Registrarse en la app</li>
+  <li>US06 Registro de nueva planta con nivel de humedad, umbrales IoT y foto</li>
 </ul>
 
 <br>
 <p align="center">
-  <img src="images/chapter6-sprint3/screenshot1.png" alt="execution screenshot 1" width="350">
-</p>
-<br>
-<p align="center">
-  <img src="images/chapter6-sprint3/screenshot2.png" alt="execution screenshot 2" width="350">
-</p>
-<br>
-<p align="center">
-  <img src="images/chapter6-sprint3/screenshot3.png" alt="execution screenshot 3" width="350">
+  <img src="images/appmobile/iniciar-sesion.jpg" alt="Inicio de sesión - App Mobile" width="250">
+  <img src="images/appmobile/crear-cuenta.jpg" alt="Crear cuenta - App Mobile" width="250">
+  <img src="images/appmobile/registrar-nueva-planta.jpg" alt="Registrar nueva planta - App Mobile" width="250">
 </p>
 <br>
 
 <ul>
-  <li>[USXX Título de User Story implementada]</li>
-  <li>[USXX Título de User Story implementada]</li>
+  <li>US29 Acceder a perfil de planta</li>
+  <li>US16 Edición de datos de planta</li>
+  <li>US12 Eliminación de planta</li>
 </ul>
 
 <br>
 <p align="center">
-  <img src="images/chapter6-sprint3/screenshot4.png" alt="execution screenshot 4" width="350">
+  <img src="images/appmobile/vista-plantas.jpg" alt="Vista plantas - App Mobile" width="250">
+  <img src="images/appmobile/ver-detalle-planta.jpg" alt="Detalle de planta - App Mobile" width="250">
+  <img src="images/appmobile/editar-perfil.jpg" alt="Editar perfil - App Mobile" width="250">
+</p>
+<br>
+
+<ul>
+  <li>US40 Monitoreo climático local desde mobile</li>
+  <li>US43 Vincular dispositivo IoT desde perfil de planta</li>
+  <li>US07 Visualización del historial de cuidados</li>
+</ul>
+
+<br>
+<p align="center">
+  <img src="images/appmobile/vista-plantas.jpg" alt="Monitoreo climático - App Mobile" width="250">
+  <img src="images/appmobile/vincular-iot.jpg" alt="Vincular IoT - App Mobile" width="250">
+  <img src="images/appmobile/historial-de-tareas.jpg" alt="Historial de tareas - App Mobile" width="250">
+</p>
+<br>
+
+<ul>
+  <li>US27 Visualización de tareas de cuidado</li>
+  <li>US28 Configuración de tareas</li>
+  <li>US44 Marcar tarea como completada</li>
+  <li>US45 Eliminar tarea programada</li>
+</ul>
+
+<br>
+<p align="center">
+  <img src="images/appmobile/vista-tareas.jpg" alt="Vista tareas - App Mobile" width="250">
+  <img src="images/appmobile/nueva-tarea.jpg" alt="Nueva tarea - App Mobile" width="250">
+</p>
+<br>
+
+<ul>
+  <li>US46 Visualizar datos de cuenta en perfil mobile</li>
+  <li>US47 Cambiar plan de suscripción desde mobile</li>
+  <li>US48 Gestionar notificaciones push en mobile</li>
+  <li>US49 Cerrar sesión desde mobile</li>
+</ul>
+
+<br>
+<p align="center">
+  <img src="images/appmobile/vista-perfil.jpg" alt="Vista perfil - App Mobile" width="250">
+</p>
+<br>
+
+<ul>
+  <li>US05 Sistema de Alarma por Extremos (Buzzer)</li>
+  <li>US33 Control Manual y Automático de Luz UV</li>
+  <li>US34 Visualización y Control Físico (LCD y Botones)</li>
+  <li>US32 Control Manual de Riego</li>
+</ul>
+
+<br>
+<p align="center">
+  <img src="images/wokwi/capturawokwi.jpeg" alt="Prototipo IoT en Wokwi" width="600">
 </p>
 <br>
 
@@ -7707,11 +8076,19 @@ En el Sprint 3 se alcanzó la finalización de la plataforma PlantSync, destacan
 
 <br>
 <p align="center">
-  <img src="images/chapter6-sprint3/documentation1.png" alt="services documentation 1" width="350">
+  <img src="images/swagger/post api-v1-iot-actuator-commands.png" alt="Endpoint POST /api/v1/iot/actuator-commands" width="600">
 </p>
 <br>
 <p align="center">
-  <img src="images/chapter6-sprint3/documentation2.png" alt="services documentation 2" width="350">
+  <img src="images/swagger/patch api-v1-iot-nodes-nodeCode-link_plant.png" alt="Endpoint PATCH /api/v1/iot/nodes/{nodeCode}/link-plant" width="600">
+</p>
+<br>
+<p align="center">
+  <img src="images/swagger/get api-v1-iot-nodes-nodeCode-sync-status.png" alt="Endpoint GET /api/v1/iot/nodes/{nodeCode}/sync/status" width="600">
+</p>
+<br>
+<p align="center">
+  <img src="images/swagger/get api-v1-iot-plant-plantId-readings-latest.png" alt="Endpoint GET /api/v1/iot/plants/{plantId}/readings/latest" width="600">
 </p>
 <br>
 
@@ -7842,7 +8219,7 @@ Durante este Sprint se realizó el despliegue completo de todos los componentes 
 
 **IoT Device (Wokwi):**
 
-- **URL del prototipo:** [URL del proyecto en Wokwi]
+- **URL del prototipo:** https://wokwi.com/projects/468594188996396033
 
 | Componente | URL de Despliegue | Plataforma |
 |---|---|---|
