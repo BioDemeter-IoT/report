@@ -8795,14 +8795,6 @@ El video resume el proyecto del equipo, mostrando a cada integrante explicar las
 
 **Conclusiones**
 
-AV2:
-
-- La integración del asistente virtual (chatbot) representa un avance clave en este ciclo, transformando la plataforma de una herramienta de registro manual a un sistema de apoyo interactivo y directo para resolver las dudas sobre el cuidado botánico.
-
-- Las entrevistas con los usuarios validaron que la aplicación cumple su propósito de manera intuitiva; las personas destacaron especialmente la utilidad de la agenda de cuidados y la lectura directa de los módulos físicos, mientras que reconocieron al asistente conversacional como un excelente soporte adicional para inquietudes específicas.
-
-- El desarrollo de funciones enfocadas en la comodidad y la personalización, como la configuración visual en modo oscuro, la actualización de datos personales y la organización del historial de actividades en una línea de tiempo cronológica, mejoró notablemente la retención y el seguimiento del progreso de las plantas.
-
 TB2:
 
 - Se logró implementar la totalidad de las funcionalidades core de la aplicación móvil, incluyendo la gestión completa de plantas con niveles de humedad (alta/media/baja) y frecuencia de riego automática, configuración de umbrales IoT, historial de tareas, chatbot botánico, y perfil de usuario con selección de plan de suscripción, notificaciones push y cierre de sesión, consolidando a PlantSync como una solución multiplataforma funcional.
@@ -8814,6 +8806,16 @@ TB2:
 - Se identificaron y corrigieron IDs inconsistentes entre la tabla de User Stories y el Product Backlog, y se incorporaron 10 nuevas User Stories para funcionalidades móviles que no estaban previamente cubiertas, alineando completamente la documentación con el producto real desarrollado.
 
 - El backend se desplegó en Azure App Service con API documentada mediante Swagger, el frontend web en Vercel y la aplicación móvil empaquetada como APK, completando el ciclo de entrega integral del producto.
+
+AV2:
+
+- La integración del asistente virtual (chatbot) representa un avance clave en este ciclo, transformando la plataforma de una herramienta de registro manual a un sistema de apoyo interactivo y directo para resolver las dudas sobre el cuidado botánico.
+
+- Las entrevistas con los usuarios validaron que la aplicación cumple su propósito de manera intuitiva; las personas destacaron especialmente la utilidad de la agenda de cuidados y la lectura directa de los módulos físicos, mientras que reconocieron al asistente conversacional como un excelente soporte adicional para inquietudes específicas.
+
+- El desarrollo de funciones enfocadas en la comodidad y la personalización, como la configuración visual en modo oscuro, la actualización de datos personales y la organización del historial de actividades en una línea de tiempo cronológica, mejoró notablemente la retención y el seguimiento del progreso de las plantas.
+
+
 
 TB1:
 
@@ -8841,14 +8843,6 @@ AV1:
 
 **Recomendaciones**
 
-AV2:
-
-- Considerar la integración de medidores adicionales en unas próximas versiones físicas, como sensores de acidez (pH) del suelo, para responder directamente a las sugerencias obtenidas durante las entrevistas con aquellos usuarios que buscan un nivel de control más profundo.
-
-- Establecer un monitoreo constante sobre la velocidad de respuesta del asistente virtual para asegurar que la generación de recomendaciones o consejos de jardinería no cause demoras que afecten la navegación fluida dentro de las interfaces.
-
-- Afinar gradualmente la información que alimenta al asistente virtual, apoyándose en el historial de actividades de cada cuenta. Esto ayudará a que las recomendaciones brindadas sean cada vez más precisas, seguras y adaptadas a las necesidades únicas de cada especie registrada en el sistema.
-
 TB2:
 
 - Migrar el prototipo de Wokwi a hardware físico real con ESP32, sensores y actuadores para validar el comportamiento del sistema en condiciones reales de hogar, asegurando que la lógica de monitoreo y actuación funcione correctamente fuera de la simulación.
@@ -8858,6 +8852,15 @@ TB2:
 - Aprovechar los endpoints de analytics existentes en el backend (global-telemetry, device-status) para construir dashboards de administración que permitan monitorear métricas agregadas del ecosistema IoT en tiempo real.
 
 - Realizar pruebas de carga en el Edge Service simulando múltiples dispositivos IoT enviando telemetría simultáneamente, para garantizar que el backend escala correctamente ante un crecimiento en la base de usuarios.
+
+AV2:
+
+- Considerar la integración de medidores adicionales en unas próximas versiones físicas, como sensores de acidez (pH) del suelo, para responder directamente a las sugerencias obtenidas durante las entrevistas con aquellos usuarios que buscan un nivel de control más profundo.
+
+- Establecer un monitoreo constante sobre la velocidad de respuesta del asistente virtual para asegurar que la generación de recomendaciones o consejos de jardinería no cause demoras que afecten la navegación fluida dentro de las interfaces.
+
+- Afinar gradualmente la información que alimenta al asistente virtual, apoyándose en el historial de actividades de cada cuenta. Esto ayudará a que las recomendaciones brindadas sean cada vez más precisas, seguras y adaptadas a las necesidades únicas de cada especie registrada en el sistema.
+
 
 TB1:
 
