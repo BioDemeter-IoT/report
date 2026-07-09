@@ -8233,41 +8233,28 @@ Durante este Sprint se realizó el despliegue completo de todos los componentes 
 
 Se podrá visualizar los commits y contribuciones hechas por los integrantes durante el Sprint 3.
 
-<p align="center">
-  <img src="images/insights-sprint3/BackEnd Insights.png" alt="BackEnd Insights - Sprint 3" width="700">
-</p>
-<p align="center">
-  <img src="images/insights-sprint3/FrontEnd Insights.png" alt="FrontEnd Insights - Sprint 3" width="700">
-</p>
-<p align="center">
-  <img src="images/insights-sprint3/Mobile Insights.png" alt="Mobile Insights - Sprint 3" width="700">
-</p>
-<p align="center">
-  <img src="images/insights-sprint3/Report Insights.png" alt="Report Insights - Sprint 3" width="700">
-</p>
-
 Report Insights:
 
 <p align="center">
-  <img src="images/chapter6-sprint3/insights-report.png" alt="team collaboration insights" width="350">
+  <img src="images/insights-sprint3/Report Insights.png" alt="Report Insights - Sprint 3" width="700">
 </p>
 
 FrontEnd Insights:
 
 <p align="center">
-  <img src="images/chapter6-sprint3/insights-frontend.png" alt="frontend insights" width="350">
+  <img src="images/insights-sprint3/FrontEnd Insights.png" alt="FrontEnd Insights - Sprint 3" width="700">
 </p>
 
 BackEnd Insights:
 
 <p align="center">
-  <img src="images/chapter6-sprint3/insights-backend.png" alt="backend insights" width="350">
+  <img src="images/insights-sprint3/BackEnd Insights.png" alt="BackEnd Insights - Sprint 3" width="700">
 </p>
 
 Mobile Insights:
 
 <p align="center">
-  <img src="images/chapter6-sprint3/insights-mobile.png" alt="mobile insights" width="350">
+  <img src="images/insights-sprint3/Mobile Insights.png" alt="Mobile Insights - Sprint 3" width="700">
 </p>
 
 
