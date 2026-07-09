@@ -50,7 +50,7 @@
    </table>
 </div>
 <br>
-<h5 style="text-align: center; font-style: italic;"> Abril 2026 </h5>
+<h5 style="text-align: center; font-style: italic;"> Julio 2026 </h5>
 <hr class="page-break">
 
 # Registro de Versiones del Informe
@@ -7405,22 +7405,22 @@ Landing Page Insights:
   <tbody>
     <tr>
       <td><b>Sprint 3</b></td>
-      <td> </td>
+      <td>Integracion del mejoras del Backend, Frontedn y App Mobile para la correcta union con el IoT (tanto simulado como dispositivo fisico)</td>
     </tr>
     <tr>
       <td colspan="2"><b>Sprint Planning Background</b></td>
     </tr>
     <tr>
       <td><b>Date</b></td>
-      <td></td>
+      <td>22/06/2026</td>
     </tr>
     <tr>
       <td><b>Time</b></td>
-      <td></td>
+      <td>18:30 PM</td>
     </tr>
     <tr>
       <td><b>Location</b></td>
-      <td></td>
+      <td>Reunión realizada mediante Discord</td>
     </tr>
     <tr>
       <td><b>Prepared By</b></td>
@@ -7440,19 +7440,19 @@ Landing Page Insights:
     </tr>
     <tr>
       <td><b> Previous Sprint  Review</b></td>
-      <td> 
-      </td>
+      <td>
+      Durante el Sprint 2, el equipo logró una consolidación funcional clave de la plataforma. Se realizó con éxito el despliegue del Frontend en Vercel y del Backend en Azure. Además, se implementó un asistente botánico inteligente basado en IA, la gestión integral de perfiles de usuario, el modo oscuro, y la visualización de la línea de tiempo de tareas e historial de cuidados. También se sentaron las bases lógicas para el ecosistema IoT, logrando vincular los dispositivos a las cuentas y habilitando el monitoreo de telemetría de humedad, temperatura , calidad del aire y luz en el dashboard.</td>
     </tr>
     <tr>
       <td><b>Previous Sprint Retrospective</b></td>
-      <td></td>
+      <td>El equipo destacó el éxito en la integración de servicios en la nube (Vercel y Azure) y la rápida adopción del chatbot con IA sin comprometer el cronograma. Sin embargo, al evaluar las bases del ecosistema IoT establecidas, se identificó que el mayor desafío próximo sería la sincronización bidireccional de datos con hardware real. Como acción de mejora, se acordó alinear estrechamente a los desarrolladores de frontend, mobile y backend para asegurar que la integración de las lecturas físicas y simuladas fluya sin cuellos de botella en la comunicación técnica.</td>
     </tr>
     <tr>
       <td colspan="2"><b>Sprint Goal & User Stories</b></td>
     </tr>
     <tr>
       <td><b>Sprint 3 Goal</b></td>
-      <td></td>
+      <td>The main objective of Sprint 3 is to materialize and refine the integration of the IoT system with the entire PlantSync ecosystem. We will focus on building and connecting both the physical device and its simulation (via Wokwi) by developing a dedicated Edge Service for direct hardware management. This will be supported by synchronized, cross-cutting improvements across the Backend, Web Frontend, and Mobile App, guaranteeing smooth, stable, and real-time communication between the plant sensors and the user interfaces.</td>
     </tr>
     <tr>
       <td><b>Sprint 3 Velocity</b></td>
@@ -7468,15 +7468,15 @@ Landing Page Insights:
 
 #### 6.2.3.2. Aspect Leaders and Collaborators
 
-| Team Member | GitHub Username |     |      |        |       |    |
-|-------------|-----------------|--------|------|------|------|------|
-|      Palomino Fiestas, Erick Leonardo   |   erickLeo13         |    L    |   C   |    C    |   C   |  C   |   
-|      Diego Rolin Acuña Tomas            |   ComidaRapida007    |    C    |   C   |    L    |   C   |  C   |
-|      Farid Sebastian Briceño De La Cruz |   InjustShin         |    C    |   C   |    C    |   L   |  C   |
-|      Rivera Ratachi, Renzo Sebastian    |   1sopod             |    L    |   C   |    C    |   C   |  C   |
-|      Carlos Andres Coca Lavado          |   MrAndres08DV       |    C    |   L   |    C    |   C   |  L   |
-|      Max Anthony Paitan Pumacahua       |   maxpp2910          |    C    |   C   |    L    |   C   |  C   |
-|      Elvia Marcela Rodriguez Villa      |   ElviaRV            |    C    |   L   |    C    |   C   |  C   |
+| Team Member | GitHub Username | IoT Simulado (Wokwi) | IoT Físico | Edge Service | Backend | App Mobile | Frontend Web | Landing Page |
+|-------------|-----------------|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Palomino Fiestas, Erick Leonardo | erickLeo13 | L | C | C | C | C | C | C |
+| Diego Rolin Acuña Tomas | ComidaRapida007 | C | L | C | C | C | C | C |
+| Farid Sebastian Briceño De La Cruz | InjustShin | C | C | L | C | C | C | C |
+| Rivera Ratachi, Renzo Sebastian | 1sopod | C | C | C | L | C | C | C |
+| Carlos Andres Coca Lavado | MrAndres08DV | C | C | C | C | C | C | L |
+| Max Anthony Paitan Pumacahua | maxpp2910 | C | C | C | C | L | C | C |
+| Elvia Marcela Rodriguez Villa | ElviaRV | C | C | C | C | C | L | C |
 
 #### 6.2.3.3. Sprint Backlog 3
 
