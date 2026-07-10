@@ -9113,11 +9113,13 @@ Revista Economía. (2020). Incremento del interés de los peruanos por el cuidad
 
 # Anexos
 
-- Link Video AV1: `https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQBkDt1uzmT5Ro1mWs3A0bWMASojRLdRjF21GPgz28Es7Yc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=gySJdu`
+- Link Video AV1: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQBkDt1uzmT5Ro1mWs3A0bWMASojRLdRjF21GPgz28Es7Yc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=gySJdu
 
-- Link Video AV2: `https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQBh-OfArGB-Q65yD_TYDuZHAUEW2tCd-wfSluKZlqsPEOQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=1t1diG`
+- Link Video AV2: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQBh-OfArGB-Q65yD_TYDuZHAUEW2tCd-wfSluKZlqsPEOQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=1t1diG
 
-- Link Video TB2: `https://upcedupe-my.sharepoint.com/personal/u20231a500_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20231a500%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202610%2D1asi0572%2D17756%2DBioDemeter%2Dexpo%2Dtb2%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ee0796bd4%2D5a6f%2D4b46%2D88e8%2D64d2fe07a02e`
+- Link Video TB2: https://upcedupe-my.sharepoint.com/personal/u20231a500_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20231a500%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202610%2D1asi0572%2D17756%2DBioDemeter%2Dexpo%2Dtb2%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ee0796bd4%2D5a6f%2D4b46%2D88e8%2D64d2fe07a02e
+
+- Video demostrativo del dispositivo iot: https://upcedupe-my.sharepoint.com/personal/u20231a500_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20231a500%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202610%2D1asi0572%2D17756%2DBioDemeter%2Dprototype%2Dsprint%2D3%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eb7150e68%2D8287%2D44f9%2D8827%2D3bb1351ed317
 
 ## Links
 - Repositorios:</br>
@@ -9128,12 +9130,11 @@ Revista Economía. (2020). Incremento del interés de los peruanos por el cuidad
   - Link del repositorio App Mobile: https://github.com/BioDemeter-IoT/BioDemeter_PlantSync_Mobile 
   - Link de Wokwi Embebed app (Humedad): https://wokwi.com/projects/467231875296935937
   - Link de Wokwi Embebed app (Temperatura): https://wokwi.com/projects/467378078446248961
+  - Link de Wokwi PlantSync Node: https://wokwi.com/projects/468594188996396033
 </br>
 - Plataformas desplegadas:</br>
   - Link del Backend Swagger: https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/swagger-ui/index.html#/
   - Link del Frontend: https://frontend-main-orpin-seven.vercel.app/tasks
   - Link del landing page: https://biodemeter-iot.github.io/LandingPageV2/
 </br>
-- Otros enlaces:</br>
-  - Video demostrativo del dispositivo iot: https://upcedupe-my.sharepoint.com/personal/u20231a500_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20231a500%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202610%2D1asi0572%2D17756%2DBioDemeter%2Dprototype%2Dsprint%2D3%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eb7150e68%2D8287%2D44f9%2D8827%2D3bb1351ed317
-  - Video de exposición: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQD1CbBoh9a_QIvWO1rNGjbPAZ77nQ1d5AHM7dxrQBGyq0A?e=flF0bd&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+ 
