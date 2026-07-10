@@ -371,8 +371,12 @@ El repositorio del informe se encuentra en GitHub en el siguiente link: https://
   - [6.3. Validation Interviews](#63-validation-interviews)
     - [6.3.1. Diseño de Entrevistas](#631-diseño-de-entrevistas)
     - [6.3.2. Registro de Entrevistas](#632-registro-de-entrevistas)
-  - [_Expertos cuidadores de plantas_](#expertos-cuidadores-de-plantas-2)
-  - [_Cuidadores de plantas principiantes_](#cuidadores-de-plantas-principiantes)
+  - [_Frontend web_](#frontend-web)
+    - [_Expertos cuidadores de plantas_](#expertos-cuidadores-de-plantas-2)
+    - [_Cuidadores de plantas principiantes_](#cuidadores-de-plantas-principiantes)
+  - [_Aplicación móvil con IoT_](#aplicación-móvil-con-iot)
+    - [_Expertos cuidadores de plantas_](#expertos-cuidadores-de-plantas-3)
+    - [_Cuidadores de plantas principiantes_](#cuidadores-de-plantas-principiantes-1)
     - [6.3.3. Evaluaciones según heurísticas](#633-evaluaciones-según-heurísticas)
       - [UX Heuristics \& Principles Evaluation](#ux-heuristics--principles-evaluation)
       - [SITE o APP A EVALUAR](#site-o-app-a-evaluar)
@@ -8320,7 +8324,9 @@ Preguntas para personas con poca experiencia o iniciantes en el cuidado de plant
 
 ### 6.3.2. Registro de Entrevistas
 
-## _Expertos cuidadores de plantas_
+## _Frontend web_
+
+### _Expertos cuidadores de plantas_
 
 <br>
 
@@ -8402,7 +8408,7 @@ Preguntas para personas con poca experiencia o iniciantes en el cuidado de plant
 
 <br>
 
-## _Cuidadores de plantas principiantes_
+### _Cuidadores de plantas principiantes_
 
 <br>
 
@@ -8523,6 +8529,126 @@ Preguntas para personas con poca experiencia o iniciantes en el cuidado de plant
 </table>
 
 <br>
+
+## _Aplicación móvil con IoT_
+
+### _Expertos cuidadores de plantas_
+
+<br>
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 1</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Dione Ostos</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>57 años</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>Puente Piedra</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>00:00 - 9:16</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211f211_upc_edu_pe/IQDdj2rIV4tjRKQha9Hzly_iAUsO-2S96_A5JO2x6OPwOiA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=2CgjkW" target="_blank">https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211f211_upc_edu_pe/IQDdj2rIV4tjRKQha9Hzly_iAUsO-2S96_A5JO2x6OPwOiA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=2CgjkW</a></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen:<br>
+      La entrevistada menciona tener varios tipos de plantas y resalta que le parece interesante la aplicación. Comenta que ella observa manualmente sus plantas y que no ha usado algún sistemas de automatización antes. Menciona que le parece interesante el poder escoger los parámetros por uno mismo. Le gusta la idea de crear tareas para recordatorios. Le gustaría que dependiendo de la especie se pueda escoger entre el tiempo de riego. Le parecen suficiente las opciones de los actuadores iot. Le gusta la idea de usar botones y ver los LCD para no tener que entrar a la aplicación para controlar el sistema iot. De momento le parece suficiente los sensores implementados en el sistema. Le gustaría seguir probando la aplicación para determinar si recomendaría la aplicación o no.
+    </td>
+  </tr>
+  <tr>
+<td colspan="2">
+<img src="images/entrevistadevalidacion/EntrevistaAppIoTExperto1.png" alt="Entrevista de la aplicación móvil con el primer experto en plantas" width="600">
+    </td>
+  </tr>
+</table>
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 1</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Luz María Jorge</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>54 años</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>Comas</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>00:00 - 10:16</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211f211_upc_edu_pe/IQDKP810I2DSRZOu4QmiPgW8AQp7UCebBjU701pv1nBcoLo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=CxYfG2" target="_blank">https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211f211_upc_edu_pe/IQDKP810I2DSRZOu4QmiPgW8AQp7UCebBjU701pv1nBcoLo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=CxYfG2</a></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen:<br>
+      La entrevista menciona haber crecido en un entorno con muchas plantas, por lo que cree tener experiencia en plantas. Comenta que tiene en su colección plantas ornamentales. Menciona revisar manualmente el estado de sus plantas. Dijo no tener experiencia en usar algún sistema de automatización. Le gusta las opciones de automatización que ofrece la aplicación. Le gusta la idea de la implementación de tareas además que le ayudaría a no olvidar los detalles de algunas plantas, exclamó. Apoya la idea de que las opciones de riego sean automáticas y menciona que le gustaría un recordatorio en las fechas de riego. Le parece suficiente las opciones que tienen los actuadores en la aplicación. Le gusta la visualización de estados mediante el LCD para menor complejidad en lectura, y resalta que también le gustaría visualizar los datos a distancia mediante el celular. La entrevistada estaría contenta si se agregase una funcionalidad para saber qué tipo de abono usar con cada planta que tengas. Finalmente, ella sí recomendaría la aplicación con el objetivo moral de ayudar sanar el ecosistema mediante el crecimiento de la vegetación.
+    </td>
+  </tr>
+  <tr>
+<td colspan="2">
+<img src="images/entrevistadevalidacion/EntrevistaAppIoTExperto2.png" alt="Entrevista de la aplicación móvil con el segundo experto en plantas" width="600">
+    </td>
+  </tr>
+</table>
+
+### _Cuidadores de plantas principiantes_
+<br>
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 1</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td><a href="aa" target="_blank">aa</a></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen:<br>
+      aaa
+    </td>
+  </tr>
+  <tr>
+<td colspan="2">
+<img src="images/entrevistadevalidacion/EntrevistaAppIoTPrincipiante1.png" alt="Entrevista de la aplicación móvil con el primer principiante en plantas" width="600">
+    </td>
+  </tr>
+</table>
+  
 
 ### 6.3.3. Evaluaciones según heurísticas
 
