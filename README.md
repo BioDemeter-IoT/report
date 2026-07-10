@@ -7945,43 +7945,11 @@ Landing Page Insights:
 
 #### 6.2.3.5. Testing Suite Evidence for Sprint Review
 
-Se implementaron tests unitarios y de integración en el Backend para asegurar el correcto funcionamiento del mismo durante el Sprint 3.
+Se implementaron tests unitarios y de integración en la aplicación móvil para asegurar el correcto funcionamiento del mismo durante el Sprint 3.
 
-![Unit Test](/images/chapter6-sprint3/tests.png)
+![Unit Test](/images/appmobile/pruebas-unitarias-app-mobile.png)
 
-<h3>Endpoints implementados</h3>
 
-<table>
-  <thead>
-    <tr>
-      <th>Endpoint</th>
-      <th>Acciones soportadas</th>
-      <th>Parámetros</th>
-      <th>Ejemplo de Request</th>
-      <th>Ejemplo de Response</th>
-      <th>Documentación (URL)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>[Ruta del endpoint]</td>
-      <td>[GET/POST/PUT/DELETE]</td>
-      <td>[parámetros]</td>
-      <td>
-        <code>[Método] [Ruta]</code><br>
-<pre><code>{
-  "campo": "valor"
-}</code></pre>
-      </td>
-      <td>
-<pre><code>{
-  "campo": "valor"
-}</code></pre>
-      </td>
-      <td>[URL de documentación]</td>
-    </tr>
-  </tbody>
-</table>
 
 #### 6.2.3.6. Execution Evidence for Sprint Review
 
