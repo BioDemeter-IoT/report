@@ -7824,6 +7824,16 @@ Landing Page Insights:
 
 #### 6.2.3.3. Sprint Backlog 3
 
+<br>
+<p align="center">
+  <img src="images/trello/Trello-TB2.png" alt="execution" width="600">
+</p>
+<p align="center">
+     Sprint Backlog 3 - Elaboración propia
+</p>
+
+Link al trello: https://trello.com/invite/b/6a4ed73193f00e250c66dd2b/ATTI56f1fa673ce6358e3d6dc99539a880434AA9E54F/sprint-3-biodemeter-iot
+
 <h3>Sprint Backlog – Sprint 3</h3>
 <table border="1" cellspacing="0" cellpadding="5">
 <thead>
@@ -7864,7 +7874,7 @@ Landing Page Insights:
 <td>Desarrollar la interfaz y lógica para que el usuario pueda cambiar el correo electrónico asociado a su cuenta.</td>
 <td>4</td>
 <td>Elvia Rodríguez</td>
-<td>In-Process</td>
+<td>Done</td>
 </tr>
 <tr>
 <td>US32</td>
@@ -7874,7 +7884,7 @@ Landing Page Insights:
 <td>Desarrollar la funcionalidad para que el usuario active la bomba de agua desde la app y el dispositivo IoT ejecute el riego.</td>
 <td>6</td>
 <td>Diego Acuña</td>
-<td>In-Process</td>
+<td>Done</td>
 </tr>
 <tr>
 <td>US40</td>
