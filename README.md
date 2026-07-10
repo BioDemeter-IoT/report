@@ -2107,7 +2107,7 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
     </tr>
     <tr>
       <td>US36</td>
-      <td>Monitoreo de Luminosidad</td>
+      <td>Monitoreo de Luminosidad (Sensor LDR)</td>
       <td>
         <strong>Como</strong> usuario, <strong>quiero</strong> visualizar el porcentaje de luz que recibe mi planta en tiempo real, <strong>para</strong> garantizar que mantenga su color y salud óptima.
       </td>
@@ -2529,8 +2529,8 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
     <tr>
       <td>35</td>
       <td>US35</td>
-      <td>Generación de Guías Rápidas de Cuidado</td>
-      <td>Como usuario, quiero generar guías rápidas y concretas de cuidado utilizando IA, para conocer las necesidades básicas de mi planta (riego, luz, sustrato) al instante y sin leer textos extensos.</td>
+      <td>Consulta a Asistente Botánico IA</td>
+      <td>Como usuario, quiero chatear con el chatbot, para recibir guías personalizadas sobre cómo cuidar mis plantas.</td>
       <td>5</td>
     </tr>
     <tr>
@@ -6098,11 +6098,11 @@ Se siguieron estos pasos para el despliegue de la Landing Page en GitHub Pages:
     </tr>
     <tr>
       <td><b>Sprint 1 Velocity</b></td>
-      <td> 68 Points</td>
+      <td> 68 Hours</td>
     </tr>
     <tr>
       <td><b>Sum of Story Points</b></td>
-      <td> 68 Points
+      <td> 39 Story Points
       </td>
     </tr>
   </tbody>
@@ -6967,11 +6967,11 @@ Landing Page Insights:
     </tr>
     <tr>
       <td><b>Sprint 2 Velocity</b></td>
-      <td> 48 Points</td>
+      <td> 82 Hours</td>
     </tr>
     <tr>
       <td><b>Sum of Story Points</b></td>
-      <td> 48 Points
+      <td> 72 Story Points
       </td>
     </tr>
   </tbody>
@@ -8262,6 +8262,8 @@ Mobile Insights:
 
 ### 6.3.1. Diseño de Entrevistas
 
+**Preguntas para entrevistas del frontend web**
+
 Preguntas para personas con experiencia en el cuidado de plantas en el hogar:
 
 1.	¿Qué funcionalidades del dashboard (tanto en la versión web como en la móvil) consideras más valiosas para el monitoreo de tus plantas?
@@ -8288,6 +8290,39 @@ Preguntas para personas con poca experiencia o iniciantes en el cuidado de plant
 8.	¿Crees que el diseño del dashboard (en móvil y web) te permitió encontrar el estado de tus plantas rápidamente?
 9.	¿ ¿Qué herramientas adicionales o automatizaciones basadas en los sensores IoT crees que te  aportarían mayor valor
 10.	 ¿Qué cambiarías o mejorarías en la forma de mostrar los datos del sensor o en la navegación general de la app para que sea aún más fácil de usar por alguien que recién empieza?
+
+**Preguntas para entrevistas de la aplicación móvil con el iot**
+
+Preguntas para personas con experiencia en el cuidado de plantas en el hogar:
+
+1. ¿Cuántas plantas tienes actualmente y de qué especies?
+2. ¿Cómo monitoreas actualmente sus condiciones ambientales?
+3. ¿Has usado sensores o sistemas de automatización antes? ¿Cuáles?
+4. ¿Te parece adecuado poder definir umbrales específicos de temperatura, humedad y luz mínima por cada planta, en lugar de usar valores genéricos?
+5. ¿La opción de registrar manualmente cuidados como poda o fertilización y tener un historial cronológico te sería útil para análisis a largo plazo?
+6. ¿Consideras valioso poder ver el nivel de humedad configurado (alto, medio o bajo) con la frecuencia de riego calculada automáticamente, o preferirías definir los días exactos tú mismo?
+7. ¿Qué opinas de poder visualizar en tiempo real temperatura, humedad, calidad del aire y luminosidad desde el celular?
+8. ¿El control de actuadores con modo automático (según umbrales por planta) y manual te da la flexibilidad que buscas? ¿Agregarías algún modo adicional?
+9. ¿Te parece útil que el dispositivo tenga una pantalla LCD física para leer métricas sin abrir la app, y botones para cambiar modos localmente?
+10. ¿Qué funcionalidad añadirías para llevar el monitoreo a un nivel más profesional?
+11. ¿Recomendarías PlantSync a otros aficionados avanzados? ¿Por qué?
+
+Preguntas para personas con poca experiencia o iniciantes en el cuidado de plantas en el hogar:
+
+1. ¿Hace cuánto empezaste a interesarte por las plantas?
+2. ¿Has perdido alguna planta por falta de cuidados? ¿Qué crees que falló?
+3. ¿Usas recordatorios o aplicaciones actualmente para cuidar tus plantas?
+4. ¿Te parece útil que al registrar una planta solo tengas que elegir entre "riego alto, medio o bajo" y el sistema te diga cada cuántos días regarla?
+5. ¿Crees que tener una lista de tareas con fechas te ayudaría a no olvidar los cuidados?
+6. Si tuvieras una duda sobre tu planta, ¿preferirías preguntarle a un chatbot o buscar en internet?
+7. ¿Te gustaría ver en tu celular, sin moverte de donde estás, la temperatura y humedad que tiene tu planta en tiempo real?
+8. ¿Prefieres que el riego y la luz UV se activen solos según lo que necesite tu planta, o te gusta tener el control manual?
+9. ¿Una alerta sonora en el dispositivo cuando algo anda mal te daría más tranquilidad?
+10. ¿Qué fue lo que más te gustó de la aplicación?
+11. ¿Hay algo que te pareció complicado o confuso?
+12. ¿La recomendarías a alguien que está empezando como tú?
+
+
 
 ### 6.3.2. Registro de Entrevistas
 
@@ -8797,15 +8832,16 @@ El video resume el proyecto del equipo, mostrando a cada integrante explicar las
 
 TB2:
 
-- Se logró implementar la totalidad de las funcionalidades core de la aplicación móvil, incluyendo la gestión completa de plantas con niveles de humedad (alta/media/baja) y frecuencia de riego automática, configuración de umbrales IoT, historial de tareas, chatbot botánico, y perfil de usuario con selección de plan de suscripción, notificaciones push y cierre de sesión, consolidando a PlantSync como una solución multiplataforma funcional.
+- La plataforma PlantSync resolvió la problemática de la alta mortalidad botánica al implementar una mediación tecnológica que traduce señales bióticas en tiempo real. La validación del ecosistema IoT mediante simulaciones en Wokwi demostró que la automatización anula la dependencia visual del usuario y mejora efectivamente la supervivencia de las plantas.
 
-- La simulación del dispositivo físico en Wokwi con ESP32, sensores DHT22, LDR y gas, actuadores (servo, relay UV, buzzer) y pantallas LCD demostró la viabilidad del ecosistema IoT, validando la sincronización bidireccional con el backend mediante los endpoints de sincronización y telemetría en tiempo real.
 
-- El desarrollo del Edge Service con un planificador justo y re-autenticación automática JWT garantizó una comunicación estable y robusta entre el dispositivo IoT y el backend, incluso bajo condiciones de red variables.
+- Se comprobó la hipótesis de que el monitoreo proactivo con hardware supera en efectividad a los recordatorios estáticos. Las entrevistas de validación confirmaron que la centralización de telemetría y el uso del asistente virtual RootBot elevan la confianza del usuario y garantizan los criterios de éxito de adopción del sistema.
 
-- Se identificaron y corrigieron IDs inconsistentes entre la tabla de User Stories y el Product Backlog, y se incorporaron 10 nuevas User Stories para funcionalidades móviles que no estaban previamente cubiertas, alineando completamente la documentación con el producto real desarrollado.
 
-- El backend se desplegó en Azure App Service con API documentada mediante Swagger, el frontend web en Vercel y la aplicación móvil empaquetada como APK, completando el ciclo de entrega integral del producto.
+- El diseño estructurado mediante el resultó exitoso al entregar un producto equilibrado. La solución logró combinar la simplicidad operativa que requieren los usuarios novatos con la precisión analítica y el registro histórico demandado por el segmento experto.
+
+
+- El desarrollo integral del proyecto consolidó un entorno colaborativo eficaz. Esta dinámica garantizó el cumplimiento técnico de los sprints y fortaleció competencias complejas de ingeniería y habilidades blandas, resultando fundamentales para el crecimiento y la preparación profesional en la industria del software.
 
 AV2:
 
@@ -8845,13 +8881,10 @@ AV1:
 
 TB2:
 
-- Migrar el prototipo de Wokwi a hardware físico real con ESP32, sensores y actuadores para validar el comportamiento del sistema en condiciones reales de hogar, asegurando que la lógica de monitoreo y actuación funcione correctamente fuera de la simulación.
+- Tras haber validado los flujos móviles, el siguiente paso debe centrarse en la publicación oficial de la aplicación móvil en las tiendas de aplicaciones. En paralelo, se sugiere realizar pruebas de estrés en el backend para asegurar que la arquitectura soporte la concurrencia de múltiples nodos IoT.
 
-- Publicar la aplicación móvil en Google Play Store y App Store para ampliar el alcance a los segmentos objetivo identificados, aprovechando que la APK ya se encuentra generada y funcional.
 
-- Aprovechar los endpoints de analytics existentes en el backend (global-telemetry, device-status) para construir dashboards de administración que permitan monitorear métricas agregadas del ecosistema IoT en tiempo real.
-
-- Realizar pruebas de carga en el Edge Service simulando múltiples dispositivos IoT enviando telemetría simultáneamente, para garantizar que el backend escala correctamente ante un crecimiento en la base de usuarios.
+- Para maximizar el valor entregado al segmento de usuarios expertos, se recomienda incorporar nueva instrumentación en futuras versiones del hardware, como sensores de acidez (pH). Asimismo, se sugiere utilizar la base de datos histórica recolectada para entrenar y afinar la precisión analítica de la Inteligencia Artificial.
 
 AV2:
 
