@@ -401,7 +401,6 @@ El repositorio del informe se encuentra en GitHub en el siguiente link: https://
     - [_Cuidadores de plantas principiantes_](#cuidadores-de-plantas-principiantes)
   - [_Aplicación móvil con IoT_](#aplicación-móvil-con-iot)
     - [_Expertos cuidadores de plantas_](#expertos-cuidadores-de-plantas-3)
-    - [_Cuidadores de plantas principiantes_](#cuidadores-de-plantas-principiantes-1)
     - [6.3.3. Evaluaciones según heurísticas](#633-evaluaciones-según-heurísticas)
       - [UX Heuristics \& Principles Evaluation](#ux-heuristics--principles-evaluation)
       - [SITE o APP A EVALUAR](#site-o-app-a-evaluar)
@@ -8683,44 +8682,7 @@ Preguntas para personas con poca experiencia o iniciantes en el cuidado de plant
   </tr>
 </table>
 
-### _Cuidadores de plantas principiantes_
-<br>
-<table align="center">
-  <tr>
-    <th colspan="2" style="text-align:center">Entrevista 1</th>
-  </tr>
-  <tr>
-    <td><strong>Entrevistado</strong></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td><strong>Edad</strong></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td><strong>Distrito</strong></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td><strong>Timing</strong></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td><strong>URL</strong></td>
-    <td><a href="aa" target="_blank">aa</a></td>
-  </tr>
-  <tr>
-    <td colspan="2" style="text-align:justify">
-      Resumen:<br>
-      aaa
-    </td>
-  </tr>
-  <tr>
-<td colspan="2">
-<img src="images/entrevistadevalidacion/EntrevistaAppIoTPrincipiante1.png" alt="Entrevista de la aplicación móvil con el primer principiante en plantas" width="600">
-    </td>
-  </tr>
-</table>
+
   
 
 ### 6.3.3. Evaluaciones según heurísticas
