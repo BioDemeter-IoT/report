@@ -7035,6 +7035,16 @@ Landing Page Insights:
 
 #### 6.2.2.3. Sprint Backlog 2
 
+<br>
+<p align="center">
+  <img src="images/trello/Trello-AV2.png" alt="execution" width="600">
+</p>
+<p align="center">
+     Sprint Backlog 2 - Elaboración propia
+</p>
+
+Link al trello: https://trello.com/invite/b/6a512552ad58290b834b5dae/ATTI40766c7a18a4b6bde76f4fbede27473550607947/sprint-2-biodemeter-iot
+
 <h3>Sprint Backlog – Sprint 2</h3>
 <table border="1" cellspacing="0" cellpadding="5">
 <thead>
