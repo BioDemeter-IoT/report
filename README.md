@@ -8278,8 +8278,8 @@ Durante este Sprint se realizó el despliegue completo de todos los componentes 
 - **API Docs:** https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/swagger-ui/index.html
 
 **Mobile App:**
-- **Plataforma:** [App Store / Google Play / APK]
-- **URL de descarga:** [URL de la aplicación móvil]
+- **Plataforma:** APK en OneDrive
+- **URL de descarga:** https://upcedupe-my.sharepoint.com/shared?listurl=https%3A%2F%2Fupcedupe%2Dmy%2Esharepoint%2Ecom%2Fpersonal%2Fu201314454%5Fupc%5Fedu%5Fpe%2FDocuments&id=%2Fpersonal%2Fu201314454%5Fupc%5Fedu%5Fpe%2FDocuments%2FPlantSync%5FMobile%5Fapk%2Fapp%2Drelease%2Eapk&parent=%2Fpersonal%2Fu201314454%5Fupc%5Fedu%5Fpe%2FDocuments%2FPlantSync%5FMobile%5Fapk&shareLink=1&ga=1
 
 **IoT Device (Wokwi):**
 
@@ -8290,7 +8290,7 @@ Durante este Sprint se realizó el despliegue completo de todos los componentes 
 | Landing Page | https://github.com/BioDemeter-IoT/LandingPageV2 | GitHub Pages |
 | FrontEnd Web | https://frontend-main-orpin-seven.vercel.app | Vercel |
 | BackEnd API | https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/swagger-ui/index.html | Azure |
-| Mobile App | [URL] | [Plataforma] |
+| Mobile App | https://upcedupe-my.sharepoint.com/shared?listurl=https%3A%2F%2Fupcedupe%2Dmy%2Esharepoint%2Ecom%2Fpersonal%2Fu201314454%5Fupc%5Fedu%5Fpe%2FDocuments&id=%2Fpersonal%2Fu201314454%5Fupc%5Fedu%5Fpe%2FDocuments%2FPlantSync%5FMobile%5Fapk%2Fapp%2Drelease%2Eapk&parent=%2Fpersonal%2Fu201314454%5Fupc%5Fedu%5Fpe%2FDocuments%2FPlantSync%5FMobile%5Fapk&shareLink=1&ga=1 | OneDrive |
 | IoT Simulación | https://wokwi.com/projects/468594188996396033 | Wokwi |
 
 #### 6.2.3.9. Team Collaboration Insights during Sprint
@@ -9089,8 +9089,6 @@ Revista Economía. (2020). Incremento del interés de los peruanos por el cuidad
   - Link del repositorio de Backend: https://github.com/BioDemeter-IoT/BioDemeter_PlantSync_Backend 
   - Link del repositorio de landing page: https://github.com/BioDemeter-IoT/LandingPageV2 
   - Link del repositorio App Mobile: https://github.com/BioDemeter-IoT/BioDemeter_PlantSync_Mobile 
-  - Link de Wokwi Embebed app (Humedad): https://wokwi.com/projects/467231875296935937
-  - Link de Wokwi Embebed app (Temperatura): https://wokwi.com/projects/467378078446248961
   - Link de Wokwi PlantSync Node: https://wokwi.com/projects/468594188996396033
 </br>
 
