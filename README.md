@@ -7996,7 +7996,7 @@ En el Sprint 3 se alcanzó la finalización de la plataforma PlantSync, destacan
 <p align="center">
   <img src="images/appmobile/vista-plantas.jpg" alt="Monitoreo climático - App Mobile" width="250">
   <img src="images/appmobile/vincular-iot.jpg" alt="Vincular IoT - App Mobile" width="250">
-  <img src="images/appmobile/iot-conectado.png" alt="Dispositivo IoT conectado - App Mobile" width="250">
+  <img src="images/appmobile/iot-conectado.jpg" alt="Dispositivo IoT conectado - App Mobile" width="250">
   <img src="images/appmobile/historial-de-tareas.jpg" alt="Historial de tareas - App Mobile" width="250">
 </p>
 <br>
@@ -8012,7 +8012,7 @@ En el Sprint 3 se alcanzó la finalización de la plataforma PlantSync, destacan
 
 <br>
 <p align="center">
-  <img src="images/appmobile/ver-datos-iot.png" alt="Sensores en vivo y control de actuadores - App Mobile" width="250">
+  <img src="images/appmobile/ver-datos-iot.jpg" alt="Sensores en vivo y control de actuadores - App Mobile" width="250">
 </p>
 <br>
 
