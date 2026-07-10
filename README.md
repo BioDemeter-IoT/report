@@ -8926,9 +8926,9 @@ Se recomienda priorizar la resolución de estos problemas en el siguiente sprint
 | Description | Details |
 |-------------|---------|
 | **Duración** | 7:58 min |
-| **URL Microsoft** | [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231d974_upc_edu_pe/IQDjhGjSmJS3RLINAxsCFwJAAcMXXgnv7ivM-_vAv0j9BSQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=nVfAd9](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231d974_upc_edu_pe/IQDjhGjSmJS3RLINAxsCFwJAAcMXXgnv7ivM-_vAv0j9BSQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=nVfAd9) |
-| **URL YouTube** | [https://youtu.be/zdDUXgH5VH8](https://youtu.be/zdDUXgH5VH8) |
-| **Imagen** | ![About the Product Screen](/images/entrevistadevalidacion/aboutheproductscreen.png) |
+| **URL Microsoft** | [https://upcedupe-my.sharepoint.com/personal/u20231a500_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20231a500%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202610%2D1asi0572%2D17756%2DBioDemeter%2Dabout%2Dthe%2Dproduct%2Dsprint%2D3%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E5dd101bc%2Deab4%2D45b9%2D97b4%2De6975ae01643](https://upcedupe-my.sharepoint.com/personal/u20231a500_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20231a500%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202610%2D1asi0572%2D17756%2DBioDemeter%2Dabout%2Dthe%2Dproduct%2Dsprint%2D3%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E5dd101bc%2Deab4%2D45b9%2D97b4%2De6975ae01643) |
+| **URL YouTube** | [https://youtu.be/rZj9y4jfeTw](https://youtu.be/rZj9y4jfeTw) |
+| **Imagen** | ![About the Product Screen](/images/entrevistadevalidacion/about-the-product-tb2.png) |
 
 ## 6.5. Video About-the-Team
 
@@ -9042,12 +9042,22 @@ Revista Economía. (2020). Incremento del interés de los peruanos por el cuidad
 
 - Link Video AV2: `https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQBh-OfArGB-Q65yD_TYDuZHAUEW2tCd-wfSluKZlqsPEOQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=1t1diG`
 
-## Links
+- Link Video TB2: `https://upcedupe-my.sharepoint.com/personal/u20231a500_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20231a500%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202610%2D1asi0572%2D17756%2DBioDemeter%2Dexpo%2Dtb2%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ee0796bd4%2D5a6f%2D4b46%2D88e8%2D64d2fe07a02e`
 
-Link del repositorio del reporte: https://github.com/BioDemeter-IoT/report
-Link del repositorio de App Web: https://github.com/BioDemeter-IoT/PlantSync-Frontend 
-Link del repositorio de Backend: https://github.com/BioDemeter-IoT/BioDemeter_PlantSync_Backend 
-Link del repositorio de landing page: https://github.com/BioDemeter-IoT/LandingPageV2 
-Link del repositorio App Mobile: https://github.com/BioDemeter-IoT/BioDemeter_PlantSync_Mobile 
-Link de Wokwi Embebed app (Humedad): https://wokwi.com/projects/467231875296935937
-Link de Wokwi Embebed app (Temperatura): https://wokwi.com/projects/467378078446248961
+## Links
+- Repositorios:</br>
+  - Link del repositorio del reporte: https://github.com/BioDemeter-IoT/report
+  - Link del repositorio de App Web: https://github.com/BioDemeter-IoT/PlantSync-Frontend 
+  - Link del repositorio de Backend: https://github.com/BioDemeter-IoT/BioDemeter_PlantSync_Backend 
+  - Link del repositorio de landing page: https://github.com/BioDemeter-IoT/LandingPageV2 
+  - Link del repositorio App Mobile: https://github.com/BioDemeter-IoT/BioDemeter_PlantSync_Mobile 
+  - Link de Wokwi Embebed app (Humedad): https://wokwi.com/projects/467231875296935937
+  - Link de Wokwi Embebed app (Temperatura): https://wokwi.com/projects/467378078446248961
+</br>
+- Plataformas desplegadas:</br>
+  - Link del Backend Swagger: https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/swagger-ui/index.html#/
+  - Link del Frontend: https://frontend-main-orpin-seven.vercel.app/tasks
+  - Link del landing page: https://biodemeter-iot.github.io/LandingPageV2/
+</br>
+- Otros enlaces:</br>
+  - Video demostrativo del dispositivo iot: https://upcedupe-my.sharepoint.com/personal/u20231a500_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20231a500%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202610%2D1asi0572%2D17756%2DBioDemeter%2Dprototype%2Dsprint%2D3%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eb7150e68%2D8287%2D44f9%2D8827%2D3bb1351ed317
