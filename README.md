@@ -83,6 +83,7 @@
 | 2.3 | 14/06/2026 | Paitan Pumacahua, Max Anthony | Actualización de Aspect Leaders and Collaborators, Entrevistas de validación e Implementación de la aplicación móvil. |
 | 2.4 | 18/06/2026 | Rivera Ratachi, Renzo Sebastian | Documentación del Desarrollo de cambios del backend, Development Evidence for Sprint Review y Testing Suite Evidence for Sprint Review. |
 | 2.5 | 09/07/2026 | Briceño De La Cruz, Farid Sebastian | Corrección de IDs inconsistentes en Product Backlog, refinamiento de User Stories (US06, US11, US15, US25, US28) para especificar plataforma mobile/web, y adición de 10 nuevas User Stories (US40-US49) para funcionalidades móviles: monitoreo climático local, niveles de humedad con frecuencia de riego, umbrales IoT, vinculación IoT, gestión de tareas, gestión de perfil con suscripciones y notificaciones, y cierre de sesión. |
+| 2.6 | 10/07/2026 | Briceño De La Cruz, Farid Sebastian | Corrección de títulos inconsistentes de US35 y US36 entre User Stories y Product Backlog; ajuste de unidades y valores de Velocity y Sum of Story Points en Sprint 1 y Sprint 2; reescritura de conclusiones TB2 con enfoque reflexivo sobre tecnologías y aprendizajes del curso; adición de preguntas de entrevistas para app móvil con IoT, imágenes de validación (iot-conectado, ver-datos-iot), pruebas unitarias (70 tests), entrevistas de validación de expertos, video TB2 en anexos, y actualización de deployment links e insights de GitHub. |
 
 <hr class="page-break">
 
