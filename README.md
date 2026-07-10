@@ -135,7 +135,16 @@ El repositorio del informe se encuentra en GitHub en el siguiente link: https://
   <img src="images/ev2/av21.png">
 </p>
 
+**TB2**
 
+<p __align__="center">
+  <img src="images/insights/TB2/TB2-Contributors.png">
+</p>
+
+
+<p __align__="center">
+  <img src="images/insights/TB2/TB2-Pulse.png">
+</p>
 
 <hr class="page-break">
 
