@@ -7988,6 +7988,7 @@ En el Sprint 3 se alcanzó la finalización de la plataforma PlantSync, destacan
 <ul>
   <li>US40 Monitoreo climático local desde mobile</li>
   <li>US43 Vincular dispositivo IoT desde perfil de planta</li>
+  <li>US02 Vinculación de dispositivo IoT con la cuenta</li>
   <li>US07 Visualización del historial de cuidados</li>
 </ul>
 
@@ -7995,7 +7996,23 @@ En el Sprint 3 se alcanzó la finalización de la plataforma PlantSync, destacan
 <p align="center">
   <img src="images/appmobile/vista-plantas.jpg" alt="Monitoreo climático - App Mobile" width="250">
   <img src="images/appmobile/vincular-iot.jpg" alt="Vincular IoT - App Mobile" width="250">
+  <img src="images/appmobile/iot-conectado.png" alt="Dispositivo IoT conectado - App Mobile" width="250">
   <img src="images/appmobile/historial-de-tareas.jpg" alt="Historial de tareas - App Mobile" width="250">
+</p>
+<br>
+
+<ul>
+  <li>US03 Métricas de Sensor de Gas (Calidad de aire)</li>
+  <li>US08 Monitoreo de Humedad Ambiental</li>
+  <li>US31 Telemetría de Temperatura Ambiental</li>
+  <li>US36 Monitoreo de Luminosidad (Sensor LDR)</li>
+  <li>US32 Control Manual de Riego</li>
+  <li>US33 Control Manual y Automático de Luz UV</li>
+</ul>
+
+<br>
+<p align="center">
+  <img src="images/appmobile/ver-datos-iot.png" alt="Sensores en vivo y control de actuadores - App Mobile" width="250">
 </p>
 <br>
 
