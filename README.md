@@ -8925,7 +8925,7 @@ Se recomienda priorizar la resolución de estos problemas en el siguiente sprint
 
 | Description | Details |
 |-------------|---------|
-| **Duración** | 7:58 min |
+| **Duración** | 16:50 min |
 | **URL Microsoft** | [https://upcedupe-my.sharepoint.com/personal/u20231a500_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20231a500%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202610%2D1asi0572%2D17756%2DBioDemeter%2Dabout%2Dthe%2Dproduct%2Dsprint%2D3%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E5dd101bc%2Deab4%2D45b9%2D97b4%2De6975ae01643](https://upcedupe-my.sharepoint.com/personal/u20231a500_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20231a500%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202610%2D1asi0572%2D17756%2DBioDemeter%2Dabout%2Dthe%2Dproduct%2Dsprint%2D3%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E5dd101bc%2Deab4%2D45b9%2D97b4%2De6975ae01643) |
 | **URL YouTube** | [https://youtu.be/rZj9y4jfeTw](https://youtu.be/rZj9y4jfeTw) |
 | **Imagen** | ![About the Product Screen](/images/entrevistadevalidacion/about-the-product-tb2.png) |
