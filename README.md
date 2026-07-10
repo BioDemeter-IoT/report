@@ -8086,6 +8086,26 @@ En el Sprint 3 se alcanzó la finalización de la plataforma PlantSync, destacan
 </p>
 <br>
 
+<h3>Video de Demostración del Prototipo IoT</h3>
+<br>
+<table border="1" cellspacing="0" cellpadding="5">
+  <thead>
+    <tr>
+      <th>Imagen</th>
+      <th>Video</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="images/EvidenceTesting/demo-prototipo-iot.png" alt="Demostración prototipo IoT" width="300"></td>
+      <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQAE_lNJVbroQ5kdYZqkqRg7AYbGNmqVpC0nNYBWy6R9DFQ?e=A7Vxhf&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" target="_blank">Ver video de demostración</a></td>
+      <td>En este video se muestra el logro alcanzado por el equipo con lo que respecta al dispositivo IoT. Se logró conectar con la aplicación móvil y las características y funcionalidades serán exploradas en este video.</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+
 #### 6.2.3.7. Services Documentation Evidence for Sprint Review
 
 <br>
