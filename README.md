@@ -8183,23 +8183,25 @@ En el Sprint 3 se alcanzó la finalización de la plataforma PlantSync, destacan
 
 #### 6.2.3.8. Software Deployment Evidence for Sprint Review
 
-Durante este Sprint se realizó el despliegue completo de todos los componentes de PlantSync en sus respectivas plataformas, cuyas implementaciones son replicables con las instrucciones compartidas en el sprint 2.
+Durante este Sprint se realizó el despliegue completo de todos los componentes de PlantSync en sus respectivas plataformas.
+
+**Landing Page:**
+- **URL de producción:** [https://biodemeter-iot.github.io/LandingPageV2/](https://biodemeter-iot.github.io/LandingPageV2/)
+- **Repositorio:** [https://github.com/BioDemeter-IoT/LandingPageV2](https://github.com/BioDemeter-IoT/LandingPageV2)
+- **Plataforma:** GitHub Pages
 
 **FrontEnd (Web App):**
-
 - **URL de producción:** https://frontend-main-orpin-seven.vercel.app
 - **Repositorio:** https://github.com/BioDemeter-IoT/PlantSync-Frontend
 - **Plataforma:** Vercel
 
 **BackEnd:**
-
 - **URL:** https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net
 - **Plataforma:** Microsoft Azure App Service
 - **Framework:** Spring Boot (Java)
 - **API Docs:** https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/swagger-ui/index.html
 
 **Mobile App:**
-
 - **Plataforma:** [App Store / Google Play / APK]
 - **URL de descarga:** [URL de la aplicación móvil]
 
@@ -8209,8 +8211,9 @@ Durante este Sprint se realizó el despliegue completo de todos los componentes 
 
 | Componente | URL de Despliegue | Plataforma |
 |---|---|---|
+| Landing Page | https://github.com/BioDemeter-IoT/LandingPageV2 | GitHub Pages |
 | FrontEnd Web | https://frontend-main-orpin-seven.vercel.app | Vercel |
-| BackEnd API | https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net | Azure |
+| BackEnd API | https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/swagger-ui/index.html | Azure |
 | Mobile App | [URL] | [Plataforma] |
 | IoT Simulación | https://wokwi.com/projects/468594188996396033 | Wokwi |
 
@@ -8222,6 +8225,12 @@ Report Insights:
 
 <p align="center">
   <img src="images/insights-sprint3/Report Insights.png" alt="Report Insights - Sprint 3" width="700">
+</p>
+
+Landing Page Insights:
+
+<p align="center">
+  <img src="images/insights-sprint3/LandingPage Insights.png" alt="Report Insights - Sprint 3" width="700">
 </p>
 
 FrontEnd Insights:
@@ -8239,7 +8248,7 @@ BackEnd Insights:
 Mobile Insights:
 
 <p align="center">
-  <img src="images/insights-sprint3/Mobile Insights.png" alt="Mobile Insights - Sprint 3" width="700">
+  <img src="images/insights-sprint3/Mobile Insigths.png" alt="Mobile Insights - Sprint 3" width="700">
 </p>
 
 
