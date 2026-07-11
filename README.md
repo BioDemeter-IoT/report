@@ -9173,20 +9173,24 @@ Revista Economía. (2020). Incremento del interés de los peruanos por el cuidad
 
 
 ## Links
-- Repositorios:</br>
+- Organización y repositorios:</br>
   - Link de la organización del equipo: https://github.com/BioDemeter-IoT
   - Link del repositorio del reporte: https://github.com/BioDemeter-IoT/report
   - Link del repositorio de App Web: https://github.com/BioDemeter-IoT/PlantSync-Frontend 
   - Link del repositorio de Backend: https://github.com/BioDemeter-IoT/BioDemeter_PlantSync_Backend 
   - Link del repositorio de landing page: https://github.com/BioDemeter-IoT/LandingPageV2 
   - Link del repositorio App Mobile: https://github.com/BioDemeter-IoT/BioDemeter_PlantSync_Mobile 
-  - Link de Wokwi PlantSync Node: https://wokwi.com/projects/468594188996396033
+  - Link del repositorio del Wokwi desarrollado: https://github.com/BioDemeter-IoT/BioDemeter_Plantsync_Wokwi
+  - Link del repositorio del prototipo físico: https://github.com/BioDemeter-IoT/BioDemeter_Plantsync_Prototype
+  - Link del repositorio del Edge: https://github.com/BioDemeter-IoT/BioDemeter_Plantsync_Edge
+
 </br>
 
-- Plataformas desplegadas:</br>
+- Plataformas desplegadas/terminadas:</br>
   - Link del Backend Swagger: https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/swagger-ui/index.html#/
   - Link del Frontend: https://frontend-main-orpin-seven.vercel.app/tasks
-  - Link del landing page: https://biodemeter-iot.github.io/LandingPageV2/
+  - Link del Landing Page: https://biodemeter-iot.github.io/LandingPageV2/
+  - Link de Wokwi PlantSync Node: https://wokwi.com/projects/468594188996396033
 </br>
 
 - Extras:</br>
