@@ -1,23 +1,23 @@
-
+<div style="display: flex; flex-direction: column; min-height: 90vh;">
 <p align="center">
     <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="upc-logo" width="80px" height="80px"/>
 </p>
-<h2 style="text-align: center;"> Universidad Peruana de Ciencias Aplicadas </h2>
-<h4 style="text-align: center"> Carrera de Ingeniería de Software </h4>
-<h4 style="text-align: center"> <strong>1ASI0572</strong> </h4>
-<h4 style="text-align: center"> <strong>Desarrollo de Soluciones IoT</strong> </h4>
-<h4 style="text-align: center"> NRC </h4>
-<h4 style="text-align: center"> <strong>17756</strong> </h4>
-<h4 style="text-align: center"> <strong>Informe del Trabajo Final</strong> </h4>
-<h4 style="text-align: center"> Docente </h4>
-<h4 style="text-align: center"> <strong>Vera Olivera, David Carlos</strong> </h4>
-<h4 style="text-align: center"> Equipo </h4>
-<h4 style="text-align: center"> <strong>BioDemeter</strong> </h4>
-<h4 style="text-align: center"> Proyecto </h4>
-<h4 style="text-align: center"> <strong>PlantSync</strong> </h4>
-<h4 style="text-align: center"> <strong>Integrantes</strong> </h4>
-<div style="text-align:center; margin-top: 10px; font-size: 90%; line-height: 1.6;">
-   <table style="margin-left: auto; margin-right: auto;">
+<p style="text-align: center; font-size: 1.5em; font-weight: normal;">Universidad Peruana de Ciencias Aplicadas</p>
+<p style="text-align: center; font-size: 1em; font-weight: normal;">Carrera de Ingeniería de Software</p>
+<p style="text-align: center; font-size: 1em;"><strong>1ASI0572</strong></p>
+<p style="text-align: center; font-size: 1em;"><strong>Desarrollo de Soluciones IoT</strong></p>
+<p style="text-align: center; font-size: 1em; font-weight: normal;">NRC</p>
+<p style="text-align: center; font-size: 1em;"><strong>17756</strong></p>
+<p style="text-align: center; font-size: 1em;"><strong>Informe del Trabajo Final</strong></p>
+<p style="text-align: center; font-size: 1em; font-weight: normal;">Docente</p>
+<p style="text-align: center; font-size: 1em;"><strong>Vera Olivera, David Carlos</strong></p>
+<p style="text-align: center; font-size: 1em; font-weight: normal;">Equipo</p>
+<p style="text-align: center; font-size: 1em;"><strong>BioDemeter</strong></p>
+<p style="text-align: center; font-size: 1em; font-weight: normal;">Proyecto</p>
+<p style="text-align: center; font-size: 1em;"><strong>PlantSync</strong></p>
+<p style="text-align: center; font-size: 1em;"><strong>Integrantes</strong></p>
+<div align="center" style="margin-top: 10px; font-size: 90%; line-height: 1.6;">
+   <table>
       <tr>
          <th>Código</th>
          <th>Apellidos y Nombres</th>
@@ -52,8 +52,9 @@
       </tr>
    </table>
 </div>
-<h4 style="text-align: center"> <strong>Período 202610</strong> </h4>
-<hr class="page-break">
+<p style="text-align: center; font-size: 1em; margin-top: auto;"><strong>Período 202610</strong></p>
+</div>
+<div style="page-break-before: always;"></div>
 
 # Registro de Versiones del Informe
 
@@ -94,7 +95,7 @@
 | 3.7 | 10/07/2026 | Acuña Tomas, Diego Rolin | Documentación técnica de la realización completa del dispositivo IoT físico y su integración con el Edge Service. |
 | 3.8 | 10/07/2026 | Briceño De La Cruz, Farid Sebastian | Corrección de títulos inconsistentes de US35 y US36 entre User Stories y Product Backlog; ajuste de unidades y valores de Velocity y Sum of Story Points en Sprint 1 y Sprint 2; añadido de conclusiones TB2 sobre tecnologías y aprendizajes del curso; adición de preguntas de entrevistas para app móvil con IoT, imágenes de validación (iot-conectado, ver-datos-iot), pruebas unitarias (70 tests), entrevistas de validación de expertos, video TB2 en anexos, y actualización de deployment links e insights de GitHub. |
 
-<hr class="page-break">
+<div style="page-break-before: always;"></div>
 
 # Project Report Collaboration Insights
 
@@ -148,7 +149,7 @@ El repositorio del informe se encuentra en GitHub en el siguiente link: https://
   <img src="images/insights/TB2/TB2-Pulse.png">
 </p>
 
-<hr class="page-break">
+<div style="page-break-before: always;"></div>
 
 # Contenido
 
@@ -449,7 +450,7 @@ El repositorio del informe se encuentra en GitHub en el siguiente link: https://
 - [Anexos](#anexos)
   - [Links](#links)
 
-<hr class="page-break">
+<div style="page-break-before: always;"></div>
 
 # Student Outcome
 
@@ -591,7 +592,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
   </tbody>
 </table>
 
-<hr class="page-break">
+<div style="page-break-before: always;"></div>
 
 # Capítulo I: Introducción
 
@@ -685,7 +686,7 @@ plantas saludables mientras fortalecen su conexión con el medio ambiente.
   </tbody>
 </table>
 
-<hr class="page-break">
+<div style="page-break-before: always;"></div>
 
 ## 1.2. Solution Profile
 
@@ -835,7 +836,7 @@ Sabremos que esto es cierto cuando el segmento principiante consulte guías al m
 [Enlace al tablero en Miro](https://miro.com/app/board/uXjVHfgR13k=/?share_link_id=679214059458)
 
 
-<hr class="page-break">
+<div style="page-break-before: always;"></div>
 
 ## 1.3. Segmentos objetivo
 
@@ -870,7 +871,7 @@ Personas con amplia experiencia y colecciones botánicas que buscan optimizar el
 - Nivel educativo: Perfil tecnológico avanzado. Se sienten cómodos analizando gráficas de telemetría y comparando datos históricos.
 
 
-<hr class="page-break">
+<div style="page-break-before: always;"></div>
 
 # Capítulo II: Requirements Elicitation & Analysis
 
@@ -1093,7 +1094,7 @@ Tácticas:
 
 - Establecer contratos sólidos con proveedores de componentes IoT para asegurar el suministro y mantener precios competitivos frente a rivales internacionales.
 
-<hr class="page-break">
+<div style="page-break-before: always;"></div>
 
 ## 2.2. Entrevistas
 
@@ -1405,7 +1406,7 @@ Este segmento, integrado por personas de entre 21 y 60 años con una vasta exper
 
 Los cuidadores principiantes, con edades entre 21 y 23 años, se encuentran en una etapa de aprendizaje marcada por la iniciativa personal y la pérdida de plantas debido a errores comunes como el exceso de riego. Ante la carencia de conocimientos técnicos, este grupo busca guías simples y se muestra sumamente interesado en la incorporación de herramientas que ajusten automáticamente el entorno de sus plantas para evitar descuidos. Se sienten muy cómodos delegando funciones a sistemas que actúen por sí solos, ya que ven en la automatización una forma eficaz de asegurar que sus plantas reciban exactamente lo que necesitan sin tener que depender de su propia memoria o experiencia. Debido a su deseo de evitar fallos y sentirse acompañados en el proceso, están totalmente dispuestos a invertir en una plataforma que sea clara y que facilite el cuidado botánico a través de estas funciones automáticas.
 
-<hr class="page-break">
+<div style="page-break-before: always;"></div>
 
 ## 2.3. Needfinding
 
@@ -1548,19 +1549,19 @@ A continuación se presenta el mapa de empatía correspondiente al segmento de e
 <p align="center">
   <img src="https://i.imgur.com/xSP5NY3.png" alt="Empathy Mapping 2" width="800" />
 </p>
-<hr class="page-break">
+<div style="page-break-before: always;"></div>
 
 ## 2.4. Big Picture EventStorming
 A continuación se presenta el Big Picture Event Storming correspondiente al segmento de principiantes, representado por Alejandro Flores, mostrando el flujo de eventos del dominio desde el momento en que detecta el deterioro de su planta hasta que establece una rutina de cuidado sostenida con el apoyo de BioPafi.
 <p align="center">
   <img src="https://i.imgur.com/K7F6hVq.png" alt="EventStorming 1" width="800" />
 </p>
-<hr class="page-break">
+<div style="page-break-before: always;"></div>
 A continuación se presenta el Big Picture Event Storming correspondiente al segmento de expertos, representado por Leonor Gonzales, mostrando el flujo de eventos del dominio desde que identifica los límites de gestionar su colección por memoria hasta que sistematiza y optimiza sus rutinas de cuidado mediante análisis histórico en BioPafi.
 <p align="center">
   <img src="https://i.imgur.com/4zo2vHs.png" alt="EventStorming 2" width="800" />
 </p>
-<hr class="page-break">
+<div style="page-break-before: always;"></div>
 
 ## 2.5. Ubiquitous Language
 <table>
@@ -1630,7 +1631,7 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
   </tbody>
 </table>
 
-<hr class="page-break">
+<div style="page-break-before: always;"></div>
 
 # Capítulo III: Requirements Specification
 
@@ -2293,7 +2294,7 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
     </tr>
   </tbody>
 </table>
-<hr class="page-break">
+<div style="page-break-before: always;"></div>
 
 ## 3.2. Impact Mapping
 
@@ -2317,7 +2318,7 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
 </p>
 
 
-<hr class="page-break">
+<div style="page-break-before: always;"></div>
 
 ## 3.3. Product Backlog
 
@@ -2667,7 +2668,7 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
   Product Backlog - Elaboración propia
 </p>
 
-<hr class="page-break">
+<div style="page-break-before: always;"></div>
 
 # Capítulo IV: Solution Software Design
 
@@ -3036,7 +3037,7 @@ Este diagrama ilustra la infraestructura y el entorno de ejecución de la soluci
   Elaboración propia
 </p>
 
-<hr class="page-break">
+<div style="page-break-before: always;"></div>
 
 ## 4.2. Tactical-Level Domain-Driven Design
 
@@ -3236,7 +3237,7 @@ En esta sección, se explica los diagramas que presentan un mayor detalle sobre 
   Elaboración propia
 </p>
 
-<hr class="page-break">
+<div style="page-break-before: always;"></div>
 
 
 
@@ -3448,7 +3449,7 @@ En esta sección, se explica los diagramas que presentan un mayor detalle sobre 
   Elaboración propia
 </p>
 
-<hr class="page-break">
+<div style="page-break-before: always;"></div>
 
 
 ### 4.2.3. Bounded Context: PlantProfiles
@@ -3783,7 +3784,7 @@ En esta sección, se explica los diagramas que presentan un mayor detalle sobre 
   Elaboración propia
 </p>
 
-<hr class="page-break">
+<div style="page-break-before: always;"></div>
 
 ### 4.2.4. Bounded Context: IoT Management
 
@@ -4310,7 +4311,7 @@ En esta sección, se explica los diagramas que presentan un mayor detalle sobre 
   Elaboración propia
 </p>
 
-<hr class="page-break">
+<div style="page-break-before: always;"></div>
 
 ### 4.2.6. Bounded Context: Inteligencia Botánica y Análisis Externo
 
@@ -4580,7 +4581,7 @@ En esta sección, se explican los diagramas que presentan un mayor detalle sobre
   Elaboración propia
 </p>
 
-<hr class="page-break">
+<div style="page-break-before: always;"></div>
 
 ### 4.2.7. Bounded Context: \<PlantGuidance\>
 
@@ -4768,7 +4769,7 @@ En esta sección, se explica los diagramas que presentan un mayor detalle sobre 
   Elaboración propia
 </p>
 
-<hr class="page-break">
+<div style="page-break-before: always;"></div>
 
 # Capítulo V: Solution UI/UX Design
 
@@ -7750,7 +7751,7 @@ Landing Page Insights:
 </p>
 
 
-<hr class="page-break">
+<div style="page-break-before: always;"></div>
 
 ### 6.2.3. Sprint 3
 
@@ -8990,7 +8991,7 @@ El video resume el proyecto del equipo, mostrando a cada integrante explicar las
 <p align="center">
   <img src="images/entrevistadevalidacion/aboutheteam.png" alt="execution frontend plant management" width="500">
 
-<hr class="page-break">
+<div style="page-break-before: always;"></div>
 
 
 # Conclusiones
@@ -9083,7 +9084,7 @@ AV1:
 
 Revista Economía. (2020). Incremento del interés de los peruanos por el cuidado de las áreas verdes. https://www.revistaeconomia.com/incremento-del-interes-de-los-peruanos-por-el-cuidado-de-las-areas-verdes/
 
-<hr class="page-break">
+<div style="page-break-before: always;"></div>
 
 # Anexos
 
