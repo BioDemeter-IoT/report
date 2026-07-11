@@ -163,29 +163,11 @@ El repositorio del informe se encuentra en GitHub en el siguiente link: https://
     - [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
   - [1.2. Solution Profile](#12-solution-profile)
     - [1.2.1. Antecedentes y problemática](#121-antecedentes-y-problemática)
-      - [WHO (Quién)](#who-quién)
-      - [WHAT (Qué)](#what-qué)
-      - [WHERE (Dónde)](#where-dónde)
-      - [WHEN (Cuándo)](#when-cuándo)
-      - [WHY (Por qué)](#why-por-qué)
-      - [HOW (Cómo)](#how-cómo)
-      - [HOW MUCH (Cuánto)](#how-much-cuánto)
     - [1.2.2. Lean UX Process](#122-lean-ux-process)
       - [1.2.2.1. Lean UX Problem Statements](#1221-lean-ux-problem-statements)
       - [1.2.2.2. Lean UX Assumptions](#1222-lean-ux-assumptions)
-        - [Business Assumptions](#business-assumptions)
-        - [User Assumptions](#user-assumptions)
       - [1.2.2.3. Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
-      - [Hypothesis Statement 01](#hypothesis-statement-01)
-      - [Hypothesis Statement 02](#hypothesis-statement-02)
-      - [Hypothesis Statement 03](#hypothesis-statement-03)
-      - [Hypothesis Statement 04](#hypothesis-statement-04)
       - [1.2.2.4. Lean UX Canvas](#1224-lean-ux-canvas)
-  - [1.3. Segmentos objetivo](#13-segmentos-objetivo)
-    - [Principiantes cuidadores de plantas](#principiantes-cuidadores-de-plantas)
-        - [Características demográficas:](#características-demográficas)
-    - [Expertos cuidadores de plantas](#expertos-cuidadores-de-plantas)
-      - [Características demográficas:](#características-demográficas-1)
 - [Capítulo II: Requirements Elicitation \& Analysis](#capítulo-ii-requirements-elicitation--analysis)
   - [2.1. Competidores](#21-competidores)
     - [2.1.1. Análisis competitivo](#211-análisis-competitivo)
@@ -193,18 +175,12 @@ El repositorio del informe se encuentra en GitHub en el siguiente link: https://
   - [2.2. Entrevistas](#22-entrevistas)
     - [2.2.1. Diseño de entrevistas](#221-diseño-de-entrevistas)
     - [2.2.2. Registro de entrevistas](#222-registro-de-entrevistas)
-      - [Expertos cuidadores de plantas:](#expertos-cuidadores-de-plantas-1)
-      - [Principiantes cuidadores de plantas:](#principiantes-cuidadores-de-plantas-1)
     - [2.2.3. Análisis de entrevistas](#223-análisis-de-entrevistas)
   - [2.3. Needfinding](#23-needfinding)
     - [2.3.1. User Personas](#231-user-personas)
     - [2.3.2. User Task Matrix](#232-user-task-matrix)
     - [2.3.3. User Journey Mapping](#233-user-journey-mapping)
-      - [Journey principiante](#journey-principiante)
-      - [Journey experto](#journey-experto)
     - [2.3.4. Empathy Mapping](#234-empathy-mapping)
-      - [Segmento 1 — Principiante cuidador de plantas](#segmento-1--principiante-cuidador-de-plantas)
-      - [Segmento 2 — Experto cuidador de plantas](#segmento-2--experto-cuidador-de-plantas)
   - [2.4. Big Picture EventStorming](#24-big-picture-eventstorming)
   - [2.5. Ubiquitous Language](#25-ubiquitous-language)
 - [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
@@ -215,30 +191,7 @@ El repositorio del informe se encuentra en GitHub en el siguiente link: https://
   - [4.1. Strategic-Level Domain-Driven Design](#41-strategic-level-domain-driven-design)
     - [4.1.1. Design-Level EventStorming](#411-design-level-eventstorming)
       - [4.1.1.1. Candidate Context Discovery](#4111-candidate-context-discovery)
-      - [4.1.1.2. Domain Message Flows Modeling](#4112-domain-message-flows-modeling)
-      - [Scenario: User Registration](#scenario-user-registration)
-      - [Scenario: User Login](#scenario-user-login)
-      - [Scenario: Registering a New Plant](#scenario-registering-a-new-plant)
-      - [Scenario: Linking an IoT Device to a Plant](#scenario-linking-an-iot-device-to-a-plant)
-      - [Scenario: Receiving Temperature and Humidity Sensor Data](#scenario-receiving-temperature-and-humidity-sensor-data)
-      - [Scenario: Generating Plant Alerts From Sensor Data](#scenario-generating-plant-alerts-from-sensor-data)
-      - [Scenario: Activating an IoT Actuator Automatically](#scenario-activating-an-iot-actuator-automatically)
-      - [Scenario: Viewing Plant Health Status](#scenario-viewing-plant-health-status)
-      - [Scenario: Scheduling a Plant Care Task](#scenario-scheduling-a-plant-care-task)
-      - [Scenario: Getting Plant Care Guidance From RootBot (bot temporal name)](#scenario-getting-plant-care-guidance-from-rootbot-bot-temporal-name)
-      - [Scenario: Viewing Plant Care History](#scenario-viewing-plant-care-history)
-      - [Scenario: Viewing Sensor History and Insights](#scenario-viewing-sensor-history-and-insights)
-      - [4.1.1.3. Bounded Context Canvases](#4113-bounded-context-canvases)
-      - [IOT Management](#iot-management)
-      - [Plant Profile](#plant-profile)
-      - [Care Scheduling](#care-scheduling)
-      - [Analytics](#analytics)
-      - [Plant Guidance](#plant-guidance)
-      - [IAM](#iam)
     - [4.1.2. Context Mapping](#412-context-mapping)
-      - [Opción 1:](#opción-1)
-      - [Opción 2:](#opción-2)
-    - [Opción 3:](#opción-3)
     - [4.1.3. Software Architecture](#413-software-architecture)
       - [4.1.3.1. Software Architecture System Landscape Diagram](#4131-software-architecture-system-landscape-diagram)
       - [4.1.3.2. Software Architecture Context Level Diagrams](#4132-software-architecture-context-level-diagrams)
@@ -310,37 +263,8 @@ El repositorio del informe se encuentra en GitHub en el siguiente link: https://
         - [4.2.7.6.2. Bounded Context Database Design Diagram](#42762-bounded-context-database-design-diagram)
 - [Capítulo V: Solution UI/UX Design](#capítulo-v-solution-uiux-design)
   - [5.1. Style Guidelines](#51-style-guidelines)
-    - [5.1.1. General Style Guidelines](#511-general-style-guidelines)
-      - [Branding](#branding)
-      - [Tipografía](#tipografía)
-      - [Lenguaje aplicado](#lenguaje-aplicado)
-    - [5.1.2. Web, Mobile and IoT Style Guidelines](#512-web-mobile-and-iot-style-guidelines)
-      - [Estilo visual de la landing page](#estilo-visual-de-la-landing-page)
-      - [Estilo visual de la aplicación web y móvil](#estilo-visual-de-la-aplicación-web-y-móvil)
-      - [Estilo visual de componentes IoT](#estilo-visual-de-componentes-iot)
-      - [Botones](#botones)
-      - [Imágenes](#imágenes)
-      - [Pantallas emergentes](#pantallas-emergentes)
-      - [Encabezado](#encabezado)
-      - [Pie de página](#pie-de-página)
   - [5.2. Information Architecture](#52-information-architecture)
-    - [5.2.1. Organization Systems](#521-organization-systems)
-      - [Organización jerárquica](#organización-jerárquica)
-      - [Organización secuencial](#organización-secuencial)
-      - [Organización matricial](#organización-matricial)
-      - [Esquemas de categorización](#esquemas-de-categorización)
-    - [5.2.2. Labeling Systems](#522-labeling-systems)
-      - [Menú principal de la landing page](#menú-principal-de-la-landing-page)
-      - [Menú de navegación de la solución](#menú-de-navegación-de-la-solución)
-      - [Tipos de etiquetas en la interfaz](#tipos-de-etiquetas-en-la-interfaz)
-    - [5.2.3. SEO Tags and Meta Tags](#523-seo-tags-and-meta-tags)
-      - [Landing Page](#landing-page)
-      - [Web and Mobile Application](#web-and-mobile-application)
     - [5.2.4. Searching Systems](#524-searching-systems)
-    - [5.2.5. Navigation Systems](#525-navigation-systems)
-      - [Landing Page](#landing-page-1)
-      - [Web Application](#web-application)
-      - [Mobile Application](#mobile-application)
   - [5.3. Landing Page UI Design](#53-landing-page-ui-design)
     - [5.3.1. Landing Page Wireframe](#531-landing-page-wireframe)
     - [5.3.2. Landing Page Mock-up](#532-landing-page-mock-up)
@@ -360,11 +284,6 @@ El repositorio del informe se encuentra en GitHub en el siguiente link: https://
     - [6.1.1. Software Development Environment Configuration](#611-software-development-environment-configuration)
     - [6.1.2. Source Code Management](#612-source-code-management)
     - [6.1.3. Source Code Style Guide \& Conventions](#613-source-code-style-guide--conventions)
-      - [Landing Page (HTML, CSS, JavaScript)](#landing-page-html-css-javascript)
-      - [Web App (Vue)](#web-app-vue)
-      - [Mobile App (Dart)](#mobile-app-dart)
-      - [Backend (Java)](#backend-java)
-      - [Testing \& Documentación (Gherkin)](#testing--documentación-gherkin)
     - [6.1.4. Software Deployment Configuration](#614-software-deployment-configuration)
   - [6.2. Landing Page, Services \& Applications Implementation](#62-landing-page-services--applications-implementation)
     - [6.2.1. Sprint 1](#621-sprint-1)
@@ -399,50 +318,6 @@ El repositorio del informe se encuentra en GitHub en el siguiente link: https://
   - [6.3. Validation Interviews](#63-validation-interviews)
     - [6.3.1. Diseño de Entrevistas](#631-diseño-de-entrevistas)
     - [6.3.2. Registro de Entrevistas](#632-registro-de-entrevistas)
-  - [_Frontend web_](#frontend-web)
-    - [_Expertos cuidadores de plantas_](#expertos-cuidadores-de-plantas-2)
-    - [_Cuidadores de plantas principiantes_](#cuidadores-de-plantas-principiantes)
-  - [_Aplicación móvil con IoT_](#aplicación-móvil-con-iot)
-    - [_Expertos cuidadores de plantas_](#expertos-cuidadores-de-plantas-3)
-    - [_Cuidadores de plantas principiantes_](#cuidadores-de-plantas-principiantes-1)
-    - [6.3.3. Evaluaciones según heurísticas](#633-evaluaciones-según-heurísticas)
-      - [UX Heuristics \& Principles Evaluation](#ux-heuristics--principles-evaluation)
-      - [SITE o APP A EVALUAR](#site-o-app-a-evaluar)
-      - [TAREAS A EVALUAR](#tareas-a-evaluar)
-      - [ESCALA DE SEVERIDAD](#escala-de-severidad)
-      - [TABLA RESUMEN](#tabla-resumen)
-      - [DESCRIPCIÓN DETALLADA DE PROBLEMAS](#descripción-detallada-de-problemas)
-        - [PROBLEMA #1: No hay un botón visible para regresar al dashboard desde la vista de detalle de sensores](#problema-1-no-hay-un-botón-visible-para-regresar-al-dashboard-desde-la-vista-de-detalle-de-sensores)
-        - [Problema](#problema)
-        - [Recomendación](#recomendación)
-        - [PROBLEMA #2: Las unidades de medida no están claramente especificadas en algunos gráficos](#problema-2-las-unidades-de-medida-no-están-claramente-especificadas-en-algunos-gráficos)
-        - [Problema](#problema-1)
-        - [Recomendación](#recomendación-1)
-        - [PROBLEMA #3: Las leyendas de gráficos de tendencias utilizan colores sin suficiente contraste](#problema-3-las-leyendas-de-gráficos-de-tendencias-utilizan-colores-sin-suficiente-contraste)
-        - [Problema](#problema-2)
-        - [Recomendación](#recomendación-2)
-        - [PROBLEMA #4: El formulario de configuración de alertas no valida valores en tiempo real](#problema-4-el-formulario-de-configuración-de-alertas-no-valida-valores-en-tiempo-real)
-        - [Problema](#problema-3)
-        - [Recomendación](#recomendación-3)
-        - [PROBLEMA #5: Falta contexto sobre rangos de pH recomendados para diferentes plantas](#problema-5-falta-contexto-sobre-rangos-de-ph-recomendados-para-diferentes-plantas)
-        - [Problema](#problema-4)
-        - [Recomendación](#recomendación-4)
-        - [PROBLEMA #6: Mensajes de error no sugieren acciones correctivas](#problema-6-mensajes-de-error-no-sugieren-acciones-correctivas)
-        - [Problema](#problema-5)
-        - [Recomendación](#recomendación-5)
-        - [PROBLEMA #7: Falta indicadores visuales claros del estado de conectividad del dispositivo IoT](#problema-7-falta-indicadores-visuales-claros-del-estado-de-conectividad-del-dispositivo-iot)
-        - [Problema](#problema-6)
-        - [Recomendación](#recomendación-6)
-        - [PROBLEMA #8: Las imágenes de plantas no tienen atributo "alt"](#problema-8-las-imágenes-de-plantas-no-tienen-atributo-alt)
-        - [Problema](#problema-7)
-        - [Recomendación](#recomendación-7)
-        - [PROBLEMA #9: Campo de búsqueda no ofrece autocompletado ni sugerencias](#problema-9-campo-de-búsqueda-no-ofrece-autocompletado-ni-sugerencias)
-        - [Problema](#problema-8)
-        - [Recomendación](#recomendación-8)
-        - [PROBLEMA #10: Los estilos de botones principales y secundarios no son diferenciables](#problema-10-los-estilos-de-botones-principales-y-secundarios-no-son-diferenciables)
-        - [Problema](#problema-9)
-        - [Recomendación](#recomendación-9)
-      - [CONCLUSIONES Y PRÓXIMOS PASOS](#conclusiones-y-próximos-pasos)
   - [6.4. Video About-the-Product](#64-video-about-the-product)
   - [6.5. Video About-the-Team](#65-video-about-the-team)
 - [Conclusiones](#conclusiones)
@@ -697,13 +572,13 @@ La relación entre los seres humanos y las plantas ha evolucionado de una mera d
 La horticultura terapéutica demuestra que el acto de cultivar mejora la salud física y mental, reduciendo la depresión y la ansiedad. Sin embargo, la entrada de estos "cuidados verdes" en el hogar se ve amenazada por la falta de tiempo y conocimientos técnicos. Para cuidar a los humanos, las plantas primero deben ser cuidadas , y es aquí donde surge la problemática: el usuario moderno se enfrenta a una fragmentación de cuidados. El aficionado a menudo no logra interpretar las señales de sus plantas —lo que la neurobiología define como inteligencia colaborativa — hasta que el daño es irreversible.
 Esta desconexión genera una brecha de éxito. Mientras que las plantas operan bajo una lógica descentralizada y modular, los sistemas de monitoreo tradicionales son jerárquicos y limitados. Existe una necesidad imperativa de herramientas que funcionen como mediadoras de cuidados, permitiendo que la tecnología IoT actúe como un puente para que el usuario, sea novato o experto, pueda entender y responder a las necesidades de su micro-ecosistema doméstico de forma remota y precisa.
 
-#### WHO (Quién)
+<h4>WHO (Quién)</h4>
 
 + **Afectados directos:** Entusiastas del cuidado de plantas, divididos en novatos (quienes sufren mayor frustración emocional por la muerte de sus ejemplares) y experimentados (quienes buscan precisión y optimización de su tiempo); quienes dependen de su intuición o de cronogramas manuales que a menudo fallan por falta de datos objetivos.
 
 + **Beneficiarios indirectos:** El ecosistema doméstico y la salud mental del usuario, dado que las plantas actúan como mediadoras de bienestar y agentes de "salutogénesis"
 
-#### WHAT (Qué)
+<h4>WHAT (Qué)</h4>
 
 + **El problema:** Una alta tasa de mortalidad y deterioro de plantas ornamentales en entornos urbanos debido a la incapacidad del ser humano para interpretar las señales bióticas (como el déficit lumínico) en tiempo real.
 
@@ -711,13 +586,13 @@ Esta desconexión genera una brecha de éxito. Mientras que las plantas operan b
 
 + **El servicio:** Una plataforma multiplataforma que ofrece control táctico y alertas en una Mobile App, junto con análisis estratégico de datos en una Web App.
 
-#### WHERE (Dónde)
+<h4>WHERE (Dónde)</h4>
 
 + **Espacio físico:** Hogares urbanos, departamentos con iluminación natural inconsistente y oficinas donde el microclima no siempre es apto para la vida vegetal.
 
 + **Entorno digital:** La interacción ocurre en el "Edge" (dispositivo físico), en la nube (procesamiento de datos) y en las interfaces de usuario (móvil y web).
 
-#### WHEN (Cuándo)
+<h4>WHEN (Cuándo)</h4>
 
 + **Temporalidad del problema:** El riesgo de daño irreversible es continuo, pero se intensifica durante las jornadas laborales extensas, viajes del usuario o cambios estacionales que alteran la radiación solar recibida por la planta.
 
@@ -725,7 +600,7 @@ Esta desconexión genera una brecha de éxito. Mientras que las plantas operan b
 
 + **Momento de la alerta:** La notificación debe ser inmediata al detectar una anomalía lumínica o un fallo en la conectividad del sistema, permitiendo una "sinergia de cuidados".
 
-#### WHY (Por qué)
+<h4>WHY (Por qué)</h4>
 
 + **Justificación:** Existe una "separación de sociedad y naturaleza" que ha dejado a los humanos sin la capacidad de entender las necesidades de las plantas.
 
@@ -733,7 +608,7 @@ Esta desconexión genera una brecha de éxito. Mientras que las plantas operan b
 
 + **Motivación psicológica:** El fracaso en el cuidado botánico genera una percepción de incapacidad personal, afectando el bienestar que el hobby debería proporcionar.
 
-#### HOW (Cómo)
+<h4>HOW (Cómo)</h4>
 
 + **Diferencia entre estado óptimo y problema:** En el estado óptimo, la planta mantiene una homeostasis botánica donde los niveles de radiación fotosintética activa (PAR) son constantes y adecuados para su especie, lo que se traduce en un crecimiento vigoroso y beneficios psicológicos medibles para el usuario, como la reducción del cortisol. En el estado de problema, existe una "asimetría de información": el usuario percibe la planta como "sana" visualmente, mientras que internamente la planta ya sufre un déficit de lúmenes o estrés hídrico que el ojo humano no detecta a tiempo. Esta brecha entre la percepción humana y la necesidad biológica es lo que la tecnología IoT viene a cerrar mediante datos objetivos.
 
@@ -742,7 +617,7 @@ Esta desconexión genera una brecha de éxito. Mientras que las plantas operan b
   + **Patrones estacionales:** Variaciones en la intensidad lumínica según la época del año.
   + **Patrones de actividad humana:** La falta de cuidado coincide con las jornadas laborales de 8 a 10 horas o periodos de viaje, momentos en los que el usuario se desconecta físicamente de la planta.
 
-#### HOW MUCH (Cuánto)
+<h4>HOW MUCH (Cuánto)</h4>
 
 + **Frecuencia y Gravedad de los Problemas:**
   + **Mortalidad:** Aproximadamente el 35% de las plantas mueren en hogares por cuidados inadecuados.
@@ -774,6 +649,7 @@ Esta desconexión genera una brecha de éxito. Mientras que las plantas operan b
 ### 1.2.2. Lean UX Process
 
 #### 1.2.2.1. Lean UX Problem Statements
+
 Nuestra plataforma IoT de monitoreo y cuidado de plantas fue diseñada para lograr que los usuarios mantengan la salud de sus plantas de forma óptima y mejoren su bienestar emocional mediante datos precisos. Hemos observado que el servicio actual del mercado no está cumpliendo con la interpretación efectiva de las señales bióticas de las plantas, lo que está causando una tasa de mortalidad botánica del 35% y frustración en el usuario. ¿Cómo podríamos mejorar nuestra plataforma IoT para que nuestros clientes tengan más éxito basándonos en la reducción del 50% de la pérdida de plantas domésticas y el incremento del tiempo de vida de los ejemplares monitoreados?
 **Aspectos Específicos:**
 + **Domain:** Smart Gardening e IoT aplicado a la horticultura doméstica y la salud ambiental.
@@ -785,7 +661,8 @@ Nuestra plataforma IoT de monitoreo y cuidado de plantas fue diseñada para logr
 
 #### 1.2.2.2. Lean UX Assumptions
 
-##### Business Assumptions
+<h5>Business Assumptions</h5>
+
 1. **Creemos que nuestros clientes tienen la necesidad de:** Mantener sus plantas saludables sin requerir conocimientos botánicos avanzados o presencia física constante.
 2. **Estas necesidades pueden resolverse con:** Una plataforma IoT que utilice sensores de luz reales y actuadores UV para compensar deficiencias ambientales automáticamente.
 3. **Nuestro clientes iniciales son (o serán):** Entusiastas novatos que han tenido experiencias previas de fracaso en el cuidado de plantas.
@@ -796,7 +673,8 @@ Nuestra plataforma IoT de monitoreo y cuidado de plantas fue diseñada para logr
 8. **El mayor riesgo de nuestro producto es:** Que los usuarios no confíen en la automatización para el cuidado de sus seres vivos. Resolveremos esto a través de: Notificaciones constantes de las acciones realizadas por el sistema.
 9. **Otras supocisiones:** Que los usuarios cuentan con conectividad WiFi estable en el lugar donde ubican sus plantas.
 
-##### User Assumptions
+<h5>User Assumptions</h5>
+
 1. **¿Quién es el usuario?:** Personas urbanas que disfrutan de las plantas pero tienen estilos de vida ocupados o poco espacio con luz natural.
 2. **¿Dónde encaja nuestro producto en su trabajo o vida?:** En sus hogares, departamentos u oficinas, integrándose como un asistente inteligente de cuidado ambiental.
 3. **¿Qué problemas resuelve nuestro producto?:** El olvido de los cuidados básicos, la falta de luz solar adecuada y el sentimiento de frustración por la muerte de sus plantas.
@@ -807,23 +685,23 @@ Nuestra plataforma IoT de monitoreo y cuidado de plantas fue diseñada para logr
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
 
-#### Hypothesis Statement 01 
+<h4>Hypothesis Statement 01</h4>
 
 Creemos que los expertos y principiantes cuidadores de plantas necesitan una plataforma con monitoreo automatizado mediante sensores IoT que les permita conocer el estado real de sus plantas (humedad del suelo y temperatura ambiental) sin depender de la observación visual o recordatorios manuales.
 Sabremos que hemos tenido éxito cuando la tasa de adopción activa (usuarios que registran al menos una planta, vinculan un nodo IoT y mantienen la telemetría funcionando por más de 14 días consecutivos) se encuentre alrededor del 70% del total de usuarios registrados en la plataforma.
 
 
-#### Hypothesis Statement 02 
+<h4>Hypothesis Statement 02</h4>
 
 Creemos que las alertas proactivas basadas en datos reales de sensores (humedad del suelo, temperatura) ayudarán más a los usuarios a tener plantas saludables que los recordatorios fijos.
 Sabremos que esto es cierto cuando al menos el 70% de los usuarios con sensores instalados reporten una mejora en la salud de sus plantas en 2 semanas.
 
-#### Hypothesis Statement 03
+<h4>Hypothesis Statement 03</h4>
 Creemos que la visualización en tiempo real e histórica de la telemetría (humedad, temperatura) será de ayuda para que los usuarios ajusten sus rutinas de cuidado.
 Sabremos que esto es cierto cuando al menos el 40% de los usuarios revisen el dashboard de telemetría al menos 3 veces por semana 
 
 
-#### Hypothesis Statement 04
+<h4>Hypothesis Statement 04</h4>
 Creemos que la implementación de guías vinculadas a alertas IoT   será de ayuda para principiantes.
 Sabremos que esto es cierto cuando el segmento principiante consulte guías al menos una vez por semana y el 30% de esas consultas vengan directamente desde una alerta del sistema.
 
@@ -839,15 +717,15 @@ Sabremos que esto es cierto cuando el segmento principiante consulte guías al m
 
 <div style="page-break-before: always;"></div>
 
-## 1.3. Segmentos objetivo
+<h2>1.3. Segmentos objetivo</h2>
 
 Según Revista Economía (2020), los peruanos realizaron más de 51 mil búsquedas online relacionadas a áreas verdes de enero a octubre del 2020. De las cuales un 66% eran de mantenimiento y mejora de jardines en el hogar. El 64% de las personas que realizaron estas búsquedas tenian entre 34 y 50 años. Ello nos indica que hay segmentos con poder adquisitivo dispuestos a adoptar soluciones tecnológicas que les faciliten el cuidado de sus espacios verdes.
 
-### Principiantes cuidadores de plantas
+<h3>Principiantes cuidadores de plantas</h3>
 
 Personas interesadas en iniciarse en el cuidado de plantas que buscan evitar el fracaso inicial mediante tecnología sencilla.
 
-##### Características demográficas:
+<h5>Características demográficas:</h5>
 
   - Edad: De 18 a 45 años.
 
@@ -857,11 +735,11 @@ Personas interesadas en iniciarse en el cuidado de plantas que buscan evitar el 
 
   - Nivel educativo: Con conocimientos de tecnologia.
 
-### Expertos cuidadores de plantas
+<h3>Expertos cuidadores de plantas</h3>
 
 Personas con amplia experiencia y colecciones botánicas que buscan optimizar el crecimiento de sus ejemplares mediante datos precisos.
 
-#### Características demográficas:
+<h4>Características demográficas:</h4>
 
 - Edad: De 25 a 55 años.
 
@@ -1159,7 +1037,7 @@ Se han realizado las entrevistas de acuerdo al diseño de preguntas. Se puede vi
 
 Por motivos de almacenamiento, tuvimos que mantener por separado la entrevista 3, la cual se puede visualizar en el siguiente link: https://drive.google.com/drive/folders/1d0wVikpVQSXuzfDZE4gxl3loqMahencH
 
-#### Expertos cuidadores de plantas:
+<h4>Expertos cuidadores de plantas:</h4>
 
 <table cellpadding="8" cellspacing="0">
   <tbody>
@@ -1278,7 +1156,7 @@ Por motivos de almacenamiento, tuvimos que mantener por separado la entrevista 3
   </tbody>
 </table>
 
-#### Principiantes cuidadores de plantas:
+<h4>Principiantes cuidadores de plantas:</h4>
 
 <table cellpadding="8" cellspacing="0">
   <tbody>
@@ -1523,29 +1401,30 @@ A partir de esta matriz se pueden extraer las siguientes conclusiones sobre las 
 - Ambos perfiles coinciden en su interés por documentar el crecimiento mediante fotografías y en la búsqueda de soluciones tecnológicas que faciliten el cuidado.
 
 - Las diferencias se evidencian en el nivel de experiencia: el usuario experto dedica más tiempo a monitorear y mantener un plan estructurado, mientras que el principiante prioriza el aprendizaje y valora más el aspecto estético de las plantas.
-
 ### 2.3.3. User Journey Mapping
-#### Journey principiante
+
+<h4>Journey principiante</h4>
 Este mapa muestra el recorrido de una persona con poca experiencia en jardinería que compra plantas para decorar su hogar y descubre que se deterioran sin entender por qué. A través de las etapas Aware, Join, Use, Develop y Leave se ilustran sus objetivos, acciones, problemas y emociones al buscar información en internet, probar consejos y, eventualmente, apoyarse en una solución digital que le ofrezca recordatorios y recomendaciones simples para mantener sus plantas sanas.
 <p align="center">
   <img src="https://i.imgur.com/SePmnIE.png" alt="Customer journey map 1" width="800" />
 </p>
 
-#### Journey experto
+<h4>Journey experto</h4>
 Este mapa representa el recorrido de un cuidador de plantas con varios años de experiencia y una colección amplia, que comienza a sentir límites al gestionar muchas especies con necesidades distintas. En las etapas Aware, Join, Use, Develop y Leave se detallan sus motivaciones, procesos, dificultades y emociones al investigar soluciones más avanzadas, registrar y analizar datos de sus plantas y evaluar si una herramienta digital le aporta suficiente valor para optimizar y profesionalizar su rutina de cuidado.
 <p align="center">
   <img src="https://i.imgur.com/ZUyIz9G.png" alt="Customer journey map 2" width="800" />
 </p>
 
 ### 2.3.4. Empathy Mapping
-#### Segmento 1 — Principiante cuidador de plantas
+
+<h4>Segmento 1 — Principiante cuidador de plantas</h4>
 
 A continuación se presenta el mapa de empatía correspondiente al segmento de principiantes, representado por Alejandro Flores, joven de 20 años de Chorrillos, Lima, quien se inició en el cuidado de plantas en 2025 sin conocimientos previos ni herramientas de apoyo.
 <p align="center">
   <img src="https://i.imgur.com/w0RteIM.png" alt="Empathy Mapping 1" width="800" />
 </p>
 
-#### Segmento 2 — Experto cuidador de plantas
+<h4>Segmento 2 — Experto cuidador de plantas</h4>
 A continuación se presenta el mapa de empatía correspondiente al segmento de expertos, representado por Leonor Gonzales, cuidadora de 60 años de San Miguel, Lima, con más de 6 años de experiencia en jardinería doméstica y una amplia colección de plantas que gestiona sin ningún sistema de registro formal.
 <p align="center">
   <img src="https://i.imgur.com/xSP5NY3.png" alt="Empathy Mapping 2" width="800" />
@@ -2886,83 +2765,83 @@ Al identificar estos pivotal points, se puede observar cómo los eventos se agru
 
 Finalmente, utilizando la herramienta Miro, se realizó la división de estos bounded contexts, representando de manera visual los flujos de eventos dentro de cada uno y facilitando la comprensión de las responsabilidades y límites de cada contexto dentro del sistema.
 
-#### 4.1.1.2. Domain Message Flows Modeling
+<h4>4.1.1.2. Domain Message Flows Modeling</h4>
 
 En esta sección se desarrollan los Domain Message Flow Models para representar cómo fluyen los mensajes entre usuarios, sistemas externos y bounded contexts en los escenarios principales del sistema. Estos diagramas permiten visualizar la secuencia de commands, events y queries que ocurren durante cada proceso, facilitando la comprensión de las interacciones del dominio y validando que las responsabilidades de cada contexto estén correctamente definidas.
 
-#### Scenario: User Registration
+<h4>Scenario: User Registration</h4>
 
 <a href="https://ibb.co/qMhLcW9X"><img src="https://i.ibb.co/N6fgJmpQ/1.png" alt="user registration scenario" border="0"></a>
 
-#### Scenario: User Login
+<h4>Scenario: User Login</h4>
 
 <a href="https://ibb.co/5xzYdK29"><img src="https://i.ibb.co/sJD5hWtP/2.png" alt="user login scenario" border="0"></a>
 
-#### Scenario: Registering a New Plant
+<h4>Scenario: Registering a New Plant</h4>
 
 <a href="https://ibb.co/JjQkfBPb"><img src="https://i.ibb.co/Swrvhsp1/3.png" alt="registering a new plant scenario" border="0"></a>
 
-#### Scenario: Linking an IoT Device to a Plant
+<h4>Scenario: Linking an IoT Device to a Plant</h4>
 
 <a href="https://ibb.co/SXSLN5F3"><img src="https://i.ibb.co/5WZ7TGbR/4.png" alt="linking an iot device to a plant scenario" border="0"></a>
 
-#### Scenario: Receiving Temperature and Humidity Sensor Data
+<h4>Scenario: Receiving Temperature and Humidity Sensor Data</h4>
 
 <a href="https://ibb.co/gF7nfyrq"><img src="https://i.ibb.co/vvBtT1cy/5.png" alt="receiving temperature and humidity sensor data scenario" border="0"></a>
 
-#### Scenario: Generating Plant Alerts From Sensor Data
+<h4>Scenario: Generating Plant Alerts From Sensor Data</h4>
 
 <a href="https://ibb.co/qY9Xz0hm"><img src="https://i.ibb.co/Kx7RYNBV/6.png" alt="generating plant alerts from sensor data scenario" border="0"></a>
 
-#### Scenario: Activating an IoT Actuator Automatically
+<h4>Scenario: Activating an IoT Actuator Automatically</h4>
 
 <a href="https://ibb.co/NnpsHjF0"><img src="https://i.ibb.co/prZx9z1H/7.png" alt="activating an iot actuator automatically scenario" border="0"></a>
 
-#### Scenario: Viewing Plant Health Status
+<h4>Scenario: Viewing Plant Health Status</h4>
 
 <a href="https://ibb.co/gZZnTS9r"><img src="https://i.ibb.co/chhmF63y/8.png" alt="viewwing plant health status scenario" border="0"></a>
 
-#### Scenario: Scheduling a Plant Care Task
+<h4>Scenario: Scheduling a Plant Care Task</h4>
 
 <a href="https://ibb.co/nqznW1mr"><img src="https://i.ibb.co/p6JRmKw2/9.png" alt="scheduling a plant care task scenario" border="0"></a>
 
-#### Scenario: Getting Plant Care Guidance From RootBot (bot temporal name)
+<h4>Scenario: Getting Plant Care Guidance From RootBot (bot temporal name)</h4>
 
 <a href="https://ibb.co/hF4cmh9w"><img src="https://i.ibb.co/CKY6HN8D/10.png" alt="getting plant care guidance from rootbot scenario" border="0"></a>
 
-#### Scenario: Viewing Plant Care History
+<h4>Scenario: Viewing Plant Care History</h4>
 
 <a href="https://ibb.co/gF7R6cGb"><img src="https://i.ibb.co/84B7XQJn/11.png" alt="viewing plant care history scenario" border="0"></a>
 
-#### Scenario: Viewing Sensor History and Insights
+<h4>Scenario: Viewing Sensor History and Insights</h4>
 
 <a href="https://ibb.co/JR9NdkMq"><img src="https://i.ibb.co/Z603JTkS/12.png" alt="viewing sensor history and insights scenario" border="0"></a>
 
-#### 4.1.1.3. Bounded Context Canvases
+<h4>4.1.1.3. Bounded Context Canvases</h4>
 
 En esta sección se desarrollan los Bounded Context Canvases correspondientes a los contextos identificados en la arquitectura del dominio. Cada canvas permite describir el propósito, responsabilidades, comunicaciones, lenguaje ubicuo, decisiones de negocio, supuestos, métricas y preguntas abiertas de un bounded context específico. De esta manera, se documenta con mayor detalle el rol que cumple cada contexto dentro del sistema y se facilita la validación de su diseño.
 
-#### IOT Management
+<h4>IOT Management</h4>
 
 <a href="https://ibb.co/WvBW2x1B"><img src="https://i.ibb.co/VYMWqj8M/A.png" alt="iot management canvas" border="0"></a>
 
-#### Plant Profile
+<h4>Plant Profile</h4>
 
 <a href="https://ibb.co/HSRd1Fr"><img src="https://i.ibb.co/cBRLMgN/B.png" alt="plant profile canvas" border="0"></a>
 
-#### Care Scheduling
+<h4>Care Scheduling</h4>
 
 <a href="https://ibb.co/bRPJNV7f"><img src="https://i.ibb.co/rfms5hvW/C.png" alt="care scheduling canvas" border="0" /></a>
 
-#### Analytics
+<h4>Analytics</h4>
 
 <a href="https://ibb.co/wZYWzfyj"><img src="https://i.ibb.co/WNsy2Lnj/D.png" alt="analytics canvas" border="0"></a>
 
-#### Plant Guidance
+<h4>Plant Guidance</h4>
 
 <a href="https://ibb.co/Tqpqxdsr"><img src="https://i.ibb.co/h1h1JwSC/E.png" alt="plant guidancee canvas" border="0"></a>
 
-#### IAM
+<h4>IAM</h4>
 
 <a href="https://ibb.co/n8gv6wfs"><img src="https://i.ibb.co/YTRMPN87/F.png" alt="iam canvas" border="0"></a>
 
@@ -2970,7 +2849,7 @@ En esta sección se desarrollan los Bounded Context Canvases correspondientes a 
 
 En esta sección elaboramos un conjunto de context maps para representar las relaciones entre los bounded contexts del sistema. A partir de la información recolectada, analizamos distintas alternativas de diseño, evaluando cómo cambiaría la estructura si se reubican, agrupan, dividen o aíslan determinadas capabilities. Para ello, consideramos patrones de Domain-Driven Design como Customer/Supplier, Conformist, Anti-corruption Layer y Shared Kernel, con el fin de identificar la mejor aproximación para la arquitectura del dominio. A continuación, presentamos las opciones evaluadas para Tavolo y la propuesta seleccionada.
 
-#### Opción 1:
+<h4> Opción 1: </h4>
 
 En esta alternativa se mantienen los seis bounded contexts separados, con relaciones claramente definidas entre ellos. Esta opción permite una mejor separación de responsabilidades, ya que cada contexto se concentra en una funcionalidad específica del sistema, facilitando su comprensión y evolución. Como desventaja, implica una mayor cantidad de dependencias e interacciones entre contextos, lo que incrementa la complejidad de integración y sincronización.
 
@@ -2978,7 +2857,7 @@ En esta alternativa se mantienen los seis bounded contexts separados, con relaci
     <img src="https://i.ibb.co/VYrTchXf/Op1.png" alt="1st option context mapping" width="850px" height="450px"/>
 </p>
 
-#### Opción 2:
+<h4> Opción 2: </h4>
 
 En esta alternativa se agrupan los bounded contexts PlantProfile y Care Scheduling en un solo contexto denominado Plant Management, debido a que ambos trabajan directamente sobre la gestión de plantas y sus cuidados programados. Esta opción reduce la cantidad de relaciones entre contextos y simplifica la coordinación entre el perfil de la planta y sus tareas de mantenimiento. Sin embargo, como desventaja, el nuevo contexto concentra más responsabilidades, mezclando la administración de información de la planta con la planificación de tareas, lo que podría dificultar su evolución independiente si el sistema crece.
 
@@ -2986,7 +2865,7 @@ En esta alternativa se agrupan los bounded contexts PlantProfile y Care Scheduli
     <img src="https://i.ibb.co/b5TMqjRk/Op2.png" alt="2nd option context mapping" width="850px" height="450px"/>
 </p>
 
-### Opción 3:
+<h4> Opción 3: </h4>
 
 En esta alternativa se agrupan los bounded contexts IoT Management y Analytics en un solo contexto denominado IoT Operations, debido a que ambos trabajan directamente con la captura, procesamiento e interpretación de datos provenientes de sensores. Esta opción simplifica la comunicación entre el hardware y el análisis de datos, reduciendo dependencias internas del flujo IoT. Sin embargo, como desventaja, mezcla la gestión técnica de dispositivos con la generación de insights y alertas, lo que podría dificultar la evolución independiente de ambas capacidades si el sistema crece.
 
@@ -4778,9 +4657,9 @@ En esta sección, se explica los diagramas que presentan un mayor detalle sobre 
 
 Las guías de estilo de la solución definen los criterios visuales, comunicacionales e interactivos que orientan el diseño de la experiencia digital de **BioDemeter** y de su producto **PlantSync**. Su finalidad es asegurar consistencia entre la identidad de marca, la interfaz de usuario y las funcionalidades ofrecidas en la landing page, la aplicación web, la aplicación móvil y los componentes vinculados al ecosistema IoT.
 
-### 5.1.1. General Style Guidelines
+<h3>5.1.1. General Style Guidelines</h3>
 
-#### Branding
+<h4>Branding</h4>
 
 **Brand Overview**
 
@@ -4800,7 +4679,7 @@ Asimismo, se incorporan colores funcionales para representar estados dentro del 
   <img src="https://i.imgur.com/eRBfgiy.png" alt="Paleta de colores de PlantSync con tonos verdes, neutros y colores funcionales para alertas, advertencias y estados normales" width="90%">
 </p>
 
-#### Tipografía
+<h4>Tipografía</h4>
 
 La tipografía seleccionada para la solución está orientada a garantizar jerarquía visual, legibilidad y consistencia en dispositivos digitales. Para ello, se utilizarán las familias tipográficas **Poppins** y **Nunito**.
 
@@ -4810,60 +4689,60 @@ La tipografía seleccionada para la solución está orientada a garantizar jerar
   <img src="https://i.imgur.com/SH4EL6p.png" alt="muestra de tipografías Poppins y Nunito" width="90%">
 </p>
 
-#### Lenguaje aplicado
+<h4>Lenguaje aplicado</h4>
 
 El lenguaje utilizado en la solución será claro, cercano y fácil de comprender para usuarios con distintos niveles de experiencia en jardinería y tecnología. El tono de comunicación será amigable y motivador, evitando tecnicismos innecesarios y priorizando mensajes breves, optimistas y orientados a la acción.
 
 Este estilo comunicacional busca acompañar al usuario durante toda su experiencia, reforzando hábitos positivos de cuidado y promoviendo una interacción intuitiva con mensajes consistentes, comprensibles y alineados con el contexto vegetal de la plataforma.
 
 
-### 5.1.2. Web, Mobile and IoT Style Guidelines
+<h3>5.1.2. Web, Mobile and IoT Style Guidelines</h3>
 
 La solución ha sido diseñada bajo un enfoque visual minimalista, ordenado y adaptable, con el objetivo de facilitar la interacción del usuario en diferentes contextos de uso. Este enfoque abarca la landing page, la aplicación web, la aplicación móvil y los componentes visuales asociados a la integración con dispositivos IoT, manteniendo coherencia estética y funcional en todo el ecosistema digital.
 
-#### Estilo visual de la landing page
+<h4>Estilo visual de la landing page</h4>
 
 La landing page presenta una estructura clara y persuasiva, orientada a comunicar rápidamente la propuesta de valor del producto y facilitar la conversión. Su diseño prioriza una lectura fluida, bloques visuales bien definidos y secciones que resaltan beneficios, funcionamiento, planes y datos institucionales de la startup.
 
 La composición se apoya en jerarquías visuales simples, contrastes bien controlados y botones de llamado a la acción visibles, favoreciendo una experiencia confiable y comprensible desde el primer contacto con la marca.
 
-#### Estilo visual de la aplicación web y móvil
+<h4>Estilo visual de la aplicación web y móvil</h4>
 
 La aplicación web y móvil comparte una misma línea gráfica para garantizar continuidad de uso entre plataformas. La interfaz prioriza claridad visual, uso moderado de color, tarjetas informativas, iconografía reconocible y componentes reutilizables que permitan al usuario identificar fácilmente acciones, estados y módulos principales.
 
 En la versión web, se aprovechan áreas más amplias para paneles, dashboards y vistas comparativas, mientras que en la versión móvil la información se reorganiza para priorizar accesos rápidos, navegación táctil y lectura vertical, manteniendo la misma identidad visual y semántica.
 
-#### Estilo visual de componentes IoT
+<h4>Estilo visual de componentes IoT</h4>
 
 Los componentes relacionados con monitoreo e integración IoT deben transmitir precisión, confiabilidad y respuesta en tiempo real. Para ello, las métricas ambientales, estados de conexión y controles de actuadores se representarán mediante indicadores claros, tarjetas de datos, etiquetas de estado y colores funcionales que faciliten la interpretación rápida del usuario.
 
 El diseño de estos módulos debe mantener consistencia con la interfaz principal, evitando que la sección IoT parezca un sistema independiente. De esta manera, la visualización de humedad, temperatura, iluminación o acciones remotas se integra de forma natural al flujo general de cuidado de plantas.
 
-#### Botones
+<h4>Botones</h4>
 
 Los botones constituyen elementos centrales de interacción dentro de la solución. Se utilizarán para ejecutar acciones como registrarse, iniciar sesión, agregar plantas, guardar cambios, programar tareas, activar funciones específicas y navegar entre módulos.
 
 Se establecerá una jerarquía visual entre botones primarios, secundarios y de advertencia, utilizando color, contraste y tamaño para diferenciar su relevancia dentro de cada contexto. Los botones principales emplearán el color verde predominante de la marca, mientras que los de confirmación o alerta utilizarán variantes funcionales según el tipo de acción.
 
-#### Imágenes
+<h4>Imágenes</h4>
 
 Las imágenes estarán presentes tanto en la landing page como en la aplicación. En la landing, servirán para representar el uso del sistema, comunicar cercanía y reforzar visualmente la propuesta de valor. En la aplicación, podrán emplearse en perfiles de plantas, registros visuales de crecimiento e identificación mediante fotografías.
 
 Además, en los componentes asociados al monitoreo inteligente será conveniente incluir recursos gráficos o iconos que ayuden a representar sensores, conectividad y variables ambientales sin complejizar la interfaz.
 
-#### Pantallas emergentes
+<h4>Pantallas emergentes</h4>
 
 Las pantallas emergentes se utilizarán para confirmar acciones importantes, notificar resultados, advertir sobre errores o presentar mensajes contextuales relevantes para el usuario. Estas ventanas deberán ser visualmente llamativas pero consistentes con la paleta de color general, utilizando una jerarquía clara entre mensaje, acción principal y acción secundaria.
 
 Su diseño debe favorecer decisiones seguras, especialmente en acciones sensibles como eliminación de registros, cambios importantes en la configuración o activación de funciones remotas.
 
-#### Encabezado
+<h4>Encabezado</h4>
 
 En la landing page, el encabezado incluirá el logotipo, accesos a secciones principales y botones para ingresar o registrarse en la plataforma. Su diseño será fijo o persistentemente visible para facilitar el acceso rápido a los contenidos más relevantes.
 
 En la aplicación web y móvil, el encabezado podrá complementarse con elementos de contexto como el nombre del módulo actual, indicadores de perfil, accesos rápidos o notificaciones, manteniendo siempre simplicidad visual y claridad funcional.
 
-#### Pie de página
+<h4>Pie de página</h4>
 
 El pie de página contendrá enlaces institucionales, medios de contacto, redes sociales, políticas y accesos complementarios a otras secciones del sitio. En la landing page, este componente servirá también como refuerzo de confianza y continuidad informativa, permitiendo al usuario acceder fácilmente a recursos de soporte y comunicación.
 
@@ -4872,29 +4751,29 @@ El pie de página contendrá enlaces institucionales, medios de contacto, redes 
 
 La arquitectura de información de la solución establece la manera en que el contenido y las funcionalidades se estructuran, organizan, etiquetan y presentan dentro del ecosistema digital de BioDemeter y PlantSync. Su propósito es garantizar una experiencia fluida, comprensible y consistente en la landing page, la aplicación web, la aplicación móvil y los módulos asociados al monitoreo inteligente.
 
-### 5.2.1. Organization Systems
+<h3>5.2.1. Organization Systems</h3>
 
 La organización del contenido responde a un modelo combinado que integra estructuras jerárquicas, secuenciales y matriciales, permitiendo ordenar adecuadamente la información según la naturaleza de cada vista y según las tareas que el usuario necesita realizar dentro del sistema.
 
-#### Organización jerárquica
+<h4>Organización jerárquica</h4>
 
 La organización jerárquica se aplica principalmente en la landing page, el panel principal de la aplicación y las vistas de detalle. En estas pantallas, los elementos más importantes se ubican en zonas de mayor visibilidad y con mayor peso visual, como acciones principales, información resumida del estado de las plantas, métricas destacadas o accesos directos a funcionalidades clave.
 
 Este enfoque permite que el usuario identifique rápidamente qué información requiere atención prioritaria y qué acciones puede ejecutar primero, reduciendo la carga cognitiva y facilitando la toma de decisiones.
 
-#### Organización secuencial
+<h4>Organización secuencial</h4>
 
 La organización secuencial se utiliza en procesos que requieren una progresión ordenada, como el registro de usuarios, la incorporación de una nueva planta, la configuración de tareas o la vinculación de dispositivos. En estos casos, la interfaz guía al usuario paso a paso, mostrando únicamente la información necesaria en cada momento para favorecer la comprensión del flujo.
 
 Este tipo de organización es especialmente útil en interacciones iniciales o en configuraciones técnicas, ya que reduce errores y mejora la percepción de control durante el proceso.
 
-#### Organización matricial
+<h4>Organización matricial</h4>
 
 La organización matricial se aplica en módulos donde el usuario necesita explorar información de manera flexible, comparar elementos o revisar múltiples registros. Esto ocurre, por ejemplo, en el inventario de plantas, en el historial de acciones, en el listado de tareas o en la visualización de métricas ambientales.
 
 En estos casos, el contenido puede presentarse mediante tarjetas, listas o cuadrículas que permitan navegar libremente entre elementos, ordenar resultados y detectar patrones o diferencias entre registros.
 
-#### Esquemas de categorización
+<h4>Esquemas de categorización</h4>
 
 La solución emplea distintos esquemas de categorización según el tipo de información presentada:
 
@@ -4903,11 +4782,11 @@ La solución emplea distintos esquemas de categorización según el tipo de info
 - **Cronológico**, para historiales de cuidado, tareas registradas, eventos recientes y datos de monitoreo.
 - **Por estado**, para clasificar condiciones normales, alertas, advertencias o situaciones pendientes de atención.
 
-### 5.2.2. Labeling Systems
+<h3>5.2.2. Labeling Systems</h3>
 
 El sistema de etiquetado ha sido definido para ser claro, directo y consistente en todos los puntos de interacción. El objetivo es que el usuario comprenda con rapidez el significado de cada sección, botón, estado o módulo, sin necesidad de interpretaciones complejas ni conocimientos técnicos previos.
 
-#### Menú principal de la landing page
+<h4>Menú principal de la landing page</h4>
 
 - Inicio
 - ¿Cómo funciona?
@@ -4915,7 +4794,7 @@ El sistema de etiquetado ha sido definido para ser claro, directo y consistente 
 - ¿Quiénes somos?
 - Acceder
 
-#### Menú de navegación de la solución
+<h4>Menú de navegación de la solución</h4>
 
 - Mis plantas
 - Tareas
@@ -4923,7 +4802,7 @@ El sistema de etiquetado ha sido definido para ser claro, directo y consistente 
 - Perfil
 - Cerrar sesión
 
-#### Tipos de etiquetas en la interfaz
+<h4>Tipos de etiquetas en la interfaz</h4>
 
 <p align="center">
   <img src="https://i.imgur.com/hziWznJ.jpeg" alt="Ejemplo de navegación" width="90%">
@@ -4939,11 +4818,11 @@ El sistema de etiquetado ha sido definido para ser claro, directo y consistente 
 
 Las etiquetas se mantendrán uniformes entre web, móvil y componentes vinculados al monitoreo inteligente, lo que permite conservar continuidad semántica y facilitar el aprendizaje del sistema.
 
-### 5.2.3. SEO Tags and Meta Tags
+<h3>5.2.3. SEO Tags and Meta Tags</h3>
 
 Las metaetiquetas permiten describir estructuralmente el contenido de la solución y mejorar su visibilidad en motores de búsqueda. Aunque no son visibles para el usuario final, cumplen un papel importante en la indexación de la landing page y en el posicionamiento digital de la marca BioDemeter y del producto PlantSync.
 
-#### Landing Page
+<h4>Landing Page</h4>
 
 **Título**
 ```html
@@ -4977,7 +4856,7 @@ Las metaetiquetas permiten describir estructuralmente el contenido de la soluci�
 <meta name="copyright" content="Copyright BioDemeter team" />
 ```
 
-#### Web and Mobile Application
+<h4>Web and Mobile Application</h4>
 
 **Título**
 ```html
@@ -5034,23 +4913,23 @@ Asimismo, se incorporarán filtros que permitan refinar los resultados según di
 
 Este sistema de búsqueda y filtrado resulta especialmente útil para usuarios con múltiples plantas registradas o con un uso más frecuente del monitoreo y del historial de cuidados, ya que permite identificar patrones, revisar eventos y acceder con rapidez a información relevante.
 
-### 5.2.5. Navigation Systems
+<h3>5.2.5. Navigation Systems</h3>
 
 La navegación de la solución ha sido diseñada con un enfoque intuitivo, flexible y adaptable a diferentes dispositivos. Su objetivo es ofrecer una experiencia ordenada, evitando la saturación visual y facilitando el acceso a contenidos, acciones y módulos relevantes dentro del ecosistema digital.
 
-#### Landing Page
+<h4>Landing Page</h4>
 
 La landing page utiliza un diseño de tipo **one-page scroll**, que permite recorrer el contenido mediante desplazamiento vertical continuo. Este modelo facilita una lectura lineal de la propuesta de valor, los beneficios, los planes, la información institucional y los llamados a la acción, todo dentro de una experiencia de navegación simple y predecible.
 
 Para reforzar la orientación, se incorpora un encabezado fijo con enlaces directos a las secciones principales, permitiendo al usuario desplazarse rápidamente sin necesidad de recorrer manualmente toda la página.
 
-#### Web Application
+<h4>Web Application</h4>
 
 La aplicación web adopta una navegación híbrida que combina accesos directos entre módulos con flujos guiados para tareas específicas. El usuario puede desplazarse libremente entre secciones como plantas, tareas, historial, sensores, Chatbot, perfil y configuración, mientras que ciertos procesos más estructurados mantienen una secuencia paso a paso.
 
 Este modelo permite equilibrar libertad de exploración con orden funcional, favoreciendo una experiencia de uso flexible, eficiente y orientada a objetivos.
 
-#### Mobile Application
+<h4>Mobile Application</h4>
 
 La aplicación móvil mantiene la lógica de navegación de la versión web, pero adaptada a pantallas más pequeñas y a patrones táctiles de uso. La distribución prioriza acciones rápidas, lectura vertical, accesibilidad con una sola mano y accesos compactos a los módulos principales, asegurando continuidad funcional sin perder claridad visual.
 
@@ -6037,27 +5916,32 @@ Se adoptará el estándar de Conventional Commits en los mensajes de commit para
 Para asegurar la calidad, legibilidad y el mantenimiento a largo plazo de la solución IoT Plant Sync, se ha definido un marco de convenciones técnicas. Estas guías deben ser respetadas por los integrantes del equipo de desarrollo  en los diferentes componentes de la solución.
 
 
-####  Landing Page (HTML, CSS, JavaScript)
+<h4>Landing Page (HTML, CSS, JavaScript)</h4>
+
 * **HTML:** Cierre estricto de etiquetas, uso obligatorio de texto alt para accesibilidad y nombres de atributos en minúsculas.
 * **CSS:** Implementación de nomenclatura kebab-case para clases y mantenimiento de especificidad baja para facilitar cambios.
 * **JavaScript:** Desarrollo íntegro en inglés con variables en camelCase y clases siguiendo el estándar PascalCase.
 
-####  Web App (Vue)
+<h4>Web App (Vue)</h4>
+
 * **Tipado estricto:** Uso obligatorio de interfaces y tipos definidos para los datos del sensor, evitando el tipo "any".
 * **Componentes:** Definición de selectores con prefijos personalizados y nomenclatura de archivos alineada a las guías de Angular.
 * **Lógica de negocio:** Separación clara entre la lógica de los servicios y la gestión de la vista en los componentes.
 
-#### Mobile App (Dart)
+<h4>Mobile App (Dart)</h4>
+
 * **Nomenclatura:** Uso de snake_case para nombres de archivos y PascalCase para la definición de clases de Widgets.
 * **Organización:** Extracción de widgets complejos en componentes independientes para mejorar la legibilidad del árbol de widgets.
 
 
-####  Backend (Java)
+<h4>Backend (Java)</h4>
+
 * **Estándares Java:** Uso de PascalCase para clases y camelCase para métodos, manteniendo el código y comentarios en inglés.
 * **Arquitectura REST:** Diseño de endpoints utilizando sustantivos en plural y siguiendo los verbos HTTP estándares.
 * **Persistencia:** Nomenclatura clara para entidades y repositorios que reflejen el modelo de datos IoT de PlantSync.
 
-#### Testing & Documentación (Gherkin)
+<h4>Testing & Documentación (Gherkin)</h4>
+
 * **Estructura Gherkin:** Seguimiento riguroso del formato Given - When - Then para la redacción de escenarios de prueba.
 * **Criterios de Aceptación:** Enfoque en el comportamiento del usuario y la respuesta del hardware ante cambios de humedad.
 * **Consistencia:** Redacción de escenarios en inglés para mantener la uniformidad con el resto del repositorio técnico.
@@ -8455,9 +8339,9 @@ Preguntas para personas con poca experiencia o iniciantes en el cuidado de plant
 
 ### 6.3.2. Registro de Entrevistas
 
-## _Frontend web_
+<h2>Frontend web</h2>
 
-### _Expertos cuidadores de plantas_
+<h3>Expertos cuidadores de plantas</h3>
 
 <br>
 
@@ -8539,7 +8423,7 @@ Preguntas para personas con poca experiencia o iniciantes en el cuidado de plant
 
 <br>
 
-### _Cuidadores de plantas principiantes_
+<h3>Cuidadores de plantas principiantes</h3>
 
 <br>
 
@@ -8661,9 +8545,9 @@ Preguntas para personas con poca experiencia o iniciantes en el cuidado de plant
 
 <br>
 
-## _Aplicación móvil con IoT_
+<h2>Aplicación móvil con IoT</h2>
 
-### _Expertos cuidadores de plantas_
+<h3>Expertos cuidadores de plantas</h3>
 
 <br>
 
@@ -8741,7 +8625,7 @@ Preguntas para personas con poca experiencia o iniciantes en el cuidado de plant
   </tr>
 </table>
 
-### _Cuidadores de plantas principiantes_
+<h3>Cuidadores de plantas principiantes</h3>
 <br>
 <table align="center">
   <tr>
@@ -8821,9 +8705,9 @@ Preguntas para personas con poca experiencia o iniciantes en el cuidado de plant
 
   
 
-### 6.3.3. Evaluaciones según heurísticas
+<h3>6.3.3. Evaluaciones según heurísticas</h3>
 
-#### UX Heuristics & Principles Evaluation
+<h4>UX Heuristics & Principles Evaluation</h4>
 
 **Usability – Inclusive Design – Information Architecture**
 
@@ -8837,7 +8721,7 @@ Preguntas para personas con poca experiencia o iniciantes en el cuidado de plant
 
 ---
 
-#### SITE o APP A EVALUAR
+<h4>SITE o APP A EVALUAR</h4>
 
 **Landing Page:** BioDemeter - Solución IoT para monitoreo inteligente de plantas  
 **Aplicaciones Web:** Dashboard de monitoreo, Panel de control de sensores  
@@ -8845,7 +8729,7 @@ Preguntas para personas con poca experiencia o iniciantes en el cuidado de plant
 
 ---
 
-#### TAREAS A EVALUAR
+<h4>TAREAS A EVALUAR</h4>
 
 El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
 
@@ -8870,7 +8754,7 @@ No están incluidas en esta versión de la evaluación las siguientes tareas:
 
 ---
 
-#### ESCALA DE SEVERIDAD
+<h4>ESCALA DE SEVERIDAD</h4>
 
 Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
 
@@ -8883,7 +8767,7 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
 
 ---
 
-#### TABLA RESUMEN
+<h4>TABLA RESUMEN</h4>
 
 | # | Problema | Escala de Severidad | Heurística/Principio Violada(o) |
 |---|----------|---------------------|--------------------------------|
@@ -8900,173 +8784,173 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
 
 ---
 
-#### DESCRIPCIÓN DETALLADA DE PROBLEMAS
+<h4>DESCRIPCIÓN DETALLADA DE PROBLEMAS</h4>
 
-##### PROBLEMA #1: No hay un botón visible para regresar al dashboard desde la vista de detalle de sensores
+<h5>PROBLEMA #1: No hay un botón visible para regresar al dashboard desde la vista de detalle de sensores</h5>
 
 **Severidad:** 3  
 **Heurística Violada:** Usability - Libertad y control del usuario
 
-##### Problema
+<h5>Problema</h5>
 
 Cuando el usuario accede a la vista detallada de un sensor específico para revisar histórico o configurar alertas, no existe un botón o control claramente visible que le permita regresar al dashboard principal. El usuario debe utilizar el botón de atrás del navegador o cerrar la vista, lo que interrumpe la fluidez de la experiencia y puede causar pérdida de datos no guardados en formularios.
 
 **Ubicación:** Landing Page → Dashboard → Detalle de Sensor (sin opción clara de regreso)
 
-##### Recomendación
+<h5>Recomendación</h5>
 
 Implementar un botón de navegación "Volver al Dashboard" en la parte superior izquierda de la vista de detalle, o incluir una barra de navegación consistente que permita al usuario transitar libremente entre vistas. Utilizar iconografía estándar (flecha hacia atrás o ícono de "home") para que sea reconocible inmediatamente.
 
 ---
 
-##### PROBLEMA #2: Las unidades de medida no están claramente especificadas en algunos gráficos
+<h5>PROBLEMA #2: Las unidades de medida no están claramente especificadas en algunos gráficos</h5>
 
 **Severidad:** 2  
 **Heurística Violada:** Information Architecture - ¿Es comprensible?
 
-##### Problema
+<h5>Problema</h5>
 
 En los gráficos de tendencias de humedad y temperatura, las etiquetas del eje Y no siempre incluyen la unidad de medida (°C, %, ppm). Aunque algunos usuarios pueden inferirlo por contexto, usuarios nuevos o aquellos sin experiencia técnica pueden confundirse sobre qué representa exactamente cada valor mostrado.
 
 **Ubicación:** Dashboard → Gráficos de Tendencias; App Móvil → Vista de Métricas en Tiempo Real
 
-##### Recomendación
+<h5>Recomendación</h5>
 
 Añadir etiquetas claras de unidades de medida a todos los ejes de gráficos. Por ejemplo: "Temperatura (°C)", "Humedad Relativa (%)", "Conductividad Eléctrica (dS/m)". Considerar incluir también un tooltip informativo al pasar el cursor sobre el eje.
 
 ---
 
-##### PROBLEMA #3: Las leyendas de gráficos de tendencias utilizan colores sin suficiente contraste
+<h5>PROBLEMA #3: Las leyendas de gráficos de tendencias utilizan colores sin suficiente contraste</h5>
 
 **Severidad:** 3  
 **Heurística Violada:** Inclusive Design - Accesibilidad visual
 
-##### Problema
+<h5>Problema</h5>
 
 Algunos de los colores utilizados en las leyendas de los gráficos de tendencias (especialmente en líneas de datos secundarias) no cumplen con el estándar WCAG AA de contraste mínimo 4.5:1 para texto pequeño. Usuarios con daltonismo o baja visión tienen dificultad para distinguir entre serie de datos, especialmente en dispositivos móviles o pantallas con brillo bajo.
 
 **Ubicación:** Dashboard → Gráficos; App Móvil → Visualización de múltiples plantas simultáneamente
 
-##### Recomendación
+<h5>Recomendación</h5>
 
 Revisar la paleta de colores utilizada y asegurar que todos los colores cumplan con WCAG AA mínimo. Considerar la inclusión de patrones o texturas adicionales además de color para diferenciar series de datos. Realizar pruebas con simuladores de daltonismo (como Coblis) para validar la accesibilidad.
 
 ---
 
-##### PROBLEMA #4: El formulario de configuración de alertas no valida valores en tiempo real
+<h5>PROBLEMA #4: El formulario de configuración de alertas no valida valores en tiempo real</h5>
 
 **Severidad:** 2  
 **Heurística Violada:** Usability - Prevención de errores
 
-##### Problema
+<h5>Problema</h5>
 
 Al configurar alertas personalizadas, el usuario debe completar campos para temperatura mínima y máxima. Sin embargo, el sistema solo valida estos valores después de presionar "Guardar", permitiendo configuraciones inválidas (como temperatura mínima mayor que máxima). Esto obliga al usuario a completar el flujo nuevamente después de recibir el error.
 
 **Ubicación:** Dashboard → Configuración de Alertas; App Móvil → Ajustes de Notificaciones
 
-##### Recomendación
+<h5>Recomendación</h5>
 
 Implementar validación en tiempo real mientras el usuario introduce valores. Mostrar un mensaje de advertencia inmediatamente si detecta valores inconsistentes (ej: "La temperatura mínima no puede ser mayor que la máxima"). Deshabilitar el botón "Guardar" hasta que todos los valores sean válidos.
 
 ---
 
-##### PROBLEMA #5: Falta contexto sobre rangos de pH recomendados para diferentes plantas
+<h5>PROBLEMA #5: Falta contexto sobre rangos de pH recomendados para diferentes plantas</h5>
 
 **Severidad:** 3  
 **Heurística Violada:** Information Architecture - ¿Es findable?
 
-##### Problema
+<h5>Problema</h5>
 
 Aunque la aplicación muestra el valor actual de pH del suelo en tiempo real, no hay información accesible desde la interfaz que indique cuáles son los rangos óptimos de pH para la planta específica que el usuario está monitoreando. Los usuarios deben buscar esta información en fuentes externas, lo que reduce la utilidad de la solución como herramienta educativa.
 
 **Ubicación:** Dashboard → Vista de Planta; App Móvil → Tarjeta de pH
 
-##### Recomendación
+<h5>Recomendación</h5>
 
 Incluir un ícono informativo (?) junto al valor de pH que al hacer clic despliegue información como: "Rango óptimo para [Nombre de Planta]: 6.0 - 7.0". Alternativamente, integrar esta información en la sección de "Guías de Cuidado" asociada a cada planta, con navegación clara desde la métrica hacia la guía.
 
 ---
 
-##### PROBLEMA #6: Mensajes de error no sugieren acciones correctivas
+<h5>PROBLEMA #6: Mensajes de error no sugieren acciones correctivas</h5>
 
 **Severidad:** 3  
 **Heurística Violada:** Usability - Reconocimiento de errores y recuperación
 
-##### Problema
+<h5>Problema</h5>
 
 Cuando la conexión con un dispositivo IoT se pierde, el sistema muestra un mensaje genérico como "Error de conexión" o "No se pudo sincronizar datos". Estos mensajes no ofrecen orientación al usuario sobre por qué ocurrió el problema o qué pasos específicos tomar para resolverlo (verificar conexión WiFi, reiniciar el dispositivo, etc.).
 
 **Ubicación:** Dashboard → Estado del Dispositivo; App Móvil → Notificación de Desconexión
 
-##### Recomendación
+<h5>Recomendación</h5>
 
 Mejorar los mensajes de error para incluir: (1) explicación clara del problema, (2) causas probables, (3) pasos de resolución específicos. Por ejemplo: "El sensor no responde. Verifique que: el dispositivo está encendido, conectado a WiFi con SSID 'YourNetwork', y está a menos de 10 metros del router. Intente reiniciar el sensor si el problema persiste."
 
 ---
 
-##### PROBLEMA #7: Falta indicadores visuales claros del estado de conectividad del dispositivo IoT
+<h5>PROBLEMA #7: Falta indicadores visuales claros del estado de conectividad del dispositivo IoT</h5>
 
 **Severidad:** 3  
 **Heurística Violada:** Usability - Visibilidad del estado del sistema
 
-##### Problema
+<h5>Problema</h5>
 
 En la aplicación móvil, no hay una indicación visual consistente y evidente que muestre el estado de conectividad de cada sensor. El usuario debe inferir el estado basándose en la presencia o ausencia de datos, lo que puede llevar a confusion sobre si los datos son recientes o desactualizados, especialmente durante períodos sin cambios en las métricas.
 
 **Ubicación:** App Móvil → Tarjetas de Plantas/Sensores; Dashboard Web → Vista de Dispositivos
 
-##### Recomendación
+<h5>Recomendación</h5>
 
 Implementar indicadores visuales claros como: (1) un semáforo de colores (verde = conectado, amarillo = desconectado recientemente, rojo = offline), (2) un ícono de WiFi con variación de intensidad, o (3) una etiqueta de texto con timestamp de última sincronización ("Actualizado hace 2 minutos"). Estos indicadores deben ser prominentes y actualizarse en tiempo real.
 
 ---
 
-##### PROBLEMA #8: Las imágenes de plantas no tienen atributo "alt"
+<h5>PROBLEMA #8: Las imágenes de plantas no tienen atributo "alt"</h5>
 
 **Severidad:** 3  
 **Heurística Violada:** Inclusive Design - Proporciona experiencias comparables
 
-##### Problema
+<h5>Problema</h5>
 
 En la galería de guías de cuidado y en las tarjetas de plantas del dashboard, las imágenes utilizadas para identificar plantas no incluyen atributo "alt" (texto alternativo). Usuarios que utilizan lectores de pantalla no pueden identificar qué planta se está mostrando, lo que hace la aplicación inaccesible para personas con discapacidad visual.
 
 **Ubicación:** Landing Page → Galería de Plantas; Dashboard → Catálogo de Plantas; App Móvil → Vista de Identidad de Planta
 
-##### Recomendación
+<h5>Recomendación</h5>
 
 Añadir atributos "alt" descriptivos a todas las imágenes. Ejemplo: `alt="Planta de Tomate con flores amarillas"` o `alt="Sensor de humedad de suelo colocado en maceta"`. El texto debe ser conciso pero descriptivo, permitiendo que usuarios de lectores de pantalla comprendan completamente el contenido.
 
 ---
 
-##### PROBLEMA #9: Campo de búsqueda no ofrece autocompletado ni sugerencias
+<h5>PROBLEMA #9: Campo de búsqueda no ofrece autocompletado ni sugerencias</h5>
 
 **Severidad:** 2  
 **Heurística Violada:** Usability - Flexibilidad y eficiencia
 
-##### Problema
+<h5>Problema</h5>
 
 Al buscar plantas o históricos en la base de datos, el campo de búsqueda es un input de texto simple sin autocompletado, sugerencias de coincidencia o historial de búsquedas previas. Usuarios que no recuerdan exactamente el nombre de una planta o sensor deben escribir toda la búsqueda correctamente, lo que reduce la eficiencia especialmente en dispositivos móviles.
 
 **Ubicación:** Dashboard → Campo de Búsqueda; App Móvil → Búsqueda de Datos Históricos
 
-##### Recomendación
+<h5>Recomendación</h5>
 
 Implementar un sistema de autocompletado que sugiera opciones mientras el usuario escribe (ej: empieza a escribir "to" y sugiere "Tomate", "Tomillo"). Incluir un historial de búsquedas recientes que el usuario pueda seleccionar con un clic. Considerar búsqueda difusa (fuzzy search) para tolerar pequeños errores de escritura.
 
 ---
 
-##### PROBLEMA #10: Los estilos de botones principales y secundarios no son diferenciables
+<h5>PROBLEMA #10: Los estilos de botones principales y secundarios no son diferenciables</h5>
 
 **Severidad:** 2  
 **Heurística Violada:** Usability - Consistencia y estándares
 
-##### Problema
+<h5>Problema</h5>
 
 En varios formularios y vistas, los botones principales (como "Guardar" o "Enviar") y los botones secundarios (como "Cancelar") tienen estilos visuales muy similares, lo que puede causar que usuarios seleccionen accidentalmente la opción incorrecta. Esta inconsistencia en la jerarquía visual viola los estándares de diseño de interfaz.
 
 **Ubicación:** Dashboard → Formularios de Configuración; App Móvil → Diálogos de Confirmación
 
-##### Recomendación
+<h5>Recomendación</h5>
 
 Establecer una jerarquía visual clara entre botones:
 - **Botón primario:** Color de marca (ej: verde), relleno sólido, texto blanco, sombra sutil
@@ -9077,7 +8961,7 @@ Documentar estas decisiones en el Design System/Style Guide y aplicarlas consist
 
 ---
 
-#### CONCLUSIONES Y PRÓXIMOS PASOS
+<h4>CONCLUSIONES Y PRÓXIMOS PASOS</h4>
 
 De los 10 problemas identificados, **7 se clasifican con severidad 3** (mayor) y requieren atención prioritaria antes del siguiente release. Los problemas con mayor impacto en la experiencia del usuario son:
 
