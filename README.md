@@ -8724,7 +8724,7 @@ Preguntas para personas con poca experiencia o iniciantes en el cuidado de plant
   <tr>
     <td colspan="2" style="text-align:justify">
       Resumen:<br>
-      aaa
+      El entrevistado menciona haber tenido plantas
     </td>
   </tr>
   <tr>
