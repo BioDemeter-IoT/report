@@ -1,18 +1,22 @@
 
-<h2 style="text-align: center;"> Universidad Peruana de Ciencias Aplicadas </h2>
-<h4 style="text-align: center"> Ingeniería de Software </h4>
-<h4 style="text-align: center"> Periodo: 202610 </h4>
-<br>
- <p align="center">
+<p align="center">
     <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="upc-logo" width="80px" height="80px"/>
 </p>
-<h4 style="text-align: center"> Desarrollo de Soluciones IOT </h4>
-<h4 style="text-align: center"> Sección: 17756 </h4>
-<h4 style="text-align: center"> Docente: David Vera Olivera </h4>
-<h3 style="text-align: center;"> Informe de Trabajo Final </h3>
-<h4 style="text-align: center"> Startup: BioDemeter </h4>
-<h4 style="text-align: center"> Producto: PlantSync </h4>
-<h4 style="text-align: center">Integrantes:</h4>
+<h2 style="text-align: center;"> Universidad Peruana de Ciencias Aplicadas </h2>
+<h4 style="text-align: center"> Carrera de Ingeniería de Software </h4>
+<h4 style="text-align: center"> <strong>1ASI0572</strong> </h4>
+<h4 style="text-align: center"> <strong>Desarrollo de Soluciones IoT</strong> </h4>
+<h4 style="text-align: center"> NRC </h4>
+<h4 style="text-align: center"> <strong>17756</strong> </h4>
+<h4 style="text-align: center"> <strong>Informe del Trabajo Final</strong> </h4>
+<h4 style="text-align: center"> Docente </h4>
+<h4 style="text-align: center"> <strong>Vera Olivera, David Carlos</strong> </h4>
+<h4 style="text-align: center"> Equipo </h4>
+<h4 style="text-align: center"> <strong>BioDemeter</strong> </h4>
+<h4 style="text-align: center"> Proyecto </h4>
+<h4 style="text-align: center"> <strong>PlantSync</strong> </h4>
+<h4 style="text-align: center"> <strong>Integrantes</strong> </h4>
+<h4 style="text-align: center"> <strong>Código &nbsp; Apellidos y Nombres</strong> </h4>
 <div style="text-align:center; margin-top: 10px; font-size: 90%; line-height: 1.6;">
    <table style="margin-left: auto; margin-right: auto;">
       <tr>
@@ -49,8 +53,7 @@
       </tr>
    </table>
 </div>
-<br>
-<h5 style="text-align: center; font-style: italic;"> Julio 2026 </h5>
+<h4 style="text-align: center"> <strong>Período 202610</strong> </h4>
 <hr class="page-break">
 
 # Registro de Versiones del Informe
