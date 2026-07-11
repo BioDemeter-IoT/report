@@ -404,6 +404,7 @@ El repositorio del informe se encuentra en GitHub en el siguiente link: https://
     - [_Cuidadores de plantas principiantes_](#cuidadores-de-plantas-principiantes)
   - [_Aplicación móvil con IoT_](#aplicación-móvil-con-iot)
     - [_Expertos cuidadores de plantas_](#expertos-cuidadores-de-plantas-3)
+    - [_Cuidadores de plantas principiantes_](#cuidadores-de-plantas-principiantes-1)
     - [6.3.3. Evaluaciones según heurísticas](#633-evaluaciones-según-heurísticas)
       - [UX Heuristics \& Principles Evaluation](#ux-heuristics--principles-evaluation)
       - [SITE o APP A EVALUAR](#site-o-app-a-evaluar)
@@ -8009,8 +8010,18 @@ Link al trello: https://trello.com/invite/b/6a4ed73193f00e250c66dd2b/ATTI56f1fa6
 | BioDemeter_PlantSync_Backend | feature/deployment | bac2c936 | Refactor sensor model and enable plant-node linking | Consolidate IoT repositories by moving analytics queries to IoT layer. Replace soil humidity with light percent and gas readings. Add new REST endpoints for manual actuator commands, edge thresholds, and node-plant linking. | 04/07/2026 |
 | BioDemeter_PlantSync_Backend | feature/deployment | bcde37f6 | Add humidity to readings and simplify light thresholds | Added humidityPercent field to sensor readings across IoT module. Added new REST endpoint /api/v1/iot/plants/{plantId}/readings/latest for real-time display. Removed lightThresholdMax from plant thresholds. | 07/07/2026 |
 | BioDemeter_PlantSync_Backend | feature/deployment | 445b6402 | Add nodeId to ThresholdsResource | Add nodeId field to ThresholdsResource record and populate it in EdgeThresholdsController with the IoT node ID to provide context about which node the thresholds apply to. | 04/07/2026 |
-| BioDemeter_PlantSync_Backend | feature/admin-role | a41fcdce | feat: Add IoT module and refactor analytics entities | Introduce a new IoT module: domain aggregates, commands, entities (IoTNode, SensorReading, ActuatorCommand), value objects, services, JPA repositories, REST controllers, resources and assemblers for node and reading ingestion and actuator commands. | 05/06/2026 |
-
+| BioDemeter_PlantSync_Backend | feature/admin-role | a41fcdce | feat: Add IoT module and refactor analytics entities | Introduce a new IoT module: domain aggregates, commands, entities (IoTNode, SensorReading, ActuatorCommand), value objects, services, JPA repositories, REST controllers, resources and assemblers for node and reading ingestion and actuator commands. | 05/07/2026 |
+| PlantSync-Frontend | master | f0e37b6 | fix: merge users + profiles into single unified table | - | 10/07/2026 |
+| PlantSync-Frontend | master | d2ebb05 | fix: remove edit user/profile buttons - admin is read-only | - | 10/07/2026 |
+| PlantSync-Frontend | master | 18434ab | feat: restrict access to ROLE_ADMIN only, fix dark mode, remove sign-up link | - | 10/07/2026 |
+| PlantSync-Frontend | master | 70ca91a | fix: tasks page read-only with metrics + table (no create/complete/delete) | - | 10/07/2026 |
+| PlantSync-Frontend | master | b6e7d43 | fix: plants page read-only (no create/edit/delete), detail shows only info + sensor readings | - | 10/07/2026 |
+| BioDemeter_PlantSync_Mobile | feature/unit-test | 43ae460 | test: add unit tests for domain models and DTOs (70 tests) | - Add mocktail and bloc_test as dev dependencies </br> - Create .gitignore for Flutter project </br>- Cover all 8 domain models: User, Plant, Profile, Task, </br>SensorReading, IotNode, ActuatorState, ActuatorCommand </br>- Cover all 9 DTOs: UserDto, SignInDto, SignUpDto, PlantDto, </br>ProfileDto, SensorReadingDto, IotNodeDto, ActuatorStateDto, </br>ActuatorCommandDto, TaskDto </br>- Include test evidence (test_output.txt, test_report.html) </br> - Total: 70/70 tests passing </br> | 10/07/2026 |
+| BioDemeter_PlantSync_Mobile | main | 2be2674 | feat: implement IoT dashboard, threshold config, and app branding | Add real-time sensor dashboard with 1.5s polling (humidity, temperature, gas, light), actuator controls (AUTO/ON/OFF), node linking/unlinking, and toast notifications. Add threshold configuration (temperature, humidity, light) with RangeSlider UI in plant registration and editing. Replace app icon with custom PlantSync logo. Fix INTERNET permission for release APK. | 9/07/2026 |
+| LandingPageV2 | main | e0ca1b0 | fix: start now button | - | 10/07/2026 |
+| LandingPageV2 | main | 879f279 | feat: update the buttons | - | 10/07/2026 |
+| LandingPageV2 | main | 69a65dc | feat: update the access button | - | 10/07/2026 |
+| LandingPageV2 | main | 9aad1b1 | fix: deployment problems | - | 10/07/2026 |
 
 #### 6.2.3.5. Testing Suite Evidence for Sprint Review
 
@@ -8277,18 +8288,19 @@ Durante este Sprint se realizó el despliegue completo de todos los componentes 
 **Landing Page:**
 - **URL de producción:** [https://biodemeter-iot.github.io/LandingPageV2/](https://biodemeter-iot.github.io/LandingPageV2/)
 - **Repositorio:** [https://github.com/BioDemeter-IoT/LandingPageV2](https://github.com/BioDemeter-IoT/LandingPageV2)
-- **Plataforma:** GitHub Pages
+- **Plataforma de despliegue:** GitHub Pages
 
 **FrontEnd (Web App):**
 - **URL de producción:** https://frontend-main-orpin-seven.vercel.app
 - **Repositorio:** https://github.com/BioDemeter-IoT/PlantSync-Frontend
-- **Plataforma:** Vercel
+- **Plataforma de despliegue:** Vercel
+- **Framework:** Vue (JS)
 
 **BackEnd:**
-- **URL:** https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net
-- **Plataforma:** Microsoft Azure App Service
+- **URL de producción:** https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net
+- **Repositorio:** https://github.com/BioDemeter-IoT/BioDemeter_PlantSync_Backend
+- **Plataforma de despliegue:** Microsoft Azure App Service
 - **Framework:** Spring Boot (Java)
-- **API Docs:** https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/swagger-ui/index.html
 
 **Mobile App:**
 - **Plataforma:** APK en OneDrive
@@ -8724,7 +8736,7 @@ Preguntas para personas con poca experiencia o iniciantes en el cuidado de plant
   <tr>
     <td colspan="2" style="text-align:justify">
       Resumen:<br>
-      El entrevistado menciona haber tenido plantas
+      El entrevistado menciona haber tenido plantas que por mal cuidado han perecido. Él no usó herramientas de automatización, pero le gustaría probarlas. Le gusta la idea de planificación de tareas para no olvidar cuidar su planta. Menciona que la funcionalidad del chatbot le parece suficiente. La telemetría a distancia desde el app móvil le parece una funcionalidad interesante. Le gustaría el riego automático, incluso así, revisaría manualmente sus plantas. No le parece conveniente una alerta de sonido, porque lo considera fastidioso. Exclama que su funcionalidad favorita de la aplicación móvil es el chatbot. Sí recomendaría la aplicación porque cree que ayudaría a otros cuidadores a hacer su vida más fácil.
     </td>
   </tr>
   <tr>
@@ -9190,6 +9202,7 @@ Revista Economía. (2020). Incremento del interés de los peruanos por el cuidad
   - Link del Frontend: https://frontend-main-orpin-seven.vercel.app/tasks
   - Link del Landing Page: https://biodemeter-iot.github.io/LandingPageV2/
   - Link de Wokwi PlantSync Node: https://wokwi.com/projects/468594188996396033
+  - Tomar en cuenta la versión con ligeros agregados: https://wokwi.com/projects/468890136309868545
 </br>
 
 - Extras:</br>
