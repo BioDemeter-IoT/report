@@ -2891,7 +2891,7 @@ Este diagrama representa la visión de más alto nivel del ecosistema de la star
 
 Este diagrama representa el enfoque central de la solución PlantSync, mostrando las interacciones directas que mantiene la plataforma principal con sus distintos tipos de usuarios, el hardware IoT y las dependencias tecnológicas externas.
 
-![InnoSpace-diagram-context](./images/logos/Diagrama%20Contexto.png)
+<img src="images/C4/SystemContext.png" alt="System Context Diagram" width="800"/>
 
 <p align="center">
   Elaboración propia
@@ -2901,7 +2901,7 @@ Este diagrama representa el enfoque central de la solución PlantSync, mostrando
 
 Este diagrama detalla la arquitectura interna de la plataforma PlantSync, exponiendo los diferentes contenedores de software, las tecnologías empleadas en cada uno y los flujos de comunicación y datos entre estas piezas.
 
-![InnoSpace-diagram-container](./images/logos/Diagrama%20Contenedores.png)
+<img src="images/C4/Containers.png" alt="Container Level Diagram" width="800"/>
 
 <p align="center">
   Elaboración propia
