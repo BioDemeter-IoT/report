@@ -8685,7 +8685,7 @@ Preguntas para personas con poca experiencia o iniciantes en el cuidado de plant
   <tr>
     <td colspan="2" style="text-align:justify">
       Resumen:<br>
-      La entrevista menciona haber crecido en un entorno con muchas plantas, por lo que cree tener experiencia en plantas. Comenta que tiene en su colección plantas ornamentales. Menciona revisar manualmente el estado de sus plantas. Dijo no tener experiencia en usar algún sistema de automatización. Le gusta las opciones de automatización que ofrece la aplicación. Le gusta la idea de la implementación de tareas además que le ayudaría a no olvidar los detalles de algunas plantas, exclamó. Apoya la idea de que las opciones de riego sean automáticas y menciona que le gustaría un recordatorio en las fechas de riego. Le parece suficiente las opciones que tienen los actuadores en la aplicación. Le gusta la visualización de estados mediante el LCD para menor complejidad en lectura, y resalta que también le gustaría visualizar los datos a distancia mediante el celular. La entrevistada estaría contenta si se agregase una funcionalidad para saber qué tipo de abono usar con cada planta que tengas. Finalmente, ella sí recomendaría la aplicación con el objetivo moral de ayudar sanar el ecosistema mediante el crecimiento de la vegetación.
+      La entrevistada menciona haber crecido en un entorno con muchas plantas, por lo que cree tener experiencia en plantas. Comenta que tiene en su colección plantas ornamentales. Menciona revisar manualmente el estado de sus plantas. Dijo no tener experiencia en usar algún sistema de automatización. Le gusta las opciones de automatización que ofrece la aplicación. Le gusta la idea de la implementación de tareas además que le ayudaría a no olvidar los detalles de algunas plantas, exclamó. Apoya la idea de que las opciones de riego sean automáticas y menciona que le gustaría un recordatorio en las fechas de riego. Le parece suficiente las opciones que tienen los actuadores en la aplicación. Le gusta la visualización de estados mediante el LCD para menor complejidad en lectura, y resalta que también le gustaría visualizar los datos a distancia mediante el celular. La entrevistada estaría contenta si se agregase una funcionalidad para saber qué tipo de abono usar con cada planta que tengas. Finalmente, ella sí recomendaría la aplicación con el objetivo moral de ayudar sanar el ecosistema mediante el crecimiento de la vegetación.
     </td>
   </tr>
   <tr>
@@ -8745,7 +8745,7 @@ Preguntas para personas con poca experiencia o iniciantes en el cuidado de plant
   </tr>
   <tr>
     <td><strong>Edad</strong></td>
-    <td>23</td>
+    <td>22</td>
   </tr>
   <tr>
     <td><strong>Distrito</strong></td>
@@ -8757,12 +8757,12 @@ Preguntas para personas con poca experiencia o iniciantes en el cuidado de plant
   </tr>
   <tr>
     <td><strong>URL</strong></td>
-    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221436_upc_edu_pe/IQDDHsTvrBn9RIvTZ4BK8iwrAYXuqGmGg0Ae30Hj-98Fqnk?e=8CNItz&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" target="_blank">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221436_upc_edu_pe/IQDDHsTvrBn9RIvTZ4BK8iwrAYXuqGmGg0Ae30Hj-98Fqnk?e=8CNItz&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D</a></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221436_upc_edu_pe/IQCXzZrvhGlfSpUznNZ_ZhV4AU1mutNULVt9hA2fBqRlaKU?e=ZBqRIP&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" target="_blank">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221436_upc_edu_pe/IQCXzZrvhGlfSpUznNZ_ZhV4AU1mutNULVt9hA2fBqRlaKU?e=ZBqRIP&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D</a></td>
   </tr>
   <tr>
     <td colspan="2" style="text-align:justify">
       Resumen:<br>
-      aaa
+      La entrevistada tiene experiencia de 2 años cuidado plantas, aunque menciona haber tenido pérdidas por administrar el cuidado manualmente, tras eso, recalcó que le parecería útil una función de recordatorio. Ella menciona que prefiere buscar información de sus plantas usando un chatbot antes que buscar en páginas en internet. A ella le gustaría observar los datos en tiempo real de lo que sucede con sus plantas a distancia. Sobre los actuadores, tiene preferencia sobre la automatización antes que configuraciones manuales; específicamente sobre la alerta con el buzzer, le gusta la característica pero le gustaría que se usara una voz y no solo un zumbido. Exclama gustarle, de manera general, todas las características de la aplicación. Menciona que la aplicación es sencilla de entender. Finalmente, sí recomendaría la aplicación a personas que tengan problemas con el cuidado de sus plantas.
     </td>
   </tr>
   <tr>
