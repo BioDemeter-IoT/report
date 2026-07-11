@@ -6076,9 +6076,9 @@ Se siguieron estos pasos para el despliegue de la Landing Page en GitHub Pages:
 
 5. Tras completar con éxito el proceso de compilación, Vercel genera un enlace de producción único y seguro con protocolo HTTPS, permitiendo el acceso global e inmediato a la Landing Page de PlantSync.
 
-[Enlace a la Landing Page desplegada](https://v0-landingpage-seven-mu.vercel.app/en)
+[Enlace a la Landing Page V1 desplegada](https://v0-landingpage-seven-mu.vercel.app/en)
 
-[Enlace al FrontEnd desplegado](https://bio-demeter-plant-sync-frontend.vercel.app/login)
+[Enlace al FrontEnd V1 desplegado](https://bio-demeter-plant-sync-frontend.vercel.app/login)
 
 
 
@@ -7047,7 +7047,7 @@ Landing Page Insights:
      Sprint Backlog 2 - Elaboración propia
 </p>
 
-Link al trello: https://trello.com/invite/b/6a512552ad58290b834b5dae/ATTI40766c7a18a4b6bde76f4fbede27473550607947/sprint-2-biodemeter-iot
+Link al trello: [https://trello.com/invite/b/6a512552ad58290b834b5dae/ATTI40766c7a18a4b6bde76f4fbede27473550607947/sprint-2-biodemeter-iot](https://trello.com/invite/b/6a512552ad58290b834b5dae/ATTI40766c7a18a4b6bde76f4fbede27473550607947/sprint-2-biodemeter-iot)
 
 <h3>Sprint Backlog – Sprint 2</h3>
 <table border="1" cellspacing="0" cellpadding="5">
@@ -7610,8 +7610,8 @@ Durante este Sprint se realizó el despliegue completo del FrontEnd de PlantSync
 
 **FrontEnd:**
 
-- **URL de producción:** https://frontend-main-orpin-seven.vercel.app
-- **Repositorio:** https://github.com/BioDemeter-IoT/PlantSync-Frontend
+- **URL de producción:** [https://frontend-main-orpin-seven.vercel.app](https://frontend-main-orpin-seven.vercel.app)
+- **Repositorio:** [https://github.com/BioDemeter-IoT/PlantSync-Frontend](https://github.com/BioDemeter-IoT/PlantSync-Frontend)
 - **Plataforma:** Vercel (CI/CD automático desde GitHub)
 
 **Comandos de despliegue utilizados:**
@@ -7673,7 +7673,7 @@ Esta configuración realiza:
 
 **BackEnd:**
 
-- **URL:** https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net
+- **URL:** [https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net](https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net)
 - **Plataforma:** Microsoft Azure App Service (Mexico Central)
 - **Framework:** Spring Boot (Java)
 - **API Docs:** Swagger UI
@@ -7715,9 +7715,9 @@ vercel env add GROQ_API_KEY production
 
 | Componente | URL de Despliegue | Plataforma |
 |---|---|---|
-| FrontEnd | https://frontend-main-orpin-seven.vercel.app | Vercel |
-| BackEnd | https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net | Azure |
-| Chatbot API | https://frontend-main-orpin-seven.vercel.app/api/chat | Vercel Serverless |
+| FrontEnd | [https://frontend-main-orpin-seven.vercel.app](https://frontend-main-orpin-seven.vercel.app) | Vercel |
+| BackEnd | [https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net](https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net) | Azure |
+| Chatbot API | [https://frontend-main-orpin-seven.vercel.app/api/chat](https://frontend-main-orpin-seven.vercel.app/api/chat) | Vercel Serverless |
 
 #### 6.2.2.9. Team Collaboration Insights during Sprint
 
@@ -7845,7 +7845,7 @@ Landing Page Insights:
      Sprint Backlog 3 - Elaboración propia
 </p>
 
-Link al trello: https://trello.com/invite/b/6a4ed73193f00e250c66dd2b/ATTI56f1fa673ce6358e3d6dc99539a880434AA9E54F/sprint-3-biodemeter-iot
+Link al trello: [https://trello.com/invite/b/6a4ed73193f00e250c66dd2b/ATTI56f1fa673ce6358e3d6dc99539a880434AA9E54F/sprint-3-biodemeter-iot](https://trello.com/invite/b/6a4ed73193f00e250c66dd2b/ATTI56f1fa673ce6358e3d6dc99539a880434AA9E54F/sprint-3-biodemeter-iot)
 
 <h3>Sprint Backlog – Sprint 3</h3>
 <table border="1" cellspacing="0" cellpadding="5">
@@ -8030,7 +8030,9 @@ Link al trello: https://trello.com/invite/b/6a4ed73193f00e250c66dd2b/ATTI56f1fa6
 
 Se implementaron tests unitarios y de integración en la aplicación móvil para asegurar el correcto funcionamiento del mismo durante el Sprint 3.
 
-![Unit Test](/images/appmobile/pruebas-unitarias-app-mobile.png)
+<p align="center">
+  <img src="images/appmobile/pruebas-unitarias-app-mobile.png" alt="Pruebas unitarias - App Mobile" width="600">
+</p>
 
 
 
@@ -8323,32 +8325,32 @@ Durante este Sprint se realizó el despliegue completo de todos los componentes 
 - **Plataforma de despliegue:** GitHub Pages
 
 **FrontEnd (Web App):**
-- **URL de producción:** https://frontend-main-orpin-seven.vercel.app
-- **Repositorio:** https://github.com/BioDemeter-IoT/PlantSync-Frontend
+- **URL de producción:** [https://frontend-main-orpin-seven.vercel.app](https://frontend-main-orpin-seven.vercel.app)
+- **Repositorio:** [https://github.com/BioDemeter-IoT/PlantSync-Frontend](https://github.com/BioDemeter-IoT/PlantSync-Frontend)
 - **Plataforma de despliegue:** Vercel
 - **Framework:** Vue (JS)
 
 **BackEnd:**
-- **URL de producción:** https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net
-- **Repositorio:** https://github.com/BioDemeter-IoT/BioDemeter_PlantSync_Backend
+- **URL de producción:** [https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net](https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net)
+- **Repositorio:** [https://github.com/BioDemeter-IoT/BioDemeter_PlantSync_Backend](https://github.com/BioDemeter-IoT/BioDemeter_PlantSync_Backend)
 - **Plataforma de despliegue:** Microsoft Azure App Service
 - **Framework:** Spring Boot (Java)
 
 **Mobile App:**
 - **Plataforma:** APK en OneDrive
-- **URL de descarga:** https://upcedupe-my.sharepoint.com/shared?listurl=https%3A%2F%2Fupcedupe%2Dmy%2Esharepoint%2Ecom%2Fpersonal%2Fu201314454%5Fupc%5Fedu%5Fpe%2FDocuments&id=%2Fpersonal%2Fu201314454%5Fupc%5Fedu%5Fpe%2FDocuments%2FPlantSync%5FMobile%5Fapk%2Fapp%2Drelease%2Eapk&parent=%2Fpersonal%2Fu201314454%5Fupc%5Fedu%5Fpe%2FDocuments%2FPlantSync%5FMobile%5Fapk&shareLink=1&ga=1
+- **URL de descarga:** [https://upcedupe-my.sharepoint.com/:u:/g/personal/u20211f211_upc_edu_pe/IQBVhBytpDZWRJ9B9Kzjk7zFAaqbNJUBOixQQolCFQPEXD8?e=eLDYut](https://upcedupe-my.sharepoint.com/:u:/g/personal/u20211f211_upc_edu_pe/IQBVhBytpDZWRJ9B9Kzjk7zFAaqbNJUBOixQQolCFQPEXD8?e=eLDYut)
 
 **IoT Device (Wokwi):**
 
-- **URL del prototipo:** https://wokwi.com/projects/468594188996396033
+- **URL del prototipo:** [https://wokwi.com/projects/468594188996396033](https://wokwi.com/projects/468594188996396033)
 
 | Componente | URL de Despliegue | Plataforma |
 |---|---|---|
-| Landing Page | https://github.com/BioDemeter-IoT/LandingPageV2 | GitHub Pages |
-| FrontEnd Web | https://frontend-main-orpin-seven.vercel.app | Vercel |
-| BackEnd API | https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/swagger-ui/index.html | Azure |
-| Mobile App | https://upcedupe-my.sharepoint.com/shared?listurl=https%3A%2F%2Fupcedupe%2Dmy%2Esharepoint%2Ecom%2Fpersonal%2Fu201314454%5Fupc%5Fedu%5Fpe%2FDocuments&id=%2Fpersonal%2Fu201314454%5Fupc%5Fedu%5Fpe%2FDocuments%2FPlantSync%5FMobile%5Fapk%2Fapp%2Drelease%2Eapk&parent=%2Fpersonal%2Fu201314454%5Fupc%5Fedu%5Fpe%2FDocuments%2FPlantSync%5FMobile%5Fapk&shareLink=1&ga=1 | OneDrive |
-| IoT Simulación | https://wokwi.com/projects/468594188996396033 | Wokwi |
+| Landing Page | [https://github.com/BioDemeter-IoT/LandingPageV2](https://github.com/BioDemeter-IoT/LandingPageV2) | GitHub Pages |
+| FrontEnd Web | [https://frontend-main-orpin-seven.vercel.app](https://frontend-main-orpin-seven.vercel.app) | Vercel |
+| BackEnd API | [https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/swagger-ui/index.html](https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/swagger-ui/index.html) | Azure |
+| Mobile App | [https://upcedupe-my.sharepoint.com/shared?listurl=https%3A%2F%2Fupcedupe%2Dmy%2Esharepoint%2Ecom%2Fpersonal%2Fu201314454%5Fupc%5Fedu%5Fpe%2FDocuments&id=%2Fpersonal%2Fu201314454%5Fupc%5Fedu%5Fpe%2FDocuments%2FPlantSync%5FMobile%5Fapk%2Fapp%2Drelease%2Eapk&parent=%2Fpersonal%2Fu201314454%5Fupc%5Fedu%5Fpe%2FDocuments%2FPlantSync%5FMobile%5Fapk&shareLink=1&ga=1](https://upcedupe-my.sharepoint.com/shared?listurl=https%3A%2F%2Fupcedupe%2Dmy%2Esharepoint%2Ecom%2Fpersonal%2Fu201314454%5Fupc%5Fedu%5Fpe%2FDocuments&id=%2Fpersonal%2Fu201314454%5Fupc%5Fedu%5Fpe%2FDocuments%2FPlantSync%5FMobile%5Fapk%2Fapp%2Drelease%2Eapk&parent=%2Fpersonal%2Fu201314454%5Fupc%5Fedu%5Fpe%2FDocuments%2FPlantSync%5FMobile%5Fapk&shareLink=1&ga=1) | OneDrive |
+| IoT Simulación | [https://wokwi.com/projects/468594188996396033](https://wokwi.com/projects/468594188996396033) | Wokwi |
 
 #### 6.2.3.9. Team Collaboration Insights during Sprint
 
@@ -9202,41 +9204,42 @@ AV1:
 
 # Bibliografía
 
-Revista Economía. (2020). Incremento del interés de los peruanos por el cuidado de las áreas verdes. https://www.revistaeconomia.com/incremento-del-interes-de-los-peruanos-por-el-cuidado-de-las-areas-verdes/
+Revista Economía. (2020). Incremento del interés de los peruanos por el cuidado de las áreas verdes. [https://www.revistaeconomia.com/incremento-del-interes-de-los-peruanos-por-el-cuidado-de-las-areas-verdes/](https://www.revistaeconomia.com/incremento-del-interes-de-los-peruanos-por-el-cuidado-de-las-areas-verdes/)
 
 <div style="page-break-before: always;"></div>
 
 # Anexos
 
-- Link Video AV1: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQBkDt1uzmT5Ro1mWs3A0bWMASojRLdRjF21GPgz28Es7Yc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=gySJdu
+- Link Video AV1: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQBkDt1uzmT5Ro1mWs3A0bWMASojRLdRjF21GPgz28Es7Yc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=gySJdu](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQBkDt1uzmT5Ro1mWs3A0bWMASojRLdRjF21GPgz28Es7Yc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=gySJdu)
 
-- Link Video AV2: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQBh-OfArGB-Q65yD_TYDuZHAUEW2tCd-wfSluKZlqsPEOQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=1t1diG
+- Link Video AV2: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQBh-OfArGB-Q65yD_TYDuZHAUEW2tCd-wfSluKZlqsPEOQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=1t1diG](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQBh-OfArGB-Q65yD_TYDuZHAUEW2tCd-wfSluKZlqsPEOQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=1t1diG)
 
-- Link Video TB2: https://upcedupe-my.sharepoint.com/personal/u20231a500_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20231a500%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202610%2D1asi0572%2D17756%2DBioDemeter%2Dexpo%2Dtb2%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ee0796bd4%2D5a6f%2D4b46%2D88e8%2D64d2fe07a02e
+- Link Video TB2: [https://upcedupe-my.sharepoint.com/personal/u20231a500_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20231a500%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202610%2D1asi0572%2D17756%2DBioDemeter%2Dexpo%2Dtb2%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ee0796bd4%2D5a6f%2D4b46%2D88e8%2D64d2fe07a02e](https://upcedupe-my.sharepoint.com/personal/u20231a500_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20231a500%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202610%2D1asi0572%2D17756%2DBioDemeter%2Dexpo%2Dtb2%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ee0796bd4%2D5a6f%2D4b46%2D88e8%2D64d2fe07a02e)
 
 
 ## Links
 - Organización y repositorios:</br>
-  - Link de la organización del equipo: https://github.com/BioDemeter-IoT
-  - Link del repositorio del reporte: https://github.com/BioDemeter-IoT/report
-  - Link del repositorio de App Web: https://github.com/BioDemeter-IoT/PlantSync-Frontend 
-  - Link del repositorio de Backend: https://github.com/BioDemeter-IoT/BioDemeter_PlantSync_Backend 
-  - Link del repositorio de landing page: https://github.com/BioDemeter-IoT/LandingPageV2 
-  - Link del repositorio App Mobile: https://github.com/BioDemeter-IoT/BioDemeter_PlantSync_Mobile 
-  - Link del repositorio del Wokwi desarrollado: https://github.com/BioDemeter-IoT/BioDemeter_Plantsync_Wokwi
-  - Link del repositorio del prototipo físico: https://github.com/BioDemeter-IoT/BioDemeter_Plantsync_Prototype
-  - Link del repositorio del Edge: https://github.com/BioDemeter-IoT/BioDemeter_Plantsync_Edge
+  - Link de la organización del equipo: [https://github.com/BioDemeter-IoT](https://github.com/BioDemeter-IoT)
+  - Link del repositorio del reporte: [https://github.com/BioDemeter-IoT/report](https://github.com/BioDemeter-IoT/report)
+  - Link del repositorio de App Web: [https://github.com/BioDemeter-IoT/PlantSync-Frontend](https://github.com/BioDemeter-IoT/PlantSync-Frontend) 
+  - Link del repositorio de Backend: [https://github.com/BioDemeter-IoT/BioDemeter_PlantSync_Backend](https://github.com/BioDemeter-IoT/BioDemeter_PlantSync_Backend)
+  - Link del repositorio de landing page: [https://github.com/BioDemeter-IoT/LandingPageV2](https://github.com/BioDemeter-IoT/LandingPageV2) 
+  - Link del repositorio App Mobile: [https://github.com/BioDemeter-IoT/BioDemeter_PlantSync_Mobile ](https://github.com/BioDemeter-IoT/BioDemeter_PlantSync_Mobile)
+  - Link del repositorio del Wokwi desarrollado: [https://github.com/BioDemeter-IoT/BioDemeter_Plantsync_Wokwi](https://github.com/BioDemeter-IoT/BioDemeter_Plantsync_Wokwi)
+  - Link del repositorio del prototipo físico: [https://github.com/BioDemeter-IoT/BioDemeter_Plantsync_Prototype](https://github.com/BioDemeter-IoT/BioDemeter_Plantsync_Prototype)
+  - Link del repositorio del Edge: [https://github.com/BioDemeter-IoT/BioDemeter_Plantsync_Edge](https://github.com/BioDemeter-IoT/BioDemeter_Plantsync_Edge)
 
 </br>
 
 - Plataformas desplegadas/terminadas:</br>
-  - Link del Backend Swagger: https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/swagger-ui/index.html#/
-  - Link del Frontend: https://frontend-main-orpin-seven.vercel.app/tasks
-  - Link del Landing Page: https://biodemeter-iot.github.io/LandingPageV2/
-  - Link de Wokwi PlantSync Node: https://wokwi.com/projects/468594188996396033
-  - Tomar en cuenta la versión con ligeros agregados: https://wokwi.com/projects/468890136309868545
+  - Link del Backend Swagger: [https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/swagger-ui/index.html#/](https://plantsync-backend-a8c5cbd9c5bggfg3.mexicocentral-01.azurewebsites.net/swagger-ui/index.html#/)
+  - Link del Frontend: [https://frontend-main-orpin-seven.vercel.app/tasks](https://frontend-main-orpin-seven.vercel.app/tasks)
+  - Link del Landing Page: [https://biodemeter-iot.github.io/LandingPageV2/](https://biodemeter-iot.github.io/LandingPageV2/)
+  - Link de la Aplicación Móvil: [https://upcedupe-my.sharepoint.com/:u:/g/personal/u20211f211_upc_edu_pe/IQBVhBytpDZWRJ9B9Kzjk7zFAfZW3sPRuieCwpPSxMXysPQ?e=BxQhJJ](https://upcedupe-my.sharepoint.com/:u:/g/personal/u20211f211_upc_edu_pe/IQBVhBytpDZWRJ9B9Kzjk7zFAfZW3sPRuieCwpPSxMXysPQ?e=BxQhJJ)
+  - Link de Wokwi PlantSync Node: [https://wokwi.com/projects/468594188996396033](https://wokwi.com/projects/468594188996396033)
+  - Tomar en cuenta la versión con ligeros agregados: [https://wokwi.com/projects/468890136309868545](https://wokwi.com/projects/468890136309868545)
 </br>
 
 - Extras:</br>
-  - Video demostrativo del dispositivo iot: https://upcedupe-my.sharepoint.com/personal/u20231a500_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20231a500%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202610%2D1asi0572%2D17756%2DBioDemeter%2Dprototype%2Dsprint%2D3%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eb7150e68%2D8287%2D44f9%2D8827%2D3bb1351ed317
+  - Video demostrativo del dispositivo iot: [https://upcedupe-my.sharepoint.com/personal/u20231a500_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20231a500%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202610%2D1asi0572%2D17756%2DBioDemeter%2Dprototype%2Dsprint%2D3%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eb7150e68%2D8287%2D44f9%2D8827%2D3bb1351ed317](https://upcedupe-my.sharepoint.com/personal/u20231a500_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20231a500%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202610%2D1asi0572%2D17756%2DBioDemeter%2Dprototype%2Dsprint%2D3%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eb7150e68%2D8287%2D44f9%2D8827%2D3bb1351ed317)
 </br>
