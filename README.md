@@ -7907,7 +7907,7 @@ Link al trello: https://trello.com/invite/b/6a4ed73193f00e250c66dd2b/ATTI56f1fa6
 <td>Consumir la API de geolocalización y clima desde la app móvil para mostrar temperatura y humedad de la zona en la vista plantas.</td>
 <td>5</td>
 <td>Diego Acuña</td>
-<td>To-do</td>
+<td>Done</td>
 </tr>
 <tr>
 <td>US38</td>
@@ -7917,7 +7917,7 @@ Link al trello: https://trello.com/invite/b/6a4ed73193f00e250c66dd2b/ATTI56f1fa6
 <td>Agregar el selector de nivel de humedad (alta/media/baja) con frecuencia de riego automática en el formulario de registro de planta en mobile.</td>
 <td>3</td>
 <td>Max Paitan</td>
-<td>To-do</td>
+<td>Done</td>
 </tr>
 <tr>
 <td>US39</td>
@@ -7927,7 +7927,7 @@ Link al trello: https://trello.com/invite/b/6a4ed73193f00e250c66dd2b/ATTI56f1fa6
 <td>Agregar los campos de umbrales de temperatura, humedad y luz mínima en el formulario de registro de planta.</td>
 <td>4</td>
 <td>Carlos Coca</td>
-<td>To-do</td>
+<td>Done</td>
 </tr>
 <tr>
 <td>US40</td>
@@ -7937,7 +7937,7 @@ Link al trello: https://trello.com/invite/b/6a4ed73193f00e250c66dd2b/ATTI56f1fa6
 <td>Agregar un botón en el card abierto de la planta que redirija al flujo de emparejamiento del dispositivo IoT.</td>
 <td>3</td>
 <td>Carlos Coca</td>
-<td>To-do</td>
+<td>Done</td>
 </tr>
 <tr>
 <td>US41</td>
@@ -7947,7 +7947,7 @@ Link al trello: https://trello.com/invite/b/6a4ed73193f00e250c66dd2b/ATTI56f1fa6
 <td>Implementar la funcionalidad para que el usuario pueda marcar una tarea como completada desde la vista de tareas en mobile.</td>
 <td>3</td>
 <td>Farid Briceño</td>
-<td>To-do</td>
+<td>Done</td>
 </tr>
 <tr>
 <td>US42</td>
@@ -7957,7 +7957,7 @@ Link al trello: https://trello.com/invite/b/6a4ed73193f00e250c66dd2b/ATTI56f1fa6
 <td>Implementar la opción de eliminar tarea con modal de confirmación en la vista de tareas de la app móvil.</td>
 <td>2</td>
 <td>Erick Palomino</td>
-<td>To-do</td>
+<td>Done</td>
 </tr>
 <tr>
 <td>US43</td>
@@ -7967,7 +7967,7 @@ Link al trello: https://trello.com/invite/b/6a4ed73193f00e250c66dd2b/ATTI56f1fa6
 <td>Mostrar nombre, correo y plan de suscripción en la vista de perfil de la aplicación móvil.</td>
 <td>3</td>
 <td>Renzo Rivera</td>
-<td>To-do</td>
+<td>Done</td>
 </tr>
 <tr>
 <td>US44</td>
@@ -7977,7 +7977,7 @@ Link al trello: https://trello.com/invite/b/6a4ed73193f00e250c66dd2b/ATTI56f1fa6
 <td>Implementar un selector de planes (Basic, Premium, Pro) en la vista de perfil de la app móvil.</td>
 <td>4</td>
 <td>Renzo Rivera</td>
-<td>To-do</td>
+<td>Done</td>
 </tr>
 <tr>
 <td>US45</td>
@@ -7987,7 +7987,7 @@ Link al trello: https://trello.com/invite/b/6a4ed73193f00e250c66dd2b/ATTI56f1fa6
 <td>Agregar un toggle para activar o desactivar las notificaciones push desde la vista de perfil de la app móvil.</td>
 <td>3</td>
 <td>Elvia Rodríguez</td>
-<td>To-do</td>
+<td>Done</td>
 </tr>
 <tr>
 <td>US46</td>
@@ -7997,7 +7997,7 @@ Link al trello: https://trello.com/invite/b/6a4ed73193f00e250c66dd2b/ATTI56f1fa6
 <td>Agregar un botón de cerrar sesión en la vista de perfil que redirija al login de la app móvil.</td>
 <td>2</td>
 <td>Erick Palomino</td>
-<td>To-do</td>
+<td>Done</td>
 </tr>
 </tbody>
 </table>
@@ -8022,6 +8022,9 @@ Link al trello: https://trello.com/invite/b/6a4ed73193f00e250c66dd2b/ATTI56f1fa6
 | LandingPageV2 | main | 879f279 | feat: update the buttons | - | 10/07/2026 |
 | LandingPageV2 | main | 69a65dc | feat: update the access button | - | 10/07/2026 |
 | LandingPageV2 | main | 9aad1b1 | fix: deployment problems | - | 10/07/2026 |
+| BioDemeter_Plantsync_Wokwi | main | 6846c5f | add: Wokwi project | - | 10/07/2026 |
+| BioDemeter_Plantsync_Edge | main | 02fbdff | add: Prototype code | - | 10/07/2026 |
+ | BioDemeter_Plantsync_Prototype | main | 497d36c | add: Prototype code | - | 10/07/2026 |
 
 #### 6.2.3.5. Testing Suite Evidence for Sprint Review
 
@@ -8137,6 +8140,35 @@ En el Sprint 3 se alcanzó la finalización de la plataforma PlantSync, destacan
   <img src="images/wokwi/capturawokwi.jpeg" alt="Prototipo IoT en Wokwi" width="600">
 </p>
 <br>
+<br>
+<p align="center">
+  <img src="images/sprint3/execution/finalbackend-execution1.jpeg" alt="captura del backend parte 1" width="600">
+</p>
+<br>
+<p align="center">
+  <img src="images/sprint3/execution/finalbackend-execution2.jpeg" alt="captura del backend parte 2" width="600">
+</p>
+<br>
+<p align="center">
+  <img src="images/sprint3/execution/finalbackend-execution3.jpeg" alt="captura del backend parte 3" width="600">
+</p>
+<br>
+<p align="center">
+  <img src="images/sprint3/execution/finalbackend-execution4.jpeg" alt="captura del backend parte 4" width="600">
+</p>
+<br>
+<p align="center">
+  <img src="images/sprint3/execution/frontend-execution.jpeg" alt="captura del frontend" width="600">
+</p>
+<br>
+<p align="center">
+  <img src="images/sprint3/execution/landingpage-v2-execution.jpeg" alt="captura del landing page v2 parte 1" width="600">
+</p>
+<p align="center">
+  <img src="images/sprint3/execution/landingpage-v2-execution2.jpeg" alt="captura del landing page v2 parte 2" width="600">
+</p>
+
+
 
 <h3>Video de Demostración del Prototipo IoT</h3>
 <br>
