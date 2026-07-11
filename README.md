@@ -8695,6 +8695,83 @@ Preguntas para personas con poca experiencia o iniciantes en el cuidado de plant
   </tr>
 </table>
 
+### _Cuidadores de plantas principiantes_
+<br>
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 1</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>José Gutierrez</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>21</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>Surco</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>00:00 - 8:33</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221436_upc_edu_pe/IQDv31HCeeCETolJ6NzJTo9LAT2HNVcf3h76lBobvEZaVpw?e=3dvirE&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" target="_blank">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221436_upc_edu_pe/IQDv31HCeeCETolJ6NzJTo9LAT2HNVcf3h76lBobvEZaVpw?e=3dvirE&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D</a></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen:<br>
+      aaa
+    </td>
+  </tr>
+  <tr>
+<td colspan="2">
+<img src="images/entrevistadevalidacion/EntrevistaAppIoTPrincipiante1.jpeg" alt="Entrevista de la aplicación móvil con el primer principiante en plantas" width="600">
+    </td>
+  </tr>
+</table>
+
+<br>
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 1</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Maria Fernanda Peña</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>23</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>Surco</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>00:00 - 8:33</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221436_upc_edu_pe/IQDDHsTvrBn9RIvTZ4BK8iwrAYXuqGmGg0Ae30Hj-98Fqnk?e=8CNItz&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" target="_blank">https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221436_upc_edu_pe/IQDDHsTvrBn9RIvTZ4BK8iwrAYXuqGmGg0Ae30Hj-98Fqnk?e=8CNItz&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D</a></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen:<br>
+      aaa
+    </td>
+  </tr>
+  <tr>
+<td colspan="2">
+<img src="images/entrevistadevalidacion/EntrevistaAppIoTPrincipiante2.jpeg" alt="Entrevista de la aplicación móvil con el primer principiante en plantas" width="600">
+    </td>
+  </tr>
+</table>
+
 
   
 
