@@ -91,7 +91,7 @@
 | 3.3 | 07/07/2026 | Paitan Pumacahua, Max Anthony | Documentación del desarrollo y mejoras en la aplicación móvil, apoyo en el desarrollo del Edge y del proyecto en Wokwi. |
 | 3.4 | 08/07/2026 | Rodríguez Villa, Elvia Marcela | Registro de la realización de mejoras del Frontend para añadir los apartados visuales e integración del dispositivo IoT. |
 | 3.5 | 09/07/2026 | Briceño De La Cruz, Farid Sebastian | Redacción final de las secciones correspondientes al Sprint 3, formulación de preguntas de validación de producto y estructuración de la presentación en diapositivas. |
-| 3.6 | 09/07/2026 | Briceño De La Cruz, Farid Sebastian | Corrección de IDs inconsistentes en Product Backlog, refinamiento de User Stories (US06, US11, US15, US25, US28) para especificar plataforma mobile/web, y adición de 10 nuevas User Stories (US40-US49) para funcionalidades móviles: monitoreo climático local, niveles de humedad con frecuencia de riego, umbrales IoT, vinculación IoT, gestión de tareas, gestión de perfil con suscripciones y notificaciones, y cierre de sesión. |
+| 3.6 | 09/07/2026 | Briceño De La Cruz, Farid Sebastian | Corrección de IDs inconsistentes en Product Backlog, refinamiento de User Stories (US06, US11, US15, US25, US28) para especificar plataforma mobile/web, y adición de 10 nuevas User Stories (US37-US46) para funcionalidades móviles: monitoreo climático local, niveles de humedad con frecuencia de riego, umbrales IoT, vinculación IoT, gestión de tareas, gestión de perfil con suscripciones y notificaciones, y cierre de sesión. |
 | 3.7 | 10/07/2026 | Acuña Tomas, Diego Rolin | Documentación técnica de la realización completa del dispositivo IoT físico y su integración con el Edge Service. |
 | 3.8 | 10/07/2026 | Briceño De La Cruz, Farid Sebastian | Corrección de títulos inconsistentes de US35 y US36 entre User Stories y Product Backlog; ajuste de unidades y valores de Velocity y Sum of Story Points en Sprint 1 y Sprint 2; añadido de conclusiones TB2 sobre tecnologías y aprendizajes del curso; adición de preguntas de entrevistas para app móvil con IoT, imágenes de validación (iot-conectado, ver-datos-iot), pruebas unitarias (70 tests), entrevistas de validación de expertos, video TB2 en anexos, y actualización de deployment links e insights de GitHub. |
 
@@ -2166,7 +2166,7 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
       <td>EP04</td>
     </tr>
     <tr>
-      <td>US40</td>
+      <td>US37</td>
       <td>Monitoreo climático local desde mobile</td>
       <td>
         <strong>Como</strong> usuario mobile, <strong>quiero</strong> ver la temperatura y humedad de mi zona geográfica detectada por el teléfono, <strong>para</strong> cuidar mejor mis plantas.
@@ -2180,7 +2180,7 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
       <td>EP06</td>
     </tr>
     <tr>
-      <td>US41</td>
+      <td>US38</td>
       <td>Configurar nivel de humedad en registro de planta</td>
       <td>
         <strong>Como</strong> usuario, <strong>quiero</strong> seleccionar nivel de humedad (alta/riego cada 2 días, media/riego cada 4 días, baja/riego cada 7 días) al registrar una planta desde mobile, <strong>para</strong> que el sistema calcule automáticamente la frecuencia de riego.
@@ -2192,7 +2192,7 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
       <td>EP03</td>
     </tr>
     <tr>
-      <td>US42</td>
+      <td>US39</td>
       <td>Configurar umbrales de alerta IoT al registrar planta</td>
       <td>
         <strong>Como</strong> usuario, <strong>quiero</strong> definir umbrales de temperatura, humedad y luz mínima al registrar mi planta, <strong>para</strong> recibir alertas personalizadas según las necesidades de mi especie.
@@ -2204,7 +2204,7 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
       <td>EP04</td>
     </tr>
     <tr>
-      <td>US43</td>
+      <td>US40</td>
       <td>Vincular dispositivo IoT desde perfil de planta</td>
       <td>
         <strong>Como</strong> usuario, <strong>quiero</strong> acceder a la vista de vinculación IoT desde el detalle de mi planta, <strong>para</strong> conectar el hardware a la planta registrada.
@@ -2216,7 +2216,7 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
       <td>EP04</td>
     </tr>
     <tr>
-      <td>US44</td>
+      <td>US41</td>
       <td>Marcar tarea como completada</td>
       <td>
         <strong>Como</strong> usuario, <strong>quiero</strong> marcar una tarea como completada, <strong>para</strong> llevar un registro de las actividades realizadas.
@@ -2230,7 +2230,7 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
       <td>EP05</td>
     </tr>
     <tr>
-      <td>US45</td>
+      <td>US42</td>
       <td>Eliminar tarea programada</td>
       <td>
         <strong>Como</strong> usuario, <strong>quiero</strong> borrar una tarea programada, <strong>para</strong> eliminar las que ya no necesito.
@@ -2244,7 +2244,7 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
       <td>EP05</td>
     </tr>
     <tr>
-      <td>US46</td>
+      <td>US43</td>
       <td>Visualizar datos de cuenta en perfil mobile</td>
       <td>
         <strong>Como</strong> usuario mobile, <strong>quiero</strong> ver mi nombre, correo y plan de suscripción en el perfil, <strong>para</strong> conocer el estado de mi cuenta.
@@ -2256,7 +2256,7 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
       <td>EP02</td>
     </tr>
     <tr>
-      <td>US47</td>
+      <td>US44</td>
       <td>Cambiar plan de suscripción desde mobile</td>
       <td>
         <strong>Como</strong> usuario, <strong>quiero</strong> alternar entre Basic, Premium y Pro desde el perfil, <strong>para</strong> ajustar mi plan según mis necesidades.
@@ -2268,7 +2268,7 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
       <td>EP02</td>
     </tr>
     <tr>
-      <td>US48</td>
+      <td>US45</td>
       <td>Gestionar notificaciones push en mobile</td>
       <td>
         <strong>Como</strong> usuario, <strong>quiero</strong> activar o desactivar las notificaciones de la app móvil, <strong>para</strong> controlar las alertas que recibo.
@@ -2282,7 +2282,7 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
       <td>EP02</td>
     </tr>
     <tr>
-      <td>US49</td>
+      <td>US46</td>
       <td>Cerrar sesión desde mobile</td>
       <td>
         <strong>Como</strong> usuario, <strong>quiero</strong> un botón para cerrar sesión desde el perfil, <strong>para</strong> salir de mi cuenta de forma segura.
@@ -2590,70 +2590,70 @@ A continuación se presenta el Big Picture Event Storming correspondiente al seg
     </tr>
     <tr>
       <td>37</td>
-      <td>US40</td>
+      <td>US37</td>
       <td>Monitoreo climático local desde mobile</td>
       <td>Como usuario mobile, quiero ver la temperatura y humedad de mi zona geográfica detectada por el teléfono, para cuidar mejor mis plantas.</td>
       <td>5</td>
     </tr>
     <tr>
       <td>38</td>
-      <td>US41</td>
+      <td>US38</td>
       <td>Configurar nivel de humedad en registro de planta</td>
       <td>Como usuario, quiero seleccionar nivel de humedad (alta/riego cada 2 días, media/riego cada 4 días, baja/riego cada 7 días) al registrar una planta, para que el sistema calcule automáticamente la frecuencia de riego.</td>
       <td>3</td>
     </tr>
     <tr>
       <td>39</td>
-      <td>US42</td>
+      <td>US39</td>
       <td>Configurar umbrales de alerta IoT al registrar planta</td>
       <td>Como usuario, quiero definir umbrales de temperatura, humedad y luz mínima al registrar mi planta, para recibir alertas personalizadas según las necesidades de mi especie.</td>
       <td>5</td>
     </tr>
     <tr>
       <td>40</td>
-      <td>US43</td>
+      <td>US40</td>
       <td>Vincular dispositivo IoT desde perfil de planta</td>
       <td>Como usuario, quiero acceder a la vista de vinculación IoT desde el detalle de mi planta, para conectar el hardware a la planta registrada.</td>
       <td>3</td>
     </tr>
     <tr>
       <td>41</td>
-      <td>US44</td>
+      <td>US41</td>
       <td>Marcar tarea como completada</td>
       <td>Como usuario, quiero marcar una tarea como completada, para llevar un registro de las actividades realizadas.</td>
       <td>2</td>
     </tr>
     <tr>
       <td>42</td>
-      <td>US45</td>
+      <td>US42</td>
       <td>Eliminar tarea programada</td>
       <td>Como usuario, quiero borrar una tarea programada, para eliminar las que ya no necesito.</td>
       <td>2</td>
     </tr>
     <tr>
       <td>43</td>
-      <td>US46</td>
+      <td>US43</td>
       <td>Visualizar datos de cuenta en perfil mobile</td>
       <td>Como usuario mobile, quiero ver mi nombre, correo y plan de suscripción en el perfil, para conocer el estado de mi cuenta.</td>
       <td>2</td>
     </tr>
     <tr>
       <td>44</td>
-      <td>US47</td>
+      <td>US44</td>
       <td>Cambiar plan de suscripción desde mobile</td>
       <td>Como usuario, quiero alternar entre Basic, Premium y Pro desde el perfil, para ajustar mi plan según mis necesidades.</td>
       <td>3</td>
     </tr>
     <tr>
       <td>45</td>
-      <td>US48</td>
+      <td>US45</td>
       <td>Gestionar notificaciones push en mobile</td>
       <td>Como usuario, quiero activar o desactivar las notificaciones de la app móvil, para controlar las alertas que recibo.</td>
       <td>2</td>
     </tr>
     <tr>
       <td>46</td>
-      <td>US49</td>
+      <td>US46</td>
       <td>Cerrar sesión desde mobile</td>
       <td>Como usuario, quiero un botón para cerrar sesión desde el perfil, para salir de mi cuenta de forma segura.</td>
       <td>1</td>
@@ -7900,7 +7900,7 @@ Link al trello: https://trello.com/invite/b/6a4ed73193f00e250c66dd2b/ATTI56f1fa6
 <td>Done</td>
 </tr>
 <tr>
-<td>US40</td>
+<td>US37</td>
 <td>Monitoreo climático local desde mobile</td>
 <td>WI038</td>
 <td>Integrar API de clima en mobile</td>
@@ -7910,7 +7910,7 @@ Link al trello: https://trello.com/invite/b/6a4ed73193f00e250c66dd2b/ATTI56f1fa6
 <td>To-do</td>
 </tr>
 <tr>
-<td>US41</td>
+<td>US38</td>
 <td>Configurar nivel de humedad en registro de planta</td>
 <td>WI039</td>
 <td>Campo de nivel de humedad en registro mobile</td>
@@ -7920,7 +7920,7 @@ Link al trello: https://trello.com/invite/b/6a4ed73193f00e250c66dd2b/ATTI56f1fa6
 <td>To-do</td>
 </tr>
 <tr>
-<td>US42</td>
+<td>US39</td>
 <td>Configurar umbrales de alerta IoT al registrar planta</td>
 <td>WI040</td>
 <td>Campos de umbrales IoT en registro</td>
@@ -7930,7 +7930,7 @@ Link al trello: https://trello.com/invite/b/6a4ed73193f00e250c66dd2b/ATTI56f1fa6
 <td>To-do</td>
 </tr>
 <tr>
-<td>US43</td>
+<td>US40</td>
 <td>Vincular dispositivo IoT desde perfil de planta</td>
 <td>WI041</td>
 <td>Botón de vinculación IoT en detalle de planta</td>
@@ -7940,7 +7940,7 @@ Link al trello: https://trello.com/invite/b/6a4ed73193f00e250c66dd2b/ATTI56f1fa6
 <td>To-do</td>
 </tr>
 <tr>
-<td>US44</td>
+<td>US41</td>
 <td>Marcar tarea como completada</td>
 <td>WI042</td>
 <td>Botón de completar tarea</td>
@@ -7950,7 +7950,7 @@ Link al trello: https://trello.com/invite/b/6a4ed73193f00e250c66dd2b/ATTI56f1fa6
 <td>To-do</td>
 </tr>
 <tr>
-<td>US45</td>
+<td>US42</td>
 <td>Eliminar tarea programada</td>
 <td>WI043</td>
 <td>Botón de eliminar tarea</td>
@@ -7960,7 +7960,7 @@ Link al trello: https://trello.com/invite/b/6a4ed73193f00e250c66dd2b/ATTI56f1fa6
 <td>To-do</td>
 </tr>
 <tr>
-<td>US46</td>
+<td>US43</td>
 <td>Visualizar datos de cuenta en perfil mobile</td>
 <td>WI044</td>
 <td>Vista de datos de cuenta en perfil</td>
@@ -7970,7 +7970,7 @@ Link al trello: https://trello.com/invite/b/6a4ed73193f00e250c66dd2b/ATTI56f1fa6
 <td>To-do</td>
 </tr>
 <tr>
-<td>US47</td>
+<td>US44</td>
 <td>Cambiar plan de suscripción desde mobile</td>
 <td>WI045</td>
 <td>Selector de plan en perfil</td>
@@ -7980,7 +7980,7 @@ Link al trello: https://trello.com/invite/b/6a4ed73193f00e250c66dd2b/ATTI56f1fa6
 <td>To-do</td>
 </tr>
 <tr>
-<td>US48</td>
+<td>US45</td>
 <td>Gestionar notificaciones push en mobile</td>
 <td>WI046</td>
 <td>Toggle de notificaciones en perfil</td>
@@ -7990,7 +7990,7 @@ Link al trello: https://trello.com/invite/b/6a4ed73193f00e250c66dd2b/ATTI56f1fa6
 <td>To-do</td>
 </tr>
 <tr>
-<td>US49</td>
+<td>US46</td>
 <td>Cerrar sesión desde mobile</td>
 <td>WI047</td>
 <td>Botón de cerrar sesión</td>
@@ -8066,8 +8066,8 @@ En el Sprint 3 se alcanzó la finalización de la plataforma PlantSync, destacan
 <br>
 
 <ul>
-  <li>US40 Monitoreo climático local desde mobile</li>
-  <li>US43 Vincular dispositivo IoT desde perfil de planta</li>
+  <li>US37 Monitoreo climático local desde mobile</li>
+  <li>US40 Vincular dispositivo IoT desde perfil de planta</li>
   <li>US02 Vinculación de dispositivo IoT con la cuenta</li>
   <li>US07 Visualización del historial de cuidados</li>
 </ul>
@@ -8099,8 +8099,8 @@ En el Sprint 3 se alcanzó la finalización de la plataforma PlantSync, destacan
 <ul>
   <li>US27 Visualización de tareas de cuidado</li>
   <li>US28 Configuración de tareas</li>
-  <li>US44 Marcar tarea como completada</li>
-  <li>US45 Eliminar tarea programada</li>
+  <li>US41 Marcar tarea como completada</li>
+  <li>US42 Eliminar tarea programada</li>
 </ul>
 
 <br>
@@ -8112,10 +8112,10 @@ En el Sprint 3 se alcanzó la finalización de la plataforma PlantSync, destacan
 
 <ul>
   <li>US15 Edición de datos personales (perfil mobile)</li>
-  <li>US46 Visualizar datos de cuenta en perfil mobile</li>
-  <li>US47 Cambiar plan de suscripción desde mobile</li>
-  <li>US48 Gestionar notificaciones push en mobile</li>
-  <li>US49 Cerrar sesión desde mobile</li>
+  <li>US43 Visualizar datos de cuenta en perfil mobile</li>
+  <li>US44 Cambiar plan de suscripción desde mobile</li>
+  <li>US45 Gestionar notificaciones push en mobile</li>
+  <li>US46 Cerrar sesión desde mobile</li>
 </ul>
 
 <br>
