@@ -16,7 +16,6 @@
 <h4 style="text-align: center"> Proyecto </h4>
 <h4 style="text-align: center"> <strong>PlantSync</strong> </h4>
 <h4 style="text-align: center"> <strong>Integrantes</strong> </h4>
-<h4 style="text-align: center"> <strong>Código &nbsp; Apellidos y Nombres</strong> </h4>
 <div style="text-align:center; margin-top: 10px; font-size: 90%; line-height: 1.6;">
    <table style="margin-left: auto; margin-right: auto;">
       <tr>
