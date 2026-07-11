@@ -8983,7 +8983,7 @@ Se recomienda priorizar la resolución de estos problemas en el siguiente sprint
 | **Duración** | 16:50 min |
 | **URL Microsoft** | [https://upcedupe-my.sharepoint.com/personal/u20231a500_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20231a500%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202610%2D1asi0572%2D17756%2DBioDemeter%2Dabout%2Dthe%2Dproduct%2Dsprint%2D3%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E5dd101bc%2Deab4%2D45b9%2D97b4%2De6975ae01643](https://upcedupe-my.sharepoint.com/personal/u20231a500_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20231a500%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202610%2D1asi0572%2D17756%2DBioDemeter%2Dabout%2Dthe%2Dproduct%2Dsprint%2D3%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E5dd101bc%2Deab4%2D45b9%2D97b4%2De6975ae01643) |
 | **URL YouTube** | [https://youtu.be/rZj9y4jfeTw](https://youtu.be/rZj9y4jfeTw) |
-| **Imagen** | ![About the Product Screen](/images/entrevistadevalidacion/about-the-product-tb2.png) |
+| **Imagen** | ![About the Product Screen](images/entrevistadevalidacion/about-the-product-tb2.png) |
 
 ## 6.5. Video About-the-Team
 
@@ -8994,7 +8994,7 @@ El video resume el proyecto del equipo, mostrando a cada integrante explicar las
 | **Duración** | 10:30 min |
 | **URL Microsoft** | [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQD_i2sgq9tvSbnwClApAuYrASgQwyFNVj3DcuF7uu7GWVo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=4dL2bA](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/IQD_i2sgq9tvSbnwClApAuYrASgQwyFNVj3DcuF7uu7GWVo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=4dL2bA) |
 | **URL YouTube** | [https://youtu.be/Usy3NDk73jM](https://youtu.be/Usy3NDk73jM) |
-| **Imagen** | ![About the Team](/images/entrevistadevalidacion/aboutheteam.png) |
+| **Imagen** | ![About the Team](images/entrevistadevalidacion/aboutheteam.png) |
 
 
 <div style="page-break-before: always;"></div>
